@@ -1,0 +1,385 @@
+---
+article: false
+date: 2021-05-01
+
+---
+
+# 数据结构之链表简介
+
+## 数据结构和算法
+
+Data structures and algorithms
+
+- People write programs to solve problems「人们编写解决问题的程序」
+- A program is said to be efficient if it solves the problem within its resource constraints「如果程序在其资源限制内解决了问题，则该程序被认为是有效的」
+  - Space
+  - Time (usually more important)
+- Achieving time efficiency requires good algorithms and
+  data structures「实现时间效率需要良好的算法和数据结构」
+
+常见的数据结构有两种：数组「array」和链表「linked lists」
+
+## 简介
+
+A linked list is a collection of data elements in which each element contains the link to the location of the next element.「链表是数据元素的集合，其中每个元素都包含指向下一个元素的位置的链接。」
+
+Each **node** contains two parts: **data and link**.「每个节点包含两个部分：数据和链接」
+
+注：我们也可以为Node添加其他属性
+
+注：我们可以将每个节点理解成Note，也可以将每个节点理解成环「ring」
+
+### 示意图
+
+#### Node
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/16/5d03b40583a66.png" alt="image.png" title="image.png" />
+
+#### Ring
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/db09202b02375.png" alt="image.png" title="image.png" />
+
+**这里的每一个环就是一个Node。**
+
+**为方便下面的理解，我们认为ring = Node。**
+
+在链表中，我们将 head变量 当做这个链表的名称。一般可以这个变量叫head，也可以叫 list。
+
+### 链表和节点的名称
+
+Names of linked list and nodes
+
+A linked list has a name, which is the name of the head pointer that points to the first node of the list.「链接列表具有一个名称，该名称是指向列表的第一个节点的头指针的名称。」
+
+Nodes in the list, on the other hand, do not have an explicit names, just implicit ones.「另一方面，列表中的节点没有显式名称，只有隐式名称」
+
+nodes in a linked list are accessed via the head pointer or other pointers「通过头指针或其他指针访问链表中的节点」
+
+### 尾部特点
+
+最后的Node的next为nullptr。可以利用这个这个特性寻找结束的地方。
+
+### When to use linked lists?
+
+Use linked list when
+
+If we have a list of data in which a lot of insertions and deletions are expected, we should not use an array but linked list.「如果我们有一个预计会有很多插入和删除的数据列表，则不应使用数组，而应使用链表。」
+
+Also, if we need to add / delete data dynamically at run time without the need to know in advance the total number of entries and without allocating huge chunks of memory unnecessarily, we can use a linked list.「另外，如果我们需要在运行时动态添加/删除数据，而无需事先知道条目总数，也不必不必要地分配大量内存，则可以使用链表」
+
+## Create a linked list
+
+We can define a structure with pointer fields that point to the same structure type「我们可以使用指向相同结构类型的指针字段定义结构」
+
+### 手动定义
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/16/041a8eafa1016.png" alt="image.png" title="image.png" />
+
+### 使用循环语句定义
+
+```c++
+#include <iostream>
+using namespace std;
+
+struct Node{
+    int data;
+    Node *next;
+};
+
+int main() {
+    Node *head = nullptr;
+    for (int i = 0; i < 4; ++i) {
+        Node* newNode = new Node; 
+        // 或者Node* newNode = new Node();
+      
+        newNode->next = head; // 让新环的next存储旧环的地址
+        newNode->data = i; // 此处 新环的data是一个int数据
+        head = newNode; // 让head存储新环的地址
+    }
+
+    cout << head -> data << endl;
+    cout << head -> next ->data << endl;
+    cout << head -> next-> next-> data << endl;
+}
+
+```
+
+输出结果是 3，2，1 ；这是倒序定义。
+
+注：使用指针的原因：链表的数据关联性通过指针实现；链表的名称本质是指针，且只有链表的第一个链环有名称；
+
+注：链表的最后一个环是空环，即nullptr；
+
+### new 
+
+表示创建与原来不同的对象。
+
+```c++
+new xxx; // 返回新对象的地址
+int* x = new int; // 将新生成对象的地址返回给x
+```
+
+## Operations
+
+### Print
+
+```c++
+// 结尾的指针特点是空指针
+while (current->next != nullptr){
+	cout << current -> data;
+	current = current->next;
+};
+```
+
+### Adding a node at end of list
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/19/9778c37ef10cf.png" alt="image.png" title="image.png" />
+
+```c++
+Node *current = head;
+
+// 结尾的指针特点是空指针
+while (current->next != nullptr){
+current = current->next;
+};
+
+Node newNode;
+current->next = &newNode;
+current->next->next = NULL;
+```
+
+### Adding a node to beginning of list
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/19/61d7ad2ddb6ff.png" alt="image.png" title="image.png" />
+
+```c++
+void push(Node** ptr, int val){
+  // 传入旧的 &head,即链表的 &名称
+  // 使用 *ptr 获取到 传入的address
+  // 使用 **ptr 获取到 传入的address指向的值
+  
+	Node *newNode = new Node; // 创建新Node
+	newNode -> data = val;    // 给新Node的data赋值
+	newNode -> next = *ptr;   // 让新Node的next存Node的地址，即head
+	*ptr = newNode;  // 让head指向新Node的地址
+};
+
+push(&head, 4);
+```
+
+或者
+
+```c++
+Node *push(Node *ptr, int val){
+Node *newNode = new Node();
+newNode -> data = val; 
+newNode -> next = ptr;
+return newNode;
+};
+
+head = push(head, 4);
+```
+
+这样也解决了关联问题；
+
+### 逐步添加环
+
+逐步添加环适用于 倒序添加场景；
+
+```c++
+void push(Node** ptr, int val){
+  xxx
+}
+
+// 利用 Adding a node to beginning of list
+push(&list,201);
+push(&list,178);
+push(&list,132);
+push(&list,132);
+push(&list,102);
+```
+
+### Search a linked list
+
+Since nodes in a linked list have no names, we use two pointers, pre (for previous) and cur (for current)「由于链表中的节点没有名称，所以我们使用两个指针**pre（表示上一个）和cur（表示当前）**」
+
+At the beginning of search, the pre pointer is null and the 
+cur pointer points to the first node「搜索开始时，pre指针为空，cur指针指向第一个节点」
+
+The search algorithm moves the two pointers together 
+towards the end of the list.「搜索算法将两个指针一起移动到列表的末尾。」
+
+#### Start
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/89bf8fd10bcff.png" alt="image.png" title="image.png" />
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/da8a684281e13.png" alt="image.png" title="image.png" />
+
+**pre（表示上一个）和cur（表示当前）**
+
+#### Process
+
+```c++
+#include <iostream>
+using namespace std;
+
+struct Node{
+    int data;
+    Node* next;
+};
+
+void push(Node** ptr,int val){
+    Node *newNode = new Node;
+    newNode->data = val;
+    newNode->next = *ptr;
+    *ptr = newNode;
+}
+
+int main() {
+    Node* list = nullptr;
+
+    push(&list,201);
+    push(&list,178);
+    push(&list,132);
+    push(&list,136);
+    push(&list,102);
+
+    Node* cur = list;
+    Node* pre = nullptr;
+    int target = 132;
+
+    while (cur != nullptr && cur->data != target){
+        pre = cur;
+        cur = cur->next;
+    }
+
+    cout << pre;
+
+    return 0;
+```
+
+其中，`while (cur != nullptr && cur->data != target)`可以写成`while (cur && cur->data != target)`。为什么能这样写后面说。
+
+#### 使用两个指针变量的原因
+
+cur会自动下移，我们要用pre记录我们目标的Node。
+
+当然使用双链表就没有这个问题。
+
+### Deleting a node from linked list
+Before deleting a node from a linked list, apply the search algorithm「在从链表中删除节点之前，请应用搜索算法」
+
+If the node is found, then we can delete the node from the linked list「如果找到该节点，那么我们可以从链接列表中删除该节点」
+
+注：这里的Delete指的是将目标Node从链表中取下来，然后再把链子连起来。虽然这个Node取下来的，但是它是依旧存在的，依旧占内存，只不过不再链子上了。
+
+ We have only two cases to consider:
+
+- deleting the first node
+- deleting the last node
+- deleting any other node
+
+#### Deleting the first node
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/f39a2b900f252.png" alt="image.png" title="image.png" />
+
+#### Deleting last or any other node
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/8d884962e0854.png" alt="image.png" title="image.png" />
+
+#### Process
+
+```c++
+Node* cur = list;
+Node* pre = nullptr;
+
+int target = 132;
+
+while (cur != nullptr && cur->data != target){
+  pre = cur;
+  cur = cur->next;
+}
+
+// check if it is the first node
+if (pre == nullptr){
+  list = cur->next;
+} else{
+  pre->next = cur->next;
+}
+```
+
+### Inserting a node into linked list
+
+注：这里的 Insert 指的是把链子拆开，将目标Node前后接上去。所以这个Node一定是已经存在的。
+
+有以下几种情况
+
+#### Insertion at the beginning of the list
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/a89fbd19d8406.png" alt="image.png" title="image.png" />
+
+#### Insertion at the end of the list
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/4db38999f5af9.png" alt="image.png" title="image.png" />
+
+#### Insertion in the middle of the list 
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/162fad3e6fc9c.png" alt="image.png" title="image.png" />
+
+#### Process
+
+```c++
+Node* cur = list;
+Node* pre = nullptr;
+
+Node* newNode = new Node;
+newNode->data = 156;
+
+int target = 132;
+while (cur != nullptr && cur->data != target){
+  pre = cur;
+  cur = cur->next;
+}
+
+if(pre == nullptr){
+  newNode->next = list;
+  list = newNode;
+} else{
+  pre->next = newNode;
+  newNode->next = cur;
+}
+```
+
+## Doubly Linked Lists
+
+In singly linked list, we cannot delete a node unless we have reference to its predecessor「在单链列表中，除非引用了它的前任节点，否则我们无法删除该节点」
+
+- Add a second pointer that points to the previous node「添加第二个指向上一个节点的指针」
+- Additional work in insertion/deletion「插入/删除的其他工作」
+
+使用双链表可以解决这个问题
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/a6c277e63fce4.png" alt="image.png" title="image.png" />
+
+```c++
+struct Node {
+  int data;
+  Node *next;
+  Node *prev;
+};
+```
+
+<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/c461753ff0c81.png" alt="image.png" title="image.png" />
+
+## Arrays vs Linked Lists
+
+- Arrays
+  - Pros：Fixed size; Generally, the allocated memory is equal to the 
+    upper limit irrespective of the usage
+  - Cons: Insertion and deletion is expensive
+-  Linked lists:
+  - Pros: Inserting a new node to and deletion at the beginning or 
+    end of a linked list takes constant time O(1); Ease of insertion 
+    and deletion, since it only requires modifications of pointers; 
+    Less Memory wastage due to dynamic memory allocation「优点：在链表的开始或结尾处插入新节点并进行删除需要固定的时间O（1），即插入和删除容易，因为它只需要修改指针即可。更少地动态内存分配会较少浪费内存」
+  - Cons: Slower search times than arrays
