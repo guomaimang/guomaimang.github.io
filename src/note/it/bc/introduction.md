@@ -426,6 +426,141 @@ Bulletin-Board “Emulation”
 
 Works well if all users are honest but this is not the case in practice because “sybil” can appear “for free” in a permissionless network.
 
+在每个人都可以自由参与的系统中，多数意味着什么？
+
+<img src="https://pic.hanjiaming.com.cn/2024/10/05/6d61c93380038.png" alt="1728140188569.png" style="zoom:33%;" />
+
+### How to Check Majority of Comp. Power?
+
+- **Majority is defined as the majority of computational power!**
+  - 多数计算能力是指网络中大部分计算资源的总和。
+  - 在比特币网络中，拥有多数计算能力的节点群体能够控制区块链的更新和交易验证。
+- **Sybil creation doesn’t increase attackers’ computational power.**
+  - 创建多个虚假身份（Sybil 攻击）不会增加攻击者的实际计算能力。
+  - 即使攻击者创建了多个虚假节点，这些节点共享同一计算资源，因此整体计算能力并不会增加。
+- “Measures” a user’s computational power by how much time is needed for solving a “puzzle”
+- the puzzle should be difficult to solve 
+  but a solution should be easily verifiable
+- In Bitcoin, it is based on the cryptographic hash functions.
+- **Puzzle: Given D, find x!** 即 H(x) < D
+  - D here is a system-decided “difficulty” parameter.
+  - 给定难度参数 D，找到满足条件的 x 值。
+  - 矿工需要尝试不同的 x 值，直到找到一个使得 H(x) < D 的解答。
+
+假设我们有一个比特币网络，其中当前难度参数 D 为 1000000。矿工需要找到一个 x，使得 SHA-256 哈希值 H(x) 小于 1000000。
+
+- 矿工需要通过不断尝试不同的 x 值来计算其 SHA-256 哈希值，直到找到一个满足 H(x) < 1000000 的值。
+- 这个过程需要大量计算资源，因为哈希函数的输出是随机分布的。
+- 这个问题涉及到工作量证明（PoW）机制，矿工通过解决难题来验证交易并创建新的区块。
+- 哈希函数和难度参数是 PoW 机制的核心部分，确保了网络的安全性和去中心化。
+
+假设在尝试了 500000 次之后，矿工找到一个 x = 500000，使得 SHA-256 哈希值 H(500000) = 999999。由于 999999 小于 1000000，矿工成功找到了一个解答，并可以将其提交给网络进行验证。
+
+### How to Add a Block to the Blockchain?
+
+矿工是负责验证和记录交易的网络节点。他们通过解决复杂的数学问题来创建新的区块，并因此获得比特币奖励。
+
+![1728141142011.png](https://pic.hanjiaming.com.cn/2024/10/05/dd1f0f47e21a9.png)
+
+在比特币网络中，每10分钟会创建一个新的区块，每个区块的大小通常小于1MB。这个时间间隔是通过调整挖矿难度来保持的。
+
+创世区块「genesis block」是比特币区块链中的第一个区块，由中本聪于2009年1月3日创建。它是整个比特币网络的起点。
+
+![1728141394598.png](https://pic.hanjiaming.com.cn/2024/10/05/5db4628c79f69.png)
+
+![1728141417484.png](https://pic.hanjiaming.com.cn/2024/10/05/c348932c87929.png)
+
+The good case: copies are consistent
+
+![1728141448321.png](https://pic.hanjiaming.com.cn/2024/10/05/d487575de0123.png)
+
+![1728141485074.png](https://pic.hanjiaming.com.cn/2024/10/05/0468c6eee350c.png)
+
+![1728141530048.png](https://pic.hanjiaming.com.cn/2024/10/05/9c451229db18a.png)
+
+![1728141550551.png](https://pic.hanjiaming.com.cn/2024/10/05/8a64f449dbd5a.png)
+
+![1728141577922.png](https://pic.hanjiaming.com.cn/2024/10/05/31dcfcc1678ad.png)
+
+### How to Post to the Blockchain?
+
+只需（通过互联网）将您的交易广播给矿工即可。希望他们能把它添加到下一个 **block**。
+
+矿工们有动力这样做。「the miners are incentivized to do it.」
+
+Important:
+
+- They never add an invalid transaction (e.g., double-spending transaction)
+- a chain with an invalid transaction is itself not valid, so no rational miner「理性矿工」 would do it.
+
+![1728142324261.png](https://pic.hanjiaming.com.cn/2024/10/05/5967378a5c54b.png)
+
+::: note Main Principles
+
+the system incentivizes「激励」them to do it
+
+- It is computationally hard to extend the chain.
+- Once a miner finds an extension (s) he broadcasts it to everybody.
+- The users will always accept "the longest chain" as the valid one.
+
+![1728142484981.png](https://pic.hanjiaming.com.cn/2024/10/05/76565171a8d6b.png)
+
+![1728142510639.png](https://pic.hanjiaming.com.cn/2024/10/05/1e6c5d528cd93.png)
+
+:::
+
+### What if there is a “Fork”?
+
+::: tip 相关定义
+
+区块链网络由多个节点组成，每个节点都保存着完整的区块链副本。节点可以是
+
+- 矿工（负责验证交易和生成新区块）或
+- 普通用户（负责发送和接收交易）
+
+**孤块**: 是指未被包含在最长链条中的区块。孤块通常是由于分叉或网络延迟导致的。
+
+**区块确认（Block Confirmation）**
+
+- 区块确认是指一个区块被添加到区块链并被网络中的节点接受的过程。
+- 通常情况下，区块链网络会等待多个区块确认以确保交易的最终性。
+
+:::
+
+**分叉是指区块链网络中出现多个有效链条的情况。**
+
+- 分叉可以是临时的（如链条的短暂分裂）或永久的（如硬分叉和软分叉）。
+- 硬分叉会导致协议的永久性改变，而软分叉则是向后兼容的协议更新。
+  - 硬分叉是指区块链协议的永久性改变，导致旧版本节点无法与新版本节点兼容。
+  - 硬分叉通常用于修复重大漏洞或添加新功能。
+  - 软分叉是指向后兼容的协议更新，旧版本节点仍然可以与新版本节点兼容。
+  - 软分叉通常用于改进协议或增加新功能。
+
+“Fork”: a situation where a single blockchain diverges「分裂」 into two separate branches
+
+The “**longest**” chain counts 「有效」. How long? A few slides later…
+
+![1728142777919.png](https://pic.hanjiaming.com.cn/2024/10/05/fca3d3afbea06.png)
+
+在较短的链条上工作有意义吗？**No!**
+
+- 因为其他人都在努力延长最长的链条。
+- 回想一下：我们假设大多数人都遵循协议。
+
+![1728143298193.png](https://pic.hanjiaming.com.cn/2024/10/05/e65ce75a7c0ff.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 其他定义
 
 **侧链**：侧链是一种与主链并行运行的区块链，它们允许资产在主链和侧链之间转移，提供了更高的可扩展性和灵活性。
