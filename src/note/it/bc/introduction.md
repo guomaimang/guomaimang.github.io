@@ -383,3 +383,51 @@ Main Problem with Digital Money -> Double spending…
 
 <img src="https://pic.hanjiaming.com.cn/2024/10/05/6c9491d78cc79.png" alt="1728137801937.png" style="zoom: 50%;" />
 
+用户模拟一个包含交易列表的公共只写（准确地说，只追加）公告板「bulletin-board」
+
+一笔交易（允许 >1 个输出）的形式如下：
+
+- User P1 transfers some coins at #16fab13fc6890 to user P2
+- User P1 transfers remaining coins at #16fab13fc6890 to user P3
+
+![1728138966457.png](https://pic.hanjiaming.com.cn/2024/10/05/26e8dd9ec4e08.png)
+
+Transaction Table: the Bitcoin Blockchain
+
+![1728139157456.png](https://pic.hanjiaming.com.cn/2024/10/05/4efd81489e783.png)
+
+### Who Maintains the Bitcoin Blockchain?
+
+Bulletin-Board “Emulation”
+
+![1728139265308.png](https://pic.hanjiaming.com.cn/2024/10/05/8a148e2b5e14d.png)
+
+- **Main difficulty:** Some parties can cheat.
+- Classical result: emulation is possible if the “majority is honest.”
+- *e.g.*, for 5 players, we can tolerate at most 2 “cheaters” at any time
+
+::: info 权限网络与无权限网络
+
+- 权限网络（Permissioned Network）是指只有经过授权的节点才能参与网络和共识过程。
+- 而无权限网络（Permissionless Network）则允许任何人加入和参与共识，这种开放性虽然提高了网络的去中心化程度，但也增加了受到Sybil攻击的风险。
+
+:::
+
+::: info Sybil攻击
+
+- Sybil攻击是一种网络攻击方式，攻击者通过创建多个虚假身份来控制网络中的大部分节点，从而影响共识过程。
+- 在区块链网络中，Sybil攻击可以导致恶意节点控制账本的更新，从而篡改交易记录。
+
+:::
+
+**Every transaction is broadcasted to all users**: 在区块链网络中，每笔交易都会广播给所有节点。这意味着所有节点都能看到并验证交易，从而确保交易的透明性和可靠性。
+
+![CleanShot 2024-10-05 at 22.52.03@2x.png](https://pic.hanjiaming.com.cn/2024/10/05/df589a445bf0a.png)
+
+Works well if all users are honest but this is not the case in practice because “sybil” can appear “for free” in a permissionless network.
+
+## 其他定义
+
+**侧链**：侧链是一种与主链并行运行的区块链，它们允许资产在主链和侧链之间转移，提供了更高的可扩展性和灵活性。
+
+**分片技术**：分片技术是一种提高区块链网络可扩展性的方法。通过将数据分割成更小的部分（分片），并将这些分片分配给不同的节点进行处理，从而提高了网络的处理能力和效率。
