@@ -28,7 +28,7 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "Legends never die.",
+  footer: "Legends never die | Serving since 2011.",
 
   displayFooter: true,
 
@@ -42,7 +42,7 @@ export default hopeTheme({
     },
     avatar: "/avatar.png",
     roundAvatar:false,
-    description: "香港中文大学 在读信息工程研究生 <br> 香港理工大学 计算机学士学位<br> 研究信息系统, 云计算",
+    description: "香港中文大学 信息工程研究生 <br> 香港理工大学 计算机学士学位<br> 研究信息系统, 云计算",
     intro: "/myself.html",
     articlePerPage: 6,
   },
@@ -67,9 +67,9 @@ export default hopeTheme({
        */
        provider: "Giscus",
        repo: "guomaimang/guomaimang.github.io",
-       repoId: "MDEwOlJlcG9zaXRvcnkzMjU5Njk1MzQ=",
+       repoId: "R_kgDOMx4M7Q",
        category: "Announcements",
-       categoryId: "DIC_kwDOE23mfs4COFlm",
+       categoryId: "DIC_kwDOMx4M7c4CjFI9",
 
       /**
        * Using twikoo
