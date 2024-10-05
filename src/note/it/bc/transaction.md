@@ -97,6 +97,22 @@ A 创建一笔交易，该交易包含以下信息：
 1. **区块奖励（Block Reward）**：每成功挖掘一个新区块，矿工会获得一笔固定的比特币奖励（这个奖励每四年减半，目前是 6.25 BTC）。
 2. **交易费用（Transaction Fees）**：区块中包含的所有交易的费用总和。
 
+::: tip Bitcoin difficulty adjustment algorithm
+
+210000 (50 + 25 + 12.5 + ...) -> 21,000,000
+
+- 难度会根据硬件性能调整，以确保区块生成时间大约为10分钟。
+- 通过不断减半的奖励机制，最终比特币的总供应量会接近2100万个。
+- The Bitcoin difficulty adjustment algorithm is programmed and automatically executed based on this predefined schedule.
+
+:::
+
+Advantages:
+
+- It provides **incentives** to be a miner.
+- It makes the miners interested in **broadcasting new block** asap.
+- When all coins had been mined -> only transaction fee.
+
 ### 交易费用
 
 每笔比特币交易除了转账金额外，还可以包含一个**交易费用（Transaction Fee）**。这个费用是用户支付给矿工的报酬，作为矿工将该交易打包进区块的激励。

@@ -549,17 +549,114 @@ The “**longest**” chain counts 「有效」. How long? A few slides later…
 
 ![1728143298193.png](https://pic.hanjiaming.com.cn/2024/10/05/e65ce75a7c0ff.png)
 
+Consequences
+
+- The system should quickly self-stabilize.
+- **If there is a fork, then one branch will quickly die.**
+  - 如果区块链系统中出现分叉，一个分支会迅速失去竞争力而被淘汰。
+  - 通常，这个过程是通过矿工的选择来实现的，矿工会选择最长的链或累积工作量最大的链来继续挖矿。
+- This is later known as “Nakamoto consensus.”
+
+what if your transaction ends up in a “dead branch”? to be sure that it doesn’t happen wait 6 blocks.
+
+- 死分支”指的是那些在分叉竞争中失败的分支，这些分支上的交易可能不会被主链承认。
+- 建议：为了确保你的交易不会落在“死分支”上，建议等待6个区块的确认。
+- 比特币系统中，通常需要等待6个区块（大约1小时）来确保交易的最终性，因为在这段时间内，分叉的可能性会大大降低。
+
+::: tip 中本聪共识（Nakamoto Consensus）
+
+这是比特币中使用的共识机制，通过工作量证明（PoW，Proof of Work）来确保区块链的安全和一致性。
+
+中本聪共识的一个重要特性是它能够自我稳定，即使出现分叉，最终也会有一个分支占据主导地位。
+
+:::
+
+![1728145440365.png](https://pic.hanjiaming.com.cn/2024/10/06/2f29ee2c6d7d3.png)
+
+To reverse transactions, an adversary has to create a “fork in the past.”
+
+- “分叉”是指区块链从某个区块开始分成两条或多条链
+- 攻击者需要重新挖掘一个新的链条来覆盖原来的链条。
+
+如果攻击者只有少量的计算能力，这看起来非常困难（诚实的矿工将始终领先于他）。
+
+- 因为大多数矿工都是诚实的，他们共同的计算能力远远超过攻击者，使得攻击者无法赶上主链。
+- 这提供了安全性，但也是去中心化的一个“缺点”。
+- 去中心化使得攻击变得困难，但也意味着需要大量的计算资源来维持网络的安全。
+
+假设当前主链有1000个区块，攻击者选择第900个区块作为分叉点。攻击者需要重新挖掘100个区块，并且在其他矿工挖掘新块的同时，攻击者需要保持领先。这需要巨大的计算能力和时间，因此在实际中非常困难。
+
+除了工作量证明，还有其他共识机制，如权益证明（Proof of Stake）、授权股权证明（Delegated Proof of Stake）等。这些机制在不同的区块链网络中有不同的应用。
+
+:::
+
+### Problems with Bitcoin’s PoW
+
+![1728145837886.png](https://pic.hanjiaming.com.cn/2024/10/06/a9ff727ad7084.png)
+
+Drawbacks of Hardware Mining
+
+- Makes the whole process “non-democratic.”
+- Easier to attack by very powerful adversary?
+- Excludes some applications (mining as “micropayment’’).
+- Is it the price we must pay for security against sybils/botnets?
+
+假设Alice和Bob都参与了一个基于PoS的区块链网络。Alice持有100个单位的加密货币，而Bob持有50个单位。现在需要验证一笔交易并生成一个新块。
+
+在PoS机制下，Alice和Bob的挖矿权利与他们持有的加密货币数量成正比。Alice持有更多的货币，因此她有更高的概率获得验证交易的权利。
+
+1. 计算Alice和Bob的总持币量：100 + 50 = 150。
+2. 计算Alice和Bob的挖矿概率：
+   - Alice的概率 = 100 / 150 = 2/3。
+   - Bob的概率 = 50 / 150 = 1/3。
+3. 系统随机选择一个矿工进行验证，Alice有2/3的概率被选择，Bob有1/3的概率被选择。
+4. 选择的矿工验证交易并生成新块，获得相应的奖励。
+
+假设系统选择了Alice进行验证，Alice成功验证交易并生成新块，获得奖励。Alice的持币量增加，下一次她的挖矿概率也会增加。
+
+### Alternatives to PoW
+
+Virtual Mining idea
+
+- stop investing in new equipment for mining
+- allocate power according the BTC$ miner holds
+- now votes to agree on a new block ∝ BTC holds
+
+::: info 虚拟挖矿
+
+- 虚拟挖矿是一种替代传统挖矿的新概念，旨在减少对物理设备和电力的依赖。通过分配虚拟资源来进行挖矿。
+- **虚拟挖矿的核心思想是分配计算能力或投票权，**而不是依赖于物理挖矿设备。
+
+权益证明（PoS）：
+
+- PoS是一种替代PoW的共识机制，矿工的挖矿权利与其持有的加密货币数量成正比。持币越多，获得验证交易和添加新块的机会越大。
+- PoS的优势在于减少了能源消耗，因为它不需要大量的计算资源。
+
+其他替代共识机制：
+
+- 除了PoS，还有其他替代共识机制，如空间证明（PoSpace）和知识证明（PoK）。这些机制都有各自的特点和应用场景。
+
+:::
 
 
 
+![1728146015581.png](https://pic.hanjiaming.com.cn/2024/10/06/d3b8f99f4eaf1.png)
 
+![1728146066560.png](https://pic.hanjiaming.com.cn/2024/10/06/6d4e46901b3a4.png)
 
+:::  details 更多共识机制
 
+**Delegated Proof of Stake (DPoS)**：DPoS是PoS的一种变种，持币者可以投票选出代表进行区块验证。这种机制提高了区块链网络的效率和去中心化程度。
 
+**Proof of Burn (PoB)**：PoB是一种通过“烧毁”加密货币来获得挖矿权利的机制。矿工将一部分加密货币发送到一个不可访问的地址，以此证明其诚意。
 
+**Proof of Authority (PoA)**：PoA是一种基于身份验证的共识机制，只有经过验证的节点可以生成新块。**这种机制适用于私有区块链。**
 
+**Proof of Elapsed Time (PoET)**：PoET是一种基于时间的共识机制，矿工需要等待随机分配的时间后才能生成新块。**这种机制主要用于英特尔的区块链平台。**
 
+**Proof of Importance (PoI)**：PoI是一种基于网络活动和持币量的共识机制，矿工的权利与其在网络中的活跃程度和持币量相关。NEM是使用PoI的代表性加密货币。
 
+:::
 
 ## 其他定义
 
