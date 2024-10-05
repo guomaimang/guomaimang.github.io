@@ -278,9 +278,13 @@ Blockchain as Data Structure/Ledger 「分类帐」
 
 ## CAP and PACELC Theorem
 
-CAP 定理是由计算机科学家 Eric Brewer 提出的，指出在一个分布式系统中，不可能同时满足**一致性（Consistency）、可用性（Availability）和分区**容忍性（Partition Tolerance）这三个特性。**只能选择其中的两个。**
+CAP 定理是由计算机科学家 Eric Brewer 提出的，指出
 
-例如，在网络分区的情况下，系统必须在一致性和可用性之间做出权衡。
+>  在一个分布式系统中，不可能同时满足**一致性（Consistency）、可用性（Availability）和分区**容忍性（Partition Tolerance）这三个特性。**只能选择其中的两个。**
+>
+> 在网络分区（Partition Tolerance）发生时，一个分布式系统无法同时保证一致性和可用性。
+
+例如，**在网络分区的情况下，系统必须在一致性和可用性之间做出权衡。**
 
 <img src="https://pic.hanjiaming.com.cn/2024/10/05/6eb4b8cadc15b.png" alt="1728117452677.png" style="zoom:50%;" />
 
@@ -291,11 +295,11 @@ CAP 定理是由计算机科学家 Eric Brewer 提出的，指出在一个分布
 - 可用性（Availability）：每个请求都能收到一个（成功或失败的）响应。
   - 可用性指的是系统在任何时候都能够响应用户的请求，即使部分节点出现故障。
   - 系统必须确保即使在某些节点不可用的情况下，仍能提供服务。
-- 网络分区（Partition Tolerance）：系统能够在任意网络分区的情况下继续运行。
-  - 网络分区指的是由于网络故障，分布式系统的节点被分成了多个互相无法通信的部分。
-  - 分区容忍性要求系统能够在网络分区的情况下继续运行，即使这意味着可能需要在一致性和可用性之间做出选择。
+- 分区容忍性（Partition Tolerance）：系统能够在任意网络分区的情况下继续运行。
+  - **网络分区指的是由于网络故障，分布式系统的节点被分成了多个互相无法通信的部分。**
+  - 分区容忍性要求系统能够在网络分区的情况下继续运行，**即使这意味着可能需要在一致性和可用性之间做出选择。**
 
-::: tip 区别: 可用性 和 网络分区
+::: tip 区别: 可用性 和 分区容忍性
 
 1. **关注点不同**：
    - **可用性**：关注系统在任何情况下都能响应请求的能力。
@@ -308,7 +312,9 @@ CAP 定理是由计算机科学家 Eric Brewer 提出的，指出在一个分布
    - **分区容忍性**：在 CAP 定理中，分区容忍性是指系统能够在网络分区的情况下继续运行。
 4. 关键词
    - **可用性**：负载均衡，本地冗余
-   - **分区容忍性**：区块链，RAID，分布式系统
+   - **分区容忍性**：区块链，分布式系统
+
+:::
 
 ## Why Blockchains solution
 
@@ -325,5 +331,139 @@ For distributed systems, in case of partition:
   - 选择一致性的话，系统需要等待所有分区的数据更新完成；
   - 选择可用性的话，系统可以立即提供本地副本的数据。
 
+::: info 案例分析
 
+假设一个分布式银行账户系统，用户可以在多个分支机构进行存取款操作。**当网络分区发生时，不同分支机构之间无法通信。**
 
+- <u>**选择一致性**：系统会等待所有分支机构的数据同步完成后再处理请求。</u>
+  - 例如，如果用户在A分行存款，系统会等待该操作在B分行也被确认后才更新用户的账户余额。
+  - 这可能导致用户在网络分区期间无法进行存取款操作，但可以确保所有分支机构的账户余额是一致的。
+- **选择可用性**：系统会立即在本地分支机构处理用户的存取款请求。
+  - 例如，如果用户在A分行存款，A分行会立即更新用户的账户余额，而不等待B分行的确认。
+  - 这可以确保用户在网络分区期间仍然能够进行存取款操作，但可能导致A分行和B分行的账户余额不一致。
+
+假设一个分布式社交媒体平台，用户可以在不同服务器上发布和查看帖子。当网络分区发生时，不同服务器之间无法通信。
+
+- **选择一致性**：系统会等待所有服务器的数据同步完成后再显示帖子。
+  - 例如，如果用户在服务器A上发布帖子，系统会等待该帖子在服务器B上也被确认后才显示给其他用户。
+  - 这可能导致用户在网络分区期间无法看到最新的帖子，但可以确保所有用户看到的帖子是一致的。
+- <u>**选择可用性**：系统会立即在本地服务器上显示用户发布的帖子，而不等待其他服务器的确认。</u>
+  - 这可以确保用户在网络分区期间仍然能够看到和发布帖子，但可能导致不同服务器上的用户看到的帖子不一致。
+
+:::
+
+## Blockchain Features
+
+### Probabilistic Consensus
+
+概率共识是一种共识机制，它通过概率方式达成节点之间的一致意见。
+
+- 不同于绝对共识，概率共识允许在某些情况下节点之间存在短暂的不一致
+- 但随着时间的推移，这种不一致的概率会逐渐降低，最终趋近于零。
+
+在某些时刻，一些节点可能会对账本中存储的信息有“不同步”的视图。
+
+- 由于网络延迟或节点故障，分布式系统中的各个节点可能不会立即对某些交易达成一致，这种情况在概率共识机制中尤为常见。
+
+### with fully-replicated state
+
+完全复制状态意味着系统中的每个节点都保存着整个账本的完整副本。这确保了即使某些节点失效，系统仍然能够通过其他节点恢复数据。
+
+- provides “resilience”
+  - 指的是系统具有很强的抗攻击性和容错性
+  - 即使部分节点失效或受到攻击，系统仍然能够继续运行并保持数据的一致性和完整性。
+
+::: tip
+
+一位分布式计算研究人员可能会告诉你，区块链并不是“分布式”的，因为完全复制所有数据在某种程度上是低效、stupid 的。
+
+在传统的分布式系统中，数据通常是分片存储的，而不是每个节点都保存全部数据。
+
+:::
+
+### via cryptographic techniques
+
+unforgeable signature certifying “immutable” payments
+
+- 不可伪造的签名认证“不可变”的支付。
+- 区块链使用数字签名来验证交易的合法性，一旦交易被记录在区块链上，就无法被篡改。
+
+### and economics incentive
+
+need to “pay” to join, defend against sybil (“admission control”)
+
+- 需要“支付”才能加入，防御女巫攻击（“准入控制”）。
+- 为了防止恶意节点的加入，**区块链系统通常要求新节点支付一定的费用（如矿工费）**
+- 这有助于防御女巫攻击（即通过大量创建虚假身份来攻击网络）。
+
+“reward” those who helps maintaining/verifying the ledger
+
+- “奖励”那些帮助维护/验证账本的人。
+- 区块链系统通过提供经济奖励（如比特币）来鼓励矿工和节点参与账本的维护和验证。
+
+::: info An interdisciplinary subject
+
+- How to reach consensus among the operators「如何在运营商之间达成共识？」?
+- Distributed computing
+- (that can be considered as what bitcoin avoided)
+- turns out「事实证明」 we still need it for a “faster” blockchain「事实证明我们仍然需要它来实现“更快”的区块链」
+- How to enforce “admission control” (not to admit sybils)?
+- How to ensure verifiability「可验证性」 (while ensuring privacy)
+- Cryptography
+- How to incentivize「激励」 the operators and demotivate「抑制」 attacks?
+- Economy
+
+:::
+
+## FAQ
+
+- 问：如何确保不变性和“适当”的访问控制？
+- A：通过验证（问：由谁验证？A：每个人）
+- 问：当每个人都可以验证一切时，这有什么不好？
+  - A：隐私丧失（问：有什么解决方案吗？A：隐私 - 增强技术。）
+  - 但是，隐私权是基本人权，维护着我们的尊严。
+  - 这不是黑白分明的——“负责任的隐私”的概念是存在的。
+  - Regulation technology “RegTech” *e.g.*, Anti money laundering (AML)
+- 问：如果记录不可变，如何删除它？
+- A:  （孩子！）色情、私人（被盗）信息
+- 问：“可编辑”区块链
+- A:（问：谁可以编辑？答：“许可”环境中的“受托人”）
+
+## Application
+
+### Digital currency
+
+数字货币作为第一个应用
+
+- Current largest: Bitcoin (2009), Ethereum (2015)
+- 全球：任何有互联网连接的人都可以访问
+
+### Smart-Contract
+
+- If we can ask an “operator” to help in verifying others’ transactions, can we ask for more, *e.g.*, executing some code?
+- 这就引出了智能合约的概念（但它有多 "智能 "呢？）
+- 区块链计算机：完全可编程的环境 ⟹ 管理数字资产和金融资产的公共程序
+- 可组合性「Composability」：在链上运行的应用程序可相互调用
+
+### Decentralized Applications (DApps)
+
+- DeFi: financial instruments managed by public programs
+  - stablecoins「稳定币」, lending「贷款」, exchanges , etc.
+- Asset management or non-fungible tokens (NFTs)
+  - 如艺术品、游戏资产、域名等。
+- ▪ 去中心化组织 (DA Os) 或去中心化治理
+  - e.g., investment, for donations, for collecting art, etc.
+
+### Further Applications
+
+- 最有名的去中心化应用程序可能还是 Cryptokitties？
+- ▪ If those operators are “random” peers over the whole Internet, can we enable new collaborative / decentralized apps?
+  - Crowdsourcing (众包) / Sharing economy app (*e.g.*, Uber)
+- If we can securely transfer even money in such a P2P setting, can we enable new “secure” decentralized application?
+  - Gambling / Voting / “Secure multi-party computation”「安全多方计算」
+  - Cryptographic tech. needed to ensure the security of the app.
+- Secure coding needed to ensure the implementation is secure
+
+![1728124433771.png](https://pic.hanjiaming.com.cn/2024/10/05/20bcd61a5a65b.png)
+
+![1728124456862.png](https://pic.hanjiaming.com.cn/2024/10/05/968eba7e42daf.png)
