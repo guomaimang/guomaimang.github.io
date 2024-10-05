@@ -64,11 +64,12 @@ features:
 
 
 copyright: false
-footer: MIT Licensed | 2012-Present HongShu
+footer: GPLv3 Licensed | Serving since 2011.
 ---
 
 <h6 style="text-align:center">
-HongShu's Research and Projects Page.
+Hirsun's Research and Projects Page.
 <br>
 Content for Reference Only, not Final Evidence.
 </h6>
+

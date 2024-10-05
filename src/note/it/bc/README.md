@@ -9,7 +9,7 @@ category:
 
 ---
 
-# What is Blockchain
+# Blockchain
 
 1. introduces the basic underlying cryptographic concepts of blockchain 
    as a powerful tool 
@@ -275,3 +275,55 @@ Blockchain as Data Structure/Ledger 「分类帐」
   - Peer-to-peer (P2P) setting: nodes can go offline anytime
   - Sybil (“fake” identities) exist, and they are malicious
   - In the Internet scale (many one can help, many bad guys too)
+
+## CAP and PACELC Theorem
+
+CAP 定理是由计算机科学家 Eric Brewer 提出的，指出在一个分布式系统中，不可能同时满足**一致性（Consistency）、可用性（Availability）和分区**容忍性（Partition Tolerance）这三个特性。**只能选择其中的两个。**
+
+例如，在网络分区的情况下，系统必须在一致性和可用性之间做出权衡。
+
+<img src="https://pic.hanjiaming.com.cn/2024/10/05/6eb4b8cadc15b.png" alt="1728117452677.png" style="zoom:50%;" />
+
+- 一致性（Consistency）：所有节点在同一时间看到相同的数据。
+  - 一致性指的是在分布式系统中的所有节点在同一时间看到的数据是相同的。
+  - 即，当一个节点更新数据后，所有其他节点立即看到这个更新
+  - 这是一个强一致性的概念。
+- 可用性（Availability）：每个请求都能收到一个（成功或失败的）响应。
+  - 可用性指的是系统在任何时候都能够响应用户的请求，即使部分节点出现故障。
+  - 系统必须确保即使在某些节点不可用的情况下，仍能提供服务。
+- 网络分区（Partition Tolerance）：系统能够在任意网络分区的情况下继续运行。
+  - 网络分区指的是由于网络故障，分布式系统的节点被分成了多个互相无法通信的部分。
+  - 分区容忍性要求系统能够在网络分区的情况下继续运行，即使这意味着可能需要在一致性和可用性之间做出选择。
+
+::: tip 区别: 可用性 和 网络分区
+
+1. **关注点不同**：
+   - **可用性**：关注系统在任何情况下都能响应请求的能力。
+   - **分区容忍性**：关注系统在网络分区（通信中断或延迟）的情况下仍能继续运行。
+2. **实现方式不同**：
+   - **可用性**：通过冗余、故障转移、负载均衡等手段来实现。
+   - **分区容忍性**：通过设计系统在网络分区情况下仍能继续运行（可能会影响一致性或可用性）。
+3. **CAP 定理中的角色**：
+   - **可用性**：在 CAP 定理中，可用性是指系统能够在任意时间点响应请求。
+   - **分区容忍性**：在 CAP 定理中，分区容忍性是指系统能够在网络分区的情况下继续运行。
+4. 关键词
+   - **可用性**：负载均衡，本地冗余
+   - **分区容忍性**：区块链，RAID，分布式系统
+
+## Why Blockchains solution
+
+为什么选择区块链解决方案？
+
+- 区块链是一种分布式账本技术，它通过去中心化和加密技术来确保数据的安全性和透明性。
+- 区块链特别适用于需要高可靠性和防篡改的数据存储和传输场景。
+
+For distributed systems, in case of partition:
+
+- 当网络分区发生时，系统的节点被分割成无法互相通信的部分，
+- 这时系统需要在一致性和可用性之间做出选择：我们可以选择一致性或可用性。
+- 要么等待其他分区更新，要么提供本地副本。
+  - 选择一致性的话，系统需要等待所有分区的数据更新完成；
+  - 选择可用性的话，系统可以立即提供本地副本的数据。
+
+
+

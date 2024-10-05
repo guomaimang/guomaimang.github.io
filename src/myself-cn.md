@@ -2,7 +2,7 @@
 icon: fa-solid fa-user-graduate
 article: false
 date: 2022-03-12
-footer: Legends never die. 
+footer: Legends never die | Serving since 2011.
 comment: false 
 sidebar: false
 breadcrumb: false
