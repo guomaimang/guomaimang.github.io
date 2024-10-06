@@ -218,4 +218,47 @@ Intents are **messaging objects** for requesting an action. Three fundamental us
 - 启动一个Activity: Activity是应用中的一个屏幕，可以使用startActivity()或startActivityForResult()方法来调用。
 - 启动一个Service: Service是一个用于执行后台操作的组件，没有用户界面，可以使用startService()方法来调用。
 - To deliver a broadcast: 广播是一种消息，系统中的任何应用都可以接收，可以使用sendBroadcast()方法来调用。
-- 
+
+Intent对象包含的信息用于让Android系统决定应该启动哪个应用和组件。Intent对象是Android系统中不同组件之间进行通信的桥梁。
+
+通常，**一个Intent包含四个主要的信息部分**。这四个部分共同决定了Intent的行为和目标组件:
+
+- Component name
+- Action
+
+### Component name
+
+- 组件名称是指要启动的组件。例如，`hk.edu.cuhk.ie.iems3321.w4.MainActivity` 表示具体的Activity。
+- 组件名称是可选的，但如果你想创建一个显式的Intent，那么它是必须的。显式Intent明确指定了目标组件。
+- When this is omitted「省略的」, the Android system will determine which app and component it should invoke, based on the action parameter you provided「如果省略了组件名称，Android系统将根据你提供的动作参数来确定应该调用哪个应用和组件。这样就变成了隐式Intent。」
+
+### Action
+
+Action is **A string that specifies the action to perform**
+
+动作是一个字符串，用于指定要执行的操作
+
+- 你可以在Intent中指定自己的动作。这允许你定义自定义的行为。
+- Intent类提供了一组标准的动作，例如：
+  - ACTION_VIEW: For displaying some information to the user
+  - ACTION_SEND: For sending or sharing the data or information through another app
+- If it is an explicit intent, the action is optional
+
+
+
+
+
+
+
+
+
+
+
+
+
+::: info URI和MIME类型
+
+- URI（Uniform Resource Identifier）是一种通用的资源标识符，用于标识数据资源。
+- MIME（Multipurpose Internet Mail Extensions）类型用于表示数据的类型，例如“text/plain”表示纯文本。理解URI和MIME类型有助于理解Intent中的数据传递。
+
+:::
