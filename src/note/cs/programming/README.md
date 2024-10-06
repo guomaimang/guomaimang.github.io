@@ -13,6 +13,7 @@ index: false
 - [Javascript](javascript/) 连载中
 - [Python](python/Standard.html) 连载中
 - Golang
+- [Android](android) 连载中
 
 ## 主要语言体系
 

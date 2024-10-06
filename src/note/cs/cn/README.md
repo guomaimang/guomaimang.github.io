@@ -5,5 +5,5 @@ index: false
 
 ---
 
-# Computer NetWorking
+# Computer Networking
 

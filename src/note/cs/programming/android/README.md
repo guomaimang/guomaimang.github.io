@@ -1,11 +1,14 @@
 ---
-article: false
+article: true
 date: 2022-12-03
-order: 10
+index: true
+order: 0
 headerDepth: 2
+category:
+  - tech
 ---
 
-# Android 应用开发
+# Android
 
 Android 是一个基于Linux内核的操作系统。Android 是在 *Android* *Open Source* *Project*（AOSP）中开发的。这个项目是由谷歌领导的。
 
@@ -19,6 +22,16 @@ Android 操作系统可分为四个区域，如下图所示。 Android 应用程
 - Linux kernel - 底层硬件的通信层
 
 ## System Structure
+
+Android操作系统的架构分为五层：
+
+- 应用层
+- 应用框架层
+- 库层
+- Android运行时层
+- Linux内核层
+
+每一层都有特定的功能和作用。例如，应用层包含了用户直接使用的应用程序，而应用框架层提供了开发这些应用程序所需的API。
 
 <img src="https://pic.hanjiaming.com.cn/2022/10/21/abc5f24e86043.png" alt="1666285552943.png" style="zoom:50%;" />
 

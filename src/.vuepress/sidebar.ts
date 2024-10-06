@@ -14,6 +14,7 @@ export default sidebar({
   "/note/cs/programming/javascript/": "structure",
   "/note/cs/programming/java/": "structure",
   "/note/cs/programming/python/": "structure",
+  "/note/cs/programming/android/": "structure",
   "/note/cs/cn/": "structure",
   "/note/cs/cn/Java-Socket-Programming/": "structure",
 
