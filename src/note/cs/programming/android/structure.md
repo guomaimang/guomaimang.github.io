@@ -262,3 +262,5 @@ Action is **A string that specifies the action to perform**
 - MIME（Multipurpose Internet Mail Extensions）类型用于表示数据的类型，例如“text/plain”表示纯文本。理解URI和MIME类型有助于理解Intent中的数据传递。
 
 :::
+
+
