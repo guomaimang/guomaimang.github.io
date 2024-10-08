@@ -1,8 +1,8 @@
 ---
 article: false
-date: 2022-12-03
+date: 2024-10-08
 index: true
-order: 1
+order: 2
 headerDepth: 2
 
 ---
@@ -390,8 +390,6 @@ Each `<intent-filter>` element should contain one or more of these three sub-ele
 ```
 
 :::
-
-
 
 ## Jetpack Compose
 
