@@ -221,18 +221,22 @@ Intents are **messaging objects** for requesting an action. Three fundamental us
 
 Intent对象包含的信息用于让Android系统决定应该启动哪个应用和组件。Intent对象是Android系统中不同组件之间进行通信的桥梁。
 
-通常，**一个Intent包含四个主要的信息部分**。这四个部分共同决定了Intent的行为和目标组件:
+通常，**一个 Intent 包含四个主要的信息部分**。这四个部分共同决定了Intent 的行为和目标组件:
 
 - Component name
 - Action
+- Data
+- Extras
 
-### Component name
+### Component
+
+#### Component Name
 
 - 组件名称是指要启动的组件。例如，`hk.edu.cuhk.ie.iems3321.w4.MainActivity` 表示具体的Activity。
 - 组件名称是可选的，但如果你想创建一个显式的Intent，那么它是必须的。显式Intent明确指定了目标组件。
 - When this is omitted「省略的」, the Android system will determine which app and component it should invoke, based on the action parameter you provided「如果省略了组件名称，Android系统将根据你提供的动作参数来确定应该调用哪个应用和组件。这样就变成了隐式Intent。」
 
-### Action
+#### Action
 
 Action is **A string that specifies the action to perform**
 
@@ -244,17 +248,54 @@ Action is **A string that specifies the action to perform**
   - ACTION_SEND: For sending or sharing the data or information through another app
 - If it is an explicit intent, the action is optional
 
+#### Data
 
+- The data component contains the Uniform Resource Identifier (URI) 「统一资源标识符（URI）」referring to the data and/or the MIME type 「MIME类型」 of that data
+- The content is usually dependent on the action of the intent 「内容通常取决于Intent的动作」
+  - eg. `ACTION_EDIT`应该伴随一个指向要编辑文件的URI。
+- 要设置URI，调用`Intent.setData()`。
+- 要设置MIME类型，调用`Intent.setType()`。
+- 要同时设置URI和MIME类型，调用`Intent.setDataAndType()`。
 
+#### Extras
 
+Extras是键值对，用于将参数传递给要启动的Activity或服务。
 
+- 使用`Intent.putExtra(key, value)`来设置要传递的参数
+- Intent类定义了一些用于传递参数的标准键，例如：
+  - EXTRA_SUBJECT
+  - EXTRA_EMAIL
+  - EXTRA_TITLE
 
+::: details Example
 
+假设你正在开发一个电子邮件应用，你需要使用Intent来启动一个新的Activity以显示电子邮件内容。
 
+你需要传递电子邮件的主题、发件人和内容给新的Activity。
 
+```java
+// 创建Intent对象：
+Intent emailIntent = new Intent(this, DisplayEmailActivity.class);
 
+// 设置组件名称（显式Intent）
+emailIntent.setComponent(new ComponentName("com.example.emailapp", "com.example.emailapp.DisplayEmailActivity"));
 
+// 设置动作（可选）
+emailIntent.setAction(Intent.ACTION_VIEW);
 
+// 设置数据（URI和MIME类型）
+emailIntent.setDataAndType(Uri.parse("content://com.example.emailprovider/emails/1"), "message/rfc822");
+
+// 添加额外信息（键值对）
+emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Meeting Reminder");
+emailIntent.putExtra(Intent.EXTRA_EMAIL, "john.doe@example.com");
+emailIntent.putExtra(Intent.EXTRA_TEXT, "Don't forget our meeting at 10 AM tomorrow.");
+
+// 启动Activity
+startActivity(emailIntent);
+```
+
+:::
 
 ::: info URI和MIME类型
 
@@ -262,5 +303,140 @@ Action is **A string that specifies the action to perform**
 - MIME（Multipurpose Internet Mail Extensions）类型用于表示数据的类型，例如“text/plain”表示纯文本。理解URI和MIME类型有助于理解Intent中的数据传递。
 
 :::
+
+::: tip PendingIntent
+
+PendingIntent是一种特殊的Intent，允许其他应用在未来某个时间点代表你的应用执行某个操作。
+
+::: 
+
+### The App Chooser
+
+当你使用隐式Intent时，系统会根据Intent的描述来决定应该启动哪个应用程序。隐式Intent不指定目标组件，而是描述了要执行的操作。
+
+如果只有一个应用程序能够处理该Intent，系统会立即启动该应用程序。例如，如果你发送一个打开网页的Intent，并且设备上只有一个浏览器应用程序，那么这个浏览器会被直接启动。
+
+<img src="https://pic.hanjiaming.com.cn/2024/10/07/ee1cb9fcfb43f.png" alt="1_9GlRjKrab2n-B5tI0H0iQA.png" style="zoom:33%;" />
+
+如果有多个应用程序能够处理该Intent，系统会显示一个“App Chooser”对话框，让用户选择使用哪个应用程序来完成操作。例如，如果你发送一个分享文本的Intent，设备上有多个应用程序（如邮件、消息、社交媒体应用）能够处理这个Intent，系统会显示一个选择对话框。
+
+用户可以选择一个应用程序作为处理特定Intent的默认应用程序。例如，如果用户多次选择同一个应用程序来处理某个Intent，系统会提示用户是否要将这个应用程序设为默认。
+
+如果你希望每次使用该Intent时都显示“App Chooser”对话框，可以使用下面的代码来实现。这段代码创建了一个Intent并强制显示选择对话框。
+
+```java
+Intent intent = new Intent(Intent.ACTION_SEND);
+intent.setType("text/plain");
+intent.putExtra(Intent.EXTRA_TEXT, "这是要分享的文本内容");
+
+Intent chooser = Intent.createChooser(intent, "选择一个应用来分享文本");
+
+try {
+    startActivity(chooser);
+} catch (ActivityNotFoundException e) {
+    Toast.makeText(this, "没有应用程序可以分享文本", Toast.LENGTH_SHORT).show();
+}
+```
+
+### Intent Filters
+
+可以通过在 Android Manifest.xml 文件中声明 意图过滤器「Intent Filters」 来定义您的应用程序可以接收哪些 **隐式意图**。
+
+Each `<intent-filter>` element should contain one or more of these three sub-elements： `<action>、<data> 和 <category>`
+
+- `<action>` 元素指定了Intent的动作，例如"android.intent.action.VIEW"表示查看操作。
+- `<data>` 
+  - The URI scheme or the MIME type
+  - 元素指定了 Intent的数据类型或数据的位置，
+  - 例如"android:mimeType='text/plain'"表示纯文本类型的数据。
+- `<category>` 
+  - `<category>`：元素用于指定Intent的类别
+  - 你至少必须包 含CATEGORY_DEFAULT 类别，CATEGORY_DEFAULT是一个常见的类别，表示这是一个标准的隐式Intent。
+
+::: details Example
+
+我们希望我们的应用能够接收其他应用发送的文本数据，例如从一个文本编辑器中发送的文本。
+
+为了实现这一点，我们需要在AndroidManifest.xml文件中定义一个 `<intent-filter>`，使我们的应用能够接收ACTION_SEND类型的Intent，并且数据类型为"text/plain"。
+
+在AndroidManifest.xml文件中添加以下代码：
+
+```xml
+<intent-filter>
+    <action android:name="android.intent.action.SEND" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <data android:mimeType="text/plain" />
+</intent-filter>
+```
+
+当其他应用发送一个 `ACTION_SEND` 类型的 Intent，并且数据类型为"text/plain"时，我们的应用将能够接收并处理该 Intent。
+
+另一个案例是，如下所示的 `<data>` 元素告诉 Android 该组件可以从网络检索视频数据以执行操作：
+
+```xml
+<intent-filter>
+  
+  	 <!-- 这里的动作是 android.intent.action.VIEW，表示应用可以处理“查看”操作。这通常用于浏览网页、查看图片、播放视频等操作 -->
+     <action android:name="android.intent.action.VIEW"/>
+  
+     <data android:scheme="http" android:host="www.example.com"/>
+  	 
+     <!-- 这里的类别是 android.intent.category.DEFAULT。这是一个默认类别，表示这个意图过滤器可以处理默认的意图 -->
+     <category android:name="android.intent.category.DEFAULT"/>
+  
+     <!-- 这里的类别是 android.intent.category.BROWSABLE。这个类别允许其他应用通过浏览器的方式来启动你的应用，例如从网页链接中启动 -->
+     <category android:name="android.intent.category.BROWSABLE"/>
+</intent-filter>
+```
+
+:::
+
+
+
+## Jetpack Compose
+
+Jetpack Compose 是一个用于构建原生 Android UI 的现代工具包「 modern toolkit」。
+
+Jetpack Compose 是 Android Jetpack的一部分
+
+- **Jetpack组件**：如LiveData、ViewModel、Room等，简化了Android开发。
+- **Jetpack的目标**：提高开发效率、代码质量和应用性能。
+
+传统Android开发中，UI是通过View和ViewGroup来构建的。
+
+Jetpack Compose 通过减少代码量、提供强大的工具和直观的Kotlin API，简化并加速「accelerates」了Android上的UI开发。开发者可以用更少的代码实现更加复杂和灵活的UI。**Kotlin 是 Jetpack Compose的主要编程语言。**
+
+Jetpack Compose与其他Jetpack库（如Navigation、LiveData、ViewModel等）紧密集成。
+
+Jetpack Compose 现在是 Android Studio 中的默认“empty activity”。这意味着在创建新项目时，默认的模板会使用 Jetpack Compose 来构建UI。
+
+Why is Jetpack Compose getting more popular?
+
+- Declarative UI is cleaner, readable, and performant than Imperative UI.
+- Compose allows you to do more with less code compared to XML.
+  - 使用Compose可以用更少的代码实现更多功能，相比于使用XML布局文件。
+  - Compose通过Kotlin代码直接描述UI，减少了冗余代码和XML文件的使用。
+- Compose是直观的「Intuitive」，这意味着你只需要告诉Compose你想展示给用户什么。Compose会自动处理UI的更新和状态管理，使开发过程更加简单。
+- Compose is compatible「兼容」 with all your existing code: you can call Compose code from Views and Views from Compose. Also integrated with many Jetpack Libraries.
+- Compose improves your build time and APK size.
+
+:::  tip 声明式UI vs 命令式UI
+
+- 声明式UI 「Declarative UI」：这种方法强调描述UI应该是什么样子，而不是如何构建它。例如，Jetpack Compose和React都使用声明式UI。
+- 命令式UI「Imperative UI」：这种方法强调逐步构建UI的过程。例如，传统的Android开发使用XML布局文件和Java/Kotlin代码来逐步构建UI。
+
+:::
+
+In designing the UI, if you adopt the XML approach:
+
+- 你需要学习ViewGroup（视图组）、视图组件等。这意味着你要理解如何使用各种布局容器（如LinearLayout、RelativeLayout）来组织和管理视图，以及如何使用基本的视图组件（如TextView、Button）来构建界面。
+- 你需要学习RecyclerView，这是一个高级的视图组件，用于高效地显示大数据集。你需要理解如何创建适配器（Adapter）来绑定数据，如何定义视图持有者（ViewHolder）来缓存视图，以及如何管理RecyclerView的布局和动画。
+- 你需要学习如何动态地创建消息对象。这意味着你需要在代码中根据需求生成视图对象，并将数据绑定到这些视图中，而不是在XML中预先定义所有视图。
+
+However, if you adopt the compose approach:
+
+- 你需要学习 LazyColumn 和消息UI/数据对象。LazyColumn是Compose中的一个组件，用于高效地显示列表数据。你需要理解如何使用LazyColumn来创建和管理列表项，以及如何将数据绑定到这些列表项中。
+- 剩下的时间，你可以用来改进用户体验和构建额外的功能。Compose简化了UI开发流程，使得你可以将更多的精力放在优化用户体验和添加新功能上，而不是花费大量时间在学习和管理复杂的视图结构上。
+
 
 

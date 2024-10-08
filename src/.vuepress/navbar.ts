@@ -61,7 +61,7 @@ export default navbar([
         ],
       },
       {
-        text: "IT Management",
+        text: "IT & Management",
         icon: "emmet",
         prefix: "it/",
         children:[
