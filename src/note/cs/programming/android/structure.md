@@ -436,5 +436,96 @@ However, if you adopt the compose approach:
 - 你需要学习 LazyColumn 和消息UI/数据对象。LazyColumn是Compose中的一个组件，用于高效地显示列表数据。你需要理解如何使用LazyColumn来创建和管理列表项，以及如何将数据绑定到这些列表项中。
 - 剩下的时间，你可以用来改进用户体验和构建额外的功能。Compose简化了UI开发流程，使得你可以将更多的精力放在优化用户体验和添加新功能上，而不是花费大量时间在学习和管理复杂的视图结构上。
 
+`@Composable` 注解通知 Compose 编译器，带有此注解的函数旨在将数据转换为用户界面
+
+`@Preview` 注解告诉 Android Studio 该可组合函数应显示在此文件的设计视图中。你可以在编辑时看到可组合预览的实时更新
+
+### LazyColumn and LazyRow
+
+在 Jetpack Compose 中，Column 和 Row 是两种基本的布局组件。
+
+Column 垂直排列其子组件，而 Row 水平排列其子组件。虽然它们适用于少量固定数量的组件，但当需要显示大量数据时，使用这些布局可能会导致性能问题。
+
+如果你需要显示大量项目（或长度未知的列表），使用像 Column 这样的布局会导致性能问题，因为所有项目都会被渲染和布局，不论它们是否可见。Column 会一次性渲染所有项目，这在项目数量较多时会导致内存消耗过大和界面卡顿。
+
+Compose 提供了一组只渲染和布局视图端口内可见项目的组件，例如 LazyColumn 和 LazyRow。这意味着它们只会渲染当前屏幕上可见的项目，从而大幅提升性能。
+
+LazyColumn 是一个垂直滚动的列表，它只会渲染和布局当前可见的项目。这与 Android 视图系统中的 RecyclerView 类似，但 LazyColumn 是 Jetpack Compose 的原生组件，使用起来更加简洁和高效。
+
+在移动开发中，性能优化非常重要。使用 LazyColumn 和 LazyRow 可以显著减少内存使用和提高渲染速度，因为它们只会渲染当前可见的项目，而不是整个列表。
+
+::: tip RecyclerView
+
+RecyclerView 是 Android 视图系统中的一个组件，用于高效显示大量数据项。它通过重用视图来减少内存消耗和提高性能。LazyColumn 和 LazyRow 类似于 RecyclerView，但它们是 Jetpack Compose 的原生组件。
+
+:::
+
+### 记忆机制
+
+在 Jetpack Compose 中，remember API 用于在重组期间保存状态。它确保在 UI 重新组合时，状态不会丢失。
+
+理解 remember 的工作机制对于有效管理状态至关重要。
+
+State in an app is any value that can change over time. For example:
+
+- A blog post and associated comments: 博客文章的内容和评论是动态的，可能会随着用户的输入和交互而变化。
+- Ripple animations on buttons that play when a user clicks them: 当用户点击按钮时播放的波纹动画。这种动画效果是动态的，取决于用户的操作。
+
+组合函数「Composable functions」可以使用 remember API 将对象存储在内存中。remember 是 Jetpack Compose 中的一个函数，用于在重组期间保存状态。
+
+由 remember 计算的值在初始组合期间存储在组合中，并在重新组合期间返回存储的值。这意味着在界面重新绘制时，状态不会丢失。
+
+```
+interface MutableState<T> : State<T> {
+    override var value: T
+}
+```
+
+这是一个接口定义，MutableState 是一个泛型接口，它继承自 State 接口，并重写了 value 属性。value 属性可以改变，是可变的状态。
+
+There are three ways to declare a MutableState object in a composable
+
+- `val mutableState = remember { mutableStateOf(default) }`
+
+  使用 remember 和 mutableStateOf 函数创建一个可变状态对象。
+
+- `var value by remember { mutableStateOf(default) }`
+
+  使用 Kotlin 的委托属性语法和 remember 创建一个可变状态对象。
+
+- `val (value, setValue) = remember { mutableStateOf(default) }`
+
+  使用解构语法和 remember 创建一个可变状态对象。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
