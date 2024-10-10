@@ -7,7 +7,7 @@ headerDepth: 1
 
 ---
 
-# BTC Smart Contract
+# BTC Transaction
 
 ## How Bitcoin works
 
