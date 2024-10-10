@@ -24,7 +24,7 @@ Digital Signature
 
 ### Wallet for Managing Keys
 
-- Public key can be used as the receipt address
+- **Public key can be used as the receipt address**
 - Private key is needed to spend (send) a coin to an address
   「私钥是花费（发送）加密货币到一个地址所需的。」
   私钥是一串字符，必须保密，用于签署交易并发送加密货币。
@@ -83,8 +83,6 @@ Private key should be random, long, and kept secret -> difficulty for brute-forc
 
 ![1728550183075.png](https://pic.hanjiaming.com.cn/2024/10/10/ca0db05919b92.png)
 
-## Transactions in a Block
-
 Transactions need to be included in a Block
 
 <img src="https://pic.hanjiaming.com.cn/2024/10/10/1e2f252d84b1c.png" alt="1728552404947.png" style="zoom: 67%;" />
@@ -103,9 +101,109 @@ Transactions need to be included in a Block
    - 交易#1：Alice 使用了 Joe 给她的UTXO，产生了一个新的UTXO，属于 Bob。
    - 交易#2：Bob 使用了 Alice 给他的UTXO，产生了两个新的UTXO，一个属于 Gopesh，一个属于 Bob。
 
+::: details 详细过程
 
+每次交易会消耗现有的UTXO（变为STXO），并生成新的UTXO。通过这种方式，区块链能够追踪每个交易输出的状态，确保每个UTXO只能被花费一次，从而保证交易的完整性和防止双花攻击。
 
+1. **初始状态**：
+   - 区块链包含交易#0。
+   - UTXO 集合：Joe 和 Alice 各有一个UTXO。
+2. **交易#1**：
+   - Alice 使用 Joe 给她的UTXO（此时 Joe 的UTXO变为STXO）。
+   - Alice 创建一个新的UTXO，给 Bob。
+   - UTXO 集合：Alice 的UTXO被花费，Bob 新增一个UTXO。
+3. **交易#2**：
+   - Bob 使用 Alice 给他的UTXO（此时 Alice 的UTXO变为STXO）。
+   - Bob 创建了两个新的UTXO，一个给 Gopesh，一个给自己。
+   - UTXO 集合：Bob 的UTXO被花费，新增 Gopesh 和 Bob 的UTXO。
 
+:::
 
+## Bitcoin Transaction
 
+Input (vin, “witness”): 输入部分（vin，见证）是指交易的输入端，包含了交易的来源信息。
 
+- Transaction ID：交易ID是指交易的唯一标识符
+- scriptSig (unlocking script)：scriptSig是解锁脚本，提供了花费比特币的证据；证明了交易的所有权，包含了签名和公钥。
+- sequence：sequence是指交易的序列号，用于交易的排序。
+
+Output (vout, “Spending condition”): 输出部分（vout，花费条件）是指交易的输出端，包含了比特币的接收信息。
+
+- Value and scriptPubKey/pkscript (locking script) [possibly witness]
+  输出部分包含了比特币的数额和锁定脚本（scriptPubKey），锁定脚本定义了花费比特币的条件。
+
+- OP_DUP OP_HASH160 `<data>` OP_EQUALVERIFY OP_CHECKSIG
+
+  这是一个典型的锁定脚本，包含了以下操作码：
+
+  - OP_DUP：复制栈顶数据。
+  - OP_HASH160：对数据进行哈希运算。
+  - `<data>`：哈希值。
+  - OP_EQUALVERIFY：比较两个值是否相等。
+  - OP_CHECKSIG：验证签名。
+
+- locking script can be unlocked with a valid input (scriptSig)
+
+  - 支出者必须在特定 pk 下提供签名
+
+::: details Example
+
+Alice需要提供一个包含她未花费输出（UTXO）的输入，并创建一个输出，将1个比特币发送到Bob的地址。Alice还需要提供她的签名来证明她拥有这些比特币。
+
+比特币交易需要使用输入和输出结构，解锁和锁定脚本，以及公钥和私钥的签名机制来验证交易的合法性。
+
+1. Alice找到她的一个未花费输出（UTXO），例如，包含2个比特币。
+2. Alice创建一个输入，引用这个UTXO，并添加解锁脚本（scriptSig），包含她的签名和公钥。
+3. Alice创建一个输出，发送1个比特币到Bob的地址，并添加锁定脚本（scriptPubKey），定义Bob的公钥哈希。
+4. Alice广播这个交易到比特币网络。
+5. 比特币网络节点验证交易，检查Alice的签名和公钥是否匹配，并确认交易是否合法。
+6. 交易被打包进一个区块，并添加到区块链上。
+7. Bob收到1个比特币。
+
+:::
+
+锁定脚本（locking script），也叫作scriptPubKey，是附加在输出上的一段脚本，定义了花费该输出所需满足的条件。
+
+解锁脚本（unlocking script），也叫作scriptSig，是附加在输入上的一段脚本，用于满足锁定脚本的条件。
+
+在 P2PKH 交易中，锁定脚本通常如下：
+
+```
+OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
+```
+
+- `OP_DUP`：复制栈顶的元素（即公钥）。
+- `OP_HASH160`：对栈顶的元素进行Hash160运算（SHA-256后再进行RIPEMD-160）。
+- `<PubKeyHash>`：接收者的公钥哈希值。
+- `OP_EQUALVERIFY`：验证两个栈顶的元素是否相等。
+- `OP_CHECKSIG`：验证签名是否有效。
+
+解锁脚本通常如下：
+
+```
+<Signature> <PublicKey>
+```
+
+::: details Example
+
+假设我们有一个P2PKH交易输出，锁定脚本为：
+
+```
+OP_DUP OP_HASH160 e00fd363fcc573d2b6d35155b9b9f4784d2119e4 OP_EQUALVERIFY OP_CHECKSIG
+```
+
+我们需要提供一个包含有效签名和公钥的解锁脚本，以满足锁定脚本的条件。
+
+这个签名是对交易哈希（transaction hash）进行签名的。交易哈希是通过对交易数据（包括输入、输出、金额等信息）进行哈希运算得到的。
+
+假设签名为`3045022100dff...`（71字节），公钥为`02b463...`（33字节），解锁脚本为：
+
+```
+3045022100dff... 02b463...
+```
+
+如果解锁脚本中的签名和公钥有效，脚本将成功执行，输出将被解锁。
+
+:::
+
+![1728569602312.png](https://pic.hanjiaming.com.cn/2024/10/10/222e88ff31210.png)
