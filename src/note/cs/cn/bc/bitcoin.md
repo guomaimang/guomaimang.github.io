@@ -537,17 +537,18 @@ Virtual Mining idea
 
 ![1728146066560.png](https://pic.hanjiaming.com.cn/2024/10/06/6d4e46901b3a4.png)
 
-:::  details 更多共识机制
+:::  details 共识机制 Proof of X
 
-**Delegated Proof of Stake (DPoS)**：DPoS是PoS的一种变种，持币者可以投票选出代表进行区块验证。这种机制提高了区块链网络的效率和去中心化程度。
+"Proof of X" 是一种术语，用于描述区块链和加密货币领域中的各种共识机制。不同的共识机制通过不同的方法来验证和确认交易，从而确保区块链的安全性和完整性。常见的“Proof of X”包括：
 
-**Proof of Burn (PoB)**：PoB是一种通过“烧毁”加密货币来获得挖矿权利的机制。矿工将一部分加密货币发送到一个不可访问的地址，以此证明其诚意。
-
-**Proof of Authority (PoA)**：PoA是一种基于身份验证的共识机制，只有经过验证的节点可以生成新块。**这种机制适用于私有区块链。**
-
-**Proof of Elapsed Time (PoET)**：PoET是一种基于时间的共识机制，矿工需要等待随机分配的时间后才能生成新块。**这种机制主要用于英特尔的区块链平台。**
-
-**Proof of Importance (PoI)**：PoI是一种基于网络活动和持币量的共识机制，矿工的权利与其在网络中的活跃程度和持币量相关。NEM是使用PoI的代表性加密货币。
+- **Proof of Work (PoW)**：工作量证明。通过解决复杂的数学问题来验证交易，典型代表是比特币。
+- **Proof of Stake (PoS)**：权益证明。通过持有和锁定一定数量的加密货币来获得验证交易的权利，典型代表是以太坊2.0。
+- **Proof of Authority (PoA)**：权威证明。通过一组预先批准的验证者来验证交易，通常用于私有或联盟区块链。**这种机制适用于私有区块链。**
+- **Delegated Proof of Stake (DPoS)**：DPoS是PoS的一种变种，持币者可以投票选出代表进行区块验证。这种机制提高了区块链网络的效率和去中心化程度。
+- **Proof of Burn (PoB)**：PoB是一种通过“烧毁”加密货币来获得挖矿权利的机制。矿工将一部分加密货币发送到一个不可访问的地址，以此证明其诚意。
+- **Proof of Space (PoSpace) / Proof of Capacity (PoC)**：空间证明/容量证明。通过硬盘存储空间来验证交易，典型代表是Chia。
+- **Proof of Elapsed Time (PoET)**：PoET是一种基于时间的共识机制，矿工需要等待随机分配的时间后才能生成新块。**这种机制主要用于英特尔的区块链平台。**
+- **Proof of Importance (PoI)**：PoI是一种基于网络活动和持币量的共识机制，矿工的权利与其在网络中的活跃程度和持币量相关。NEM是使用PoI的代表性加密货币。
 
 :::
 

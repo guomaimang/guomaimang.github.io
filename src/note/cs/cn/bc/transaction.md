@@ -87,6 +87,12 @@ A 创建一笔交易，该交易包含以下信息：
 ### 总结
 整个过程确保了交易的安全性、可靠性和不可篡改性。比特币区块链通过去中心化和密码学技术，实现了点对点的价值转移，而无需第三方机构的介入。
 
+## 真实的交易截图
+
+Ref. https://www.blockchain.com/explorer/transactions/btc/0627052b6f28912f2703066a912ea577f2ce4da4caa5a5fbd8a57286c345c2f2
+
+![XKCk9_oHOYK5V7DeLfTax.png](https://pic.hanjiaming.com.cn/2024/10/10/00890c7ae1d26.png)
+
 ## 矿工的经济动机
 
 - 在比特币网络中，矿工通过解决复杂的数学问题（即工作量证明）来挖掘新的区块。
