@@ -551,6 +551,20 @@ Virtual Mining idea
 
 :::
 
+::: info Impact of Bitcoin/Blockchain on Society
+
+- Permissionless, everyone can access
+  - Pseudonymity
+- **Decentralization**, and no central authority for regulation
+  - Fault Tolerance as multiple copies are stored and verified by parties
+- Append-only/Immutable database
+- Encouraging Illegal activities?
+  - Hard requirement 「硬性要求」for financial transactions
+  - ▪ Know-Your-Customer (KYC) and Anti-Money Laundering (AML)
+- Bitcoin mining: environmental impact: Increased demand for GPUs for mining, is the (eco)system sustainable?
+
+:::
+
 ## 其他定义
 
 **侧链**：侧链是一种与主链并行运行的区块链，它们允许资产在主链和侧链之间转移，提供了更高的可扩展性和灵活性。
