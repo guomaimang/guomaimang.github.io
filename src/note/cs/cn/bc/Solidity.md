@@ -389,7 +389,6 @@ Value Types
 ### Fixed-size (byte) arrays
 
 - 固定大小数组的长度在编译时确定，不能在运行时改变。
-
 - **声明方式**：固定大小数组在声明时需要指定长度。例如：
   ```
   uint[10] public fixedArray;
@@ -431,14 +430,3 @@ Data Location is needed except declared directly under Contract
 ### Structs
 
 C-like syntax
-
-
-
-
-
-
-
-
-
-
-
