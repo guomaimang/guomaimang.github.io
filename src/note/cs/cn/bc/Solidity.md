@@ -263,7 +263,7 @@ constructor() {
 
 ### Data Location
 
-数据位置是指在智能合约中数据的存储位置，主要包括 storage、memory和calldata 三种。
+数据位置是指在智能合约中数据的存储位置，主要包括 storage、memory和calldata 三种。了解区别有助于优化智能合约的性能和成本。
 
 - 存储（storage）是默认的数据位置，用于存储状态变量，这些变量在合约的整个生命周期内存在，并且数据存储在链上。
 - 内存（memory）是临时的数据存储位置，其生命周期仅限于外部函数调用期间，数据不会存储在链上。
@@ -273,9 +273,72 @@ Assignment behavior
 
 赋值行为是指在不同数据位置之间进行数据赋值时的具体操作方式。
 
-- Storage <> memory (or <- calldata): 会创建数据的副本，而不是引用
-- memory -> memory : 赋值的是引用，而不是创建副本
-- storage -> local storage (in a function) 
+**Storage <> memory (or calldata -> memory): 会创建数据的副本，而不是引用**
+
+```solidity
+pragma solidity ^0.8.0;
+
+contract Example {
+    uint[] public storageArray;
+
+    function storageToMemory() public view returns (uint[] memory) {
+        // 从存储到内存，创建副本
+        uint[] memory memoryArray = storageArray; 
+        return memoryArray;
+    }
+
+    function calldataToMemory(uint[] calldata inputArray) public pure returns (uint[] memory) {
+        // 从调用数据到内存，创建副本
+        uint[] memory memoryArray = inputArray; 
+        return memoryArray;
+    }
+}
+```
+
+**memory -> memory : 赋值的是引用，而不是创建副本**
+
+```solidity
+pragma solidity ^0.8.0;
+
+contract Example {
+    function memoryToMemory() public pure returns (uint[] memory) {
+        uint[] memory array1 = new uint[](3);
+        array1[0] = 1;
+        array1[1] = 2;
+        array1[2] = 3;
+
+				// 内存到内存，赋值的是引用
+        uint[] memory array2 = array1; 
+
+        array2[0] = 10;
+
+        return array1; // 返回 [10, 2, 3]
+    }
+}
+```
+
+**storage -> local storage (in a function)** 赋值的是引用
+
+```solidity
+pragma solidity ^0.8.0;
+
+contract Example {
+    uint[] public storageArray;
+
+    function storageToLocalStorage() public {
+    		// 存储到局部存储，赋值的是引用
+        uint[] storage localStorageArray = storageArray; 
+
+        localStorageArray.push(1);
+        localStorageArray.push(2);
+        localStorageArray.push(3);
+    }
+
+    function getStorageArray() public view returns (uint[] memory) {
+        return storageArray; // 返回 [1, 2, 3]
+    }
+}
+```
 
 在其他情况下，赋值到存储位置时会创建数据的副本。
 
@@ -307,13 +370,67 @@ function example() public {
 }
 ```
 
+## Types
 
+在编译时需要指定变量的类型（状态变量和局部变量）。
 
+几种基本类型可以组合形成复杂类型。
 
+Value Types
 
+- 布尔型（boolean {true, false}）；操作符：!（非），&&（与），||（或），==（等于），!=（不等于）。
+- 整数（例如，int/uint：有符号和无符号整数）
+- 地址（20字节值，以太坊地址的大小），可支付
+- balance; transfer(); send(); call(), ~~callcode()~~, delegatecall();
+- Enum
+- user-defined value types (type myType is uint256)
+- function, ...
 
+### Fixed-size (byte) arrays
 
+- 固定大小数组的长度在编译时确定，不能在运行时改变。
 
+- **声明方式**：固定大小数组在声明时需要指定长度。例如：
+  ```
+  uint[10] public fixedArray;
+  ```
+  
+
+Bytes数组
+
+在 Solidity 中，`bytes` 类型是一种特殊的动态大小数组，用于存储任意长度的字节序列。`bytes` 类型实际上是 `byte[]` 的别名，但它的实现更高效。相对的，`bytes1` 到 `bytes32` 是固定大小的字节数组。
+
+- bytes1, bytes2, ..., bytes32 (x in {1..32}, read-only field: .length = x)
+- length, push(); pop() (since 0.5.4)
+- 可以通过索引访问数组元素，但不能获取数组的长度，因为长度是已知的固定值
+
+### Dynamically-sized array
+
+- **大小可变**：动态大小数组的长度可以在运行时改变。你可以添加或删除元素。
+- **声明方式**：动态大小数组在声明时不需要指定长度。例如：
+  ```
+  uint[] public dynamicArray;
+  ```
+- **存储方式**：动态大小数组可以存储在合约的存储（storage）中，也可以存储在内存（memory）中。
+-  **访问**：可以通过索引访问数组元素，并且可以获取数组的长度
+
+### Reference Type
+
+Data Location is needed except declared directly under Contract
+「除非直接在合约下声明，否则需要数据位置。」
+
+### Mappings
+
+`mapping (KeyType KeyName? => ValueType ValueName?) `  [in Storage only]
+
+- 类似于存储键值对的哈希表（数据位置：存储）。
+- key 类型：不允许用户定义或复杂类型，如映射、结构体或数组。
+- value 类型可以是任何类型，包括映射。
+- 不可迭代，不同于Python/JavaScript/...；但可以实现它。
+
+### Structs
+
+C-like syntax
 
 
 
