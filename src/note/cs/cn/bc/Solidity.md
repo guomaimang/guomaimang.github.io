@@ -476,7 +476,113 @@ contract OtherContract {
 
 :::
 
+::: warning Integer Overflow/Underflow
 
+Solidity 可以处理最大256位的数字（最大值为 2^256 -1），因此，如果再增加1，数值将回绕到0。这指的是 Solidity 中的整数类型可以表示的最大值是 2^256 -1，如果超过这个值，数值会回绕到0。
+
+:::
+
+## Functions
+
+Functions are the executable units of code within a contract. 「函数是合约中可执行的代码单元。」
+
+函数调用可以在内部或外部发生，并且对其他合约具有不同的可见性级别。
+
+- 内部调用是指合约内部的函数相互调用，
+- 外部调用是指其他合约或外部账户调用合约的函数。
+
+Function modifiers amend the semantics of functions in a declarative way.「函数修饰符以声明方式修改函数的语义。」
+
+- 通过使用修饰符，可以在函数执行前后添加额外的逻辑，例如权限检查。
+- say 「例如」, only owner can call, no reentrancy 「例如，只有合约的所有者可以调用该函数，防止重入攻击。」
+  - 重入攻击是指攻击者在函数执行过程中反复调用同一函数，导致意外的结果。
+- e.g., `onlySeller` in the sample, 在示例中使用了onlySeller修饰符，确保只有卖家可以调用某些函数。
+
+<img src="https://pic.hanjiaming.com.cn/2024/10/11/ff883bd103e77.png" alt="1728638183460.png" style="zoom: 50%;" />
+
+### Function types
+
+`function (<parameter types>) {internal|external} [pure|view|payable] [returns (<return types>)]`
+
+- function types are by default internal:
+  - 在Solidity中，如果不指定函数的可见性修饰符，函数默认是internal类型
+  - 即只能在当前合约和继承的合约中访问。
+- 合约函数默认是 public
+  - 在Solidity中，如果不指定函数的可见性修饰符，合约中的函数默认是public类型，
+  - 即任何人都可以调用这些函数。
+- 可见性总结 「Visibility summary」
+  - public 修饰符表示函数可以被任何人调用，包括外部账户和其他合约。
+  - external
+    - 修饰符表示函数只能被外部账户或其他合约调
+    - 不能在当前合约内部调用，直接调用f()是不行的，但可以通过this.f()来调用
+  - internal 
+    - 修饰符表示函数只能在当前合约和继承该合约的合约中调用
+    - 不需要使用this关键字
+  - private 修饰符表示函数只能在当前合约中调用，不能在继承的合约中调用。
+
+### Modifiers
+
+函数可以有多种修饰符，主要包括 `pure`、`view`、`payable` 以及没有任何修饰符的普通函数。
+
+#### 没有任何修饰符
+
+如果一个函数既没有被标记为 `pure` 也没有被标记为 `view`，那么它就是一个普通的函数。
+
+- 普通函数既可以读取状态变量，也可以修改状态变量。
+- 它们没有任何限制，可以执行任何操作
+
+#### 纯函数 和 视图函数
+
+纯函数（pure）和视图函数（view）是Solidity中的特殊函数类型。
+
+- 纯函数不修改状态变量，也不读取状态变量。
+- 视图函数可以读取状态变量，但不能修改它们。
+
+![1728653182481.png](https://pic.hanjiaming.com.cn/2024/10/11/59183e171461f.png)
+
+#### payable
+
+- 可支付函数，可以接收以太币。
+- 调用该函数时可以附带以太币。
+
+除了上述修饰符，Solidity 还支持自定义修饰符（modifiers），用于控制函数的访问权限和行为。例如：
+
+```solidity
+modifier onlyOwner() {
+    require(msg.sender == owner, "Not the contract owner");
+    _;
+}
+
+function restrictedFunction() public onlyOwner {
+    // 只有合约所有者可以调用此函数
+}
+```
+
+此外，还可以组合 `payable` 与其他修饰符
+
+::: warning 非法组合
+
+`payable view` 和 `payable pure` 是非法的组合，因为 `payable` 函数需要能够修改状态（接受以太币），而 `view` 和 `pure` 函数不能修改状态。
+
+:::
+
+### Function return
+
+可以命名返回变量，例如：`returns(uint256 _n, bool _b, uint256[4] memory _a)`。
+
+其中，
+
+- `_n`是一个无符号256位整数
+- `_b`是一个布尔值
+- `_a`是一个存储在内存中的包含4个无符号256位整数的数组
+
+自动返回命名的变量。当函数执行完毕时，这些命名的变量会自动作为返回值返回。
+
+return: inside function body to return values
+
+例如，`return(1, false, [uint256(1), 2, 3]);`
+
+## Events
 
 
 
