@@ -430,3 +430,59 @@ Data Location is needed except declared directly under Contract
 ### Structs
 
 C-like syntax
+
+## Special about Type
+
+在以太坊中，数据类型的选择会影响智能合约之间的交互和Gas的消耗。
+
+- 特别是需要注意内存（memory）和调用数据（calldata）之间的区别。
+  - 内存是临时的存储空间，费用较低
+  - 而调用数据是只读的，用于函数参数传递，费用也较低。
+- 直接将其他编程语言中的算法翻译成Solidity代码可能会遇到问题
+  - 因为Solidity有其特定的限制和特性。
+  - 例如，Solidity中的运算可能会导致意外的成本增加和错误（如无符号整型的溢出问题）。
+- 其他合约也可以预先确定数组的大小。这意味着在设计合约时，可以通过定义固定大小的数组来优化数据存储和传输。
+- 与字符串相比，字节（bytes）消耗更少的Gas。因此，在将数据传递给另一个合约时，可以考虑将字符串转换为字节以节省Gas。
+- 还有一些类型（如固定点数和无符号固定点数）尚未完全支持。这些类型用于表示具有不同大小的有符号或无符号固定点数。
+
+::: details Example
+
+定义一个函数，将字符串转换为字节：
+
+```solidity
+function stringToBytes(string memory str) public pure returns (bytes memory) {
+    return bytes(str);
+}
+```
+
+在合约之间传递字节数据：
+
+```solidity
+function sendDataToOtherContract(address contractAddress, string memory name) public {
+    bytes memory nameBytes = stringToBytes(name);
+    OtherContract(contractAddress).receiveData(nameBytes);
+}
+```
+
+接收合约中的函数：
+
+```solidity
+contract OtherContract {
+    function receiveData(bytes memory name) public {
+        // 处理接收到的数据
+    }
+}
+```
+
+:::
+
+
+
+
+
+
+
+
+
+
+
