@@ -584,11 +584,172 @@ return: inside function body to return values
 
 ## Events
 
+Interfaces with the EVM logging facilities.
 
+- EVM提供了日志记录的功能，允许智能合约在执行过程中生成日志。
+- 事件是Solidity中用于触发这些日志的工具。
 
+当事件被调用时，它们会将参数存储在交易的日志中。
 
+- 这个日志是一种特殊的数据结构，存储在区块链上。
+- 通过这种方式，事件可以记录智能合约的执行情况，并且这些记录可以被外部应用程序读取和分析。
 
+emit [evt]
 
+- 在Solidity中，`emit`关键字用于触发事件。
+- `[evt]`是事件的名称。当事件被触发时，相关的数据会被记录到区块链的日志中。
 
+Notify others
 
+- 事件的主要功能之一是通知其他外部系统或应用程序。
+- 通过监听事件，外部应用程序可以实时获取智能合约的状态变化。
+- 事件的通知是异步的「asynchronous」。
+  - 这意味着事件的触发和处理不会阻塞智能合约的执行。
+  - 外部应用程序可以在事件触发后独立地处理事件数据。
+- cheap vs. storage：与存储数据相比，使用事件记录日志更加经济。存储数据需要消耗更多的Gas，而记录日志则相对便宜。
+- app (with web3.js/ether.js) can listen to the events
+  - 部应用程序可以使用Web3.js或Ether.js库来监听事件。
+  - 这些库提供了API，允许开发者编写代码来监听和处理智能合约触发的事件。
+
+## Interface
+
+与其他合约进行交互。接口允许一个合约与另一个合约进行通信和交互。
+
+当你**使用**接口调用另一个合约时，括号内通常填入的是目标合约的地址
+
+1. 接口中不包含任何函数的实现。接口只是定义了函数的签名，而不包含具体的实现逻辑。
+2. 接口可以继承其他接口。通过继承，接口可以扩展其他接口的功能，形成更复杂的接口结构。
+3. 所有声明的函数 in Interface 必须是外部函数。接口中的函数只能从合约外部调用，不能在合约内部调用。
+4. 接口不能声明构造函数。构造函数用于初始化合约状态，而接口不包含实现，因此不能有构造函数。
+5. 接口不能声明状态变量。状态变量用于存储合约的持久数据，而接口不包含实现，因此不能有状态变量。
+6. 接口基本上仅限于合约ABI可以表示的内容。接口定义了合约的外部调用方式，与ABI紧密相关。
+
+::: details Example
+
+假设我们有一个计数器合约（Counter），它包含一个计数函数（count）和一个递增函数（increment）。我们希望通过另一个合约（MyContract）来调用这个计数器合约中的函数。
+
+我们需要定义一个接口（ICounter）来描述计数器合约的函数签名，并在MyContract中使用这个接口来调用计数器合约的函数。
+
+接口允许我们定义合约之间的标准化交互方式，使得 MyContract 可以调用Counter 合约的函数，而不需要知道具体的实现细节。
+
+**定义计数器合约（Counter）**
+
+```solidity
+contract Counter {
+    uint public count;
+    function increment() external {
+        count += 1;
+    }
+}
+```
+
+在 Solidity 中，公共状态变量会自动生成一个同名的 getter 函数。因此，`Counter` 合约实际上已经实现了 `count()` 函数，这个函数会返回 `count` 变量的值。
+
+**定义接口（ICounter）**
+
+```solidity
+interface ICounter {
+    function count() external view returns (uint);
+    function increment() external;
+}
+```
+
+在你的例子中，`ICounter` 接口定义了 `count()` 和 `increment()` 函数的签名，而 `Counter` 合约实现了这些函数：
+
+1. `Counter` 合约实现了 `count` 变量和 `increment` 函数。
+2. `ICounter` 接口定义了 `count` 和 `increment` 函数的签名。
+
+**定义 MyContract 并使用接口调用 Counter 合约的函数**
+
+```solidity
+contract MyContract {
+    function incCounter(address _counter) external {
+        ICounter(_counter).increment();
+    }
+
+    function getCount(address _counter) external view returns (uint) {
+        return ICounter(_counter).count();
+    }
+}
+```
+
+:::
+
+## Inheritance
+
+```solidity
+// 合约X包含一个公共字符串变量name，并通过构造函数初始化name。
+contract X {
+    string public name;
+    constructor(string memory _name) {
+        name = _name;
+    }
+}
+
+// 合约Y包含一个公共字符串变量text，并通过构造函数初始化text。
+contract Y {
+    string public text;
+    constructor(string memory _text) {
+        text = _text;
+    }
+}
+
+// 合约A同时继承了合约X和合约Y，并在其构造函数中调用了X和Y的构造函数。
+contract A is X, Y {
+    constructor() X("X was called") Y("Y was called") {}
+
+```
+
+构造函数的调用顺序是按照声明顺序，从X到Y再到A。
+
+这意味着在合约A的构造函数中，首先调用X的构造函数，然后调用Y的构造函数，最后执行A的构造函数主体。
+
+::: tip  子类重写父类的虚函数
+
+「Child override parents' virtual function」
+
+当一个函数在不同的合约中多次定义时，
+
+- 父合约的搜索顺序是从右到左，
+- 并且是深度优先搜索。
+
+:::
+
+## receive()
+
+- `receive()` 函数不能接受任何参数，也不能返回任何值。
+- 这是 Solidity 对 `receive()` 函数的严格要求，确保其专用于接收 Ether。
+- 在一个智能合约中，最多只能定义一个 `receive()` 函数。这是为了避免混淆和冲突，确保合约能够明确处理接收到的 Ether。
+- `receive()` 函数必须具有 `external` 可见性，并且必须标记为 `payable`。这意味着该函数只能从合约外部调用，并且在调用时可以接收 Ether。
+  ```
+  // 这里不需要使用 function 关键字来定义 receive() 函数
+  receive() external payable { ... }
+  ```
+- 当通过 .send() 或 .transfer() 方法进行简单的 Ether 转账时，receive() 函数会被执行。
+  这些方法用于将 Ether 从一个地址转移到另一个地址。
+- 如果合约中没有定义 `receive()` 函数，但存在一个 `payable` 的 `fallback` 函数，那么在进行简单的 Ether 转账时，会调用 `fallback` 函数。
+  `fallback` 函数是一种默认函数，当调用的函数不存在时会被执行。
+- 任何标记为 `payable` 的函数都可以接收 Ether。
+  这意味着不仅仅是 `receive()` 函数，其他带有 `payable` 修饰符的函数也可以在调用时接收 Ether。
+
+在下面例子中，`receive()` 函数每次接收到 Ether 时都会更新 `totalReceived` 变量。`msg.value` 是接收到的 Ether 数量。
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SimpleWallet {
+    uint public totalReceived;
+
+    // receive() 函数来处理传入的以太
+    receive() external payable {
+        totalReceived += msg.value;
+    }
+
+    // Function to withdraw Ether
+    function withdraw() public {
+   		payable(msg.sender).transfer(address(this).balance);
+    }
+}
+```
 
