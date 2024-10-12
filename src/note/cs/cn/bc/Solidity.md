@@ -753,3 +753,61 @@ contract SimpleWallet {
 }
 ```
 
+::: warning Some Special Notes of Receiving Ether
+
+- 没有以太币接收功能的合约可以接收以太币
+  - 一个没有接收以太币函数的合约仍然可以接收以太币。
+  - 作为一个coinbase交易（也称为矿工区块奖励）的接收者。
+    - coinbase交易是矿工在挖到区块时获得的奖励
+    - 在调用selfdestruct函数时，会将剩余的资金转移到指定的地址。
+- 一个合约不能对这些转账作出反应，因此也不能拒绝这些转账。
+  - 这是EVM的设计选择。Solidity无法绕过这一点。
+- selfdestruct()创建了一个发送以太币的“侧通道”。
+  - 使得address(this).balance（合约地址的余额）高于手动记账的余额。
+  - 即将被弃用。
+- 想象一个基于总资金做出关键决策的合约。
+
+:::
+
+## Special Variables: block, msg & tx
+
+- `gasleft()` 函数返回当前剩余的 Gas 量，以单位`uint256`表示。Gas用于支付执行合约代码的费用。
+- `block.blockhash(uint blockNumber)` 函数返回指定区块的哈希值，哈希值以`bytes32`表示。
+  - 该函数只能获取最近256个区块的哈希值，不包括当前区块。
+- `block.coinbase` 返回当前区块矿工的地址，以 `address` 表示。
+- `block.difficulty` 返回当前区块的难度，以`uint`表示。
+  - 难度值用于调整生成新区块的难度。
+- `block.gaslimit` 返回当前区块的Gas限制，以`uint`表示。
+  - Gas限制是单个区块中允许的最大Gas量。
+- `block.timestamp` 返回当前区块的时间戳，以`uint`表示。
+  - 时间戳是区块生成的时间。
+- `msg.data` 包含调用合约时传递的完整数据，以`bytes`表示。
+- `msg.sender` 返回发送消息（当前调用）的地址，以`address`表示。
+  - 可以是发起交易的用户地址或调用合约的合约地址。
+- `msg.sig` 返回调用数据的前四个字节，即函数标识符，以`bytes4`表示。
+- `msg.value` 返回消息中发送的以太币数量，以`uint`表示。单位是`wei`，以太坊中最小的货币单位。
+- `tx.gasprice` 返回交易的Gas价格，以`uint`表示。Gas价格是每单位Gas的成本。
+- `tx.origin` 返回交易的发起者地址，以`address`表示。它是整个调用链的起始地址。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
