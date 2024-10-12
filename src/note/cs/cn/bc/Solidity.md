@@ -789,6 +789,12 @@ contract SimpleWallet {
 - `tx.gasprice` 返回交易的Gas价格，以`uint`表示。Gas价格是每单位Gas的成本。
 - `tx.origin` 返回交易的发起者地址，以`address`表示。它是整个调用链的起始地址。
 
+## Fallback Function
+
+一个智能合约可以有且只有一个没有名字的函数，这个函数没有参数也不返回任何值。这个函数通常被称为回退函数（Fallback Function）。
+
+
+
 
 
 
