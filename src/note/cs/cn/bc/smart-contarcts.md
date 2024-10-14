@@ -375,7 +375,55 @@ The code can:
 
 :::
 
+## Ethereum Languages
 
+![1728887367525.png](https://pic.hanjiaming.com.cn/2024/10/14/1b1457e0cee66.png)
+
+![1728887529028.png](https://pic.hanjiaming.com.cn/2024/10/14/b94bea3f7c6b7.png)
+
+## Transactions in ETH
+
+- Transactions sending tokens between accounts like bitcoin
+- “Transactions” to contracts
+  - like function calls to objects
+  - specify which object you are talking to, which function, and what data (if possible)
+- “Transactions” to create contracts
+  - 这类交易用于在以太坊网络上创建新的智能合约。
+  - 创建合约的交易会部署合约代码，并在区块链上生成一个新的合约地址。
+
+some keyword
+
+- nonce（number used once, anti-replay-attack）
+  「nonce是一个只使用一次的数字，用于防止重放攻击」
+  - 每个交易都有一个唯一的nonce值，确保同一个交易不会被重复提交。
+- to（destination address）：即接收以太币或执行智能合约的地址。
+- value（amount of ETH to send）：这个值以Wei为单位，Wei是以太币的最小单位（1 ETH = 10^18 Wei）。
+- gasprice（amount of ETH per unit gas）
+  - gasprice 字段表示每单位 Gas 的以太币价格。
+  - 用户可以设置较高的 gasprice 以激励矿工优先处理其交易。
+- startgas（maximum gas consumable）：
+  - startgas 字段表示交易或智能合约执行过程中可消耗的最大 Gas量。
+  - 这个值用于限制交易的计算资源消耗。
+- v, r, s（ECDSA signature values）
+  - v, r, s字段是使用ECDSA算法生成的签名值，用于验证交易的真实性和完整性。
+
+::: details example
+
+Alice 想要向 Bob 发送 1 ETH，并且需要确保交易安全且不会被重放。
+
+Alice 需要创建一个包含 nonce、to、value、data、gasprice、startgas 和签名（v, r, s）的交易。
+
+通过设置nonce和签名，可以确保交易唯一性和安全性。
+
+1. **设置 nonce**：假设Alice之前已经发送了2笔交易，那么她的下一笔交易的nonce将是2。
+2. **设置 to**：将Bob的以太坊地址填入to字段。
+3. **设置 value**：将1 ETH转换为 Wei（1 ETH = 10^18 Wei），并填入value字段。
+4. **设置 data**：如果只是发送 ETH 而不是调用智能合约，data字段可以为空。
+5. **设置 gasprice**：假设当前网络平均gasprice为50 Gwei（1 Gwei = 10^9 Wei），Alice可以设置gasprice为50 Gwei。
+6. **设置 startgas**：假设交易需要21000 Gas，Alice可以设置startgas为21000。
+7. **生成签名**：使用Alice的私钥对交易进行签名，生成v, r, s值。
+
+:::
 
 
 
