@@ -3,7 +3,7 @@ article: false
 date: 2024-10-10
 index: true
 order: 6
-headerDepth: 1
+headerDepth: 2
 
 
 ---
@@ -425,7 +425,178 @@ Alice 需要创建一个包含 nonce、to、value、data、gasprice、startgas �
 
 :::
 
+## How to Create
 
+How to Create a Contract?
+
+Submit a transaction to the blockchain: 在区块链上提交一笔交易。这是创建智能合约的第一步，需要将交易发送到区块链网络。
+
+- nonce 是一个唯一的数字，每笔交易都有一个不同的 nonce 值。它用于防止重放攻击。在创建新交易时，nonce 值是前一次交易的 nonce 值加 1。
+- to: empty (the null address) 
+  在创建智能合约的交易中，接收地址（to）是空的，表示这笔交易的目的是创建一个新合约，而不是转账给某个现有地址。
+- value 是发送到新合约的以太币数量。这笔资金将存储在新创建的智能合约中。
+- data 字段包含了智能合约的代码。这是合约的逻辑部分，定义了合约的行为和规则。
+- gasprice 是每单位 gas 的以太币价格。它决定了矿工处理这笔交易的优先级，gasprice 越高，交易被处理的速度越快。
+- startgas 是交易可以消耗的最大 gas 量。它限制了交易执行过程中可以使用的计算资源，防止交易消耗过多资源。
+- v, r, s 是椭圆曲线数字签名算法（ECDSA）的签名值。它们用于验证交易的真实性和完整性。
+- 如果交易成功，将返回以下信息：新合约的地址。这个地址是根据创建者的地址和 nonce 计算得出的。
+
+::: details Example
+
+假设你想在以太坊上创建一个简单的智能合约，这个合约将存储和返回一个数字。
+
+你需要提交一笔交易来创建这个智能合约。交易需要包含合约代码、nonce、gas 相关信息等。
+
+1. 编写智能合约代码，例如：
+   ```solidity
+   pragma solidity ^0.8.0;
+   
+   contract SimpleStorage {
+       uint256 storedData;
+   
+       function set(uint256 x) public {
+           storedData = x;
+       }
+   
+       function get() public view returns (uint256) {
+           return storedData;
+       }
+   }
+   ```
+2. 编译合约代码，获取字节码和 ABI。
+3. 构建交易：
+   - nonce: 前一次交易的 nonce + 1
+   - to: 空地址
+   - value: 0（不发送以太币）
+   - data: 合约代码的字节码
+   - gasprice: 设定的每单位 gas 的价格
+   - startgas: 估算的最大 gas 消耗
+   - v, r, s: 使用私钥对交易进行签名，生成签名值
+4. 提交交易到以太坊网络。
+5. 如果交易成功，获取新合约的地址。
+
+
+假设交易成功，返回新合约的地址：`0x1234567890abcdef1234567890abcdef12345678`。
+
+:::
+
+## How to Interact
+
+How to Interact a Contract?
+
+- Submit a transaction to the blockchain
+  - nonce: previous nonce + 1
+  - to 字段指定了交易的接收地址。在智能合约的交易中，这个地址是智能合约的地址。
+  - value 字段表示发送到新的合约的以太币数量。
+  - data 字段包含了智能合约需要读取和执行的数据。
+  - gasprice 字段表示每单位 gas 的价格，以以太币（ETH）为单位。gas 是执行交易所需的计算资源。
+  - startgas 字段表示交易能消耗的最大 gas 数量。
+  - v, r, s 是由 ECDSA 签名算法生成的签名值，用于验证交易的有效性和发送者的身份。
+  - 如果交易成功，将返回合约的输出（如果适用）。
+
+## Blockchain State
+
+比特币的状态：键值对将地址映射到账户余额：
+
+- 在比特币区块链中，每个地址都有一个对应的账户余额，这就是比特币的状态。
+- 地址作为键，余额作为值。
+
+以太坊的状态：键值对将地址映射到账户对象。
+
+- 在以太坊区块链中，地址不仅可以映射到余额
+- 还可以映射到更复杂的对象，如智能合约
+- 地址作为键，对象作为值。
+
+![1728975895748.png](https://pic.hanjiaming.com.cn/2024/10/15/4dec023b44590.png)
+
+## Account Object
+
+每个账户对象包含四个数据字段，这些字段用于存储账户的状态信息。这四个数据字段分别是 Nonce、Balance、Code Hash和Storage Trie Root。
+
+- nonce是一个用于防止重放攻击的计数器。
+  - 对于外部拥有账户（EOA），Nonce 表示账户发起的交易数目，每次发起交易时Nonce都会增加。
+  - 对于合约账户，Nonce 表示该合约账户创建的合约数量。每当合约账户通过 `CREATE` 或 `CREATE2` 操作码创建新的合约时，Nonce 会增加。
+- Balance表示账户的余额，即账户中持有的以太币（Ether）的数量。
+  - 余额以最小单位Wei表示，1 Ether等于10^18 Wei。
+- Code Hash是智能合约代码的哈希值。
+  - 对于外部拥有账户（EOA），Code Hash为空字符串，因为EOA不包含智能合约代码。
+  - 对于合约账户，Code Hash用于存储和验证智能合约代码。
+- Storage Trie Root是存储 Trie的根哈希值。
+  - 存储 Trie 用于存储智能合约的持久化数据。
+  - 对于外部拥有账户（EOA），Storage Trie Root为空，因为EOA没有持久化存储。
+
+## Block Mining
+
+区块挖矿是区块链网络中验证交易并将其添加到区块链的过程。
+
+![nrwMZX4bLWJbxzxrnGrSN.png](https://pic.hanjiaming.com.cn/2024/10/15/3db4981067498.png)
+
+通过这张图，我们可以理解区块链中的区块挖矿过程，包括交易的收集、验证、状态更新、工作量证明以及区块的广播。
+
+- 左侧显示了多个交易（Tx-1, Tx-2, ..., Tx-n），这些交易被收集并打包到一个区块中。
+- 矿工负责收集这些交易并将它们打包成一个区块。矿工会验证交易的合法性并执行相关代码以更新状态。
+
+### 区块结构（Block）
+
+区块包含以下几个部分：
+
+- **Previous block（前一个区块）**：指向前一个区块的哈希值，用于维护区块链的连续性。
+- **A set of TXs（交易集合）**：当前区块中包含的所有交易。
+- **New State Root（新状态根）**：交易执行后，整个系统的新状态的根哈希值。
+- **Receipt Root（收据根）**：所有交易收据的根哈希值。每个收据代表一个交易执行后的中间状态根。
+- **Nonce（随机数）**：用于工作量证明（PoW）的随机数。
+
+### 验证过程
+
+- 矿工会验证交易并执行所有代码以更新状态，这将生成新的状态根（New State Root）。
+- 计算区块的哈希值（SHA3(Block)），并与目标值（D）进行比较。
+- 如果哈希值满足条件（SHA3(Block) < D），则认为挖矿成功。
+
+Broadcast Block: 挖矿成功后，矿工会将区块广播到网络中，其他节点会验证区块的合法性并将其添加到区块链中。
+
+Receipt Root: 收据根是所有“收据”的树的根。每个收据代表一个交易执行后的中间状态根。
+
+## Code Execution
+
+在区块链网络中，每个全节点都会处理每一笔交易，并存储整个区块链的状态。
+
+这意味着全节点不仅要验证和记录所有的交易，还要维护整个区块链的完整数据。
+
+![1729009921852.png](https://pic.hanjiaming.com.cn/2024/10/16/c680fafa14a5a.png)
+
+- 图中显示了多个节点（P1, P2, P3, P4, P5, P6），每个节点都有一个绿色的区块图标，表示它们正在处理新的区块。
+- 图中箭头表示节点之间的通信和数据传递。
+- 每个节点都在广播“这是一个新区块！”的信息，表明它们正在处理和验证新的区块。
+
+## DoS Attack Vector
+
+Denial-of-Service (DoS) Attack Vector
+
+Halting problem (a general "theoretical-CS" problem)
+
+- 停机问题是计算机科学中的一个理论问题。
+- 它询问是否存在一个算法能够判断任意程序是否会在有限时间内停止运行。图灵证明了这是不可能的。
+
+Cannot tell whether or not a program will run infinitely, for programs written in a "Turing-complete" language 「对于用图灵完备语言编写的程序，我们无法判断它们是否会无限期运行。」
+
+- 这是因为停机问题无解，无法创建一个通用算法来解决所有程序的停机问题。
+- 图灵完备语言是指那些能够模拟图灵机的编程语言。
+
+A malicious miner can DoS attack full nodes by including lots of computation in their txs「一个恶意矿工可以通过在其交易中包含大量计算来对全节点发起DoS攻击」
+
+- 这些复杂交易会耗尽节点的计算资源，使其无法正常工作。
+- 全节点在验证区块时会受到攻击。恶意交易会增加验证的计算负担，导致节点资源耗尽。
+
+比如
+
+```solidity
+uint i = 1;
+while (i++ > 0) {
+    doNothing();
+}
+```
+
+这个代码片段展示了一个无限循环。变量`i`从1开始，每次循环增加1，条件`i++ > 0`始终为真，因此循环永不结束。这种无限循环会耗尽计算资源。
 
 
 
