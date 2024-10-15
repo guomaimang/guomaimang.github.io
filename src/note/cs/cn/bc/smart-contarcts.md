@@ -598,9 +598,24 @@ while (i++ > 0) {
 
 这个代码片段展示了一个无限循环。变量`i`从1开始，每次循环增加1，条件`i++ > 0`始终为真，因此循环永不结束。这种无限循环会耗尽计算资源。
 
+Solution: “Gas”
 
+- Charge fee per computational step 「按计算步骤收取费用」
+- 占用存储空间的操作的特殊费用
 
+<img src="https://pic.hanjiaming.com.cn/2024/10/16/028ee98985c32.png" alt="CleanShot 2024-10-16 at 00.55.05@2x.png" style="zoom:33%;" />
 
+Sender has to pay for the gas
+
+- Gasprice: amount of ETH per unit gas
+- Startgas: maximum gas consumable
+  - If startgas is less than needed,
+    - 交易将会失败，并抛出"Gas不足"异常。
+    - Revert the state as if the TX has never happened
+    - 发送者仍需支付所有Gas费用，，这是为了补偿矿工的计算资源消耗。
+- TX fee = gasprice × consumed_gas
+- Gas limit: similar to block size limit in Bitcoin
+  - 区块中所有交易消耗的总Gas量 < Gas限制
 
 
 
