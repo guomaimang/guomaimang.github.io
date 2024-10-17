@@ -361,7 +361,12 @@ function setPerson(string _name, uint _age) public {
 
 #### 局部变量
 
-对于引用类型的局部变量，默认存储位置是 `storage`，但这通常不是你想要的。你通常会希望它们存储在 `memory` 中。
+局部变量的默认存储位置取决于变量的类型。
+
+- 对于值类型（如 uint, int, bool 等），局部变量默认存储在内存中。
+- 而对于引用类型（如 string, bytes, array, struct 等），局部变量的默认存储位置是 storage
+
+但是在大多数情况下，你需要显式地指定它们的存储位置。你通常会希望它们存储在 `memory` 中。
 
 ```
 function example() public {
