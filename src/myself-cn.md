@@ -130,12 +130,15 @@ breadcrumb: false
   - Python: 数据采集 + 处理 + 数据仓库 + 可视化
   - 数据分析自动化: Python Pandas
   - 大数据分析:  PySpark
-  - 生成式 AI 大模型落地: RAG (企业知识库) + 微调
+- 人工智能
+  - 生成式 AI 业务开发
+  - 提示词工程与产品商业化
+  - 私有化部署和运维： Llama, ChatGLM
+  - 微调 + RAG (企业知识库) : Dify, Langchain
 - 金融科技
   - 企业门户/网站开发
   - Azure Active Directory (SSO + ADFS) 方案
-  - CRM 解决方案: Salesforce / Dynamic 365
-  - Power Automate (工作流自动化)
+  - CRM 解决方案: Salesforce / Dynamic 365=
 
 语言:
 

@@ -14,7 +14,7 @@ breadcrumb: false
 
 # Hirsun HAN
 
-I am Hirsun「韩佳明」, a postgraduate in Information Engineering, The Chinese University of Hong Kong.  I've graduated from The Hong Kong Polytechnic University with bachelor degree in computing. My research interests are **Information System** and **Cloud Computing.** 
+I am Hirsun「韩佳明」, a postgraduate in Information Engineering, The Chinese University of Hong Kong.  I've graduated from The Hong Kong Polytechnic University with bachelor degree in computing. My research interests are **Artificial Intelligence Development** and **Cloud Computing.** 
 
 
 - [Work Experience](#work-experience)
@@ -134,7 +134,11 @@ For details, please check ["Licenses & certifications" in my Linkedin](https://w
   - Python: Data Collection + Processing + Data Warehousing + Visualization
   - Data Analytics Automation: Python Pandas
   - Big Data Analytics: PySpark
-  - Gen AI  Development: RAG (Knowledge Database) + Fine-tuning
+- Artificial Intelligence
+  - Generative AI Business Development
+  - Prompt Engineering & Product Commercialization
+  - Privatized deployment + O&M: Llama, ChatGLM
+  - Fine-tuning + RAG (Enterprise Knowledge Database): Dify, Langchain
 - Financial Technology
   - Business Portal/Website Development
   - Azure Active Directory (SSO + ADFS) Solutions
