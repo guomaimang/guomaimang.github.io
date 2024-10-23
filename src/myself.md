@@ -30,14 +30,14 @@ I am Hirsun「韩佳明」, a postgraduate in Information Engineering, The Chine
 <img src="https://pic.hanjiaming.com.cn/2024/08/22/2ba3132608c7b.png" alt="CleanShot 2024-08-22 at 22.46.37@2x.png" style="zoom:25%;" />
 
 - Information Engineering, Department of Information Engineering
-- Postgraduate, 2024.9 - 2025.11
+- Postgraduate, 2024.9 - 2026.7
 
 ### The Hong Kong Polytechnic University (香港理工大学)
 
 <img src="https://pic.hanjiaming.com.cn/2022/05/23/093cef8d87b4a.png" alt="download.png" style="zoom: 33%;" />
 
 - Computing, Department of Computing, Faculty of Engineering
-- Bachelor's Degree in Science, Year 4,  2020.9 - 2024.8
+- Bachelor's Degree in Science,  2020.9 - 2024.7
 
 ### Shanghai Jiao Tong University (上海交通大学)
 
@@ -61,7 +61,7 @@ I am Hirsun「韩佳明」, a postgraduate in Information Engineering, The Chine
 <img src="https://pic.hanjiaming.com.cn/2024/08/14/072f12b58d2e9.png" alt="images.png" style="zoom:66%;" />
 
 - Application Development in SRE, Tencent Interactive Entertainment Group(IEG), Shenzhen.
-- 2024.5 - 2024.9
+- 2024.5 - 2024.11
 - Kexing Science Park, Nanshan District, Shenzhen, China
 
 ### PwC Hong Kong (普华永道香港)

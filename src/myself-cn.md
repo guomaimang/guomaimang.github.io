@@ -10,7 +10,7 @@ breadcrumb: false
 
 # 韩佳明
 
-我是 香港中文大学信息工程系 的研究生 韩佳明「Hirsun」。我本科毕业于香港理工大学，获得计算机学士学位。我的研究兴趣是 **信息系统** 和 **云计算**。
+我是 香港中文大学**信息工程**系 的研究生 韩佳明「Hirsun」。我本科毕业于香港理工大学，获得 **计算机科学与技术** 学士学位。我的研究兴趣是 **人工智能开发** 和 **云计算**。
 
 
 - [工作经历](#工作经历)
@@ -26,14 +26,14 @@ breadcrumb: false
 <img src="https://pic.hanjiaming.com.cn/2024/08/22/2ba3132608c7b.png" alt="CleanShot 2024-08-22 at 22.46.37@2x.png" style="zoom:25%;" />
 
 - 信息工程，信息工程学系
-- 研究生, 2024.9 - 2025.11
+- 研究生, 2024.9 - 2026.7
 
 ### 香港理工大学 (The Hong Kong Polytechnic University)
 
 <img src="https://pic.hanjiaming.com.cn/2022/05/23/093cef8d87b4a.png" alt="download.png" style="zoom: 33%;" />
 
-- 计算机科学（理学士），电子计算学系，工程学院
-- 本科, 大四,  2020.9 - 2024.8
+- 计算机科学与技术，电子计算学系，工程学院
+- 本科,  2020.9 - 2024.8
 
 ### 上海交通大学 (Shanghai Jiao Tong University)
 
@@ -58,7 +58,7 @@ breadcrumb: false
 <img src="https://pic.hanjiaming.com.cn/2024/08/14/072f12b58d2e9.png" alt="images.png" style="zoom:66%;" />
 
 - SRE 应用开发,  腾讯互动娱乐 (IEG), 深圳本部。
-- 2024.5 - 2024.9
+- 2024.5 - 2024.11
 - 中国内地 深圳市南山区 科兴科学园
 
 ### 普华永道香港 (PwC Hong Kong)
