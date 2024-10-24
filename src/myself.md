@@ -143,7 +143,6 @@ For details, please check ["Licenses & certifications" in my Linkedin](https://w
   - Business Portal/Website Development
   - Azure Active Directory (SSO + ADFS) Solutions
   - CRM: Salesforce / Dynamic 365
-  - Power Automate (Workflow Automation)
 
 Language:
 

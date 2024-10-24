@@ -138,7 +138,7 @@ breadcrumb: false
 - 金融科技
   - 企业门户/网站开发
   - Azure Active Directory (SSO + ADFS) 方案
-  - CRM 解决方案: Salesforce / Dynamic 365=
+  - CRM 解决方案: Salesforce / Dynamic 365
 
 语言:
 
