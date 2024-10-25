@@ -13,7 +13,7 @@ breadcrumb: false
 2024 年 PolyU 的毕业典礼时间为 11.1 - 11.16，期间均为毕业典礼主题。其中，
 
 - 工程学院的毕业典礼（礼堂授予）时间为：11.15 - 11.16
-- PolyU Computing （礼堂授予）的时间为：11.15 日 上午10点，包含了各个分支（CS, Fintech, EIS等)
+- PolyU Computing （礼堂授予）的时间为：11.15 日 （周五）上午10点，包含了各个分支（CS, Fintech, EIS等)
 
 官方详情网站: https://www.polyu.edu.hk/ar/graduates/congregation-arrangements/30th-congregation/
 
