@@ -221,13 +221,23 @@ HTTP/2 通过多路复用解决了 HTTP/1.1 中的队头阻塞（Head-of-Line Bl
 
 :::
 
-### HTTP Streaming
+### Streaming
 
-HTTP 流（HTTP Streaming）支持客户端发送一个请求，然后服务器通过该连接持续发送多个响应 （一次请求，多次响应）。
+HTTP 流式返回（Streaming），支持客户端发送一个请求，然后服务器通过该连接持续发送多个响应 （一次请求，多次响应）。
+
+- **服务器向客户端传输数据的方式允许数据分块发送而不是一次性发送完毕。**
+- **这样客户端可以在接收到第一部分数据时就开始处理，而不必等待整个响应完成。**
 
 这种技术允许服务器在同一连接上连续地发送数据更新，而无需客户端反复发送新的请求。这种机制在需要实时数据推送的应用中非常有用。
 
-工作原理
+::: info 区分 HTTP Streaming 和  HTTP Live Streaming （HLS）
+
+- HTTP Streaming 的用例有 ChatGPT 的流式回复，客户可以直接得到答案，并等待后续的文本补全。
+- HTTP Live Streaming 是 苹果公司发布的一个视频传输协议，也是 HTTP Streaming 的一种实现。
+
+:::
+
+#### 工作原理
 
 <img src="https://pic.hanjiaming.com.cn/2024/11/09/147408e758f9a.png" alt="1731158919823.png" style="zoom:33%;" />
 
@@ -236,9 +246,19 @@ HTTP 流（HTTP Streaming）支持客户端发送一个请求，然后服务器�
 3. **服务器发送响应数据**：服务器通过这个打开的连接持续发送数据块，每个数据块可以被视为一个“部分响应”。这些数据块可以包含新的数据更新，服务器会根据需要发送这些数据块。
 4. **客户端处理数据**：客户端会持续监听这个连接，并处理服务器发送的每个数据块。这种方式使得客户端可以接收到实时的数据推送。
 
+#### Chunked Transfer Encoding
+
+HTTP Streaming 可以利用 Chunked Transfer Encoding 来实现。
+
+- Chunked Transfer Encoding 是 HTTP/1.1 引入的一种传输编码方式，允许服务器以一块一块的形式发送响应数据，而不需要在发送之前知道响应的总大小。
+- 这种编码方式通过在每个数据块前面添加一个表示块大小的十六进制数字来实现。
+- 每个数据块后面紧跟一个 CRLF（回车换行）序列，最后一个数据块大小为 0，表示传输结束。
+
+HTTP/2 中, 多个 Stream 复用一条 TCP 连接，可以达到并发的效果。解决了 HTTP/1.1 队头阻塞的问题，提高了 HTTP 传输的吞吐量。
+
 ::: warning 提示
 
-虽然 HTTP/2 支持服务器流（Streams），但它仍然是基于 HTTP 的请求/响应模型的。
+虽然  HTTP/1.1 支持服务器流（Streams），但它仍然是基于 HTTP 的请求/响应模型的。
 
 服务器推送允许服务器在客户端请求前预先发送数据，但这仍然需要一个初始的客户端请求。
 
@@ -262,7 +282,7 @@ CGNAT 的 主要作用是将多个内部IP地址映射到较少数量的公共 I
 CGNAT的工作原理类似于传统的网络地址转换（NAT），但它是在运营商的网络层面上实施的。
 
 - 当用户设备连接到运营商的网络时，运营商分配给用户的是一个私有IP地址，通常是在RFC 1918定义的地址范围内（如192.168.x.x、10.x.x.x等）。
-- 当用户设备尝试访问Internet上的资源时，数据包将首先到达运营商的CGNAT设备。
+- 当用户设备尝试访问 Internet上的资源时，数据包将首先到达运营商的CGNAT设备。
 
 在CGNAT设备上，
 
@@ -300,6 +320,46 @@ CGNAT 会保留特殊端口，如 80, 443, 3389 等，不将其用于映射。
 
 针对网络中的NAT穿越问题，目前业界主要有如下解决方案:ALG方式、MII3COM方式、STUN方式、TURN方式、ICE方式、Full Proxy方式等。
 
+## Websocket
+
+TCP 连接的两端，**同一时间里**，**双方**都可以**主动**向对方发送数据。这就是所谓的**全双工**。
+
+<img src="https://pic.hanjiaming.com.cn/2024/11/10/13e84200f2425.png" alt="1731175582652.png" style="zoom: 40%;" />
+
+WebSocket 是一种通过 TCP 连接在两台计算机之间提供全双工通信通道的协议。
+
+- 设计用于在 Web 浏览器 和 Web 服务器 中实现
+- 通信通过 TCP 端口 80 完成（可用于安全计算环境）
+
+::: info HTTP vs WebSocket
+
+HTTP是半双工的：一次只能有一方发送数据，就像使用对讲机一样。也就是说，好好的全双工 TCP，被 HTTP/1.1 用成了半双工。
+
+也就是说，好好的全双工 TCP，被 HTTP/1.1 用成了半双工。
+
+:::
+
+### 浏览器如果建立 WebSocket 连接
+
+浏览器在 TCP 三次握手建立连接之后，都统一使用 HTTP 协议先进行一次通信。
+
+- 如果此时是普通的 HTTP 请求，那后续双方就还是老样子继续用普通 HTTP 协议进行交互，
+- 如果这时候是想建立WebSocket连接，就会在HTTP请求里带上一些特殊的header头
+
+### WebSocket的消息格式
+
+上面提到在完成协议升级之后，两端就会用webscoket的数据格式进行通信。数据包在WebSocket中被叫做帧：
+
+![1731175865453.png](https://pic.hanjiaming.com.cn/2024/11/10/4e65371d128ca.png)
+
+payload字段：存放的是我们真正想要传输的数据的长度，单位是字节。
+
+
+
+
+
+
+
 ## REF
 
 - https://developer.aliyun.com/article/1487833
@@ -308,4 +368,6 @@ CGNAT 会保留特殊端口，如 80, 443, 3389 等，不将其用于映射。
 - https://www.xiaoweigod.com/network/1553.html
 - https://blog.csdn.net/phoenix1415/article/details/122834480
 - https://blog.zilch40.wang/post/way-to-access-a-local-server-from-internet/
+- https://blog.csdn.net/weixin_43925630/article/details/139178999
+- https://xiaolincoding.com/network/2_http/http_websocket.html#%E9%95%BF%E8%BD%AE%E8%AF%A2
 
