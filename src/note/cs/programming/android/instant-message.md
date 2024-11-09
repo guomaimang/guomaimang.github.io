@@ -80,29 +80,56 @@ Comet 应用程序的实现分为两大类
 
 #### Streaming
 
+HTTP 流（HTTP Streaming）支持客户端发送一个请求，然后服务器通过该连接持续发送多个响应 （一次请求，多次响应）。
+
+这种技术允许服务器在同一连接上连续地发送数据更新，而无需客户端反复发送新的请求。这种机制在需要实时数据推送的应用中非常有用。
+
 - A persistent connection is established between the browser and the server
 - Data is sent from the server a **chunked block**
 - 事件会逐步发送到浏览器（例如，使用 `<script>` 标签执行JavaScript命令）
 
 <img src="https://pic.hanjiaming.com.cn/2024/11/09/147408e758f9a.png" alt="1731158919823.png" style="zoom:33%;" />
 
-::: warning 提示
-
-虽然 HTTP/2 支持服务器推送（Server Push）和流（Streams），但它仍然是基于 HTTP 的请求/响应模型的。
-
-服务器推送允许服务器在客户端请求前预先发送数据，但这仍然需要一个初始的客户端请求。
-
-- 流允许在单个 TCP 连接上并行处理多个请求和响应，但每个流仍然是基于请求/响应的。另一方面
-- WebSocket 是全双工的，一旦连接建立，服务器和客户端都可以随时发送数据。
-
-:::
-
 #### Long-polling
 
 - 请求从客户端发送到服务器
-- 
+- 服务器保持连接，直到某些事件发生，然后响应发送回客户端
+- 客户端在收到响应后，立即向服务器发出另一个请求
+- （通常使用Ajax实现）
+
+<img src="https://pic.hanjiaming.com.cn/2024/11/10/0d2aec06f6c29.png" alt="1731172410517.png" style="zoom:50%;" />
+
+这相当于服务器与每个客户终端打开至少一个 TCP 连接。
+
+### BOSH
+
+BOSH 代表双向「Bidirectional」 - 通过同步「Synchronous」 HTTP 传输
+
+- 它利用 HTTP 长轮询
+- 建立单个TCP 连接，接收服务器推送的数据
+- 如果不需要推送数据，服务器发送一个空的 `<body/>`消息
+- 如果客户端需要向服务器发送数据，将使用第二个套接字来发送HTTP POST请求
+- 然后，新旧连接将交换角色（此后新连接将用于长轮询）
+
+## WebSocket
 
 
+
+::: tip WebSocket vs HTTP
+
+着在一个 WebSocket 连接中，客户端和服务器都可以在任何时间点向对方发送数据，而不需要等待对方的请求或响应。这是 WebSocket 与 HTTP 的一个主要区别。
+
+在 HTTP 协议中，
+
+- 通信是由客户端发起的，客户端发送一个请求到服务器，然后等待服务器的响应。
+- 这种通信模式被称为半双工通信，因为在任何给定的时间点，数据只能在一个方向上流动（从客户端到服务器或从服务器到客户端）。
+
+但在 WebSocket 协议中，
+
+- 一旦连接被建立，客户端和服务器都可以主动发送数据。
+- 这种通信模式被称为全双工通信，因为数据可以同时在两个方向上流动（从客户端到服务器和从服务器到客户端）。
+
+:::
 
 
 
