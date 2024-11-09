@@ -339,6 +339,12 @@ HTTP是半双工的：一次只能有一方发送数据，就像使用对讲机�
 
 :::
 
+Web Socket 是 HTML5 标准的一部分
+
+- 主要 Web 浏览器的最新版本支持
+- JavaScript 中的简单 API
+- Libraries also available on iOS and Android
+
 ### 浏览器如果建立 WebSocket 连接
 
 浏览器在 TCP 三次握手建立连接之后，都统一使用 HTTP 协议先进行一次通信。
