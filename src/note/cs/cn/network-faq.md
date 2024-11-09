@@ -345,7 +345,7 @@ Web Socket 是 HTML5 标准的一部分
 - JavaScript 中的简单 API
 - Libraries also available on iOS and Android
 
-### 浏览器如果建立 WebSocket 连接
+### 浏览器如何建立 WebSocket 连接
 
 浏览器在 TCP 三次握手建立连接之后，都统一使用 HTTP 协议先进行一次通信。
 
