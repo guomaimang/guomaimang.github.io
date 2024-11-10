@@ -173,13 +173,21 @@ Google 和 Apple 提供的推送通知服务是向应用程序推送消息的标
 
 Firebase（ https://firebase.google.com/ ）是一个平台和一系列支持构建移动应用的工具。它包括实时数据库、身份验证、推送通知、广告、使用分析等。
 
+### FCM Architectural Overview
 
+<img src="https://pic.hanjiaming.com.cn/2024/11/10/92ef573145d30.png" alt="1731218508157.png" style="zoom: 33%;" />
 
+### Notification vs. Data Messages
 
+With FCM, you can send two types of messages to clients:
 
+- 通知消息，有时被称为“显示消息”。这些消息由 FCM SDK 自动处理。
+  - （后台应用程序）通知消息将发送到通知托盘。
+  - （前台应用程序）通知消息由回调函数处理。
+- 数据消息，由客户端应用程序处理。
+  - （后台或前台的应用程序）客户端应用程序在回调函数中接收数据有效负载。
 
-
-
+<img src="https://pic.hanjiaming.com.cn/2024/11/10/0d9d2e2a75c40.png" alt="1731218871818.png" style="zoom:50%;" />
 
 
 
