@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: 韩佳明的博客
-bgImage: https://pic.hanjiaming.com.cn/2023/06/17/97f848f466a2d.jpg
+bgImage: https://pic.hanjiaming.com.cn/2024/11/10/f33c521629261.jpg
 heroFullScreen: false
 heroText: false
 projects:
@@ -39,7 +39,7 @@ projects:
     desc: Inspiration and code snippets
     link: https://gist.github.com/guomaimang
 
-footer: <a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备20006728号-1 </a>
+footer: <a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备20006728号-1 </a> | Serving since 2011.
 ---
 
 <h6 style="text-align:center">

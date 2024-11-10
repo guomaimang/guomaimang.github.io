@@ -171,7 +171,7 @@ Google 和 Apple 提供的推送通知服务是向应用程序推送消息的标
 
 (FCM)
 
-
+Firebase（ https://firebase.google.com/ ）是一个平台和一系列支持构建移动应用的工具。它包括实时数据库、身份验证、推送通知、广告、使用分析等。
 
 
 
