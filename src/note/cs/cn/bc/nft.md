@@ -127,7 +127,23 @@ ERC20标准提供了一组通用的方法和事件，使代币能够在不同的
 4. 在构造函数中初始化代币的名称、符号和小数位数。
 5. 使用`_mint`函数在合约部署时向自己铸造1000个代币。
 
-
-
 ::: 
+
+### Extend to DeFi
+
+ERC20代币可以部署在公共区块链上。
+
+- Permissionless：意味着任何人都可以与合约进行交互，不需要得到任何特定实体的授权或许可。
+- Transparency「透明度」：例如，Tether在Etherscan上。Tether是一种ERC20代币，其智能合约的字节码和源代码可以在Etherscan上查看。
+- Composable「可组合的」：智能合约可以相互组合，形成更复杂的金融产品和服务。
+  - 例如，一个交换ERC20代币的合约。这样的合约可以自动执行代币交换操作。
+  - Uniswap和其他复杂合约 -> 去中心化交易所/去中心化金融。Uniswap是一个去中心化交易所，允许用户在没有中介的情况下进行代币交换。
+
+### Swap between 2 ERC20 tokens
+
+- Inside contract TokenSwap
+- 在智能合约 TokenSwap 内部。
+- 
+
+
 
