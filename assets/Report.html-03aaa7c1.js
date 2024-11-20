@@ -1,2 +1,0 @@
-import{_ as r}from"./plugin-vue_export-helper-c27b6911.js";import{o as t,c as o,a as e,b as a}from"./app-ece52120.js";const s={},c=e("h1",{id:"report",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#report","aria-hidden":"true"},"#"),a(" Report")],-1),d=e("div",{class:"pdf-preview"},[e("iframe",{class:"pdf-iframe",src:"/static-pdf/YouBear-Report.pdf",style:{width:"100%",height:"700px","border-radius":"8px"}},`
-`)],-1),i=[c,d];function n(p,_){return t(),o("div",null,i)}const l=r(s,[["render",n],["__file","Report.html.vue"]]);export{l as default};
