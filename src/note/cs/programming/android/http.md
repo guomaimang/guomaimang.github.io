@@ -175,7 +175,228 @@ Other approaches
   - 避免等待阻塞的系统调用（例如，从套接字读取，从内存或磁盘中的文件读取）
 - 增加功能，如带缓存的反向代理、负载均衡，以及支持其他新协议，如SPDY或WebSockets
 
-### Serving Dynamic Content
+## Serving Dynamic Content
+
+运行主要包含静态内容的网站，只需要一个Web服务器即可。然而，构建应用程序或服务需要更复杂的后端逻辑，并且通常需要动态生成内容。您还需要一个应用服务器。
+
+HTTP服务器将向应用服务器发送请求，以执行计算或检索动态内容。
+
+![1733770747642.png](https://pic.hanjiaming.com.cn/2024/12/10/11fc84c10e924.png)
+
+### Common Gateway Interface (CGI)
+
+- 外部应用程序与Web服务器接口的标准协议
+- CGI程序是在Web服务器机器上运行的可执行程序
+- CGI程序通常返回动态构建的HTML页面
+
+典型例子：
+
+- 访客计数器（显示页面的访客总数）
+- 博客（获取最新博客文章）
+
+![1733770917563.png](https://pic.hanjiaming.com.cn/2024/12/10/862ae9d05b9ac.png)
+
+Limitations of CGI
+
+- 对于调用 CGI 程序的每个请求，都会创建一个新进程，该进程将在执行结束时终止。
+- 因此，CGI易于实现，但效率不高且不可扩展。
+- 启动和终止进程的开销可能很大（当工作负载高时，操作系统需要做很多工作）
+- 例如，想象CGI程序需要从磁盘加载一个巨大的字典以执行单词翻译
+
+其他方法
+
+- 为了减少启动和终止程序的开销，程序应托管在服务器应用程序中，保持一个持久进程始终运行并准备好处理请求。
+- 一些例子包括Apache的mod_php或mod_python，FastCGI，SCGI，Python的WSGI，Python的ASGI
+
+![1733771065579.png](https://pic.hanjiaming.com.cn/2024/12/10/b0bbb583ec4af.png)
+
+### Web Server Gateway Interface (WSGI)
+
+- 指定服务器和应用程序通信的接口
+- 如果一个应用程序按照规范编写，它将能够在根据同一规范开发的任何服务器上运行。
+-  使用WSGI接口的应用程序和服务器被称为“WSGI兼容”
+
+Why WSGI?
+
+- Web服务器无法运行Python应用程序
+- 对于Apache，有一个名为mod_python的模块，它使Apache能够执行Python代码, 但 不再积极开发
+- 因此，Python 社区提出了 WSGI 作为 Python 网络应用的标准接口
+
+然而，WSGI存在一些问题...
+
+- 对异步WSGI服务器的尝试，但仍然坚持请求/响应方法，以及可能存在一些其他问题，例如HTTP服务器重新发明，边缘情况处理，安全问题等。
+- 异步编程的复杂性和学习曲线引入了新的挑战和代码中的错误。
+
+### Asynchronous Server Gateway Interface (ASGI)
+
+- Uses the event messages approach, instead of the request/response approach
+-  Intended to handle HTTP/2 and WebSockets
+- 没有策略执行点（PEP），它是安全框架中强制执行访问控制策略的组件
+
+WSGI/ASGI
+
+![预览 2024-12-10 03.13.19.png](https://pic.hanjiaming.com.cn/2024/12/10/39241dd21b360.png)
+
+### Servers vs Applications
+
+为什么我们有服务器和应用程序？
+
+ It is an example of decoupling:
+
+- 应用侧重于如何完成任务（例如，业务逻辑、更新数据库、提供动态内容等）。
+- 服务器专注于如何路由请求、处理并发连接、优化计算资源等。
+- 作为一名应用程序开发者，您可以专注于开发功能和特性，无需担心如何与Web服务器进行接口
+
+### Communication between the Application and the Server
+
+当一个新的请求到达WSGI服务器时：
+
+- 服务器调用应用程序中相应的函数
+- 参数通过环境变量传递给应用程序
+- 服务器还向应用程序提供了一个回调函数
+- 应用程序处理请求
+- 应用程序使用服务器提供的回调函数将响应返回给服务器
+
+![1733773228134.png](https://pic.hanjiaming.com.cn/2024/12/10/fd9bdfc3219c9.png)
+
+::: tip Python Application Server
+
+- **Nginx** as the HTTP server
+- **Uvicorn** as a ASGI server
+- **Python** as the programming language
+- **FastAPI** as the Web framework
+
+:::
+
+## REST API
+
+REST API 是一种应用程序编程接口 (API)。
+
+- API是一组用于构建和集成应用程序软件的定义和协议集合。
+- REST API遵循REST架构风格的设计原则。
+- REST是表示状态转移的缩写，是一组关于您应该如何构建Web API的规则和指南。
+
+REST Architectural Style
+
+1. 由客户端、服务器和资源组成的客户端-服务器架构，通过HTTP管理请求。
+2. 无状态客户端-服务器通信，意味着在获取请求之间不存储客户端信息，每个请求都是独立且不相连的。
+3. 可缓存的简化客户端-服务器交互的数据。
+4. 一个分层系统，组织每种类型的服务器（负责安全、负载均衡等），涉及将请求的信息检索到对客户端不可见的层级中。
+5. 按需代码（可选）：在请求时从服务器发送可执行代码到客户端的能力，扩展客户端功能。
+6. 组件之间有一个统一的接口，以便信息以标准形式传输。这需要：
+   1. 请求的资源是可识别的，并且与发送给客户端的表示是分开的。
+   2. 资源可以通过客户端通过他们接收到的表示进行操作，因为表示中包含足够的信息来这样做。
+   3. 客户端返回的自我描述消息包含足够的信息来描述客户端应该如何处理它。
+   4. 超文本/超媒体可用，意味着在访问一个资源后，客户端应该能够使用超链接找到他们可以采取的所有其他当前可用操作。
+
+## Uvicorn
+
+![1733774195605.png](https://pic.hanjiaming.com.cn/2024/12/10/26f85f3bea1ad.png)
+
+- Uvicorn 是一个适用于 Unix/Linux、Mac 和 Windows 系统的 Python ASGI HTTP 服务器。
+- 它充当 ASGI 应用程序的容器。
+- 它管理一个或多个应用程序实例（多个工作人员）。
+
+### Architecture of Uvicorn
+
+- 由于是 Spawn Worker 模型，因此 Uvicorn 在大多数操作系统中都能正常运行。
+- 默认进程管理器监控子进程的状态，并自动重启意外死亡的子进程。不仅如此，它还会通过管道监控子进程的状态。当子进程意外卡住时，相应的子进程将通过不可阻止的系统信号或接口被终止。
+- 每个服务器工作进程运行一个您的应用程序的副本。
+
+```shell
+fastapi run --workers 4 main.py
+```
+
+<img src="https://pic.hanjiaming.com.cn/2024/12/10/39c9b731939ae.png" alt="1733774322007.png" style="zoom: 50%;" />
+
+### Uvicorn Workers
+
+- 由于Uvicorn工人使用的是spawn，所以它是多线程的。
+- 启动申请至少需要 2 名工作人员。
+- 如果您想充分利用计算机的核心数量，您可能需要同时使用 Gunicorn + Uvicorn。
+  - In this case, **2n + 1** (n = number of cores) workers
+  - 基于假设一半的工人正在执行I/O操作，而另一半的工人正在执行计算
+
+## Nginx
+
+Using Nginx as a Reverse Proxy and Load Balancer
+
+### Nginx as a Reverse Proxy
+
+- Nginx 是一个 Web 服务器，但也可以配置为反向代理服务器
+- 它可以代理请求到另一个HTTP服务器或非HTTP服务器
+- It supports the following non-HTTP protocol: FastCGI, uwsgi, SCGI, memcached
+- 它可以缓冲来自服务器的响应以提升性能（当客户端较慢时）
+
+### Configuring Nginx
+
+- Nginx可以通过编辑配置文件来配置
+- In Ubuntu, configuration files are usually stored under `/etc/nginx/`
+- A main configuration file named `nginx.conf`
+- One or more configuration files for each of the sites hosted by the server
+(see `/etc/nginx/site-available` and `/etc/nginx/site-enabled`)
+
+将 Nginx 配置为反向代理负载均衡器很简单。不过，在此之前我们先介绍一下“上游”「**upstream**」这个词。
+
+![1733774749530.png](https://pic.hanjiaming.com.cn/2024/12/10/92b70f09abc5b.png)
+
+注意：当没有指定负载均衡方法时，将使用round-robin方法
+
+```
+http {
+    upstream myservers {
+        server s1.myserver.com;
+        server s2.myserver.com;
+        server s3.myserver.com;
+}
+    server {
+        listen 80;
+        location / {
+            proxy_pass http://myservers;
+				} 
+		}
+}
+```
+
+![1733774840593.png](https://pic.hanjiaming.com.cn/2024/12/10/2ddfa3299e99e.png)
+
+### Persistence (Stickiness)
+
+- 有时我们需要同一个服务器为同一系列请求服务同一个客户端（为什么？）
+- 轮询法和最少连接法不能保证同一客户端由同一服务器服务
+- 持久性（或粘性）指的是负载均衡将请求转发到同一服务器的能力
+
+Nginx中使用IP哈希作为负载均衡方法实现持久化
+
+
+
+### Other functions
+
+- Health checks of servers
+- Buffering server response
+- Routing requests to applications (e.g. to a Python Web app)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
