@@ -97,7 +97,6 @@ Layouts in Android:
   - 现代默认布局系统，旨在创建强大且平面的视图层次结构
   - 视图是根据同级视图和父布局之间的关系（或约束）来布局的。
   - 约束是指UI组件之间的位置和对齐关系。
-
 - Frame Layout：帧布局，所有子元素都堆叠在一个单独的框架中，通常用于简单的布局。
 
 ![1728203023674.png](https://pic.hanjiaming.com.cn/2024/10/06/687966b926a5d.png)
@@ -152,10 +151,8 @@ Activity的生命周期由一系列回调方法（如onCreate()、onStart()、on
 1. **onPause()**：当系统即将启动另一个Activity时，系统会调用此方法。此时Activity仍然可见，但失去焦点，用户无法与之交互。你应该在这里保存任何需要保存的数据。
 2. **onStop()**：当Activity对用户不再可见时，系统会调用此方法。此时Activity进入“已停止”状态。你可以在这里释放不再需要的资源。
 3. **onRestart()**：如果用户重新导航回这个Activity，系统会调用此方法。此时Activity从“已停止”状态重新启动，然后调用`onStart()`和`onResume()`方法。
-
-**App process killed**：如果系统需要回收内存，可能会杀掉Activity所在的进程。
-
-1. **onDestroy()**：当Activity被销毁前，系统会调用此方法。这个方法可能由于用户主动销毁Activity或系统为了节省内存而销毁Activity。
+4. **App process killed**：如果系统需要回收内存，可能会杀掉Activity所在的进程。
+5. **onDestroy()**：当Activity被销毁前，系统会调用此方法。这个方法可能由于用户主动销毁Activity或系统为了节省内存而销毁Activity。
 
 ## Intents
 

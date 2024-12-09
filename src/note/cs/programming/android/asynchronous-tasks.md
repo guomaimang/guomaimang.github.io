@@ -8,7 +8,7 @@ headerDepth: 1
 
 # Asynchronous Tasks
 
-## HTTP
+## HTTP Request-Response Cycle
 
 - 应用程序服务器仅在客户端发出**请求**时才执行工作
 - 客户端在应用服务器完成其工作并返回响应之前等待响应
