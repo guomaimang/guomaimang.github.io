@@ -7,6 +7,6 @@ headerDepth: 1
 
 # Information Technology
 
-- [Project Management](da/)
-- [Information Governance](ig/)
 - [Cloud Computing](cc/)
+- [Solution Architecture](arch/)
+- [Information Governance](ig/)
