@@ -42,7 +42,7 @@ export default hopeTheme({
     },
     avatar: "/avatar.png",
     roundAvatar:false,
-    description: "香港中文大学 信息工程研究生 <br> 香港理工大学 计算机学士学位<br> 研究 人工智能开发, 云计算",
+    description: "专注 软件开发与架构, 云计算 <br> 香港中文大学 信息工程硕士 <br> 香港理工大学 计算机学士学位",
     intro: "/myself.html",
     articlePerPage: 6,
   },

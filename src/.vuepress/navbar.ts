@@ -135,9 +135,9 @@ export default navbar([
         link: "#",
       },
       {
-        text: "My Gallary",
+        text: "Featured Album",
         icon: "fa-solid fa-images",
-        link: "gallery",
+        link: "#",
       },
       {
         text: "Navigation",
