@@ -45,5 +45,6 @@ footer: <a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备20006728�
 <h6 style="text-align:center">
 Github Page: guomaimang.github.io
 <br />
-Global CDN: hanjiaming.com.cn
+Chinese Mainland CDN: hanjiaming.com.cn
 </h6>
+

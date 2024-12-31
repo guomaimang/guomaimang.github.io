@@ -14,7 +14,9 @@ breadcrumb: false
 
 # Hirsun HAN
 
-I am Hirsun「韩佳明」, a postgraduate in Information Engineering, The Chinese University of Hong Kong.  I've graduated from The Hong Kong Polytechnic University with bachelor degree in computing. My research interests are **Artificial Intelligence Development** and **Cloud Computing.** 
+I am Hirsun「韩佳明」, a postgraduate in Information Engineering, The Chinese University of Hong Kong.  I've graduated from The Hong Kong Polytechnic University with bachelor degree in computing. 
+
+My work focuses on **Software Development & Architecture (Java)** and **Cloud Computing**. 
 
 
 - [Work Experience](#work-experience)
@@ -30,7 +32,7 @@ I am Hirsun「韩佳明」, a postgraduate in Information Engineering, The Chine
 <img src="https://pic.hanjiaming.com.cn/2024/08/22/2ba3132608c7b.png" alt="CleanShot 2024-08-22 at 22.46.37@2x.png" style="zoom:25%;" />
 
 - Information Engineering, Department of Information Engineering
-- Postgraduate, 2024.9 - 2026.7
+- Postgraduate, 2024.9 - 2026.3
 
 ### The Hong Kong Polytechnic University (香港理工大学)
 
@@ -45,13 +47,13 @@ I am Hirsun「韩佳明」, a postgraduate in Information Engineering, The Chine
 
 - Electronic and Computer Engineering, UM-SJTU Joint Institute
 - Spring 2024 Semester Exchange
-- 2024.1 - 2024.7
+- 2024.1 - 2024.6
 
 ### Hebei Hengshui High School (河北衡水中学)
 
 <img src="https://pic.hanjiaming.com.cn/2022/05/23/8677f1421c551.png" alt="logo.86300e6.png" style="zoom: 55%;" />
 
-- Senior High School, 2017-2020
+- Senior High School, 2017 - 2020
 - Major in Science and Math
 
 ## Work Experience
@@ -60,7 +62,7 @@ I am Hirsun「韩佳明」, a postgraduate in Information Engineering, The Chine
 
 <img src="https://pic.hanjiaming.com.cn/2024/08/14/072f12b58d2e9.png" alt="images.png" style="zoom:66%;" />
 
-- Application Development in SRE, Tencent Interactive Entertainment Group(IEG), Shenzhen.
+- Application Development, Tencent Interactive Entertainment Group(IEG), Shenzhen.
 - 2024.5 - 2024.11
 - Kexing Science Park, Nanshan District, Shenzhen, China
 
@@ -121,30 +123,32 @@ For details, please check ["Licenses & certifications" in my Linkedin](https://w
 
 ## Professional Competence
 
-- Software Engineering
+- **Software Engineering**
   - **Java**, Python, JS + TS, SQL
-  - **Java Web Server Back-End Development**
-  - Redis + Nginx + Message Queue
-- Information Engineering
-  - Information Systems Full Stack Development (SpringBoot / Microservices)
+  - **Java Web & Back-End Development**
+  - Nginx + Redis + Kafka/RabbitMQ + Elasticsearch + MySQL
+  - Asynchronous/Concurrent Task Solution
+- **Information Engineering**
+  - Information Systems Full Stack Development (SpringBoot + Microservices)
   - Cloud Computing Development / DevOps
-    - Azure, Alibaba Cloud, AWS
+    - **Azure, Alibaba Cloud, AWS**
+    - **Cloud & Software Architecture: Concurrency & Availability**
     - Self-Developed on Cloud + Docker (Cloud Native)
-- Data Science
-  - Python: Data Collection + Processing + Data Warehousing + Visualization
-  - Data Analytics Automation: Python Pandas
-  - Big Data Analytics: PySpark
-- Artificial Intelligence
+  - Azure Active Directory (SSO + ADFS) Solutions
+- **Financial Technology and Web3**
+  - **Blockchain: Solidity (Ethereum Smart Contract)**
+  - FinOps: Develop billing and settlement Platform
+  - Business Portal/Website Development
+- **Artificial Intelligence**
   - Generative AI Business Development
   - Prompt Engineering & Product Commercialization
   - Privatized deployment + O&M: Llama, ChatGLM
   - Fine-tuning + RAG (Enterprise Knowledge Database): Dify, Langchain
-- Financial Technology
-  - Business Portal/Website Development
-  - Azure Active Directory (SSO + ADFS) Solutions
-  - CRM: Salesforce / Dynamic 365
+- **Data Science**
+  - Python: Data Collection + Process + Data Warehouse + Visualization
+  - Data Analytics Automation: Python Pandas
 
-Language:
+Language
 
 - Cantonese & Mandarin Chinese
 - English

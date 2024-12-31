@@ -12,6 +12,8 @@ breadcrumb: false
 
 我是 香港中文大学**信息工程**系 的研究生 韩佳明「Hirsun」。我本科毕业于香港理工大学，获得 **计算机科学与技术** 学士学位。我的研究兴趣是 **人工智能开发** 和 **云计算**。
 
+我专注于 **软件开发与架构（Java）** 和 **云计算** 工作。
+
 
 - [工作经历](#工作经历)
 - [联系方式](#联系方式) 
@@ -26,14 +28,14 @@ breadcrumb: false
 <img src="https://pic.hanjiaming.com.cn/2024/08/22/2ba3132608c7b.png" alt="CleanShot 2024-08-22 at 22.46.37@2x.png" style="zoom:25%;" />
 
 - 信息工程，信息工程学系
-- 研究生, 2024.9 - 2026.7
+- 研究生, 2024.9 - 2026.3
 
 ### 香港理工大学 (The Hong Kong Polytechnic University)
 
 <img src="https://pic.hanjiaming.com.cn/2022/05/23/093cef8d87b4a.png" alt="download.png" style="zoom: 33%;" />
 
 - 计算机科学与技术，电子计算学系，工程学院
-- 本科,  2020.9 - 2024.8
+- 本科,  2020.9 - 2024.7
 
 ### 上海交通大学 (Shanghai Jiao Tong University)
 
@@ -42,7 +44,7 @@ breadcrumb: false
 - 专业: 电子与计算机工程,
 - 美国密西根大学-上海交通大学联合学院
 - 2024年春季学期交换学生
-- 2024.1 - 2024.7
+- 2024.1 - 2024.6
 
 ### 河北衡水中学 (Hebei Hengshui High School)
 
@@ -57,7 +59,7 @@ breadcrumb: false
 
 <img src="https://pic.hanjiaming.com.cn/2024/08/14/072f12b58d2e9.png" alt="images.png" style="zoom:66%;" />
 
-- SRE 应用开发,  腾讯互动娱乐 (IEG), 深圳本部。
+- 应用开发,  腾讯互动娱乐 (IEG), 深圳本部。
 - 2024.5 - 2024.11
 - 中国内地 深圳市南山区 科兴科学园
 
@@ -119,26 +121,28 @@ breadcrumb: false
 
 - 软件工程
   - **Java**, Python, JS + TS, SQL
-  - **Java Web 服务器后端开发**
-  - Redis + Nginx + 消息队列
+  - **Java Web 和 后端开发**
+  - Nginx + Redis + Kafka/RabbitMQ + Elasticsearch + MySQL
+  - 异步/并发任务解决方案
 - 信息工程
-  - 信息系统全栈开发 (SpringBoot / 微服务)
+  - 信息系统全栈开发（Spring Boot + 微服务）
   - 云计算开发 / DevOps
-    - Azure, 阿里云, AWS
-    - 自研上云 + Docker 云原生
-- 数据科学
-  - Python: 数据采集 + 处理 + 数据仓库 + 可视化
-  - 数据分析自动化: Python Pandas
-  - 大数据分析:  PySpark
+    - **Azure, Alibaba Cloud, AWS**
+    - 云与软件架构：并发与可用性
+    - 自研云+Docker（云原生）
+  - Azure Active Directory（单点登录 + ADFS）解决方案
+- **金融科技 和 Web3**
+  - **区块链：Solidity（以太坊智能合约）**
+  - FinOps：开发计费和结算平台
+  - 商业门户 / 网站开发
 - 人工智能
-  - 生成式 AI 业务开发
-  - 提示词工程与产品商业化
-  - 私有化部署和运维： Llama, ChatGLM
-  - 微调 + RAG (企业知识库) : Dify, Langchain
-- 金融科技
-  - 企业门户/网站开发
-  - Azure Active Directory (SSO + ADFS) 方案
-  - CRM 解决方案: Salesforce / Dynamic 365
+  - 生成式人工智能业务开发
+  - 提示工程与产品商业化
+  - 私有化部署 + 运维：Llama，ChatGLM
+  - 微调 + RAG（企业知识数据库）：Dify，Langchain
+- 数据科学
+  - Python：数据收集 + 处理 + 数据仓库 + 可视化
+  - 数据分析自动化：Python Pandas
 
 语言:
 

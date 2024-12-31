@@ -61,7 +61,7 @@ We can group the coordinates x and y into a structure called Point「我们可�
   cout << p1.x << endl; // print p1.x out
   ```
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/04/67f97e3f1a479.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/04/67f97e3f1a479.png" alt="image.png" title="image.png" />
 
 #### 实例应用
 
@@ -102,13 +102,13 @@ int main() {
 }
 ```
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/04/abb3d9e874227.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/04/abb3d9e874227.png" alt="image.png" title="image.png" />
 
 ### Comparison (relational operators)
 
 To compare *struct*, you compare them member-wise
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/04/5585f66cc4e57.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/04/5585f66cc4e57.png" alt="image.png" title="image.png" />
 
 ### Array Structure
 
@@ -201,7 +201,7 @@ void print(const BankCustomer &bc) {
 }
 ```
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/04/c1fc464e49e02.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/04/c1fc464e49e02.png" alt="image.png" title="image.png" />
 
 ### Call
 
@@ -426,9 +426,9 @@ private data members cannot be accessed (both read and write) by the “outside 
 
 ### Scope
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/08/73c61fa0e138e.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/08/73c61fa0e138e.png" alt="image.png" title="image.png" />
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/08/036def0f70473.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/08/036def0f70473.png" alt="image.png" title="image.png" />
 
 ### Advantages
 

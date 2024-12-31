@@ -4,6 +4,8 @@ date: 2024-11-09
 index: true
 order: 7
 headerDepth: 1
+category:
+  - tech
 
 
 ---

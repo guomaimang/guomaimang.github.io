@@ -66,11 +66,6 @@ export default navbar([
         prefix: "it/",
         children:[
           {
-          text: "Project Management",
-          icon: "table",
-          link: "pm/"
-          },
-          {
             text: "Information Governance",
             icon: "fa-solid fa-scroll",
             link: "ig/"
@@ -80,6 +75,11 @@ export default navbar([
           icon: "fa-brands fa-cloudflare",
           link: "cc/"
           },
+          {
+            text: "Solution Architecture",
+            icon: "fa fa-tasks",
+            link: "arch/"
+            },
         ],
       },
       {
@@ -135,9 +135,9 @@ export default navbar([
         link: "#",
       },
       {
-        text: "My Gallary",
+        text: "Featured Album",
         icon: "fa-solid fa-images",
-        link: "gallery",
+        link: "#",
       },
       {
         text: "Navigation",

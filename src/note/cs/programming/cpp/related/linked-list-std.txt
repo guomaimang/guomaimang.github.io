@@ -33,11 +33,11 @@ Each **node** contains two parts: **data and link**.「每个节点包含两个�
 
 #### Node
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/16/5d03b40583a66.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/16/5d03b40583a66.png" alt="image.png" title="image.png" />
 
 #### Ring
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/db09202b02375.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/22/db09202b02375.png" alt="image.png" title="image.png" />
 
 **这里的每一个环就是一个Node。**
 
@@ -73,7 +73,7 @@ We can define a structure with pointer fields that point to the same structure t
 
 ### 手动定义
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/16/041a8eafa1016.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/16/041a8eafa1016.png" alt="image.png" title="image.png" />
 
 ### 使用循环语句定义
 
@@ -133,7 +133,7 @@ while (current->next != nullptr){
 
 ### Adding a node at end of list
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/19/9778c37ef10cf.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/19/9778c37ef10cf.png" alt="image.png" title="image.png" />
 
 ```c++
 Node *current = head;
@@ -150,7 +150,7 @@ current->next->next = NULL;
 
 ### Adding a node to beginning of list
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/19/61d7ad2ddb6ff.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/19/61d7ad2ddb6ff.png" alt="image.png" title="image.png" />
 
 ```c++
 void push(Node** ptr, int val){
@@ -211,9 +211,9 @@ towards the end of the list.「搜索算法将两个指针一起移动到列表�
 
 #### Start
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/89bf8fd10bcff.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/22/89bf8fd10bcff.png" alt="image.png" title="image.png" />
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/da8a684281e13.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/22/da8a684281e13.png" alt="image.png" title="image.png" />
 
 **pre（表示上一个）和cur（表示当前）**
 
@@ -281,11 +281,11 @@ If the node is found, then we can delete the node from the linked list「如果�
 
 #### Deleting the first node
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/f39a2b900f252.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/22/f39a2b900f252.png" alt="image.png" title="image.png" />
 
 #### Deleting last or any other node
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/8d884962e0854.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/22/8d884962e0854.png" alt="image.png" title="image.png" />
 
 #### Process
 
@@ -316,15 +316,15 @@ if (pre == nullptr){
 
 #### Insertion at the beginning of the list
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/a89fbd19d8406.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/22/a89fbd19d8406.png" alt="image.png" title="image.png" />
 
 #### Insertion at the end of the list
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/4db38999f5af9.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/22/4db38999f5af9.png" alt="image.png" title="image.png" />
 
 #### Insertion in the middle of the list 
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/162fad3e6fc9c.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/22/162fad3e6fc9c.png" alt="image.png" title="image.png" />
 
 #### Process
 
@@ -359,7 +359,7 @@ In singly linked list, we cannot delete a node unless we have reference to its p
 
 使用双链表可以解决这个问题
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/a6c277e63fce4.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/22/a6c277e63fce4.png" alt="image.png" title="image.png" />
 
 ```c++
 struct Node {
@@ -369,7 +369,7 @@ struct Node {
 };
 ```
 
-<img src="https://hongshupic.oss-cn-zhangjiakou.aliyuncs.com/2021/04/22/c461753ff0c81.png" alt="image.png" title="image.png" />
+<img src="https://pic.hanjiaming.com.cn/2021/04/22/c461753ff0c81.png" alt="image.png" title="image.png" />
 
 ## Arrays vs Linked Lists
 

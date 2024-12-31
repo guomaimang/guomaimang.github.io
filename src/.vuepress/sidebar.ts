@@ -35,6 +35,7 @@ export default sidebar({
   "/note/it/ig/lae/": "structure",
   "/note/it/ig/computer-security/": "structure",
   "/note/it/cc/": "structure",
+  "/note/it/arch/": "structure",
 
 
   "/note/humanistic/": "structure",
