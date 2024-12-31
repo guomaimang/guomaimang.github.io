@@ -17,7 +17,7 @@ actions:
 features:
   - title: Sandy E-Learning
     icon: fa-solid fa-coins
-    details: Decentralized Education Platform <br />  SpringBoot + Javascript + AzureAD SSO + Blockchain
+    details: Decentralized Education Platform <br />  SpringBoot + Javascript + AzureAD SSO + Blockchain 
     link: https://github.com/guomaimang/Sandy_E-learning
 
   - title: GEM 
@@ -72,4 +72,3 @@ Hirsun's Research and Projects Page.
 <br>
 Content for Reference Only, not Final Evidence.
 </h6>
-
