@@ -6,8 +6,6 @@ order: 21
 headerDepth: 1
 category:
   - tech
-
-
 ---
 
 # JWT 续签方案详解
