@@ -34,6 +34,38 @@ Numpy (Numerical Python的缩写)：
 - 比如SciPy、Scikit-Learn、。Tensorflow、PaddlePaddle等
 - 如果不会Numpy，这些库的深入理解都会遇到障碍
 
+## Numpy Basics
+
+- 提供操作大型数值数据数组和矩阵的基本例程
+- 元素表（通常为数字），所有元素类型相同，通过正整数元组索引
+- Dimensions are called axes. Number of axes is rank.
+  - Coordinates of a point in 3D [1, 2, 1] is an array of rank 1 (1 axis). That axis has a length of 3.
+  - A 2⨉3 matrix [[1.0, 1.0, 2.0], [0.0, 2.0, 1.0]] has a rank of 2 (or 2 dimensions). First dimension (or axis) has length = 2; Second dimension (or axis) has length = 3
+- **Assignment of Numpy Array is just a Reference Copy**
+
+##  Numpy Array Dimensions
+
+```python
+a = np.array(42.)
+# a: 0 () float64
+b = np.array([1, 2, 3, 4, 5])
+# b: 1 (5,) int64
+c = np.array([[1, 2, 3], [4, 5, 6]])
+# c: 2 (2, 3) int64
+d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+# d: 3 (2, 2, 3) int64
+
+print('a:', a.ndim, ' ', a.shape, ' ', a.dtype)
+print('b:', b.ndim, ' ', b.shape, ' ', b.dtype)
+print('c:', c.ndim, ' ', c.shape, ' ', c.dtype)
+print('d:', d.ndim, ' ', d.shape, ' ', d.dtype)
+
+print("length of d's first axis =", len(d))
+# length of d's first axis = 2
+print("length of d's second axis =", len(d[0]))
+# length of d's second axis = 2
+```
+
 ## Cerate np array
 
 ### Create empty array
@@ -145,6 +177,21 @@ data_array = data.value
 
 # Print the datatype of data_array to the shell
 print(type(data_array))
+```
+
+## List Operations
+
+List Operations can be used on Numpy Array
+
+```python
+import numpy as np
+a = np.array([1, 4, 5, 8])
+print(a[:2])
+print(a[3])
+print(a[-1])
+a[3] = 100
+print(a)
+print(type(a))
 ```
 
 ## Matrix and tensor arrays
@@ -849,7 +896,7 @@ plt.show()
 
 ![1656449200999.png](https://pic.hanjiaming.com.cn/2022/06/29/dc619fc2a2186.png)
 
-::: detail 查看另一个案例
+::: details 查看另一个案例
 
 - 上方的案例，每一个z轴是一个数据组，因此axis = 2
 - 下面的案例，每一个y轴是一个数据组，因此axis = 1
@@ -871,7 +918,7 @@ print(quarterly_sales)
 
 :::
 
-::: detail 查看莫奈的画 蓝色加深案例
+::: details 查看莫奈的画 蓝色加深案例
 
 也许你想更好地理解莫奈对蓝色的使用。你的任务是创建一个莫奈rgb_array的版本，通过使它们变得更蓝来强调画中使用大量蓝色的部分你将在这个练习中执行这个任务的分割部分，在下一个练习中执行堆叠部分。
 
