@@ -32,7 +32,7 @@ My work focuses on **Software Development & Architecture (Java)** and **Cloud Co
 <img src="https://pic.hanjiaming.com.cn/2024/08/22/2ba3132608c7b.png" alt="CleanShot 2024-08-22 at 22.46.37@2x.png" style="zoom:25%;" />
 
 - Information Engineering, Department of Information Engineering
-- Postgraduate, 2024.9 - 2026.3
+- Postgraduate, 2024.9
 
 ### The Hong Kong Polytechnic University (香港理工大学)
 
