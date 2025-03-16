@@ -5,7 +5,13 @@ icon: home
 title: 韩佳明的博客
 bgImage: https://pic.hanjiaming.com.cn/2024/11/10/f33c521629261.jpg
 heroFullScreen: false
-heroText: false
+heroText: true
+heroTexts:
+  - "Hello! I’m Hirsun."
+  - "我係 Hirsun, 好開心識到你！"
+  - "私は hirsun です, お会いできてうれしいです！"
+  - "Hirsun Blog Project is started in 2011."
+# tagline: A Demo for Typewriter effect.
 projects:
   - name: 读书笔记
     desc: Note for reading

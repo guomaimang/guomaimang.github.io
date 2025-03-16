@@ -3666,10 +3666,10 @@ hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
-hirsun-vuepress-theme-hope-plus@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/hirsun-vuepress-theme-hope-plus/-/hirsun-vuepress-theme-hope-plus-1.0.1.tgz#02491ab202ca6b3080ff8ad2f9a529ff31890d6d"
-  integrity sha512-m4/KGytR5DIlW67Ho4dTMtDJ9qgpB9z/+veeg61FKe0pB9Y/643cefBdaWp4h3/vhJ6P4rq/KjV3NHm6RiPseg==
+hirsun-vuepress-theme-hope-plus@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/hirsun-vuepress-theme-hope-plus/-/hirsun-vuepress-theme-hope-plus-1.0.3.tgz#912d6124dbfd4ff89a92cfbad34b0e0f90b780d7"
+  integrity sha512-kvAzcr71zY3BuOABsaNcPQnOcLwbAijH5vOOJ3mOFAdVIoIK2m9SseA+jjKa28fWR25uuAg2jUkVEk28mAGaSQ==
   dependencies:
     "@vuepress/cli" "2.0.0-beta.63"
     "@vuepress/client" "2.0.0-beta.63"
