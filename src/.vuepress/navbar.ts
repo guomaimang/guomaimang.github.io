@@ -2,7 +2,7 @@ import { navbar } from "hirsun-vuepress-theme-hope-plus";
 
 export default navbar([
   { text: "博客主页", icon: "home", link: "/" },
-  { text: "Research", icon: "fa-solid fa-graduation-cap", link: "/research/" },
+  { text: "Project", icon: "fa-solid fa-graduation-cap", link: "/project/" },
   { text: "Gist", icon: "fa-solid fa-blog", link: "https://gist.github.com/guomaimang" },
   { text: "关于我", icon: "fa-solid fa-id-card", link: "/myself/" },
   {

@@ -10,7 +10,7 @@ heroTexts:
   - "Hello! I’m Hirsun."
   - "我係 Hirsun, 好開心識到你！"
   - "私は hirsun です, お会いできてうれしいです！"
-  - "Hirsun Blog Project is started in 2011."
+  - "AI 100 Projects: Explore the potential of AI for self-iterative APPs development."
 # tagline: A Demo for Typewriter effect.
 projects:
   - name: 读书笔记
