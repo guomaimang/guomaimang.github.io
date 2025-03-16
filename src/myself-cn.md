@@ -150,3 +150,8 @@ breadcrumb: false
 - 英语
 
 有关职业的更多信息，请访问我的Linkedin: [@hanjiaming](https://www.linkedin.com/in/hanjiaming/).
+
+
+---
+
+![Project Blog.jpg](https://pic.hanjiaming.com.cn/2025/03/17/d97cbe197ce0d.jpg)

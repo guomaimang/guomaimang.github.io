@@ -2,10 +2,10 @@
 home: true
 icon: home
 navbar: false
-title: Research
+title: Project
 heroImage: /hero.png
-heroText: Research and Projects
-tagline:   Transforming Knowledge to Social Benefit
+heroText: AI & Project
+tagline:  "利用 AI 大模型迭代，每周開發上線一款 APP 並開源！堅持開發 100 個！"
 actions:
   - text: About Myself 🌱
     link: /myself/

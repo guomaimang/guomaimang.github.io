@@ -154,3 +154,7 @@ Language
 - English
 
 For more information about career, please visit my Linkedin: [@hanjiaming](https://www.linkedin.com/in/hanjiaming/).
+
+---
+
+![Project Blog](https://pic.hanjiaming.com.cn/2025/03/17/b42ff6efa767a.jpg)
