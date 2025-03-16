@@ -1,4 +1,4 @@
-import { navbar } from "vuepress-theme-hope";
+import { navbar } from "hirsun-vuepress-theme-hope-plus";
 
 export default navbar([
   { text: "博客主页", icon: "home", link: "/" },

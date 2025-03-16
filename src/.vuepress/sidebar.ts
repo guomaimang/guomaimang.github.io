@@ -1,4 +1,4 @@
-import { sidebar } from "vuepress-theme-hope";
+import { sidebar } from "hirsun-vuepress-theme-hope-plus";
 
 export default sidebar({
   "/": [],
