@@ -13,6 +13,16 @@ export default defineClientConfig({
           return false; // 终止导航
         }
       }
+
+      if (to.path === "/myself-cn.html") {
+        // 检查是否在客户端环境
+        if (typeof window !== "undefined") {
+          // 使用window.location进行重定向
+          window.location.href = "/myself/cn.html";
+          return false; // 终止导航
+        }
+      }
+
     });
   },
 }); 

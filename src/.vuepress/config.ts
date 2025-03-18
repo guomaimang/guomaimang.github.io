@@ -1,7 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
-import { viteBundler } from "@vuepress/bundler-vite";
+
 
 export default defineUserConfig({
   base: "/",
@@ -12,16 +12,7 @@ export default defineUserConfig({
 
   theme,
 
-  // 增加chunk大小警告阈值
-  bundler: viteBundler({
-    viteOptions: {
-      build: {
-        chunkSizeWarningLimit: 2000, // 默认是1000，增加至2000kb
-      }
-    }
-  }),
-
-  plugins: [
+    plugins: [
     docsearchPlugin({
       appId: "35TFPKBDQH",
       apiKey: "191ec6da7a7a50b242e892f4819cdc05",
@@ -71,6 +62,7 @@ export default defineUserConfig({
         },
       },
     }),
+
   ],
 
   // Enable it with pwa
