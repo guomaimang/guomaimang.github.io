@@ -10,6 +10,10 @@ breadcrumb: false
 
 # 韩佳明
 
+<script>
+  window.location.replace("/myself/cn.html");
+</script>
+
 我是 香港中文大学**信息工程**系 的研究生 韩佳明「Hirsun」。我本科毕业于香港理工大学，获得 **计算机科学与技术** 学士学位。我的研究兴趣是 **人工智能开发** 和 **云计算**。
 
 我专注于 **软件开发与架构（Java）** 和 **云计算** 工作。

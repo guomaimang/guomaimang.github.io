@@ -14,6 +14,12 @@ breadcrumb: false
 
 # Hirsun HAN
 
+<script>
+  window.location.replace("/myself/index.html");
+</script>
+
+
+
 I am Hirsun「韩佳明」, a postgraduate in Information Engineering, The Chinese University of Hong Kong.  I've graduated from The Hong Kong Polytechnic University with bachelor degree in computing. 
 
 My work focuses on **Software Development & Architecture (Java)** and **Cloud Computing**. 
