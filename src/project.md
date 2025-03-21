@@ -15,50 +15,52 @@ actions:
     type: secondary
 
 features:
-  - title: Sandy E-Learning
-    icon: fa-solid fa-coins
-    details: Decentralized Education Platform <br />  SpringBoot + Javascript + AzureAD SSO + Blockchain 
-    link: https://github.com/guomaimang/Sandy_E-learning
+  - title: Simple-Mahjong
+    icon: fa-solid fa-gamepad
+    details: Web-based Mahjong Battle System <br /> React + Java + SpringBoot
+    link: https://github.com/guomaimang/Simple-Mahjong
 
-  - title: GEM 
-    icon: fa-brands fa-android
-    details: Geographical Photo Sharing Application <br />  AndroidX + Jetpack + SpringBoot
-    link: https://guomaimang.github.io/GEM/
-
-  - title: Silver Spork
-    icon: fa-brands fa-java
-    details: Java Multi-threaded HTTP Server <br /> Socket Programming From Zero
-    link: /note/cs/cn/Java-Socket-Programming/
-
-  - title: Data Analysis on COVID19
-    icon: fa-solid fa-virus-slash
-    details: Predict Spread of COV19 with(out) Vaccine <br /> Analysis, Visualization, R
-    link: https://github.com/guomaimang/Magic-Vaccine/
+  - title: Website-Crawler
+    icon: fa-solid fa-spider
+    details: HTML Web Crawler for AI Agents <br /> Python + LLM + Content Processing
+    link: https://github.com/guomaimang/Website-Crawler
 
   - title: Jungle
     icon: fa-brands fa-redhat
     details: Chinese board game with obscure history <br /> Exquisite GUI Based on Console <br /> Docker & I/O redirection
     link: https://github.com/guomaimang/Jungle/
 
-  - title: Novepus
-    icon: fa-solid fa-circle-nodes
-    details: Small Social System with Database System <br /> Oracle Database & Java
-    link: https://github.com/guomaimang/Novepus/
+  - title: Sandy ELearning
+    icon: fa-solid fa-coins
+    details: Decentralized Education Platform <br />  SpringBoot + Javascript + AzureAD SSO + Blockchain 
+    link: https://github.com/guomaimang/Sandy_E-learning
 
-  - title: Zenline
-    icon: fa-brands fa-battle-net
-    details: A Command Line Drawing Program <br /> OOP Group Project
-    link: https://github.com/guomaimang/Zenline/
+  - title: Message-Encryption-Tool
+    icon: fa-solid fa-lock
+    details: Browser-based AES Encryption Tool <br /> JavaScript + Cryptography
+    link: https://github.com/guomaimang/Message-Encryption-Tool
 
-  - title: YouBear
-    icon: fa-brands fa-python
-    details: A Data Science Project <br /> about Videos Trending
-    link: /note/ds/da/Project/YouBear
+  - title: Jade
+    icon: fa-solid fa-route
+    details: Social App for Travelers <br /> Networking + Journey Documentation
+    link: https://github.com/guomaimang/Jade
 
-  - title: Turbo-journey
-    icon: c
-    details: Project Meeting Scheduler (PMS) <br /> CPU Scheduling Design Ideas <br /> Implemented by C
-    link: https://guomaimang.github.io/Turbo-journey/
+  - title: OrderFusion
+    icon: fa-solid fa-bolt
+    details: High-Performance Flash Order System <br /> SpringBoot + JS + Redis + RabbitMQ
+    link: https://github.com/guomaimang/OrderFusion
+
+  - title: Silver Spork
+    icon: fa-brands fa-java
+    details: Java Multi-threaded HTTP Server <br /> Socket Programming From Zero
+    link: /note/cs/cn/Java-Socket-Programming/
+
+
+
+
+
+
+
 
 
 
