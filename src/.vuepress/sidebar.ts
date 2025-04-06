@@ -19,6 +19,7 @@ export default sidebar({
   "/note/cs/cn/Java-Socket-Programming/": "structure",
 
   "/note/ds/da/": "structure",
+  "/note/ds/practice/": "structure",
   "/note/ds/ml/": "structure",
   "/note/ds/ml/practical-skills/": "structure",
   "/note/ds/ml/neural-network/": "structure",
