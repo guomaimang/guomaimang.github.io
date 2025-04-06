@@ -167,7 +167,91 @@ Hence, you need input validations implemented on BOTH
 - server-side **for security enforcement** , and
 - client-side for **better user experience**.
 
-### Form Validations with Javascript (1/4)
+## Form Validations with JS
 
-- Strategy: Write your code in HTML5 for new browsers; Fallback to Javascript for legacy ones
+Strategy: Write your code in HTML5 for new browsers; Fallback to Javascript for legacy ones
+
+- Note: Unsupported type will fallback to an ordinary textfield
+- Unsupported attributes will be ignored in legacy browsers
+
+With an HTML5-compilant browser, JS validation is ignored: Note: POST Parameters can be accessed only by server but not JS. Hence, nothing is shown hereafter submission. Firebug can show what was already sent.
+
+HTML5 Validation can be disabled with novalidate attribute.
+
+**Recall the best practice: Graceful Degradation**
+
+- if (HTML5 supported) use the native HTML5 Validation
+- else if (JS supported) use the JS validation code
+- else the form still works without any validations
+
+## 3 Form Submission Approaches
+
+1. Traditional Form Submission
+   - Triggered by a submit button or the Enter key
+   - Fires the submit event, where one can validate before a form submission
+2.  Programmatic Form Submission
+	 - Recommended to use this only when submitting a form automatically
+	 - Unfortunately, programmers (incl. HSBC) who don't know `<input type="image">` like to do this for images: When an image is clicked, Form.submit() will be finally called if a form is properly validated
+	 - BAD: NO submit event is fired. Without code analysis, difficult to know whether a submission has actually occurred
+
+```javascript
+<form method="POST" id="buildAutoPostReq">
+<!-- Some hidden fields here --></form>
+<script type="text/javascript">document.forms[0].submit();</script>
+```
+
+3.  AJAX Form Submission: AJAX: Asynchronous Javascript and XML ; It's all about the XMLHttpRequest API, study it before using it to submit form data. Advantages:
+    - Modern user experience
+      - Eliminate page-load effect (no blank screen);
+      - Only load the changed part when it "arrives"
+    - Using the well-known XMLHttpRequest API: Sends requests at background; not limited to only send form data :)
+    - Cancel the default form submissions: returns false in the submit event
+
+![1743932228206.png](https://pic.hanjiaming.com.cn/2025/04/06/696bb6ea4c2a2.png)
+
+![1743932252499.png](https://pic.hanjiaming.com.cn/2025/04/06/0b89badadacc1.png)
+
+::: info AJAX: Synchronous vs. Asynchronous
+
+**Principle: Do something else while eating**
+
+- Dispatch many requests at a time. Also do something else.
+- Get notified when the server returns, then render the results.
+- The responses will likely be out of order.
+
+Typical workflow in AJAX Form submission (shown in the previous slide)
+
+-  Listen to submit event
+- Cancel the default form submission
+- Craft a POST request to send over AJAX
+- On feedback received, echo the feedback
+
+Event listeners: progress, load, error, abort
+
+- xhr.open, xhr.send, xhr.onreadystatechange (0-4; 4: completed), xhr.setRequestHeader (in some cases, you need to deal with CORS)
+- Can use FormData Object (large part of the following slides can be simplified
+
+:::
+
+## WebApp using Node.js
+
+Fast and Scalable
+
+Event-driven architecture and non-blocking I/O API from ground-up
+
 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
