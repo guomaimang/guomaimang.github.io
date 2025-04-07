@@ -284,7 +284,7 @@ The private identifier cannot be `#constructor`.
 
 ## Questions
 
-Which of the following lines(s) are incorrect, and why?
+### Which of the following lines(s) are incorrect, and why?
 
 ```html
 <!-- x href, not ref. -->
@@ -300,7 +300,14 @@ Which of the following lines(s) are incorrect, and why?
 <li><a href="#b">About Us<a></li>
 ```
 
-What will be the color for "Hello" and "World"?
+### What will be the color for "Hello" and "World"?
 
 
 
+### What is event bubbling and capturing?
+
+In the DOM, events have phases. Capturing is when the event goes from the top (like the window) down to the target element. Then the target phase, and then bubbling, where it goes back up. So capturing is top to bottom, bubbling is bottom to top.
+
+<img src="https://pic.hanjiaming.com.cn/2025/04/07/05e22c18e9749.png" alt="event-flow.png" style="zoom:20%;" />
+
+Event bubbling propagates events from the target element up through ancestors. Capturing (trickling) does the reverse, from ancestors down to the target. Bubbling is default; use `addEventListener`'s capture option (`true`) to handle during capturing. They determine the order parent/child elements receive events.

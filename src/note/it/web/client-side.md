@@ -9,7 +9,7 @@ headerDepth: 1
 
 # Client-side Implementations
 
-HTTP is a 
+## HTTP is a 
 
 - text-based 
 - application-layer protocol 
@@ -232,18 +232,6 @@ Event listeners: progress, load, error, abort
 - Can use FormData Object (large part of the following slides can be simplified
 
 :::
-
-## WebApp using Node.js
-
-Fast and Scalable
-
-Event-driven architecture and non-blocking I/O API from ground-up
-
-- 
-
-
-
-
 
 
 
