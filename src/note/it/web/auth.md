@@ -329,9 +329,20 @@ eg.
 
 ## Best Practices of Password Authentication
 
-
-
-
+- Enforce Proper Password Strength (incl. length, complexity) (check NIST 800-63)
+- Require Current Password for Password Changes
+- Implement Secure Password Recovery
+- Use Multi-factor Authentication
+- Prompt for Proper Authentication Error Messages
+  - Good: Login failed. Invalid user ID or password
+  - BAD: Login for User A: invalid password
+- Send Password only over Secure HTTPS Connections
+- Store Password in its One-way Hashed Format
+- Implement Account Lockout after Failed Attempts
+- **Not reinventing the wheel (cryptography)**
+- Or not use Password Authentication alone.
+  - Consider 2FA (email [Bonus] or SMS).
+  - OAuth and Webauthn: https://webauthn.io/
 
 
 
