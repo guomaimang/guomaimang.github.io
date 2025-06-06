@@ -10,7 +10,7 @@ heroTexts:
   - "Hello! I’m Hirsun."
   - "我係 Hirsun, 好開心識到你！"
   - "私は hirsun です, お会いできてうれしいです！"
-  - "AI 100 Projects: Explore the potential of AI for self-iterative APPs development."
+  - "AI 100 Apps: Explore the potential of AI for self-iterative APPs development."
 # tagline: A Demo for Typewriter effect.
 projects:
   - name: 读书笔记
@@ -21,21 +21,18 @@ projects:
     desc: Campus life
     link: /category/campus/
 
-  - name: 即兴创作
-    desc: Free write
-    link: /category/freecreate/
 
   - name: 我的画廊
     desc: My Gallery
     link: /gallery
 
-  - name: Tech
+  - name: 技术心得
     desc: Note for Tech
     link: /category/tech/
 
   - name: 研究和项目
     desc: Research and Project
-    link: https://guomaimang.github.io/research
+    link: https://guomaimang.github.io/project
 
   - name: 关于我
     desc: About myself
