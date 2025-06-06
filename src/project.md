@@ -18,7 +18,12 @@ features:
   - title: Simple-Mahjong
     icon: fa-solid fa-gamepad
     details: Web-based Mahjong Battle System <br /> React + Java + SpringBoot
-    link: https://github.com/guomaimang/Simple-Mahjong
+    link: https://simple-mahjong.project.hirsun.tech
+
+  - title: SignedTrust
+    icon: fa-solid fa-signature
+    details: PDF Digital Signature & Trust Platform + Certificate Verification + React/Python + MUI v6
+    link: https://github.com/guomaimang/SignedTrust
 
   - title: Website-Crawler
     icon: fa-solid fa-spider
