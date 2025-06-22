@@ -2,7 +2,7 @@
 home: true
 layout: BlogHome
 icon: home
-title: 韩佳明的博客
+title: HAN Jiaming | 韩佳明的博客
 bgImage: https://pic.hanjiaming.com.cn/2024/11/10/f33c521629261.jpg
 heroFullScreen: false
 heroText: true

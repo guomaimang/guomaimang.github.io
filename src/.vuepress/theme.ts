@@ -9,7 +9,7 @@ export default hopeTheme({
   hostname: "https://guomaimang.github.io",
 
   author: {
-    name: "Hirsun",
+    name: "Hirsun (HAN Jiaming)",
     url: "/myself.html",
   },
 

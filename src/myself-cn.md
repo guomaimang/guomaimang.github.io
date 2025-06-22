@@ -29,7 +29,7 @@ breadcrumb: false
 <img src="https://pic.hanjiaming.com.cn/2024/08/22/2ba3132608c7b.png" alt="CleanShot 2024-08-22 at 22.46.37@2x.png" style="zoom:25%;" />
 
 - 信息工程，信息工程学系
-- 研究生, 2024.9
+- 研究生, 2024.9 - 2026.3
 
 ### 香港理工大学 (The Hong Kong Polytechnic University)
 
@@ -55,6 +55,12 @@ breadcrumb: false
 - 修读理科
 
 ## 工作经历
+
+### 字节跳动
+
+- 云计算
+- 2025.3 - 2025.5
+- 中国内地 深圳市南山区 深圳湾
 
 ### 腾讯 (Tencent)
 

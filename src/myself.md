@@ -14,7 +14,7 @@ breadcrumb: false
 
 # Hirsun HAN
 
-I am Hirsun「韩佳明」, a postgraduate in Information Engineering, The Chinese University of Hong Kong.  I've graduated from The Hong Kong Polytechnic University with bachelor degree in computing. 
+I am Hirsun「 HAN Jiaming | 韩佳明」, a postgraduate in Information Engineering, The Chinese University of Hong Kong.  I've graduated from The Hong Kong Polytechnic University with bachelor degree in computing. 
 
 My work focuses on **Software Development & Architecture (Java)** and **Cloud Computing**. 
 
@@ -32,7 +32,7 @@ My work focuses on **Software Development & Architecture (Java)** and **Cloud Co
 <img src="https://pic.hanjiaming.com.cn/2024/08/22/2ba3132608c7b.png" alt="CleanShot 2024-08-22 at 22.46.37@2x.png" style="zoom:25%;" />
 
 - Information Engineering, Department of Information Engineering
-- Postgraduate, 2024.9
+- Postgraduate, 2024.9 - 2026.3
 
 ### The Hong Kong Polytechnic University (香港理工大学)
 
@@ -57,6 +57,12 @@ My work focuses on **Software Development & Architecture (Java)** and **Cloud Co
 - Major in Science and Math
 
 ## Work Experience
+
+### Bytedance (字节跳动)
+
+- Cloud Computing
+- 2025.3 - 2025.5
+- Shenzhen Bay, Nanshan District, Shenzhen, China
 
 ### Tencent (腾讯科技)
 
