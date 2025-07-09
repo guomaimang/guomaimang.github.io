@@ -7,7 +7,7 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "HAN Jiaming | Hirsun | 韩佳明",
+  title: "HAN Jiaming",
   description: "HAN Jiaming | 韩佳明 | 博客 | Hirsun | Guomaimang | Maxwell",
 
   theme,
