@@ -15,6 +15,11 @@ actions:
     type: secondary
 
 features:
+  - title: Backup Center
+    icon: fa-brands fa-centercode
+    details: Supporting automatic backup & recovery for containers, databases, and other apps
+    link: https://brc.project.hirsun.hk/
+
   - title: Simple-Mahjong
     icon: fa-solid fa-gamepad
     details: Web-based Mahjong Battle System <br /> React + Java + SpringBoot
@@ -29,11 +34,6 @@ features:
     icon: fa-solid fa-signature
     details: PDF Digital Signature & Trust Platform + Certificate Verification + React/Python + MUI v6
     link: https://github.com/guomaimang/SignedTrust
-
-  - title: Website-Crawler
-    icon: fa-solid fa-spider
-    details: HTML Web Crawler for AI Agents <br /> Python + LLM + Content Processing
-    link: https://github.com/guomaimang/Website-Crawler
   
   - title: Simple Ledger
     icon: fa-solid fa-notes-medical
@@ -49,6 +49,11 @@ features:
     icon: fa-solid fa-route
     details: Cantonese and English words, daily memorization, Perseverance！
     link: https://word.hirsun.hk/
+
+  - title: Website-Crawler
+    icon: fa-solid fa-spider
+    details: HTML Web Crawler for AI Agents <br /> Python + LLM + Content Processing
+    link: https://github.com/guomaimang/Website-Crawler  
 
   - title: OrderFusion
     icon: fa-solid fa-bolt
