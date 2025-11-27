@@ -9,10 +9,7 @@ tagline:  "Use AI model to develop 100 Apps by AI self iteration!"
 actions:
   - text: About Myself 🌱
     link: /myself/
-
-  - text: AI Native ⭐
-    link: /myself/
-
+    
   - text: Github 🌏
     link: https://github.com/guomaimang/
     type: secondary
