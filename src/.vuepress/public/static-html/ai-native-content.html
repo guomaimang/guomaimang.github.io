@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Challenges</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #e8f5e9 0%, #e1f5fe 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            color: #ff6f00;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .header p {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .card h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .tag-orange {
+            background: #fff3e0;
+            color: #f57c00;
+        }
+        
+        .tag-yellow {
+            background: #fff8e1;
+            color: #f9a825;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Development Challenges You May Have Experienced</h1>
+            <p>How many people have been troubled by these scenarios until late at night?</p>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">📄</div>
+                <h3>Requirements Document Misunderstanding</h3>
+                <p>Code rewritten repeatedly, inconsistent requirement understanding, development direction goes wrong, iteration efficiency suffers greatly</p>
+                <span class="tag tag-orange">Project Redo</span>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>Frontend Style Fine-tuning</h3>
+                <p>Repeated style debugging, pixel-level alignment, responsive configuration, back-and-forth communication with designers</p>
+                <span class="tag tag-yellow">Late Night System Changes</span>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🔄</div>
+                <h3>Repetitive CRUD Code</h3>
+                <p>Copy-paste until exhausted, writing CRUD operations until sick of it, structured and patterned repetition wastes a lot of time</p>
+                <span class="tag tag-yellow">Efficiency Killer</span>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">🐛</div>
+                <h3>Discovering Low-level Errors in Code Review</h3>
+                <p>Fixing back and forth multiple versions, variable naming, boundary conditions, exception handling - may still have issues after each pass</p>
+                <span class="tag tag-orange">Debug Overtime</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
