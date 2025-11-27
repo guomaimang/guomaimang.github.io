@@ -41,7 +41,7 @@ breadcrumb: false
 - 参加前置条件：去 estudent 上注册门票（最多可额外申请4张票，for your familys and friends)
 - 参与服装要求：必须穿着正确的毕业袍
 
-<img src="https://orchk.partner.orcsvc.com/f/6XF6/Google%20Chrome%202024-10-25%2015.35.05.png" style="zoom: 25%;" />
+<img src="https://alumni.orcsvc.com/f/6XF6/Google%20Chrome%202024-10-25%2015.35.05.png" style="zoom: 25%;" />
 
 ::: tip
 
@@ -54,21 +54,21 @@ breadcrumb: false
 - 内穿西服
 - 外穿毕业礼服
 
-<img src="https://orchk.partner.orcsvc.com/f/4pIa/Typora%202024-10-25%2015.44.09.png" style="zoom:33%;" />
+<img src="https://alumni.orcsvc.com/f/4pIa/Typora%202024-10-25%2015.44.09.png" style="zoom:33%;" />
 
 ## 建议随身携带的
 
 鲜花
 
-<img src="https://orchk.partner.orcsvc.com/f/qLuZ/Google%20Chrome%202024-10-25%2015.53.01.png" style="zoom:33%;" />
+<img src="https://alumni.orcsvc.com/f/qLuZ/Google%20Chrome%202024-10-25%2015.53.01.png" style="zoom:33%;" />
 
 小熊
 
-<img src="https://orchk.partner.orcsvc.com/f/14Uv/Typora%202024-10-25%2015.53.45.png" style="zoom:33%;" />
+<img src="https://alumni.orcsvc.com/f/14Uv/Typora%202024-10-25%2015.53.45.png" style="zoom:33%;" />
 
 气球
 
-<img src="https://orchk.partner.orcsvc.com/f/mWSN/%E8%AE%BF%E8%BE%BE%202024-10-25%2015.54.30.png" style="zoom:20%;" />
+<img src="https://alumni.orcsvc.com/f/mWSN/%E8%AE%BF%E8%BE%BE%202024-10-25%2015.54.30.png" style="zoom:20%;" />
 
 ## 特殊备注
 

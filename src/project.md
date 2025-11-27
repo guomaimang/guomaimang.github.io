@@ -10,6 +10,9 @@ actions:
   - text: About Myself 🌱
     link: /myself/
 
+  - text: AI Native ⭐
+    link: /myself/
+
   - text: Github 🌏
     link: https://github.com/guomaimang/
     type: secondary
