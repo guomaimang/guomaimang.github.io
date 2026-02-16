@@ -29,25 +29,16 @@ My work focuses on **Software Development & Architecture (Java)** and **Cloud Co
 
 ### The Chinese University of Hong Kong (香港中文大学)
 
-<img src="https://pic.hanjiaming.com.cn/2024/08/22/2ba3132608c7b.png" alt="CleanShot 2024-08-22 at 22.46.37@2x.png" style="zoom:25%;" />
+- Information Engineering.
+- Master.
 
-- Information Engineering, Department of Information Engineering
-- Postgraduate, 2024.9 - 2026.3
-
-### The Hong Kong Polytechnic University (香港理工大学)
-
-<img src="https://pic.hanjiaming.com.cn/2022/05/23/093cef8d87b4a.png" alt="download.png" style="zoom: 33%;" />
-
-- Computing, Department of Computing, Faculty of Engineering
-- Bachelor's Degree in Science,  2020.9 - 2024.7
 
 ### Shanghai Jiao Tong University (上海交通大学)
 
 <img src="https://pic.hanjiaming.com.cn/2024/02/24/7b2d2f8a6668f.png" alt="校标-标志中英文横版.png" title="校标-标志中英文横版.png" style="zoom: 4.5%;" />
 
 - Electronic and Computer Engineering, UM-SJTU Joint Institute
-- Spring 2024 Semester Exchange
-- 2024.1 - 2024.6
+- Bachelor.
 
 ### Hebei Hengshui High School (河北衡水中学)
 
@@ -61,24 +52,20 @@ My work focuses on **Software Development & Architecture (Java)** and **Cloud Co
 ### Bytedance (字节跳动)
 
 - Cloud Computing
-- 2025.3 - 2025.5
-- Shenzhen Bay, Nanshan District, Shenzhen, China
 
 ### Tencent (腾讯科技)
 
 <img src="https://pic.hanjiaming.com.cn/2024/08/14/072f12b58d2e9.png" alt="images.png" style="zoom:66%;" />
 
 - Application Development, Tencent Interactive Entertainment Group(IEG), Shenzhen.
-- 2024.5 - 2024.11
-- Kexing Science Park, Nanshan District, Shenzhen, China
+
 
 ### PwC Hong Kong (普华永道香港)
 
 <img src="https://pic.hanjiaming.com.cn/2023/01/14/4009f97652543.jpg" alt="PricewaterhouseCoopersLimited2.jpg" style="zoom: 25%;" />
 
 - Digital Consulting (Finance Team)
-- 2023.1 - 2023.6
-- 25/F, Edinburgh Tower The Landmark, 15 Queen's Road Central, Hong Kong
+
 
 ## Contact Info
 
