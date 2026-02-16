@@ -21,4 +21,13 @@ rm -rf "$VUEPRESS_DIST/myself"
 # Copy Next.js static export into dist/myself/
 cp -r "$MYSELF_OUT/" "$VUEPRESS_DIST/myself/"
 
+echo "=== Step 4: Patch sitemap.xml with Next.js pages ==="
+SITEMAP="$VUEPRESS_DIST/sitemap.xml"
+if [ -f "$SITEMAP" ]; then
+  TODAY=$(date +%Y-%m-%d)
+  # Insert myself entries before closing </urlset>
+  sed -i '' "s|</urlset>|<url><loc>https://guomaimang.github.io/myself/index.html</loc><lastmod>${TODAY}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://guomaimang.github.io/myself/cn.html</loc><lastmod>${TODAY}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url></urlset>|" "$SITEMAP"
+  echo "Patched sitemap.xml with /myself/ and /myself/cn"
+fi
+
 echo "=== Done! Output at $VUEPRESS_DIST ==="
