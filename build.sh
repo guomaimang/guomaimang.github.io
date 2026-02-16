@@ -8,7 +8,7 @@ MYSELF_OUT="$MYSELF_DIR/out"
 
 echo "=== Step 1: Build VuePress ==="
 cd "$ROOT_DIR"
-pnpm run docs:build
+yarn run docs:build
 
 echo "=== Step 2: Build Next.js (myself) ==="
 cd "$MYSELF_DIR"

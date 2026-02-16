@@ -24,15 +24,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: pnpm
+          cache: yarn
 
       - name: 安装根项目依赖
-        run: pnpm install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: 构建 VuePress
         env:
           NODE_OPTIONS: --max_old_space_size=8192
-        run: pnpm run docs:build
+        run: yarn run docs:build
 
       - name: 安装 myself 子项目依赖
         run: pnpm install --frozen-lockfile
