@@ -70,11 +70,6 @@ features:
     details: Social App for Travelers <br /> Networking + Journey Documentation, Android App
     link: https://github.com/guomaimang/Jade
 
-  - title: Jungle
-    icon: fa-brands fa-redhat
-    details: Chinese board game with obscure history <br /> Exquisite GUI Based on Console
-    link: https://github.com/guomaimang/Jungle/
-
 
 
 
