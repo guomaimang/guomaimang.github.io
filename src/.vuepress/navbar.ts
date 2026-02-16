@@ -3,7 +3,6 @@ import { navbar } from "hirsun-vuepress-theme-hope-plus";
 export default navbar([
   { text: "博客主页", icon: "home", link: "/" },
   { text: "Project", icon: "fa-solid fa-graduation-cap", link: "/project/" },
-  { text: "Gist", icon: "fa-solid fa-blog", link: "https://gist.github.com/guomaimang" },
   { text: "关于我", icon: "fa-solid fa-id-card", link: "/myself/" },
   {
     text: "学习笔记",
@@ -130,14 +129,9 @@ export default navbar([
     icon: "fa-solid fa-bolt",
     children:[
       {
-        text: "Friend Links",
-        icon: "link",
-        link: "#",
-      },
-      {
         text: "Featured Album",
         icon: "fa-solid fa-images",
-        link: "#",
+        link: "https://netdesk.orcsvc.com/s/3dFO/bh6gjdzm",
       },
       {
         text: "Navigation",
