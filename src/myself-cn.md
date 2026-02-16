@@ -26,26 +26,15 @@ breadcrumb: false
 
 ### 香港中文大学 (The Chinese University of Hong Kong)
 
-<img src="https://pic.hanjiaming.com.cn/2024/08/22/2ba3132608c7b.png" alt="CleanShot 2024-08-22 at 22.46.37@2x.png" style="zoom:25%;" />
-
 - 信息工程，信息工程学系
-- 研究生, 2024.9 - 2026.3
 
-### 香港理工大学 (The Hong Kong Polytechnic University)
-
-<img src="https://pic.hanjiaming.com.cn/2022/05/23/093cef8d87b4a.png" alt="download.png" style="zoom: 33%;" />
-
-- 计算机科学与技术，电子计算学系，工程学院
-- 本科,  2020.9 - 2024.7
 
 ### 上海交通大学 (Shanghai Jiao Tong University)
 
 <img src="https://pic.hanjiaming.com.cn/2024/02/24/7b2d2f8a6668f.png" alt="校标-标志中英文横版.png" title="校标-标志中英文横版.png" style="zoom: 4.5%;" />
 
-- 专业: 电子与计算机工程,
-- 美国密西根大学-上海交通大学联合学院
-- 2024年春季学期交换学生
-- 2024.1 - 2024.6
+- 专业: 电子与计算机工程
+
 
 ### 河北衡水中学 (Hebei Hengshui High School)
 
@@ -59,24 +48,20 @@ breadcrumb: false
 ### 字节跳动
 
 - 云计算
-- 2025.3 - 2025.5
-- 中国内地 深圳市南山区 深圳湾
+
 
 ### 腾讯 (Tencent)
 
 <img src="https://pic.hanjiaming.com.cn/2024/08/14/072f12b58d2e9.png" alt="images.png" style="zoom:66%;" />
 
 - 应用开发,  腾讯互动娱乐 (IEG), 深圳本部。
-- 2024.5 - 2024.11
-- 中国内地 深圳市南山区 科兴科学园
+
 
 ### 普华永道香港 (PwC Hong Kong)
 
 <img src="https://pic.hanjiaming.com.cn/2023/01/14/4009f97652543.jpg" alt="PricewaterhouseCoopersLimited2.jpg" style="zoom: 25%;" />
 
 - 数字咨询 (金融团队)
-- 2023.1 - 2023.6
-- 香港 皇后大道中15号 置地广场 爱丁堡大厦 25楼
 
 ## 联系方式
 
