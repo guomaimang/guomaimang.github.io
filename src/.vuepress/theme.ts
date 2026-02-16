@@ -42,7 +42,7 @@ export default hopeTheme({
     },
     avatar: "https://static-file.hirsun.tech/2024/12/28/8700f7f794674.png",
     roundAvatar:false,
-    description: "专注 软件开发与架构, 云计算 <br> 香港中文大学 信息工程硕士 <br> 香港理工大学 计算机学士学位",
+    description: "专注 软件开发与云架构, 云计算 <br> 香港中文大学 计算机硕士学位 <br> 香港理工大学 计算机学士学位",
     intro: "/myself.html",
     articlePerPage: 6,
   },
