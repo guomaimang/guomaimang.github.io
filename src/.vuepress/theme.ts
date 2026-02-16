@@ -10,7 +10,7 @@ export default hopeTheme({
 
   author: {
     name: "Hirsun (HAN Jiaming)",
-    url: "/myself.html",
+    url: "/myself/",
   },
 
   iconAssets: "fontawesome-with-brands",
@@ -43,7 +43,7 @@ export default hopeTheme({
     avatar: "https://static-file.hirsun.hk/2024/12/28/8700f7f794674.png",
     roundAvatar:false,
     description: "腾讯（香港）云架构师 <br> 香港中文大学 计算机科学与技术学位  <br> 专注云架构 与 AI Agent 开发",
-    intro: "/myself.html",
+    intro: "/myself/",
     articlePerPage: 6,
   },
 
