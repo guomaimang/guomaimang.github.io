@@ -258,7 +258,7 @@ function CampusSection() {
       logo: "/campus/cuhk.png",
       department: "信息工程学系, 工程学院",
       degree: "计算机科学与技术，理学硕士",
-      period: "2025年毕业",
+      period: "2024 - 2026",
       current: false,
     },
     {
@@ -267,7 +267,7 @@ function CampusSection() {
       logo: "/campus/polyu.png",
       department: "电子计算学系, 工程学院",
       degree: "计算机科学与技术, 理学学士",
-      period: "2024年毕业",
+      period: "2020 - 2024",
     },
     {
       name: "上海交通大学",
@@ -275,7 +275,7 @@ function CampusSection() {
       logo: "/campus/sjtu.png",
       department: "电子和计算机工程, 上交密院",
       degree: "2024 年交换计划",
-      period: "2024.1 - 2024.6",
+      period: "2024",
     },
     {
       name: "河北衡水中学",
@@ -283,7 +283,7 @@ function CampusSection() {
       logo: "/campus/hszx.png",
       department: "南校区, 高中学校",
       degree: "理科组合",
-      period: "2017.9 - 2020.6",
+      period: "2017 - 2020",
     },
   ];
 
@@ -405,7 +405,7 @@ function WorkExperienceSection() {
     {
       company: "腾讯香港 (Tencent Hong Kong)",
       logo: "/logo/txcloud.png",
-      position: "云架构工程，腾讯云计算",
+      position: "AI 架构师，腾讯云计算",
       period: "2025.7 至今",
       location: "尖沙咀，香港",
     },

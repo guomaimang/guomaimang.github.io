@@ -254,28 +254,28 @@ function CampusSection() {
   const campuses = [
     {
       name: "Chinese University of Hong Kong",
-      nameCn: "香港中文大学",
+      nameCn: "香港中文大學",
       logo: "/campus/cuhk.png",
       department: "Department of Information Engineering",
       degree: "Master of Science in Information Engineering",
-      period: "Completed at 2025",
+      period: "2024 - 2026",
       current: false,
     },
     {
       name: "Hong Kong Polytechnic University",
-      nameCn: "香港理工大学",
+      nameCn: "香港理工大學",
       logo: "/campus/polyu.png",
       department: "Department of Computing, Faculty of Engineering",
       degree: "Bachelor of Science Degree in Computing",
-      period: "Completed at 2024",
+      period: "2020 - 2024",
     },
     {
       name: "Shanghai Jiao Tong University",
-      nameCn: "上海交通大学",
+      nameCn: "上海交通大學",
       logo: "/campus/sjtu.png",
       department: "Electronic and Computer Engineering, UM-SJTU Joint Institute",
-      degree: "Spring 2024 Semester Exchange",
-      period: "2024.1 - 2024.6",
+      degree: "2024 Exchange",
+      period: "2024",
     },
     {
       name: "Hebei Hengshui High School",
@@ -283,7 +283,7 @@ function CampusSection() {
       logo: "/campus/hszx.png",
       department: "Senior High School",
       degree: "Major in Science and Math",
-      period: "2017.9 - 2020.6",
+      period: "2017 - 2020",
     },
   ];
 
@@ -405,7 +405,7 @@ function WorkExperienceSection() {
     {
       company: "Tencent Hong Kong (腾讯香港)",
       logo: "/logo/txcloud.png",
-      position: "Cloud Architecture, Tencent Cloud",
+      position: "AI Architecture, Tencent Cloud",
       period: "2025.7 - Present",
       location: "Tsim Sha Tsui, Hong Kong SAR",
     },
