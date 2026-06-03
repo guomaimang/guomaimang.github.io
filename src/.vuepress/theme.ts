@@ -41,7 +41,7 @@ export default hopeTheme({
     },
     avatar: "https://static-file.hirsun.hk/2024/12/28/8700f7f794674.png",
     roundAvatar:false,
-    description: "腾讯（香港）云计算架构师 <br> 香港中文大学 计算机学位  <br> 专注云架构 与 AI Agent 开发",
+    description: "腾讯（香港）AI 架构师 <br> 香港中文大学 计算机学位  <br> 专注 AI Agent & 云架构",
     intro: "/myself/",
     articlePerPage: 6,
   },
