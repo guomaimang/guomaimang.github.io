@@ -258,7 +258,7 @@ function CampusSection() {
       logo: "/campus/cuhk.png",
       department: "Department of Information Engineering",
       degree: "Master of Science in Information Engineering",
-      period: "2024 - 2026",
+      period: "2024.8 - 2026.3",
       current: false,
     },
     {
@@ -267,7 +267,7 @@ function CampusSection() {
       logo: "/campus/polyu.png",
       department: "Department of Computing, Faculty of Engineering",
       degree: "Bachelor of Science Degree in Computing",
-      period: "2020 - 2024",
+      period: "2020.9 - 2024.7",
     },
     {
       name: "Shanghai Jiao Tong University",
