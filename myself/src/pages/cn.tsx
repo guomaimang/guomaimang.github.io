@@ -258,7 +258,7 @@ function CampusSection() {
       logo: "/campus/cuhk.png",
       department: "信息工程学系, 工程学院",
       degree: "计算机科学与技术，理学硕士",
-      period: "2024.8 - 2026.3",
+      period: "2024 - 2026",
       current: false,
     },
     {
@@ -267,7 +267,7 @@ function CampusSection() {
       logo: "/campus/polyu.png",
       department: "电子计算学系, 工程学院",
       degree: "计算机科学与技术, 理学学士",
-      period: "2020.9 - 2024.7",
+      period: "2020 - 2024",
     },
     {
       name: "上海交通大学",
