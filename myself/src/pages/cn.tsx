@@ -616,7 +616,7 @@ function SkillSection() {
       </div>
       <div className="mt-2 text-center text-sm text-muted-foreground">
         <a 
-          href="https://whois.aliyun.com/domain/hanjiaming.com.cn" 
+          href="https://whois.aliyun.com/domain/hanjiaming.com" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="hover:underline"
