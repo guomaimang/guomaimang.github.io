@@ -12,7 +12,7 @@ headerDepth: 0
 
 ## A Division of Blockchain Layers
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/21/18e4354ff779b.png" alt="1732141984019.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/XreMuX/18e4354ff779b.png" alt="1732141984019.png" style="zoom: 50%;" />
 
 - Hardware Layer: **(Trusted) Hardware**：最底层的硬件层，包括计算机、服务器等物理设备。
 - **Layer 0**：**Networks (Public/Private)**：这一层包括公共和私有网络，负责将不同设备连接起来，形成区块链网络的基础通信层。
@@ -284,7 +284,7 @@ HTLC是闪电网络中常用的技术，帮助实现快速和安全的多跳支�
 
 为什么使用s？因为我们会有多个基于H(s)的合约。通过使用相同的哈希值H(s)，可以在多个支付通道之间建立关联，确保支付的原子性。
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/23/8db41cb625b0d.png" alt="1732305958670.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/MXk6t8/8db41cb625b0d.png" alt="1732305958670.png" style="zoom:50%;" />
 
 ## Cryptocurrency Exchange
 
@@ -296,7 +296,7 @@ HTLC是闪电网络中常用的技术，帮助实现快速和安全的多跳支�
 
 ### Centralized Solution
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/23/4e11b914afaad.png" alt="1732306291151.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/kG8ZFb/4e11b914afaad.png" alt="1732306291151.png" style="zoom:50%;" />
 
 ### Decentralized Solution using HTLC
 

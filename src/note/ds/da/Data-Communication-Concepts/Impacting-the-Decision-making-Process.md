@@ -19,7 +19,7 @@ article: false
 
 **这一切都归结为一个指导我们如何呈现故事的结构框架。** 想象一下，作为沟通工作的一部分，我们正在向一家食品公司展示结果。
 
-![1671815302122.png](https://pic.hanjiaming.com.cn/2022/12/24/a4c3651dabde8.png)
+![1671815302122.png](https://netdesk.orcsvc.com/f/x2X0H3/a4c3651dabde8.png)
 
 在开始我们的数据故事之前，我们应该提及背景
 
@@ -69,7 +69,7 @@ article: false
 
 ## Case
 
-![1671816527350.png](https://pic.hanjiaming.com.cn/2022/12/24/1cceb7e8d33e9.png)
+![1671816527350.png](https://netdesk.orcsvc.com/f/KXEZiL/1cceb7e8d33e9.png)
 
-![1671816703418.png](https://pic.hanjiaming.com.cn/2022/12/24/44f0eba09d333.png)
+![1671816703418.png](https://netdesk.orcsvc.com/f/0vXJU5/44f0eba09d333.png)
 

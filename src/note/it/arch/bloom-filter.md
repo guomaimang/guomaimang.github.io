@@ -20,13 +20,13 @@ category:
 
 例如，商品编号857对应的页面内容也是唯一的。
 
-![1734532388168.png](https://pic.hanjiaming.com.cn/2024/12/18/073e341be8b88.png)
+![1734532388168.png](https://netdesk.orcsvc.com/f/2oohv/073e341be8b88.png)
 
 例如在电商平台，下面商品访问的地址为 https://item.jd.com/857.html ，其中 857 是商品的 SKU 。不明白的同学可以简单理解为一个数字对于不同的商品。
 
 ### 系统架构
 
-![1734532442354.png](https://pic.hanjiaming.com.cn/2024/12/18/0533c235eddbe.png)
+![1734532442354.png](https://netdesk.orcsvc.com/f/wqAS5/0533c235eddbe.png)
 
 - **用户请求**：用户发起一个查看商品的请求，例如查看编号857的商品。
 - **缓存查询**：商城应用程序首先向后台的Redis缓存服务器进行查询。
@@ -34,14 +34,14 @@ category:
 
 ### 缓存的优势
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/762b8ea4ad4b0.png" alt="1734532470066.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/23xsv/762b8ea4ad4b0.png" alt="1734532470066.png" style="zoom: 33%;" />
 
 - **性能**：Redis基于内存，处理速度和吞吐量远高于传统的MySQL数据库。
 - **数据存储**：随着时间的积累，Redis缓存中存储了所有商品的数据，避免了频繁的数据库访问。
 
 ### 缓存穿透问题
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/dbcf23663f979.png" alt="1734532511346.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/1ejHK/dbcf23663f979.png" alt="1734532511346.png" style="zoom:33%;" />
 
 在当前设计下，存在一个致命问题：缓存穿透。假设恶意用户或爬虫机器人在短时间内查询大量不存在的商品编号（如888、889等），这些查询会直接命中数据库，导致数据库服务器超负荷，系统性能下降甚至崩溃。
 
@@ -59,7 +59,7 @@ category:
 - **二进制数组**：初始化一个N位的二进制数组，每位初始值为0，存储在Redis中。
 - **哈希函数**：对每个商品编号进行若干次哈希，确定其在数组中的位置，并将对应位置的值设为1。
 
-![1734532613788.png](https://pic.hanjiaming.com.cn/2024/12/18/cee91b33bddb0.png)
+![1734532613788.png](https://netdesk.orcsvc.com/f/0qJI5/cee91b33bddb0.png)
 
 ### 操作步骤
 
@@ -112,7 +112,7 @@ boolean notExists = bloomFilter.contains(8888);  // false
 
 ## 项目中的布隆过滤器使用流程
 
-![1734532697462.png](https://pic.hanjiaming.com.cn/2024/12/18/a8b7d07884af3.png)
+![1734532697462.png](https://netdesk.orcsvc.com/f/WKXU9/a8b7d07884af3.png)
 
 ### 初始化阶段
 

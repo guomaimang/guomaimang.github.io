@@ -30,7 +30,7 @@ headerDepth: 1
 - One **Master node** + multiple **Worker nodes**
 - Equivalent to **Hadoop's Master** and **Slave nodes**.
 
-<img src="https://pic.hanjiaming.com.cn/2024/05/07/a457797633715.png" alt="CleanShot 2024-05-07 at 23.28.23@2x.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Jeyu8/a457797633715.png" alt="CleanShot 2024-05-07 at 23.28.23@2x.png" style="zoom:33%;" />
 
 Key Elements of a Spark Cluster
 
@@ -44,15 +44,15 @@ Key Elements of a Spark Cluster
 
 Each Spark app is **fully isolated from the others** and **packages its own version of Spark and dependencies** within a Docker image.
 
-![1715096544157.png](https://pic.hanjiaming.com.cn/2024/05/07/6b61af814d4e4.png)
+![1715096544157.png](https://netdesk.orcsvc.com/f/9MDcm/6b61af814d4e4.png)
 
 ## Runs on Yarn
 
-![1715096652353.png](https://pic.hanjiaming.com.cn/2024/05/07/471d128823455.png)
+![1715096652353.png](https://netdesk.orcsvc.com/f/g00iX/471d128823455.png)
 
 Spark Executors Runs on Yarn
 
-![1715097532139.png](https://pic.hanjiaming.com.cn/2024/05/07/b90b2a21ef50f.png)
+![1715097532139.png](https://netdesk.orcsvc.com/f/JeAF8/b90b2a21ef50f.png)
 
 ## Run Schedule Tasks
 
@@ -61,7 +61,7 @@ Schedule Tasks to run on Executors
 - 执行器启动一次，可被多个任务和所有后续任务使用
 - 任务总数取决于 RDD 分区的数量
 
-![1715101694531.png](https://pic.hanjiaming.com.cn/2024/05/08/b111f17e2b52b.png)
+![1715101694531.png](https://netdesk.orcsvc.com/f/qgrUJ/b111f17e2b52b.png)
 
 ## Spark Driver
 
@@ -71,11 +71,11 @@ Schedule Tasks to run on Executors
 - SparkContext 存储配置参数：
   - 例如，应用程序名称、集群的主 URL、资源请求（执行器数量、执行器内存/核心数）、...
 
-![1715101780851.png](https://pic.hanjiaming.com.cn/2024/05/08/170bcf623d9aa.png)
+![1715101780851.png](https://netdesk.orcsvc.com/f/lVYfe/170bcf623d9aa.png)
 
 ::: note SparkContext: PySpark Example
 
-![1715101875252.png](https://pic.hanjiaming.com.cn/2024/05/08/8b346b7a744a9.png)
+![1715101875252.png](https://netdesk.orcsvc.com/f/A8Mfy/8b346b7a744a9.png)
 
 :::
 
@@ -93,47 +93,47 @@ Spark Supported Cluster Managers
 
 ## How to run
 
-![1715102039480.png](https://pic.hanjiaming.com.cn/2024/05/08/e4056633c7130.png)
+![1715102039480.png](https://netdesk.orcsvc.com/f/86eC5/e4056633c7130.png)
 
-![1715102086137.png](https://pic.hanjiaming.com.cn/2024/05/08/7b3f124e9841d.png)
+![1715102086137.png](https://netdesk.orcsvc.com/f/rjqug/7b3f124e9841d.png)
 
 ### Method 1: Spark-Submit
 
-![1715143599474.png](https://pic.hanjiaming.com.cn/2024/05/08/aa59038405012.png)
+![1715143599474.png](https://netdesk.orcsvc.com/f/JVdf8/aa59038405012.png)
 
-![1715143627926.png](https://pic.hanjiaming.com.cn/2024/05/08/64926e5dd7d22.png)
+![1715143627926.png](https://netdesk.orcsvc.com/f/2k6Uv/64926e5dd7d22.png)
 
 Use spark-submit to run PySpark Application
 
-![1715143707486.png](https://pic.hanjiaming.com.cn/2024/05/08/5be84756da855.png)
+![1715143707486.png](https://netdesk.orcsvc.com/f/pL6cn/5be84756da855.png)
 
-![1715144729961.png](https://pic.hanjiaming.com.cn/2024/05/08/3f71e7ba37688.png)
+![1715144729961.png](https://netdesk.orcsvc.com/f/P81se/3f71e7ba37688.png)
 
-![1715144790262.png](https://pic.hanjiaming.com.cn/2024/05/08/07b88dcf5071b.png)
+![1715144790262.png](https://netdesk.orcsvc.com/f/K89tL/07b88dcf5071b.png)
 
 ### Method 2: spark-shell
 
-![1715144935943.png](https://pic.hanjiaming.com.cn/2024/05/08/12e03386b5ba5.png)
+![1715144935943.png](https://netdesk.orcsvc.com/f/vgKtq/12e03386b5ba5.png)
 
 Use PySpark as a Python shell
 
-![1715144958293.png](https://pic.hanjiaming.com.cn/2024/05/08/bcfba23ebbc27.png)
+![1715144958293.png](https://netdesk.orcsvc.com/f/MOMS8/bcfba23ebbc27.png)
 
 ## Deploy Modes
 
 ### Spark Execution with Yarn: Cluster Mode
 
-![1715145158487.png](https://pic.hanjiaming.com.cn/2024/05/08/d9cfeeac7bf03.png)
+![1715145158487.png](https://netdesk.orcsvc.com/f/gv3iX/d9cfeeac7bf03.png)
 
 ### Client Mode
 
 Spark 驱动程序在提交作业的主机上运行
 
-![1715145210037.png](https://pic.hanjiaming.com.cn/2024/05/08/f9639b9f5d9e6.png)
+![1715145210037.png](https://netdesk.orcsvc.com/f/V83t2/f9639b9f5d9e6.png)
 
 ApplicationMaster 只负责向 YARN 请求执行容器。容器启动后，客户端与容器通信，直接安排工作。
 
-![1715145317387.png](https://pic.hanjiaming.com.cn/2024/05/08/363dcf6dc80b1.png)
+![1715145317387.png](https://netdesk.orcsvc.com/f/VODU2/363dcf6dc80b1.png)
 
 ::: tip Cluster Mode vs. Client Mode
 
@@ -153,7 +153,7 @@ Cluster mode: (Non-interactive)
 
 ApplicationMaster 在 Spark 中的进程名称是 ExecutorLauncher。
 
-![1715145527742.png](https://pic.hanjiaming.com.cn/2024/05/08/b79c9fa9a9b67.png)
+![1715145527742.png](https://netdesk.orcsvc.com/f/Y89u2/b79c9fa9a9b67.png)
 
 :::
 

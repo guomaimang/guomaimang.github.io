@@ -216,7 +216,7 @@ ICO的热潮促进了大量替代币的产生。
    - 旧节点不能接受新规则下的区块。这是因为新规则超出了旧规则的范围，旧节点无法验证新规则下的区块。
    - 硬分叉是不向后兼容的。这意味着如果不更新软件，旧版本的软件将无法正常运行和参与网络。
 
-![1730531090285.png](https://pic.hanjiaming.com.cn/2024/11/02/5a0340a9ca0fa.png)
+![1730531090285.png](https://netdesk.orcsvc.com/f/5WXXFV/5a0340a9ca0fa.png)
 
 ### Some Points of the Debate
 

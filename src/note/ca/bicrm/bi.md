@@ -57,13 +57,13 @@ BI 是一组方法、流程、应用程序和技术的总称，用于
 
 Data and Decision Making「数据和决策 」 => Driving Force (驱动力) for BI 「BI 的驱动力」
 
-<img src="https://pic.hanjiaming.com.cn/2023/09/10/b434713cb322d.png" alt="1694338698155.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/mqLh9/b434713cb322d.png" alt="1694338698155.png" style="zoom: 33%;" />
 
 :::
 
 ### BI 决策生命周期
 
-<img src="https://pic.hanjiaming.com.cn/2023/09/10/39d7992efb885.png" alt="1694339691302.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Pa1fe/39d7992efb885.png" alt="1694339691302.png" style="zoom:50%;" />
 
 Data Collection -> Data Warehousing -> Data Analysis Q.A. -> Reporting,Dahsboards, KPI, Trends, -> Business Decisions
 
@@ -136,11 +136,11 @@ Data Collection -> Data Warehousing -> Data Analysis Q.A. -> Reporting,Dahsboard
 
 ### Example
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/01/37ff7513536a8.png" alt="CleanShot 2023-10-01 at 18.10.02@2x.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/YGRF2/37ff7513536a8.png" alt="CleanShot 2023-10-01 at 18.10.02@2x.png" style="zoom:33%;" />
 
 ### Solution Overview
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/01/b365b14af7037.png" alt="1696155614043.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/Jwki8/b365b14af7037.png" alt="1696155614043.png" style="zoom: 33%;" />
 
 ### A General Process
 
@@ -156,7 +156,7 @@ Data Collection -> Data Warehousing -> Data Analysis Q.A. -> Reporting,Dahsboard
 
 商业决策视角的另一种观点
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/13/980bbd6684035.png" alt="1697180039048.png" style="zoom:55%;" />
+<img src="https://netdesk.orcsvc.com/f/e8ktq/980bbd6684035.png" alt="1697180039048.png" style="zoom:55%;" />
 
 ## Challenges
 
@@ -225,7 +225,7 @@ BI 管理人员应采取的关键步骤，以避免 Bl 系统出现问题和故�
 
 ### Business Analytics vs. Business Intelligence
 
-![1696668325414.png](https://pic.hanjiaming.com.cn/2023/10/07/e6ef314c72fdf.png)
+![1696668325414.png](https://netdesk.orcsvc.com/f/Om1CQ/e6ef314c72fdf.png)
 
 1. **商业分析 (Business Analytics)**:
    - 重点在于预测未来，解答“会发生什么？”和“为什么会这样？”的问题。

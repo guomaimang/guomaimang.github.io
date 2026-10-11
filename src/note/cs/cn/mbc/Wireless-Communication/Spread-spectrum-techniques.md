@@ -16,7 +16,7 @@ headerDepth: 1
 - 无线电传输的问题：在干扰期间，窄带信号可能会被抹去
 - 解决方案：使用特殊编码将窄带信号传播成宽带信号，以防止窄带干扰
 
-![1666088769800.png](https://pic.hanjiaming.com.cn/2022/10/18/272e209f4d707.png)
+![1666088769800.png](https://netdesk.orcsvc.com/f/m3dmF9/272e209f4d707.png)
 
 两种不同的扩频方法
 
@@ -25,13 +25,13 @@ headerDepth: 1
 
 ## 传播和干扰
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/d6cec98707807.png" alt="1666088795002.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/a2nRiq/d6cec98707807.png" alt="1666088795002.png" style="zoom: 25%;" />
 
 ## 扩展和频率选择性衰落
 
 「Spreading and Frequency Selective Fading」
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/d3427c9b251fa.png" alt="1666089383550.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/dojesX/d3427c9b251fa.png" alt="1666089383550.png" style="zoom: 25%;" />
 
 ## DSSS
 

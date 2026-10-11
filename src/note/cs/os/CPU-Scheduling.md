@@ -29,7 +29,7 @@ We are concerned about the decision of which process should get the CPU when the
 
 对CPU和I/O突发事件的仔细观察以及通过CPU突发事件直方图的分布表明了CPU调度的真正需要。
 
-![1648030970354.png](https://pic.hanjiaming.com.cn/2022/03/23/c0ec24dff7598.png)
+![1648030970354.png](https://netdesk.orcsvc.com/f/25JEfv/c0ec24dff7598.png)
 
 ## Scheduling Algorithms
 

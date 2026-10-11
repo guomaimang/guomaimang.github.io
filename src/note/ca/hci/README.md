@@ -21,7 +21,7 @@ Human Computer interaction
 
 <!-- more -->
 
-![1670168635628.png](https://pic.hanjiaming.com.cn/2022/12/04/5d36002fa771d.png)
+![1670168635628.png](https://netdesk.orcsvc.com/f/wvVOh5/5d36002fa771d.png)
 
 ## Exam item
 
@@ -62,7 +62,7 @@ Computer-Human Interaction (CHI)
 - User-Centred Design
 - Interaction Design
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/04/f5d6c743ecf46.png" alt="1670169396588.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/3pGRi5/f5d6c743ecf46.png" alt="1670169396588.png" style="zoom: 33%;" />
 
 63%的大型软件项目超过了成本，管理人员给出了四个与用户有关的理由：
 
@@ -81,11 +81,11 @@ Computer-Human Interaction (CHI)
 
 现在付一点，或者以后付很多！
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/06/58cae5f1b57b9.png" alt="1670321986970.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Jwv4c8/58cae5f1b57b9.png" alt="1670321986970.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/06/e9c44361f3d1e.png" alt="1670322236443.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/LQZxu2/e9c44361f3d1e.png" alt="1670322236443.png" style="zoom: 50%;" />
 
-![1670325193076.png](https://pic.hanjiaming.com.cn/2022/12/06/b99bcfe64770b.png)
+![1670325193076.png](https://netdesk.orcsvc.com/f/1LgMcK/b99bcfe64770b.png)
 
 ::: warning 人机交互是否只是关于界面设计？
 
@@ -107,17 +107,17 @@ Computer-Human Interaction (CHI)
 - "它只是你看到、听到、触摸或交谈的计算机部分。它是使你和你的计算机能够相互交流的所有东西的集合"。(IBM设计概念)
 - 一门与人类使用的交互式计算系统的设计、实施和评估有关的学科
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/07/e2aecb05a8ea4.png" alt="1670394981841.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/nwA8cj/e2aecb05a8ea4.png" alt="1670394981841.png" style="zoom:33%;" />
 
 ## Exam Example
 
 ### Example 1
 
-![1670395737930.png](https://pic.hanjiaming.com.cn/2022/12/07/917ce678217ea.png)
+![1670395737930.png](https://netdesk.orcsvc.com/f/PvXvfe/917ce678217ea.png)
 
 ### Example 2
 
-![1670328501446.png](https://pic.hanjiaming.com.cn/2022/12/06/20aa27a2e1e6d.png)
+![1670328501446.png](https://netdesk.orcsvc.com/f/Wr6pC9/20aa27a2e1e6d.png)
 
 ### Example 3
 

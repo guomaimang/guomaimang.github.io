@@ -156,7 +156,7 @@ Cons
 - String,
 - Symbol + Object
 
-![预览 2025-04-06 11.17.59.png](https://pic.hanjiaming.com.cn/2025/04/06/98d6f412314e3.png)
+![预览 2025-04-06 11.17.59.png](https://netdesk.orcsvc.com/f/qqjSJ/98d6f412314e3.png)
 
 ::: tip  Variables (Coercion)
 
@@ -308,6 +308,6 @@ The private identifier cannot be `#constructor`.
 
 In the DOM, events have phases. Capturing is when the event goes from the top (like the window) down to the target element. Then the target phase, and then bubbling, where it goes back up. So capturing is top to bottom, bubbling is bottom to top.
 
-<img src="https://pic.hanjiaming.com.cn/2025/04/07/05e22c18e9749.png" alt="event-flow.png" style="zoom:20%;" />
+<img src="https://netdesk.orcsvc.com/f/MXgC8/05e22c18e9749.png" alt="event-flow.png" style="zoom:20%;" />
 
 Event bubbling propagates events from the target element up through ancestors. Capturing (trickling) does the reverse, from ancestors down to the target. Bubbling is default; use `addEventListener`'s capture option (`true`) to handle during capturing. They determine the order parent/child elements receive events.

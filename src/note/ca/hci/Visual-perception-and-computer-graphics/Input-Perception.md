@@ -8,7 +8,7 @@ headerDepth: 1
 
 # Input: Perception
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/08/93c6240ee09ed.png" alt="1670446161271.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/WDQnC9/93c6240ee09ed.png" alt="1670446161271.png" style="zoom:50%;" />
 
 - 物理接收：眼睛接收光线并将其转化为电能
 - 神经节细胞检测模式和运动
@@ -62,7 +62,7 @@ headerDepth: 1
 
 但在图像从视觉皮层传递到下一站之前，它必须：翻转、旋转和调整大小\
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/08/fd2088c73019f.png" alt="1670480163570.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/q3kqCJ/fd2088c73019f.png" alt="1670480163570.png" style="zoom:50%;" />
 
 :::
 
@@ -79,12 +79,12 @@ headerDepth: 1
 
 **视力流是大脑的的提示，以计算在空间中的位置空间。视流「 Optic flow」是大脑计算空间位置的线索，通过运动进行定位「motion」。**
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/08/151c79626c2dd.png" alt="1670480951327.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/Q0r6Hj/151c79626c2dd.png" alt="1670480951327.png" style="zoom: 50%;" />
 
 - 头部移动时通过运动看到3D
 - 大脑将其解释为：短路径在长路径后面；因此，一定有深度。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/09/ff608c194187e.png" alt="1670556514738.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/wGrAh5/ff608c194187e.png" alt="1670556514738.png" style="zoom:33%;" />
 
 Motion parallax「运动视差」：物体离开视野的方向表示物体在物理世界中的运动方向，月亮与你同行（这可能不是真的）。
 
@@ -106,35 +106,35 @@ Motion parallax「运动视差」：物体离开视野的方向表示物体在�
 
 Most people will see columns of squares and circles,rather than rows of alternating shapes 「大多数人看到的是一列列的正方形和圆形，而不是一排排的交替形状。」
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/39ed75583c296.png" alt="CleanShot 2022-12-10 at 02.16.41@2x.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/dYlAhX/39ed75583c296.png" alt="CleanShot 2022-12-10 at 02.16.41@2x.png" style="zoom:25%;" />
 
 人类倾向于识别模式，即使在没有模式的地方。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/90c1e1c0b76bf.png" alt="1670609886782.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/M2AEu8/90c1e1c0b76bf.png" alt="1670609886782.png" style="zoom: 50%;" />
 
 ::: info Example
 
 具有相同背景颜色的选项被用户自动 "捆绑 "在一起
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/f6f0f93717299.png" alt="1670610643446.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/dY3eFX/f6f0f93717299.png" alt="1670610643446.png" style="zoom:25%;" />
 
 :::
 
 相互靠近的物体往往被归为一组：我们最可能看到左边的圆圈被分成两列，右边的圆圈被分成两行。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/3f84c1648bece.png" alt="1670610853761.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/rwkmug/3f84c1648bece.png" alt="1670610853761.png" style="zoom:33%;" />
 
 ### Pattern recognition: Proximity
 
 接近
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/ec71713347756.png" alt="1670611020838.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/p8ZwFn/ec71713347756.png" alt="1670611020838.png" style="zoom:33%;" />
 
 ### Pattern recognition: Symmetry
 
 对称性
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/3422b73e37286.png" alt="1670611156411.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/0vdaI5/3422b73e37286.png" alt="1670611156411.png" style="zoom:33%;" />
 
 在矩形中，我们最有可能感知到白色背景下的三个黑色对称图形（而不是黑色背景下的四个不对称的白色物体）。
 
@@ -143,19 +143,19 @@ Most people will see columns of squares and circles,rather than rows of alternat
 - 连续性
 - 线条被视为遵循最平滑的路径
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/338e6f1ff8882.png" alt="1670611674355.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/VAmkU2/338e6f1ff8882.png" alt="1670611674355.png" style="zoom:33%;" />
 
 ### Pattern recognition: closure
 
 被组合在一起的物体被看作是一个整体。我们倾向于忽略空隙和完整的线条
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/03ba243c81f34.png" alt="1670658333831.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/GvneiA/03ba243c81f34.png" alt="1670658333831.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/423c9d6ebedbd.png" alt="1670658560291.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/arwWiq/423c9d6ebedbd.png" alt="1670658560291.png" style="zoom:33%;" />
 
 ### Pattern recognition: Surroundedness
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/446fb07b4e3f3.gif" alt="1670658680324.gif"  />
+<img src="https://netdesk.orcsvc.com/f/E2jPTd/446fb07b4e3f3.gif" alt="1670658680324.gif"  />
 
 被其他地区包围的地区往往被看作是独立的人物
 

@@ -35,7 +35,7 @@ headerDepth: 1
   - 它们缺乏语义，也就是说，它们不显示 **关系的类型** 或 **组件的外部可见属性**。
   - 它们对与利益相关者的沟通和项目规划非常有用。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/f89010415cce6.png" alt="1671028427321.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Y4mQu2/f89010415cce6.png" alt="1671028427321.png" style="zoom:50%;" />
 
 ## Use of Architectural Models
 
@@ -90,7 +90,7 @@ View Models of Software Architecture
   - A physical view, 它显示了系统硬件和软件组件如何分布在系统的处理器上。
 - 另一个模型建议也添加概念视图的概念
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/956a6a5a62daa.png" alt="1671031819354.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/mqMmu9/956a6a5a62daa.png" alt="1671031819354.png" style="zoom: 50%;" />
 
 ## Architectural Pattern
 
@@ -119,7 +119,7 @@ View Models of Software Architecture
 - 然而，以这种方式构建系统往往是人为的
 - 通用分层架构
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/0b4eab882093f.png" alt="1671032723627.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/q3MacJ/0b4eab882093f.png" alt="1671032723627.png" style="zoom:50%;" />
 
 - Description:
 
@@ -152,7 +152,7 @@ View Models of Software Architecture
 
 围绕资源库组织工具是共享大量数据的一种有效方式。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/7e1b3cd98b750.png" alt="1671032343640.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/Y4OQc2/7e1b3cd98b750.png" alt="1671032343640.png" style="zoom: 50%;" />
 
 - Description: 一个系统中的所有数据都在一个中央存储库中管理，所有系统组件都可以访问。组件不直接互动，只通过存储库。
 - When used: 当你的系统中产生了大量的信息需要长期保存时，你应该使用这种模式。你也可以在数据驱动的系统中使用它，在这个系统中，将数据纳入资源库会触发一个动作或工具。
@@ -176,7 +176,7 @@ View Models of Software Architecture
 
 A client–server architecture for a film library
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/8c93950bd7b6b.png" alt="1671033117417.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/9yOLcm/8c93950bd7b6b.png" alt="1671033117417.png" style="zoom:50%;" />
 
 ### MVC Pattern
 
@@ -207,7 +207,7 @@ A client–server architecture for a film library
 
 支付系统中使用的管道和过滤器结构的一个例子.
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/15/9b68ae2fdd8e6.png" alt="1671033677179.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/8yKvc5/9b68ae2fdd8e6.png" alt="1671033677179.png" style="zoom: 50%;" />
 
 最适合于批处理系统和用户互动有限的嵌入式系统，但不太适合于互动系统。
 

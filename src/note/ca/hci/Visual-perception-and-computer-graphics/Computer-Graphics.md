@@ -18,11 +18,11 @@ headerDepth: 1
 
 ## General (rasterization) RP
 
-![1670667554282.png](https://pic.hanjiaming.com.cn/2022/12/10/40b1357bf25cb.png)
+![1670667554282.png](https://netdesk.orcsvc.com/f/XWw9uX/40b1357bf25cb.png)
 
 ## Ray Tracing
 
-![1670667593056.png](https://pic.hanjiaming.com.cn/2022/12/10/032fdf7817266.png)
+![1670667593056.png](https://netdesk.orcsvc.com/f/Omn6hQ/032fdf7817266.png)
 
 ## Rasterization vs. RT
 
@@ -35,5 +35,5 @@ headerDepth: 1
   - NVIDIA 深度学习超级采样 (DLSS)
   - RT denoising「去噪」 is again very costly
 
-![1670667934489.gif](https://pic.hanjiaming.com.cn/2022/12/10/7c24f5182d8d5.gif)
+![1670667934489.gif](https://netdesk.orcsvc.com/f/8yxxU5/7c24f5182d8d5.gif)
 

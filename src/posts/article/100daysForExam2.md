@@ -28,7 +28,7 @@ star:
 
 主办单位：中学馆学生联盟， 广州启合科技，全国百校联盟
 
-<audio controls="" src="https://pic.hanjiaming.com.cn/2020/02/brss.mp3" autoplay="autoplay"></audio>
+<audio controls="" src="https://netdesk.orcsvc.com/f/kGemFb/brss.mp3" autoplay="autoplay"></audio>
 
 尊敬的老师，亲爱的家长，可爱的同学们：
 

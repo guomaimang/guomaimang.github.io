@@ -9,7 +9,7 @@ headerDepth: 1
 
 # Google Kubernetes
 
-![1715244384263.png](https://pic.hanjiaming.com.cn/2024/05/09/0d28dc181f658.png)
+![1715244384263.png](https://netdesk.orcsvc.com/f/vORTq/0d28dc181f658.png)
 
 Container Management and Orchestration Tools -> How to build and manage a container cluster?
 
@@ -40,11 +40,11 @@ Container orchestration is all about managing the <u>lifecycles of containers</u
   - 自动化容器的生命周期；
   - 在虚拟机上创建服务、调度任务和 pod。
 
-![1714842567174.png](https://pic.hanjiaming.com.cn/2024/05/05/2143b911a3fe7.png)
+![1714842567174.png](https://netdesk.orcsvc.com/f/1mRfK/2143b911a3fe7.png)
 
 ::: note Container Orchestration (Case: Deployment)
 
-![1714842657543.png](https://pic.hanjiaming.com.cn/2024/05/05/57ffed717a98b.png)
+![1714842657543.png](https://netdesk.orcsvc.com/f/y0rsZ/57ffed717a98b.png)
 
 :::
 
@@ -65,7 +65,7 @@ Container orchestration is all about managing the <u>lifecycles of containers</u
 
 master-slave architecture
 
-![1714843096032.png](https://pic.hanjiaming.com.cn/2024/05/05/cc2bc92db8305.png)
+![1714843096032.png](https://netdesk.orcsvc.com/f/W4RF9/cc2bc92db8305.png)
 
 容器位于 Pod 内。
 
@@ -83,11 +83,11 @@ master-slave architecture
 - **etcd**: a distributed, <u>key-value data store</u> for the master node to store the configuration data of the cluster.
 - **cAdvisor**: provides a metric monitoring capability
 
-![1714843708757.png](https://pic.hanjiaming.com.cn/2024/05/05/8790cef7df266.png)
+![1714843708757.png](https://netdesk.orcsvc.com/f/aMahq/8790cef7df266.png)
 
 ## Workflow
 
-![1714843883291.png](https://pic.hanjiaming.com.cn/2024/05/05/ed4976571ab21.png)
+![1714843883291.png](https://netdesk.orcsvc.com/f/YPRF2/ed4976571ab21.png)
 
 1. 用户通过 kubectl 命令行工具向 Kubernetes 发送命令。kubectl 会将用户的命令翻译成一个声明式的 Deployment 对象。Deployment 是 Kubernetes 的一个高级 API，它支持滚动更新。
 2. kubectl 将 Deployment 对象发送到运行在集群中的 Kubernetes API 服务器（kube-apiserver）。
@@ -100,7 +100,7 @@ master-slave architecture
 9. kube-apiserver 将 Pods 保存到 etcd 中。
 10. 最后，运行在分配的 Node 上的 kubelet（始终在监听）实际启动容器。
 
-![1714843828820.png](https://pic.hanjiaming.com.cn/2024/05/05/f5f41c1fe110c.png)
+![1714843828820.png](https://netdesk.orcsvc.com/f/JKwc8/f5f41c1fe110c.png)
 
 1. 客户端发送一个部署请求到 API Server。这个请求通常由 `kubectl create -f deployment.yml` 命令发送。
 
@@ -165,7 +165,7 @@ Scheduler is **a component in a master node**,which is responsible for deciding 
 
 **Scheduler spreads pods across available nodes 「调度程序将 Pod 分散到可用节点上」**
 
-![1714986451624.png](https://pic.hanjiaming.com.cn/2024/05/06/b282d167428bd.png)
+![1714986451624.png](https://netdesk.orcsvc.com/f/yq1IZ/b282d167428bd.png)
 
 ## Kubernetes cAdvisor
 
@@ -183,21 +183,21 @@ Scheduler is **a component in a master node**,which is responsible for deciding 
 - 允许您更改集群所需的资源量。
 - 监控每个 Kubernetes pod 的 RAM 和 CPU 利用率
 
-![1714986949911.png](https://pic.hanjiaming.com.cn/2024/05/06/bdd76d2563131.png)
+![1714986949911.png](https://netdesk.orcsvc.com/f/4y9I2/bdd76d2563131.png)
 
 ::: details Check Current Resource Usage
 
 Use “kubectl top” command check current resource usage
 
-![1714987161472.png](https://pic.hanjiaming.com.cn/2024/05/06/9f2dae2ac98eb.png)
+![1714987161472.png](https://netdesk.orcsvc.com/f/V29c2/9f2dae2ac98eb.png)
 
 Docker Stats: Monitor CPU/Memory Usage
 
-![1714987180608.png](https://pic.hanjiaming.com.cn/2024/05/06/c5d587434fd71.png)
+![1714987180608.png](https://netdesk.orcsvc.com/f/5wksV/c5d587434fd71.png)
 
 CPU/Memory Usage during Spark TeraSort
 
-![1714987222620.png](https://pic.hanjiaming.com.cn/2024/05/06/f712a33146cfb.png)
+![1714987222620.png](https://netdesk.orcsvc.com/f/WoDC9/f712a33146cfb.png)
 
 :::
 
@@ -233,10 +233,10 @@ Type of Kubernetes
 
 “empty” at Pod startup
 
-![1715066263598.png](https://pic.hanjiaming.com.cn/2024/05/07/3b051f5a0f1e0.png)
+![1715066263598.png](https://netdesk.orcsvc.com/f/neqFj/3b051f5a0f1e0.png)
 
 ### HostPath
 
 a pre-existing file or directory on the host machine
 
-![1715066298833.png](https://pic.hanjiaming.com.cn/2024/05/07/b5aa0d58adf15.png)
+![1715066298833.png](https://netdesk.orcsvc.com/f/ZGdh2/b5aa0d58adf15.png)

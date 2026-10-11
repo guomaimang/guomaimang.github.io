@@ -11,7 +11,7 @@ headerDepth: 2
 
 特征：very flexible, no wiring needed, save cost, robust, high-speed Internet access
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/83f9af334a5ab.png" alt="1666096225060.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/953LIm/83f9af334a5ab.png" alt="1666096225060.png" style="zoom:33%;" />
 
 ## WLAN 网络基础设施
 
@@ -23,7 +23,7 @@ headerDepth: 2
 - AP作为无线和有线网络之间的桥梁。
 - 几个AP可以一起工作，提供更广泛的无线覆盖（例如，为整个建筑或校园）。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/f6cdc968cbd5f.png" alt="1666096473000.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/MkayH8/f6cdc968cbd5f.png" alt="1666096473000.png" style="zoom:33%;" />
 
 ### Ad hoc network
 
@@ -50,17 +50,17 @@ headerDepth: 2
 - Distribution System (DS) :连接ESS中的AP以形成一个逻辑网络
 - Portal: 桥接到其他（有线）网络
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/92d8119dde13f.png" alt="CleanShot 2022-10-18 at 23.07.44@2x.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/G6GwiA/92d8119dde13f.png" alt="CleanShot 2022-10-18 at 23.07.44@2x.png" style="zoom: 33%;" />
 
 **Ad Hoc WLAN**
 
 独立基本服务组合（IBSS）: A group of stations using the same radio frequency
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/2397a2b4fb9e5.png" alt="1666106124841.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/nwrVFj/2397a2b4fb9e5.png" alt="1666106124841.png" style="zoom:33%;" />
 
 IEEE 802.11x规定了物理层（PHY）和介质访问控制（MAC）标准
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/9637fb48775c7.png" alt="1666106280121.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/gkoMcX/9637fb48775c7.png" alt="1666106280121.png" style="zoom:25%;" />
 
 ## ETSI
 
@@ -74,7 +74,7 @@ Wi-Fi联盟（成立于1999年）由800多家公司组成，以认证产品的�
 
 Wi-Fi联盟在2018年宣布了一个新的命名规则。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/4360f9a37499a.png" alt="1666107495234.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ql4ahJ/4360f9a37499a.png" alt="1666107495234.png" style="zoom:50%;" />
 
 ## Hiper LAN
 

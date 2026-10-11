@@ -9,7 +9,7 @@ headerDepth: 2
 
 ## Probability
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/9422f76a795b1.png" alt="1655655732619.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/gkV0HX/9422f76a795b1.png" alt="1655655732619.png" style="zoom:33%;" />
 
 ## Random
 
@@ -50,7 +50,7 @@ name 	n_sales
 
 描述了一个场景中每种可能结果的概率
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/53d5fa7657257.png" alt="1655656080582.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/y305FZ/53d5fa7657257.png" alt="1655656080582.png" style="zoom:25%;" />
 
 ```python
 rolls_10 = die.sample(10, replace = True)
@@ -75,7 +75,7 @@ rolls_10['number'].hist(bins=np.linspace(1,7,7))
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/f6bd750f20637.png" alt="1655656213221.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/bVWDsM/f6bd750f20637.png" alt="1655656213221.png" style="zoom:25%;" />
 
 ### Binomial distribution
 
@@ -83,7 +83,7 @@ plt.show()
 
 #### 随机取样
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/4115fcaf2c0d8.png" alt="1655656675641.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/25PXFv/4115fcaf2c0d8.png" alt="1655656675641.png" style="zoom:25%;" />
 
 1 = head, 0 = tails
 
@@ -102,13 +102,13 @@ array([5])
 array([0, 3, 2, 1, 3, 0, 2, 2, 0, 0])
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/e706e71ef7c41.png" alt="1655656852259.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/R484f8/e706e71ef7c41.png" alt="1655656852259.png" style="zoom:25%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/e617498bbd3e0.png" alt="1655656866006.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/k8wGhb/e617498bbd3e0.png" alt="1655656866006.png" style="zoom:25%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/95ef8c7f60c6e.png" alt="1655656899032.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/or65Ig/95ef8c7f60c6e.png" alt="1655656899032.png" style="zoom:25%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/cf3ef7f655412.png" alt="1655656919407.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/doZnfX/cf3ef7f655412.png" alt="1655656919407.png" style="zoom:33%;" />
 
 ```python
 binom.rvs(3, 0.25, size=10)
@@ -122,9 +122,9 @@ array([1, 1, 1, 1, 0, 0, 2, 0, 1, 0])
 
 Binomial distribution「二项分布」 是 **一系列独立试验中成功次数的概率分布**
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/5e1cbe6c191b5.png" alt="1655657018888.png" style="zoom: 35%;" />
+<img src="https://netdesk.orcsvc.com/f/VpGwu2/5e1cbe6c191b5.png" alt="1655657018888.png" style="zoom: 35%;" />
 
-![1655657040547.png](https://pic.hanjiaming.com.cn/2022/06/20/c897cfda17a82.png)
+![1655657040547.png](https://netdesk.orcsvc.com/f/QaqYsj/c897cfda17a82.png)
 
 ```python
 # binom.pmf(num heads, num trials, prob of heads) -> 10C7
@@ -167,7 +167,7 @@ binom.cdf(7, 10, 0.5)
 
 **Lambda is the distribution's peak**
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/eba5f13abc7f9.png" alt="1655708136799.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/Da8yue/eba5f13abc7f9.png" alt="1655708136799.png" style="zoom: 67%;" />
 
 ```python
 # 如果每周平均收养人数为8，那么P是多少（#一周内收养人数=5）？
@@ -185,13 +185,13 @@ poisson.cdf(5, 8)
 
 ## Continuous distributions
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/c4ffd4a7d2d78.png" alt="1655656583945.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/AMLaUy/c4ffd4a7d2d78.png" alt="1655656583945.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/1bb638169fc46.png" alt="1655656612326.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/3pj3u5/1bb638169fc46.png" alt="1655656612326.png" style="zoom:50%;" />
 
 ### Uniform distribution
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/de19eb5d9d65a.png" alt="1655656353638.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/a20AFq/de19eb5d9d65a.png" alt="1655656353638.png" style="zoom:33%;" />
 
 ```python
 # P (wait time ≤ 7)
@@ -223,11 +223,11 @@ array([1.89740094, 4.70673196, 0.33224683, 1.0137103 , 2.31641255, 3.49969897, 0
 - means = μ
 - std = σ
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/8553f1e759305.png" alt="1655658630289.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/nwqqij/8553f1e759305.png" alt="1655658630289.png" style="zoom:33%;" />
 
 #### 标准正态分布
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/8b91f18aae14d.png" alt="1655658650984.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/qlgZTJ/8b91f18aae14d.png" alt="1655658650984.png" style="zoom: 33%;" />
 
 #### 99-95-86定则
 
@@ -235,15 +235,15 @@ array([1.89740094, 4.70673196, 0.33224683, 1.0137103 , 2.31641255, 3.49969897, 0
 - 95% falls within 2 standard deviations
 - 99.7% falls within 3 standard deviations
 
-![1655658836489.png](https://pic.hanjiaming.com.cn/2022/06/20/bff6fc13e6486.png)
+![1655658836489.png](https://netdesk.orcsvc.com/f/G6bLCA/bff6fc13e6486.png)
 
 #### 计算概率
 
-![1655658994613.png](https://pic.hanjiaming.com.cn/2022/06/20/88a2d921dc230.png)
+![1655658994613.png](https://netdesk.orcsvc.com/f/m3jJU9/88a2d921dc230.png)
 
-![1655659024398.png](https://pic.hanjiaming.com.cn/2022/06/20/8f5c150eecad0.png)
+![1655659024398.png](https://netdesk.orcsvc.com/f/PvjWfe/8f5c150eecad0.png)
 
-![1655659048018.png](https://pic.hanjiaming.com.cn/2022/06/20/6c0d09426e3a4.png)
+![1655659048018.png](https://netdesk.orcsvc.com/f/wvOds5/6c0d09426e3a4.png)
 
 #### Generating random numbers
 
@@ -256,7 +256,7 @@ norm.rvs(161, 7, size=10)
 array([155.5758223 , 155.13133235, 160.06377097, 168.33345778, 165.92273375, 163.32677057, 165.13280753, 146.36133538, 149.07845021, 160.5790856 ])
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/d5629c80fc9fd.png" alt="1655710066705.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/rK90sg/d5629c80fc9fd.png" alt="1655710066705.png" style="zoom: 33%;" />
 
 ### Exponential distribution
 
@@ -275,11 +275,11 @@ Also uses  rate = 1/lambda
 
 举例：   λ = 0.5, 每分钟创建 0.5 张客户服务单 - > rate = 2, 平均每 2 分钟就有一张客户服务单产生
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/693e7dab26181.png" alt="1655710266468.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/3pjAt5/693e7dab26181.png" alt="1655710266468.png" style="zoom: 67%;" />
 
 #### Lambda in exponential distribution
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/464fc2fae7e9a.png" alt="1655710372384.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/JwVAi8/464fc2fae7e9a.png" alt="1655710372384.png" style="zoom: 67%;" />
 
 #### 计算概率
 
@@ -298,7 +298,7 @@ expon.cdf(1, scale=0.5)
 
 与正态分布的形状相似
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/d2e99d894fdc7.png" alt="1655710522322.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/5X6mhV/d2e99d894fdc7.png" alt="1655710522322.png" style="zoom: 67%;" />
 
 #### 自由度
 
@@ -306,7 +306,7 @@ expon.cdf(1, scale=0.5)
 - 较低的df = 较厚的尾部，较高的标准差
 - 较高的df = 更接近正态分布
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/4cadb40b1dc35.png" alt="1655710574724.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/LQYru2/4cadb40b1dc35.png" alt="1655710574724.png" style="zoom: 67%;" />
 
 ### Log-normal distribution
 
@@ -318,4 +318,4 @@ Examples:
 - Adult blood pressure
 - Number of hospitalizations in the 2003 SARS outbreak
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/5b8dc54d3791a.png" alt="1655710652718.png" style="zoom:80%;" />
+<img src="https://netdesk.orcsvc.com/f/ZPOdU2/5b8dc54d3791a.png" alt="1655710652718.png" style="zoom:80%;" />

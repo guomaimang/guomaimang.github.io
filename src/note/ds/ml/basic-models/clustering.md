@@ -34,11 +34,11 @@ Clustering Problem: -> Documents
 
 ## Clusters & Outliers
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/26/ae1a24f7416d3.png" alt="1677408365417.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/y81UZ/ae1a24f7416d3.png" alt="1677408365417.png" style="zoom:50%;" />
 
 ## 不可能三角
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/26/f144695b56965.png" alt="1677410254001.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/VJDF2/f144695b56965.png" alt="1677410254001.png" style="zoom:33%;" />
 
 聚类是一个很难的问题!
 
@@ -78,7 +78,7 @@ $$
 $$
 d\left(C_{1}, C_{2}\right)=1-\left|C_{1} \cap C_{2}\right| /\left|C_{1} \cup C_{2}\right|
 $$
-<img src="https://pic.hanjiaming.com.cn/2023/02/26/1fa8e43ab5bd0.png" alt="1677409691406.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/J2wf8/1fa8e43ab5bd0.png" alt="1677409691406.png" style="zoom: 50%;" />
 
 - Document D1 is a set of its 𝑏 words
 - 等价地，每个文件是k个词空间中的一个0/1向量
@@ -92,7 +92,7 @@ $$
 - 通过在每个集群中随机选取一个点来初始化集群
   - 示例：随机选择一个点，然后选择 k - 1 个其他点，每个点都尽可能远离之前的点
 
-![1677410988187.png](https://pic.hanjiaming.com.cn/2023/02/26/b391500deb188.png)
+![1677410988187.png](https://netdesk.orcsvc.com/f/VJ9u2/b391500deb188.png)
 
 ### Populating
 
@@ -110,7 +110,7 @@ Convergence: Points don’t move between clusters and centroids stabilize
 - 未指定初始化质心的方法。一种流行的开始方式是随机选择 k 个示例。
 - 产生的结果取决于中心点的初始值，而且经常发生发现次优分区的情况。标准的解决方案是尝试一些不同的起点
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/26/7688022ad5ea4.png" alt="1677411272375.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/w2QI5/7688022ad5ea4.png" alt="1677411272375.png" style="zoom:33%;" />
 
 ### Pros & Cons
 
@@ -122,14 +122,14 @@ Convergence: Points don’t move between clusters and centroids stabilize
 
 ### Centroid & Clustroid
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/26/894fc487a44f6.png" alt="1677411446202.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/vlRTq/894fc487a44f6.png" alt="1677411446202.png" style="zoom:33%;" />
 
 - **Centroid** 是集群中所有（数据）点的平均值。这意味着中心点是一个 "人工 "点。
 - **Clustroid** 是一个现有的（数据）点，与集群中所有其他点 "最接近"。
 
 #### Centroid
 
-![1677411669305.png](https://pic.hanjiaming.com.cn/2023/02/26/ea46dd6e7ffdc.png)
+![1677411669305.png](https://netdesk.orcsvc.com/f/L14I2/ea46dd6e7ffdc.png)
 
 **Clustroid (non-Euclidean Case)**
 

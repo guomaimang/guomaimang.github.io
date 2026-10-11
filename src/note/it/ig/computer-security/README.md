@@ -17,7 +17,7 @@ THREE main security goals
 - Integrity「完整性」
 - Availability「可用性」
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/02/4383fee8a8262.png" alt="1675319874957.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/bOJfM/4383fee8a8262.png" alt="1675319874957.png" style="zoom:33%;" />
 
 ### Confidentiality
 

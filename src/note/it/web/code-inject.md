@@ -154,7 +154,7 @@ MIME（Multipurpose Internet Mail Extensions，多用途互联网邮件扩展）
 
 Victim「受害者」 visits a malicious page (e.g. by clicking a link in the email):
 
-![1744172699831.png](https://pic.hanjiaming.com.cn/2025/04/09/ce838a2ad97ef.png)
+![1744172699831.png](https://netdesk.orcsvc.com/f/10bFK/ce838a2ad97ef.png)
 
 ### Defending CSS Injection
 

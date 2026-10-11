@@ -41,7 +41,7 @@ Java 7的一个特性是数字文字中的下划线。可以在任何数字文�
 
 使用 UltraEdit 打开文件，使用16进制预览
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/30/05e21212f2a2b.png" alt="1653910510812.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/ZPvVf2/05e21212f2a2b.png" alt="1653910510812.png" style="zoom: 50%;" />
 
 - `7b` = 123  直接进制转换就可得到，Byte 1字节
 - `04 d2` = 1,234  直接进制转换就可得到，Short 2字节

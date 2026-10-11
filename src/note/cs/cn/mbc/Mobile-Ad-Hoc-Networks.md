@@ -50,7 +50,7 @@ Mobile Ad Hoc Network (MANET) 「移动特设网络」
 - 数据包转发：如何将一个数据包从S处送到D处？
 - 路线维护：如何维护路径？
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/16/9b1b396223d91.png" alt="1665914109510.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/ERdvfd/9b1b396223d91.png" alt="1665914109510.png" style="zoom:25%;" />
 
 MANETs中的路由是具有挑战性的。
 
@@ -85,7 +85,7 @@ MANETs中的路由是具有挑战性的。
 
 ### 主动与反应式
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/16/9075ad89b0dd2.png" alt="1665915614115.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/AMOkhy/9075ad89b0dd2.png" alt="1665915614115.png" style="zoom: 33%;" />
 
 - Proactive Protocols「主动协议」
   - 表格驱动--持续维护一致的、最新的路线
@@ -171,17 +171,17 @@ DSDV是基于距离矢量的路由协议
 - 一个节点定期向其邻居广播其估计的距离。
 - 然后每个邻居在这个距离上加一。如果这个新距离小于它当前的估计值，它就采用新的距离。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/17/d8f0bed609ea4.png" alt="1665975028500.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/LQp8T2/d8f0bed609ea4.png" alt="1665975028500.png" style="zoom:33%;" />
 
 ### 示例
 
-![1665976055529.png](https://pic.hanjiaming.com.cn/2022/10/17/f29b25cbc6eb5.png)
+![1665976055529.png](https://netdesk.orcsvc.com/f/vv03Sq/f29b25cbc6eb5.png)
 
-![1665976075800.png](https://pic.hanjiaming.com.cn/2022/10/17/1405cf16e93b5.png)
+![1665976075800.png](https://netdesk.orcsvc.com/f/OaLKtQ/1405cf16e93b5.png)
 
-![1665976096132.png](https://pic.hanjiaming.com.cn/2022/10/17/f20ae66d9a6df.png)
+![1665976096132.png](https://netdesk.orcsvc.com/f/eDq8Cq/f20ae66d9a6df.png)
 
-![1665976106817.png](https://pic.hanjiaming.com.cn/2022/10/17/2292cf2762012.png)
+![1665976106817.png](https://netdesk.orcsvc.com/f/KwOZUL/2292cf2762012.png)
 
 ### DSDV 协议
 
@@ -194,7 +194,7 @@ DSDV是基于距离矢量的路由协议
 - 安装时间 Install Time - 条目最后被修改的时间（用于从表中删除陈旧的条目）。
 - 稳定数据 Stable Data- 一个指向保存路由稳定程度信息的表的指针（用于抑制网络的波动）。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/17/26638b0aae9c9.png" alt="1665976130315.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/p4W1tn/26638b0aae9c9.png" alt="1665976130315.png" style="zoom: 33%;" />
 
 每个路由都被标记为目的地序列号
 
@@ -234,9 +234,9 @@ DSDV是基于距离矢量的路由协议
   - 全面更新：路由通告消息包含自己表中的所有路由信息
   - 递增式更新：路由广告信息只包括已经改变的条目
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/17/fbfe3eac6b124.png" alt="1665989877784.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/ZPePs2/fbfe3eac6b124.png" alt="1665989877784.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/17/c4a5ef2442338.png" alt="1665989904484.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/y3w9hZ/c4a5ef2442338.png" alt="1665989904484.png" style="zoom: 33%;" />
 
 远距离矢量路由协议中的断裂链接
 
@@ -245,9 +245,9 @@ DSDV是基于距离矢量的路由协议
 - **"∞"路由被分配新的奇数序列号**，并立即触发路由更新信息传播
 - 如果一个节点对"∞"路由有一个相等/较高的序列号，并有一个有限的度量，则该节点的路由表将被更新，并立即发送一个路由更新信息。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/17/a4352d01bbc8f.png" alt="1665991131359.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/Wrw6C9/a4352d01bbc8f.png" alt="1665991131359.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/17/dfd32c4b5654b.png" alt="1665991188497.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/1LWKtK/dfd32c4b5654b.png" alt="1665991188497.png" style="zoom:33%;" />
 
 ## Ad hoc 按需距离矢量 (AODV) <Badge text="算法设计" type="info" />
 
@@ -308,7 +308,7 @@ hop_cnt >
   - 每个节点自己决定其下一跳。
   - 到目的地的路径是由所有节点的下一跳节点逐步确定的
 
-![CleanShot 2022-12-11 at 19.25.58@2x.png](https://pic.hanjiaming.com.cn/2022/12/11/3041f778736d3.png)
+![CleanShot 2022-12-11 at 19.25.58@2x.png](https://netdesk.orcsvc.com/f/LwjYh2/3041f778736d3.png)
 
 - 一个反应式（按需）、无循环的协议
 - 没有定期的路由广告消息 (从而减少网络带宽的开销)

@@ -22,7 +22,7 @@ headerDepth: 1
 
 ### SMTP Smuggling (2023)
 
-![1744179142948.png](https://pic.hanjiaming.com.cn/2025/04/09/0d98a44f7ce6e.png)
+![1744179142948.png](https://netdesk.orcsvc.com/f/v3Afq/0d98a44f7ce6e.png)
 
 Difference in interpreting the end-of-data sequence (mail servers)
 

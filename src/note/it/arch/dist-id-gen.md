@@ -36,7 +36,7 @@ category:
 
 ### 尾部热点问题
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/a8e7dc4eed96f.png" alt="1734529078311.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/eQ8hq/a8e7dc4eed96f.png" alt="1734529078311.png" style="zoom:33%;" />
 
 - 范围分片会产生尾部热点问题：数据堆积到2.5亿时，所有新数据都插入到分片三，导致分片三的数据库压力极大，而前两个分片几乎没有压力。
 - 测试结果显示，范围分片的写入效率比哈希分片低1.5倍以上。
@@ -55,7 +55,7 @@ category:
 - UUID 长度为128位，相比整形或长整形浪费空间。
 - 无序的 UUID 会导致大量的索引重排。
 
-![1734529247258.png](https://pic.hanjiaming.com.cn/2024/12/18/f7b32f2550e14.png)
+![1734529247258.png](https://netdesk.orcsvc.com/f/493s2/f7b32f2550e14.png)
 
 InnoDB引擎基于B+树结构有序紧密存储，中间插入数据必然会造成”页分裂“现象产生
 
@@ -78,7 +78,7 @@ Snowflake是Twitter开发的分布式ID生成算法。
 
 ### Snowflake 算法的组成部分
 
-![1734897391953.png](https://pic.hanjiaming.com.cn/2024/12/23/8a68ec18daa58.png)
+![1734897391953.png](https://netdesk.orcsvc.com/f/VQrXt2/8a68ec18daa58.png)
 
 1. **符号位**：最高位，无实际用处，兼容长整形格式。
 2. **时间戳**：41位，表示本地毫秒级时间。

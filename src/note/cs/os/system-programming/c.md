@@ -66,7 +66,7 @@ int Max(int x, int y)  //定义Max函数{
 
 为了定义结构，您必须使用 **struct** 语句。struct 语句定义了一个包含多个成员的新的数据类型，struct 语句的格式如下：
 
-![1666616850341.png](https://pic.hanjiaming.com.cn/2022/10/24/0c0b8fe08c2e2.png)
+![1666616850341.png](https://netdesk.orcsvc.com/f/A65WIy/0c0b8fe08c2e2.png)
 
 ```c
 struct Books
@@ -162,7 +162,7 @@ BOOL bflag=TRUE;
 
 ### 为基本数据类型定义新的类型名
 
-![1666696771840.png](https://pic.hanjiaming.com.cn/2022/10/25/1365b9ecb8a8f.png)
+![1666696771840.png](https://netdesk.orcsvc.com/f/kqaatb/1365b9ecb8a8f.png)
 
 ### 为自定义数据类型定义类型名
 

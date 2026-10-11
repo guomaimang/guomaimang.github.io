@@ -15,7 +15,7 @@ headerDepth: 0
 sns.distplot(data["view_count"],bins=50)
 ```
 
-![1653932541673.png](https://pic.hanjiaming.com.cn/2022/05/31/77bc7ee63a60e.png)
+![1653932541673.png](https://netdesk.orcsvc.com/f/rKgqsg/77bc7ee63a60e.png)
 
 ```python
 plt.clf()
@@ -24,7 +24,7 @@ ax.set(xlabel='ln(view_count)')
 plt.show()
 ```
 
-![1653932569291.png](https://pic.hanjiaming.com.cn/2022/05/31/6f69b2ffd76e0.png)
+![1653932569291.png](https://netdesk.orcsvc.com/f/Qad0Cj/6f69b2ffd76e0.png)
 
 ## Q-Q Plot
 
@@ -49,7 +49,7 @@ KstestResult(statistic=0.07964721538565644, pvalue=8.813513831500901e-129)
 NormaltestResult(statistic=6992.485911812571, pvalue=0.0)
 ```
 
-![1653932616873.png](https://pic.hanjiaming.com.cn/2022/05/31/00f6cc00ffdd7.png)
+![1653932616873.png](https://netdesk.orcsvc.com/f/vv6KIq/00f6cc00ffdd7.png)
 
 ## Heat Map
 
@@ -65,7 +65,7 @@ plt.show()
 
 
 
-![1653932667666.png](https://pic.hanjiaming.com.cn/2022/05/31/76f3e052137b2.png)
+![1653932667666.png](https://netdesk.orcsvc.com/f/dodvuX/76f3e052137b2.png)
 
 ## Boxplot
 
@@ -77,7 +77,7 @@ error = data[np.abs(data["rate_likes"] - data["rate_likes"].mean()) > 3 * data["
 data = data.drop(error.index)
 ```
 
-![1653932737323.png](https://pic.hanjiaming.com.cn/2022/05/31/306a7ff6ec2e4.png)
+![1653932737323.png](https://netdesk.orcsvc.com/f/VpL3C2/306a7ff6ec2e4.png)
 
 ## Pie chart
 
@@ -107,7 +107,7 @@ pie.set_series_opts(label_opts=opts.LabelOpts(is_show=True, formatter="{b}: {d}%
 pie.render_notebook()
 ```
 
-![1653932835962.png](https://pic.hanjiaming.com.cn/2022/05/31/4e33c1aa7f680.png)
+![1653932835962.png](https://netdesk.orcsvc.com/f/orALIg/4e33c1aa7f680.png)
 
 ## Cumulative Plot
 
@@ -132,7 +132,7 @@ line7 = (
 line7.render_notebook()
 ```
 
-![1653932907788.png](https://pic.hanjiaming.com.cn/2022/05/31/da680a6e6511c.png)
+![1653932907788.png](https://netdesk.orcsvc.com/f/bVM3sM/da680a6e6511c.png)
 
 ## Pyecharts Hist 
 
@@ -157,7 +157,7 @@ bar.reversal_axis()
 bar.render_notebook()
 ```
 
-![1653933014606.png](https://pic.hanjiaming.com.cn/2022/05/31/0ba225d296638.png)
+![1653933014606.png](https://netdesk.orcsvc.com/f/eDXyCq/0ba225d296638.png)
 
 ## Pyecharts Line
 
@@ -229,4 +229,4 @@ grid1 = (
 grid1.render_notebook()
 ```
 
-![1653933070202.png](https://pic.hanjiaming.com.cn/2022/05/31/54d89383a7f09.png)
+![1653933070202.png](https://netdesk.orcsvc.com/f/jP6OHb/54d89383a7f09.png)

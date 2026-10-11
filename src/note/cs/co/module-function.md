@@ -19,7 +19,7 @@ index: 1
 - 主存（Main Memory）
   - 需要临时存储代码（程序）和结果
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120133231361.png)
+![](https://netdesk.orcsvc.com/f/DE8Lce/20210120133231361.png)
 
 ## 寄存器（Register）：存储信息的地方
 
@@ -55,7 +55,7 @@ index: 1
 
 于是，汇编语言出现：用助记符表示操作码，用标号表示位置，用助记符表示寄存器
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120145327752.png)
+![](https://netdesk.orcsvc.com/f/vWepUq/20210120145327752.png)
 
 用汇编语言编写的优点是： 不会因为增减指令而需要修改其他指令 不需记忆指令编码，编写方便 可读性比机器语言强。不过，这带来新的问题，是什么呢？人容易了，可机器不认识这些指令了.所以，我们需将汇编语言转 换为机器语言！ 我们用汇编程序作为中介进行转换
 
@@ -98,23 +98,23 @@ printf(hello, world\n);
 }
 ```
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120150327166.png)![](https://pic.hanjiaming.com.cn/2021/01/20210120150406829.png)
+![](https://netdesk.orcsvc.com/f/5Jk1hV/20210120150327166.png)![](https://netdesk.orcsvc.com/f/l8XbIe/20210120150406829.png)
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120150426458.png)
+![](https://netdesk.orcsvc.com/f/EGkAId/20210120150426458.png)
 
 数据经常在各存储部件间传送。故现代计算机大多采用“缓存”技术  
 所有过程都是在CPU执行指令所产生的控制信号的作用下进行的
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120150640628.png)
+![](https://netdesk.orcsvc.com/f/DEkLfe/20210120150640628.png)
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210122050908628.png)
+![](https://netdesk.orcsvc.com/f/pGA2cn/20210122050908628.png)
 
 ## 指令周期（Instruction Cycle）
 
 两个主要步骤：取、执行
 **指令周期（Instruction Cycle） = 提取周期（Fetch Cycle）+ 执行周期（Execute Cycle）**, 可能会有中中断周期
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120134928829.png)
+![](https://netdesk.orcsvc.com/f/4wkwH2/20210120134928829.png)
 
 所有步骤均由控制单元使用内置时钟（周期）控制：synchronization
 因此，一条指令通常消耗一个以上的时钟周期（步骤和顺序的调节器）
@@ -147,7 +147,7 @@ printf(hello, world\n);
 
 最初：PC：300指令是IR中的第一位
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120140002851.png)
+![](https://netdesk.orcsvc.com/f/4wbdc2/20210120140002851.png)
 
 1. 首先，程序计数器（也称为指令地址寄存器/PC）中记录了内存中下一条应该执行的指令地址为300
 
@@ -161,7 +161,7 @@ printf(hello, world\n);
 
 用图来看是这样的
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120142135741.png)
+![](https://netdesk.orcsvc.com/f/yyVjHZ/20210120142135741.png)
 
 ## 中断（Interrupts）
 
@@ -184,7 +184,7 @@ printf(hello, world\n);
 1. 处理器暂停当前程序的执行并保存其上下文
 2. 将PC设置为中断处理程序的起始地址
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120142819666.png)
+![](https://netdesk.orcsvc.com/f/0ykEu5/20210120142819666.png)
 
 ## 中断周期（Interrupt Cycle）
 
@@ -202,15 +202,15 @@ printf(hello, world\n);
 
 ## 带中断的指令周期（Instruction Cycle with Interrupts）
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120143145203.png)
+![](https://netdesk.orcsvc.com/f/W0ZXu9/20210120143145203.png)
 
 图解
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120143159965.png)
+![](https://netdesk.orcsvc.com/f/e89KFq/20210120143159965.png)
 
 程序流程控制（Program Flow Control）
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120143402104.png)
+![](https://netdesk.orcsvc.com/f/VDeXc2/20210120143402104.png)
 
 ## 多次中断（Multiple Interrupts）
 
@@ -222,11 +222,11 @@ printf(hello, world\n);
   - 处理器在处理一个中断时将忽略其他中断
   - 中断保持挂起状态，并在处理完第一个中断后进行检查
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120143608529.png)
+![](https://netdesk.orcsvc.com/f/JX4gf8/20210120143608529.png)
 
 解决方案2：嵌套处理：允许中断期间的中断
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120143632653.png)
+![](https://netdesk.orcsvc.com/f/nkbEFj/20210120143632653.png)
 
 问题：两种方法有什么区别？
 
@@ -248,11 +248,11 @@ printf(hello, world\n);
 
 所有三个组件均通过bus(es)进行通信,如下图
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120144002302.png)## Bus 
+![](https://netdesk.orcsvc.com/f/mwp6i9/20210120144002302.png)## Bus
 
 ## Interconnection Scheme （了解即可）
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120144147303.png)
+![](https://netdesk.orcsvc.com/f/qY2dtJ/20210120144147303.png)
 
 ## BUS(总线) 是什么
 

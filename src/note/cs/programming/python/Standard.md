@@ -41,7 +41,7 @@ author: 裴帅帅
 - IEEE Spectrum年度编程语言排行榜：Python在总排行、发展趋势、就业市场需求、开源领域经常年度排名第一
 - •Python已经成为各个大学的首选语言，它的卖点是容易学习、容易安装、容易部署
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/9ba0838e891f2.png" alt="1654196421836.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/25A6uv/9ba0838e891f2.png" alt="1654196421836.png" style="zoom: 33%;" />
 
 Python为什么这么火？
 
@@ -139,7 +139,7 @@ Python注释的方法：
 
 ## 运算符
 
-![1654226979831.png](https://pic.hanjiaming.com.cn/2022/06/03/68cca9bb23cfb.png)
+![1654226979831.png](https://netdesk.orcsvc.com/f/l3LYfe/68cca9bb23cfb.png)
 
 ## if语句
 
@@ -217,7 +217,7 @@ for和while都是循环，有什么区别？取决于要遍历的数据结构
 - break：跳出for/while的整体循环，继续往下执行
 - continue：结束for/while的当次循环，继续下一个循环
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/e82d4b28e6fbb.png" alt="1654227392138.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ZlQdh2/e82d4b28e6fbb.png" alt="1654227392138.png" style="zoom:50%;" />
 
 ## 读写文件的方法
 
@@ -236,13 +236,13 @@ for和while都是循环，有什么区别？取决于要遍历的数据结构
 Python本身作为一个擅长数据处理、文本处理的语言，开发中需要大量的处理字符串.
 字符串可以从前端用户输入、日志文件读取、数据库查询、网络爬取，然后进行各种处理变换和利用.
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/a557fc6271aa1.png" alt="1654227478808.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/eD4yuq/a557fc6271aa1.png" alt="1654227478808.png" style="zoom:50%;" />
 
 ### 单引号、双引号、三引号
 
 字符串可以使用单引号、双引号、三引号包括起来的内容
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/11ce3f0d7ce50.png" alt="1654227550511.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/8JOet5/11ce3f0d7ce50.png" alt="1654227550511.png" style="zoom:50%;" />
 
 ### 获取子串
 
@@ -285,7 +285,7 @@ Python的列表list是一种保存有序项集合、可变的数据结构（可�
 - 创建一个空列表：data = []
 - 创建一个有值列表：data = [1,2,3,4]
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/6f6c4582d54e7.png" alt="1654235949566.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Kwj9hL/6f6c4582d54e7.png" alt="1654235949566.png" style="zoom:50%;" />
 
 ### 索引和切片
 
@@ -313,11 +313,11 @@ Python的列表list是一种保存有序项集合、可变的数据结构（可�
 
 列表推导式（又称列表解析式）提供了一种简明扼要的方法来创建列表。
 
-![1654236102042.png](https://pic.hanjiaming.com.cn/2022/06/03/f7d30b1511ce8.png)
+![1654236102042.png](https://netdesk.orcsvc.com/f/2WbYIv/f7d30b1511ce8.png)
 
 ### 元组tuple
 
-![1654236188378.png](https://pic.hanjiaming.com.cn/2022/06/03/8706a18a6c54d.png)
+![1654236188378.png](https://netdesk.orcsvc.com/f/1LARtK/8706a18a6c54d.png)
 
 **问题：既然元组和列表这么像，为什么要有这个数据结构，需要元组的地方都用列表不就行了吗？**
 
@@ -341,7 +341,7 @@ Python的列表list是一种保存有序项集合、可变的数据结构（可�
 - 如果有一个数据列表：[(11, A), (12, B), (13, C)]，要在其中查找B这个条目，需要遍历列表查找；
 - 如果使用字典{A:11, B:12, C:13}，直接使用get(B)取出，字典具有超级快的按KEY查找速度；
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/f4114984bc3d1.png" alt="1654236478229.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/VAMws2/f4114984bc3d1.png" alt="1654236478229.png" style="zoom:50%;" />
 
 ### 常用方法
 
@@ -356,38 +356,38 @@ Python的列表list是一种保存有序项集合、可变的数据结构（可�
 
 ### 实例 – 按课程统计数据
 
-![1654246211383.png](https://pic.hanjiaming.com.cn/2022/06/03/0a66a592b6d2a.png)
+![1654246211383.png](https://netdesk.orcsvc.com/f/doXvFX/0a66a592b6d2a.png)
 
 ## 集合set
 
-![1654246255114.png](https://pic.hanjiaming.com.cn/2022/06/03/cbd4a853e0cb8.png)
+![1654246255114.png](https://netdesk.orcsvc.com/f/oJRrhg/cbd4a853e0cb8.png)
 
 ### 实例 – 获取去重的人名
 
-![1654246275594.png](https://pic.hanjiaming.com.cn/2022/06/03/6c48e0748cbe3.png)
+![1654246275594.png](https://netdesk.orcsvc.com/f/OaR5UQ/6c48e0748cbe3.png)
 
 ## 高级数据结构的对比
 
-![1654246300237.png](https://pic.hanjiaming.com.cn/2022/06/03/9fbef5f91111d.png)
+![1654246300237.png](https://netdesk.orcsvc.com/f/ZPRVs2/9fbef5f91111d.png)
 
 ## 实战
 
-![1654246345837.png](https://pic.hanjiaming.com.cn/2022/06/03/cf6ff38ebd5d6.png)
+![1654246345837.png](https://netdesk.orcsvc.com/f/1LAgiK/cf6ff38ebd5d6.png)
 
-![1654246365165.png](https://pic.hanjiaming.com.cn/2022/06/03/f2279ca5e3625.png)
+![1654246365165.png](https://netdesk.orcsvc.com/f/ZPR2T2/f2279ca5e3625.png)
 
 ## 代码的组织结构
 
 - 如果是小型需求，只写代码即可，实现功能是第一要诀，不用管结构
 - 如果是复杂代码或者团队合作，需要进行按不同的层次封装代码，方便重用和协作
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/51bbc7f84c290.png" alt="1654246422806.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/bVR3sM/51bbc7f84c290.png" alt="1654246422806.png" style="zoom:50%;" />
 
 - 接下来会依次介绍函数、类、模块的知识和使用
 
 ## 函数
 
-![1654246453170.png](https://pic.hanjiaming.com.cn/2022/06/03/7a3dd7c5a6583.png)
+![1654246453170.png](https://netdesk.orcsvc.com/f/LQbPc2/7a3dd7c5a6583.png)
 
 ## lambda函数
 
@@ -395,11 +395,11 @@ Python的列表list是一种保存有序项集合、可变的数据结构（可�
 
 不妨把函数当做变量来看。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/e646147e60d8d.png" alt="1654246494368.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/vvJRSq/e646147e60d8d.png" alt="1654246494368.png" style="zoom: 50%;" />
 
 ### 列表中排序体现 lambda
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/acd5db5d3ae74.png" alt="1654250954068.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/wvYnU5/acd5db5d3ae74.png" alt="1654250954068.png" style="zoom: 50%;" />
 
 ## class类
 
@@ -419,27 +419,27 @@ Python的列表list是一种保存有序项集合、可变的数据结构（可�
 - set是一个类，{1,2,3}是一个实例
 - string 是一个类
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/133fda18b77bf.png" alt="1654251116775.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/k8WVTb/133fda18b77bf.png" alt="1654251116775.png" style="zoom:50%;" />
 
 ### 语法知识
 
-![CleanShot 2022-06-03 at 18.21.50@2x.png](https://pic.hanjiaming.com.cn/2022/06/03/daf52f6d2d508.png)
+![CleanShot 2022-06-03 at 18.21.50@2x.png](https://netdesk.orcsvc.com/f/y3mxcZ/daf52f6d2d508.png)
 
 ### 实例演示
 
-![1654251881441.png](https://pic.hanjiaming.com.cn/2022/06/03/22244482222c2.png)
+![1654251881441.png](https://netdesk.orcsvc.com/f/R4RMU8/22244482222c2.png)
 
 ## 异常Exception
 
-![1654252074523.png](https://pic.hanjiaming.com.cn/2022/06/03/31b7881945978.png)
+![1654252074523.png](https://netdesk.orcsvc.com/f/X5RwTX/31b7881945978.png)
 
 ## 包package和模块module
 
-![1654252214368.png](https://pic.hanjiaming.com.cn/2022/06/03/a0d1925ce70c7.png)
+![1654252214368.png](https://netdesk.orcsvc.com/f/3pA4i5/a0d1925ce70c7.png)
 
 ## 常见模块
 
-![1654252603451.png](https://pic.hanjiaming.com.cn/2022/06/03/7f7601a670e33.png)
+![1654252603451.png](https://netdesk.orcsvc.com/f/WrRoc9/7f7601a670e33.png)
 
 ### sys模块
 
@@ -472,26 +472,26 @@ Python的列表list是一种保存有序项集合、可变的数据结构（可�
 
 ### 模块json
 
-![1654252824431.png](https://pic.hanjiaming.com.cn/2022/06/03/361904bf02787.png)
+![1654252824431.png](https://netdesk.orcsvc.com/f/DawdSe/361904bf02787.png)
 
 ### web开发微框架flask
 
-![1654252883754.png](https://pic.hanjiaming.com.cn/2022/06/03/83819449bfb7e.png)
+![1654252883754.png](https://netdesk.orcsvc.com/f/y3mKCZ/83819449bfb7e.png)
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/cda746ebb29ca.png" alt="1654252908200.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/JwPdc8/cda746ebb29ca.png" alt="1654252908200.png" style="zoom:50%;" />
 
 ### http爬虫库requests
 
-![CleanShot 2022-06-03 at 18.42.12@2x.png](https://pic.hanjiaming.com.cn/2022/06/03/092dcdebcefe2.png)
+![CleanShot 2022-06-03 at 18.42.12@2x.png](https://netdesk.orcsvc.com/f/a2RPiq/092dcdebcefe2.png)
 
 ### 访问MySQL模块PyMySQL
 
-![1654253241339.png](https://pic.hanjiaming.com.cn/2022/06/03/767943042219a.png)
+![1654253241339.png](https://netdesk.orcsvc.com/f/WrRRC9/767943042219a.png)
 
 ### 使用xlwt模块生成excel
 
-![CleanShot 2022-06-03 at 18.42.34@2x.png](https://pic.hanjiaming.com.cn/2022/06/03/f2dd97525754a.png)
+![CleanShot 2022-06-03 at 18.42.34@2x.png](https://netdesk.orcsvc.com/f/eD4atq/f2dd97525754a.png)
 
 ## 回顾
 
-![1654253241339.png](https://pic.hanjiaming.com.cn/2022/06/03/767943042219a.png)
+![1654253241339.png](https://netdesk.orcsvc.com/f/WrRRC9/767943042219a.png)

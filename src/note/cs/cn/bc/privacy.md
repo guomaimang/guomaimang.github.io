@@ -28,7 +28,7 @@ How to make a new identity
 
 「假名」
 
-![1730296253162.png](https://pic.hanjiaming.com.cn/2024/10/30/5efdf7fee9ea3.png)
+![1730296253162.png](https://netdesk.orcsvc.com/f/MjgH8/5efdf7fee9ea3.png)
 
 - 在区块链系统中，交易是公开的，因此需要额外的技术手段来保护用户的隐私。
 - 比特币交易是公开的，但参与者的身份是隐藏的，只有他们的比特币地址是可见的。
@@ -47,7 +47,7 @@ or precisely, unlinkability「或者准确地说，不可链接性」
 3. Alice在Bob处消费100单位的电子现金，Bob接收到电子现金凭证。
 4. Bob将电子现金凭证存入他的银行账户，银行验证凭证的合法性，但无法追踪到Alice。
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/30/7c81a8a211a5c.png" alt="1730296684084.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/8l6i5/7c81a8a211a5c.png" alt="1730296684084.png" style="zoom: 50%;" />
 
 ### Fungibility
 
@@ -263,7 +263,7 @@ Malicious Bob could double-sign!
 - 当支付者（账户）是匿名时，如何识别双重支付？
 - 这是环签名中的一个关键问题，因为匿名性使得追踪重复签名变得困难。
 
-![1730446684400.png](https://pic.hanjiaming.com.cn/2024/11/01/08f88d1c19b40.png)
+![1730446684400.png](https://netdesk.orcsvc.com/f/a82rFq/08f88d1c19b40.png)
 
 因此，我们在环签名中添加了以下功能
 

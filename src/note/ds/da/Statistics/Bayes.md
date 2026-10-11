@@ -34,7 +34,7 @@ author: Hirsun，Belter
 
 这时，称事件组 B1, B2,... 是样本空间S的一个划分，把具有这些性质的一组事件称为一个“完备事件组”。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/09/3f15ceec8311c.png" alt="1657357451790.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/R4dVh8/3f15ceec8311c.png" alt="1657357451790.png" style="zoom:33%;" />
 
 设 B1, B2,... 是样本空间S的一个划分，A为任一事件（图中红圈内部区域），则有：
 $$

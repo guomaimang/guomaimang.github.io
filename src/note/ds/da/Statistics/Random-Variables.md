@@ -35,7 +35,7 @@ author: Hirsun，Belter
 
 离散型随机变量的取值在整个实数轴上是间隔的，要么只有有限个取值，要么是无限可数的。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/09/2dfc2b8f76288.png" alt="1657356705285.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/5XK5UV/2dfc2b8f76288.png" alt="1657356705285.png" style="zoom:33%;" />
 
 常见的离散型随机变量包括以下几种：
 
@@ -49,7 +49,7 @@ author: Hirsun，Belter
 
 连续型随机变量的取值要么包括整个实数集 (−∞,+∞) ，要么在一个区间内连续，总之这类随机变量的可能取值要比离散型随机变量的取值多得多，它们的个数是无限不可数的。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/09/313aad8af06b2.png" alt="1657356780324.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/8J0xt5/313aad8af06b2.png" alt="1657356780324.png" style="zoom:33%;" />
 
 图：连续型随机变量的概率密度分布函数
 

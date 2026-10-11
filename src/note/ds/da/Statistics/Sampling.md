@@ -35,13 +35,13 @@ pts_vs_flavor_samp = pts_vs_flavor_pop.sample(n=10)
 coffee_ratings.sample(n=5, random_state=19000113)
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/04/9e34ec6fb33aa.png" alt="1656865235288.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/LQKYh2/9e34ec6fb33aa.png" alt="1656865235288.png" style="zoom:33%;" />
 
 ## 抽样偏差
 
 ::: detail 查看一关于美国大选的民意调查
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/3378153795e85.png" alt="1656511769607.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/do2nIX/3378153795e85.png" alt="1656511769607.png" style="zoom:50%;" />
 
 1936年，一家名为《文学文摘》的报纸进行了一次广泛的民意调查，试图预测下一届美国总统选举。他们给1000万选民打了电话，得到了200多万份答复。大约有一百三十万人说他们会投票给兰登，只有不到一百万人说他们会投票给罗斯福。也就是说，兰登被预测将获得百分之五十七的选票，而罗斯福被预测将获得百分之四十三的选票。由于样本量如此之大，人们推测这项民调会非常准确。然而，在选举中，罗斯福以压倒性优势赢得了百分之六十二的选票。那么，什么地方出了问题？好吧，在1936年，电话是一种奢侈品，所以《文学文摘》所联系的人都是比较有钱的。选民的样本并不能代表整个选民群体，因此民调出现了样本偏差。数据是通过最简单的方法收集的，在这种情况下就是打电话给人们。这被称为便利抽样，往往容易出现样本偏差。在取样之前，我们需要思考我们的数据收集过程，以避免有偏见的结果。
 
@@ -65,7 +65,7 @@ coffee_ratings_first10["total_cup_points"].hist(bins=np.arange(59, 93, 2))
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/32536b1e645e7.png" alt="1656511847303.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/yQbVcZ/32536b1e645e7.png" alt="1656511847303.png" style="zoom:50%;" />
 
 ## 生成随机数
 
@@ -85,7 +85,7 @@ Prepend with numpy.random , such as numpy.random.beta()
 - numpy.random.random() 生成随机数
 - np.random.uniform(low = 0, high = 5, size = 5000)
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/2af478dfe40cc.png" alt="1656513565026.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/bo01uM/2af478dfe40cc.png" alt="1656513565026.png" style="zoom: 33%;" />
 
 ```python
 np.random.seed(20000229)
@@ -122,7 +122,7 @@ print(job_roles_samp)
 
 Systematic sampling
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/04/92bdc2e34f3cb.png" alt="1656865271371.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/25kYSv/92bdc2e34f3cb.png" alt="1656865271371.png" style="zoom:25%;" />
 
 ### 系统抽样过程
 
@@ -133,7 +133,7 @@ interval = pop_size // sample_size
 coffee_ratings.iloc[::interval]
 ```
 
-![1656865346717.png](https://pic.hanjiaming.com.cn/2022/07/04/150b33abcadde.png)
+![1656865346717.png](https://netdesk.orcsvc.com/f/wv3dS5/150b33abcadde.png)
 
 ### 系统抽样的问题
 
@@ -145,7 +145,7 @@ coffee_ratings_with_id.plot(x="index", y="aftertaste", kind="scatter")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/04/bb34963fb8a0b.png" alt="1656865448582.png" style="zoom:5%;" />
+<img src="https://netdesk.orcsvc.com/f/3pkMu5/bb34963fb8a0b.png" alt="1656865448582.png" style="zoom:5%;" />
 
 仅当我们在此扫描图中看不到模式时，系统抽样才是安全的。为确保系统采样安全，我们需要打乱样本
 
@@ -157,7 +157,7 @@ shuffled.plot(x="index", y="aftertaste", kind="scatter")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/04/edb4ee8702221.png" alt="1656865533187.png" style="zoom:5%;" />
+<img src="https://netdesk.orcsvc.com/f/1LkQcK/edb4ee8702221.png" alt="1656865533187.png" style="zoom:5%;" />
 
 但，洗行+系统抽样 与 简单随机抽样 相同。
 
@@ -171,7 +171,7 @@ plt.show()
 
 如果您关心子组，分层抽样很有用。否则，简单随机抽样更为合适。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/04/0fc83d278fbe6.png" alt="1656866688095.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/3pkAF5/0fc83d278fbe6.png" alt="1656866688095.png" style="zoom:50%;" />
 
 ::: tip 用途
 
@@ -255,7 +255,7 @@ attrition_weight.hist("YearsAtCompany",bins = np.arange(0,41,1))
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/04/7035163dce100.png" alt="1656870365432.png" style="zoom:25%;" /><img src="https://pic.hanjiaming.com.cn/2022/07/04/6497a3b0ddaf4.png" alt="1656870383990.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/WrZnc9/7035163dce100.png" alt="1656870365432.png" style="zoom:25%;" /><img src="https://netdesk.orcsvc.com/f/Jw4yh8/6497a3b0ddaf4.png" alt="1656870383990.png" style="zoom:25%;" />
 
 ## 分组抽样
 

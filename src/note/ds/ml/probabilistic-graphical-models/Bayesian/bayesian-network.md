@@ -11,13 +11,13 @@ headerDepth: 1
 
 将多个因子联系起来。
 
-<img src="https://pic.hanjiaming.com.cn/2023/01/04/2c549d22b7173.png" alt="1672813249056.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/GeRiA/2c549d22b7173.png" alt="1672813249056.png" style="zoom:25%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/01/04/44ecf810fa08b.png" alt="1672813272267.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/2l6Hv/44ecf810fa08b.png" alt="1672813272267.png" style="zoom:25%;" />
 
 下图展示的就是一个参数化的贝叶斯网络。
 
-![1672818055475.png](https://pic.hanjiaming.com.cn/2023/01/04/22436cb2d736a.png)
+![1672818055475.png](https://netdesk.orcsvc.com/f/XZwiX/22436cb2d736a.png)
 
 后续将了解如何让从贝叶斯网络得到联合概率分布。
 
@@ -39,7 +39,7 @@ A Bayesian network is:
 
 简单的说，就是把各个 CPD 乘起来。
 
-<img src="https://pic.hanjiaming.com.cn/2023/01/04/1d8b39d40ded5.png" alt="1672818570064.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/Vk3F2/1d8b39d40ded5.png" alt="1672818570064.png" style="zoom:25%;" />
 
 这种情况下，我们得到一个scope = 5 的因子。
 
@@ -56,9 +56,9 @@ A Bayesian network is:
 
 全称 Conditional Probabilities Table
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/12/0f43a80bff265.png" alt="1657559527848.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/vvOYIq/0f43a80bff265.png" alt="1657559527848.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/12/3b78b2ecee145.png" alt="1657559578197.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/VpOjH2/3b78b2ecee145.png" alt="1657559578197.png" style="zoom: 33%;" />
 
 :::
 
@@ -66,7 +66,7 @@ A Bayesian network is:
 
 基于 Y 的 Parent 预测 P(Y = 1 | Parent)
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/12/0f43a80bff265.png" alt="1657559527848.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/vvOYIq/0f43a80bff265.png" alt="1657559527848.png" style="zoom:33%;" />
 
 由 $P\left(Y=0 \mid x_{\ldots} \ldots x_{k}\right)=1-O R\left(x_{1} \ldots x_{k}\right)$ 和 $O R\left(x_{1} \cdots x_{k}\right)=\left\{\begin{array}{ll}
 1 & \text { if any } x_{i}=1 \\
@@ -94,13 +94,13 @@ $$
 
 When can X influence y? 
 
-<img src="https://pic.hanjiaming.com.cn/2023/01/04/a61d2f7ea179b.png" alt="1672833132167.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/MQMS8/a61d2f7ea179b.png" alt="1672833132167.png" style="zoom: 25%;" />
 
 When can X influence Y Given evidence about Z?
 
-<img src="https://pic.hanjiaming.com.cn/2023/01/04/443fefb3036d3.png" alt="1672834828989.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/WeoF9/443fefb3036d3.png" alt="1672834828989.png" style="zoom: 25%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/01/04/420257cc0ec28.png" alt="1672835030957.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/bq3TM/420257cc0ec28.png" alt="1672835030957.png" style="zoom: 25%;" />
 
 A trail X1 - ... - Xn is active given Z if:
 

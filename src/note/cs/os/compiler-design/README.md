@@ -17,7 +17,7 @@ headerDepth: 1
 - 编译器的任务
 - 编译过程
 
-![1667887187766.png](https://pic.hanjiaming.com.cn/2022/11/08/f9bff78c03d4d.png)
+![1667887187766.png](https://netdesk.orcsvc.com/f/WrqXi9/f9bff78c03d4d.png)
 
 ### Lexical Analysis
 
@@ -48,11 +48,11 @@ headerDepth: 1
 
 ## Programming Language
 
-![CleanShot 2022-11-08 at 14.02.55@2x.png](https://pic.hanjiaming.com.cn/2022/11/08/74609abb0b5c2.png)
+![CleanShot 2022-11-08 at 14.02.55@2x.png](https://netdesk.orcsvc.com/f/DaDLte/74609abb0b5c2.png)
 
 ## Compiler or Interpreter
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/08/7cac19f4f3a5a.png" alt="1667892745808.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/l3W3Ie/7cac19f4f3a5a.png" alt="1667892745808.png" style="zoom: 50%;" />
 
 ::: tip Finite Automata
 
@@ -70,7 +70,7 @@ The lexical analysis for a modern computer language such as Java needs the power
 
 它还报告源程序中的错误（bug）。
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/08/c61c8c4d07b28.png" alt="1667893121753.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/OawOHQ/c61c8c4d07b28.png" alt="1667893121753.png" style="zoom: 33%;" />
 
 ### Phases of a Compilation
 
@@ -83,7 +83,7 @@ The lexical analysis for a modern computer language such as Java needs the power
 
 :::
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/08/7618876b9de67.png" alt="1667893803291.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/bVajsM/7618876b9de67.png" alt="1667893803291.png" style="zoom: 50%;" />
 
 ### Phases and Passes
 
@@ -126,7 +126,7 @@ lex, flex yacc, bison
 
 ## Lexical Analysis
 
-![1667897612427.png](https://pic.hanjiaming.com.cn/2022/11/08/fc4e45873335e.png)
+![1667897612427.png](https://netdesk.orcsvc.com/f/LQe1I2/fc4e45873335e.png)
 
 ## Syntax Analysis
 
@@ -146,7 +146,7 @@ position := initial + rate * 60
 
 
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/08/d166ca662bc52.png" alt="1667898001464.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/0WjES5/d166ca662bc52.png" alt="1667898001464.png" style="zoom:50%;" />
 
 ## Semantic Analysis
 
@@ -160,16 +160,16 @@ position := initial + rate * 60
 - 生成IR（Intermediate Representation）代码
 - 更容易从IR代码生成机器代码。
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/08/5fa9f13c73752.png" alt="1667898202170.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Mk43I8/5fa9f13c73752.png" alt="1667898202170.png" style="zoom:33%;" />
 
 ## Code Optimization
 
 修改程序的表现形式，使程序可以运行得更快，使用更少的内存和功率等。
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/08/c65aa7eca01cb.png" alt="1667898307576.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/p412in/c65aa7eca01cb.png" alt="1667898307576.png" style="zoom:33%;" />
 
 ## Code Generation
 
 Generate the target program.
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/08/87ab77f587d66.png" alt="1667898338616.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/42gwc2/87ab77f587d66.png" alt="1667898338616.png" style="zoom:33%;" />

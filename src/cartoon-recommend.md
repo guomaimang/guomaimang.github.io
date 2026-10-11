@@ -8,7 +8,7 @@ index: false
 
 ## 喜羊羊与灰太狼 <Badge text="连载中" color="tip" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/14/e1e65676b4330.png" alt="CleanShot 2022-05-14 at 15.49.25@2x.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/x8Q2c3/e1e65676b4330.png" alt="CleanShot 2022-05-14 at 15.49.25@2x.png" style="zoom:33%;" />
 
 - 中文全名：喜羊羊与灰太狼
 - 英文全球：Pleasant Goat and Big Big Wolf
@@ -20,7 +20,7 @@ index: false
 
 ## 名侦探柯南 <Badge text="连载中" color="tip" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/14/907c95db062fc.png" alt="1652515263078.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/42JOc2/907c95db062fc.png" alt="1652515263078.png" style="zoom:33%;" />
 
 - 中文全名：名侦探柯南
 - 日文全名：名探偵コナン
@@ -32,7 +32,7 @@ index: false
 
 ## 飞哥与发仔 <Badge text="连载中" color="tip" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/14/4ffd6eca81af4.png" alt="1652515905945.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/3pPyC5/4ffd6eca81af4.png" alt="1652515905945.png" style="zoom: 40%;" />
 
 - 中文全名：飞哥与发仔，飞哥与小佛
 - 英文全名：Phineas and Ferb
@@ -44,7 +44,7 @@ index: false
 
 ## 蓋酷家庭  <Badge text="连载中" color="tip" />
 
-<img src="https://pic.hanjiaming.com.cn/2025/06/06/f56475ffa4243.png" alt="1749146129129.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ArIy/f56475ffa4243.png" alt="1749146129129.png" style="zoom:33%;" />
 
 - 中文全名：蓋酷家庭，恶搞之家，居家男人
 - 英文全名：Family Guys
@@ -55,7 +55,7 @@ index: false
 
 ## 咱们裸熊 <Badge text="已完结" color="grey" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/14/ee196590f6285.png" alt="1652515541823.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Oa41iQ/ee196590f6285.png" alt="1652515541823.png" style="zoom:33%;" />
 
 - 中文全名：咱们裸熊，熊熊遇见你，熊熊三剑客
 - 英文全名：We Bare Bears
@@ -67,7 +67,7 @@ index: false
 
 ## 摩尔庄园 <Badge text="已完结" color="grey" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/14/e59cf8f26839f.png" alt="1652516459248.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/KwYWsL/e59cf8f26839f.png" alt="1652516459248.png" style="zoom: 33%;" />
 
 - 中文全名：摩尔庄园
 - 英文全名：Mole’s World

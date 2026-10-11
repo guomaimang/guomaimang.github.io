@@ -18,7 +18,7 @@ category:
 
 缓存是架构设计中提升性能最直接的方法。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/e079413d12722.png" alt="1734525394385.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/pO1Tn/e079413d12722.png" alt="1734525394385.png" style="zoom:33%;" />
 
 举例：假设应用程序将原始数据存放在 MySQL 数据库中。
 
@@ -31,11 +31,11 @@ category:
 
 分为四层：客户端、应用层、服务层、数据层。
 
-![1734525461329.png](https://pic.hanjiaming.com.cn/2024/12/18/7d73bf2ede067.png)
+![1734525461329.png](https://netdesk.orcsvc.com/f/K2ZCL/7d73bf2ede067.png)
 
 ### 客户端缓存
 
-![1734525500582.png](https://pic.hanjiaming.com.cn/2024/12/18/5ce9e0fc147c9.png)
+![1734525500582.png](https://netdesk.orcsvc.com/f/y9jiZ/5ce9e0fc147c9.png)
 
 - 假设商城客户端是浏览器，主要缓存 HTML 中的图片、CSS、JS、字体等静态资源。
 - 例如：百度 logo 图片通过 HTTP 的 `expires` 响应头控制静态图片的有效期。
@@ -62,18 +62,18 @@ category:
   - `cache-control` 设置缓存时长。
   - 根据不同的业务场景使用不同的响应头。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/1613c0a0893ae.png" alt="1734525676003.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/OeKUQ/1613c0a0893ae.png" alt="1734525676003.png" style="zoom:33%;" />
 
 **Nginx**：
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/547f091e88ce2.png" alt="1734525735282.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Jnls8/547f091e88ce2.png" alt="1734525735282.png" style="zoom:33%;" />
 
 - 开源的高性能 Web 服务器。
 - 作为 Web 应用架构中的常客，可以做负载均衡。
 - 适用于企业级应用，通过 Nginx 的静态资源缓存和压缩功能，满足大多数企业级应用场景。
 - 在配置文件 `nginx.conf` 中增加配置片段，对静态资源进行缓存。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/7636cd0fced02.png" alt="1734525820367.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/V4ku2/7636cd0fced02.png" alt="1734525820367.png" style="zoom:50%;" />
 
 ### 服务层缓存
 
@@ -83,7 +83,7 @@ category:
 
 进程内缓存即我们常说的分布式缓存，如 redis 等，进程内缓存的应用非常多，如mybatis的一级缓存等（为什么很多sql查第一次慢，后面就快了），如下图：
 
-![1734525936644.png](https://pic.hanjiaming.com.cn/2024/12/18/708b5de0fd789.png)
+![1734525936644.png](https://netdesk.orcsvc.com/f/Wm6f9/708b5de0fd789.png)
 
 - 在应用中开辟一段内存空间，数据在运行时载入内存，提高访问速度。
 - Java 框架中的应用：Hibernate、MyBatis 的一级缓存、二级缓存，Spring MVC 的页面缓存。
@@ -91,7 +91,7 @@ category:
 
 **分布式缓存**：
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/03f597094fd2e.png" alt="1734525985199.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Ly8c2/03f597094fd2e.png" alt="1734525985199.png" style="zoom:33%;" />
 
 - 通过独立部署的缓存服务，常用 Redis。
 - 设计多级应用缓存：进程内缓存和分布式缓存相结合。
@@ -106,17 +106,17 @@ category:
 
 即我们在设计相关的数据时要结合进程内缓存以及分布式缓存，如下图：
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/bace85ca7cbf9.png" alt="1734526096637.png" style="zoom:20%;" />
+<img src="https://netdesk.orcsvc.com/f/Z2Ef2/bace85ca7cbf9.png" alt="1734526096637.png" style="zoom:20%;" />
 
 ::: note 缓存数据一致性挑战
 
 两级缓存设计后，我们必然遇到其他的问题，例如一致性的问题，如下图：
 
-![1734526142284.png](https://pic.hanjiaming.com.cn/2024/12/18/d7a90d8392d3f.png)
+![1734526142284.png](https://netdesk.orcsvc.com/f/Lq1I2/d7a90d8392d3f.png)
 
 数据库写操作不会走缓存。
 
-![1734526219507.png](https://pic.hanjiaming.com.cn/2024/12/18/bad27a5c19f71.png)
+![1734526219507.png](https://netdesk.orcsvc.com/f/eQKsq/bad27a5c19f71.png)
 
 解决方法：引入 MQ 消息队列（如 RocketMQ、RabbitMQ、Kafka）。
 

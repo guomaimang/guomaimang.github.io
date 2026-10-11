@@ -145,5 +145,5 @@ star:
 
 成败是非本无定，王侯将相宁有种。卧薪尝胆搏百日，傲视群英我称雄。
 
-<audio controls src="https://pic.hanjiaming.com.cn/2020/02/Tommee-Profitt-_-Jung-Youth-_-Fleurie-In-the-End.mp3" autoplay loop></audio>
+<audio controls src="https://netdesk.orcsvc.com/f/5WpatV/Tommee-Profitt-_-Jung-Youth-_-Fleurie-In-the-End.mp3" autoplay loop></audio>
 

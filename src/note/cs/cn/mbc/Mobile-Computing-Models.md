@@ -198,7 +198,7 @@ A mobile application architecture defines how a computing model is realized and 
 
 - 减少远程通信
   - 在本地执行任务：节省网络带宽 -> 中间结果数据在本地处理，而不是在网络上来回传输
-  ![1670062646576.png](https://pic.hanjiaming.com.cn/2022/12/03/033d2d0ddfa6d.png)
+  ![1670062646576.png](https://netdesk.orcsvc.com/f/1LgAuK/033d2d0ddfa6d.png)
 - 克服消息传递延迟「latency」
   - 本地的、与对方的 "即时 "互动
   - 最新更新的信息

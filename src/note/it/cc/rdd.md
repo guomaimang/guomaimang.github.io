@@ -14,7 +14,7 @@ Resilient Distributed Datasets (RDD)
 
 Spark RDD 在逻辑上被划分为多个节点，以便在集群的不同节点上并行计算。
 
-![1715145643268.png](https://pic.hanjiaming.com.cn/2024/05/08/d4fc3a18a53d0.png)
+![1715145643268.png](https://netdesk.orcsvc.com/f/0VmU5/d4fc3a18a53d0.png)
 
 RDD: a **distributed** data structure !
 
@@ -35,7 +35,7 @@ Five main properties:
 - Optionally, a computation placement hint
   - 用于计算每个分区的首选位置列表（例如 HDFS 文件的块位置）
 
-<img src="https://pic.hanjiaming.com.cn/2024/05/08/dfeaffa90bafa.png" alt="1715156611375.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/E8nhd/dfeaffa90bafa.png" alt="1715156611375.png" style="zoom:50%;" />
 
 ## Transformations and Actions
 
@@ -44,7 +44,7 @@ RDD keeps a pointer to it's parent RDD(s)
 - Transformations：在 RDD 上应用某些函数并创建一个新的 RDD。它不会修改您应用该函数的 RDD。
 - Action 用于将结果保存到某个位置（如 HDFS、S3）或通过驱动程序显示结果。
 
-![1715156810288.png](https://pic.hanjiaming.com.cn/2024/05/08/afb5e93275308.png)
+![1715156810288.png](https://netdesk.orcsvc.com/f/EknId/afb5e93275308.png)
 
 - Transformations: 每种转换都接收（一个或多个）RDD，并通过对内容应用某些函数（如 map、filter、flatMap、union、groupBy、reduceByKey、sortByKey、join）输出转换后的 RDD（另一个 RDD
 - Actions: 在数据集上运行计算后，将值返回给驱动程序「driver program」（reduce、collect、count、take、countByKey）、saveAsTextFile、saveAsObjectFile，...
@@ -53,11 +53,11 @@ RDD keeps a pointer to it's parent RDD(s)
 
 ::: note Example: “Transformation returns you a new RDD”
 
-![1715157007979.png](https://pic.hanjiaming.com.cn/2024/05/08/cb7c570fe73da.png)
+![1715157007979.png](https://netdesk.orcsvc.com/f/J4dS8/cb7c570fe73da.png)
 
 :::
 
-![1715157196375.png](https://pic.hanjiaming.com.cn/2024/05/08/4bef5670ec546.png)
+![1715157196375.png](https://netdesk.orcsvc.com/f/xGXH3/4bef5670ec546.png)
 
 ### RDD Creation
 
@@ -65,19 +65,19 @@ Spark 支持文本文件、序列文件和其他任何 Hadoop 输入格式。
 
 默认情况下，Spark 会为 HDFS 中的每个文件块创建一个分区（例如，默认为 64MB/128MB）。
 
-![1715157481983.png](https://pic.hanjiaming.com.cn/2024/05/08/e31b384418441.png)
+![1715157481983.png](https://netdesk.orcsvc.com/f/wpaI5/e31b384418441.png)
 
 ### map(func)
 
 在每条记录上执行一个函数（类似于 Hadoop 中的 Map）
 
-![1715157581037.png](https://pic.hanjiaming.com.cn/2024/05/08/d5015cca21f6b.png)
+![1715157581037.png](https://netdesk.orcsvc.com/f/vZKsq/d5015cca21f6b.png)
 
 ### flatMap(func)
 
-![1715158200190.png](https://pic.hanjiaming.com.cn/2024/05/08/27696cc63ff1f.png)
+![1715158200190.png](https://netdesk.orcsvc.com/f/YK9I2/27696cc63ff1f.png)
 
-![1715158286744.png](https://pic.hanjiaming.com.cn/2024/05/08/e71515125fc53.png)
+![1715158286744.png](https://netdesk.orcsvc.com/f/yVKsZ/e71515125fc53.png)
 
 ::: info Examples Transformation
 
@@ -92,7 +92,7 @@ Spark 支持文本文件、序列文件和其他任何 Hadoop 输入格式。
 
 ### reduce(func) 
 
-![1715159027124.png](https://pic.hanjiaming.com.cn/2024/05/08/a8643eeca24af.png)
+![1715159027124.png](https://netdesk.orcsvc.com/f/6bAcE/a8643eeca24af.png)
 
 ## Examples of Actions
 
@@ -100,13 +100,13 @@ Spark 支持文本文件、序列文件和其他任何 Hadoop 输入格式。
 
 collect()：以数组形式向驱动程序返回数据集的所有元素。
 
-![1715268333809.png](https://pic.hanjiaming.com.cn/2024/05/09/db7203a3e1bdd.png)
+![1715268333809.png](https://netdesk.orcsvc.com/f/V3DS2/db7203a3e1bdd.png)
 
-![1715268387186.png](https://pic.hanjiaming.com.cn/2024/05/09/e38beb43351a9.png)
+![1715268387186.png](https://netdesk.orcsvc.com/f/1QgsK/e38beb43351a9.png)
 
 ### Others
 
-![1715268406925.png](https://pic.hanjiaming.com.cn/2024/05/09/d1688a1c58355.png)
+![1715268406925.png](https://netdesk.orcsvc.com/f/5KlHV/d1688a1c58355.png)
 
 ## Transformations
 
@@ -117,39 +117,39 @@ collect()：以数组形式向驱动程序返回数据集的所有元素。
 
 E.g., {aggregate/group/sort/ reduce} ByKey,intersect,join?, repartition,…
 
-<img src="https://pic.hanjiaming.com.cn/2024/05/09/0225f7c14e426.png" alt="1715268574420.png" style="zoom:75%;" />
+<img src="https://netdesk.orcsvc.com/f/myYC9/0225f7c14e426.png" alt="1715268574420.png" style="zoom:75%;" />
 
 ### Narrow Transformation
 
 父RDD的每个分区用于生成子RDD的一个分区。
 
-![1715268638209.png](https://pic.hanjiaming.com.cn/2024/05/09/2dbf099c5a09d.png)
+![1715268638209.png](https://netdesk.orcsvc.com/f/4lmC2/2dbf099c5a09d.png)
 
-![1715268694872.png](https://pic.hanjiaming.com.cn/2024/05/09/9a01fa701cfba.png)
+![1715268694872.png](https://netdesk.orcsvc.com/f/DxOUe/9a01fa701cfba.png)
 
 ### Wide Transformation
 
 将单个父 RDD 分区中的记录分散（洗牌）到多个子 RDD 分区中（例如，groupByKey、reduceByKey）。
 
-![1715268748453.png](https://pic.hanjiaming.com.cn/2024/05/09/932d1d0624310.png)
+![1715268748453.png](https://netdesk.orcsvc.com/f/yWxTZ/932d1d0624310.png)
 
-![1715268770697.png](https://pic.hanjiaming.com.cn/2024/05/09/d948d5246131e.png)
+![1715268770697.png](https://netdesk.orcsvc.com/f/LxDf2/d948d5246131e.png)
 
 注意：reduceByKey 在 shuffle 之前聚合 key 减少网络流量（更高效）
 
-![1715268863101.png](https://pic.hanjiaming.com.cn/2024/05/09/96401867106e3.png)
+![1715268863101.png](https://netdesk.orcsvc.com/f/ZY3T2/96401867106e3.png)
 
 通过获取源 RDD 的所有不同元素返回 RDD--需要跨分区洗牌。
 
-![1715268980123.png](https://pic.hanjiaming.com.cn/2024/05/09/1e1f76210d0e8.png)
+![1715268980123.png](https://netdesk.orcsvc.com/f/loOIe/1e1f76210d0e8.png)
 
-![1715276653815.png](https://pic.hanjiaming.com.cn/2024/05/10/9b6ab7e57ad72.png)
+![1715276653815.png](https://netdesk.orcsvc.com/f/yKrhZ/9b6ab7e57ad72.png)
 
 ::: note Special Note on Join()
 
 “共同分区”：rdd1和rdd2 使用相同的分区器（HashPartitioner）并且也具有相同数量的分区 -> 不需要shuffle
 
-![1715276936461.png](https://pic.hanjiaming.com.cn/2024/05/10/f6c6456957700.png)
+![1715276936461.png](https://netdesk.orcsvc.com/f/KpeiL/f6c6456957700.png)
 
 :::
 
@@ -161,9 +161,9 @@ Shuffle is an expensive operation
 
 基本上Spark的工作原理与Hadoop相同——执行映射端排序并写入本地磁盘（shuffleWrite）。接下来阶段的任务通过网络获取分区（shuffleRead）。
 
-![1715277101977.png](https://pic.hanjiaming.com.cn/2024/05/10/add80c2873452.png)
+![1715277101977.png](https://netdesk.orcsvc.com/f/1abFK/add80c2873452.png)
 
-![1715277131111.png](https://pic.hanjiaming.com.cn/2024/05/10/c3c7abc7e7c99.png)
+![1715277131111.png](https://netdesk.orcsvc.com/f/ZoAs2/c3c7abc7e7c99.png)
 
 ## RDD Partitions
 
@@ -171,7 +171,7 @@ Shuffle is an expensive operation
 
 Performance sensitive
 
-![1715277491332.png](https://pic.hanjiaming.com.cn/2024/05/10/7473072939afe.png)
+![1715277491332.png](https://netdesk.orcsvc.com/f/w42s5/7473072939afe.png)
 
 - 分区太少 -> 无法利用集群中所有可用的核心。
 - 分区太多 -> 管理许多小任务的开销太大。
@@ -180,35 +180,35 @@ Performance sensitive
 
 "All transformations in Spark are lazy": Spark 在执行第一个 "操作"（如 reduce()or collect()）之前不会计算任何内容，此时它会递归计算所有 RDDs
 
-![1715280723639.png](https://pic.hanjiaming.com.cn/2024/05/10/497e50cfe1895.png)
+![1715280723639.png](https://netdesk.orcsvc.com/f/OGxfQ/497e50cfe1895.png)
 
 用户应用程序创建 RDDs、转换 RDDs 并运行操作，从而形成一个由操作符组成的 DAG（有向无环图）。
 
-![1715280784257.png](https://pic.hanjiaming.com.cn/2024/05/10/a466d72b30e5b.png)
+![1715280784257.png](https://netdesk.orcsvc.com/f/A4jTy/a466d72b30e5b.png)
 
-![1715280797311.png](https://pic.hanjiaming.com.cn/2024/05/10/4842df1911423.png)
+![1715280797311.png](https://netdesk.orcsvc.com/f/nQdIj/4842df1911423.png)
 
 ::: details
 
-![1715280831759.png](https://pic.hanjiaming.com.cn/2024/05/10/8ef393f1b0c54.png)
+![1715280831759.png](https://netdesk.orcsvc.com/f/gQmSX/8ef393f1b0c54.png)
 
-![1715280850906.png](https://pic.hanjiaming.com.cn/2024/05/10/701423eb6e40f.png)
+![1715280850906.png](https://netdesk.orcsvc.com/f/Zo4T2/701423eb6e40f.png)
 
-![1715280863692.png](https://pic.hanjiaming.com.cn/2024/05/10/8a873346eda05.png)
+![1715280863692.png](https://netdesk.orcsvc.com/f/1aEuK/8a873346eda05.png)
 
-![1715280922036.png](https://pic.hanjiaming.com.cn/2024/05/10/140a6094c89aa.png)
+![1715280922036.png](https://netdesk.orcsvc.com/f/ebEHq/140a6094c89aa.png)
 
-![1715280938881.png](https://pic.hanjiaming.com.cn/2024/05/10/c089a52efe7a8.png)
+![1715280938881.png](https://netdesk.orcsvc.com/f/4LgF2/c089a52efe7a8.png)
 
-![1715281004501.png](https://pic.hanjiaming.com.cn/2024/05/10/3fd601e8f9257.png)
+![1715281004501.png](https://netdesk.orcsvc.com/f/ebkcq/3fd601e8f9257.png)
 
-![1715281057561.png](https://pic.hanjiaming.com.cn/2024/05/10/b3d13fcac50cd.png)
+![1715281057561.png](https://netdesk.orcsvc.com/f/Y6Rt2/b3d13fcac50cd.png)
 
 Schedule and Execute “stage by stage” (DAGScheduler)
 
-![1715281104274.png](https://pic.hanjiaming.com.cn/2024/05/10/24c5f172c9881.png)
+![1715281104274.png](https://netdesk.orcsvc.com/f/oDWfg/24c5f172c9881.png)
 
-![1715281213589.png](https://pic.hanjiaming.com.cn/2024/05/10/5d0fd6495c4a9.png)
+![1715281213589.png](https://netdesk.orcsvc.com/f/GW5cA/5d0fd6495c4a9.png)
 
 :::
 
@@ -227,7 +227,7 @@ In-memory Computing: RDD Cache
 
 RDD 可缓存在 RAM 中，以实现快速访问重用
 
-![1715281443519.png](https://pic.hanjiaming.com.cn/2024/05/10/0b2197a9a4d66.png)
+![1715281443519.png](https://netdesk.orcsvc.com/f/O2EfQ/0b2197a9a4d66.png)
 
 How to cache an RDD?
 
@@ -239,7 +239,7 @@ How to cache an RDD?
 
 缓存 RDD 时，它的分区会被加载到持有它的执行器的内存中。
 
-![1715281550272.png](https://pic.hanjiaming.com.cn/2024/05/10/8d547707e22ea.png)
+![1715281550272.png](https://netdesk.orcsvc.com/f/vQAhq/8d547707e22ea.png)
 
 - 可以增加 "缓存的分数"，因为重新分区后，分区的大小会变小，更容易装入内存。
 - Advice:"Avoid shuffle"unless needed!

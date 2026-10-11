@@ -17,11 +17,11 @@ From Tables and Spreadsheets to Data Cubes
 
 在认知文献中，数据库立方体被称为数据库立方体。最顶端的 0-D 立方体拥有最高级别的摘要，被称为顶点立方体。立方体的晶格构成了数据立方体。
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/e2d8da66bc8b1.png" alt="1702494543149.png" style="zoom:40%;" />
+<img src="https://netdesk.orcsvc.com/f/MAES8/e2d8da66bc8b1.png" alt="1702494543149.png" style="zoom:40%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/ca8c3433cfb88.png" alt="1702546705181.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/YMgh2/ca8c3433cfb88.png" alt="1702546705181.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/9fd52fce34fe6.png" alt="1702546808611.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/gpxcX/9fd52fce34fe6.png" alt="1702546808611.png" style="zoom:33%;" />
 
 - Modeling data warehouses: **dimensions** & measures
 - DW Schema
@@ -29,13 +29,13 @@ From Tables and Spreadsheets to Data Cubes
   - 雪花模式「Snowflake schema」: 星形模式的细化，将一些维度层次归一化为一组较小的维度表，形成类似雪花的形状
   - 事实星座「Fact constellations」：多个事实表共享维度表，被视为恒星的集合，因此称为星系模式或事实星座
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/6020d659639cd.png" alt="1702547184641.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/br1UM/6020d659639cd.png" alt="1702547184641.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/fb9c98c31fdad.png" alt="1702547998355.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/LJYI2/fb9c98c31fdad.png" alt="1702547998355.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/2cd867b9ce71e.png" alt="1702547218053.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/9jYfm/2cd867b9ce71e.png" alt="1702547218053.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/a091555f855c6.png" alt="1702547429660.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/6XZHE/a091555f855c6.png" alt="1702547429660.png" style="zoom:33%;" />
 
 Multiple Fact Tables -》 **Galaxy Schema**
 
@@ -44,7 +44,7 @@ Multiple Fact Tables -》 **Galaxy Schema**
 - 可以通过为每个聚合级别定义不同的事实表来提高性能
 - DW 的设计者需要决定增加的存储需求是否适合预期的性能改进
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/aff52aeb4695b.png" alt="1702549568889.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/ZXeI2/aff52aeb4695b.png" alt="1702549568889.png" style="zoom: 33%;" />
 
 Snowflake Schema
 

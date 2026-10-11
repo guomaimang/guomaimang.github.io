@@ -13,7 +13,7 @@ category:
 
 在高并发场景下，多个线程对同一个账户进行并发更新时，可能会产生数据不一致的问题。具体场景如下：
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/2a9b51802941c.png" alt="1735287906978.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/XpPHX/2a9b51802941c.png" alt="1735287906978.png" style="zoom:25%;" />
 
 1. 两个线程获取同一个账户的余额。
 2. 线程一和线程二分别在账户上增加金额。
@@ -58,7 +58,7 @@ SELECT * FROM ACC WHERE id = 1001 FOR UPDATE;
 ALTER TABLE ACC ADD COLUMN version INT DEFAULT 1;
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/13648f234137d.png" alt="1735288334036.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/qvdsJ/13648f234137d.png" alt="1735288334036.png" style="zoom: 25%;" />
 
 ### 乐观锁的执行流程
 
@@ -75,7 +75,7 @@ ALTER TABLE ACC ADD COLUMN version INT DEFAULT 1;
     WHERE id = 1001 AND version = old_version;
     ```
 
-    <img src="https://pic.hanjiaming.com.cn/2024/12/27/9ab36cfd9d2f3.png" alt="1735288599228.png" style="zoom:30%;" />
+    <img src="https://netdesk.orcsvc.com/f/jX0ub/9ab36cfd9d2f3.png" alt="1735288599228.png" style="zoom:30%;" />
 
 3. <u>如果 `UPDATE` 语句影响的行数为0，说明版本号不匹配，更新失败。</u> 这个时候可以可以由系统或者用户发起重试。
 
@@ -136,7 +136,7 @@ if (count == 0) {
 
 #### 方法重试示例
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/33d568b3c06dd.png" alt="1735289022397.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/bj5jsM/33d568b3c06dd.png" alt="1735289022397.png" style="zoom:33%;" />
 
 ## 总结
 

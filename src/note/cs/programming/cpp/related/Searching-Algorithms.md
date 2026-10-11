@@ -51,7 +51,7 @@ else{
   - Otherwise, the same operation is repeated for the first half of the array if K <A[m] , or for the second half if K>A[m]
 - When to stop: If the remaining array to be searched is empty, then the key cannot be found and return -1「如果要搜索的其余数组为空，则找不到键并返回-1」
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/13/990cd785d8d30.png" alt="1620891792710.png" title="1620891792710.png" />
+<img src="https://netdesk.orcsvc.com/f/y3ajIZ/990cd785d8d30.png" alt="1620891792710.png" title="1620891792710.png" />
 
 ### Code
 
@@ -108,9 +108,9 @@ int main() {
 
 ### Example
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/13/cd8b27066aa84.png" alt="1620891910294.png" title="1620891910294.png" />
+<img src="https://netdesk.orcsvc.com/f/ZPQEh2/cd8b27066aa84.png" alt="1620891910294.png" title="1620891910294.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/13/3d9e44365568c.png" alt="1620891946016.png" title="1620891946016.png" />
+<img src="https://netdesk.orcsvc.com/f/LQX1T2/3d9e44365568c.png" alt="1620891946016.png" title="1620891946016.png" />
 
 ### Time complexity of binary search
 
@@ -118,7 +118,7 @@ int main() {
 - Assume three-way comparison: after one comparison of K with A[m], the algorithm can determine whether K is smaller, equal to, or larger than A[m]「在将K与A [m]进行一次比较之后，该算法可以确定K是小于，等于还是大于A [m]」
 - Worse case: The key is not in the array「密钥不在数组中」
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/13/bf5395c442ba5.png" alt="1620892133875.png" title="1620892133875.png" />
+<img src="https://netdesk.orcsvc.com/f/vvXaUq/bf5395c442ba5.png" alt="1620892133875.png" title="1620892133875.png" />
 
 ## 引用
 

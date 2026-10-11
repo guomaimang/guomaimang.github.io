@@ -498,9 +498,9 @@ for k in json_data.keys():
   - Query string
   - Return data for a movie with title (t) ‘Hackers’
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/06/791b4f6c5b913.png" alt="1644107817060.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/rKMksg/791b4f6c5b913.png" alt="1644107817060.png" style="zoom: 50%;" />
 
-![1644107851926.png](https://pic.hanjiaming.com.cn/2022/02/06/9ffb0c1cb8eba.png)
+![1644107851926.png](https://netdesk.orcsvc.com/f/5XExsV/9ffb0c1cb8eba.png)
 
 ```python
 # Import requests package

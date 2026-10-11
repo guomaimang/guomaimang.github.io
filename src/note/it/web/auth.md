@@ -37,7 +37,7 @@ Making HTTP “Stateful” Using (HTTP/Web/Browser) Cookies
 
 Cookies := a small ( ) client-side storage with its data replayed to where they were onfigured (cookie origin )
 
-![1744013520557.png](https://pic.hanjiaming.com.cn/2025/04/07/f1cc55a2756be.png)
+![1744013520557.png](https://netdesk.orcsvc.com/f/A0rSy/f1cc55a2756be.png)
 
 ### Session Creation and Resumption using Cookies
 
@@ -55,7 +55,7 @@ Cookies := a small ( ) client-side storage with its data replayed to where they 
 
 ## Cookie Parameters
 
-![1744016410810.png](https://pic.hanjiaming.com.cn/2025/04/07/08e9efaa1fcb4.png)
+![1744016410810.png](https://netdesk.orcsvc.com/f/gPYiX/08e9efaa1fcb4.png)
 
 Expires: specify the time when a cookie will be deleted automatically
 
@@ -66,7 +66,7 @@ Expires: specify the time when a cookie will be deleted automatically
 
 ::: note Cookie SOP Examples
 
-![Google Chrome 2025-04-07 17.36.50.png](https://pic.hanjiaming.com.cn/2025/04/07/64422c7508481.png)
+![Google Chrome 2025-04-07 17.36.50.png](https://netdesk.orcsvc.com/f/E1xFd/64422c7508481.png)
 
 1. **http://example.com or http://www.example.com**
    - **Cookie:** `user=niki`
@@ -276,7 +276,7 @@ Session Fixation: Forcing session id designed by attackers
 - Not favorable by commercial websites since it's not customizable
 - Use this over HTTPs (sensitive data are not protected in HTTP)
 
-![1744105328170.png](https://pic.hanjiaming.com.cn/2025/04/08/e2ac42aae7576.png)
+![1744105328170.png](https://netdesk.orcsvc.com/f/Lmmh2/e2ac42aae7576.png)
 
 - Realm: protection space (diff. page, same space).
 - With Nginx: + apache2-util to create password file.
@@ -285,7 +285,7 @@ Session Fixation: Forcing session id designed by attackers
 
 ## HTTP (Digest) Authentication
 
-![1744105730206.png](https://pic.hanjiaming.com.cn/2025/04/08/c0d78315ef07e.png)
+![1744105730206.png](https://netdesk.orcsvc.com/f/2vEcv/c0d78315ef07e.png)
 
 ```
 eg.

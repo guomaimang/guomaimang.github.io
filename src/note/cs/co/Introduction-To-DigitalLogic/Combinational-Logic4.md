@@ -25,7 +25,7 @@ This 3-bit Synchronous Counter is an example of **Finite State Machine**
   - The 3-bit Synchronous Counter is a special case – it does not have external input and output「3位同步计数器是一种特殊情况–它没有外部输入和输出」
   - However, the 3-bit Synchronous Counter did「确实」 demonstrate「演示」 an essential「重要」 part of FSM – the memory component to store the state「但是，3位同步计数器确实演示了FSM的重要部分–存储状态的内存组件」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/4981a016aed40.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/k8ZGIb/4981a016aed40.png" alt="image.png" title="image.png" />
 
 ### Formal Model of FSM
 
@@ -47,13 +47,13 @@ There are Two Sub-Models: Mealy Machine vs. Moore Machine
 
 #### Mealy Machine
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/3c102cfca43c9.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/AM6ahy/3c102cfca43c9.png" alt="image.png" title="image.png" />
 
 注：即输出结合input后再输出
 
 #### Moore Machine
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/d273b8b4c9ab2.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/ERQQSd/d273b8b4c9ab2.png" alt="image.png" title="image.png" />
 
 注：即结合input前输出
 
@@ -76,7 +76,7 @@ Key: represent the relations among current state, input and next state, output &
 - Directed arcs「有向弧」: represent the transitions between states
   - Labelled with input/output for that state transition「标记有该状态转换的输入/输出」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/2c96d1f88b45c.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Qa0Ytj/2c96d1f88b45c.png" alt="image.png" title="image.png" />
 
 Two circles: initial states
 
@@ -91,7 +91,7 @@ Mealy machine and Moore machine can be labelled differently using State Diagram
 - Mealy machine: label directed arcs with input/output for that state transition
 - Moore machine: since output depends only on state, we can label directed arcs with input for that state transition, and label state circles with S_k/output
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/c1ece124b719f.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Mkl2u8/c1ece124b719f.png" alt="image.png" title="image.png" />
 
 ##### restrictions
 
@@ -104,13 +104,13 @@ State diagram is a clear visualization of FSM; but it is not that convinient for
 
 #### State Table
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/f736420397156.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/x8AOH3/f736420397156.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/4a805376f8579.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/a2DAFq/4a805376f8579.png" alt="image.png" title="image.png" />
 
 ##### Example
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/926b01dfe54b7.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/X5aZhX/926b01dfe54b7.png" alt="image.png" title="image.png" />
 
 We know these tools to describe it, but what's the analytical task?
 
@@ -130,7 +130,7 @@ Design a machine that will detect a specific「特定的」 bit pattern「设计
 - It receives bit stream
 - It has one output Z: if the bit pattern appears in the bit stream, the output Z = 1; otherwise, Z = 0「它具有一个输出Z：如果位模式出现在位流中，则输出Z = 1；否则，输出Z = 1。否则，Z = 0」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/f4ed623005136.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Da2yfe/f4ed623005136.png" alt="image.png" title="image.png" />
 
 ##### Modelling the Problem
 
@@ -149,7 +149,7 @@ Intuition: we want to record the situations that will lead to the target pattern
 
 States and States Transitions (pattern 1101)
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/113ad305afeb2.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/G6vLFA/113ad305afeb2.png" alt="image.png" title="image.png" />
 
 Worth to note:
 
@@ -171,14 +171,14 @@ Approach: use Truth Table and Karnaugh Map
 
 Now you can use K-map
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/6398726ec663b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/R4D4I8/6398726ec663b.png" alt="image.png" title="image.png" />
 
 In the State Diagram (truth table):
 (1) we use two bits P1，P0 to denote the current state; use N1, N0 for the next state
 (2) (P1,P0,X) are the variables, N1, N0, Z are the function values
 (3) Given a combination of (P1,P0,X), we need to find the value for N1, N0, Z from the state diagram
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/429f3cb9073ba.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/5XVmsV/429f3cb9073ba.png" alt="image.png" title="image.png" />
 
 The two important relations:
 
@@ -187,7 +187,7 @@ The two important relations:
 
 We can then contruct the circuits using memory components and combinational logic
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/03/7de500dd5beba.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/8JAqi5/7de500dd5beba.png" alt="image.png" title="image.png" />
 
 ## Design of sequential circuits
 
@@ -199,11 +199,11 @@ We can then contruct the circuits using memory components and combinational logi
 - Charactristic table/characteristic equation
 - Excitation table
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/30651edb0837b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/25lYfv/30651edb0837b.png" alt="image.png" title="image.png" />
 
 ### Common Flip-Flop Types
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/08/1ce7bc74c24dd.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/nwKAcj/1ce7bc74c24dd.png" alt="image.png" title="image.png" />
 
 ### Think
 
@@ -252,7 +252,7 @@ Encoding:
 
 1.先画出 总部件 的 Symbol (diagram) 
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/09/f5fe764ca2027.png" alt="image.png" title="image.png" width = "300px"/>
+<img src="https://netdesk.orcsvc.com/f/k8PaTb/f5fe764ca2027.png" alt="image.png" title="image.png" width = "300px"/>
 
 2. 画出 元部件的 Exitation table 
 
@@ -260,11 +260,11 @@ Encoding:
 
 2. 根据 总部件 的 Symbol (diagram)  画出 总部件 的 state table
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/09/9c56aa52c3e01.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/5XA5UV/9c56aa52c3e01.png" alt="image.png" title="image.png" />
 
 4. 根据 总部件 的 state table 画出 总部件 的 Excitation table
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/09/f1853f7c85fe9.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/8J8xc5/f1853f7c85fe9.png" alt="image.png" title="image.png" />
 
 For example: the first row, look at Q0, 0 -> 0, the required inputs are J0 = 0, K0 =X
 
@@ -276,11 +276,11 @@ This is a truth table with Q0 Q1 as variables and J0, K0, J1, K1 as function val
 
 k-map的两个维度分别是两组变量。
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/09/43d40e0977472.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/rKnmCg/43d40e0977472.png" alt="image.png" title="image.png" />
 
 6. 画出电路
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/09/24e7f8ab57dfa.png" alt="image.png" title="image.png" width = "300px" />
+<img src="https://netdesk.orcsvc.com/f/dokAiX/24e7f8ab57dfa.png" alt="image.png" title="image.png" width = "300px" />
 
 
 

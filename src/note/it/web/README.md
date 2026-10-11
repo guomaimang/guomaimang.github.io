@@ -18,7 +18,7 @@ Web Programming
 
 ## Background
 
-![1743663022024.png](https://pic.hanjiaming.com.cn/2025/04/03/aad4a137b81ef.png)
+![1743663022024.png](https://netdesk.orcsvc.com/f/DnoIe/aad4a137b81ef.png)
 
 ## The Best Practices
 
@@ -57,7 +57,7 @@ Web Programming
 
 ## HTML Basics
 
-![Typora 2025-04-03 17.00.18.png](https://pic.hanjiaming.com.cn/2025/04/03/af666431515da.png)
+![Typora 2025-04-03 17.00.18.png](https://netdesk.orcsvc.com/f/XrViX/af666431515da.png)
 
 - HTML means HyperText Markup Language→through tags
 - Two types of tags: with content or without content

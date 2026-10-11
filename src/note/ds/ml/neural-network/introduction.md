@@ -10,7 +10,7 @@ category:
 
 # Neural Network
 
-![1677428364696.png](https://pic.hanjiaming.com.cn/2023/02/27/afbc5e1d304f1.png)
+![1677428364696.png](https://netdesk.orcsvc.com/f/mm9i9/afbc5e1d304f1.png)
 
 - 非常强大，但由于其复杂性和大量的计算资源而被抛弃了几十年。
 - 由于更高的计算能力（数据中心）和更多的训练实例（大数据），这几年又重新出现。
@@ -22,7 +22,7 @@ category:
 
 神经元之间的连接强度代表长期的知识。
 
-![1677421301990.png](https://pic.hanjiaming.com.cn/2023/02/26/d4732e150ccd5.png)
+![1677421301990.png](https://netdesk.orcsvc.com/f/ypxTZ/d4732e150ccd5.png)
 
 - 它从您的输入特征中学习新特征。
 - 它的架构基于我们的大脑结构。
@@ -32,7 +32,7 @@ category:
 
 ANN「人工神经元网络」
 
-![1678081999133.png](https://pic.hanjiaming.com.cn/2023/03/06/5a1a6606e935c.png)
+![1678081999133.png](https://netdesk.orcsvc.com/f/LArc2/5a1a6606e935c.png)
 
 ### Model Structure
 
@@ -42,7 +42,7 @@ ANN「人工神经元网络」
 
 - 输入层的神经元仅负责输出
 
-![1678082298874.png](https://pic.hanjiaming.com.cn/2023/03/06/91f86fe92ac19.png)
+![1678082298874.png](https://netdesk.orcsvc.com/f/36Ai5/91f86fe92ac19.png)
 
 ### The Artificial Neuron
 
@@ -53,7 +53,7 @@ ANN「人工神经元网络」
 
 从外部来看，一个神经元就像这样一个橙色的圈。
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/27/9060cb2132f12.png" alt="1677427595206.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/0xWT5/9060cb2132f12.png" alt="1677427595206.png" style="zoom: 50%;" />
 
 - 𝑥<sub>i</sub> are input nodes
 - h<sub>𝜃</sub>(𝑥) is the output
@@ -66,7 +66,7 @@ ANN「人工神经元网络」
 - 计算 $g\left(x_{i}\right)=\sum_{i=1}^{n} w_{i} x_{i}+b$  的值
 - 将上面的计算结果带入激活函数，得到这个神经元的输出值
 
-![1678082652649.png](https://pic.hanjiaming.com.cn/2023/03/06/9edfda22a3f5f.png)
+![1678082652649.png](https://netdesk.orcsvc.com/f/vMEsq/9edfda22a3f5f.png)
 
 在上图中，激活函数是 Sigmoid 函数。
 
@@ -78,11 +78,11 @@ bias 也叫阈值「threshold」。
 
 取输入的加权和，仅当总和大于任意阈值「threshold」时才将输出设置为  1
 
-![1677427617932.png](https://pic.hanjiaming.com.cn/2023/02/27/21a6fd4f91fa5.png)
+![1677427617932.png](https://netdesk.orcsvc.com/f/K4atL/21a6fd4f91fa5.png)
 
 **如果是线性神经元**，可以这样改写：
 
-![1677428022777.png](https://pic.hanjiaming.com.cn/2023/02/27/04fb91e3ac773.png)
+![1677428022777.png](https://netdesk.orcsvc.com/f/OprfQ/04fb91e3ac773.png)
 
 每个线性神经元都有一个 bias 参数。当网络接收到输入信号时，每个神经元的输入信号会与其对应的权重相乘，然后将它们相加，**并加上该神经元的 bias**。这个结果被送入激活函数中，以产生神经元的输出。
 
@@ -90,15 +90,15 @@ bias 也叫阈值「threshold」。
 
 线性神经元没有激活函数，或者更准确地说，它们的激活函数是恒等函数，它只是输出神经元输入的加权和加上它的偏差。
 
-![985f083de76e0.png](https://pic.hanjiaming.com.cn/2023/03/06/35b44a7242d2a.png)
+![985f083de76e0.png](https://netdesk.orcsvc.com/f/wXdT5/35b44a7242d2a.png)
 
 ## Logistic Neuron
 
-![985f083de76e022.png](https://pic.hanjiaming.com.cn/2023/03/06/f3033e98dc991.png)
+![985f083de76e022.png](https://netdesk.orcsvc.com/f/Y3PH2/f3033e98dc991.png)
 
-![1677428334419.png](https://pic.hanjiaming.com.cn/2023/02/27/59df35f5aa09d.png)
+![1677428334419.png](https://netdesk.orcsvc.com/f/9mKsm/59df35f5aa09d.png)
 
-![1677428317104.png](https://pic.hanjiaming.com.cn/2023/02/27/2f57aed42c4b8.png)
+![1677428317104.png](https://netdesk.orcsvc.com/f/Zk3I2/2f57aed42c4b8.png)
 
 ## Training Objective
 
@@ -109,7 +109,7 @@ bias 也叫阈值「threshold」。
 
 首先随机初始化一个 w1和w2。
 
-![1678085301770.png](https://pic.hanjiaming.com.cn/2023/03/06/16007ffb82005.png)
+![1678085301770.png](https://netdesk.orcsvc.com/f/2ZXtv/16007ffb82005.png)
 
 训练的目标是，通过不断调整 W1 和 W2，让 Y、E 集合的 **误差平方和** 最小。这个过程需要
 

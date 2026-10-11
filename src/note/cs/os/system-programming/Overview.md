@@ -12,7 +12,7 @@ headerDepth: 2
 
 "Unix是一个多任务、多用户计算机操作系统系列，源于最初的AT&T Unix，由Ken Thompson、Dennis Ritchie和其他人于1970年代在贝尔实验室研究中心开始开发。"-- 维基百科
 
-![1666630642095.png](https://pic.hanjiaming.com.cn/2022/10/25/d12fd3ea9c0de.png)
+![1666630642095.png](https://netdesk.orcsvc.com/f/x8WZH3/d12fd3ea9c0de.png)
 
 ## Unix 哲学
 
@@ -32,7 +32,7 @@ Kernel is the heart of the OS. It
 
 Shell是通过命令行与用户进行交互的工具。当你从终端输入设备中输入一行命令时，Shell解释该命令并执行预定的程序（或程序的组成）。C Shell、Bourne Shell和Korn Shell是最有名的Shell，它们在大多数Unix变体中都可用（Linux通常使用类似Bourne Shell的bash）。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/25/b109e55871a99.png" alt="1666630892557.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/X5gPFX/b109e55871a99.png" alt="1666630892557.png" style="zoom: 33%;" />
 
 命令和工具支持各种日常活动，如ls、vi、gcc、cp、mv、cat、grep。有超过250个标准的命令和实用程序，还有许多其他的第三方软件。大多数命令和工具都有各种选项。这些都建立了一个巨大的词汇表来表达用户的各种需求。
 
@@ -72,7 +72,7 @@ Unix系统的其他部分，以及用户程序，通过系统调用向内核请�
 
 除了系统调用库，用户程序还可以调用许多其他的用户级库函数。
 
-![1666631599129.png](https://pic.hanjiaming.com.cn/2022/10/25/1d29d16e12700.png)
+![1666631599129.png](https://netdesk.orcsvc.com/f/8yGxc5/1d29d16e12700.png)
 
 ## Commands and Utilities
 
@@ -92,7 +92,7 @@ Unix系统的其他部分，以及用户程序，通过系统调用向内核请�
 
 设备驱动程序对硬件进行封装，为内核的其他部分和用户层面提供硬件的独立性。
 
-![1666631976678.png](https://pic.hanjiaming.com.cn/2022/10/25/b14b4a5fa6b66.png)
+![1666631976678.png](https://netdesk.orcsvc.com/f/6LMycE/b14b4a5fa6b66.png)
 
 ## Unix 特点
 
@@ -171,7 +171,7 @@ who | sort | lp
 
 ## Unix 变体
 
-![1666633141817.png](https://pic.hanjiaming.com.cn/2022/10/25/f4ead0a9e2013.png)
+![1666633141817.png](https://netdesk.orcsvc.com/f/ERLAUd/f4ead0a9e2013.png)
 
 严格来说，Linux的源代码并不是从 Unix 家族树上继承下来的。Linux是一个类似 Unix 的操作系统。**但如果你考虑到便携式操作系统接口（POSIX）标准，那么Linux可以被视为一种Unix。**
 

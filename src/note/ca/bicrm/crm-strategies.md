@@ -30,11 +30,11 @@ CRM Strategy Defined: CRM 战略是一项高级行动计划，旨在协调人员
 
 ## Strategy Development Process
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/16/c42f03da6e72f.png" alt="1697388256630.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/E21Td/c42f03da6e72f.png" alt="1697388256630.png" style="zoom: 67%;" />
 
 ## Key Issues of CRM Strategy
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/16/4ac0ddff3bd2d.png" alt="1697388340085.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/R4kS8/4ac0ddff3bd2d.png" alt="1697388340085.png" style="zoom: 33%;" />
 
 ::: tip CRM Strategy
 
@@ -48,7 +48,7 @@ CRM Strategy Defined: CRM 战略是一项高级行动计划，旨在协调人员
 
 从以产品为中心到以客户为中心
 
-![1697549862971.png](https://pic.hanjiaming.com.cn/2023/10/17/1b858e8a215fc.png)
+![1697549862971.png](https://netdesk.orcsvc.com/f/8qdh5/1b858e8a215fc.png)
 
 ::: info CRM Adoption Curve
 
@@ -69,7 +69,7 @@ CRM 战略必须与 <u>企业战略和业务组合的竞争战略</u> 具有高�
 
 McKinsey 7S framework for testing CRM strategy: 这个框架可以用来测试CRM策略的有效性「effectiveness」和完整性「completeness」
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/17/3f400d4f05c1a.png" alt="1697551389560.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/5JjUV/3f400d4f05c1a.png" alt="1697551389560.png" style="zoom:50%;" />
 
 :::tip for Testing CRM Strategy
 
@@ -90,9 +90,9 @@ McKinsey 7S framework for testing CRM strategy: 这个框架可以用来测试CR
 4. Project implementation
 5. Performance evaluation
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/17/c3f5aeff1d640.png" alt="1697552201319.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/dDqsX/c3f5aeff1d640.png" alt="1697552201319.png" style="zoom: 50%;" />
 
-![1697552251778.png](https://pic.hanjiaming.com.cn/2023/10/17/dc3e8876d73ac.png)
+![1697552251778.png](https://netdesk.orcsvc.com/f/oYWHg/dc3e8876d73ac.png)
 
 ### Phase 1: Develop the CRM Strategy
 
@@ -107,7 +107,7 @@ McKinsey 7S framework for testing CRM strategy: 这个框架可以用来测试CR
 
 CRM（客户关系管理）的愿景是一个公司希望通过其CRM策略和工具实现的长期目标。
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/17/f6630bc4f929c.png" alt="1697552725611.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/kOgib/f6630bc4f929c.png" alt="1697552725611.png" style="zoom: 50%;" />
 
 :::
 

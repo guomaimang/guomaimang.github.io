@@ -36,11 +36,11 @@ dr-xr-xr-x   4 root root 4096 Apr 19  2012 boot
 - 若是 **b** 则表示为装置文件里面的可供储存的接口设备(可随机存取装置)；
 - 若是 **c** 则表示为装置文件里面的串行端口设备，例如键盘、鼠标(一次性读取装置)。
 
-![1651332787274.png](https://pic.hanjiaming.com.cn/2022/04/30/24ba6d944195a.png)
+![1651332787274.png](https://netdesk.orcsvc.com/f/x8D2H3/24ba6d944195a.png)
 
 接下来的字符中，以三个为一组，且均为 **rwx** 的三个参数的组合。其中， **r** 代表可读(read)、 **w** 代表可写(write)、 **x** 代表可执行(execute)。 要注意的是，这三个权限的位置不会改变，如果没有权限，就会出现减号 **-** 而已。
 
-![1651332807274.png](https://pic.hanjiaming.com.cn/2022/04/30/2ac473b7081ad.png)
+![1651332807274.png](https://netdesk.orcsvc.com/f/42WOt2/2ac473b7081ad.png)
 
 ## Linux文件属主和属组
 
@@ -121,6 +121,6 @@ Linux 文件的基本权限就有九个，分别是 **owner/group/others(拥有�
 
    下面的 a 表示所有人
 
-   ![CleanShot 2022-04-30 at 23.42.44@2x.png](https://pic.hanjiaming.com.cn/2022/04/30/02dcb37476c89.png)
+   ![CleanShot 2022-04-30 at 23.42.44@2x.png](https://netdesk.orcsvc.com/f/Da5aFe/02dcb37476c89.png)
 
    比如 `chmod o-w, g+w test.txt` ：test.txt 的属主减去 可写 的权限, 属组添加 可写 的权限。

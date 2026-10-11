@@ -80,7 +80,7 @@ public class Copy {
 
 包括了 **获得的文件/目录** 的属性，以及对文件目录进行改名和删除，不包含文件的创建，但可以创建目录。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/30/50c49f010041e.png" alt="1656586961402.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/42kQc2/50c49f010041e.png" alt="1656586961402.png" style="zoom:50%;" />
 
 在程序中，不应直接使用绝对文件名。
 
@@ -94,7 +94,7 @@ public class Copy {
 PrintWriter output = new PrintWriter(filename)
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/30/817a938afba1a.png" alt="1656589481187.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/orZDIg/817a938afba1a.png" alt="1656589481187.png" style="zoom:50%;" />
 
 - 如果文件存在，并使用 PrintWrite 创建，若文件已存在，则直接丢弃源文件
 - 写完最终必须用 `.close()`关闭文件。不然可能数据无法正常写入

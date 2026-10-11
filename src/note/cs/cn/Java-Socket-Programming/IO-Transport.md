@@ -21,7 +21,7 @@ DataOutputStream dos = new DataOutputStream(new BufferedOutputStream(socket.getO
 
 ## 实现
 
-![1649941971522.png](https://pic.hanjiaming.com.cn/2022/04/14/4fe7f6153c316.png)
+![1649941971522.png](https://netdesk.orcsvc.com/f/vvoAsq/4fe7f6153c316.png)
 
 ## Reference
 

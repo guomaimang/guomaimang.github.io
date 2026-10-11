@@ -53,7 +53,7 @@ Heterogeneous「异构信息源」 Information Sources
 - Vertical fragmentation of informational systems「信息系统的纵向分割」
 - 应用程序（用户）驱动的操作系统开发的结果
 
-![1702415288877.png](https://pic.hanjiaming.com.cn/2023/12/13/a4eb8a768d954.png)
+![1702415288877.png](https://netdesk.orcsvc.com/f/PndUe/a4eb8a768d954.png)
 
 ## What is Data Warehouse
 
@@ -103,7 +103,7 @@ Data warehousing: The process of constructing and using data warehouses
   - 例如，酒店价格：货币、税、含早餐等。
 - 当数据被转移到仓库时，会对其进行转换。
 
-![1702416250307.png](https://pic.hanjiaming.com.cn/2023/12/13/815c6941efc17.png)
+![1702416250307.png](https://netdesk.orcsvc.com/f/j5rtb/815c6941efc17.png)
 
 ### Time Variant
 
@@ -133,9 +133,9 @@ Data warehousing: The process of constructing and using data warehouses
   - 数据仓库系统的主要任务
   - <u>Data analysis and decision making</u>
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/c0dcbb81dafe9.png" alt="1702493815694.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ma4c9/c0dcbb81dafe9.png" alt="1702493815694.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/7b31894b049b5.png" alt="1702493894778.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/xkbh3/7b31894b049b5.png" alt="1702493894778.png" style="zoom:50%;" />
 
 ::: info 为什么需要单独的数据仓库？
 
@@ -151,7 +151,7 @@ Data warehousing: The process of constructing and using data warehouses
 
 :::
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/1d3a8bb0590c1.png" alt="1702494129170.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/dlAsX/1d3a8bb0590c1.png" alt="1702494129170.png" style="zoom:33%;" />
 
 
 

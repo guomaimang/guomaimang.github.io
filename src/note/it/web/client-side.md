@@ -27,19 +27,19 @@ that defines how content is requested from a client application and served by a 
 
 (Demo) Using telnet/netcat to make a simple (text-based) request
 
-![1743920520192.png](https://pic.hanjiaming.com.cn/2025/04/06/fd2ce10e61289.png)
+![1743920520192.png](https://netdesk.orcsvc.com/f/ZrAI2/fd2ce10e61289.png)
 
-![1743920554298.png](https://pic.hanjiaming.com.cn/2025/04/06/8ee298c7c0946.png)
+![1743920554298.png](https://netdesk.orcsvc.com/f/n8asj/8ee298c7c0946.png)
 
 ::: note Surfing the Web using netcat
 
-![1743920763232.png](https://pic.hanjiaming.com.cn/2025/04/06/11db6e6390b14.png)
+![1743920763232.png](https://netdesk.orcsvc.com/f/eekiq/11db6e6390b14.png)
 
 :::
 
 ## Typical HTTP
 
-![1743920997110.png](https://pic.hanjiaming.com.cn/2025/04/06/8a69e7546afa0.png)
+![1743920997110.png](https://netdesk.orcsvc.com/f/jKMcb/8a69e7546afa0.png)
 
 Specifications:
 
@@ -48,7 +48,7 @@ Specifications:
 - Parameters: query string vs. body
 - Headers: hostname, content-length, content-type
 
-![1743921503897.png](https://pic.hanjiaming.com.cn/2025/04/06/b2a2559a147f7.png)
+![1743921503897.png](https://netdesk.orcsvc.com/f/m01t9/b2a2559a147f7.png)
 
 ## HTML Forms
 
@@ -78,15 +78,15 @@ A typical `<form>` takes at least two attributes:
 
 ### Form Controls (1/4: Most Common Controls)
 
-<img src="https://pic.hanjiaming.com.cn/2025/04/06/7a5e6af8dd19b.png" alt="预览 2025-04-06 14.51.39.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/VQvu2/7a5e6af8dd19b.png" alt="预览 2025-04-06 14.51.39.png" style="zoom: 50%;" />
 
 ### Form Controls (2/4: Offering Choices)
 
-<img src="https://pic.hanjiaming.com.cn/2025/04/06/006f32af604dd.png" alt="1743922350022.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/38wt5/006f32af604dd.png" alt="1743922350022.png" style="zoom:50%;" />
 
 ### Form Controls (3/4: More Controls)
 
-<img src="https://pic.hanjiaming.com.cn/2025/04/06/41c50f292bae2.png" alt="1743922402888.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/wa2U5/41c50f292bae2.png" alt="1743922402888.png" style="zoom:50%;" />
 
 ### Form Controls 
 
@@ -96,7 +96,7 @@ In a nutshell, introduced
 - New CSS pseudo-class: :valid, :invalid, :required and :optional
   (keyword for a selected element dependent on its content or external factors)
 
-<img src="https://pic.hanjiaming.com.cn/2025/04/06/3503b47ba2704.png" alt="1743923274768.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Yr5F2/3503b47ba2704.png" alt="1743923274768.png" style="zoom:50%;" />
 
 ## Regular Expressions
 
@@ -207,9 +207,9 @@ HTML5 Validation can be disabled with novalidate attribute.
     - Using the well-known XMLHttpRequest API: Sends requests at background; not limited to only send form data :)
     - Cancel the default form submissions: returns false in the submit event
 
-![1743932228206.png](https://pic.hanjiaming.com.cn/2025/04/06/696bb6ea4c2a2.png)
+![1743932228206.png](https://netdesk.orcsvc.com/f/619TE/696bb6ea4c2a2.png)
 
-![1743932252499.png](https://pic.hanjiaming.com.cn/2025/04/06/0b89badadacc1.png)
+![1743932252499.png](https://netdesk.orcsvc.com/f/PkMhe/0b89badadacc1.png)
 
 ::: info AJAX: Synchronous vs. Asynchronous
 

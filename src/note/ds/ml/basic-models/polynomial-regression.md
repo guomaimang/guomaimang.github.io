@@ -14,7 +14,7 @@ headerDepth: 2
 
 添加高阶项的时候，也增加了模型的复杂度。随着模型复杂度的升高，模型的容量以及拟合数据的能力增加，可以进一步降低训练误差，但导致过拟合的风险也随之增加。下图展示了模型复杂度与训练误差及测试误差之间的关系
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/11/e0be05b7c05ff.png" alt="1657509413958.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/25dYtv/e0be05b7c05ff.png" alt="1657509413958.png" style="zoom:50%;" />
 
 ## 一般形式
 
@@ -33,11 +33,11 @@ $$
 
 ## 代价函数
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/08/1f4537f25aab3.png" alt="1657293339442.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Wrx6c9/1f4537f25aab3.png" alt="1657293339442.png" style="zoom:33%;" />
 
 1. $J\left(\theta_{0}, \theta_{1}, \cdots\right)=\frac{1}{2 m} \sum_{i=1}^{m}\left(h_{\theta}\left(x^{(i)}\right)-y^{(i)}\right)^{2}$
 2. 更新梯度
-   ![1657293396168.png](https://pic.hanjiaming.com.cn/2022/07/08/6cc7d1d3819c9.png)
+   ![1657293396168.png](https://netdesk.orcsvc.com/f/1LvKiK/6cc7d1d3819c9.png)
 3. n = n +1
 
 直到  $J\left(\theta_{0}[n-1], \theta_{1}[n-1]\right)-J\left(\theta_{0}[n], \theta_{1}[n]\right)<\varepsilon$ 或者 $n>X$ 结束。

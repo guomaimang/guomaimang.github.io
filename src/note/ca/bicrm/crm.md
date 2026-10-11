@@ -62,11 +62,11 @@ Customer Relationship Management include **strategies and processes** for <u>acq
 
 **客户保留 (Customer Retention)**: 这是企业保留现有客户的能力。通过提供高质量的服务和满足客户的需求，企业可以提高客户保留率。
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/13/36cf1aa51e864.png" alt="1697182522902.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ZM4H2/36cf1aa51e864.png" alt="1697182522902.png" style="zoom:50%;" />
 
 ### From Customer Lifecycle to CRM Process
 
-![1697182243704.png](https://pic.hanjiaming.com.cn/2023/10/13/0a3965e6c740c.png)
+![1697182243704.png](https://netdesk.orcsvc.com/f/YZRi2/0a3965e6c740c.png)
 
 ## Types of CRM
 
@@ -77,13 +77,13 @@ Customer Relationship Management include **strategies and processes** for <u>acq
 
 ## Features Functionalities
 
-![1697182798089.png](https://pic.hanjiaming.com.cn/2023/10/13/dde4e22bd05ab.png)
+![1697182798089.png](https://netdesk.orcsvc.com/f/JXYU8/dde4e22bd05ab.png)
 
-![1697182925983.png](https://pic.hanjiaming.com.cn/2023/10/13/5753408744cb5.png)
+![1697182925983.png](https://netdesk.orcsvc.com/f/LaJc2/5753408744cb5.png)
 
 ::: note Top 10 CRM Software
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/13/613789dc8971a.png" alt="1697182966881.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/mweH9/613789dc8971a.png" alt="1697182966881.png" style="zoom:33%;" />
 
 :::
 
@@ -91,19 +91,19 @@ Customer Relationship Management include **strategies and processes** for <u>acq
 
 ### End-to-End Customer Lifecycle Management
 
-![1697183159427.png](https://pic.hanjiaming.com.cn/2023/10/13/493ef6fedb68f.png)
+![1697183159427.png](https://netdesk.orcsvc.com/f/35ws5/493ef6fedb68f.png)
 
 ### Sales Team
 
-![1697183202215.png](https://pic.hanjiaming.com.cn/2023/10/13/d9da326f5f1d3.png)
+![1697183202215.png](https://netdesk.orcsvc.com/f/gymiX/d9da326f5f1d3.png)
 
 ### CRM application to e-Commerce:e-CRM
 
-![1697183231266.png](https://pic.hanjiaming.com.cn/2023/10/13/614500be8570a.png)
+![1697183231266.png](https://netdesk.orcsvc.com/f/vW4cq/614500be8570a.png)
 
 ### CRM and Social Media:SCRM
 
-![1697183400489.png](https://pic.hanjiaming.com.cn/2023/10/13/214aab802962d.png)
+![1697183400489.png](https://netdesk.orcsvc.com/f/W09c9/214aab802962d.png)
 
 ::: tip CRM Future Trends
 

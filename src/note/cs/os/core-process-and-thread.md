@@ -24,7 +24,7 @@ process「进程」
 - Many processes can be started running the same program「可以启动多个进程来运行同一程序」
 - Important resources needed by each process「每个进程需重要资源」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/0f61ea2c09673.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/DabVue/0f61ea2c09673.png" alt="image.png" title="image.png" />
 
 ### Thread
 
@@ -38,7 +38,7 @@ concurrency「并发」
 - Multiple programs use the CPU alternatively「多个程序交替使用CPU」
 - The operating system offers the capability to shift between threads「**操作系统**提供了在线程之间切换的功能」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/27/61a504e94e9d8.png" alt="1c3d9e2d8b80d.png" title="1c3d9e2d8b80d.png" />
+<img src="https://netdesk.orcsvc.com/f/G6X8cA/61a504e94e9d8.png" alt="1c3d9e2d8b80d.png" title="1c3d9e2d8b80d.png" />
 
 #### 流程图
 
@@ -52,7 +52,7 @@ concurrency「并发」
 
 ……
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/c882a12a2cc16.gif" alt="CleanShot 2021-04-12 at 18.38.26.gif" title="CleanShot 2021-04-12 at 18.38.26.gif" />
+<img src="https://netdesk.orcsvc.com/f/Vp1jt2/c882a12a2cc16.gif" alt="CleanShot 2021-04-12 at 18.38.26.gif" title="CleanShot 2021-04-12 at 18.38.26.gif" />
 
 ### 核心「core」和线程「thread」的关系
 
@@ -106,13 +106,13 @@ When a program runs
 - It will not stop until the last instruction is finished
 - The program now runs in an isolated world「该程序现在在一个孤立的世界中运行」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/ada31da66f1b4.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/eDJACq/ada31da66f1b4.png" alt="image.png" title="image.png" />
 
 USERS: I want to run multiple programs at the same time「用户：我想同时运行多个程序」
 
 COMPUTER DESIGNERS: I want the hardware to be used more efficiently「计算机设计师：我希望硬件得到更有效的利用」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/c37baeb6f7818.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/3pwMi5/c37baeb6f7818.png" alt="image.png" title="image.png" />
 
 ## Fork()
 
@@ -221,11 +221,11 @@ fork调用的一个奇妙之处就是它仅仅被调用一次，却能够返回�
 
 A: parent process「父进程」; B: child process「子进程」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/54dad6e8053f7.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/0WQat5/54dad6e8053f7.png" alt="image.png" title="image.png" />
 
 注意：在子进程中使用pid = fork(),得到的pid是0，但是子进程真正的pid中并不是0。
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/7463d9a1537dc.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/1L1QiK/7463d9a1537dc.png" alt="image.png" title="image.png" />
 
 ### Modeling with process graph
 
@@ -238,7 +238,7 @@ Modeling with process graph「使用过程图建模」
 - printf vertices can be labeled with its output「printf顶点可以用其输出标记」
 - Each graph begins with a vertex with no in-edges「printf顶点可以用其输出标记」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/6d8d2c1091240.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Oao6cQ/6d8d2c1091240.png" alt="image.png" title="image.png" />
 
 ### Example
 
@@ -262,11 +262,11 @@ int main()
 }
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/27/88d93530116f2.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/5X51IV/88d93530116f2.png" alt="image.png" title="image.png" />
 
 ### Synchronizing parent with child
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/f74e31cf3e862.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/1LlKCK/f74e31cf3e862.png" alt="image.png" title="image.png" />
 
 Is the following outputs valid? Why?
 
@@ -368,12 +368,12 @@ MACROS「宏」
 
 #### Example
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/6e4c29d42fdc5.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/LQLYS2/6e4c29d42fdc5.png" alt="image.png" title="image.png" />
 
 - HC -> HP -> CT -> bye
 - HP -> HC -> CT -> bye
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/47a3c48d0ddf3.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/KwWjhL/47a3c48d0ddf3.png" alt="image.png" title="image.png" />
 
 ## Signals
 
@@ -390,7 +390,7 @@ MACROS「宏」
   - Let the child process enter an infinite loop「让子进程进入无限循环」
   - Use the command “kill” to terminate the child process「使用命令“ kill”终止子进程」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/0145b834c05d9.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/ER4PTd/0145b834c05d9.png" alt="image.png" title="image.png" />
 
 ### Receiving a signal
 
@@ -416,7 +416,7 @@ SIGINT = Ctrl-C
 - Using signal() to register interrupt handler
 - OS will transfer the control to application process to execute interrupt handler「操作系统将控制权转移到应用程序进程以执行中断处理程序」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/60842a8078403.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/y3pVCZ/60842a8078403.png" alt="image.png" title="image.png" />
 
 ## Issues not covered so far
 

@@ -44,13 +44,13 @@ headerDepth: 2
 
 对于每个文件，你可以看到在用户和组主之前有十个字符。第一个字符告诉我们该文件的类型。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/22/aa2970de59c07.png" alt="1666413290222.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/LQ58c2/aa2970de59c07.png" alt="1666413290222.png" style="zoom: 33%;" />
 
 - l 指的是软链或符号链接，硬链还是一般文件。
 
 接下来的9个字符代表用户、组和所有的访问权分配。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/22/53b88adf3e04d.png" alt="1666413413633.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/OalKTQ/53b88adf3e04d.png" alt="1666413413633.png" style="zoom:33%;" />
 
 
 
@@ -61,7 +61,7 @@ Unix文件系统有一个分层的树状结构，内部节点是目录，叶子�
 - 绝对的或完全限定的路径名唯一地指定了一个文件，例如，/dirA/My1.dat不同于/dirA/dirB/My1.dat。
 - 我们也可以使用相对路径名，它从当前目录而不是根目录开始，例如，./My2.dat（如果当前工作目录是dirB）。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/22/3335a8d95dd2e.png" alt="1666413817343.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/42y3c2/3335a8d95dd2e.png" alt="1666413817343.png" style="zoom:33%;" />
 
 ## Current working directory
 
@@ -121,7 +121,7 @@ inode包含文件的元信息，具体来说有以下内容：
 - 链接数，即有多少文件名指向这个inode
 - 文件数据block的位置
 
-![1666426736828.png](https://pic.hanjiaming.com.cn/2022/10/22/c5ad5888df03e.png)
+![1666426736828.png](https://netdesk.orcsvc.com/f/ZPGES2/c5ad5888df03e.png)
 
 - 12 direct pointer can point to 12 x 8KB = 96KB of file content.
 - 单间接指针指向一个直接指针块。一个块可以包含8KB/4bytes = 2K指针 = 2048个指针。2048个直接指针可以指向2048 x 8KB = 16MB的文件内容。
@@ -131,7 +131,7 @@ inode包含文件的元信息，具体来说有以下内容：
 
 可以用stat命令，查看某个文件的inode信息：`stat example.txt`
 
-![1666415253328.png](https://pic.hanjiaming.com.cn/2022/10/22/4d29030027f53.png)
+![1666415253328.png](https://netdesk.orcsvc.com/f/KwrZCL/4d29030027f53.png)
 
 总之，除了文件名以外的所有文件信息，都存在inode之中。
 
@@ -143,7 +143,7 @@ inode也会消耗硬盘空间，所以硬盘格式化的时候，操作系统自
 
 查看每个硬盘分区的inode总数和已经使用的数量，可以使用df命令: `df -i`
 
-![1666418369201.png](https://pic.hanjiaming.com.cn/2022/10/22/3d755bfc1047e.png)
+![1666418369201.png](https://netdesk.orcsvc.com/f/bVmxsM/3d755bfc1047e.png)
 
 - 目录文件的读权限（r）和写权限（w），都是针对目录文件本身
 - 由于目录文件内只有文件名和inode号码，所以如果只有读权限，只能获取文件名，无法获取其他信息
@@ -161,7 +161,7 @@ inode也会消耗硬盘空间，所以硬盘格式化的时候，操作系统自
 
 使用ls -i命令，可以看到文件名对应的inode号码：`ls -i example.txt`
 
-![1666419041956.png](https://pic.hanjiaming.com.cn/2022/10/22/ec27d651cd7ae.png)
+![1666419041956.png](https://netdesk.orcsvc.com/f/Vp6kC2/ec27d651cd7ae.png)
 
 ### 目录文件
 
@@ -174,7 +174,7 @@ inode也会消耗硬盘空间，所以硬盘格式化的时候，操作系统自
 
 ls -i 命令列出整个目录文件，即文件名和inode号码：`ls -i /etc`
 
-![1666419329366.png](https://pic.hanjiaming.com.cn/2022/10/22/ff48f54ad8f5c.png)
+![1666419329366.png](https://netdesk.orcsvc.com/f/vvm3fq/ff48f54ad8f5c.png)
 
 ### 硬链接
 
@@ -187,7 +187,7 @@ Unix/Linux系统允许，多个文件名指向同一个inode号码。
 
 这种情况就被称为"硬链接"（hard link）：`ln 源文件 目标文件`
 
-![1666419982918.png](https://pic.hanjiaming.com.cn/2022/10/22/b54fcb9d49a87.png)
+![1666419982918.png](https://netdesk.orcsvc.com/f/nweEfj/b54fcb9d49a87.png)
 
 运行上面这条命令以后，源文件与目标文件的inode号码相同，都指向同一个inode。inode信息中有一项叫做"链接数"，记录指向该inode的文件名总数，这时就会增加1。
 
@@ -201,7 +201,7 @@ Unix/Linux系统允许，多个文件名指向同一个inode号码。
 
 `ln -s`命令可以创建软链接: `ln -s 源文文件或目录 目标文件或目录`
 
-![1666426525215.png](https://pic.hanjiaming.com.cn/2022/10/22/2f629ecf2843d.png)
+![1666426525215.png](https://netdesk.orcsvc.com/f/Daokfe/2f629ecf2843d.png)
 
 ### inode的特殊作用
 
@@ -229,7 +229,7 @@ File descriptors (*in unistd.h*) for standard input, standard output, and standa
 
 SFT条目包含关于一个文件是否被打开读/写、权限、锁、读/写偏移等信息。SFT 中的多个条目可能指向同一个物理文件。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/22/75e471699f8d5.png" alt="1666427298266.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Wry6i9/75e471699f8d5.png" alt="1666427298266.png" style="zoom:33%;" />
 
 三个文件自动打开：
 
@@ -337,7 +337,7 @@ a+ : open file for appending and reading
 
 #### printf()
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/22/a19d8d9c8e8ed.png" alt="1666430299417.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Vpq8t2/a19d8d9c8e8ed.png" alt="1666430299417.png" style="zoom:33%;" />
 
 ```
 %d,%i – decimal integer
@@ -380,15 +380,15 @@ scanf( "%d %c %s", &int_var, &char_var, string_var);
 
 ## I/O redirection
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/22/d430bdaa45517.png" alt="1666433014689.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/y329SZ/d430bdaa45517.png" alt="1666433014689.png" style="zoom: 67%;" />
 
 回顾一下：为了访问一个文件，一个进程使用一个 file descriptor，它是 process file descriptor table 中的一个索引，而这个索引又指向系统文件表中的一个条目。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/22/8fd3e30e0ec5f.png" alt="1666431775699.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/0W0JI5/8fd3e30e0ec5f.png" alt="1666431775699.png" style="zoom: 33%;" />
 
 重定向是指进程修改其文件描述符表项，使其指向系统文件表中的一个不同的条目。考虑一下cat命令，它从一个文件中读取数据并输出到stdout。下面的命令将stdout重定向到my.file : `cat test > my.file`
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/22/8f1a47c9feb05.png" alt="1666431832344.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/p4a1Hn/8f1a47c9feb05.png" alt="1666431832344.png" style="zoom:33%;" />
 
 ### Realization using dup()
 
@@ -402,7 +402,7 @@ int pipe(int fd[2]);
 // Return: 0 success; -1 error
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/22/fc94934ba9cda.png" alt="1666432477819.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/WroXC9/fc94934ba9cda.png" alt="1666432477819.png" style="zoom:33%;" />
 
 ### dup()
 
@@ -425,15 +425,15 @@ int main(int argc, char* argv[]){
 }
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/23/4db55bb062cd4.png" alt="1666498785493.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/3pMLc5/4db55bb062cd4.png" alt="1666498785493.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/23/b9dde1caea8d6.png" alt="1666498808600.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/y3qjiZ/b9dde1caea8d6.png" alt="1666498808600.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/23/9ed8528c0daad.png" alt="1666498860013.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/LQ31H2/9ed8528c0daad.png" alt="1666498860013.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/23/3112715309d11.png" alt="1666498884479.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/wvPAU5/3112715309d11.png" alt="1666498884479.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/23/24442f95f7d1b.png" alt="1666498915860.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/vvmaSq/24442f95f7d1b.png" alt="1666498915860.png" style="zoom: 33%;" />
 
 ::: note exec 是否保留文件描述符？
 

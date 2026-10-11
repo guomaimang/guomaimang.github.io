@@ -33,7 +33,7 @@ headerDepth: 1
   - 客户端设备上不需要其他软件
 - 与有线互联网应用的区别在于如何将信息传输给终端用户。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/04/96e05681661dc.png" alt="1670160693926.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/eDMpcq/96e05681661dc.png" alt="1670160693926.png" style="zoom:33%;" />
 
 ::: note Components
 
@@ -141,7 +141,7 @@ Wireless application servers
 - 通过将应用软件部署到设备端，客户端应用程序可以有一些 "智能"（业务逻辑）来处理数据。
 - 应用软件结合了移动数据库技术，为企业系统提供持久的数据存储管理和数据同步。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/04/62287d5a0200b.png" alt="1670162564319.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ZP9oS2/62287d5a0200b.png" alt="1670162564319.png" style="zoom:50%;" />
 
 ::: note Components
 

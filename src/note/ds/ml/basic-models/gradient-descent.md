@@ -73,7 +73,7 @@ $$\operatorname{gradf}\left(x_{0}, x_{1}, \ldots, x_{n}\right)=\left(\frac{\part
 
 首先来看看梯度下降的一个直观的解释。比如我们在一座大山上的某处位置，由于我们不知道怎么下山，于是决定走一步算一步，也就是在每走到一个位置的时候，求解当前位置的梯度，沿着梯度的**负方向**，也就是当前最陡峭的位置向下走一步，然后继续求解当前位置梯度，向这一步所在位置沿着最陡峭最易下山的位置走一步。这样一步步的走下去，一直走到觉得我们已经到了山脚。当然这样走下去，有可能我们不能走到山脚，而是到了某一个局部的山峰低处。
 
-![1675222832117.png](https://pic.hanjiaming.com.cn/2023/02/01/ca77e16455e29.png)
+![1675222832117.png](https://netdesk.orcsvc.com/f/jJJib/ca77e16455e29.png)
 
 从上面的解释可以看出，梯度下降不一定能够找到全局的最优解，有可能是一个局部最优解。**当然，如果损失函数是凸函数，梯度下降法得到的解就一定是全局最优解。**
 
@@ -83,7 +83,7 @@ $$\operatorname{gradf}\left(x_{0}, x_{1}, \ldots, x_{n}\right)=\left(\frac{\part
 
 如何沿着负梯度方向减小函数值呢？梯度和偏导数都是向量，那么参考向量运算法则，我们在每个变量轴上减小对应变量值即可，梯度下降法可以描述如下
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/01/bae7f496b69b4.png" alt="1675222243404.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/dkVCX/bae7f496b69b4.png" alt="1675222243404.png" style="zoom:50%;" />
 
 ### 正确性讨论
 
@@ -106,7 +106,7 @@ If  $J\left(\theta_{0}, \theta_{1}\right)$ decreases by less than a threshold �
 
 ## 偏导公式推导
 
-![CleanShot 2023-02-01 at 11.34.46@2x.png](https://pic.hanjiaming.com.cn/2023/02/01/a1f614e6317b7.png)
+![CleanShot 2023-02-01 at 11.34.46@2x.png](https://netdesk.orcsvc.com/f/GKntA/a1f614e6317b7.png)
 
 这里关心 $J\left(\theta_{0}, \theta_{1}\right)$ 的偏导数的计算
 

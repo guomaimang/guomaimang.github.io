@@ -13,7 +13,7 @@ Java 使用多线程而不是多进程。
 
 ## 实现
 
-<img src="https://pic.hanjiaming.com.cn/2022/04/14/096e7cecca441.png" alt="1649948280489.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/25gEuv/096e7cecca441.png" alt="1649948280489.png" style="zoom:50%;" />
 
 程序使用Java 线程池创建多线程，而不是使用传统的方式。这样有利于后期管理线程。
 

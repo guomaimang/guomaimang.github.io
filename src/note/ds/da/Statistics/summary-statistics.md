@@ -31,17 +31,17 @@ order: 1
 
 ## Types of statistics
 
-![1655371230344.png](https://pic.hanjiaming.com.cn/2022/06/16/d24c5d45cf0d7.png)
+![1655371230344.png](https://netdesk.orcsvc.com/f/nw3jij/d24c5d45cf0d7.png)
 
 ## 数据的种类
 
-![1655371415417.png](https://pic.hanjiaming.com.cn/2022/06/16/acc6d49c0753c.png)
+![1655371415417.png](https://netdesk.orcsvc.com/f/jP1DCb/acc6d49c0753c.png)
 
-![1655371869087.png](https://pic.hanjiaming.com.cn/2022/06/16/7841477612915.png)
+![1655371869087.png](https://netdesk.orcsvc.com/f/wvbQf5/7841477612915.png)
 
 **分类数据可以用数字来表示**
 
-![1655371466631.png](https://pic.hanjiaming.com.cn/2022/06/16/2ca638dc7b1e9.png)
+![1655371466631.png](https://netdesk.orcsvc.com/f/1LR1FK/2ca638dc7b1e9.png)
 
 - 点图可用于 
   - x = 可定量的值， y = 可定量的值
@@ -91,7 +91,7 @@ statistics.mode(msleep['vore'])
 
 **如果是类似中心对称的，建议使用平均数**
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/16/4031ed03d1fcb.png" alt="1655384686048.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/ZPj3U2/4031ed03d1fcb.png" alt="1655384686048.png" style="zoom: 33%;" />
 
 **如果是左或者右偏移，建议使用中位数**
 
@@ -101,7 +101,7 @@ Remember that left-skewed means the data has a tail on the left side and is pile
 
 用于表示数据的集中程度。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/4834771791cf1.png" alt="1655455423749.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/95RKHm/4834771791cf1.png" alt="1655455423749.png" style="zoom: 33%;" />
 
 ### Variance
 
@@ -150,11 +150,11 @@ $$
 
 即， ![[公式]](https://www.zhihu.com/equation?tex=%5Cmu+%3D145%2C%5Csigma+%5E2%3D1.4%5E2%3D1.96) ，图形如下：
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/5a9036d2bce4b.png" alt="1655478891270.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/AMR4cy/5a9036d2bce4b.png" alt="1655478891270.png" style="zoom:50%;" />
 
 当然，现实中往往并不清楚 ![[公式]](https://www.zhihu.com/equation?tex=X) 服从的分布是什么，具体参数又是什么？所以用虚线来表明我们并不是真正知道 ![[公式]](https://www.zhihu.com/equation?tex=X) 的分布：
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/381880fc3f95b.png" alt="1655478914158.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/gkLKHX/381880fc3f95b.png" alt="1655478914158.png" style="zoom:50%;" />
 
 很幸运的，我们知道 ![[公式]](https://www.zhihu.com/equation?tex=%5Cmu+%3D145) ，因此对 ![[公式]](https://www.zhihu.com/equation?tex=X) 采样，并通过：
 
@@ -162,11 +162,11 @@ $$
 
 来估计 ![[公式]](https://www.zhihu.com/equation?tex=%5Csigma+%5E2) 。某次采样计算出来的 ![[公式]](https://www.zhihu.com/equation?tex=S%5E2) ：
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/482b149cf46a0.png" alt="1655478955224.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/G6O4cA/482b149cf46a0.png" alt="1655478955224.png" style="zoom:50%;" />
 
 看起来比 ![[公式]](https://www.zhihu.com/equation?tex=%5Csigma+%5E2%3D1.96) 要小。采样具有随机性，我们多采样几次， ![[公式]](https://www.zhihu.com/equation?tex=S%5E2) 会围绕 ![[公式]](https://www.zhihu.com/equation?tex=%5Csigma+%5E2) 上下波动
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/f9a993484f397.gif" alt="v2-e17dbe3914a263804b8a693d42753797_720w.gif" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/l3elhe/f9a993484f397.gif" alt="v2-e17dbe3914a263804b8a693d42753797_720w.gif" style="zoom: 50%;" />
 
 所以用 ![[公式]](https://www.zhihu.com/equation?tex=S%5E2) 作为 ![[公式]](https://www.zhihu.com/equation?tex=%5Csigma+%5E2) 的一个估计量，算是可以接受的选择。
 
@@ -176,13 +176,13 @@ $$
 
 因此，根据中心极限定理， ![[公式]](https://www.zhihu.com/equation?tex=S%5E2) 的采样均值会服从 ![[公式]](https://www.zhihu.com/equation?tex=%5Cmu+%3D1.4%5E2) 的正态分布：
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/a5e5c7e38b0b1.png" alt="1655479172551.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/R43ph8/a5e5c7e38b0b1.png" alt="1655479172551.png" style="zoom:50%;" />
 
 **2 为什么使用** **![[公式]](https://www.zhihu.com/equation?tex=%5Coverline%7BX%7D)** **替代** **![[公式]](https://www.zhihu.com/equation?tex=%5Cmu+)** **之后，分母是** **![[公式]](https://www.zhihu.com/equation?tex=%5Cdisplaystyle+%5Cfrac%7B1%7D%7Bn-1%7D)** **？**
 
 更多的情况，我们不知道 ![[公式]](https://www.zhihu.com/equation?tex=%5Cmu+) 是多少的，只能计算出 ![[公式]](https://www.zhihu.com/equation?tex=%5Coverline%7BX%7D) 。不同的采样对应不同的 ![[公式]](https://www.zhihu.com/equation?tex=%5Coverline%7BX%7D) ：
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/af151a52313a9.gif" alt="v2-f0157542f13d0cde65b92257c9faac63_720w.gif" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/MkywF8/af151a52313a9.gif" alt="v2-f0157542f13d0cde65b92257c9faac63_720w.gif" style="zoom:50%;" />
 
 对于某次采样而言，当 ![[公式]](https://www.zhihu.com/equation?tex=%5Cmu+%3D%5Coverline%7BX%7D) 时，下式取得最小值：
 
@@ -190,7 +190,7 @@ $$
 
 只要 ![[公式]](https://www.zhihu.com/equation?tex=%5Cmu+) 偏离 ![[公式]](https://www.zhihu.com/equation?tex=%5Coverline%7BX%7D) ，该值就会增大。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/0415b099cbd31.gif" alt="v2-6ea6369dc101ce7262325376941d1342_720w.gif" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/orwgUg/0415b099cbd31.gif" alt="v2-6ea6369dc101ce7262325376941d1342_720w.gif" style="zoom:50%;" />
 
 所以可知：
 
@@ -210,7 +210,7 @@ $$
 
 那么 ![[公式]](https://www.zhihu.com/equation?tex=S%5E2) 采样均值会服从一个偏离 ![[公式]](https://www.zhihu.com/equation?tex=1.4%5E2) 的正态分布：
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/a6b074032bb56.png" alt="1655479463426.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/8JRYH5/a6b074032bb56.png" alt="1655479463426.png" style="zoom:50%;" />
 
 可见，此分布倾向于低估 ![[公式]](https://www.zhihu.com/equation?tex=%5Csigma+%5E2) 。
 
@@ -285,7 +285,7 @@ print random_data.std()  # 打印标准差
 
 我们把生成的数据用直方图画出来直观地感受一下：
 
-![1655454964180.png](https://pic.hanjiaming.com.cn/2022/06/17/a462dddf011a6.png)
+![1655454964180.png](https://netdesk.orcsvc.com/f/a2l3iq/a462dddf011a6.png)
 
 可以看到1~6分布都比较平均，不错。
 
@@ -333,7 +333,7 @@ print samples_mean_np
 
 然后，我们把这1000个**平均值**用直方图画出来：
 
-![1655455174046.png](https://pic.hanjiaming.com.cn/2022/06/17/4c152c9fa299f.png)
+![1655455174046.png](https://netdesk.orcsvc.com/f/dopZCX/4c152c9fa299f.png)
 
 完美地形成了正态分布。
 
@@ -390,7 +390,7 @@ ref. https://zhuanlan.zhihu.com/p/25241653
 
 以扑克牌为例，使用你刚刚制作的概率表。将每张牌的值乘以其各自的概率。计算如下：
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/98f3455e4a092.png" alt="1655453343517.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/k8vLhb/98f3455e4a092.png" alt="1655453343517.png" style="zoom:50%;" />
 
 5. **将乘积加总求和**
 
@@ -398,7 +398,7 @@ ref. https://zhuanlan.zhihu.com/p/25241653
 
 - 以扑克牌为例，期望值等于十个单独乘积之和。结果为：
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/dfbfb25a1841c.png" alt="1655453372027.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/95oDtm/dfbfb25a1841c.png" alt="1655453372027.png" style="zoom:50%;" />
 
 6. **理解结果**
 
@@ -436,7 +436,7 @@ np.std(msleep['sleep_total'], ddof=1)
 
 对同一物理量进行多次测量时，各次测量值及其绝对误差不会相同，我们将各次测量的绝对误差取绝对值后再求平均值，并称其为平均绝对误差，即：
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/f94d39743ca2d.png" alt="1655473674926.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Da4RUe/f94d39743ca2d.png" alt="1655473674926.png" style="zoom:50%;" />
 
 
 
@@ -477,15 +477,15 @@ plt.boxplot(msleep['sleep_total'])
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/4a0175a023d81.png" alt="1655476943852.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/rKYjCg/4a0175a023d81.png" alt="1655476943852.png" style="zoom:50%;" />
 
 #### Outliers
 
 离群点「Outliers」：与其他数据有很大差别的数据点。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/d21809ec58819.png" alt="1655477007260.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/X5m6sX/d21809ec58819.png" alt="1655477007260.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/17/935ac82dd2040.png" alt="1655481084607.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/5XRkhV/935ac82dd2040.png" alt="1655481084607.png" style="zoom:50%;" />
 
 ```python
 # finding outliers
@@ -497,7 +497,7 @@ upper_threshold = np.quantile(msleep['bodywt'], 0.75) + 1.5 * iqr
 msleep[(msleep['bodywt'] < lower_threshold) | (msleep['bodywt'] > upper_threshold)]
 ```
 
-![1655477072126.png](https://pic.hanjiaming.com.cn/2022/06/17/0271ae360c677.png)
+![1655477072126.png](https://netdesk.orcsvc.com/f/6LRnFE/0271ae360c677.png)
 
 ## df.describe()
 

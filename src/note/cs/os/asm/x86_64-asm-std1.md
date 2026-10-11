@@ -33,7 +33,7 @@ date: 2021-05-01
 
 ## From high-level language to assembly
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/25/04cf656a84795.png" alt="CleanShot 2021-03-25 at 12.58.57@2x.png" title="CleanShot 2021-03-25 at 12.58.57@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/Pvvghe/04cf656a84795.png" alt="CleanShot 2021-03-25 at 12.58.57@2x.png" title="CleanShot 2021-03-25 at 12.58.57@2x.png" />
 
 ## Assembly programmer’s view
 
@@ -61,7 +61,7 @@ date: 2021-05-01
 
 ## Machine instruction example
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/25/214984684622a.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/6LLnCE/214984684622a.png" alt="image.png" title="image.png" />
 
 ## Data types
 
@@ -94,15 +94,15 @@ date: 2021-05-01
 
 ### 寄存器图示
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/25/1872bf430d78c.png" alt="CleanShot 2021-03-25 at 13.09.25@2x.png" title="CleanShot 2021-03-25 at 13.09.25@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/jPPDub/1872bf430d78c.png" alt="CleanShot 2021-03-25 at 13.09.25@2x.png" title="CleanShot 2021-03-25 at 13.09.25@2x.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/25/8ed7a273e1d82.png" alt="CleanShot 2021-03-25 at 13.10.15@2x.png" title="CleanShot 2021-03-25 at 13.10.15@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/AMM4ty/8ed7a273e1d82.png" alt="CleanShot 2021-03-25 at 13.10.15@2x.png" title="CleanShot 2021-03-25 at 13.10.15@2x.png" />
 
 ### 寄存器的兼容实现
 
 64位系统向下兼容的原因
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/25/a466ad1044f57.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/G664uA/a466ad1044f57.png" alt="image.png" title="image.png" />
 
 ## Instruction
 
@@ -135,7 +135,7 @@ Operand Types  (basically, where data are stored)
           - Various other “address modes” 
           - 实现原理：指针
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/25/6cd4e45feb41e.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/955Ksm/6cd4e45feb41e.png" alt="image.png" title="image.png" />
 
 **Cannot do memory-memory transfer with a single instruction!**
 
@@ -157,21 +157,21 @@ orq	Src,Dest	Dest = Dest | Src
 Watch out for argument order!
 No distinction between signed and unsigned int 
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/25/0e5da5ac90015.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/qllEfJ/0e5da5ac90015.png" alt="image.png" title="image.png" />
 
 ### Leaq
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/25/1f7cc711cdb16.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/orrgfg/1f7cc711cdb16.png" alt="image.png" title="image.png" />
 
 ## Memory addressing
 
 ### simple modes
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/25/66402b3e17e2f.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/gkkKIX/66402b3e17e2f.png" alt="image.png" title="image.png" />
 
 #### Complete memory addressing modes
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/25/f56035d621009.png" alt="CleanShot 2021-03-25 at 15.16.52@2x.png" title="CleanShot 2021-03-25 at 15.16.52@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/QaaZIj/f56035d621009.png" alt="CleanShot 2021-03-25 at 15.16.52@2x.png" title="CleanShot 2021-03-25 at 15.16.52@2x.png" />
 
 ## 引用
 

@@ -97,7 +97,7 @@ plt.title('Netflix Movie Durations 2011-2020')
 plt.show()
 ```
 
-![1653975646721.png](https://pic.hanjiaming.com.cn/2022/05/31/433e5bdd0a78b.png)
+![1653975646721.png](https://netdesk.orcsvc.com/f/Pvl1Se/433e5bdd0a78b.png)
 
 ## 4. Loading the rest of the data from a CSV
 
@@ -181,7 +181,7 @@ plt.title("Movie Duration by Year of Release")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/31/3a1090e00d856.png" alt="1653975667125.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/nw65Hj/3a1090e00d856.png" alt="1653975667125.png" style="zoom: 50%;" />
 
 ## 7. Digging deeper
 
@@ -290,7 +290,7 @@ plt.ylabel("Duration (min)")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/31/458b0dada8094.png" alt="1653975693776.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ql6rTJ/458b0dada8094.png" alt="1653975693776.png" style="zoom:50%;" />
 
 ## 10. What next?
 

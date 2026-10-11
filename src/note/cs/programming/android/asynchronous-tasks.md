@@ -21,11 +21,11 @@ headerDepth: 1
 - 有很多场景下，后台任务都是必要的
 - 考虑一个移动应用程序，当您共享新文件时，通知将发送给您的朋友
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/472ed6b728a69.png" alt="1732943957769.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/lpw5Ie/472ed6b728a69.png" alt="1732943957769.png" style="zoom:33%;" />
 
 在HTTP响应-请求周期之外执行的任务被称为异步（非阻塞）任务
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/9e19011f99ba1.png" alt="1732944054020.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/m0wbF9/9e19011f99ba1.png" alt="1732944054020.png" style="zoom:33%;" />
 
 实现异步任务的一个简单方法是在系统中安排在特定时间（以及定期）运行的“作业”。
 
@@ -42,9 +42,9 @@ headerDepth: 1
 - Type “**crontab -e**” to edit the configuration file (**cron table**)
 - 配置文件中的每一行定义了一个单独的任务
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/af8aecd9d24b9.png" alt="1732944388209.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/v3WdIq/af8aecd9d24b9.png" alt="1732944388209.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/fa9ec14b95adb.png" alt="1732944483268.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/pYGKFn/fa9ec14b95adb.png" alt="1732944483268.png" style="zoom: 25%;" />
 
 ## Message Queues
 
@@ -71,7 +71,7 @@ Cron 用于安排周期性任务。然而：
 
 在多进程处理中，我们创建一个消息队列，以便系统的不同部分可以相互通知任何更新
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/b611f8fd54ed5.png" alt="1732945292648.png" style="zoom:40%;" />
+<img src="https://netdesk.orcsvc.com/f/ee8pHq/b611f8fd54ed5.png" alt="1732945292648.png" style="zoom:40%;" />
 
 类似的消息队列可以在各个程序或组件之间使用
 
@@ -100,7 +100,7 @@ Asynchronous Message Queues
 
 使用 Rabbit MQ 作为消息代理时的架构（注意：以下组件不一定驻留在同一台机器上）
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/5e8d954d1313a.png" alt="1732947197905.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/WY0bH9/5e8d954d1313a.png" alt="1732947197905.png" style="zoom:33%;" />
 
 ### AMQP
 
@@ -113,13 +113,13 @@ RabbitMQ使用AMQP协议进行消息传递
 
 RabbitMQ 是一种通用消息代理，您可以使用不同的技术和语言（只要您使用 AMQP 协议）来实现生产者和消费者。
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/64779347ebd8b.png" alt="1732950784438.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/JRX4S8/64779347ebd8b.png" alt="1732950784438.png" style="zoom:33%;" />
 
 ### Model
 
 **A single queue with a single consumer**
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/14f1bade02e11.png" alt="1732948027871.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/4owdu2/14f1bade02e11.png" alt="1732948027871.png" style="zoom:33%;" />
 
 **在多个工作人员之间分发消息**
 
@@ -127,7 +127,7 @@ RabbitMQ 是一种通用消息代理，您可以使用不同的技术和语言�
 - RabbitMQ将按轮询方式向它们分发消息
 - 一条消息将仅传递给一位消费者
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/c035852ce1ca1.png" alt="1732948082241.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/2vEwuv/c035852ce1ca1.png" alt="1732948082241.png" style="zoom:33%;" />
 
 在某些情况下，我们希望将消息传递给所有消费者→发布/订阅模型
 
@@ -141,13 +141,13 @@ RabbitMQ 是一种通用消息代理，您可以使用不同的技术和语言�
 - 生产者通常将消息发送到交换器，交换器将根据其中定义的某种逻辑将消息分派到零个、一个或多个队列
 - 进一步解耦生产者（们）和消费者（们）
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/69a838e01562a.png" alt="预览 2024-11-30 14.37.29.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/xRy5u3/69a838e01562a.png" alt="预览 2024-11-30 14.37.29.png" style="zoom:33%;" />
 
 #### Direct Exchange
 
 直接将路由消息发送到由路由键指定的队列
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/9a8cfd70a5881.png" alt="1732948731796.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/DnEXTe/9a8cfd70a5881.png" alt="1732948731796.png" style="zoom: 50%;" />
 
 #### Fanout Exchanges
 
@@ -155,16 +155,16 @@ RabbitMQ 是一种通用消息代理，您可以使用不同的技术和语言�
 - Also known as the pub/sub model
 - 在MMO游戏、体育新闻网站、群聊、股价更新等中很有用。
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/b13ed1567432d.png" alt="1732948799489.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/VQD8s2/b13ed1567432d.png" alt="1732948799489.png" style="zoom:50%;" />
 
 - 立即向所有队列广播消息（忽略路由键）
 - 设置一个exchange，让exchange为多个消费者提交消息到多个队列
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/528e19e80c405.png" alt="1732948856721.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/bj80IM/528e19e80c405.png" alt="1732948856721.png" style="zoom:33%;" />
 
 #### Topic Exchanges
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/cc105066385a4.png" alt="1732950681504.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/waROH5/cc105066385a4.png" alt="1732950681504.png" style="zoom:33%;" />
 
 - 路由消息到名称与路由键中给出的模式匹配的队列
 - 在根据某些标准分发信息方面很有用，例如地理位置、按类别更新的新闻等。
@@ -205,27 +205,27 @@ RabbitMQ 是一种通用消息代理，您可以使用不同的技术和语言�
 
 Before you use Celery
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/f4ce748268f60.png" alt="1732953138461.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ZrMos2/f4ce748268f60.png" alt="1732953138461.png" style="zoom:33%;" />
 
 After you use Celery
 
 - 允许您通过在Python中简单地进行函数调用即可发送消息/调用异步任务
 - Helps you manage your workers (e.g. restart them in case of a failure or if an exception is raised)
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/b7fe87f2cc0bc.png" alt="1732953194439.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/n8k1Tj/b7fe87f2cc0bc.png" alt="1732953194439.png" style="zoom:33%;" />
 
 - 很多情况下，您只是想提交任务而不关心结果（例如用户喜欢一篇文章、用户对照片的评论等）
 - 在其他情况下，您可能想跟踪任务的进度（例如，让用户了解上传文件的进度）
 - 对于后一种情况，Celery需要一个“后端”存储来临时存储异步任务的状态
 - 通常使用Redis（键值存储）作为后端
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/39e34f6b85822.png" alt="1732953249237.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/yDylfZ/39e34f6b85822.png" alt="1732953249237.png" style="zoom:33%;" />
 
 Celery Architecture
 
 为了可扩展性，这些组件都可以设置在不同的机器上（Workers 应该指向同一个消息代理的 URI）
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/005c410cf0bd4.png" alt="1732953356056.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/105AcK/005c410cf0bd4.png" alt="1732953356056.png" style="zoom:50%;" />
 
 ## Case Study
 
@@ -237,7 +237,7 @@ Celery Architecture
 
 直接存储友谊网络的一种简单方法是使用包含以下数据的集合：
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/054fba13e4f7c.png" alt="1732953451612.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/KyMECL/054fba13e4f7c.png" alt="1732953451612.png" style="zoom:25%;" />
 
 - 如何获取两个指定用户（例如 user_id = 1 和 user_id = 2）的共有好友列表？
   - 检索这两个用户的好友列表，然后在您的应用程序代码中找到这两个列表的交集
@@ -246,7 +246,7 @@ Celery Architecture
 
 我们如何使用异步任务来提高这个功能的效率呢？
 
-![1732953541697.png](https://pic.hanjiaming.com.cn/2024/11/30/ba3b887e61d95.png)
+![1732953541697.png](https://netdesk.orcsvc.com/f/LmakT2/ba3b887e61d95.png)
 
 使用消息队列时请注意
 

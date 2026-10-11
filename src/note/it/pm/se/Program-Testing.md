@@ -73,7 +73,7 @@ V&V 的目的是 **建立对系统 "适用于目的"的信心。**
 2. 发布测试「Release testing」，其中一个单独的测试团队在向用户发布之前测试系统的完整版本。
 3. 用户测试「User testing」，即系统的用户或潜在用户参与到系统的测试中。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/15/ca6891e3a6a25.png" alt="1671038771185.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/OmDKiQ/ca6891e3a6a25.png" alt="1671038771185.png" style="zoom:50%;" />
 
 Choosing Unit Test Cases
 
@@ -96,7 +96,7 @@ Choosing Unit Test Cases
 - 这些类中的每一个都是一个等价分区或域，其中程序对每个类成员的行为是等价的。
 - 应从每个分区选择测试案例。
 
-![1671039324530.png](https://pic.hanjiaming.com.cn/2022/12/15/0b381cfb6366f.png)
+![1671039324530.png](https://netdesk.orcsvc.com/f/mq5mt9/0b381cfb6366f.png)
 
 ### Testing Guidelines
 
@@ -212,7 +212,7 @@ Important differences:
 
 ## Requirements-Based Testing
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/15/108404af1f9da.png" alt="1671071999321.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/RGEJu8/108404af1f9da.png" alt="1671071999321.png" style="zoom: 50%;" />
 
 ## Features Tested by Scenario
 

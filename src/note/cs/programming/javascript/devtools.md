@@ -23,7 +23,7 @@ author: javascriptInfo, Hirsun
 
 就像这样：
 
-![1651231455118.png](https://pic.hanjiaming.com.cn/2022/04/29/cf93f3f5b37ff.png)
+![1651231455118.png](https://netdesk.orcsvc.com/f/X54ehX/cf93f3f5b37ff.png)
 
 具体什么样，要看你的 Chrome 版本。它随着时间一直在变，但是都很类似。
 
@@ -41,10 +41,10 @@ author: javascriptInfo, Hirsun
 
 在一开始的练习中，我们可以尝试使用 Chrome 的控制台作为练习语法的地方。就像在使用 ipython 或 Jupiter 练习 python语法一样。
 
-![1651249248792.png](https://pic.hanjiaming.com.cn/2022/04/30/f439e41cc13cd.png)
+![1651249248792.png](https://netdesk.orcsvc.com/f/0WK8H5/f439e41cc13cd.png)
 
 ## Safari
 
-![1651231671476.png](https://pic.hanjiaming.com.cn/2022/04/29/8a064adb9b10e.png)
+![1651231671476.png](https://netdesk.orcsvc.com/f/ER51Id/8a064adb9b10e.png)
 
 现在，我们通过 Cmd+Opt+C 就能打开或关闭控制台了。另外注意，有一个名字为“开发”的顶部菜单出现了。它有很多命令和选项.

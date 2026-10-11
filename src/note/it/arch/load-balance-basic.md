@@ -14,7 +14,7 @@ category:
 
 可以让用户的请求按照某种方式将请求分配给不同服务器进行处理。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/ca50d4fa9f92b.png" alt="1734953491570.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/10KjFK/ca50d4fa9f92b.png" alt="1734953491570.png" style="zoom:33%;" />
 
 这解决了三个问题
 
@@ -40,7 +40,7 @@ category:
 
 ### 按软硬件分类
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/b2cf80dfd7e57.png" alt="1734953652458.png" style="zoom:20%;" />
+<img src="https://netdesk.orcsvc.com/f/Pk3bSe/b2cf80dfd7e57.png" alt="1734953652458.png" style="zoom:20%;" />
 
 - **硬件负载均衡器**:
   - 专用设备，如F5公司的负载均衡器。
@@ -54,7 +54,7 @@ category:
 
 ### 按网络层面分类
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/9ecb892c3f544.png" alt="1734953858993.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/o8bDhg/9ecb892c3f544.png" alt="1734953858993.png" style="zoom: 25%;" />
 
 - **四层代理**:
   - 基于传输层（TCP协议）。
@@ -65,7 +65,7 @@ category:
 
 ## OSI七层模型
 
-![1734953884562.png](https://pic.hanjiaming.com.cn/2024/12/23/b2d665ef47b2a.png)
+![1734953884562.png](https://netdesk.orcsvc.com/f/KyaXcL/b2d665ef47b2a.png)
 
 - **物理层**: 最底层。
 - **数据链路层**:
@@ -77,7 +77,7 @@ category:
 
 ## 四层代理与七层代理的对比
 
-![1734953988363.png](https://pic.hanjiaming.com.cn/2024/12/23/36a821339927d.png)
+![1734953988363.png](https://netdesk.orcsvc.com/f/v3DaUq/36a821339927d.png)
 
 - **功能性**:
   - 四层代理（如LVS）：支持基本的TCP代理和轮询负载均衡。
@@ -94,7 +94,7 @@ category:
 
 ## Nginx 负载均衡策略
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/5e757ca69f766.png" alt="1734954007302.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/LmM1i2/5e757ca69f766.png" alt="1734954007302.png" style="zoom:33%;" />
 
 - **轮询策略**:
   - 类似排排坐吃果果，依次将请求分发到不同节点。

@@ -28,7 +28,7 @@ headerDepth: 2
 
 语言链 是一个连锁的生理、心理、物理的活动历程。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/3708c1ffcb6d2.png" alt="1655695354991.png"  />
+<img src="https://netdesk.orcsvc.com/f/vvKEUq/3708c1ffcb6d2.png" alt="1655695354991.png"  />
 
 ## 语音学
 
@@ -87,7 +87,7 @@ headerDepth: 2
 
 口腔或咽腔受阻碍的位置
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/23/541609572c2cd.png" alt="1655919613839.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/p4mZcn/541609572c2cd.png" alt="1655919613839.png" style="zoom: 67%;" />
 
 构造 structure 和 功能 functions
 
@@ -163,7 +163,7 @@ headerDepth: 2
 5. 平常发声时的状态，母音及带声子音 [两条声带从前端到后 端全部都很拉近，并轻微接触，空气可以挤出，产生振动
 6. 举重物 [两条声带从前到后紧闭，空气不能呼出]
 
-![1655733263091.png](https://pic.hanjiaming.com.cn/2022/06/20/e476d31d4c4fe.png)
+![1655733263091.png](https://netdesk.orcsvc.com/f/Mk82F8/e476d31d4c4fe.png)
 
 :::
 
@@ -228,7 +228,7 @@ headerDepth: 2
 - 发音位置（发音器官）：口腔或咽腔受阻碍的位置
 - 发音方式
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/23/26a49b72445ee.png" alt="1655921308081.png"  />
+<img src="https://netdesk.orcsvc.com/f/Wr8lC9/26a49b72445ee.png" alt="1655921308081.png"  />
 
 ### 描述元音
 
@@ -250,7 +250,7 @@ headerDepth: 2
 
 在一种语言中的两个词，这对词的语音在同一位置只有一个**音**不同，却有不同词义，这一对词就是最小差别对。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/02/51b08355aa00c.png" alt="1656752495585.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/l3Obse/51b08355aa00c.png" alt="1656752495585.png" style="zoom: 50%;" />
 
 ### 音位变体
 
@@ -260,7 +260,7 @@ headerDepth: 2
 - 实际的、物理、生理的元音或辅音
 - 互补分布 complementary distribution
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/02/8b9da4d2dce8c.png" alt="1656752595891.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/p4LZtn/8b9da4d2dce8c.png" alt="1656752595891.png" style="zoom:50%;" />
 
 - 用 [ ] 括起來表示，例如 [p] [ph] [k]
 - 变体有 条件变体和自由变体。

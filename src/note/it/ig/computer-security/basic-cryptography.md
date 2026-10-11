@@ -21,7 +21,7 @@ The oxford dictionary defines cryptography「密码学」 as “the art of writi
 
 ## The Basic Model
 
-![1675653620401.png](https://pic.hanjiaming.com.cn/2023/02/06/4c6aa368f15e6.png)
+![1675653620401.png](https://netdesk.orcsvc.com/f/V1DU2/4c6aa368f15e6.png)
 
 ## Terminologies
 
@@ -56,7 +56,7 @@ The channel can be a communication channel or a storage channel
 
 ## Classical Ciphers
 
-![1675655746639.png](https://pic.hanjiaming.com.cn/2023/02/06/ed1769b7665cd.png)
+![1675655746639.png](https://netdesk.orcsvc.com/f/YQ4c2/ed1769b7665cd.png)
 
 Substitution Ciphers
 - Caesar
@@ -87,7 +87,7 @@ Example:
  PHHW PH DIWHU WKH WRJD SDUW
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/07/b321d1766a73e.png" alt="1675752449515.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/LLDI2/b321d1766a73e.png" alt="1675752449515.png" style="zoom: 50%;" />
 
 ### Monoalphabetic Substitution Ciphers
 
@@ -149,7 +149,7 @@ the, and, tha, ent, ing, ion, tio, for, nde, has, nce, edt, tis, oft, sth, men
 
 Disadvantage: Can only use the key once though -> Have problem of safe distribution of key.
 
-![1675754151199.png](https://pic.hanjiaming.com.cn/2023/02/07/a45a5900ca559.png)
+![1675754151199.png](https://netdesk.orcsvc.com/f/XkJsX/a45a5900ca559.png)
 
 #### Vigenère Cipher
 
@@ -159,7 +159,7 @@ Disadvantage: Can only use the key once though -> Have problem of safe distribut
 - 依次使用每个字母
 - 在达到键的终点后，从头开始重复。
 
-![1675754729300.png](https://pic.hanjiaming.com.cn/2023/02/07/fd4a18ca34b3b.png)
+![1675754729300.png](https://netdesk.orcsvc.com/f/pnWFn/fd4a18ca34b3b.png)
 
 ### Playfair Ciphers
 
@@ -203,7 +203,7 @@ ciphertext: ZICVTWQNGKZEIIGASXSTSLVVWLA
 - 在若干行上斜着写出信息字母
 - 然后逐行读出密码文本
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/07/429e7ef7598a7.png" alt="1675756559759.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/KW6iL/429e7ef7598a7.png" alt="1675756559759.png" style="zoom:33%;" />
 
 ### Row Transposition Ciphers
 
@@ -211,7 +211,7 @@ ciphertext: ZICVTWQNGKZEIIGASXSTSLVVWLA
 - 根据钥匙中的编号重新安排列的顺序
 - 从上到下读出每一列的字母
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/07/9566d66ed71c8.png" alt="1675757206929.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/41mU2/9566d66ed71c8.png" alt="1675757206929.png" style="zoom:50%;" />
 
 ## Product
 

@@ -85,7 +85,7 @@ What is a Cluster? Cluster Analysis? Clustering?
 
 object-by-variable structure（n 个对象和 p 个变量/属性）
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/19/37dc229793fc1.png" alt="1700386642714.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/VL8t2/37dc229793fc1.png" alt="1700386642714.png" style="zoom: 25%;" />
 
 - **对象（Object）**：通常指的是数据集中的个体样本，例如在人口统计学研究中的每个人，或在产品调查中的每个产品。
 - **变量（Variable）/属性（Attribute）**：指的是每个对象的特征或属性，例如人的年龄、性别，或产品的价格、颜色。
@@ -94,7 +94,7 @@ object-by-variable structure（n 个对象和 p 个变量/属性）
 
 不相似度矩阵”（Dissimilarity Matrix）是一种用于表示数据对象之间差异或不相似性的表格。在这种矩阵中，每一行和每一列都代表数据集中的一个对象，而矩阵中的每个元素表示对应两个对象之间的不相似度。
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/19/c4995754d3d06.png" alt="1700389109732.png" style="zoom: 30%;" />
+<img src="https://netdesk.orcsvc.com/f/13MfK/c4995754d3d06.png" alt="1700389109732.png" style="zoom: 30%;" />
 
 - 对象（Object）：数据集中的个体，如人、物品、事件等。
 - 不相似度（Dissimilarity）：衡量两个对象之间差异的数值。这个数值越大，表示两个对象越不相似；数值越小，表示两者越相似。
@@ -164,7 +164,7 @@ $$
 
 A contingency table for binary data
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/19/3cac8169999f6.png" alt="1700391453874.png" style="zoom:28%;" />
+<img src="https://netdesk.orcsvc.com/f/W2pF9/3cac8169999f6.png" alt="1700391453874.png" style="zoom:28%;" />
 
 用来衡量两个对象在二元变量上的相似性或差异性。在这个表中，对象i和对象j要么具有某个属性（用1表示），要么不具有（用0表示）。
 
@@ -220,7 +220,7 @@ A contingency table for binary data
 
 另外一个案例是
 
-![CleanShot 2023-11-19 at 19.44.39@2x.png](https://pic.hanjiaming.com.cn/2023/11/19/e7660aaaa7ee1.png)
+![CleanShot 2023-11-19 at 19.44.39@2x.png](https://netdesk.orcsvc.com/f/LnxU2/e7660aaaa7ee1.png)
 
 :::
 
@@ -239,7 +239,7 @@ A contingency table for binary data
 
 1-hot encoding: 为 M 个标称状态中的每一个创建一个新的二进制变量
 
-![CleanShot 2023-11-19 at 19.58.21@2x.png](https://pic.hanjiaming.com.cn/2023/11/19/24659accb4862.png)
+![CleanShot 2023-11-19 at 19.58.21@2x.png](https://netdesk.orcsvc.com/f/9x8Sm/24659accb4862.png)
 
 ### Transactional Data
 
@@ -293,7 +293,7 @@ Two methods
 
 可以在 https://www.naftaliharris.com/blog/visualizing-k-means-clustering/ 查看 Demo
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/19/d3ff8044ef261.png" alt="1700400352729.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/YdLu2/d3ff8044ef261.png" alt="1700400352729.png" style="zoom:50%;" />
 
 **Centroid** 是集群中所有（数据）点的平均值。这意味着中心点是一个 "人工 "点。区别于 **Clustroid**，对比请参考 [Centroid & Clustroid](/note/ds/ml/regression-models/clustering.html#centroid-clustroid)
 
@@ -375,7 +375,7 @@ K-Medoids聚类方法与K-Means类似，但 K-Medoids 使用的是 Clustroid: �
 
 使用距离矩阵作为聚类标准。该方法不需要簇数k作为输入，但需要终止条件 
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/19/fcb110a074192.png" alt="1700401777424.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/JJnf8/fcb110a074192.png" alt="1700401777424.png" style="zoom:33%;" />
 
 ::: info 凝聚聚类方法的主要弱点
 
@@ -405,7 +405,7 @@ Also known as nearest neighbor (1NN) technique.
 5. **非降序方式**：这个过程以非降序方式进行，意味着每次合并后，新形成的簇的不相似度不会低于之前任何一次合并的簇。（换句话说，随着聚类过程的进行，你会发现合并的两个簇之间的距离或不相似度会逐渐增加。）
 6. **最终合并**：这个过程一直持续，直到所有的节点都合并到一个单一的大簇中。
 
-![1700407138563.png](https://pic.hanjiaming.com.cn/2023/11/19/3ef3f7b4136e6.png)
+![1700407138563.png](https://netdesk.orcsvc.com/f/2wwtv/3ef3f7b4136e6.png)
 
 假设有四个点A、B、C和D，不相似度矩阵可能看起来像这样：
 
@@ -448,11 +448,11 @@ The distance between groups is defined as the <u>closest pair</u> of records fro
   - *d*(12)4 = min[*d*14,d24] = *d*24 = 9.0 
   - *d*(12)5 = min[*d*15,d25] = *d*25 = 8.0
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/19/feb6faa06e870.png" alt="1700408274526.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/v6dfq/feb6faa06e870.png" alt="1700408274526.png" style="zoom:50%;" />
 
 - 现在可以构建新的矩阵D2，其条目是个体间距离和簇个体值。
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/19/a15ea3396e46e.png" alt="1700408452763.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/jgvSb/a15ea3396e46e.png" alt="1700408452763.png" style="zoom:50%;" />
 
 - D2 中最小的条目是个体 4 和 5 的条目，因此它们现在形成第二个双成员簇，并且发现了一组新的距离
   - *d*(12)3 = 5.0 as before
@@ -460,13 +460,13 @@ The distance between groups is defined as the <u>closest pair</u> of records fro
   - *d*(45)3 = min[*d*34,*d*35] = *d*34 = 4.0
 - These may be arranged in a matrix D3.
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/19/162988b772dad.png" alt="1700408721546.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ygliZ/162988b772dad.png" alt="1700408721546.png" style="zoom:50%;" />
 
 - 现在 d(45)3 中的最小条目，因此个体 3 被添加到包含个体 4 和 5 的簇中。最后，包含个体 1、2 和 3、4、5 的组被组合成单个簇。每个阶段产生的分区在右侧。
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/19/52d18f8f1f93d.png" alt="1700408787791.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/LnkU2/52d18f8f1f93d.png" alt="1700408787791.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/19/a1a96bc1574c8.png" alt="1700408816282.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/2weiv/a1a96bc1574c8.png" alt="1700408816282.png" style="zoom:50%;" />
 
 :::
 
@@ -496,7 +496,7 @@ The distance between groups is defined as the <u>closest pair</u> of records fro
 
 ### Divisive Analysis
 
-![1700409067277.png](https://pic.hanjiaming.com.cn/2023/11/19/353aba923b821.png)
+![1700409067277.png](https://netdesk.orcsvc.com/f/VLni2/353aba923b821.png)
 
 
 

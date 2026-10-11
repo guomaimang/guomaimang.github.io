@@ -40,4 +40,4 @@ Java 已经作为我的主要编程语言。我认为，Java 学习可以这样�
 
 我的笔记只包括我认为的必要部分。如果从0开始学Java，建议阅读
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/29/dd3d1450993ab.png" alt="1653837722867.png" style="zoom: 67%;" /><img src="https://pic.hanjiaming.com.cn/2022/05/29/574f4852e969e.png" alt="1653837810344.png" style="zoom:22%;" />
+<img src="https://netdesk.orcsvc.com/f/1L3RuK/dd3d1450993ab.png" alt="1653837722867.png" style="zoom: 67%;" /><img src="https://netdesk.orcsvc.com/f/25w0cv/574f4852e969e.png" alt="1653837810344.png" style="zoom:22%;" />

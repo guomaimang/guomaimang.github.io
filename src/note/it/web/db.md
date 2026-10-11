@@ -96,7 +96,7 @@ Trilemma, you can only choose two (and relax the remaining)
 
 What if no network partition? PACELC Theorem
 
-<img src="https://pic.hanjiaming.com.cn/2025/04/07/3fcfb876b5b3b.png" alt="预览 2025-04-07 12.32.00.png" style="zoom:75%;" />
+<img src="https://netdesk.orcsvc.com/f/92vsm/3fcfb876b5b3b.png" alt="预览 2025-04-07 12.32.00.png" style="zoom:75%;" />
 
 ## SQL or NoSQL?
 
@@ -136,7 +136,7 @@ Traditional databases (C&A) focus on ACID (NoSQL can also be ACID-compliant)
 - Coding Consistency「一致性」: Regardless of the DB, use the same set of code
 - Single Interface: Easy to switch database without code modifications
 
-![1744008510147.png](https://pic.hanjiaming.com.cn/2025/04/07/1b7246e45ec07.png)
+![1744008510147.png](https://netdesk.orcsvc.com/f/o8Pfg/1b7246e45ec07.png)
 
 ## Database Integrity and Constraints
 

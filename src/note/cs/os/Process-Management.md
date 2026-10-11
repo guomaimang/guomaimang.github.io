@@ -20,7 +20,7 @@ A process includes
 - **Data section** for global variables 
 - Heap for dynamic storage of variables (those created using malloc) 
 
-<img src="https://pic.hanjiaming.com.cn/2022/03/23/a929cc51a209b.png" alt="1648029542561.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ZP4AU2/a929cc51a209b.png" alt="1648029542561.png" style="zoom:33%;" />
 
 在操作系统中，有多个进程同时执行。
 
@@ -34,17 +34,17 @@ A process includes
 - ready: process is waiting to be assigned to a processor or CPU for execution. 
 - terminated: process has finished execution. 
 
-![1648029654341.png](https://pic.hanjiaming.com.cn/2022/03/23/eeab4d5486150.png)
+![1648029654341.png](https://netdesk.orcsvc.com/f/3pYwH5/eeab4d5486150.png)
 
 ## Process Control Block
 
 Each process is represented by a Process Control Block (PCB). 
 
-![1648029768256.png](https://pic.hanjiaming.com.cn/2022/03/23/aa3581a389fa6.png)
+![1648029768256.png](https://netdesk.orcsvc.com/f/y353hZ/aa3581a389fa6.png)
 
 ## CPU Switching
 
-![1648029811588.png](https://pic.hanjiaming.com.cn/2022/03/23/63e93a7aecffb.png)
+![1648029811588.png](https://netdesk.orcsvc.com/f/x81jF3/63e93a7aecffb.png)
 
 ## Process Scheduling Queues
 
@@ -60,9 +60,9 @@ Processes migrate (i.e. move) among the various queues.
 
 每种队列的进程调度器决定谁将获得下一个服务。
 
-![1648030204043.png](https://pic.hanjiaming.com.cn/2022/03/23/5b474f2633fce.png)
+![1648030204043.png](https://netdesk.orcsvc.com/f/bV9PsM/5b474f2633fce.png)
 
-![1648030245515.png](https://pic.hanjiaming.com.cn/2022/03/23/9cf0763956659.png)
+![1648030245515.png](https://netdesk.orcsvc.com/f/2WbXUv/9cf0763956659.png)
 
 ## Scheduler
 
@@ -87,7 +87,7 @@ Also called job scheduler.
 - Control multi-programming degree after process admission. 
 - If not done carefully, this could lead to thrashing. 
 
-![1648048184245.png](https://pic.hanjiaming.com.cn/2022/03/23/a6f340dddd67d.png)
+![1648048184245.png](https://netdesk.orcsvc.com/f/LwXri2/a6f340dddd67d.png)
 
 ### Short-term scheduler
 
@@ -143,7 +143,7 @@ Context switching time is a kind of **overhead(开销)**.
 - System does no useful work while switching from one process to another. 
 - Time cost is dependent on hardware support, e.g. amount of efforts to save the state of the old process. 
 
-![1648048868790.png](https://pic.hanjiaming.com.cn/2022/03/23/63e93a7aecffb.png)
+![1648048868790.png](https://netdesk.orcsvc.com/f/x81jF3/63e93a7aecffb.png)
 
 ## Process Creation
 
@@ -160,13 +160,13 @@ There is a relationship between a process that creates another process.
 
 A child process could be the parent of another process, and a tree or hierarchy of processes could be formed. 
 
-<img src="https://pic.hanjiaming.com.cn/2022/03/24/965b4db76203e.png" alt="1648051662702.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/jPVMCb/965b4db76203e.png" alt="1648051662702.png" style="zoom:50%;" />
 
 Linux example: To show the parent/children processes use **-H** option for **ps** command (does not work for Mac Unix), e.g. **ps -Hlf** or **ps -Helf** 
 
-![1648051707034.png](https://pic.hanjiaming.com.cn/2022/03/24/e63cd2c35d620.png)
+![1648051707034.png](https://netdesk.orcsvc.com/f/gkZYHX/e63cd2c35d620.png)
 
-![1648051753793.png](https://pic.hanjiaming.com.cn/2022/03/24/c23a95b556cf3.png)
+![1648051753793.png](https://netdesk.orcsvc.com/f/G6g3tA/c23a95b556cf3.png)
 
 Use **fork** system call to create new process. 
 
@@ -174,11 +174,11 @@ To replace process memory with a new program, use **exec** and its family of sys
 
 Parent uses **wait** to collect child and then continues. 
 
-![1648051860205.png](https://pic.hanjiaming.com.cn/2022/03/24/ae47cd00e3de1.png)
+![1648051860205.png](https://netdesk.orcsvc.com/f/6LK9iE/ae47cd00e3de1.png)
 
 ### In Unix/Linux
 
-![1648052069422.png](https://pic.hanjiaming.com.cn/2022/03/24/ff74d3a81ef12.png)
+![1648052069422.png](https://netdesk.orcsvc.com/f/orPPIg/ff74d3a81ef12.png)
 
 Relationship between parent and child: 
 
@@ -192,7 +192,7 @@ Relationship between parent and child:
 
 Parent is informed about the completion of a child. Parent should **wait** for a child to collect it. 
 
-![1648052272885.png](https://pic.hanjiaming.com.cn/2022/03/24/1ffe6e74f44b8.png)
+![1648052272885.png](https://netdesk.orcsvc.com/f/JwgYu8/1ffe6e74f44b8.png)
 
 ## Process Termination
 
@@ -246,7 +246,7 @@ A non-zero return value indicates an error from system call.
 - For **execv**, **execvp** and **execve**, arguments for the program are packed within *argv[]. 
 - For **execle** and **execve**, there is a final argument *envp[] storing the environment variables and values for the program. 
 
-![1648052498655.png](https://pic.hanjiaming.com.cn/2022/03/24/ffe86e0805ef0.png)
+![1648052498655.png](https://netdesk.orcsvc.com/f/QagRHj/ffe86e0805ef0.png)
 
 Unix和Linux中对孤儿的特殊安排。
 
@@ -260,7 +260,7 @@ Unix和Linux中对孤儿的特殊安排。
 - 注意，在 CentOS Linux 上，进程1被称为systemd（即系统守护进程），而不是init.
 - Process 1在MacOS上被称为 launchd（即启动守护进程），而不是init。
 
-![1648052944772.png](https://pic.hanjiaming.com.cn/2022/03/24/4c33f09a6e948.png)
+![1648052944772.png](https://netdesk.orcsvc.com/f/PvgMIe/4c33f09a6e948.png)
 
 ## Cooperating Processes
 
@@ -290,7 +290,7 @@ Producer-consumer problem is related to a problem to coordinate producer(s) and 
 - Producer may send a message containing the data to consumer for consumer to read. 
   - Message is like an SMS and only the pair knows 
 
-![1648093032934.png](https://pic.hanjiaming.com.cn/2022/03/24/aaef2764bda67.png)
+![1648093032934.png](https://netdesk.orcsvc.com/f/ql9jhJ/aaef2764bda67.png)
 
 合作进程进行通信和同步行动的机制
 
@@ -311,4 +311,4 @@ Concurrent access to shared data by cooperating processes (or threads) may make 
 - Synchronization requests processes to wait for the signal to go ahead, to avoid the race condition. 
 - Examples include sleeping barber problem, reader-writer problem, society room problem. 
 
-![1648093272191.png](https://pic.hanjiaming.com.cn/2022/03/24/43ef2b86ade17.png)
+![1648093272191.png](https://netdesk.orcsvc.com/f/YGX5U2/43ef2b86ade17.png)

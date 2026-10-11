@@ -34,9 +34,9 @@ CSMA/CD是CSMA的一个加强版。CD (collision detection)：一旦检测到碰
   - 如果一个发送终端对发送方来说是 "隐藏 "的（在发送方的传输范围之外），CS就不起作用。发送方不能感应到传输。
   - CD不起作用，因为在接收方发生的碰撞不能被发送方发现。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/13/a4dc019ee2b00.png" alt="1670901114982.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/2Wroiv/a4dc019ee2b00.png" alt="1670901114982.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/13/e4280403b6ba8.png" alt="1670901170790.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/GvEwcA/e4280403b6ba8.png" alt="1670901170790.png" style="zoom: 33%;" />
 
 ## MACA
 
@@ -46,7 +46,7 @@ MACA使用短信令包（RTS/CTS）来避免碰撞
 - CTS - 清除发送，接收方一旦准备好接收，就广播一个CTS数据包来授予权利。
 - DATA 当发送方收到CTS时，它向接收方发送数据。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/13/72f923d74727a.png" alt="1670901426228.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/WDa6i9/72f923d74727a.png" alt="1670901426228.png" style="zoom:50%;" />
 
 MACA避免了隐藏的终端问题。MACA避免了暴露的终端问题。
 
@@ -56,7 +56,7 @@ MACA避免了隐藏的终端问题。MACA避免了暴露的终端问题。
 - 与上层网络相比，MAC层可以更快地恢复传输错误
 - MACAW可以解决隐藏终端的问题，但一般不解决暴露终端的问题。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/13/6a8bf4ed685f8.png" alt="1670901526625.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/yQOjIZ/6a8bf4ed685f8.png" alt="1670901526625.png" style="zoom:50%;" />
 
 ## Polling
 

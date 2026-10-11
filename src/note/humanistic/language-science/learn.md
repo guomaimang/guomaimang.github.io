@@ -23,7 +23,7 @@ headerDepth: 2
 
 这一学派认为，小孩把整个语言（包括语音 、句法、构词和语义)的输入直接存人大恼经过累积储存，然后按照环境的制约讲出存在大脑内的语言资料.
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/60155e8845111.png" alt="1655545266974.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/0WnWu5/60155e8845111.png" alt="1655545266974.png" style="zoom:25%;" />
 
 至于学习的过程则完全是**制约**和**反应** 。同时，在学习过程中，行为主义者认为要辅以适度的**增强** 
 
@@ -45,7 +45,7 @@ headerDepth: 2
 
 ::: tip 对比两种理论哪种更占优势
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/12dc77828ffc1.png" alt="1655564540738.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/Wr4DC9/12dc77828ffc1.png" alt="1655564540738.png" style="zoom: 25%;" />
 
 - 第一：语言刺激或输人和语言能力并不相称
   - 孩子得到的语言刺激一般都很贫乏 (the poverty of stimulus)
@@ -101,7 +101,7 @@ headerDepth: 2
 - 婴儿以单一音节或单词来表达**整个**句子的语义
 - 这时期所讲出的句子又称为「**全义句**」(holophrastic sentences)
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/456778f0d65ae.png" alt="1655551169627.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/x86Jt3/456778f0d65ae.png" alt="1655551169627.png" style="zoom:25%;" />
 
 - 婴儿最早会发的母音是**[a]**
 - 语言初期所出现的单音节或单词多为婴儿最 **常接触的亲属称谓**
@@ -113,7 +113,7 @@ headerDepth: 2
 
 起初，孩子似乎是以两个单词并列在一起，后来渐渐地 才把两个词视为一个结构单位
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/6f8be02da8b64.png" alt="1655551386300.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/p4oGFn/6f8be02da8b64.png" alt="1655551386300.png" style="zoom:25%;" />
 
 - 语词顺序，句子结构
 - **没有表示单复数或现在式的词缀** (suffixes): 电报句 (telegraphic sentences)
@@ -132,7 +132,7 @@ headerDepth: 2
 - 36個月：3.16
 - 48個月：4.40
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/79fb71b37944e.png" alt="1655564784743.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/25PlTv/79fb71b37944e.png" alt="1655564784743.png" style="zoom:50%;" />
 
 ## 人脑
 

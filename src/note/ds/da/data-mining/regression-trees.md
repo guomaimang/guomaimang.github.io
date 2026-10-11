@@ -27,7 +27,7 @@ Difference
 
 Regression Tree -> Decision Tree for Regression
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/4dd9f5d7ac0cd.png" alt="1700454085978.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ROZT8/4dd9f5d7ac0cd.png" alt="1700454085978.png" style="zoom:50%;" />
 
 ## Construction
 
@@ -57,7 +57,7 @@ Regression Tree -> Decision Tree for Regression
 
 在回归树中，我们用一些统计度量来帮助我们构建树（分枝）以及决定何时停止分枝（终止分枝）。这个过程和计算均值、标准差和变异系数（CV）类似。
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/350c68e0379d3.png" alt="1700455137716.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/LkkS2/350c68e0379d3.png" alt="1700455137716.png" style="zoom:50%;" />
 
 - **标准差（S）**：用于树的构建（分枝）
   - 标准差是衡量数据点相对于平均值的离散程度的一个指标。
@@ -71,7 +71,7 @@ Regression Tree -> Decision Tree for Regression
 
 Standard deviation for two attributes
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/c82d5902e33c5.png" alt="1702484088444.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/JjpU8/c82d5902e33c5.png" alt="1702484088444.png" style="zoom: 33%;" />
 
  
 
@@ -79,11 +79,11 @@ Standard deviation for two attributes
 
 Calculate the standard deviation for each branch
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/6f95029a1f7f0.png" alt="1702484189145.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ybVsZ/6f95029a1f7f0.png" alt="1702484189145.png" style="zoom:50%;" />
 
 ## Constructing Tree
 
 Constructing Regression Tree Based on SDR
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/48ae1bd5a84c8.png" alt="1702484251790.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/RXVs8/48ae1bd5a84c8.png" alt="1702484251790.png" style="zoom: 50%;" />
 

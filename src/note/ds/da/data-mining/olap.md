@@ -25,7 +25,7 @@ headerdepth: 2
   - drill through: through the bottom level of the cube to its back-end relational tables (using SQL)
     这是通过立方体的底层到其后端关系表的操作。例如，我们可能在OLAP立方体中查看汇总数据，但我们想查看某个特定汇总数字背后的详细事务数据，我们可以执行钻穿操作，这通常涉及到使用SQL查询后端的关系数据库。
 
-![1702582600080.png](https://pic.hanjiaming.com.cn/2023/12/15/c4dfdcd18da7d.png)
+![1702582600080.png](https://netdesk.orcsvc.com/f/Vbkt2/c4dfdcd18da7d.png)
 
 ## Roll-up Operation
 
@@ -54,7 +54,7 @@ headerdepth: 2
   - 该术语指旋转特定数据点的视图，以获得另一个视角
   - 分析员可以通过这一视角，获得当月各商店的鞋类销售情况
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/f57171f3f8a9a.png" alt="1702584185152.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/OX6TQ/f57171f3f8a9a.png" alt="1702584185152.png" style="zoom:33%;" />
 
 ::: tip Summary
 

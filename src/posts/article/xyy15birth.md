@@ -15,9 +15,9 @@ star:
 <!-- more -->
 
 <video width="320" height="240" controls>   
-<source src="https://pic.hanjiaming.com.cn/2020/08/20200803142633581.mp4" type="video/mp4">
+<source src="https://netdesk.orcsvc.com/f/PkK1fe/20200803142633581.mp4" type="video/mp4">
 </video>
 
 <video width="320" height="240" controls>   
-<source src="https://pic.hanjiaming.com.cn/2020/08/20200803142632349.mp4" type="video/mp4">
+<source src="https://netdesk.orcsvc.com/f/JRddU8/20200803142632349.mp4" type="video/mp4">
 </video>

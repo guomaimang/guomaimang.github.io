@@ -17,7 +17,7 @@ Customer Lifecycle Management or CLM is the measurement of multiple customer-rel
 
 客户关系管理流程的总体范围涵盖企业的所有领域或部门，一般通过客户获取、客户保留、交叉销售和追加销售以及流失客户赢回等迭代阶段，将所有来源的静态和动态数据、营销流程和增值服务整合到一个统一的决策支持平台上。
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/16/bfaeed9f84fd8.png" alt="1697424935440.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/XWecX/bfaeed9f84fd8.png" alt="1697424935440.png" style="zoom:50%;" />
 
 **Three important stages of the customer lifecycle**
 
@@ -85,7 +85,7 @@ Advertising questions for customer acquisition:
 
 Pre-testing ads:  
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/16/ab86921c3428b.png" alt="1697426308678.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/8Jdu5/ab86921c3428b.png" alt="1697426308678.png" style="zoom: 50%;" />
 
 The related data to measure and enhance advertising impact:
 
@@ -171,7 +171,7 @@ CRM 分析支持客户获取「acquisition」
 - 战略转换者「strategic switchers」
 - 战略意义不大
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/09/199c41af0b9c2.png" alt="1702052958389.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/l5gSe/199c41af0b9c2.png" alt="1702052958389.png" style="zoom: 33%;" />
 
 ### Plan 2: The Retention Strategies
 

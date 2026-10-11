@@ -31,15 +31,15 @@ MIPS (Microprocessor without Interlocked Pipeline Stages)
 
 高级语言常常被转换成汇编语言。
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210201070359426.png)
+![img](https://netdesk.orcsvc.com/f/kOXVTb/20210201070359426.png)
 
 汇编语言将会被转换为机器语言
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210201070136689.png)
+![img](https://netdesk.orcsvc.com/f/AQXMUy/20210201070136689.png)
 
 ## 产生可执行文件
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210201070322967.png)
+![img](https://netdesk.orcsvc.com/f/rR0qug/20210201070322967.png)
 
 - 程序（program）通常包含几个模块。
 - 模块（module）通常包含对其他模块的引用（以使用数据或子例程）。
@@ -50,9 +50,9 @@ MIPS (Microprocessor without Interlocked Pipeline Stages)
 首先，使用编译器将高级语言转换为汇编语言（在某些情况下）
 第二，直接用作编写程序的语言，它具有独特的优势
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210201070502906.png)
+![img](https://netdesk.orcsvc.com/f/8qdet5/20210201070502906.png)
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210201070631197.png)
+![img](https://netdesk.orcsvc.com/f/Mv1Mu8/20210201070631197.png)
 
 ## 优缺点
 
@@ -144,7 +144,7 @@ How to realize it?
 | *30*                          | *$s8/$fp*                     | ***s**aved value / **f**rame **p**ointer* *Preserved across procedure calls*(**S**aved/**F**rame **P**ointer简写)帧指针 |
 | *31*                          | *$ra*                         | ***r**eturn **a**ddress*返回地址，目测也是不可做其他用途     |
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210201090154664.png)
+![img](https://netdesk.orcsvc.com/f/xyvXf3/20210201090154664.png)
 
 ## Other MIPS Registers
 
@@ -171,7 +171,7 @@ MIPS内存布局:内存的组织方式 (MIPS Memory Layout — How is memory org
 - 可以用于用户程序的部分分为三个部分
 - 文本，数据和堆栈段（Text Segment, Data Segment, and Stack Segment）
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210201091353168.png)
+![img](https://netdesk.orcsvc.com/f/lwDYTe/20210201091353168.png)
 
 - Text segment：存储用户程序的机器语言（文本）
 - Data segment：存储程序运行的数据
@@ -206,7 +206,7 @@ MIPS内存布局:内存的组织方式 (MIPS Memory Layout — How is memory org
 32位=4字节，可表示4^16 = 2 ^32个不同的地址 。故地址是32位长。
 所以32位处理器也代表每个地址长度为32比特，64位处理器也代表每个地址长度为64比特。由此推断32bit处理器最大支持 2^32byte = 4GByte内存，64位处理器最大支持 2^64 = 2147483648GByte内存。
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202091158498.png)
+![img](https://netdesk.orcsvc.com/f/0yqmF5/20210202091158498.png)
 
 **操作方式**
 
@@ -227,7 +227,7 @@ MIPS内存布局:内存的组织方式 (MIPS Memory Layout — How is memory org
 - one word = 2 bytes(仅适用于x86_64)
 - double word = 4 bytes = 64 bits(仅适用于x86_64)
 
-![此图像的alt属性为空；文件名为20210204163743709.png](https://pic.hanjiaming.com.cn/2021/02/20210204163743709.png)
+![此图像的alt属性为空；文件名为20210204163743709.png](https://netdesk.orcsvc.com/f/VAawi2/20210204163743709.png)
 
 对于连续的字节（一组字节），我们经常使用第一个字节的地址（即地址最低的字节），稍后会详细介绍
 
@@ -259,7 +259,7 @@ MIPS内存布局:内存的组织方式 (MIPS Memory Layout — How is memory org
 - need to translate it to machine language (binary) — assembler
 - the machine code has fixed format (32 bits)
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202160228473.png)
+![img](https://netdesk.orcsvc.com/f/156RtK/20210202160228473.png)
 
 - **op** or **opcode**(operation code)：indicate the type of an instruction; all R-type instructions have opcode 000000
 
@@ -277,11 +277,11 @@ MIPS内存布局:内存的组织方式 (MIPS Memory Layout — How is memory org
 
 举例：add
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202160848827.png)
+![img](https://netdesk.orcsvc.com/f/wR1nT5/20210202160848827.png)
 
 举例：shift（移位）
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202161043964.png)
+![img](https://netdesk.orcsvc.com/f/nkl5Hj/20210202161043964.png)
 
 ### I-type Instructions
 
@@ -297,7 +297,7 @@ MIPS内存布局:内存的组织方式 (MIPS Memory Layout — How is memory org
 
 - op: specify which instruction (different from R-type)
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202161622665.png)
+![img](https://netdesk.orcsvc.com/f/YZj9H2/20210202161622665.png)
 
 **Example: bitwise OR operation (ori)**
 
@@ -312,7 +312,7 @@ MIPS内存布局:内存的组织方式 (MIPS Memory Layout — How is memory org
     - what is $0? : constant value 0
     - what is 0x2 —> It means 2 in hexadecimal,but its essence is 0000 0000 0000 0000 0000 0000 0000 0010 in 32 bits.
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202164224390.png)
+![img](https://netdesk.orcsvc.com/f/QawZfj/20210202164224390.png)
 
 Is there any problem for the bit-wise OR?
 Yes! Value in $0 has 32 bits, imm has 16 bits; how can we do bit-wise OR?
@@ -349,7 +349,7 @@ suppose $10 stores the value 0x00400000 (base address)
 memory address = 0x00400060
 load the word in the memory (0x00400060) to $8
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202170315338.png)
+![img](https://netdesk.orcsvc.com/f/GRZRuA/20210202170315338.png)
 
 **Example: store word (sw)**
 
@@ -359,7 +359,7 @@ load the word in the memory (0x00400060) to $8
 
 **Other data transfer instructions (not exhaustive) in I-type**
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202173920386.png)
+![img](https://netdesk.orcsvc.com/f/AQlMHy/20210202173920386.png)
 
 ###  J-type Instructions
 
@@ -368,15 +368,15 @@ load the word in the memory (0x00400060) to $8
 
 Typical example: **j addr** (jump to the instruction at address addr / change the content of pc)
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202174531959.png)
+![img](https://netdesk.orcsvc.com/f/8qgeU5/20210202174531959.png)
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202175302333.png)
+![img](https://netdesk.orcsvc.com/f/RWkMS8/20210202175302333.png)
 
 为什么Address总是相隔4个：一条指令在内存中占用4个字节，只索引第一个地址编码即可。所以我们使用最低字节的地址来指代连续字节。
 
 **Machine code**
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202174135128.png)
+![img](https://netdesk.orcsvc.com/f/5JmvhV/20210202174135128.png)
 
 Again, we have a problem: addr has 26 bits, the address of an instruction has 32 bits. How is this solved in MIPS? — we need a mechanism to transform the 26-bit address in the instruction to a 32-bit address.
 
@@ -397,7 +397,7 @@ Again, we have a problem: addr has 26 bits, the address of an instruction has 32
 
 the target address we want to jump to (how did we get it?)
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210202181541238.png)
+![img](https://netdesk.orcsvc.com/f/XepwfX/20210202181541238.png)
 
 ------
 

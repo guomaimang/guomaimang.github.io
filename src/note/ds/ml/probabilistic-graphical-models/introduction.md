@@ -25,7 +25,7 @@ order: 1
 - 有领域的专家显式的指示
 - 从数据中发觉潜在的
 
-<img src="https://pic.hanjiaming.com.cn/2023/01/03/846c357e7092d.png" alt="1672759356454.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/912Cm/846c357e7092d.png" alt="1672759356454.png" style="zoom:33%;" />
 
 模型的表示是显式的，声明的。
 
@@ -51,9 +51,9 @@ Complex Systems
 
 两种常见的图形化表示模型
 
-![1672759835044.png](https://pic.hanjiaming.com.cn/2023/01/03/dcfd0ab39b812.png)
+![1672759835044.png](https://netdesk.orcsvc.com/f/mDLu9/dcfd0ab39b812.png)
 
-![1672759865840.png](https://pic.hanjiaming.com.cn/2023/01/03/29f3ddeb0c017.png)
+![1672759865840.png](https://netdesk.orcsvc.com/f/6EATE/29f3ddeb0c017.png)
 
 ## Applications
 

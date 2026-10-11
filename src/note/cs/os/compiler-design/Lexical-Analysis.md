@@ -8,7 +8,7 @@ headerDepth: 2
 
 # Lexical Analysis
 
-![1667899031764.png](https://pic.hanjiaming.com.cn/2022/11/08/a93b990def1ef.png)
+![1667899031764.png](https://netdesk.orcsvc.com/f/KwvXiL/a93b990def1ef.png)
 
 ## Introduction
 
@@ -21,13 +21,13 @@ headerDepth: 2
 
 为什么我们需要词汇分析？给定一个程序，如何将这些字符分组为有意义的 "单词"？
 
-![1667900649348.png](https://pic.hanjiaming.com.cn/2022/11/08/1d8b2c782d051.png)
+![1667900649348.png](https://netdesk.orcsvc.com/f/a2mkiq/1d8b2c782d051.png)
 
 如何从字符串中识别 "if""else "是关键词；"i""j""z "是变量；等等？
 
 In lexical analysis, a source program is read from left-to-right and grouped into tokens. A token is a sequence of characters with a collective meaning.「在词法分析中，源程序被从左到右阅读，并被分组为 token 。token 是一串具有集体意义的字符。」
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/08/6b24f04af6a58.png" alt="1667901338203.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/X5vPSX/6b24f04af6a58.png" alt="1667901338203.png" style="zoom:50%;" />
 
 ## What is a token
 
@@ -43,9 +43,9 @@ Tokens correspond to sets of strings with a collective meaning「标记对应于
 
 For example,
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/08/74a377ef0f2dd.png" alt="1667901674086.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/x8YZc3/74a377ef0f2dd.png" alt="1667901674086.png" style="zoom:50%;" />
 
-![1667901730584.png](https://pic.hanjiaming.com.cn/2022/11/08/fc7b8a9d097ee.png)
+![1667901730584.png](https://netdesk.orcsvc.com/f/y3njhZ/fc7b8a9d097ee.png)
 
 ## What are tokens for
 
@@ -89,5 +89,5 @@ Use tools: lex (for C), flex (for C/C++), jlex (for Java)
 - 写代码表达对token的识别
 - Table drivern
 
-![1667964145652.png](https://pic.hanjiaming.com.cn/2022/11/09/5f57355d91742.png)
+![1667964145652.png](https://netdesk.orcsvc.com/f/LQekf2/5f57355d91742.png)
 

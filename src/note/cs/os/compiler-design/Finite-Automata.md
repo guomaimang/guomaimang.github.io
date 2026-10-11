@@ -9,11 +9,11 @@ headerDepth: 1
 
 # Finite Automata
 
-![1667964609923.png](https://pic.hanjiaming.com.cn/2022/11/09/43541d03d3dac.png)
+![1667964609923.png](https://netdesk.orcsvc.com/f/Jw1gH8/43541d03d3dac.png)
 
 通过放入有限自动机模型来实施正则表达式识别算法。
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/09/3384a5d47d374.png" alt="1667964754178.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/3poQC5/3384a5d47d374.png" alt="1667964754178.png" style="zoom:33%;" />
 
 ## 非确定性有限自动机(NFA)
 
@@ -27,11 +27,11 @@ headerDepth: 1
 - 𝐹 ⊆ 𝑆 is the set of accepting states「接受状态的集合」
 - Move 是将 *状态-符号对* 映射到 *状态集* 的 **转换函数**。
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/09/3b19e7fcc60f1.png" alt="1667966458326.png" style="zoom: 33%;" /><img src="https://pic.hanjiaming.com.cn/2022/11/09/91d0050e0fa27.png" alt="1667966494550.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/wvJlf5/3b19e7fcc60f1.png" alt="1667966458326.png" style="zoom: 33%;" /><img src="https://netdesk.orcsvc.com/f/256wsv/91d0050e0fa27.png" alt="1667966494550.png" style="zoom: 40%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/09/8b5df04a0d5ad.png" alt="1667966648091.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/vvVdsq/8b5df04a0d5ad.png" alt="1667966648091.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/09/59aad3621d09a.png" alt="1667966677835.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/WrqbC9/59aad3621d09a.png" alt="1667966677835.png" style="zoom:33%;" />
 
 基于 NFA 的识别（决策）难以实施
 
@@ -46,7 +46,7 @@ headerDepth: 1
 
 每个正则表达式都可以转换为 NFA，遵循以下基本规则：
 
-![1667970474594.png](https://pic.hanjiaming.com.cn/2022/11/09/23aea445d2cf6.png)
+![1667970474594.png](https://netdesk.orcsvc.com/f/1LqjHK/23aea445d2cf6.png)
 
 Example: regular expression to NFA
 
@@ -58,7 +58,7 @@ Example: regular expression to NFA
 
 :::
 
-![1667970719358.png](https://pic.hanjiaming.com.cn/2022/11/09/f781bc4485835.png)
+![1667970719358.png](https://netdesk.orcsvc.com/f/Jw14F8/f781bc4485835.png)
 
 ## 确定性有限自动机(DFA)
 
@@ -71,7 +71,7 @@ DFA 是 NFA 的一个特例：
 - One transition per input per state
 - No 𝜀-transitions
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/09/860cbb5e7a92a.png" alt="1667966795659.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/y3nlCZ/860cbb5e7a92a.png" alt="1667966795659.png" style="zoom: 33%;" />
 
 - NFA: 容易生成字符串。
 - **DFA: 易于生成和识别字符串。**
@@ -80,11 +80,11 @@ DFA 是 NFA 的一个特例：
 - NFA：由于 𝜀 - 转换，当没有输入时可能会进入另一个状态。
 - **DFA：没有输入时哪里都不去；没有任何𝜀 - 过渡。**
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/09/3148b86ca60c6.png" alt="1667969094735.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ZPgET2/3148b86ca60c6.png" alt="1667969094735.png" style="zoom:50%;" />
 
 ### Table Implementation
 
-![1667969268659.png](https://pic.hanjiaming.com.cn/2022/11/09/7d5ebf647443f.png)
+![1667969268659.png](https://netdesk.orcsvc.com/f/4EvJH2/7d5ebf647443f.png)
 
 ### Algorithm: Simulating a DFA
 
@@ -95,7 +95,7 @@ DFA 是 NFA 的一个特例：
   - move(𝑠, 𝑐) 给出了从状态𝑠过渡到输入𝑐的状态。
   - nextchar 返回输入字符串𝑥的下一个字符。
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/09/137cde0b120f5.png" alt="1667970005187.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/vvVahq/137cde0b120f5.png" alt="1667970005187.png" style="zoom: 50%;" />
 
 ### Every NFA can be converted to a DFA
 

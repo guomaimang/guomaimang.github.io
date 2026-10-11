@@ -10,15 +10,15 @@ headerDepth: 2
 
 ## Content Based (CB)
 
-![1681874206388.png](https://pic.hanjiaming.com.cn/2023/04/19/cbfbeefb1b020.png)
+![1681874206388.png](https://netdesk.orcsvc.com/f/wylT5/cbfbeefb1b020.png)
 
 ### Objective
 
-![1681874303831.png](https://pic.hanjiaming.com.cn/2023/04/19/4c18f6dba776d.png)
+![1681874303831.png](https://netdesk.orcsvc.com/f/DeLTe/4c18f6dba776d.png)
 
 ### Objective in general
 
-![1681874375379.png](https://pic.hanjiaming.com.cn/2023/04/19/f38627aad51f4.png)
+![1681874375379.png](https://netdesk.orcsvc.com/f/xK0H3/f38627aad51f4.png)
 
 ### Pros
 
@@ -42,9 +42,9 @@ headerDepth: 2
 
 It learns feature itself - “Feature Learning”
 
-![1681875024713.png](https://pic.hanjiaming.com.cn/2023/04/19/1c3e3e1e075f0.png)
+![1681875024713.png](https://netdesk.orcsvc.com/f/pP2Fn/1c3e3e1e075f0.png)
 
-![1681875042385.png](https://pic.hanjiaming.com.cn/2023/04/19/8636b427d0bc2.png)
+![1681875042385.png](https://netdesk.orcsvc.com/f/EZAId/8636b427d0bc2.png)
 
 ### Process
 
@@ -58,9 +58,9 @@ It learns feature itself - “Feature Learning”
 
 ### Gradient Descent Update
 
-![CleanShot 2023-04-19 at 11.34.30@2x.png](https://pic.hanjiaming.com.cn/2023/04/19/483484250ae1a.png)
+![CleanShot 2023-04-19 at 11.34.30@2x.png](https://netdesk.orcsvc.com/f/pj1Hn/483484250ae1a.png)
 
-![1681875311249.png](https://pic.hanjiaming.com.cn/2023/04/19/16847b52362d4.png)
+![1681875311249.png](https://netdesk.orcsvc.com/f/8Wvi5/16847b52362d4.png)
 
 ## CF: Find “Similar” Users
 
@@ -96,7 +96,7 @@ $$
 \operatorname{sim}(x, y)=\frac{\sum_{s \in S_{x y}}\left(r_{x s}-\overline{r_{x}}\right)\left(r_{y s}-\overline{r_{y}}\right)}{\sqrt{\sum_{s \in S_{x y}}\left(r_{x s}-\overline{r_{x}}\right)^{2}} \sqrt{\sum_{s \in S_{x y}}\left(r_{y s}-\overline{r_{y}}\right)^{2}}}
 $$
 
-![1681876377612.png](https://pic.hanjiaming.com.cn/2023/04/19/5f8de7764881d.png)
+![1681876377612.png](https://netdesk.orcsvc.com/f/581sV/5f8de7764881d.png)
 
 ::: tip
 
@@ -143,9 +143,9 @@ $$
 
 For example,
 
-![1681877505003.png](https://pic.hanjiaming.com.cn/2023/04/19/5680ac1469c99.png)
+![1681877505003.png](https://netdesk.orcsvc.com/f/eEKSq/5680ac1469c99.png)
 
-![1681877533802.png](https://pic.hanjiaming.com.cn/2023/04/19/97cf50ca868be.png)
+![1681877533802.png](https://netdesk.orcsvc.com/f/WO6f9/97cf50ca868be.png)
 
 ## Common Practice in CF
 
@@ -154,7 +154,7 @@ For example,
   - tems most similar to **i**, that were rated by **x**
 - 将评分 r<sub>xi</sub> 估计为加权平均值
 
-![1681878026821.png](https://pic.hanjiaming.com.cn/2023/04/19/bf1cd9f3d5914.png)
+![1681878026821.png](https://netdesk.orcsvc.com/f/Xb8iX/bf1cd9f3d5914.png)
 
 - μ = 总的平均电影评分
 - **b**<sub>x</sub>= 用户 x 的评级偏差 =  (*avg. rating of user* **x**) **– μ**

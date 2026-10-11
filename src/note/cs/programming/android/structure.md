@@ -44,9 +44,9 @@ Specify the following essential information about the app:
 - The **permissions** the app asks for from the user
 - Other information about the **libraries** the app is using
 
-![CleanShot 2024-10-06 at 15.53.53@2x.png](https://pic.hanjiaming.com.cn/2024/10/06/1aa19a3260cc1.png)
+![CleanShot 2024-10-06 at 15.53.53@2x.png](https://netdesk.orcsvc.com/f/me1S9/1aa19a3260cc1.png)
 
-![1728201483986.png](https://pic.hanjiaming.com.cn/2024/10/06/149814093da8c.png)
+![1728201483986.png](https://netdesk.orcsvc.com/f/WVku9/149814093da8c.png)
 
 ## Assets
 
@@ -85,7 +85,7 @@ components that you can use
   - Declare UI elements in an **XML file**
   - Instantiate layout elements in the **Java code** (runtime)
 
-![CleanShot 2024-10-06 at 16.23.06@2x.png](https://pic.hanjiaming.com.cn/2024/10/06/dac5ed58cc684.png)
+![CleanShot 2024-10-06 at 16.23.06@2x.png](https://netdesk.orcsvc.com/f/nZafj/dac5ed58cc684.png)
 
 Android布局文件通常存储在`res/layout`目录下，以XML格式编写。这些文件定义了UI组件的层次结构和属性，便于在活动中引用和使用。
 
@@ -99,7 +99,7 @@ Layouts in Android:
   - 约束是指UI组件之间的位置和对齐关系。
 - Frame Layout：帧布局，所有子元素都堆叠在一个单独的框架中，通常用于简单的布局。
 
-![1728203023674.png](https://pic.hanjiaming.com.cn/2024/10/06/687966b926a5d.png)
+![1728203023674.png](https://netdesk.orcsvc.com/f/pDOun/687966b926a5d.png)
 
 ::: tip Constraint Layout 与 性能
 
@@ -139,7 +139,7 @@ Activity的生命周期由一系列回调方法（如onCreate()、onStart()、on
 - 每个Activity都有自己的“生命周期”。
 - 这意味着Activity从创建到销毁的整个过程由一系列生命周期方法管理。这些方法包括 onCreate()、onStart()、onResume()、onPause()、onStop() 和 onDestroy()。
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/06/97d691996e8d9.png" alt="1728204470058.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/L0mT2/97d691996e8d9.png" alt="1728204470058.png" style="zoom: 50%;" />
 
 **Activity launched**：当Activity被启动时，进入生命周期的第一个阶段。
 
@@ -313,7 +313,7 @@ PendingIntent是一种特殊的Intent，允许其他应用在未来某个时间�
 
 如果只有一个应用程序能够处理该Intent，系统会立即启动该应用程序。例如，如果你发送一个打开网页的Intent，并且设备上只有一个浏览器应用程序，那么这个浏览器会被直接启动。
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/07/ee1cb9fcfb43f.png" alt="1_9GlRjKrab2n-B5tI0H0iQA.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Q1RTj/ee1cb9fcfb43f.png" alt="1_9GlRjKrab2n-B5tI0H0iQA.png" style="zoom:33%;" />
 
 如果有多个应用程序能够处理该Intent，系统会显示一个“App Chooser”对话框，让用户选择使用哪个应用程序来完成操作。例如，如果你发送一个分享文本的Intent，设备上有多个应用程序（如邮件、消息、社交媒体应用）能够处理这个Intent，系统会显示一个选择对话框。
 

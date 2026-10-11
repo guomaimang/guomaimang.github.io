@@ -16,7 +16,7 @@ headerDepth: 1
 
 在C/C++程序中，一个整数类型占据了32位，`int abc = 888;`
 
-<img src="https://pic.hanjiaming.com.cn/2023/04/27/5bc45aa260e22.png" alt="1682605002517.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/yGlIZ/5bc45aa260e22.png" alt="1682605002517.png" style="zoom:25%;" />
 
 The address of **abc** is the smallest address among the four. Thus, it is 0x6000.
 
@@ -29,7 +29,7 @@ The address of **abc** is the smallest address among the four. Thus, it is 0x600
 
 下面是一个名为arr的整数数组在内存中的排列，其大小为3
 
-<img src="https://pic.hanjiaming.com.cn/2023/04/27/23ea8f6e68d87.png" alt="1682605290801.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Z0os2/23ea8f6e68d87.png" alt="1682605290801.png" style="zoom:33%;" />
 
 ## Buffer Overflow
 
@@ -75,7 +75,7 @@ The address of **abc** is the smallest address among the four. Thus, it is 0x600
   - 函数参数「function arguments」
 - 堆栈内存向下增长到较低的地址（大多架构中）
 
-<img src="https://pic.hanjiaming.com.cn/2023/04/29/61ef0bf96601f.png" alt="1682739960634.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/6pXCE/61ef0bf96601f.png" alt="1682739960634.png" style="zoom:33%;" />
 
 - Text Segment (a.k.a. Code Segment)
   - Executable binary

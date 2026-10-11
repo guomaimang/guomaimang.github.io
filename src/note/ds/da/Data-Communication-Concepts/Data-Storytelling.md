@@ -15,7 +15,7 @@ article: true
 
 ## Data storytelling Road
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/23/5d97736d9d103.png" alt="Data storytelling road.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/GvowHA/5d97736d9d103.png" alt="Data storytelling road.png" style="zoom:50%;" />
 
 一个强大的数据故事有三个要素：数据、叙述和视觉。
 
@@ -23,7 +23,7 @@ article: true
 
 但是如何交流见解呢？如果洞察力呈现不当，即使是最好的结果也可能无法产生影响。主要挑战之一是让反对变革的利益相关者相信，有些事情应该以不同的方式来做，特别是如果这些利益相关者是非技术人员，并且对数学或统计感到不自在。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/23/8a333559161af.png" alt="1671808909070.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/4E53i2/8a333559161af.png" alt="1671808909070.png" style="zoom:50%;" />
 
 - 如果没有适当的表述，再好的结果也没有影响
 - 说服不喜欢变革的利益相关者
@@ -37,7 +37,7 @@ article: true
 - Facilitate「促进」 decision-making
 - Drive change
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/23/d7ab776d4c84e.png" alt="1671728918749.png" style="zoom: 28%;" />
+<img src="https://netdesk.orcsvc.com/f/Q0m9tj/d7ab776d4c84e.png" alt="1671728918749.png" style="zoom: 28%;" />
 
 在任何沟通策略中，我们都必须将几个部分放在一起才能创建一个有效的故事。
 
@@ -51,7 +51,7 @@ article: true
   - 每个数据故事都遵循一个线性序列。因此，每一个数据点都是相互建立的，直到得出结论。
 - 视觉：然而，我们应该注意不要包括误导性的图表。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/23/b697a5127c59e.png" alt="1671727956604.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/oJkksg/b697a5127c59e.png" alt="1671727956604.png" style="zoom: 33%;" />
 
 ### Data
 

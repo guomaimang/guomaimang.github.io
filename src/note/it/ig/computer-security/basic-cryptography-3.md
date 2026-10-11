@@ -9,7 +9,7 @@ headerDepth: 1
 
 ## Symmetric Key Management
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/27/02dc06586fcc0.png" alt="1677428654782.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/6WnFE/02dc06586fcc0.png" alt="1677428654782.png" style="zoom:33%;" />
 
 - 每一对通信实体都需要一个共享密钥
 - 对于一个 n 方系统，系统中有 n(n-1)/2 个不同的密钥，每一方需要维护n-1 个不同的密钥。
@@ -19,7 +19,7 @@ headerDepth: 1
 
 ## Centralized Key Management
 
-![1677428830567.png](https://pic.hanjiaming.com.cn/2023/02/27/ae7e224ac4dc7.png)
+![1677428830567.png](https://netdesk.orcsvc.com/f/EODtd/ae7e224ac4dc7.png)
 
 - 只有n个长期密钥「ong-term secret keys」，而不是系统中的 n(n - 1)/2
 - 每个用户与服务器共享一个长期秘钥
@@ -28,7 +28,7 @@ headerDepth: 1
 
 ## Public Key Encryption
 
-![1677429722495.png](https://pic.hanjiaming.com.cn/2023/02/27/e4d7cdf2507fa.png)
+![1677429722495.png](https://netdesk.orcsvc.com/f/QMZUj/e4d7cdf2507fa.png)
 
 - 接收者Bob有一个密钥对：公钥和私钥
   - 发布公钥，使密钥为公众所知
@@ -129,7 +129,7 @@ $$
   - x = x mod b, 0 < x < b, if x is exist
   - y < 0
 
-![1677470727997.png](https://pic.hanjiaming.com.cn/2023/02/27/0ccc89a34ee30.png)
+![1677470727997.png](https://netdesk.orcsvc.com/f/xgJt3/0ccc89a34ee30.png)
 
 - x = -193, y = 176
 - let x = x mod b = -193 + 999 = 806
@@ -148,13 +148,13 @@ RSA算法的强度取决于对 *大数进行质因数分解的难度*，即 很�
 
 RSA 公共指数 e 的值可以很小，例如 16 比特长 ，但 d 的值应该很大，例如至少 1000 比特长。
 
-![1677471190606.png](https://pic.hanjiaming.com.cn/2023/02/27/818d395866ddb.png)
+![1677471190606.png](https://netdesk.orcsvc.com/f/1x1cK/818d395866ddb.png)
 
 从以上实际试探来看，512位的RSA密钥，以前被认为足以满足一些商业应用的需求，现在却存疑了。对于高安全性要求，可以考虑使用 2048 位密钥
 
 密钥大小的安排应考虑到数据的寿命，跨越未来几十年的时间。
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/27/e685fd7023b5f.png" alt="1677471366170.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/qmEUJ/e685fd7023b5f.png" alt="1677471366170.png" style="zoom:50%;" />
 
 ### Problem of Public-Key Crypt
 
@@ -207,7 +207,7 @@ DH 方法针对的是以下困难的局面：Alice 和 Bob 想共有一个密钥
 
 ::: details 暴力破解
 
-![1677907465779.png](https://pic.hanjiaming.com.cn/2023/03/04/9e710d41bcb9c.png)
+![1677907465779.png](https://netdesk.orcsvc.com/f/Ro4C8/9e710d41bcb9c.png)
 
 :::
 
@@ -224,18 +224,18 @@ DH 方法针对的是以下困难的局面：Alice 和 Bob 想共有一个密钥
 - Sign using Alice’s private key
 - Verify using Alice’s public key
 
-![1677471778837.png](https://pic.hanjiaming.com.cn/2023/02/27/7c4da7265c758.png)
+![1677471778837.png](https://netdesk.orcsvc.com/f/Aq4Fy/7c4da7265c758.png)
 
 ### Basic Model
 
-![1677471863052.png](https://pic.hanjiaming.com.cn/2023/02/27/77945de32f2e7.png)
+![1677471863052.png](https://netdesk.orcsvc.com/f/p9Gsn/77945de32f2e7.png)
 
 - 只有签名者（拥有私钥）才能在消息 m 上生成有效签名 σ
 - 任何人（因为发布了相应的公钥）都可以验证关于 m 的 σ 是否有效
 
 思考：如何将公钥与发布者联系起来，确认该公钥是由发布者发布的？发布者会不会因为躲避某些责任而不承认文档和公钥为发布者发布的呢？这回使得应用场景发生哪些局限？
 
-![1677472085043.png](https://pic.hanjiaming.com.cn/2023/02/27/423c69aefe63c.png)
+![1677472085043.png](https://netdesk.orcsvc.com/f/w9nF5/423c69aefe63c.png)
 
 ### RSA Signature Scheme
 
@@ -272,7 +272,7 @@ DH 方法针对的是以下困难的局面：Alice 和 Bob 想共有一个密钥
 
 Alice 不是直接对 M 签名，而是对 M 的哈希签名，用 H(M) 表示。
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/28/5af2d850cf86c.png" alt="1677567043372.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/RLpS8/5af2d850cf86c.png" alt="1677567043372.png" style="zoom:50%;" />
 
 - H is called a hash function
 - H 将任意长度的二进制字符串映射为小于 n 的非零整数
@@ -282,7 +282,7 @@ Alice 不是直接对 M 签名，而是对 M 的哈希签名，用 H(M) 表示�
 
 用公钥数字签名方案对信息摘要进行签名
 
-![1677567285621.png](https://pic.hanjiaming.com.cn/2023/02/28/6d7c590d131b5.png)
+![1677567285621.png](https://netdesk.orcsvc.com/f/kkLhb/6d7c590d131b5.png)
 
 - Well known hash functions: MD5, SHA-1, SHA-2
 - 由于抗碰撞，不同的信息应该被散列成不同的信息摘要。
@@ -318,9 +318,9 @@ Alice 不是直接对 M 签名，而是对 M 的哈希签名，用 H(M) 表示�
 - 将输入消息划分为固定大小的块
 - 输入的剩余位被填充以信息长度的值
 
-![1682493205830.png](https://pic.hanjiaming.com.cn/2023/04/26/cb7f8f4f43bfb.png)
+![1682493205830.png](https://netdesk.orcsvc.com/f/3xQF5/cb7f8f4f43bfb.png)
 
-![1682493822228.png](https://pic.hanjiaming.com.cn/2023/04/26/fb4e173e04b4c.png)
+![1682493822228.png](https://netdesk.orcsvc.com/f/Wbbc9/fb4e173e04b4c.png)
 
 1. 初始化：选择一个初始值IV（初始向量），其长度等于分组密码的块长度。
 2. 迭代处理：将填充后的数据分成大小相等的块。对于每一个数据块，将其与上一个块的散列值进行某种操作（如异或），然后使用分组密码加密算法（如AES）对结果进行加密。将加密后的结果作为下一个块的散列值。对于第一个数据块，使用初始向量作为散列值。

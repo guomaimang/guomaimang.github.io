@@ -32,7 +32,7 @@ headerDepth: 1
 - 为了保持这些资产对企业的价值，它们必须被改变和更新。
 - 大公司的大部分软件预算都用于改变和发展现有软件，而不是开发新的软件。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/15/a8bd862fcc3db.png" alt="1671044289106.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/q35aHJ/a8bd862fcc3db.png" alt="1671044289106.png" style="zoom:50%;" />
 
 ## Evolution and Servicing
 
@@ -40,7 +40,7 @@ headerDepth: 1
 - Servicing：在这个阶段，软件仍然是有用的，但所做的唯一改变是保持其运行所需的改变，即错误修复和反映软件环境变化的改变。 没有增加新的功能。
 - Retirement：该软件仍可使用，但只做必要的修改。用户必须解决他们发现的问题。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/15/0827ab7befce7.png" alt="1671044507138.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/Q0E9Cj/0827ab7befce7.png" alt="1671044507138.png" style="zoom: 50%;" />
 
 ## Evolution Processes
 
@@ -63,7 +63,7 @@ headerDepth: 1
 
 软件进化过程的一般模型
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/15/73e31636d6879.png" alt="1671044787392.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/M2Eyu8/73e31636d6879.png" alt="1671044787392.png" style="zoom:50%;" />
 
 Change implementation
 
@@ -160,7 +160,7 @@ Types of maintenance
   - 代码线是一个**源代码**版本的**序列**，序列中的后期版本来自早期版本。
   - 基线规定了特定系统中**包含的组件版本**以及**使用的库和配置文件**等。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/15/fade3107be9ff.png" alt="1671046598471.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/E2wvTd/fade3107be9ff.png" alt="1671046598471.png" style="zoom:50%;" />
 
 主线「mainline」是一个从原始基线发展起来的系统版本序列。
 
@@ -182,7 +182,7 @@ Centralized vs. distributed
 - 在集中式版本控制中，**私有工作区只包含项目库的组件**。
 - 在分布式版本控制中，**私有工作区是项目库的一个克隆**。
 
-![1671046939105.png](https://pic.hanjiaming.com.cn/2022/12/15/09baac2590296.png)
+![1671046939105.png](https://netdesk.orcsvc.com/f/jv5btb/09baac2590296.png)
 
 ### Benefits of Distributed Version Control
 

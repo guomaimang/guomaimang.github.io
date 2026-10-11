@@ -15,11 +15,11 @@ headerDepth: 2
 - Manages system resources
 - Use the hardware in an efficient manner
 
-![1666411873469.png](https://pic.hanjiaming.com.cn/2022/10/22/1778190b3aca9.png)
+![1666411873469.png](https://netdesk.orcsvc.com/f/x8L0H3/1778190b3aca9.png)
 
 ## Runtime View of OS
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/22/aa408ae4c5aae.png" alt="1666410677996.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/25LoIv/aa408ae4c5aae.png" alt="1666410677996.png" style="zoom:33%;" />
 
 ## Types of OSs
 

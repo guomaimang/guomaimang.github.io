@@ -50,7 +50,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4
 
 ### 方案一：网关统一校验
 
-![1735293283992.png](https://pic.hanjiaming.com.cn/2024/12/27/16fd03676ff1e.png)
+![1735293283992.png](https://netdesk.orcsvc.com/f/Alkhy/16fd03676ff1e.png)
 
 1. **客户端**（浏览器或 APP）向认证中心提交用户名和密码进行登录。
 2. **认证中心**校验用户名和密码，生成 JWT 字符串并返回给客户端。
@@ -63,7 +63,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4
 
 ### 方案二：应用认证
 
-![1735293283992.png](https://pic.hanjiaming.com.cn/2024/12/27/16fd03676ff1e.png)
+![1735293283992.png](https://netdesk.orcsvc.com/f/Alkhy/16fd03676ff1e.png)
 
 1. **客户端**在请求中附带 JWT 字符串，发送给应用网关。
 2. **应用网关**将 JWT 字符串原封不动转发给业务模块。
@@ -73,7 +73,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4
 
 可以通过注解
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/0871389c8461f.png" alt="1735304398245.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/rZ2ig/0871389c8461f.png" alt="1735304398245.png" style="zoom:33%;" />
 
 ### 两种方案对比
 

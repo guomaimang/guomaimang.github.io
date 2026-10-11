@@ -80,7 +80,7 @@ $$
 
 按照吴恩达老师的建议，每次可以3倍放大或者3倍缩小来调整，直到找到合适的学习率。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/09/175cb1897e7b4.png" alt="1657305013144.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/rKdmug/175cb1897e7b4.png" alt="1657305013144.png" style="zoom: 50%;" />
 
 ### 代价函数的梯度
 
@@ -145,7 +145,7 @@ $$
 
 直到  $J\left(\theta_{0}[n-1], \theta_{1}[n-1]\right)-J\left(\theta_{0}[n], \theta_{1}[n]\right)<\varepsilon$ 或者 $n>X$ 结束。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/08/3551c397dff4d.png" alt="1657293007265.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/6LOZcE/3551c397dff4d.png" alt="1657293007265.png" style="zoom: 33%;" />
 
 ## 使用scikit-learn工具包
 

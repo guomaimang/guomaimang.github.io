@@ -13,7 +13,7 @@ category:
 - Engineering discipline: 使用适当的理论和方法来解决问题，同时考虑到组织和财政的限制。
 - 软件生产的所有方面：软件生产的所有方面
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/13/1a45050f6bae2.png" alt="1670934999121.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/en58cq/1a45050f6bae2.png" alt="1670934999121.png" style="zoom: 25%;" />
 
 <!-- more -->
 

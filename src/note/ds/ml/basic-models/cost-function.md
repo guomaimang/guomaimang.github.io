@@ -30,7 +30,7 @@ author: Hirsun，Belter
 
 由于代价函数是用来衡量模型好坏的，我们的目标当然是得到最好的模型（也就是最符合训练样本(x, y)的模型）。因此训练参数的过程就是不断改变θ，从而得到更小的J(θ)的过程。理想情况下，**当我们取到代价函数J的最小值时，就得到了最优的参数θ**，记为： $\min _{\theta} J(\theta)$
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/08/8f97955be6880.png" alt="1657289791980.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/orGrIg/8f97955be6880.png" alt="1657289791980.png" style="zoom:33%;" />
 
 例如，J(θ) = 0，表示我们的模型完美的拟合了观察的数据，没有任何误差。
 
@@ -143,7 +143,7 @@ $$
 
 有训练样本{(0, 0), (1, 1), (2, 2), (4, 4)}，即4对训练样本，每个样本对中第1个数表示x的值，第2个数表示y的值。这几个点很明显都是y=x这条直线上的点。如下图, 不同参数可以拟合出不同的直线
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/08/fce6c9b5f1437.png" alt="1657285484791.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/DaJVse/fce6c9b5f1437.png" alt="1657285484791.png" style="zoom:33%;" />
 
 常数项为0，所以可以取θ0=0，然后取不同的θ1，可以得到不同的拟合直线。
 
@@ -152,7 +152,7 @@ $$
 
 通过下图可以查看随着θ1的变化，J(θ)的变化情况：
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/08/c0d2bca891b9f.png" alt="1657285555717.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/95WYTm/c0d2bca891b9f.png" alt="1657285555717.png" style="zoom:33%;" />
 
 从图中可以很直观的看到θ对代价函数的影响，当θ1=1时，代价函数J(θ)取到最小值。
 
@@ -166,17 +166,17 @@ $$
 
 下图中展示了只有两个参数的模型运用梯度下降算法的过程。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/08/1e25d168eaae1.png" alt="1657286687505.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/k8ldfb/1e25d168eaae1.png" alt="1657286687505.png" style="zoom: 50%;" />
 
 下图可以看做是代价函数J(θ)与参数θ做出的图，曲面上的一个点 (θ<sub>0</sub>, θ<sub>1</sub>, J(θ)) ，有无数条切线。
 
 在这些切线中与 x-y 平面（底面，相当于θ<sub>0</sub>, θ<sub>1</sub>）夹角最大的那条切线就是该点梯度的方向，沿该方向移动，会产生最大的高度变化(相对于z轴，这里的z轴相当于代价函数J(θ))。
 
-![1035701-20170401200538492-1020488011.gif](https://pic.hanjiaming.com.cn/2022/07/08/3abe298870c17.gif)
+![1035701-20170401200538492-1020488011.gif](https://netdesk.orcsvc.com/f/MkgEf8/3abe298870c17.gif)
 
 线性回归模型的代价函数对参数的偏导数
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/08/f52f65dbc9b81.png" alt="1657306924314.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/QaQ6cj/f52f65dbc9b81.png" alt="1657306924314.png" style="zoom:50%;" />
 
 ## Reference
 

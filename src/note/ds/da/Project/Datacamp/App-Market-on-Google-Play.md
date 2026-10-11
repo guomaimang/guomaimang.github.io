@@ -15,7 +15,7 @@ Attachment: [Click me](https://connectpolyu-my.sharepoint.com/:f:/g/personal/200
 
 Mobile apps are everywhere. They are easy to create and can be lucrative. Because of these two factors, more and more apps are being developed. In this notebook, we will do a comprehensive analysis of the Android app market by comparing over ten thousand apps in Google Play across different categories. We'll look for insights in the data to devise strategies to drive growth and retention.
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/31/a9587f10faec3.png" alt="1653976706763.png" style="zoom:10%;" />
+<img src="https://netdesk.orcsvc.com/f/MkdMf8/a9587f10faec3.png" alt="1653976706763.png" style="zoom:10%;" />
 
 Let's take a look at the data, which consists of two files:
 
@@ -233,9 +233,9 @@ paid_apps = apps_with_size_and_rating_present[apps_with_size_and_rating_present[
 plt2 = sns.jointplot(x = paid_apps['Price'], y = paid_apps['Rating'])
 ```
 
-![1653976520999.png](https://pic.hanjiaming.com.cn/2022/05/31/3e0b857a360e4.png)
+![1653976520999.png](https://netdesk.orcsvc.com/f/m36Lh9/3e0b857a360e4.png)
 
-![1653976542786.png](https://pic.hanjiaming.com.cn/2022/05/31/256c6a9e32f67.png)
+![1653976542786.png](https://netdesk.orcsvc.com/f/YG19U2/256c6a9e32f67.png)
 
 ## 7. Relation between app category and app price
 
@@ -286,7 +286,7 @@ Out[184]:
 | 8763 | FINANCE   | Eu Sou Rico                           | 394.99 |
 | 8780 | LIFESTYLE | I'm Rich/Eu sou Rico/أنا غني/我很有錢 | 399.99 |
 
-![1653976565530.png](https://pic.hanjiaming.com.cn/2022/05/31/d26a63e000222.png)
+![1653976565530.png](https://netdesk.orcsvc.com/f/Dardhe/d26a63e000222.png)
 
 ## 8. Filter out "junk" apps
 
@@ -312,7 +312,7 @@ Out[186]:
 Text(0.5, 1.0, 'App pricing trend across categories after filtering for junk apps')
 ```
 
-![1653976586013.png](https://pic.hanjiaming.com.cn/2022/05/31/8d2fedec37aa3.png)
+![1653976586013.png](https://netdesk.orcsvc.com/f/8Jrei5/8d2fedec37aa3.png)
 
 ## 9. Popularity of paid apps vs free apps
 
@@ -355,7 +355,7 @@ data = [trace0, trace1]
 plotly.offline.iplot({'data': data, 'layout': layout})
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/31/7e709a9c4de42.png" alt="1653976600375.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/5XrvIV/7e709a9c4de42.png" alt="1653976600375.png" style="zoom:33%;" />
 
 
 
@@ -386,6 +386,6 @@ ax = sns.boxplot(x = 'Type' y = Sentiment_Polarity, data = ...)
 ax.set_title('Sentiment Polarity Distribution')
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/31/03faadc0366db.png" alt="1653976623243.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/3pb4c5/03faadc0366db.png" alt="1653976623243.png" style="zoom: 33%;" />
 
 Ref. The Guidance and data source are from Datacamp.

@@ -44,7 +44,7 @@ LinregressResult(slope=0.06988048092105019,
 
 即回归函数为`y =  slope * x +  intercept`
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/23/f9de300e95b0a.png" alt="1655915462579.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Y4Mgi2/f9de300e95b0a.png" alt="1655915462579.png" style="zoom:50%;" />
 
 通常，在这之后我们需要将 拟合的直线 与 数据分布点/线 放到一张图中。
 
@@ -67,7 +67,7 @@ plt.ylim([0, 6])
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/879417d51d06d.png" alt="1654701512717.png" style="zoom:67%;" />
+<img src="https://netdesk.orcsvc.com/f/WrjDc9/879417d51d06d.png" alt="1654701512717.png" style="zoom:67%;" />
 
 ::: tip 使用 statsmodels.formula.api 进行单变量回归
 
@@ -89,7 +89,7 @@ Intercept 5.399903
 
 ::: tip 使用sns.regplot() 绘图
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/23/a8f7ff51ceed7.png" alt="1655915615944.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/LQRrh2/a8f7ff51ceed7.png" alt="1655915615944.png" style="zoom:50%;" />
 
 :::
 
@@ -97,7 +97,7 @@ Intercept 5.399903
 
 相当于求每一类的平均值......
 
-![1655915941512.png](https://pic.hanjiaming.com.cn/2022/06/23/76f32a5fa9921.png)
+![1655915941512.png](https://netdesk.orcsvc.com/f/0WVGI5/76f32a5fa9921.png)
 
 :::
 
@@ -142,7 +142,7 @@ plt.show()
 
 转换后，左图将变化到右图。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/24/94fb79821ce6b.png" alt="1656062681430.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/3pnAu5/94fb79821ce6b.png" alt="1656062681430.png" style="zoom: 33%;" />
 
 ## 单变量多次方回归
 

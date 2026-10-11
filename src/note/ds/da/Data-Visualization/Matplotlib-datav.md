@@ -46,7 +46,7 @@ fig.savefig("gold_medals.svg")
 
 matplotlib.org/gallery.html
 
-![1643755118767.png](https://pic.hanjiaming.com.cn/2022/02/02/1b1b713358c92.png)
+![1643755118767.png](https://netdesk.orcsvc.com/f/orRxfg/1b1b713358c92.png)
 
 ## Plot
 
@@ -65,7 +65,7 @@ ax.plot(seattle_weather["MONTH"], seattle_weather["MLY-TAVG-NORMAL"])
 ax.plot(austin_weather["MONTH"], austin_weather["MLY-TAVG-NORMAL"])
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/87aaafd041549.png" alt="1643751761319.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ERjOId/87aaafd041549.png" alt="1643751761319.png" style="zoom:50%;" />
 
 ### 样式
 
@@ -73,7 +73,7 @@ ax.plot(austin_weather["MONTH"], austin_weather["MLY-TAVG-NORMAL"])
 ax.plot(seattle_weather["MONTH"],seattle_weather["MLY-TAVG-NORMAL"],marker="v", linestyle="--", color="r")
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/0433fae418eb5.png" alt="1643752204144.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/AMVlcy/0433fae418eb5.png" alt="1643752204144.png" style="zoom:50%;" />
 
 #### plt.subplots
 
@@ -82,13 +82,13 @@ fig, ax = plt.subplots(3, 2) #先y后x
 ax[0, 0].plot(seattle_weather["MONTH"],seattle_weather["MLY-PRCP-NORMAL"],color='b')
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/8662a3fd21e3f.png" alt="1643752334446.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/42ddt2/8662a3fd21e3f.png" alt="1643752334446.png" style="zoom:50%;" />
 
 ```
 fig, ax = plt.subplots(2, 1, sharey=True) #统一y轴
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/0750c1ea9f897.png" alt="1643752438910.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/95VJim/0750c1ea9f897.png" alt="1643752438910.png" style="zoom: 33%;" />
 
 ### twin axes
 
@@ -108,7 +108,7 @@ ax2.tick_params('y', colors='red')
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/05bea7789142d.png" alt="1643752808825.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/qla8hJ/05bea7789142d.png" alt="1643752808825.png" style="zoom: 33%;" />
 
 ### Annotation
 
@@ -119,7 +119,7 @@ xy=(pd.Timestamp('2015-10-06'), 1),  # 目标点的位置
 	arrowprops={"arrowstyle":"->", "color":"gray"})  # 样式
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/c9550e4f29352.png" alt="1643752921671.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/XWjZTX/c9550e4f29352.png" alt="1643752921671.png" style="zoom:50%;" />
 
 建议后期用photoshop处理...
 
@@ -138,7 +138,7 @@ xy=(pd.Timestamp('2015-10-06'), 1),  # 目标点的位置
 - 每个种类的对应的y值将呈现（y)
 - 适用于值的种类有限
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/d6a60d4802f0f.jpg" alt="barchart_ver_1.jpg" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Wrabc9/d6a60d4802f0f.jpg" alt="barchart_ver_1.jpg" style="zoom:50%;" />
 
 ```python
 # 拆包
@@ -161,7 +161,7 @@ ax.legend()
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/0bd5c482ead88.png" alt="1643753680977.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/PvoKse/0bd5c482ead88.png" alt="1643753680977.png" style="zoom:50%;" />
 
 ### 单一Bar
 
@@ -178,7 +178,7 @@ ax.set_ylabel("Height (cm)")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/871cd63460fb8.png" alt="1643754375776.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/MkA6u8/871cd63460fb8.png" alt="1643754375776.png" style="zoom: 33%;" />
 
 ## Hist
 
@@ -198,7 +198,7 @@ ax.legend()
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/785e76b3ee0b3.png" alt="1643754246860.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/5XdXhV/785e76b3ee0b3.png" alt="1643754246860.png" style="zoom:50%;" />
 
 ### Axvline
 
@@ -206,7 +206,7 @@ plt.show()
 ax1.axvline(x=20000, label='My Budget', linestyle='--')
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/f230198286867.png" alt="1643831840486.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/LQVxf2/f230198286867.png" alt="1643831840486.png" style="zoom:25%;" />
 
 ## Error bars
 
@@ -228,7 +228,7 @@ ax.set_ylabel("Temperature (Fahrenheit)")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/6cfedfb777556.png" alt="1643754547352.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Qarkij/6cfedfb777556.png" alt="1643754547352.png" style="zoom:50%;" />
 
 ## Boxplots
 
@@ -251,11 +251,11 @@ ax.set_ylabel("Height (cm)")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/2e078bccb0995.png" alt="1643754746217.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/6LYGCE/2e078bccb0995.png" alt="1643754746217.png" style="zoom:50%;" />
 
 ### 怎么看
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/00b41a95d2027.png" alt="1643754796450.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/l3y5Te/00b41a95d2027.png" alt="1643754796450.png" style="zoom:50%;" />
 
 ## Scatter
 
@@ -282,7 +282,7 @@ ax.set_ylabel("Relative temperature (Celsius)")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/f94952cabde8b.png" alt="1643754891184.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/OanbUQ/f94952cabde8b.png" alt="1643754891184.png" style="zoom:50%;" />
 
 ```python
 fig, ax = plt.subplots()
@@ -295,7 +295,7 @@ ax.set_ylabel("Relative temperature (Celsius)")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/7234aeef34d65.png" alt="1643754941441.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/rKkRIg/7234aeef34d65.png" alt="1643754941441.png" style="zoom:50%;" />
 
 ## 拆分画图
 
@@ -326,7 +326,7 @@ plt.axis("equal")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/24/d238a33f0ef75.png" alt="1656058450527.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/y3A5fZ/d238a33f0ef75.png" alt="1656058450527.png" style="zoom:50%;" />
 
 ## 其他简单用法
 
@@ -366,7 +366,7 @@ plt.plot(year, pop)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/65895801a0cec.png" alt="1643840788231.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/rKDRCg/65895801a0cec.png" alt="1643840788231.png" style="zoom:50%;" />
 
 ```python
 # Add an index column to attrition_pop
@@ -377,7 +377,7 @@ attrition_pop_id.plot(x= "index", y = "YearsAtCompany", kind = "scatter")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/58b0392702754.png" alt="1656516778762.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Q0o6Cj/58b0392702754.png" alt="1656516778762.png" style="zoom:33%;" />
 
 #### plt.scatter()
 
@@ -392,7 +392,7 @@ plt.scatter(x, y, c ="blue")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/61dc0efb10f5e.png" alt="1654688781662.png" style="zoom:67%;" />
+<img src="https://netdesk.orcsvc.com/f/1LpgFK/61dc0efb10f5e.png" alt="1654688781662.png" style="zoom:67%;" />
 
 #### plt.hist()
 
@@ -414,7 +414,7 @@ grant_licenses_ward.groupby('ward').agg('sum').plot(kind='bar', y='grant')
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/ffcf49eb75f2d.png" alt="1643835893685.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/3pXGu5/ffcf49eb75f2d.png" alt="1643835893685.png" style="zoom:50%;" />
 
 ## 其他用法
 
@@ -442,7 +442,7 @@ plt.imshow(im_sq, cmap='Greys', interpolation='nearest')
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/04/6dee11d78d434.png" alt="1643916359724.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/6L40HE/6dee11d78d434.png" alt="1643916359724.png" style="zoom:33%;" />
 
 ### 轴格式化
 
@@ -462,5 +462,5 @@ from matplotlib.ticker import PercentFormatter
 ax.yaxis.set_major_formatter(PercentFormatter(1.0))
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/01/6e6729a881dc3.png" alt="1654015519123.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/vv9KSq/6e6729a881dc3.png" alt="1654015519123.png" style="zoom: 67%;" />
 

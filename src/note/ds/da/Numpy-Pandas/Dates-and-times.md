@@ -132,7 +132,7 @@ print(andrew.strftime("%Y-%j"))
 
 ## Create datetime
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/854fc5bcee447.png" alt="1654357522817.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/m3kYs9/854fc5bcee447.png" alt="1654357522817.png" style="zoom: 25%;" />
 
 ```python
 # Import datetime
@@ -209,7 +209,7 @@ print(delta.days)
 - 两个 date 相减得到 timedate
 - 一个 date 和 一个 timedelta 操作得到 一个date
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/05/a5cb8d8345c9c.png" alt="1654358719261.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/0WY0F5/a5cb8d8345c9c.png" alt="1654358719261.png" style="zoom: 50%;" />
 
 ```python
 # Subtract datetimes to create a timedelta
@@ -235,7 +235,7 @@ print(duration.total_seconds())
 
 **目标是，数据时间点应当是统计地区的本地时间点。**
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/05/34aa161df9bcd.png" alt="1654410668877.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/MkjDF8/34aa161df9bcd.png" alt="1654410668877.png" style="zoom: 33%;" />
 
 ### 在创建datetime时指定 timezone
 
@@ -317,7 +317,7 @@ print(last)
 
 tz将考虑地区的夏令时。
 
-![1654412627354.png](https://pic.hanjiaming.com.cn/2022/06/05/a54b0edc0e31e.png)
+![1654412627354.png](https://netdesk.orcsvc.com/f/Kwm6tL/a54b0edc0e31e.png)
 
 ### timedelta
 
@@ -329,11 +329,11 @@ timedelta 计算不会考虑时区，直接对时间进行加减。这就是说�
 
 处理夏令时可能是处理日期和时间时最棘手的挑战之一。
 
-![1654414684122.png](https://pic.hanjiaming.com.cn/2022/06/05/96714c89870f8.png) 
+![1654414684122.png](https://netdesk.orcsvc.com/f/DaZOCe/96714c89870f8.png)
 
 tz将考虑地区的夏令时。它将自动识别时间点并设置正确的offset。
 
-![1654414990744.png](https://pic.hanjiaming.com.cn/2022/06/05/624ac9543c343.png)
+![1654414990744.png](https://netdesk.orcsvc.com/f/ER33hd/624ac9543c343.png)
 
 ### tz.datetime_ambiguous()
 
@@ -352,7 +352,7 @@ True
 
 上述datetime 使用夏令时，11-05恰好是夏令时回归正常时间的那一天，01:00会出现两次！！！
 
-![1654417041785.png](https://pic.hanjiaming.com.cn/2022/06/05/13f06f424cef7.png)
+![1654417041785.png](https://netdesk.orcsvc.com/f/R4Krs8/13f06f424cef7.png)
 
 对于出现两次 1:00 - 2:00 应该怎么区分呢？
 
@@ -456,7 +456,7 @@ Name: Duration, dtype: float64
 
 采样到2天：
 
-![1654421684726.png](https://pic.hanjiaming.com.cn/2022/06/05/7c045599fe54b.png)
+![1654421684726.png](https://netdesk.orcsvc.com/f/X52JHX/7c045599fe54b.png)
 
 ### Summarizing data
 
@@ -476,13 +476,13 @@ rides.groupby('Member type').first()
 
 带有timezone 和 不带有timezone 的pd.datetime元素类型是两种类型。
 
-![1654425906458.png](https://pic.hanjiaming.com.cn/2022/06/05/b604846d2fe95.png)
+![1654425906458.png](https://netdesk.orcsvc.com/f/LQPDc2/b604846d2fe95.png)
 
 有些元素无法添加带有夏令时的时区，由于时间重叠。
 
 这种情况只能用 NaT 来表示。
 
-![1654426111261.png](https://pic.hanjiaming.com.cn/2022/06/05/a37b8ef84cd60.png)
+![1654426111261.png](https://netdesk.orcsvc.com/f/ZP12s2/a37b8ef84cd60.png)
 
 转换时区用
 
@@ -495,5 +495,5 @@ rides['Start date'] = rides['Start date'].dt.tz_convert("Europe/London")
 
 ### dt.day_name()
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/05/9de5f837862a6.png" alt="1654426156604.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/p4DWun/9de5f837862a6.png" alt="1654426156604.png" style="zoom:33%;" />
 

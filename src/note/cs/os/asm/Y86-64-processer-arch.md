@@ -5,7 +5,7 @@ date: 2021-05-01
 
 # Y86-64处理器架构简介
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/d920281841490.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/G6QeCA/d920281841490.png" alt="image.png" title="image.png" />
 
 ## ISA(指令集架构)
 
@@ -27,7 +27,7 @@ All the above designs will be exemplified by the Y86-64 ISA --- a much simpler X
 
 ## Circuits
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/0f104d60eef46.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/42OQc2/0f104d60eef46.png" alt="image.png" title="image.png" />
 
 ### Digital circuits
 
@@ -35,7 +35,7 @@ All the above designs will be exemplified by the Y86-64 ISA --- a much simpler X
 
 Logic gates：Basic computing electronic circuit elements「Basic computing electronic circuit elements」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/8a4d6b082289a.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/3pKMc5/8a4d6b082289a.png" alt="image.png" title="image.png" />
 
 - Logic gates are always active, is some input to a gate changes, then within some small amount of time, the output will change accordingly「逻辑门始终处于活动状态，某个门的某些输入会发生变化，然后在短时间内，输出将相应地发生变化」
 - Can be represented by hardware control language (HCL)「可以用硬件控制语言（HCL）表示」
@@ -43,31 +43,31 @@ Logic gates：Basic computing electronic circuit elements「Basic computing elec
 
 ### Combinational circuits
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/3ab61659e1f5e.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/3pKAC5/3ab61659e1f5e.png" alt="image.png" title="image.png" />
 
 #### Example 1
 
 if a and b are equal, output 1; otherwise, output 0With **and**, **or** and **not** gates
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/1bff53702ecca.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/25lXCv/1bff53702ecca.png" alt="image.png" title="image.png" />
 
 #### Example 2
 
 selecting a or b according to s
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/115ad8e71b87a.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Or56fQ/115ad8e71b87a.png" alt="image.png" title="image.png" />
 
 #### Example 3
 
 From a single bit to multiple bits (word)
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/054f5031eabdd.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/bVqDSM/054f5031eabdd.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/4fc3c0a80d5b1.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/1L4QtK/4fc3c0a80d5b1.png" alt="image.png" title="image.png" />
 
 #### Arithmetic Logic Unit (ALU)
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/28c1935a003ca.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/LQGrF2/28c1935a003ca.png" alt="image.png" title="image.png" />
 
 - Using and, or, not gates to implement arithmetic logic「Using and, or, not gates to implement arithmetic logic」
 - Compute the result, and set the conditional codes「Compute the result, and set the conditional codes」
@@ -81,7 +81,7 @@ Storage elements are special electronic circuits that can retain data values「�
 - Storage elements can be addressed
 - Storage elements rely on clocks to retain data values「存储元件依靠时钟来保留数据值」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/0957074806422.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/x8aOc3/0957074806422.png" alt="image.png" title="image.png" />
 
 
 
@@ -89,7 +89,7 @@ Storage elements are special electronic circuits that can retain data values「�
 
 ### state
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/2bd639cb02fff.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/y345iZ/2bd639cb02fff.png" alt="image.png" title="image.png" />
 
 - 15 64-bit general purpose registers
 - Conditional codes
@@ -107,15 +107,15 @@ Storage elements are special electronic circuits that can retain data values「�
 
 用文字说明可能比较抽象，下面用图像加以说明。比如数字*0x12345678*在两种不同字节序*CPU*中的存储顺序如下所示：
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/953f738b410d7.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/X5A9UX/953f738b410d7.png" alt="image.png" title="image.png" />
 
 从上面两图可以看出，采用*big endian*方式存储数据是符合我们人类的思维习惯的。
 
 ### Instruction set
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/aeb49c2d6fe40.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/YGDgC2/aeb49c2d6fe40.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/56d0691aa2d6f.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/JwQyH8/56d0691aa2d6f.png" alt="image.png" title="image.png" />
 
 ### Encoding registers
 
@@ -123,13 +123,13 @@ Storage elements are special electronic circuits that can retain data values「�
 
 Each register is uniquely specified by a 4-bit ID「每个寄存器由一个4位ID唯一地指定」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/a49025d5218d5.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/JwQpF8/a49025d5218d5.png" alt="image.png" title="image.png" />
 
 ID 15 (0xF) indicates “no register”「ID 15（0x F）表示“无寄存器”」
 
 ###  Instruction examples
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/91a28ca36c197.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/wvL0f5/91a28ca36c197.png" alt="image.png" title="image.png" />
 
 **Uniqueness (requirement on designing an ISA)「唯一性（设计ISA的要求）」**
 
@@ -148,7 +148,7 @@ ID 15 (0xF) indicates “no register”「ID 15（0x F）表示“无寄存器�
   - That can perform the functions specified by the machine instructions
     - By operating the computation and storage elements of the CPU
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/d8d400734d87c.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/8JmxC5/d8d400734d87c.png" alt="image.png" title="image.png" />
 
 - As there are so many instructions, it will be not wise to design a specific hardware circuit for each instruction「由于指令太多，为每个指令设计特定的硬件电路是不明智的。」
 - The execution of instructions is standardized, i.e., all instructions follow the same steps, an in each step share the same hardware「指令的执行是标准化的，即所有指令都遵循相同的步骤，并且每一步都共享相同的硬件」
@@ -162,35 +162,35 @@ ID 15 (0xF) indicates “no register”「ID 15（0x F）表示“无寄存器�
 | Write back       | Write results to registers「将结果写入寄存器」               |
 | PC update        | Update PC, get ready for the next instruction「更新PC，准备下一条指令」 |
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/7da880ef9f9e4.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/AMWWuy/7da880ef9f9e4.png" alt="image.png" title="image.png" />
 
 #### Computed values
 
 Stored in CPU on hardware lines/pins
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/fcd00f369cbe0.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/GvXLCA/fcd00f369cbe0.png" alt="image.png" title="image.png" />
 
 ####  Run the machine codes
 
 Use an example program to show how the CPU run a program in the machine code form「使用示例程序来显示CPU如何以机器代码形式运行程序」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/f8e7c1dcc5d1f.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/orOrfg/f8e7c1dcc5d1f.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/cd2a72a3bce61.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/95PYum/cd2a72a3bce61.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/2adaee0b7cf78.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/OaZQsQ/2adaee0b7cf78.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/f098f6890120f.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/PvGdTe/f098f6890120f.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/c01a577b8fe0c.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/0pKah5/c01a577b8fe0c.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/16/17e1736f22460.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/gkbMFX/17e1736f22460.png" alt="image.png" title="image.png" />
 
 
 
 #### Pipeline
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/04f3b2593ea6d.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/0WeGF5/04f3b2593ea6d.png" alt="image.png" title="image.png" />
 
 - The whole production process is composed of multiple stages「整个生产过程由多个阶段组成」
 - Worker on each stage do only ONE thing「每个阶段的工人只能做一件事情」
@@ -211,11 +211,11 @@ Executing an instruction consumes 300ps (1ps = 10-12s)
 How many instructions can we execute in 1s? (throughput, IPS)  
 1/(300 * 10-12) = 3.33 X 109 instructions（**在无同时执行的情况下**）
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/2deff4a398e41.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/wvLdI5/2deff4a398e41.png" alt="image.png" title="image.png" />
 
 Decompose the execution of each instruction into 3 stages, each stage takes 100ps to execute「将每个指令的执行分解为3个阶段，每个阶段需要100ps的执行时间」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/315916204a29a.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/eDkXFq/315916204a29a.png" alt="image.png" title="image.png" />
 
 How many instructions can we execute in 1s? (throughput, IPS)「我们可以在一秒内执行多少条指令？ （吞吐量，IPS）」
 
@@ -229,22 +229,22 @@ How many instructions can we execute in 1s? (throughput, IPS)「我们可以在�
 - **Once the result of stage-x is written, the next stage can start execution with the result as its input「写入stage-x的结果后，下一个stage可以开始执行，并将结果作为输入」**
 - Accessing registers introduces extra time delay; the end-to-end latency of finishing a single instruction is increased「访问寄存器会带来额外的时间延迟；完成一条指令的端到端延迟增加了」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/54c468a9e7c77.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/WrenH9/54c468a9e7c77.png" alt="image.png" title="image.png" />
 
 ##### Redesign the CPU with pipeline
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/a6c6c55580000.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/k83aUb/a6c6c55580000.png" alt="image.png" title="image.png" />
 
 ##### Bad pipeline design
 
 Nonuniform partitioning「分区不均匀」  
 **Latency is determined by the longest stage「延迟由最长的阶段决定」**
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/6780b3fb4bee8.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/LQGYu2/6780b3fb4bee8.png" alt="image.png" title="image.png" />
 
 ###### Make the pipeline stages uniform
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/906da6b8887b9.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/doWACX/906da6b8887b9.png" alt="image.png" title="image.png" />
 
 - More stages: deep pipeline
 - More stage registers -> more time overhead
@@ -257,11 +257,11 @@ Data hazard in pipelines「管道中的数据危害」
 - Data dependencies: the results computed by one instruction are used as the data for a following instruction「数据依存关系：一条指令计算的结果用作下一条指令的数据」
 - Data hazard: data dependencies have the potential to cause an erroneous computation by the pipeline「数据危害：数据依赖性可能会导致管道计算错误」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/db1bcd3177182.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/m3Y4h9/db1bcd3177182.png" alt="image.png" title="image.png" />
 
 ###### Solution: Stalling
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/6cbdf7ace4050.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/y34VCZ/6cbdf7ace4050.png" alt="image.png" title="image.png" />
 
 ##### Other Problems
 
@@ -279,21 +279,21 @@ Pipelines are a very important feature to the performance of contemporary powerf
 
 ### Y86-64 instruction set
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/13/dfabed4fb112d.png" alt="1620889874072.png" title="1620889874072.png" />
+<img src="https://netdesk.orcsvc.com/f/eD1Kuq/dfabed4fb112d.png" alt="1620889874072.png" title="1620889874072.png" />
 
 ### 补充一些指令的stage
 
 #### mrmovq
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/13/64dbe34aa455e.png" alt="1620890018309.png" title="1620890018309.png" />
+<img src="https://netdesk.orcsvc.com/f/1LjjuK/64dbe34aa455e.png" alt="1620890018309.png" title="1620890018309.png" />
 
 #### jg
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/13/40ea4c2492224.png" alt="1620890069997.png" title="1620890069997.png" />
+<img src="https://netdesk.orcsvc.com/f/Wr9Xc9/40ea4c2492224.png" alt="1620890069997.png" title="1620890069997.png" />
 
 #### cmovle
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/13/5192d957a02b8.png" alt="1620890163626.png" title="1620890163626.png" />
+<img src="https://netdesk.orcsvc.com/f/25bxUv/5192d957a02b8.png" alt="1620890163626.png" title="1620890163626.png" />
 
 ### x86/x64 指令长度
 

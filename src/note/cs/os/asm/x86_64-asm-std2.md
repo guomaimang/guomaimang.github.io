@@ -16,7 +16,7 @@ Information about currently executing program「有关当前执行程序的信�
 
 这些信息放在寄存器内
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/fb773836663b0.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/gknxfX/fb773836663b0.png" alt="image.png" title="image.png" />
 
 ## Condition codes
 
@@ -97,7 +97,7 @@ addressable byte registers or memory「可寻址字节寄存器或存储器」
 - Does not alter remaining 3 bytes
 - Typically use movzbl to finish job
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/e6653cab0b018.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/nwJAHj/e6653cab0b018.png" alt="image.png" title="image.png" />
 
 ## Conditional branches
 
@@ -130,22 +130,22 @@ Jump instructions – change the control flow
 
 Implementing conditional branches with jX
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/7c97bcd7db07b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/vvnYhq/7c97bcd7db07b.png" alt="image.png" title="image.png" />
 
 #### goto
 
 - We use the C goto statement to illustrate the control flow of jump in a more readable way
 - Try to avoid using goto when you are doing C programming
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/188662bcd7dcc.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/l3GbFe/188662bcd7dcc.png" alt="image.png" title="image.png" />
 
 ##### General form of expressing if-then-else
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/0ed20c682dfba.png" alt="image.png" title="image.png" width = "240px"/>
+<img src="https://netdesk.orcsvc.com/f/Wrelc9/0ed20c682dfba.png" alt="image.png" title="image.png" width = "240px"/>
 
 ## Conditional moves
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/eb331ce2afde3.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/jPxrib/eb331ce2afde3.png" alt="image.png" title="image.png" />
 
 Why using conditional moves?
 
@@ -157,7 +157,7 @@ As a result, executing both branches will be faster then “test and jump”
 
 ### Conditional branches by conditional moves
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/8687f4ff69e98.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/5Xv5TV/8687f4ff69e98.png" alt="image.png" title="image.png" />
 
 
 
@@ -165,23 +165,23 @@ As a result, executing both branches will be faster then “test and jump”
 
 ### do-while loop
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/39f7c5eeb5632.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/1L4XuK/39f7c5eeb5632.png" alt="image.png" title="image.png" />
 
 ### while loop
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/9d7a8d8c1e5e5.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/VpkjC2/9d7a8d8c1e5e5.png" alt="image.png" title="image.png" />
 
 ### for loop
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/f8e82c5b5bd6d.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/a2OWFq/f8e82c5b5bd6d.png" alt="image.png" title="image.png" />
 
 ### switch statement
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/8ce3ba0b8a808.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/ZPbeT2/8ce3ba0b8a808.png" alt="image.png" title="image.png" />
 
 *8 的原因是 标签 是 64bit 长 的地址，而且标签是相邻的。
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/06/0314eac9cd251.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/KwGQsL/0314eac9cd251.png" alt="image.png" title="image.png" />
 
 ## 引用
 

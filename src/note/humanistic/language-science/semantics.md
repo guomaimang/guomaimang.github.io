@@ -39,7 +39,7 @@ headerDepth: 2
 - 认为语言的每个词语或语句都有它固定的指涉对象
 - 比如，桌子、椅子、书本、铅笔、苹果、太阳。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/05/09b50fef1319b.png" alt="1656996530148.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/y3VVuZ/09b50fef1319b.png" alt="1656996530148.png" style="zoom:25%;" />
 
 #### 有些词没有指代对象
 
@@ -69,7 +69,7 @@ headerDepth: 2
 
 比如： Joe Biden vs. the US President
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/05/fdf1fe8e1bcb3.png" alt="1656960282702.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Jw4ps8/fdf1fe8e1bcb3.png" alt="1656960282702.png" style="zoom:33%;" />
 
 ### 组合说
 
@@ -117,7 +117,7 @@ boy:		[+ human]  [- female]  [- adult]
 - 语法的关系
 - 语义上的关系
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/05/7f787e1bba1dd.png" alt="CleanShot 2022-07-05 at 13.02.36@2x.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/wv30U5/7f787e1bba1dd.png" alt="CleanShot 2022-07-05 at 13.02.36@2x.png" style="zoom:25%;" />
 
 语义关系/词汇关系有 **同义、反义、下位、上位、借代／换喻、一词多义、同音异义、同形同音异义、同形异音。**
 
@@ -130,13 +130,13 @@ boy:		[+ human]  [- female]  [- adult]
 
 但很多同义词在使用上往往有所不同：
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/05/30abc445e9e9f.png" alt="1656961806053.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/vvZYfq/30abc445e9e9f.png" alt="1656961806053.png" style="zoom:25%;" />
 
 同义词是泛称：它们的意义和用法不一定完全相同。
 
 英语中的同义词往往来自于词汇的借用。借用的词通常属于更高（更正式）的语域(特定的社交场合或专业领域)。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/05/1bbe51bd51424.png" alt="1656962227253.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/ZPVef2/1bbe51bd51424.png" alt="1656962227253.png" style="zoom: 25%;" />
 
 
 
@@ -153,9 +153,9 @@ boy:		[+ human]  [- female]  [- adult]
 - English examples: light / heavy；high / low
 - 中文例子：远/ 近；富有/ 贫穷
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/05/35c856ecb32ed.png" alt="1656997448979.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/eD9Atq/35c856ecb32ed.png" alt="1656997448979.png" style="zoom:25%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/05/ef24211ca49d5.png" alt="1656997472760.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/VpejF2/ef24211ca49d5.png" alt="1656997472760.png" style="zoom: 25%;" />
 
 ### 下位词 和 上位词
 
@@ -260,4 +260,4 @@ bow
 
 等等。
 
-![1656997608205.png](https://pic.hanjiaming.com.cn/2022/07/05/8ec3ac799430e.png)
+![1656997608205.png](https://netdesk.orcsvc.com/f/YGwgT2/8ec3ac799430e.png)

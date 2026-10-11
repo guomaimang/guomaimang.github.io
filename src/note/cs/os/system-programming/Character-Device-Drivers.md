@@ -69,17 +69,17 @@ static char msg[] = "Hello World!!!\n";
 static int major;
 ```
 
-![1666717092130.png](https://pic.hanjiaming.com.cn/2022/10/26/39f1de5668d9b.png)
+![1666717092130.png](https://netdesk.orcsvc.com/f/gk0LIX/39f1de5668d9b.png)
 
-![CleanShot 2022-10-26 at 00.58.57@2x.png](https://pic.hanjiaming.com.cn/2022/10/26/8096370ec6601.png)
+![CleanShot 2022-10-26 at 00.58.57@2x.png](https://netdesk.orcsvc.com/f/95Mbsm/8096370ec6601.png)
 
-![1666719437623.png](https://pic.hanjiaming.com.cn/2022/10/26/639dc39a5d8a1.png)
+![1666719437623.png](https://netdesk.orcsvc.com/f/G6y8tA/639dc39a5d8a1.png)
 
 ## Kernel/User Memory Space
 
 在Unix中，内核虚拟内存地址空间和用户虚拟内存地址空间是分开的。只有内核才能访问的资源也称为“内核域”「kernel land」，而用户可以访问的资源也称为“用户域”「user land」。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/26/df06748f872cb.png" alt="1666717491269.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/5XM1fV/df06748f872cb.png" alt="1666717491269.png" style="zoom: 33%;" />
 
 ## Register/Unregister
 

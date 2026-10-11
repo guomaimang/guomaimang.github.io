@@ -29,17 +29,17 @@ category:
 - 将一张大表按列切分成两张以上的小表分别存储。
 - 优化SQL查询，通过主键关联完成数据查询。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/f41b6228e3d6c.png" alt="1734518643080.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/vPaIq/f41b6228e3d6c.png" alt="1734518643080.png" style="zoom: 33%;" />
 
 ## MySQL InnoDB 存储引擎机制
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/9d08a366b4ed6.png" alt="1734518695903.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/wqlh5/9d08a366b4ed6.png" alt="1734518695903.png" style="zoom: 50%;" />
 
 - **数据存储结构**：每一行数据称为“行”，管理数据的基本单位称为“页”，每页默认大小为16K。
 - **压缩页**：对页的数据进行压缩，存储空间比逻辑占用更小，但带来压缩和解压缩的效率问题。
 - **设计优化**：尽可能多存储行数据，减少跨页检索，提高数据检索效率。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/54c356dc211f8.png" alt="1734518952266.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/bdxUM/54c356dc211f8.png" alt="1734518952266.png" style="zoom: 25%;" />
 
 ## 垂直分表的实际案例
 

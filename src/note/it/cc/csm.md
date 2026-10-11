@@ -8,28 +8,28 @@ headerDepth: 1
 
 # Cloud Service Model
 
-![1715244572306.png](https://pic.hanjiaming.com.cn/2024/05/09/aa4b0271a4762.png)
+![1715244572306.png](https://netdesk.orcsvc.com/f/6m5hE/aa4b0271a4762.png)
 
 ## 云服务模式
 
-![1709205332804.png](https://pic.hanjiaming.com.cn/2024/02/29/2e4218444fc64.png)
+![1709205332804.png](https://netdesk.orcsvc.com/f/J1yS8/2e4218444fc64.png)
 
 - Infrastructure as a service (laas): A form of cloud computing that delivers <u>fundamental compute, network, and storage resources to consumers on-demand</u>, over the internet, and on a **pay-as-you-go basis**.
 - Platform as a service (paas): Provides customers **a development and hosting platform** for <u>deploying customer-created applications</u>.
 - Software as a service (saas): A model of software deployment where an **application is hosted (in a cloud center) as a service** provided to customers across the internet.
 
-![1709206766053.png](https://pic.hanjiaming.com.cn/2024/02/29/9834d66a78b92.png)
+![1709206766053.png](https://netdesk.orcsvc.com/f/YogS2/9834d66a78b92.png)
 
-![1709206983587.png](https://pic.hanjiaming.com.cn/2024/02/29/ecc0128a8abc5.png)
+![1709206983587.png](https://netdesk.orcsvc.com/f/vVYsq/ecc0128a8abc5.png)
 
-![1709207014300.png](https://pic.hanjiaming.com.cn/2024/02/29/de0c3a0836956.png)
+![1709207014300.png](https://netdesk.orcsvc.com/f/ynVUZ/de0c3a0836956.png)
 
 - laas：亚马逊弹性计算云（ec2）、谷歌计算引擎（gce）、微软azure laas、阿里巴巴云弹性计算服务（ecs）、.NET、微软云计算服务（laas）。
 - Caas（laas 的另一种形式）：亚马逊弹性容器服务（ecs）、谷歌 kubernetes 引擎（gke）、docker 云、azure kubernetes 服务（aks）、腾讯 kubernetes 引擎
 - Paas：谷歌应用程序引擎（gae），aws 弹性beanstalk，微软azure，..
 - Faas（“轻量级 paas”）：aws lambda、google 云函数、azure 函数、ibm 云函数。
 
-<img src="https://pic.hanjiaming.com.cn/2024/02/29/3d0eb441ce1dc.png" alt="1709207174763.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/VjwH2/3d0eb441ce1dc.png" alt="1709207174763.png" style="zoom:33%;" />
 
 ## IAAS
 
@@ -37,7 +37,7 @@ headerDepth: 1
 
 虚拟化资源：虚拟CPU（vCPU）、虚拟网络接口（vNIC）、虚拟磁盘等。
 
-![1709370535428.png](https://pic.hanjiaming.com.cn/2024/03/02/15885d5a87439.png)
+![1709370535428.png](https://netdesk.orcsvc.com/f/aVRiq/15885d5a87439.png)
 
 - Virtualized Network Interface (vNIC)
   - 看起来很像任何物理以太网 NIC。
@@ -50,15 +50,15 @@ VIF 表示虚拟机上的虚拟网卡
 
 :::
 
-![1709371167447.png](https://pic.hanjiaming.com.cn/2024/03/02/14cb7f7bb3b97.png)
+![1709371167447.png](https://netdesk.orcsvc.com/f/4e3C2/14cb7f7bb3b97.png)
 
-<img src="https://pic.hanjiaming.com.cn/2024/03/02/c1b37bb7524f7.png" alt="1709371354802.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/bJxSM/c1b37bb7524f7.png" alt="1709371354802.png" style="zoom: 50%;" />
 
-![CleanShot 2024-03-02 at 17.39.29@2x.png](https://pic.hanjiaming.com.cn/2024/03/02/6f4baab65b597.png)
+![CleanShot 2024-03-02 at 17.39.29@2x.png](https://netdesk.orcsvc.com/f/kgdib/6f4baab65b597.png)
 
 ::: note IAAS-EC2
 
-![1709385334702.png](https://pic.hanjiaming.com.cn/2024/03/02/0adb3f6a10d42.png)
+![1709385334702.png](https://netdesk.orcsvc.com/f/xE0F3/0adb3f6a10d42.png)
 
 - An AWS EC2 Instance is nothing but a virtual machine in the AWS cloud「An AWS EC2 Instance is nothing but a virtual machine in the AWS cloud」
 - Amazon Machine Image (AMI) = preconfigured server templates, which 提供启动 EC2 实例所需的信息
@@ -72,7 +72,7 @@ Choose an Amazon Machine Image (AMI):
 - Launch permissions:public/explicit/implicit
 - Storage for the Root Device
 
-![1709385791175.png](https://pic.hanjiaming.com.cn/2024/03/02/3bbb3b3ec7159.png)
+![1709385791175.png](https://netdesk.orcsvc.com/f/A6GZUy/3bbb3b3ec7159.png)
 
 :::
 
@@ -82,7 +82,7 @@ Choose an Amazon Machine Image (AMI):
 
 容器位于物理服务器及其主机操作系统（通常为 Linux 或 Windows）之上。前言：谷歌使用容器运行几乎所有谷歌应用程序（如 Gmail、YouTube）
 
-![1709385959549.png](https://pic.hanjiaming.com.cn/2024/03/02/91279318df7e3.png)
+![1709385959549.png](https://netdesk.orcsvc.com/f/p8M1Hn/91279318df7e3.png)
 
 A “container” = a virtualized server
 
@@ -92,9 +92,9 @@ CaaS typically refers to a complete container environment「完整的容器环�
 
 容器协调器：实现容器生命周期管理自动化（创建/终止、资源分配、联网、自动扩展、故障恢复......）。
 
-![1709386324568.png](https://pic.hanjiaming.com.cn/2024/03/02/af51ab620912e.png)
+![1709386324568.png](https://netdesk.orcsvc.com/f/DGkce/af51ab620912e.png)
 
-![1713640582129.png](https://pic.hanjiaming.com.cn/2024/04/21/ece75faff1cdb.png)
+![1713640582129.png](https://netdesk.orcsvc.com/f/100jtK/ece75faff1cdb.png)
 
 Tasks done by Container Orchestration
 
@@ -107,7 +107,7 @@ Tasks done by Container Orchestration
 - Health monitoring of containers and hosts
 - Configuration of an application in relation to the containers running it
 
-<img src="https://pic.hanjiaming.com.cn/2024/03/02/dfa935fcc8b6d.png" alt="1709387020971.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/8Vvt5/dfa935fcc8b6d.png" alt="1709387020971.png" style="zoom:50%;" />
 
 ::: tip AWS EC2 vs. AWS Fargate
 
@@ -143,7 +143,7 @@ You simply upload your application,and AEB automatically handles the deployment 
 
 :::
 
-![1709387746233.png](https://pic.hanjiaming.com.cn/2024/03/02/278e19b154b9b.png)
+![1709387746233.png](https://netdesk.orcsvc.com/f/EAvTd/278e19b154b9b.png)
 
 ## FAAS
 
@@ -172,7 +172,7 @@ Using AWS Lambda with Amazon API Gateway
 - Amazon API 网关用作 HTTP 服务器，用于将请求重定向到 Lambda 函数。
 - 您可以创建 REST 和 WebSocket API，充当应用程序访问 Lambda 函数的“前门”
 
-![1714927856528.png](https://pic.hanjiaming.com.cn/2024/05/06/a1b909800805e.png)
+![1714927856528.png](https://netdesk.orcsvc.com/f/2Mliv/a1b909800805e.png)
 
 :::
 
@@ -204,23 +204,23 @@ Examples: Google Drive,YouTube,Gmail, Microsoft Office 365,DropBox,Photoshop Onl
 
 ::: details Example
 
-![1714978181593.png](https://pic.hanjiaming.com.cn/2024/05/06/59718b411e1e4.png)
+![1714978181593.png](https://netdesk.orcsvc.com/f/V69c2/59718b411e1e4.png)
 
-![1714978195138.png](https://pic.hanjiaming.com.cn/2024/05/06/02c114932b540.png)
+![1714978195138.png](https://netdesk.orcsvc.com/f/paGhn/02c114932b540.png)
 
-![1714978222491.png](https://pic.hanjiaming.com.cn/2024/05/06/e2bd9e9db60b5.png)
+![1714978222491.png](https://netdesk.orcsvc.com/f/323H5/e2bd9e9db60b5.png)
 
-![1714978313652.png](https://pic.hanjiaming.com.cn/2024/05/06/0bcfd5156c47a.png)
+![1714978313652.png](https://netdesk.orcsvc.com/f/kALTb/0bcfd5156c47a.png)
 
-![1714978355412.png](https://pic.hanjiaming.com.cn/2024/05/06/93510dbc6b47a.png)
+![1714978355412.png](https://netdesk.orcsvc.com/f/ZG3S2/93510dbc6b47a.png)
 
-![1714978368127.png](https://pic.hanjiaming.com.cn/2024/05/06/5c30c96e1d501.png)
+![1714978368127.png](https://netdesk.orcsvc.com/f/8YYh5/5c30c96e1d501.png)
 
 :::
 
 ::: note Cloud Gaming
 
-![1714978261116.png](https://pic.hanjiaming.com.cn/2024/05/06/298378769c6e2.png)
+![1714978261116.png](https://netdesk.orcsvc.com/f/djZsX/298378769c6e2.png)
 
 :::
 
@@ -228,11 +228,11 @@ Examples: Google Drive,YouTube,Gmail, Microsoft Office 365,DropBox,Photoshop Onl
 
 Artificial Intelligence as a Service
 
-![1714978679832.png](https://pic.hanjiaming.com.cn/2024/05/06/b3120ac608ddf.png)
+![1714978679832.png](https://netdesk.orcsvc.com/f/PKghe/b3120ac608ddf.png)
 
-![1714978703649.png](https://pic.hanjiaming.com.cn/2024/05/06/a1ece7a5d5fd2.png)
+![1714978703649.png](https://netdesk.orcsvc.com/f/WyDi9/a1ece7a5d5fd2.png)
 
-![1714978856109.png](https://pic.hanjiaming.com.cn/2024/05/06/665f8d0b50d36.png)
+![1714978856109.png](https://netdesk.orcsvc.com/f/ao3sq/665f8d0b50d36.png)
 
 ## IoT Cloud
 
@@ -247,6 +247,6 @@ Blockchain as a Service
 
 ## Other Applications
 
-![1714979031166.png](https://pic.hanjiaming.com.cn/2024/05/06/39532fec2d2b2.png)
+![1714979031166.png](https://netdesk.orcsvc.com/f/lQlHe/39532fec2d2b2.png)
 
-![1714979045172.png](https://pic.hanjiaming.com.cn/2024/05/06/82237a09a27b9.png)
+![1714979045172.png](https://netdesk.orcsvc.com/f/jGDTb/82237a09a27b9.png)

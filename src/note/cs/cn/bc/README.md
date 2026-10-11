@@ -53,7 +53,7 @@ Decentralization: No agreed-upon definition (varies across fields)
 
 ::: info Distributing Trust & Enforcing Neutrality
 
-![1728107271865.png](https://pic.hanjiaming.com.cn/2024/10/05/263a7f93329cd.png)
+![1728107271865.png](https://netdesk.orcsvc.com/f/Z1As2/263a7f93329cd.png)
 
 Centralized Bank/Operator
 
@@ -81,7 +81,7 @@ Innovation of OG (Original) App: Bitcoin
 
 ::: note An Ideal Electronic-Cash System
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/05/04a4bccfcb158.png" alt="1728106183938.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ORPSQ/04a4bccfcb158.png" alt="1728106183938.png" style="zoom:33%;" />
 
 :::
 
@@ -206,7 +206,7 @@ PKI 可以确保消息的真实性和不可篡改性，但它不能保证消息�
 - 广播协议通过多轮通信，确保所有诚实节点在一定轮次后都能接收到相同的消息，并达成一致。
 - 这对于系统的稳定性和可靠性至关重要。
 
-![1728111454901.png](https://pic.hanjiaming.com.cn/2024/10/05/da7c0b6f667ec.png)
+![1728111454901.png](https://netdesk.orcsvc.com/f/wYMs5/da7c0b6f667ec.png)
 
 :::
 
@@ -286,7 +286,7 @@ CAP 定理是由计算机科学家 Eric Brewer 提出的，指出
 
 例如，**在网络分区的情况下，系统必须在一致性和可用性之间做出权衡。**
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/05/6eb4b8cadc15b.png" alt="1728117452677.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/6l0CE/6eb4b8cadc15b.png" alt="1728117452677.png" style="zoom:50%;" />
 
 - 一致性（Consistency）：所有节点在同一时间看到相同的数据。
   - 一致性指的是在分布式系统中的所有节点在同一时间看到的数据是相同的。
@@ -447,6 +447,6 @@ need to “pay” to join, defend against sybil (“admission control”)
   - Cryptographic tech. needed to ensure the security of the app.
 - Secure coding needed to ensure the implementation is secure
 
-![1728124433771.png](https://pic.hanjiaming.com.cn/2024/10/05/20bcd61a5a65b.png)
+![1728124433771.png](https://netdesk.orcsvc.com/f/GYqhA/20bcd61a5a65b.png)
 
-![1728124456862.png](https://pic.hanjiaming.com.cn/2024/10/05/968eba7e42daf.png)
+![1728124456862.png](https://netdesk.orcsvc.com/f/0rkS5/968eba7e42daf.png)

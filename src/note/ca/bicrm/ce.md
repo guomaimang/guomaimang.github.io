@@ -14,7 +14,7 @@ headerDepth: 1
 
 ## Principle of CX Design
 
-![1702054769554.png](https://pic.hanjiaming.com.cn/2023/12/09/a4cf677147672.png)
+![1702054769554.png](https://netdesk.orcsvc.com/f/0GaC5/a4cf677147672.png)
 
 **CX Design Process**
 

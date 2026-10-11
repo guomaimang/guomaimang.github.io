@@ -35,7 +35,7 @@ An HTTP request has the following components
 
 Syntax of a URL:
 
-![1733684960284.png](https://pic.hanjiaming.com.cn/2024/12/09/6c05a72b6be0e.png)
+![1733684960284.png](https://netdesk.orcsvc.com/f/EKvHd/6c05a72b6be0e.png)
 
 ### HTTP Request Methods
 
@@ -152,7 +152,7 @@ Add a network security configuration file for POST method on http:
 
 A simple HTTP Server’s Pseudo-code
 
-![1733687113563.png](https://pic.hanjiaming.com.cn/2024/12/09/7bb495e4b7405.png)
+![1733687113563.png](https://netdesk.orcsvc.com/f/lDQSe/7bb495e4b7405.png)
 
 之前的简单服务器是一个单线程服务器的例子。
 
@@ -181,7 +181,7 @@ Other approaches
 
 HTTP服务器将向应用服务器发送请求，以执行计算或检索动态内容。
 
-![1733770747642.png](https://pic.hanjiaming.com.cn/2024/12/10/11fc84c10e924.png)
+![1733770747642.png](https://netdesk.orcsvc.com/f/vy3Cq/11fc84c10e924.png)
 
 ### Common Gateway Interface (CGI)
 
@@ -194,7 +194,7 @@ HTTP服务器将向应用服务器发送请求，以执行计算或检索动态�
 - 访客计数器（显示页面的访客总数）
 - 博客（获取最新博客文章）
 
-![1733770917563.png](https://pic.hanjiaming.com.cn/2024/12/10/862ae9d05b9ac.png)
+![1733770917563.png](https://netdesk.orcsvc.com/f/02Js5/862ae9d05b9ac.png)
 
 Limitations of CGI
 
@@ -208,7 +208,7 @@ Limitations of CGI
 - 为了减少启动和终止程序的开销，程序应托管在服务器应用程序中，保持一个持久进程始终运行并准备好处理请求。
 - 一些例子包括Apache的mod_php或mod_python，FastCGI，SCGI，Python的WSGI，Python的ASGI
 
-![1733771065579.png](https://pic.hanjiaming.com.cn/2024/12/10/b0bbb583ec4af.png)
+![1733771065579.png](https://netdesk.orcsvc.com/f/OEKSQ/b0bbb583ec4af.png)
 
 ### Web Server Gateway Interface (WSGI)
 
@@ -235,7 +235,7 @@ Why WSGI?
 
 WSGI/ASGI
 
-![预览 2024-12-10 03.13.19.png](https://pic.hanjiaming.com.cn/2024/12/10/39241dd21b360.png)
+![预览 2024-12-10 03.13.19.png](https://netdesk.orcsvc.com/f/L88U2/39241dd21b360.png)
 
 ### Servers vs Applications
 
@@ -257,7 +257,7 @@ WSGI/ASGI
 - 应用程序处理请求
 - 应用程序使用服务器提供的回调函数将响应返回给服务器
 
-![1733773228134.png](https://pic.hanjiaming.com.cn/2024/12/10/fd9bdfc3219c9.png)
+![1733773228134.png](https://netdesk.orcsvc.com/f/16KuK/fd9bdfc3219c9.png)
 
 ::: tip Python Application Server
 
@@ -291,7 +291,7 @@ REST Architectural Style
 
 ## Uvicorn
 
-![1733774195605.png](https://pic.hanjiaming.com.cn/2024/12/10/26f85f3bea1ad.png)
+![1733774195605.png](https://netdesk.orcsvc.com/f/pd1Fn/26f85f3bea1ad.png)
 
 - Uvicorn 是一个适用于 Unix/Linux、Mac 和 Windows 系统的 Python ASGI HTTP 服务器。
 - 它充当 ASGI 应用程序的容器。
@@ -307,7 +307,7 @@ REST Architectural Style
 fastapi run --workers 4 main.py
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/10/39c9b731939ae.png" alt="1733774322007.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/ea8fq/39c9b731939ae.png" alt="1733774322007.png" style="zoom: 50%;" />
 
 ### Uvicorn Workers
 
@@ -338,7 +338,7 @@ Using Nginx as a Reverse Proxy and Load Balancer
 
 将 Nginx 配置为反向代理负载均衡器很简单。不过，在此之前我们先介绍一下“上游”「**upstream**」这个词。
 
-![1733774749530.png](https://pic.hanjiaming.com.cn/2024/12/10/92b70f09abc5b.png)
+![1733774749530.png](https://netdesk.orcsvc.com/f/WW6h9/92b70f09abc5b.png)
 
 注意：当没有指定负载均衡方法时，将使用round-robin方法
 
@@ -358,7 +358,7 @@ http {
 }
 ```
 
-![1733774840593.png](https://pic.hanjiaming.com.cn/2024/12/10/2ddfa3299e99e.png)
+![1733774840593.png](https://netdesk.orcsvc.com/f/ZqPs2/2ddfa3299e99e.png)
 
 ### Persistence (Stickiness)
 

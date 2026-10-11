@@ -57,19 +57,19 @@ index: 0
 
 现在，我们用自上而下的理解方法理解计算机结构
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120122000689.png)注明：CPU速度快，内存速度慢，I/O速度更慢！
+![](https://netdesk.orcsvc.com/f/VD8XF2/20210120122000689.png)注明：CPU速度快，内存速度慢，I/O速度更慢！
 
 下一层
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120120331560.png)
+![](https://netdesk.orcsvc.com/f/15JjtK/20210120120331560.png)
 
 对于上图中的CPU
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120120749929.png)
+![](https://netdesk.orcsvc.com/f/vWgaHq/20210120120749929.png)
 
 对于上图CPU中的Control Unit（简称CU，又叫做控制单元），有
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120120912226.png)
+![](https://netdesk.orcsvc.com/f/YZ8pu2/20210120120912226.png)
 
 所有计算机功能都与以下内容有关：
 
@@ -90,7 +90,7 @@ index: 0
 
 **它是一个十进制的计算器，**而不是二进制的。它拥有20个10位累加器。他并不是通过程序编写程序，而是通过开关（switches）来进行手动编程。它由18,000个真空管，30吨的重量和15,000平方英尺的尺寸组成，功耗为140 kW。它每秒可进行5,000次加法。
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120122650700.png)
+![](https://netdesk.orcsvc.com/f/JXq4h8/20210120122650700.png)
 
 ### 冯·诺依曼机器/图灵机
 
@@ -121,7 +121,7 @@ index: 0
 
 冯·诺依曼结构的主要思想
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120125621722.png)![](https://pic.hanjiaming.com.cn/2021/01/20210120125509877.png)
+![](https://netdesk.orcsvc.com/f/9Aobfm/20210120125621722.png)![](https://netdesk.orcsvc.com/f/gyvLhX/20210120125509877.png)
 
 -  计算机应由运算器、控制器、存储器、输入设备和输出设备 五个基本部件组成。
 
@@ -148,7 +148,7 @@ index: 0
   - 累加器（ACC）
   - 乘商器（MQ）
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120125043694.png)
+![](https://netdesk.orcsvc.com/f/jw30sb/20210120125043694.png)
 
 ### 现代计算机结构
 
@@ -157,7 +157,7 @@ index: 0
 - IR：指令寄存器；MDR：存储器数据寄存器
 - GPRs：通用寄存器组（由若干通用寄存器组成，早期就是累加器）
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120144838515.png)
+![](https://netdesk.orcsvc.com/f/oYWDug/20210120144838515.png)
 
 1. 程序在执行前
 
@@ -173,7 +173,7 @@ index: 0
 
 简单的流程图:
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120145008348.png)
+![](https://netdesk.orcsvc.com/f/QwLQcj/20210120145008348.png)
 
 计算机的基本部件及功能
 
@@ -199,7 +199,7 @@ index: 0
   - IBM 7000
   - DEC-1957年
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120130142793.png)
+![](https://netdesk.orcsvc.com/f/GR88FA/20210120130142793.png)
 
 **微电子-集成电路**
 
@@ -207,7 +207,7 @@ index: 0
 
 计算机由 门，存储单元 和 互连 组成，这些可以在半导体（第三代）上制造，例如：硅片
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120130500356.png)
+![](https://netdesk.orcsvc.com/f/rRj2cg/20210120130500356.png)
 
 ## 计算机换代
 
@@ -235,7 +235,7 @@ index: 0
 
 随着时间变化，每个CPU上晶体管的数量的变化
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120131010165.png)
+![](https://netdesk.orcsvc.com/f/5JP1SV/20210120131010165.png)
 
 **英特尔的CPU芯片**
 
@@ -254,15 +254,15 @@ index: 0
 
 **逻辑（CPU）和内存性能差距**
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120132000954.png)
+![](https://netdesk.orcsvc.com/f/kOwQsb/20210120132000954.png)
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120132121610.png)
+![](https://netdesk.orcsvc.com/f/RW8eU8/20210120132121610.png)
 
 **典型的I / O设备数据速率**
 
 I/O是最慢的，但是我们依据给它们排个名
 
-![](https://pic.hanjiaming.com.cn/2021/01/20210120132233201.png)
+![](https://netdesk.orcsvc.com/f/Xe8PTX/20210120132233201.png)
 
 CPU相对较快，但内存/ IO相对较慢。所以，我们的电脑慢的时候，不要怪CPU，应该怪内存和I/O的速度慢。
 

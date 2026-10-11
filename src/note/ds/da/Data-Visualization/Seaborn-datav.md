@@ -11,7 +11,7 @@ index: 2
 
 笔者认为，seaborn可作为数据可视化的首选。
 
-![1654680752027.png](https://pic.hanjiaming.com.cn/2022/06/08/2e1cc97196232.png)
+![1654680752027.png](https://netdesk.orcsvc.com/f/p4wWcn/2e1cc97196232.png)
 
 Example gallery: https://seaborn.pydata.org/examples/index.html
 
@@ -23,7 +23,7 @@ Example gallery: https://seaborn.pydata.org/examples/index.html
 
 x轴和y轴可以相互调换。
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/1f38070e1df6f.png" alt="1643832171224.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/25rwSv/1f38070e1df6f.png" alt="1643832171224.png" style="zoom:50%;" />
 
 ### Use default
 
@@ -55,7 +55,7 @@ sns.set() # 同样可以把matplotlib设置成sns的默认样式
 
 ### Why?
 
-![1643911321290.png](https://pic.hanjiaming.com.cn/2022/02/04/2d5bfde337ef8.png)
+![1643911321290.png](https://netdesk.orcsvc.com/f/YGOLI2/2d5bfde337ef8.png)
 
 ## Scatter plot
 
@@ -69,7 +69,7 @@ sns.scatterplot(x=height, y=weight)
 plt.show()
 ```
 
-![1654101155065.png](https://pic.hanjiaming.com.cn/2022/06/02/7dc3a9bc481fe.png)
+![1654101155065.png](https://netdesk.orcsvc.com/f/orgLIg/7dc3a9bc481fe.png)
 
 ## count plot
 
@@ -83,7 +83,7 @@ sns.countplot(x="how_masculine", data=df)
 plt.show()
 ```
 
-![1654101252680.png](https://pic.hanjiaming.com.cn/2022/06/02/e5d7e2fc37fc8.png)
+![1654101252680.png](https://netdesk.orcsvc.com/f/AMeMFy/e5d7e2fc37fc8.png)
 
 ## kdeplot
 
@@ -96,7 +96,7 @@ kdeplot 更丝滑
 sns.kdeplot(data=tips, x="total_bill", bw_adjust=5)
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/a46c1176d4233.png" alt="1654677976562.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/LQv4f2/a46c1176d4233.png" alt="1654677976562.png" style="zoom:33%;" />
 
 ## hue
 
@@ -117,7 +117,7 @@ sns.scatterplot(x= "total_bill", y= "tip", data=tips, hue="smoker", palette=hue_
 plt.show()
 ```
 
-![1654101429643.png](https://pic.hanjiaming.com.cn/2022/06/02/720235ecf060e.png)
+![1654101429643.png](https://netdesk.orcsvc.com/f/qlArsJ/720235ecf060e.png)
 
 例如，对以下数据
 
@@ -136,24 +136,24 @@ ax = sns.lineplot(x='decade', y='female_winner', hue='category', data=prop_femal
 ax.yaxis.set_major_formatter(PercentFormatter(1.0))
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/01/c7ab7f0bf43e0.png" alt="1654016180008.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/3pr4C5/c7ab7f0bf43e0.png" alt="1654016180008.png" style="zoom: 50%;" />
 
 无 hue时
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/01/97138ae3c4a1a.png" alt="1654016289619.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/eDgyiq/97138ae3c4a1a.png" alt="1654016289619.png" style="zoom: 50%;" />
 
 ## relplot
 
 relplot() lets you create subplots in a single figure
 
-![1654237490869.png](https://pic.hanjiaming.com.cn/2022/06/03/b44c429d2b006.png)
+![1654237490869.png](https://netdesk.orcsvc.com/f/VpR3t2/b44c429d2b006.png)
 
 ### row & col
 
 - col 和 row 用于创建子图
 - hue 用于在同一个图中添加一个新列以区分，这是与col 和 row区分的
 
-![1654237680409.png](https://pic.hanjiaming.com.cn/2022/06/03/66ba8c4e49eb1.png)
+![1654237680409.png](https://netdesk.orcsvc.com/f/42Xxc2/66ba8c4e49eb1.png)
 
 ### size
 
@@ -165,15 +165,15 @@ sns.relplot( x= "total_bill", y= "tip", data=tips, kind= "scatter", size="size",
 plt.show()
 ```
 
-![1654238298996.png](https://pic.hanjiaming.com.cn/2022/06/03/986dd4f55f818.png)
+![1654238298996.png](https://netdesk.orcsvc.com/f/ZlQes2/986dd4f55f818.png)
 
 ### style
 
-![1654238365181.png](https://pic.hanjiaming.com.cn/2022/06/03/e7ed61c8accda.png)
+![1654238365181.png](https://netdesk.orcsvc.com/f/en1XHq/e7ed61c8accda.png)
 
 ### transparency
 
-![1654238397371.png](https://pic.hanjiaming.com.cn/2022/06/03/6a3a399ed30a0.png)
+![1654238397371.png](https://netdesk.orcsvc.com/f/0WrmF5/6a3a399ed30a0.png)
 
 ### size
 
@@ -192,11 +192,11 @@ sns.relplot(x="horsepower", y="mpg",
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/eb67e7868e214.png" alt="1654237899596.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/nWXACj/eb67e7868e214.png" alt="1654237899596.png" style="zoom:50%;" />
 
 ### dash 和 maker
 
-![1654238532711.png](https://pic.hanjiaming.com.cn/2022/06/03/2985058fe4751.png)
+![1654238532711.png](https://netdesk.orcsvc.com/f/ERVnsd/2985058fe4751.png)
 
 ```python
 # Import Matplotlib and Seaborn
@@ -214,11 +214,11 @@ sns.relplot(x="model_year", y="horsepower",
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/11082289e0fde.png" alt="1654238118436.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/MkDMF8/11082289e0fde.png" alt="1654238118436.png" style="zoom:33%;" />
 
 ### line with regplot
 
-![1654238596451.png](https://pic.hanjiaming.com.cn/2022/06/03/dc56f07d35a64.png)
+![1654238596451.png](https://netdesk.orcsvc.com/f/jvarFb/dc56f07d35a64.png)
 
 - 阴影区域是置信区间
 - 95% condent that the mean is within thisinterval
@@ -253,7 +253,7 @@ sns.countplot(x="how_masculine", data=masculinity_data)
 sns.catplot(x="how_masculine", data=masculinity_data, kind="count")
 ```
 
-![1654241933070.png](https://pic.hanjiaming.com.cn/2022/06/03/73bd6818af819.png)
+![1654241933070.png](https://netdesk.orcsvc.com/f/p4v6in/73bd6818af819.png)
 
 ### barplot
 
@@ -262,13 +262,13 @@ sns.catplot(x="day", y="total_bill",data=tips,kind="bar")
 # 可以使用 ci = None 来删去误差线
 ```
 
-![1654241988121.png](https://pic.hanjiaming.com.cn/2022/06/03/aa4f6fef8865a.png)
+![1654241988121.png](https://netdesk.orcsvc.com/f/6PYZiE/aa4f6fef8865a.png)
 
 - Lines(也叫误差线) show 95% confidence intervals for the mean
 - Shows uncertainty about our estimate
 - Assumes our data is a random sample
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/c2322951c01a1.png" alt="1654243411452.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/mqX4I9/c2322951c01a1.png" alt="1654243411452.png" style="zoom:50%;" />
 
 [什么是置信区间](confidence-intervals)
 
@@ -278,7 +278,7 @@ sns.catplot(x="day", y="total_bill",data=tips,kind="bar")
 sns.catplot(x="time",y="total_bill",data=tips,kind="box",order=["Dinner","Lunch"])
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/51cf04ddebf69.png" alt="1654322697562.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/wvdaI5/51cf04ddebf69.png" alt="1654322697562.png" style="zoom: 50%;" />
 
 ref. https://zhuanlan.zhihu.com/p/147645727
 
@@ -295,7 +295,7 @@ ref. https://zhuanlan.zhihu.com/p/147645727
 - 上箱体为上四分位数；下箱体为下四分位数；
 - 箱体长度为上四分位数减去下四分位数。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/97c399913e343.png" alt="1654323351446.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/AM1GFy/97c399913e343.png" alt="1654323351446.png" style="zoom:50%;" />
 
 - 参数 `sym = ""`：去除离群值的展示
 - 参数`whis`
@@ -308,16 +308,16 @@ ref. https://zhuanlan.zhihu.com/p/147645727
 sns.catplot(x="time", y="total_bill", data=tips, kind="box", whis=[0, 100])
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/103ad127f1b40.png" alt="1654322864343.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/a2JeFq/103ad127f1b40.png" alt="1654322864343.png" style="zoom:50%;" />
 
 ### pointplot
 
 - Points show mean of quantitative variable
 - Vertical lines show 95% con,dence intervals
 
-![1654323543619.png](https://pic.hanjiaming.com.cn/2022/06/04/80de90538f003.png)
+![1654323543619.png](https://netdesk.orcsvc.com/f/qldKSJ/80de90538f003.png)
 
-![1654323593081.png](https://pic.hanjiaming.com.cn/2022/06/04/3e9ca07f0bb92.png)
+![1654323593081.png](https://netdesk.orcsvc.com/f/gkqXHX/3e9ca07f0bb92.png)
 
 Both show:
 
@@ -333,7 +333,7 @@ Differences:
 sns.catplot(x="age", y="masculinity_important", data=masculinity_data, hue="feel_masculine", kind="point")
 ```
 
-![1654323666507.png](https://pic.hanjiaming.com.cn/2022/06/04/9e7b4ea3c1477.png)
+![1654323666507.png](https://netdesk.orcsvc.com/f/QalEIj/9e7b4ea3c1477.png)
 
 - 参数 `join=False`： 取消误差线的显示
 - `estimator = numpy.median `: 由于一个x可能对应多个y，不设置该参数时表示使用平平均值。设置后可以将点位改为中位数。
@@ -360,11 +360,11 @@ plt.show()
 plt.clf()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/1eb6afec6e899.png" alt="1643832395576.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/6LXGHE/1eb6afec6e899.png" alt="1643832395576.png" style="zoom:50%;" />
 
 ### Common parameters
 
-![CleanShot 2022-02-03 at 04.08.54@2x.png](https://pic.hanjiaming.com.cn/2022/02/03/1887aea2ef774.png)
+![CleanShot 2022-02-03 at 04.08.54@2x.png](https://netdesk.orcsvc.com/f/eDKpHq/1887aea2ef774.png)
 
 可以对自变量使用限制区间，比如xlim=（0，25000）
 
@@ -397,7 +397,7 @@ sns.lmplot(y = "premiums",x = 'insurance_losses', data = df)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/38593d0ae8d02.png" alt="1643832742701.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/nwv1hj/38593d0ae8d02.png" alt="1643832742701.png" style="zoom:50%;" />
 
 ```python
 # Plotting the age of Nobel Prize winners
@@ -408,13 +408,13 @@ sns.lmplot(y = "year", x = "age", data = nobel, lowess=True,
 # aspect 控制x轴长度，即图片的宽度
 ```
 
-![1654018341077.png](https://pic.hanjiaming.com.cn/2022/06/01/0ad8c9f3358a9.png)
+![1654018341077.png](https://netdesk.orcsvc.com/f/WrdRc9/0ad8c9f3358a9.png)
 
 ```python
 sns.regplot(y = "age", x = "year", row='category', aspect=2, line_kws={'color' : 'black'}, data = nobel)
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/01/dc523aba5757b.png" alt="1654019231611.png" style="zoom:10%;" />
+<img src="https://netdesk.orcsvc.com/f/JwkdH8/dc523aba5757b.png" alt="1654019231611.png" style="zoom:10%;" />
 
 #### order
 
@@ -422,7 +422,7 @@ sns.regplot(y = "age", x = "year", row='category', aspect=2, line_kws={'color' :
 sns.regplot(data=df, x='temp', y='total_rentals', order=2)
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/47b4274774cd6.png" alt="1643885588793.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/m31bc9/47b4274774cd6.png" alt="1643885588793.png" style="zoom:33%;" />
 
 #### x_jitter
 
@@ -432,7 +432,7 @@ Seaborn也支持分类变量的回归绘图。 看看租金在各个月内如何
 sns.regplot(data=df, x='mnth', y='total_rentals', x_jitter=.1, order=2)
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/327ef9c03e826.png" alt="1643885785684.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/y3klfZ/327ef9c03e826.png" alt="1643885785684.png" style="zoom:33%;" />
 
 #### x_estimator
 
@@ -442,17 +442,17 @@ sns.regplot(data=df, x='mnth', y='total_rentals', x_estimator=np.mean, order=2)
 
 In some cases, an x_estimator can be useful for highlighting trends
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/d665939dc7dfa.png" alt="1643885914138.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/eD5pCq/d665939dc7dfa.png" alt="1643885914138.png" style="zoom:33%;" />
 
 #### Binning the data
 
 当存在连续变量时，将它们分成不同的 bins 可能会有所帮助。 在这种情况下，我们可以将温度分成四个bins，Seaborn将照顾计算这些垃圾箱并策划结果。 这比尝试使用熊猫或其他一些机制更快地创建箱子。 此快捷功能可以帮助快速读取诸如温度的连续数据。
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/5cd289f6dc409.png" alt="1643886054786.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/a26riq/5cd289f6dc409.png" alt="1643886054786.png" style="zoom: 50%;" />
 
 #### disable reg line
 
-![1643886378007.png](https://pic.hanjiaming.com.cn/2022/02/03/d9a51b5ca4b0b.png)
+![1643886378007.png](https://netdesk.orcsvc.com/f/wvrOf5/d9a51b5ca4b0b.png)
 
 ### Evaluating regression
 
@@ -464,13 +464,13 @@ Evaluating regression with residplot()
 sns.residplot(data=df, x='temp', y='total_rentals')
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/a709697c3dfa5.png" alt="1643885488489.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/l355Ce/a709697c3dfa5.png" alt="1643885488489.png" style="zoom:33%;" />
 
 ```python
 sns.residplot(data=df, x='temp', y='total_rentals', order=2)
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/706f523b41256.png" alt="1643885536234.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/Qamktj/706f523b41256.png" alt="1643885536234.png" style="zoom: 25%;" />
 
 ### implot
 
@@ -485,7 +485,7 @@ plt.show()
 # 和 regplot 相比，下面的图似乎只是没有了上边框和右边框
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/f65963d6e6f31.png" alt="1643832817477.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/WrPpH9/f65963d6e6f31.png" alt="1643832817477.png" style="zoom:50%;" />
 
 #### 参数 hue
 
@@ -502,7 +502,7 @@ sns.lmplot(data=df,
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/feada8b6a4480.png" alt="1643833052665.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/eD5Rcq/feada8b6a4480.png" alt="1643833052665.png" style="zoom:50%;" />
 
 #### 参数 col & row
 
@@ -513,7 +513,7 @@ sns.lmplot(x="quality",
   col="type")
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/8fc523343efc0.png" alt="1643833236520.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/x8r5u3/8fc523343efc0.png" alt="1643833236520.png" style="zoom:50%;" />
 
 ```python
 # Create a regression plot with multiple rows
@@ -526,7 +526,7 @@ sns.lmplot(data=df,
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/7c8993b6a45e5.png" alt="1643833288899.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/8JEXi5/7c8993b6a45e5.png" alt="1643833288899.png" style="zoom:50%;" />
 
 ## Style
 
@@ -539,7 +539,7 @@ for style in ['white','dark','whitegrid','darkgrid','ticks']:
   plt.show()
 ```
 
-![1643833567752.png](https://pic.hanjiaming.com.cn/2022/02/03/6a71ca5efafe0.png)
+![1643833567752.png](https://netdesk.orcsvc.com/f/orexIg/6a71ca5efafe0.png)
 
 ### Remove the spines
 
@@ -559,7 +559,7 @@ plt.show()
 plt.clf()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/6bbb43fb42405.png" alt="1643833763462.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/gkp4HX/6bbb43fb42405.png" alt="1643833763462.png" style="zoom:50%;" />
 
 ### Defining a color
 
@@ -580,7 +580,7 @@ for p in sns.palettes.SEABORN_PALETTES:
   sns.distplot(df['Tuition'])
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/c44388a39db71.png" alt="1643834183142.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/LQVkI2/c44388a39db71.png" alt="1643834183142.png" style="zoom:50%;" />
 
 ##### Displaying Palettes
 
@@ -597,15 +597,15 @@ for p in sns.palettes.SEABORN_PALETTES:
   plt.show()
 ```
 
-![1643834497812.png](https://pic.hanjiaming.com.cn/2022/02/03/34f9c4c9c3770.png)
+![1643834497812.png](https://netdesk.orcsvc.com/f/Jwo4s8/34f9c4c9c3770.png)
 
 ##### Defining Custom Palettes
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/7b12ccea4c6ce.png" alt="1643834621754.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/5XxXSV/7b12ccea4c6ce.png" alt="1643834621754.png" style="zoom:50%;" />
 
-![1654324862208.png](https://pic.hanjiaming.com.cn/2022/06/04/d9f2765042420.png)
+![1654324862208.png](https://netdesk.orcsvc.com/f/8JlPC5/d9f2765042420.png)
 
-![1654324884580.png](https://pic.hanjiaming.com.cn/2022/06/04/03fa774133c9b.png)
+![1654324884580.png](https://netdesk.orcsvc.com/f/ordpIg/03fa774133c9b.png)
 
 #### use in plot
 
@@ -620,7 +620,7 @@ plt.show()
 plt.clf()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/b0c8b09b0950c.png" alt="1643883543016.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/p45Ktn/b0c8b09b0950c.png" alt="1643883543016.png" style="zoom:33%;" />
 
 ### set_context()
 
@@ -630,7 +630,7 @@ Smallest to largest: "paper" , "notebook" , "talk" , "poster"
 sns.set_context("talk")
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/413aefb3f4887.png" alt="1654325111624.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/nwdDUj/413aefb3f4887.png" alt="1654325111624.png" style="zoom: 33%;" />
 
 ## Plots of each observation
 
@@ -647,7 +647,7 @@ Seaborn 的 stripplot() 显示数据集中的每个观察值。在某些情况�
 sns.stripplot(data=df, y="DRG Definition",x="Average Covered Charges",jitter=True)
 ```
 
-![1643845492580.png](https://pic.hanjiaming.com.cn/2022/02/03/fdb30688fc32c.png)
+![1643845492580.png](https://netdesk.orcsvc.com/f/vvrpsq/fdb30688fc32c.png)
 
 ### swarmplot
 
@@ -659,7 +659,7 @@ sns.stripplot(data=df, y="DRG Definition",x="Average Covered Charges",jitter=Tru
 sns.swarmplot(data=df, y="DRG Definition", x="Average Covered Charges")
 ```
 
-![1643845915866.png](https://pic.hanjiaming.com.cn/2022/02/03/f31a9c41f0f27.png)
+![1643845915866.png](https://netdesk.orcsvc.com/f/25Geiv/f31a9c41f0f27.png)
 
 ## Abstract representations
 
@@ -676,7 +676,7 @@ sns.swarmplot(data=df, y="DRG Definition", x="Average Covered Charges")
 
 实例：评价不同水果的产量
 
-![1643846287887.png](https://pic.hanjiaming.com.cn/2022/02/03/9dda90d327350.png)
+![1643846287887.png](https://netdesk.orcsvc.com/f/42Gdc2/9dda90d327350.png)
 
 ### violinplot
 
@@ -689,7 +689,7 @@ sns.violinplot(x='AGE', y='WTKG3', data=data, inner=None)
 plt.show()
 ```
 
-![1654691413852.png](https://pic.hanjiaming.com.cn/2022/06/08/efc745c5f3b90.png)
+![1654691413852.png](https://netdesk.orcsvc.com/f/m3Q9T9/efc745c5f3b90.png)
 
 ### lvplot
 
@@ -699,7 +699,7 @@ sns.lvplot(data=df, y="DRG Definition", x="Average Covered Charges")
 
 该分组中的最后一个图是 lvplot()，它代表字母值图。API 与 boxplot() 和 violinplot() 相同，但可以更有效地扩展到大型数据集。lvplot() 是 boxplot() 和 violinplot() 的混合体，渲染速度相对较快且易于解释。
 
-![1643846529178.png](https://pic.hanjiaming.com.cn/2022/02/03/06148e97e6464.png)
+![1643846529178.png](https://netdesk.orcsvc.com/f/0WdwS5/06148e97e6464.png)
 
 ## Statistical estimates
 
@@ -720,7 +720,7 @@ sns.lvplot(data=df, y="DRG Definition", x="Average Covered Charges")
 sns.barplot(data=df, y="DRG Definition",x="Average Covered Charges",hue="Region")
 ```
 
-![1643846632070.png](https://pic.hanjiaming.com.cn/2022/02/03/a90b5aaa19ed2.png)
+![1643846632070.png](https://netdesk.orcsvc.com/f/OaXbTQ/a90b5aaa19ed2.png)
 
 ### pointplot
 
@@ -728,7 +728,7 @@ pointplot() 与 barplot() 相似，因为它显示了一个汇总度量和置信
 
 和barplot相同，不过会连线
 
-![1643847510873.png](https://pic.hanjiaming.com.cn/2022/02/03/6cd18aebd4756.png)
+![1643847510873.png](https://netdesk.orcsvc.com/f/95jJtm/6cd18aebd4756.png)
 
 ```python
 # Create a pointplot and include the capsize in order to show caps on the error bars
@@ -742,7 +742,7 @@ plt.clf()
 
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/a54f19736a88f.png" alt="1643884618865.png" style="zoom: 33%;" />        
+<img src="https://netdesk.orcsvc.com/f/bVX0hM/a54f19736a88f.png" alt="1643884618865.png" style="zoom: 33%;" />
 
 ### countplot
 
@@ -752,7 +752,7 @@ plt.clf()
 sns.countplot(data=df, y="DRG_Code", hue="Region")
 ```
 
-![1643847725134.png](https://pic.hanjiaming.com.cn/2022/02/03/8a638ed64edd1.png)
+![1643847725134.png](https://netdesk.orcsvc.com/f/DadXfe/8a638ed64edd1.png)
 
 ## Matrix Plots
 
@@ -764,7 +764,7 @@ pd.crosstab(df["mnth"], df["weekday"], values=df["total_rentals"],aggfunc='mean'
 # round 控制保留小数位
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/843a309ecab29.png" alt="1643901804516.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/MkV6F8/843a309ecab29.png" alt="1643901804516.png" style="zoom: 67%;" />
 
 ### heatmap
 
@@ -772,7 +772,7 @@ pd.crosstab(df["mnth"], df["weekday"], values=df["total_rentals"],aggfunc='mean'
 sns.heatmap(df_crosstab, annot=True, fmt="d", cmap="YlGnBu", cbar=True, center=df_crosstab.loc[9, 6])
 ```
 
-![1643902031151.png](https://pic.hanjiaming.com.cn/2022/02/03/56be7762715d9.png)
+![1643902031151.png](https://netdesk.orcsvc.com/f/YGEbt2/56be7762715d9.png)
 
 一般的，颜色越浅值越大。不过可以使用参数center重新设置焦点。
 
@@ -785,7 +785,7 @@ df.corr()
 sns.heatmap(df.corr())
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/fd14d7a595fd0.png" alt="1643902185784.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/jPMvib/fd14d7a595fd0.png" alt="1643902185784.png" style="zoom:50%;" />
 
 在上图中，颜色越浅，表明两列的相关性越高。
 
@@ -798,7 +798,7 @@ sns.heatmap(df.corr())
 - Seaborn's grid plots require data in "tidy format"
 - One observation per row of data
 
-![1643902367017.png](https://pic.hanjiaming.com.cn/2022/02/03/ffcb65f1d584a.png)
+![1643902367017.png](https://netdesk.orcsvc.com/f/ZPEmT2/ffcb65f1d584a.png)
 
 ```python
 # g = sns.FaceGrid(df,col = xxx, row = xxx, col_order = xxx,row_order = xxx) 这一步指定怎样切割图
@@ -808,7 +808,7 @@ g = sns.FacetGrid(df, col="HIGHDEG")
 g.map(sns.boxplot, 'Tuition',order=['1', '2', '3', '4']) #map 这一步是必须的 ,这里的boxplot只指定了一个参数
 ```
 
-![1643904206013.png](https://pic.hanjiaming.com.cn/2022/02/04/b3dc55721ae59.png)
+![1643904206013.png](https://netdesk.orcsvc.com/f/QaEjUj/b3dc55721ae59.png)
 
 ```python
 # Create FacetGrid with Degree_Type and specify the order of the rows using row_order
@@ -824,7 +824,7 @@ plt.show()
 plt.clf()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/04/29f69256e5647.png" alt="1643904374803.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/wvrMS5/29f69256e5647.png" alt="1643904374803.png" style="zoom:50%;" />
 
 ### factorplot()
 
@@ -842,7 +842,7 @@ plt.show()
 plt.clf()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/04/239f065774718.png" alt="1643904604973.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/VpmnF2/239f065774718.png" alt="1643904604973.png" style="zoom:50%;" />
 
 ### lmplot
 
@@ -868,7 +868,7 @@ plt.show()
 plt.clf()
 ```
 
-![1643904870981.png](https://pic.hanjiaming.com.cn/2022/02/04/444b48550b2ad.png)
+![1643904870981.png](https://netdesk.orcsvc.com/f/PvEvUe/444b48550b2ad.png)
 
 ## Pair Plot
 
@@ -881,7 +881,7 @@ g = sns.PairGrid(df, vars=["Fair_Mrkt_Rent", "Median_Income"])
 g = g.map(plt.scatter)
 ```
 
-![1643906168843.png](https://pic.hanjiaming.com.cn/2022/02/04/6534439842c97.png)
+![1643906168843.png](https://netdesk.orcsvc.com/f/m3MwI9/6534439842c97.png)
 
 ```python
 sns.pairplot(df, vars=["Fair_Mrkt_Rent","Median_Income"], kind='reg',diag_kind='hist')
@@ -889,7 +889,7 @@ sns.pairplot(df, vars=["Fair_Mrkt_Rent","Median_Income"], kind='reg',diag_kind='
 # kind 和 diag_kind 默认参数是scatter
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/04/6c4d62051ad0b.png" alt="1643906329961.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/qlMyIJ/6c4d62051ad0b.png" alt="1643906329961.png" style="zoom:33%;" />
 
 ### pairplot
 
@@ -901,7 +901,7 @@ sns.pairplot(df.query('BEDRMS < 3'),
 # 如果不指定kind将智能分配合适的kind
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/04/ea80994e3573b.png" alt="1643906671957.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/AMvxTy/ea80994e3573b.png" alt="1643906671957.png" style="zoom:50%;" />
 
 #### 高度自定义：自定义x和y
 
@@ -918,11 +918,11 @@ plt.show()
 plt.clf()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/04/98d9f755748e2.png" alt="1643906866451.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/orMOfg/98d9f755748e2.png" alt="1643906866451.png" style="zoom:50%;" />
 
 ## Joint plot
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/04/162f6e90b82dc.png" alt="1643909289758.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/JwAns8/162f6e90b82dc.png" alt="1643909289758.png" style="zoom:50%;" />
 
 ### JointGrid
 
@@ -940,7 +940,7 @@ plt.show()
 plt.clf()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/04/f031636211c4a.png" alt="1643909850117.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/do3LhX/f031636211c4a.png" alt="1643909850117.png" style="zoom: 50%;" />
 
 ```python
 g = sns.JointGrid(data=df, x="Tuition", y="ADM_RATE_ALL") # 制作好画板
@@ -955,7 +955,7 @@ g = g.plot_marginals(sns.kdeplot, shade=True)
 g = g.annotate(stats.pearsonr)
 ```
 
-![1643910205501.png](https://pic.hanjiaming.com.cn/2022/02/04/a69ceecfe535c.png)
+![1643910205501.png](https://netdesk.orcsvc.com/f/gkMJHX/a69ceecfe535c.png)
 
 ### jointplot
 
@@ -971,7 +971,7 @@ g = (sns.jointplot(x="Tuition", y="ADM_RATE_ALL", kind='scatter', # 指定kind
             .plot_joint(sns.kdeplot))															# 在图内叠加kde
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/04/bbfa8de4480d2.png" alt="1643910506977.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/G6EqFA/bbfa8de4480d2.png" alt="1643910506977.png" style="zoom: 33%;" />
 
 ## FacetGrid 与 AxesSubplot对象
 
@@ -979,15 +979,15 @@ Seaborn 的绘图函数创建两种不同类型的对象：FacetGrids 和 AxesSu
 
 FacetGrid 由一个或多个 AxesSubplots 组成，这就是它支持子图的方式。
 
-![1654332634772.png](https://pic.hanjiaming.com.cn/2022/06/04/fc3c95b2f79c7.png)
+![1654332634772.png](https://netdesk.orcsvc.com/f/5XqlfV/fc3c95b2f79c7.png)
 
 ### FacetGrid 添加标题
 
-![1654332690708.png](https://pic.hanjiaming.com.cn/2022/06/04/170e0ba719353.png)
+![1654332690708.png](https://netdesk.orcsvc.com/f/YGy4U2/170e0ba719353.png)
 
 ### AxesSubplot 添加标题
 
-![1654333078982.png](https://pic.hanjiaming.com.cn/2022/06/04/00c09b1224c3e.png)
+![1654333078982.png](https://netdesk.orcsvc.com/f/95KVhm/00c09b1224c3e.png)
 
 对于子图的标题，建议使用后期处理的方式添加。
 
@@ -1003,7 +1003,7 @@ g.set(xlabel="New X Label", ylabel="New Y Label")
 plt.xticks(rotation=90)
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/2e72584509c99.png" alt="1654333181304.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/1bjQHK/2e72584509c99.png" alt="1654333181304.png" style="zoom:50%;" />
 
 ## 修改轴scale
 
@@ -1021,4 +1021,4 @@ plt.yscale('log')
 4. 需要按照属性对数据图进行对比，使用factorplot
 5. 最后，熟悉了数据，可以用pairplot 和 jointplot进行呈现
 
-![1643910643554.png](https://pic.hanjiaming.com.cn/2022/02/04/aab54f8c209c6.png)
+![1643910643554.png](https://netdesk.orcsvc.com/f/95O8Hm/aab54f8c209c6.png)

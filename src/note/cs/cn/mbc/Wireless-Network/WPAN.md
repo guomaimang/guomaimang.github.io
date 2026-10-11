@@ -52,7 +52,7 @@ headerDepth: 2
     - 跳跃率1600跳/秒（=1跳/0.625ms）
   - 蓝牙使用时分双工（TDD）进行发送方和接收方之间的通信：相邻的时隙被分配给通信。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/d48b6e4c052d9.png" alt="1666094374912.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/5X1rUV/d48b6e4c052d9.png" alt="1666094374912.png" style="zoom: 33%;" />
 
 ### Networking: Piconet
 
@@ -69,7 +69,7 @@ headerDepth: 2
 - 如果一个 parked 的设备想进行通信，并且已经有7个活动的从属设备，一个从属设备必须切换到停放模式
 - Standby 设备不加入 piconet 中
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/c714eae4e540f.png" alt="1666094334872.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/rKl6Cg/c714eae4e540f.png" alt="1666094334872.png" style="zoom:33%;" />
 
 ### Form a Piconet
 
@@ -85,7 +85,7 @@ headerDepth: 2
 - Master 和 slave 通过交替发送消息进行通信
 - TDMA用于支持 多个从机 与主机在picone内通信。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/19bcb236aa6d7.png" alt="1666095005024.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/YGvQs2/19bcb236aa6d7.png" alt="1666095005024.png" style="zoom:33%;" />
 
 ### Networking: Scatternet
 
@@ -97,7 +97,7 @@ headerDepth: 2
   - 或者可以是两个微微网 (S/S) 中的从站
   - 不能成为两个小网的主站
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/166bebd1adbee.png" alt="1666095132439.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/3p2LH5/166bebd1adbee.png" alt="1666095132439.png" style="zoom:33%;" />
 
 Communication
 
@@ -113,7 +113,7 @@ Communication
 - Synchronous Connection Oriented (SCO) link for voice: 周期性地使用对称的两个连续的单一槽位
 - Asynchronous Connection-less (ACL) link for data: 使用 1/3/5 - 可变数据包大小的时隙，非对称 BW S1
 
-![1666095531673.png](https://pic.hanjiaming.com.cn/2022/10/18/299a4cd342279.png)
+![1666095531673.png](https://netdesk.orcsvc.com/f/PvKQse/299a4cd342279.png)
 
 ### Bluetooth Protocol Stack
 

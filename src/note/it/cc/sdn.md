@@ -9,7 +9,7 @@ headerDepth: 1
 
 # Software-Defined Network
 
-![1715244470821.png](https://pic.hanjiaming.com.cn/2024/05/09/5445eb8d7cd84.png)
+![1715244470821.png](https://netdesk.orcsvc.com/f/6O5SE/5445eb8d7cd84.png)
 
 1. Control Plane - The brain/decision maker, focuses on how that one switch interacts with its neighbors
 2. Data Plane - Packet forwarder
@@ -17,11 +17,11 @@ headerDepth: 1
 
 在传统网络中，所有三个平面都在路由器和交换机的固件「firmware」中实现。
 
-![1715234266406.png](https://pic.hanjiaming.com.cn/2024/05/09/97d6b23f25bb8.png)
+![1715234266406.png](https://netdesk.orcsvc.com/f/kLnsb/97d6b23f25bb8.png)
 
 ## Traditional Network: Switch
 
-![1715234309588.png](https://pic.hanjiaming.com.cn/2024/05/09/ac0a7fd6aa6bf.png)
+![1715234309588.png](https://netdesk.orcsvc.com/f/WwDH9/ac0a7fd6aa6bf.png)
 
 ### Data Plane
 
@@ -31,7 +31,7 @@ Data Plane: processing and delivery of packets
 - E.g.,IP,TCP,Ethernet,etc.
 - Fast timescales(per-packet)
 
-![1715234357157.png](https://pic.hanjiaming.com.cn/2024/05/09/eceec127dfe75.png)
+![1715234357157.png](https://netdesk.orcsvc.com/f/npjsj/eceec127dfe75.png)
 
 ### Control Plane
 
@@ -40,13 +40,13 @@ Data Plane: processing and delivery of packets
 - 确定数据包转发的方式和位置
 - 路由、流量工程、防火墙状态.......
 
-![1715234474703.png](https://pic.hanjiaming.com.cn/2024/05/09/2628e12da41b6.png)
+![1715234474703.png](https://netdesk.orcsvc.com/f/jWJub/2628e12da41b6.png)
 
 ### Management Plane
 
 收集测量数据并配置设备
 
-![1715234506021.png](https://pic.hanjiaming.com.cn/2024/05/09/4ef4cfe319814.png)
+![1715234506021.png](https://netdesk.orcsvc.com/f/QxEFj/4ef4cfe319814.png)
 
 ## Networking Lag Behind
 
@@ -56,7 +56,7 @@ Networks used to be simple: Ethernet,IP,TCP....
 
 新的 "云 "要求导致了极大的复杂性
 
-![1715237025232.png](https://pic.hanjiaming.com.cn/2024/05/09/d22a9be639305.png)
+![1715237025232.png](https://netdesk.orcsvc.com/f/9WVsm/d22a9be639305.png)
 
 上述机制是独立设计和部署的。
 
@@ -67,9 +67,9 @@ Consequences:
 
 昂贵的交换机，带有执行这些功能的专有固件！
 
-![1715238798026.png](https://pic.hanjiaming.com.cn/2024/05/09/bd72b684b9fc2.png)
+![1715238798026.png](https://netdesk.orcsvc.com/f/gdKCX/bd72b684b9fc2.png)
 
-![1715239047511.png](https://pic.hanjiaming.com.cn/2024/05/09/3a2f75f4dd410.png)
+![1715239047511.png](https://netdesk.orcsvc.com/f/5nlTV/3a2f75f4dd410.png)
 
 ## SDN: New Concepts
 
@@ -84,9 +84,9 @@ Consequences:
       1. Maintain,control,and program data plane from the central entity.
       2. Generalized flow abstraction,open up to layers 1-7.
 
-![1715243697135.png](https://pic.hanjiaming.com.cn/2024/05/09/ff46ac08f1875.png)
+![1715243697135.png](https://netdesk.orcsvc.com/f/WxoC9/ff46ac08f1875.png)
 
-![1715243707713.png](https://pic.hanjiaming.com.cn/2024/05/09/4c016c3fdf041.png)
+![1715243707713.png](https://netdesk.orcsvc.com/f/3ZyF5/4c016c3fdf041.png)
 
 ## Network OS
 
@@ -98,14 +98,14 @@ Consequences:
 - OpenFlow: a protocol for remotely controlling the forwarding table of a switch or router (more to come)
 
 
-![1715243836446.png](https://pic.hanjiaming.com.cn/2024/05/09/bfd3dc42902c4.png)
+![1715243836446.png](https://netdesk.orcsvc.com/f/EY3Id/bfd3dc42902c4.png)
 
 ::: note What SDN really is?
 
-![1715243866272.png](https://pic.hanjiaming.com.cn/2024/05/09/b00f9fd663995.png)
+![1715243866272.png](https://netdesk.orcsvc.com/f/Kx6HL/b00f9fd663995.png)
 
 :::
 
 **With SDN->Network Industry Go Virtualized and Centralized like Cloud**
 
-![1715243945685.png](https://pic.hanjiaming.com.cn/2024/05/09/e8d5efa6a9238.png)
+![1715243945685.png](https://netdesk.orcsvc.com/f/qZKfJ/e8d5efa6a9238.png)

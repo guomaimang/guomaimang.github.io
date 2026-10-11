@@ -16,7 +16,7 @@ Seata 是 一款分布式事务的解决方案，致力于在微服务架构下�
 
 ## 为什么会产生分布式事务
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/39a5842c4bd18.png" alt="1734969345243.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/eexKhq/39a5842c4bd18.png" alt="1734969345243.png" style="zoom: 40%;" />
 
 案例分析
 
@@ -38,7 +38,7 @@ Seata 是 一款分布式事务的解决方案，致力于在微服务架构下�
 
 ## 分布式事务的通用形式
 
-![1734969684047.png](https://pic.hanjiaming.com.cn/2024/12/24/fa36efd1a3b09.png)
+![1734969684047.png](https://netdesk.orcsvc.com/f/qpaTJ/fa36efd1a3b09.png)
 
 1. **请求的处理**:
     - 外部请求进来后，事务协调者通知每个服务开启事务。
@@ -64,7 +64,7 @@ Seata 是 一款分布式事务的解决方案，致力于在微服务架构下�
 - 决定何时进行全局提交或回滚。
 - 定义事务的边界。
 
-![1734970245840.png](https://pic.hanjiaming.com.cn/2024/12/24/c56788f603c42.png)
+![1734970245840.png](https://netdesk.orcsvc.com/f/9rLTm/c56788f603c42.png)
 
 **TC（事务协调者）**:
 
@@ -96,21 +96,21 @@ public void createOrder() {
 
 - **积分服务和 库存服务**: 类似订单服务，分别更新积分和减少库存。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/39a5842c4bd18.png" alt="1734969345243.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/eexKhq/39a5842c4bd18.png" alt="1734969345243.png" style="zoom: 40%;" />
 
 实质就是 三条 SQL 语句。
 
-![1734970535512.png](https://pic.hanjiaming.com.cn/2024/12/24/02bb73e3c582e.png)
+![1734970535512.png](https://netdesk.orcsvc.com/f/g8MHX/02bb73e3c582e.png)
 
 - transactional 默认的规则就会将本地事务进行提交。
 - 也就是说，在第一阶段，在这个方法执行完了以后，数据就会立即写入到这个对应的订单库里边，之后它还会向server去上报好我这个订单服务的操作已经做好了。
 
-![1734970705120.png](https://pic.hanjiaming.com.cn/2024/12/24/b0c0d7cd84164.png)
+![1734970705120.png](https://netdesk.orcsvc.com/f/8dvc5/b0c0d7cd84164.png)
 
 - 如果三个子事务都成功提交，则 TM 会告诉 TC 全局提交。
 - 任何一个提交失败，则 TM 告诉 TC 全局回滚。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/24/45d65a1671aa2.png" alt="1734971122968.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/aQRIq/45d65a1671aa2.png" alt="1734971122968.png" style="zoom: 33%;" />
 
 **特点：每个子事务提交成功，立刻写表**
 
@@ -125,17 +125,17 @@ Seata 设计的解决方案：seata 会在每个库中都增加一 个 UNDO_LOG 
 - 每个数据库中增加`undo_log`表，用于记录回滚日志。
 - 通过SQL解析生成反向操作的SQL语句。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/24/22d858f23a4a6.png" alt="1734972480202.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/d5eFX/22d858f23a4a6.png" alt="1734972480202.png" style="zoom: 25%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/24/5c8244896ac25.png" alt="1734972557593.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/AXZSy/5c8244896ac25.png" alt="1734972557593.png" style="zoom:25%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/24/bd6353a479af4.png" alt="1734972577316.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/oKkfg/bd6353a479af4.png" alt="1734972577316.png" style="zoom: 25%;" />
 
 seata 使用了 sql 解析的技术，生成逆向sql。
 
 ## 高并发环境下的处理
 
-![1734972676119.png](https://pic.hanjiaming.com.cn/2024/12/24/2275d9d201a5f.png)
+![1734972676119.png](https://netdesk.orcsvc.com/f/6AXFE/2275d9d201a5f.png)
 
 **分布式锁**: TC 为事务增加全局分布式锁，保证同一条数据的并发操作。
 
@@ -143,7 +143,7 @@ seata 使用了 sql 解析的技术，生成逆向sql。
 
 先来看一下使用 Seata AT 模式是怎么产生脏写的：
 
-![1734973229025.png](https://pic.hanjiaming.com.cn/2024/12/24/00052f8f914e2.png)
+![1734973229025.png](https://netdesk.orcsvc.com/f/Q39cj/00052f8f914e2.png)
 
 如何防止脏写？
 
@@ -151,7 +151,7 @@ seata 使用了 sql 解析的技术，生成逆向sql。
 
 业务二执行时加 `@GlobalTransactional`注解
 
-![1734973292037.png](https://pic.hanjiaming.com.cn/2024/12/24/3a0dcc7f96028.png)
+![1734973292037.png](https://netdesk.orcsvc.com/f/GpwcA/3a0dcc7f96028.png)
 
 业务二在执行全局事务过程中，分支事务 A 提交前注册分支事务获取全局锁时，发现业务业务一全局锁还没执行完，**因此业务二提交不了，抛异常回滚，所以不会发生脏写。**
 
@@ -159,7 +159,7 @@ seata 使用了 sql 解析的技术，生成逆向sql。
 
 业务二执行时加 `@GlobalLock` 注解
 
-![1734973351390.png](https://pic.hanjiaming.com.cn/2024/12/24/07098bcf33c23.png)
+![1734973351390.png](https://netdesk.orcsvc.com/f/5GrUV/07098bcf33c23.png)
 
 与 `@GlobalTransactional` 注解效果类似，只不过不需要开启全局事务，只在本地事务提交前，检查全局锁是否存在。
 
@@ -167,7 +167,7 @@ seata 使用了 sql 解析的技术，生成逆向sql。
 
 业务二执行时加 `@GlobalLock` 注解 + `select for update`语句
 
-![1734973574342.png](https://pic.hanjiaming.com.cn/2024/12/24/6968ff7a2a51b.png)
+![1734973574342.png](https://netdesk.orcsvc.com/f/RwJC8/6968ff7a2a51b.png)
 
 如果加了`select for update`语句，则会在 update 前检查全局锁是否存在，只有当全局锁释放之后，业务二才能开始执行 updateA 操作。
 
@@ -181,7 +181,7 @@ Seata AT 模式的脏读是指在全局事务未提交前，被其它业务读�
 
 那么怎么避免脏读现象呢？业务二查询 A 时加 `@GlobalLock` 注解 + `select for update`语句：
 
-![1734973793075.png](https://pic.hanjiaming.com.cn/2024/12/24/100024e9a5c06.png)
+![1734973793075.png](https://netdesk.orcsvc.com/f/r06cg/100024e9a5c06.png)
 
 ::: info SELECT FOR UPDATE
 

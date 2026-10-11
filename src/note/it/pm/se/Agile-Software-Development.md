@@ -50,7 +50,7 @@ Agile development
 - 规范、设计、实现和测试是相互交错的，开发过程的产出是通过软件开发过程中的协商决定的。
 - Iteration occurs across activities.
 
-![1671017246910.png](https://pic.hanjiaming.com.cn/2022/12/14/33e5e01c13bb8.png)
+![1671017246910.png](https://netdesk.orcsvc.com/f/3LXLC5/33e5e01c13bb8.png)
 
 ## Agile Methods
 
@@ -88,7 +88,7 @@ Agile development
 
 ### XP  Release Cycle
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/d65338913115b.png" alt="1671018294683.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/arvRiq/d65338913115b.png" alt="1671018294683.png" style="zoom: 50%;" />
 
 ### XP Principles & Practices
 
@@ -184,7 +184,7 @@ Benefits
 
 Scrum是一种敏捷方法，侧重于管理迭代开发，而不是具体的敏捷实践。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/15/880c4b5dc13bf.png" alt="1671074370829.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/DA3kse/880c4b5dc13bf.png" alt="1671074370829.png" style="zoom:50%;" />
 
 ### 3 Stages
 

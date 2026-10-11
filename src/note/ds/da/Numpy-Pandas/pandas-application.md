@@ -150,7 +150,7 @@ dogs_ind.reset_index(drop=True)
 dogs_ind.reset_index() # as below
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/a0afacea3e22d.png" alt="1643748598892.png" title="1643748598892.png" />
+<img src="https://netdesk.orcsvc.com/f/bVr0hM/a0afacea3e22d.png" alt="1643748598892.png" title="1643748598892.png" />
 
 ```python
 dogs.columns = ["name",'id','phone'] # reset column name
@@ -270,13 +270,13 @@ movies.drop(movies[movies['avg_rating'] > 5].index, inplace = True)
 dogs_ind3.loc[["Labrador", "Chihuahua"]]
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/4be1fe78bddb2.png" alt="1643749517221.png" title="1643749517221.png" />
+<img src="https://netdesk.orcsvc.com/f/gk14FX/4be1fe78bddb2.png" alt="1643749517221.png" title="1643749517221.png" />
 
 ```python
 dogs_ind3.loc[[("Labrador", "Brown"), ("Chihuahua", "Tan")]]
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/51f7caf42ed47.png" alt="1643749602092.png" title="1643749602092.png" />
+<img src="https://netdesk.orcsvc.com/f/dolMFX/51f7caf42ed47.png" alt="1643749602092.png" title="1643749602092.png" />
 
 ### iloc[row_index, column_index]
 
@@ -336,7 +336,7 @@ brics["name_length"] = brics["country"].apply(len)
 print(brics)
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/4289b55c19f56.png" alt="1643841957415.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/wvkOU5/4289b55c19f56.png" alt="1643841957415.png" style="zoom:33%;" />
 
 ### 通过 assign
 
@@ -345,7 +345,7 @@ print(brics)
 data = data.assign( mass_g=data2 )
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/23/d74b1612adf15.png" alt="1655916731095.png" style="zoom: 45%;" />
+<img src="https://netdesk.orcsvc.com/f/A6VWfy/d74b1612adf15.png" alt="1655916731095.png" style="zoom: 45%;" />
 
 ## Built-in function
 
@@ -483,7 +483,7 @@ dtype: int64
 
 区分.count()
 
-![1643903651772.png](https://pic.hanjiaming.com.cn/2022/02/03/d88bef996da3a.png)
+![1643903651772.png](https://netdesk.orcsvc.com/f/vvrdhq/d88bef996da3a.png)
 
 ### With agg
 
@@ -538,14 +538,14 @@ rides.groupby('Member type').first()
 dogs.pivot_table(values="weight_kg",index="color" aggfunc = np.mean) # 默认是平均值
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/e23af2420576c.png" alt="1643746618329.png" title="1643746618329.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/KwnEFL/e23af2420576c.png" alt="1643746618329.png" title="1643746618329.png" style="zoom:50%;" />
 
 ```python
 dogs.pivot_table(values="weight_kg", index="color", aggfunc=np.median)
 dogs.pivot_table(values="weight_kg", index="color", aggfunc=[np.mean, np.median]) # output as below
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/cc1caa785d9e4.png" alt="1643746746596.png" title="1643746746596.png" />
+<img src="https://netdesk.orcsvc.com/f/vvkdfq/cc1caa785d9e4.png" alt="1643746746596.png" title="1643746746596.png" />
 
 ### 展开
 
@@ -563,7 +563,7 @@ dogs.pivot_table(values="weight_kg", index="color", aggfunc=np.mean)
 dogs.pivot_table(values="weight_kg", index="color", columns="breed") #output as below
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/7b121f124f9f6.png" alt="1643747745072.png" title="1643747745072.png" />
+<img src="https://netdesk.orcsvc.com/f/8JxXt5/7b121f124f9f6.png" alt="1643747745072.png" title="1643747745072.png" />
 
 ```python
 dogs.pivot_table(values="weight_kg", index="color", columns="breed", fill_value=0)
@@ -571,7 +571,7 @@ dogs.pivot_table(values="weight_kg", index="color", columns="breed",
 fill_value=0, margins=True) # output as below
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/02/8c0ae53c137c8.png" alt="1643748408567.png" title="1643748408567.png" />
+<img src="https://netdesk.orcsvc.com/f/X5wMfX/8c0ae53c137c8.png" alt="1643748408567.png" title="1643748408567.png" />
 
 ## .melt()
 
@@ -579,9 +579,9 @@ Reshaping data with .melt()
 
 相当于pivot 的反操作，从宽到长
 
-![1643839793105.png](https://pic.hanjiaming.com.cn/2022/02/03/819d2549f32af.png)
+![1643839793105.png](https://netdesk.orcsvc.com/f/X5GMuX/819d2549f32af.png)
 
-![1643839854995.png](https://pic.hanjiaming.com.cn/2022/02/03/d1e5f3d8ba285.png)
+![1643839854995.png](https://netdesk.orcsvc.com/f/1LGAcK/d1e5f3d8ba285.png)
 
 ```python
 social_fin_tall = social_fin.melt(id_vars=['financial','company'],
@@ -591,7 +591,7 @@ social_fin_tall = social_fin.melt(id_vars=['financial','company'],
 social_fin_tall = social_fin.melt(id_vars=['financial','company']) #全显示 as below
 ```
 
-![1643839916818.png](https://pic.hanjiaming.com.cn/2022/02/03/2d48607f03459.png)
+![1643839916818.png](https://netdesk.orcsvc.com/f/ZPEos2/2d48607f03459.png)
 
 ## iterrows
 
@@ -605,9 +605,9 @@ for lab, row in brics.iterrows():
   print(row)
 ```
 
-![CleanShot 2022-02-03 at 06.42.51@2x.png](https://pic.hanjiaming.com.cn/2022/02/03/16ca48b5c87ff.png)
+![CleanShot 2022-02-03 at 06.42.51@2x.png](https://netdesk.orcsvc.com/f/3pXRF5/16ca48b5c87ff.png)
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/ad4337fe9467f.png" alt="1643841837126.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/WrPbC9/ad4337fe9467f.png" alt="1643841837126.png" style="zoom:50%;" />
 
 ## value_counts()
 
@@ -828,7 +828,7 @@ shift函数是对数据进行移动的操作，注意仅移动数据。
 df.shift(periods=2, axis = 0)
 ```
 
-![1654426806034.png](https://pic.hanjiaming.com.cn/2022/06/05/0cab578a0678b.png)
+![1654426806034.png](https://netdesk.orcsvc.com/f/k8dnTb/0cab578a0678b.png)
 
 ## Write CSV
 
@@ -855,7 +855,7 @@ name = nobel.nsmallest(1, 'age')["full_name"].reset_index()
 name
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/01/227a344449056.png" alt="1654023030423.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/LQdPT2/227a344449056.png" alt="1654023030423.png" style="zoom:50%;" />
 
 ### Print dataframe
 

@@ -131,7 +131,7 @@ e.g., “Their son is pregnant.”
 
 ## 词类
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/10/5f6b2ca48a6a5.png" alt="1657443664222.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/p4AwFn/5f6b2ca48a6a5.png" alt="1657443664222.png" style="zoom:33%;" />
 
 词语的分类，按 构词和句法 特点。
 
@@ -139,13 +139,13 @@ e.g., “Their son is pregnant.”
 
 名词的次分类
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/10/a8b809d3d01e2.png" alt="1657444205392.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/Kw6jHL/a8b809d3d01e2.png" alt="1657444205392.png" style="zoom: 33%;" />
 
 ## 句法成分
 
 某些词语有紧密的关系，属于一个单位，称为 句法成分
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/10/41b7f88d013c4.png" alt="1657444309494.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/bVw1TM/41b7f88d013c4.png" alt="1657444309494.png" style="zoom:25%;" />
 
 ## 短语的结构和特性
 

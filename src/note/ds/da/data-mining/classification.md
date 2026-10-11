@@ -76,7 +76,7 @@ Model construction: describing a set of predetermined classes
 
 决策树的用途：对未知样本进行分类，根据决策树测试样本的属性值
 
-![CleanShot 2023-11-20 at 00.23.15@2x.png](https://pic.hanjiaming.com.cn/2023/11/20/407984de42f46.png)
+![CleanShot 2023-11-20 at 00.23.15@2x.png](https://netdesk.orcsvc.com/f/wEOF5/407984de42f46.png)
 
 ### Extracting Rules from Trees
 
@@ -174,7 +174,7 @@ $$
 - 猫（P类）的比例是 $\frac{9}{10}$（因为有9只猫和10只动物总计），狗（N类）的比例是 $\frac{1}{10}$。
 * 将这些比例代入公式，我们得到 I(9,1)。这个值告诉我们，根据猫和狗的分布，我们需要多少信息来确定一个随机选取的动物是猫还是狗。
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/ffa2853b2b68f.png" alt="1700451383749.png" style="zoom: 38%;" />
+<img src="https://netdesk.orcsvc.com/f/yEliZ/ffa2853b2b68f.png" alt="1700451383749.png" style="zoom: 38%;" />
 
 :::
 
@@ -223,7 +223,7 @@ $$
 
 ### Attribute Selection
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/05436c1dce7d7.png" alt="1700451822006.png" style="zoom:40%;" />
+<img src="https://netdesk.orcsvc.com/f/mEbS9/05436c1dce7d7.png" alt="1700451822006.png" style="zoom:40%;" />
 
 ::: details Thinking time
 

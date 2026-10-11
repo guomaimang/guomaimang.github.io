@@ -39,5 +39,5 @@ category:
 
 ## Why AWS
 
-![1708064783549.png](https://pic.hanjiaming.com.cn/2024/02/16/7673fe8ae694a.png)
+![1708064783549.png](https://netdesk.orcsvc.com/f/9gYhm/7673fe8ae694a.png)
 

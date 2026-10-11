@@ -55,7 +55,7 @@ EDA中采用的特殊图形技术通常很简单，由以下各种技术组成�
 
 下面是NSFG编码手册中关于 "BIRTHWGT_OZ1 "的文件。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/bcc6dca63b731.png" alt="1654621783227.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/wv4QS5/bcc6dca63b731.png" alt="1654621783227.png" style="zoom:50%;" />
 
 区分下列描述词
 
@@ -85,7 +85,7 @@ replace()方法做了我们想要的事情；它接收了一个我们想要替�
 
 我们使用来自 NSFG 的数据来计算以磅为单位的出生体重，并将结果存储在名为birth_weight 的系列中。让我们看看这些值的分布是什么样的。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/7b31b4110442b.png" alt="1654621609937.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/eDpaHq/7b31b4110442b.png" alt="1654621609937.png" style="zoom: 33%;" />
 
 这里是结果的样子。X轴是以磅为单位的出生体重，分为30个档次。y轴是每个仓内的出生数量。这个分布看起来有点像钟形曲线，但是尾巴在左边比右边长；也就是说，轻婴儿比重婴儿多。这是有道理的，因为这个分布包括一些早产的婴儿。最常见的怀孕时间是39周，也就是 "足月"；"早产 "通常被定义为小于37周。
 
@@ -97,7 +97,7 @@ replace()方法做了我们想要的事情；它接收了一个我们想要替�
 
 NSFG数据集包括一个变量 "agecon"，记录了每次怀孕的年龄。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/3233c5f20dde1.png" alt="1654621903907.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/2506Sv/3233c5f20dde1.png" alt="1654621903907.png" style="zoom:50%;" />
 
 前面的练习中，计算了足月婴儿的平均出生体重；我们过滤掉了早产婴儿，因为他们的体重分布是不同的。
 多胞胎的体重分布也不同，如双胞胎和三胞胎，也要把它们过滤掉，看看对平均值有什么影响。
@@ -119,19 +119,19 @@ NSFG数据集包括一个变量 "agecon"，记录了每次怀孕的年龄。
 
 ### PMF
 
-![1654668252351.png](https://pic.hanjiaming.com.cn/2022/06/08/c581ad41b5817.png)
+![1654668252351.png](https://netdesk.orcsvc.com/f/JwyAU8/c581ad41b5817.png)
 
 使用 `plt.hist` 可以绘制 PMF
 
 ### CDF
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/84967fcad4a61.png" alt="1654668279487.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/VpPDu2/84967fcad4a61.png" alt="1654668279487.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/76ce618d9037a.png" alt="1654668304010.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/ZPn2f2/76ce618d9037a.png" alt="1654668304010.png" style="zoom: 67%;" />
 
 当数据具有大量唯一值时，PMF不能很好地工作，CDF有时能更好的表现数据
 
-![1654668379892.png](https://pic.hanjiaming.com.cn/2022/06/08/306ba21b6bd8b.png)
+![1654668379892.png](https://netdesk.orcsvc.com/f/Kwp6uL/306ba21b6bd8b.png)
 
 ```python
 pdf = count / sum(count)
@@ -144,7 +144,7 @@ plt.show()
 
 使用 `sns.distplot()` 或者 `df.plot.kde()`来绘制KDE
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/da586b4c44481.png" alt="1654669710598.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/YG6Ou2/da586b4c44481.png" alt="1654669710598.png" style="zoom:50%;" />
 
 ### 总结
 
@@ -162,7 +162,7 @@ plt.show()
 
 正态分布，也被称为高斯分布。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/d918d741da458.png" alt="1654683920071.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/3pa3i5/d918d741da458.png" alt="1654683920071.png" style="zoom:50%;" />
 
 举例，下面将正态分布和数据的分布画到一个图上以进行对比。
 
@@ -213,7 +213,7 @@ array([2.16260226e-07, 1.00555769e-06, 4.30979761e-06, 1.70265363e-05,
        2.90056130e-15, 2.70178414e-16])
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/20b9ce09cfed2.png" alt="1654676762938.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/Oa2xsQ/20b9ce09cfed2.png" alt="1654676762938.png" style="zoom: 50%;" />
 
 ```python
 # 建立数据轴
@@ -222,7 +222,7 @@ log_income.plot.kde(bw_method=0.5)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/08a278a6ebd66.png" alt="1654677081562.png" style="zoom:67%;" />
+<img src="https://netdesk.orcsvc.com/f/42Lmc2/08a278a6ebd66.png" alt="1654677081562.png" style="zoom:67%;" />
 
 因此可以说 log_income 呈现正态分布。
 
@@ -247,7 +247,7 @@ plt.ylabel('CDF')
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/544a2d2b8e1c6.png" alt="1654677402396.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/LQ0DI2/544a2d2b8e1c6.png" alt="1654677402396.png" style="zoom:50%;" />
 
 ## Figure Fix
 
@@ -263,7 +263,7 @@ plt.ylabel('Weight in kg')
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/7c76f23c83957.png" alt="1654682883948.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/3payt5/7c76f23c83957.png" alt="1654682883948.png" style="zoom:50%;" />
 
 左图由于过度采样，导致点扎堆，无法获取更直观的信息。我们的目标是加工其成为右面的图像。
 
@@ -275,7 +275,7 @@ plt.plot(x = height, y = weight, 'o', markersize=1, alpha=0.02)
 plt.show()
 ```
 
-![1654683070394.png](https://pic.hanjiaming.com.cn/2022/06/08/b9bd5139c3381.png)
+![1654683070394.png](https://netdesk.orcsvc.com/f/1La1uK/b9bd5139c3381.png)
 
 由于点过度集中，不妨添加一些抖动(Jittering)
 
@@ -287,7 +287,7 @@ plt.plot(height_jitter, weight_jitter, 'o', markersize=1, alpha=0.01)
 plt.show()
 ```
 
-![1654683979824.png](https://pic.hanjiaming.com.cn/2022/06/08/b3690f540c350.png)
+![1654683979824.png](https://netdesk.orcsvc.com/f/25alCv/b3690f540c350.png)
 
 由于点集中在一小块，不妨设置一下轴的聚焦
 
@@ -297,7 +297,7 @@ plt.axis([140, 200, 0, 160])
 plt.show()
 ```
 
-![1654684054013.png](https://pic.hanjiaming.com.cn/2022/06/08/b43968b007faa.png)
+![1654684054013.png](https://netdesk.orcsvc.com/f/eDbWHq/b43968b007faa.png)
 
 
 
@@ -313,7 +313,7 @@ plt.yscale('ln')
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/c17a2c6d7aad7.png" alt="1654692864566.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/VpP9t2/c17a2c6d7aad7.png" alt="1654692864566.png" style="zoom:50%;" />
 
 ## 接下来
 

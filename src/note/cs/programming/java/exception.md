@@ -62,7 +62,7 @@ catch (ArithmeticException ex) {
 
 ## 异常的类型
 
-![1656583864594.png](https://pic.hanjiaming.com.cn/2022/06/30/7e70e41e18629.png)
+![1656583864594.png](https://netdesk.orcsvc.com/f/bVbDsM/7e70e41e18629.png)
 
 异常是对象。异常的根类是 `java.lang.Throwable`。所有异常类都直接或间接的继承自Throwable
 

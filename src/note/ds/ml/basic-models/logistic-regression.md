@@ -34,7 +34,7 @@ headerDepth: 2
 
 但是对于逻辑回归，输入可以是连续的 [-∞, +∞] ，但输出一般是离散的，即只有有限多个输出值。例如，其值域可以只有两个值 {0, 1} ，这两个值可以表示对样本的某种分类，高/低、患病/健康、阴性/阳性等，这就是最常见的二分类逻辑回归。
 
-![1676958067849.png](https://pic.hanjiaming.com.cn/2023/02/21/2da4df0fa888c.png)
+![1676958067849.png](https://netdesk.orcsvc.com/f/DyOIe/2da4df0fa888c.png)
 
 因此，从整体上来说， **通过逻辑回归模型，我们将在整个实数范围上的x映射到了有限个点上，这样就实现了对x的分类。** 因为每次拿过来一个x，经过逻辑回归分析，就可以将它归入某一类y中。
 
@@ -59,7 +59,7 @@ $$
 
 $S(x)=\frac{1}{1+e^{-x}}$
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/10/b0dc43dd4f7b7.png" alt="1657467796254.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/l3ogCe/b0dc43dd4f7b7.png" alt="1657467796254.png" style="zoom: 50%;" />
 
 :::
 
@@ -82,7 +82,7 @@ $S(x)=\frac{1}{1+e^{-x}}$
 - $h_{\theta}(x)$ = 𝑃{𝑦=1|𝑥,𝜃} means probability of 𝑦 = 1, given 𝑥, under parameter values 𝜃
 - $P\{y=0 \mid x, \theta\}=1-h_{\theta}(x)$
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/01/48dbf6a97250e.png" alt="CleanShot 2023-02-01 at 16.35.03@2x.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ApGhy/48dbf6a97250e.png" alt="CleanShot 2023-02-01 at 16.35.03@2x.png" style="zoom:33%;" />
 
 ## Decision boundary
 
@@ -95,7 +95,7 @@ Example:
 - Predict y = 1 when $-3+x_{1}+x_{2} \geqslant 0$
   - $x_{1}+x_{2} \geqslant 3$  (red)
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/11/e9372f8b677d5.png" alt="1657469988121.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/y3WVSZ/e9372f8b677d5.png" alt="1657469988121.png" style="zoom: 50%;" />
 
 ## Regression Metrics
 
@@ -118,7 +118,7 @@ $$
 
 这样做是为了 **Heavy Penalty**， 即
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/01/b1b624649b91a.png" alt="1675262460266.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/M6Dt8/b1b624649b91a.png" alt="1675262460266.png" style="zoom: 25%;" />
 
 注：只观察 [0,1] 区间
 
@@ -154,17 +154,17 @@ $$
 
 如果在逻辑回归中使用 cost function: $J(\theta)=\frac{1}{m} \sum_{i=1}^{m} \frac{1}{2}\left(h_{\theta}\left(x^{(i)}\right)-y^{(i)}\right)^{2}$ ，其图像为
 
-![1657472131550.png](https://pic.hanjiaming.com.cn/2022/07/11/9a62cf1a855f0.png)
+![1657472131550.png](https://netdesk.orcsvc.com/f/LQoYi2/9a62cf1a855f0.png)
 
 这是一个非凸函数，有多个局部最优解，运用梯度下降算法并不会收敛到它的全局最优解。因此我们需要重新定义代价函数。
 
 当 y = 1 时，Cost(h<sub>θ</sub>(x), y) 函数的图像是
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/11/67f362d682794.png" alt="1657474758955.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/0WAai5/67f362d682794.png" alt="1657474758955.png" style="zoom:50%;" />
 
 当 y = 0时，Cost(h<sub>θ</sub>(x), y) 函数的图像是
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/11/99b2bc1475c75.png" alt="1657474805716.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/WrpnC9/99b2bc1475c75.png" alt="1657474805716.png" style="zoom:50%;" />
 
 - 预测正确，那么它的代价值就为 0
 - 预测错误，那么这个代价就是无穷大的
@@ -173,13 +173,13 @@ $$
 
 ## Multi-class Classification
 
-![1675263154245.png](https://pic.hanjiaming.com.cn/2023/02/01/d2ffce0f64689.png)
+![1675263154245.png](https://netdesk.orcsvc.com/f/o9pfg/d2ffce0f64689.png)
 
 在 One-vs-all (one-vs-rest) 方法中，为每个类别训练一个二元分类器，将该类别与所有其他类别区分开来。
 
 例如，假设有三个类，A、B、C。在这种情况下，我们将训练三个二元分类器：一个用于A类与其他类的对比，一个用于B类与其他类的对比，一个用于C类与其他类的对比。
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/21/305ae3908fc6d.png" alt="1676950789065.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/QGEuj/305ae3908fc6d.png" alt="1676950789065.png" style="zoom:33%;" />
 
 ```python
 import numpy as np

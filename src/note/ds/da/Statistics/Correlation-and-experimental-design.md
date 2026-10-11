@@ -41,9 +41,9 @@ _VEGESU1 -0.010    0.120      1.00
 
 ### Visualizing relationships
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/bb1583e8fec67.png" alt="1655723559239.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/jPnqCb/bb1583e8fec67.png" alt="1655723559239.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/43b5b61d7601c.png" alt="1655723579683.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/VpG9F2/43b5b61d7601c.png" alt="1655723579683.png" style="zoom:50%;" />
 
 ### Computing Linear correlation
 
@@ -57,7 +57,7 @@ msleep['sleep_total'].corr(msleep['sleep_rem'])
 
 ### Way to calculate Linear correlation
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/e9ce8159bbb65.png" alt="1655723715509.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ER8QUd/e9ce8159bbb65.png" alt="1655723715509.png" style="zoom:33%;" />
 
 还有很多其他的方式计算相关性。
 
@@ -74,7 +74,7 @@ msleep['sleep_total'].corr(msleep['sleep_rem'])
 
 Correlation does not imply causation「相关并不意味着因果关系」
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/5895ec0f28d4a.png" alt="1655724330287.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/1LmXiK/5895ec0f28d4a.png" alt="1655724330287.png" style="zoom:50%;" />
 
 ::: note 案例
 
@@ -139,7 +139,7 @@ subject nc. 受试者
 
 实验的效果可能会受到一些因素的干扰，这些因素使某些人进入对照组，而某些人进入实验组。然而，有一些方法可以控制混杂因素，这可以帮助加强关联结论的可靠性。
 
-![1655726001864.png](https://pic.hanjiaming.com.cn/2022/06/20/50bb4de4b356d.png)
+![1655726001864.png](https://netdesk.orcsvc.com/f/Wr4lc9/50bb4de4b356d.png)
 
 ### Longitudinal vs. cross-sectional studies
 

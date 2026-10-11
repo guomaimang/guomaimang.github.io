@@ -16,13 +16,13 @@ order: 4
 
 判定系数R<sup>2</sup>是评估回归模型好坏的指标。R平方取值范围也为0~1，通常以百分数表示。比如回归模型的R平方等于0.7，那么表示，此回归模型对预测结果的可解释程度为70%。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/16/76fe65149cece.png" alt="1655368481996.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/VpY9u2/76fe65149cece.png" alt="1655368481996.png" style="zoom: 33%;" />
 
-![1655368557189.png](https://pic.hanjiaming.com.cn/2022/06/16/c482e961111c6.png)
+![1655368557189.png](https://netdesk.orcsvc.com/f/YGPOT2/c482e961111c6.png)
 
 ::: info 使用 .summary() 查看
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/25/3f093a09f577b.png" alt="1656094775707.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/wv9dh5/3f093a09f577b.png" alt="1656094775707.png" style="zoom: 33%;" />
 
 :::
 
@@ -51,18 +51,18 @@ print(coeff_determination)
 
 r^2 的公式 可由相关系数公式推导出来。下面是相关系数r的计算公式。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/20/e9ce8159bbb65.png" alt="1655723715509.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ER8QUd/e9ce8159bbb65.png" alt="1655723715509.png" style="zoom:33%;" />
 
 :::
 
 ## MSE & RMSE
 
-![1656096974109.png](https://pic.hanjiaming.com.cn/2022/06/25/a7135ebf7ff1c.png)
+![1656096974109.png](https://netdesk.orcsvc.com/f/Vp8wF2/a7135ebf7ff1c.png)
 
 - **Mean squared error**「平均平方误差」
 - **root mean squared error**「平均平方根误差」:残差标准误差（RSE）是对残差的典型大小的衡量。等于说，它是一个衡量你可以期望预测的错误程度的指标。数字越小越好，零是对数据的完美拟合。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/16/37a100a0ea5d3.png" alt="1655368802867.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/y3o1IZ/37a100a0ea5d3.png" alt="1655368802867.png" style="zoom: 33%;" />
 
 RMSE<sup>2</sup> = MSE
 
@@ -111,4 +111,4 @@ rse : 74.15224261594197
 
 ### 手动计算 RMSE
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/25/4e75cab2d5139.png" alt="1656100676068.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/Qa8Yhj/4e75cab2d5139.png" alt="1656100676068.png" style="zoom: 33%;" />

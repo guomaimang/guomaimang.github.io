@@ -9,7 +9,7 @@ headerDepth: 1
 
 # Virtualization Technologies
 
-![1715244436858.png](https://pic.hanjiaming.com.cn/2024/05/09/b9361d8a65eeb.png)
+![1715244436858.png](https://netdesk.orcsvc.com/f/oGpFg/b9361d8a65eeb.png)
 
 Virtualization Technologies are the **CORE** of Cloud Computing
 
@@ -24,7 +24,7 @@ Why Cloud is Attractive?
 
 Virtualization is the **pooling and abstraction**「汇集和抽象」 of resources in a way that masks「隐藏」 <u>the physical nature and boundaries of those resources</u> for the resource users (e.g.,virtual CPUs,virtual network,virtual storage)
 
-![1713627002155.png](https://pic.hanjiaming.com.cn/2024/04/20/345eb8981eb61.png)
+![1713627002155.png](https://netdesk.orcsvc.com/f/0ppET5/345eb8981eb61.png)
 
 ## Virtualization at Different Levels
 
@@ -40,13 +40,13 @@ Allow the **sharing** of the underlying physical machine resources「底层物�
 
 The software layer providing the virtualization is called a <u>virtual machine monitor **(VMM) or hypervisor**</u>.
 
-![1713627691092.png](https://pic.hanjiaming.com.cn/2024/04/20/4afbfa78792cc.png)
+![1713627691092.png](https://netdesk.orcsvc.com/f/OrrOSQ/4afbfa78792cc.png)
 
 A virtualization platform that allows multiple operating systems to run on one machine at the same time.
 
-![1713628041418.png](https://pic.hanjiaming.com.cn/2024/04/20/176b7229d7808.png)
+![1713628041418.png](https://netdesk.orcsvc.com/f/WYYXH9/176b7229d7808.png)
 
-![1713628133719.png](https://pic.hanjiaming.com.cn/2024/04/20/092db4bbac5c6.png)
+![1713628133719.png](https://netdesk.orcsvc.com/f/Lmm1T2/092db4bbac5c6.png)
 
 ::: info Three Main Tasks Done by the Hypervisor
 
@@ -68,7 +68,7 @@ A virtualization platform that allows multiple operating systems to run on one m
    	- Linux KVM 使用的主要模型（但 I/O 虚拟化仍使用 Qemu），
    	- 现在也被Xen（HVM）也支持。
 
-![1713637970967.png](https://pic.hanjiaming.com.cn/2024/04/21/0ada4f5ab8712.png)
+![1713637970967.png](https://netdesk.orcsvc.com/f/ZrrEs2/0ada4f5ab8712.png)
 
 x86架构支持四种特权级别—通常编号为0~3。 Ring 0是权限最高的级别，与CPU、内存等物理硬件交互最直接。
 
@@ -79,7 +79,7 @@ x86架构支持四种特权级别—通常编号为0~3。 Ring 0是权限最高�
 - Running an interrupt handler(@Ring o,kernel code)
 - Running a kernel thread (@Ring 0,kernel code)
 
-![1713637311672.png](https://pic.hanjiaming.com.cn/2024/04/21/941e9589285fa.png)
+![1713637311672.png](https://netdesk.orcsvc.com/f/2vvxcv/941e9589285fa.png)
 
 ### Full Virtualization using Binary Translation
 
@@ -92,9 +92,9 @@ Translates kernel code to **replace non-virtualizable instructions** with new <u
 
 Guest OS runs at Ring 1
 
-<img src="https://pic.hanjiaming.com.cn/2024/04/21/b822b9a003079.png" alt="1713637259615.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/waals5/b822b9a003079.png" alt="1713637259615.png" style="zoom: 40%;" />
 
-![1713637483134.png](https://pic.hanjiaming.com.cn/2024/04/21/8aa7a7bcfd9bc.png)
+![1713637483134.png](https://netdesk.orcsvc.com/f/WYYbF9/8aa7a7bcfd9bc.png)
 
 ### OS-Assisted Virtualization or Para-Virtualization
 
@@ -110,7 +110,7 @@ Xen:
   - The hypervisor in turn performs the task on behalf of the guest kernel.
   - Leverage OS knowledge of virtualization to provide high-performance VM.
 
-<img src="https://pic.hanjiaming.com.cn/2024/04/21/df950ba2927f6.png" alt="1713638238019.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/388Qi5/df950ba2927f6.png" alt="1713638238019.png" style="zoom:33%;" />
 
 Xen requires modifications to Guest OS's Kernel: Attempt to provide most services directly from the underlying hardware **instead of abstracting** it.
 
@@ -130,7 +130,7 @@ Privileged and sensitive calls are set to <u>automatically **trap** to the hyper
 - Xen calls it hardware virtual machine (HVM) 
 - KVM is designed for hardware-assisted virtualization.
 
-<img src="https://pic.hanjiaming.com.cn/2024/04/21/45381adc02cf0.png" alt="1713639233377.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/eeeKSq/45381adc02cf0.png" alt="1713639233377.png" style="zoom: 50%;" />
 
 ## Memory Virtualization
 
@@ -150,11 +150,11 @@ Privileged and sensitive calls are set to <u>automatically **trap** to the hyper
 
 ### Memory Layout of a Linux Process
 
-![1713639666260.png](https://pic.hanjiaming.com.cn/2024/04/21/efdf9d10641e2.png)
+![1713639666260.png](https://netdesk.orcsvc.com/f/v33dHq/efdf9d10641e2.png)
 
 ### Logical vs Physical Address
 
-![1713639742115.png](https://pic.hanjiaming.com.cn/2024/04/21/3f4be1f12c4ed.png)
+![1713639742115.png](https://netdesk.orcsvc.com/f/JRRgh8/3f4be1f12c4ed.png)
 
 ### 2 Independent Layers of Paging
 
@@ -163,7 +163,7 @@ Two independent layers of paging(Guest OS & VMM) needed.
 - 客户操作系统只能控制虚拟地址到虚拟 "物理地址 "的映射，但不能直接访问实际的 "机器内存"。
 - VMM 负责将客户物理内存映射到实际的 "机器内存"（真实内存）
 
-![1713639858948.png](https://pic.hanjiaming.com.cn/2024/04/21/371016df45fa8.png)
+![1713639858948.png](https://netdesk.orcsvc.com/f/LmmkU2/371016df45fa8.png)
 
 ::: note VMWare
 
@@ -171,7 +171,7 @@ Two independent layers of paging(Guest OS & VMM) needed.
 - (Guest) Physical memory (PA):the memory allocated to the virtual machine operating system
 - (Host) Machine memory (MA):DRAM installed in your machine.
 
-![1713639967099.png](https://pic.hanjiaming.com.cn/2024/04/21/ec529de4b185f.png)
+![1713639967099.png](https://netdesk.orcsvc.com/f/VQQXu2/ec529de4b185f.png)
 
 :::
 
@@ -209,7 +209,7 @@ Two independent layers of paging(Guest OS & VMM) needed.
 
 What are the Problems?
 
-![1714827636189.png](https://pic.hanjiaming.com.cn/2024/05/04/a148c0c11c7b8.png)
+![1714827636189.png](https://netdesk.orcsvc.com/f/bPDIM/a148c0c11c7b8.png)
 
 #### VMware Shadow Page Tables (SPT)
 
@@ -240,7 +240,7 @@ Shadow Page Tables 的工作原理是这样的：
 
 :::
 
-![1714835224210.png](https://pic.hanjiaming.com.cn/2024/05/04/bbfba5465dbaf.png)
+![1714835224210.png](https://netdesk.orcsvc.com/f/DDyhe/bbfba5465dbaf.png)
 
 - VMM 为每个进程保留单独的影子页表。
 - VMM 在影子页表中维护虚拟到机器 (V2M) 页映射
@@ -250,7 +250,7 @@ Shadow Page Tables 的工作原理是这样的：
   - Note: Logical Page Numbers (LPNs)>Machine Page Numbers (MPNs)
 - 虚拟机不会直接更新处理器上的实际内存管理单元（MMU）。
 
-![1714835304117.png](https://pic.hanjiaming.com.cn/2024/05/04/f5a205298e471.png)
+![1714835304117.png](https://netdesk.orcsvc.com/f/M42C8/f5a205298e471.png)
 
 Issues with Shadow Page Table
 
@@ -271,7 +271,7 @@ Context Switch：这是操作系统用来在多个进程之间共享单个 CPU �
 
 在上下文切换过程中，虚拟机监视器（VMM）必须介入，以将物理内存管理单元（MMU）切换到新进程的 Shadow Page Table 的根（也就是新进程的页全局目录，PGD）。这是因为每个进程都有自己的虚拟内存空间，所以它们各自的页表（和对应的 Shadow Page Table）都是不同的。因此，当进行上下文切换时，VMM 需要更新物理 MMU，以确保它使用正确的 Shadow Page Table，从而正确地映射虚拟内存到物理内存。
 
-![1714838698805.png](https://pic.hanjiaming.com.cn/2024/05/05/d7ed12f9b2646.png)
+![1714838698805.png](https://netdesk.orcsvc.com/f/kEgFb/d7ed12f9b2646.png)
 
 :::
 
@@ -289,7 +289,7 @@ Xen: Direct Paging  -> Para-virtualised MMU model
 - 客户操作系统使用超级调用分配和管理自己的页表
 - 操作系统不得向自身提供不受限制的 PT 访问、对虚拟机管理程序空间的访问或对其他 VM 的访问。
 
-![1714838263657.png](https://pic.hanjiaming.com.cn/2024/05/04/ae7b100884e80.png)
+![1714838263657.png](https://netdesk.orcsvc.com/f/MRyF8/ae7b100884e80.png)
 
 Xen 是一个虚拟机监视器（VMM），它允许多个操作系统同时运行在同一台物理机器上。Xen 使用一种称为硬件抽象层（HAL）的技术，将物理硬件资源抽象化，以便可以在多个虚拟机之间共享。
 
@@ -299,7 +299,7 @@ Direct Paging 是一种解决这种性能开销的方法。通过 Direct Paging�
 
 然而，Direct Paging 也有其挑战和限制。例如，虚拟机必须能够处理页表的复杂性，包括处理页错误和其他相关的硬件异常。此外，由于虚拟机直接访问和管理其页表，因此需要确保虚拟机不能修改其他虚拟机或主机的页表，以防止潜在的安全问题。
 
-![1714838821648.png](https://pic.hanjiaming.com.cn/2024/05/05/21d018a5a28c0.png)
+![1714838821648.png](https://netdesk.orcsvc.com/f/XmefX/21d018a5a28c0.png)
 
 - 客户操作系统分配和管理自己的 PT
   - Each domain has a maximum memory allocation "reserved"at domain creation time.(isolation)
@@ -314,22 +314,22 @@ Direct Paging 是一种解决这种性能开销的方法。通过 Direct Paging�
 
 I/O Devices :keyboard,mouse,graphics display,real-time clock, 8259 programmable interrupt controller,CMOS,disk drive,CD-ROM etc.
 
-![1714980052093.png](https://pic.hanjiaming.com.cn/2024/05/06/a6f9f9edec12b.png)
+![1714980052093.png](https://netdesk.orcsvc.com/f/L34i2/a6f9f9edec12b.png)
 
 l/O 虚拟化环境是通过将上层协议从物理连接中抽象出来而创建的。
 
-![1714980170231.png](https://pic.hanjiaming.com.cn/2024/05/06/390ebc6e8c46d.png)
+![1714980170231.png](https://netdesk.orcsvc.com/f/OlrsQ/390ebc6e8c46d.png)
 
 ### Xen: Split Device Driver Model
 
 - Xen 利用现有的驱动程序代码 -> 真正的驱动程序位于 Dom0 中。
 - 每个客户操作系统（DomU）只需要实现“模拟「emulated」驱动程序”（前端接口「Front End Interface」），它将驱动程序调用转发给Domo中的真实驱动程序。
 
-![1714980500338.png](https://pic.hanjiaming.com.cn/2024/05/06/b7993ec705997.png)
+![1714980500338.png](https://netdesk.orcsvc.com/f/XV6HX/b7993ec705997.png)
 
 conceptual view
 
-![1714980590716.png](https://pic.hanjiaming.com.cn/2024/05/06/f3ce76d4ca043.png)
+![1714980590716.png](https://netdesk.orcsvc.com/f/GG4cA/f3ce76d4ca043.png)
 
 How to Handle Interrupt in Xen: Event Channels
 
@@ -341,9 +341,9 @@ Four types of events:
 - IPIs (inter-processor interrupt):VCPU to VCPU
 - PIRQs (physical IRQ):hardware interrupts.
 
-![1714981061354.png](https://pic.hanjiaming.com.cn/2024/05/06/257e5f7e8b977.png)
+![1714981061354.png](https://netdesk.orcsvc.com/f/439i2/257e5f7e8b977.png)
 
-![1714981084472.png](https://pic.hanjiaming.com.cn/2024/05/06/4aa0140b41fa6.png)
+![1714981084472.png](https://netdesk.orcsvc.com/f/dbZTX/4aa0140b41fa6.png)
 
 ### Xen: Network Virtualization
 
@@ -353,7 +353,7 @@ Network interfaces:
 - Back-end in Domain-0: virtual interface (vif) :vif0.0,vif1.0,vif 2.0,..
 - Netfront 和 Netback 之间的连接由虚拟机「hypervisor」管理程序提供（I/O 通道）。Domain-o 管理所有 netbacks
 
-![1714981340717.png](https://pic.hanjiaming.com.cn/2024/05/06/2ff7b3f1bc598.png)
+![1714981340717.png](https://netdesk.orcsvc.com/f/6VnFE/2ff7b3f1bc598.png)
 
 ### Virtual Network Interfaces
 
@@ -365,7 +365,7 @@ VIF 是 Virtual Interface 的缩写，它是虚拟化技术中的一个重要概
 
 在网络虚拟化中，VIF 通常指的是虚拟网络接口。每个虚拟机都会有一个或多个 VIF，这些 VIF 连接到虚拟交换机或虚拟网络。这样，虚拟机就可以像使用物理网络接口一样使用这些 VIF，进行网络通信。
 
-![1715159945486.png](https://pic.hanjiaming.com.cn/2024/05/08/a9b8f91840786.png)
+![1715159945486.png](https://netdesk.orcsvc.com/f/xwXs3/a9b8f91840786.png)
 
 ::: tip
 
@@ -400,7 +400,7 @@ Xen 中，有一个特殊的虚拟机称为 Domain 0（Dom0），它具有特权
 
 每 demain 域都有一个配置文件，指定与该域关联的网络设置
 
-<img src="https://pic.hanjiaming.com.cn/2024/05/08/182e95d843d50.png" alt="1715162736836.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/yAKSZ/182e95d843d50.png" alt="1715162736836.png" style="zoom:33%;" />
 
 - bridge：该接口使用的网桥
 - ip：与虚拟网络接口相关联的 IP 地址
@@ -440,13 +440,13 @@ veth 则是一种特殊类型的网络设备，它总是成对出现。
 
 网桥、VIF和veth经常一起使用，以创建复杂的虚拟网络环境。例如，你可能会创建一个网桥，然后将多个VIF或veth设备连接到这个网桥上。这样，通过这个网桥，所有连接的设备都可以相互通信。
 
-![1715163192961.png](https://pic.hanjiaming.com.cn/2024/05/08/dabc0549368ee.png)
+![1715163192961.png](https://netdesk.orcsvc.com/f/gA3iX/dabc0549368ee.png)
 
-![1715163268320.png](https://pic.hanjiaming.com.cn/2024/05/08/ef66a384b5589.png)
+![1715163268320.png](https://netdesk.orcsvc.com/f/QL0Fj/ef66a384b5589.png)
 
 Xen: Bridge Ports in Dom0
 
-![1715163392054.png](https://pic.hanjiaming.com.cn/2024/05/08/0c173bf2c0cb3.png)
+![1715163392054.png](https://netdesk.orcsvc.com/f/5kvhV/0c173bf2c0cb3.png)
 
 ::: info Example
 
@@ -466,7 +466,7 @@ Xen: Bridge Ports in Dom0
   - 网桥是一种网络设备，它可以将多个网络接口连接起来，并在它们之间转发数据包。
   - 在我们的例子中，所有的VIF都连接到同一个网桥，网桥又连接到物理NIC。
 
-![1715163659964.png](https://pic.hanjiaming.com.cn/2024/05/08/7bd97cba1fbf5.png)
+![1715163659964.png](https://netdesk.orcsvc.com/f/LKDI2/7bd97cba1fbf5.png)
 
 这样，当一个虚拟机发送一个数据包时，数据包会从VNIC传输到Veth，再从Veth传输到VIF，然后通过网桥和物理NIC发送出去。接收数据包的过程则是相反的。
 
@@ -480,9 +480,9 @@ Xen 的默认网络配置：网桥模式 「Bridge mode」
 - Named xenbro or bro by default.
 - 默认情况下，Xen 会为每个域分配一个随机 MAC 地址（00:16:3e:xx:xx:xx 范围内）。
 
-![1715163476183.png](https://pic.hanjiaming.com.cn/2024/05/08/6af1de24fd807.png)
+![1715163476183.png](https://netdesk.orcsvc.com/f/O05TQ/6af1de24fd807.png)
 
-![1715163713018.png](https://pic.hanjiaming.com.cn/2024/05/08/7147a468d880c.png)
+![1715163713018.png](https://netdesk.orcsvc.com/f/dgvHX/7147a468d880c.png)
 
 现在，每台 PC 都运行 3 个操作系统 (Dom0-2)。 所有域都将作为独立主机出现在网络上。
 

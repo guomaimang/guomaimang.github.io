@@ -64,7 +64,7 @@ UML是一种标准化的语言，用于指定、可视化、构建和记录（�
 
 上下文模型只是显示了环境中的其他系统，但没有显示环境中的系统与被指定系统之间的关系类型。使用 UML activity diagrams 定义的业务流程模型可能有助于揭示正在开发的系统是如何用于更广泛的业务流程的。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/004dc5cca8e30.png" alt="1671026785259.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/enjKiq/004dc5cca8e30.png" alt="1671026785259.png" style="zoom:50%;" />
 
 ## Interaction Models
 

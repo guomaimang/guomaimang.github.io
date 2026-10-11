@@ -10,7 +10,7 @@ toc: true
 
 # Data Center Network
 
-![1715244552610.png](https://pic.hanjiaming.com.cn/2024/05/09/42c81935b3b98.png)
+![1715244552610.png](https://netdesk.orcsvc.com/f/bwvIM/42c81935b3b98.png)
 
 - Three-Tier DCN
 - Fat Tree DCN
@@ -23,15 +23,15 @@ Data Center Networking (DCN)
 
 ## Three-Tier DCN
 
-![1714924005701.png](https://pic.hanjiaming.com.cn/2024/05/05/de7ed0153421e.png)
+![1714924005701.png](https://netdesk.orcsvc.com/f/wbEf5/de7ed0153421e.png)
 
 The three-tier DCN architecture follows <u>a multi-rooted tree based network topology</u> 「基于多根树的网络拓扑」composed of three layers of network switches, namely access 「接入层」, aggregate 「汇聚层」, and core layers「核心层」.
 
-![1714924203368.png](https://pic.hanjiaming.com.cn/2024/05/05/4bf626d8c0549.png)
+![1714924203368.png](https://netdesk.orcsvc.com/f/yoruZ/4bf626d8c0549.png)
 
 From a Vertical Traffic Model「垂直交通模式」 to a Horizontal Traffic Model「水平交通模型」.
 
-![1714924414875.png](https://pic.hanjiaming.com.cn/2024/05/05/b703ea5f9a0b3.png)
+![1714924414875.png](https://netdesk.orcsvc.com/f/bKAIM/b703ea5f9a0b3.png)
 
 - Past: 传统数据中心 80% 的流量是 "北向南"（或垂直流量）（外部用户和内部服务器之间的数据转发）。
 - Now: 云计算数据中心 70% 的流量是 "东向西 "的
@@ -50,11 +50,11 @@ From a Vertical Traffic Model「垂直交通模式」 to a Horizontal Traffic Mo
 
 ##  Fat-Tree Architecture
 
-![1714924837740.png](https://pic.hanjiaming.com.cn/2024/05/06/d0e88d6c8807e.png)
+![1714924837740.png](https://netdesk.orcsvc.com/f/Mawt8/d0e88d6c8807e.png)
 
 ### Practical Fat-Tree Architecture
 
-![1714925349028.png](https://pic.hanjiaming.com.cn/2024/05/06/099609198b6f7.png)
+![1714925349028.png](https://netdesk.orcsvc.com/f/93Kfm/099609198b6f7.png)
 
 ### Fat-Tree DCN Architecture
 
@@ -62,7 +62,7 @@ From a Vertical Traffic Model「垂直交通模式」 to a Horizontal Traffic Mo
 
 K-ary fat tree: **three-layer** topology (edge,aggregation and core)
 
-![1715230882178.png](https://pic.hanjiaming.com.cn/2024/05/09/974dce30b6095.png)
+![1715230882178.png](https://netdesk.orcsvc.com/f/RlJS8/974dce30b6095.png)
 
 假设一个 k-ary(每个节点有不超过 k 个子节点)的三层 Fat-Tree 拓扑:
 
@@ -112,13 +112,13 @@ Why Fat-Tree?
 - 每个端口支持与终端主机相同的速度
 - 如果数据包沿可用路径均匀分布「distributed uniform」，所有设备都能以线速传输
 
-![1715233115253.png](https://pic.hanjiaming.com.cn/2024/05/09/c6a7600e088d9.png)
+![1715233115253.png](https://netdesk.orcsvc.com/f/ZL2f2/c6a7600e088d9.png)
 
 Fat-Tree DCN Bisectional Bandwidth
 
 将 N 个节点分成两组，每组 N/2 个节点，使得这两组之间的带宽最小：即二分「Bisectional」带宽
 
-![1715233187145.png](https://pic.hanjiaming.com.cn/2024/05/09/17047c085059a.png)
+![1715233187145.png](https://netdesk.orcsvc.com/f/wZQT5/17047c085059a.png)
 
 ## DCell DCN
 
@@ -126,7 +126,7 @@ DCell 是一种以服务器为中心的混合 DCN 架构，其中一台服务器
 
 高层DCell由许多低层DCell构成，同一层的DCell之间是全连接的。
 
-<img src="https://pic.hanjiaming.com.cn/2024/05/09/c38d2bb5e5199.png" alt="1715233540058.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/3Z3u5/c38d2bb5e5199.png" alt="1715233540058.png" style="zoom:50%;" />
 
 **DCell offers immense scalability**
 
@@ -142,7 +142,7 @@ Weakness:
 
 As the number of nodes within the DC architecture increases, **DCell experiences higher network delays and low throughput**.(Fat Tree is better)
 
-![1715233818553.png](https://pic.hanjiaming.com.cn/2024/05/09/e0e3962423cc5.png)
+![1715233818553.png](https://netdesk.orcsvc.com/f/4bmu2/e0e3962423cc5.png)
 
 ## Summary
 

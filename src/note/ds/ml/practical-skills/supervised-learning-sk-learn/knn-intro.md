@@ -33,19 +33,19 @@ Labeled data = training data
 
 以这个散点图为例，我们如何对黑色的观察进行分类？如果k等于3，我们会把它归类为红色。这是因为在三个最接近的观测值中，有两个是红色的。如果k等于5，我们反而会把它归类为蓝色。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/15/01047856cec7a.png" alt="1655224367163.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/R4JpU8/01047856cec7a.png" alt="1655224367163.png" style="zoom: 67%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/15/defd6b10228e9.png" alt="1655224383965.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/WrnDC9/defd6b10228e9.png" alt="1655224383965.png" style="zoom: 67%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/15/3eee784cc80fa.png" alt="1655224402584.png" style="zoom:67%;" />
+<img src="https://netdesk.orcsvc.com/f/x8lJi3/3eee784cc80fa.png" alt="1655224402584.png" style="zoom:67%;" />
 
 为了建立对KNN的直觉，让我们看一下这个散点图，它显示了一家电信公司的客户的晚间总费用和日间总费用。观察结果中，蓝色表示已经流失的客户，红色表示没有流失的客户。
 
-![1655224496357.png](https://pic.hanjiaming.com.cn/2022/06/15/1c80f4516110b.png)
+![1655224496357.png](https://netdesk.orcsvc.com/f/X5q6tX/1c80f4516110b.png)
 
 这里我们将KNN算法的结果可视化，其中邻居的数量被设置为15个。KNN创建了一个决策边界来预测客户是否会流失。在灰色背景区域的任何客户都被预测为会流失，而在红色背景区域的客户则被预测为不会流失。这个边界将被用来对未见过的数据进行预测。
 
-![1655224601002.png](https://pic.hanjiaming.com.cn/2022/06/15/e1c73b2f0c8ae.png)
+![1655224601002.png](https://netdesk.orcsvc.com/f/25Rliv/e1c73b2f0c8ae.png)
 
 ## Use sklearn to fit a classifier
 

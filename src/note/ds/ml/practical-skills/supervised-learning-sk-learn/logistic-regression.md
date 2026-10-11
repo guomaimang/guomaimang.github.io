@@ -32,7 +32,7 @@ print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/22/dc033c0758094.png" alt="1658474970388.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/jPWrcb/dc033c0758094.png" alt="1658474970388.png" style="zoom:50%;" />
 
 ## Binary Classification
 
@@ -41,7 +41,7 @@ print(classification_report(y_test, y_pred))
   - If the probability, p > 0.5: The data is labeled 1
   - If the probability, p < 0.5: The data is labeled 0
 
-![1658480884993.png](https://pic.hanjiaming.com.cn/2022/07/22/e8e1d24c695bd.png)
+![1658480884993.png](https://netdesk.orcsvc.com/f/qlZqUJ/e8e1d24c695bd.png)
 
 ```python
 from sklearn.linear_model import LogisticRegression
@@ -66,7 +66,7 @@ print(y_pred_probs[:10])
 
 ## The ROC curve
 
-![1658481872317.png](https://pic.hanjiaming.com.cn/2022/07/22/32405abc2a2be.png)
+![1658481872317.png](https://netdesk.orcsvc.com/f/m3g4H9/32405abc2a2be.png)
 
 ```python
 from sklearn.metrics import roc_curve
@@ -79,7 +79,7 @@ plt.title('Logistic Regression ROC Curve')
 plt.show()
 ```
 
-![1658481762983.png](https://pic.hanjiaming.com.cn/2022/07/22/c1a703e89c6e0.png)
+![1658481762983.png](https://netdesk.orcsvc.com/f/6LDyFE/c1a703e89c6e0.png)
 
 ```python
 from sklearn.metrics import roc_auc_score

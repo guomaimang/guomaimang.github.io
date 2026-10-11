@@ -115,7 +115,7 @@ LBS - 技术交叉点：LBS是多种技术的交叉点
   - Accuracy is around 1000 meters
   - 由于BS的密度较高，在城市比农村地区更准确
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/12/69d0a459cfa5f.png" alt="1670848923860.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/v5r3hq/69d0a459cfa5f.png" alt="1670848923860.png" style="zoom:33%;" />
 
 ### Time of Arrival (TOA)
 
@@ -126,7 +126,7 @@ LBS - 技术交叉点：LBS是多种技术的交叉点
 - 通过使用来自三个BS的距离信息，它能够确定设备相对于BS的坐标 - 这被称为三角计算{triangulation calculation}。
 - 由于BSs的位置是固定的，相对坐标可以转化为绝对坐标
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/12/7a1a6d702edc6.png" alt="1670849084923.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/JGopf8/7a1a6d702edc6.png" alt="1670849084923.png" style="zoom: 33%;" />
 
 - TOA不需要对手机做任何改变
 - 准确度相当不错，在城市地区约为50米，在农村地区为500米。
@@ -145,7 +145,7 @@ LBS - 技术交叉点：LBS是多种技术的交叉点
   - d13=d1–d3=(t1-t3)c=(T1–T3)c
   - d23=d2–d3=(t2-t3)c=(T2–T3)c
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/12/ff0b2b24d4e3a.png" alt="1670816458458.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/ZlEPf2/ff0b2b24d4e3a.png" alt="1670816458458.png" style="zoom: 33%;" />
 
 - TDOA只需要在BS之间进行紧密同步, 也就是说，它需要一个同步的网络
 - 这一要求确保了估计的距离是实际距离的良好近似值。
@@ -169,7 +169,7 @@ E-OTD（增强型观察时间差）
   - 使用时间差来计算移动设备与BSs的位置关系
 - E-OTD为确定移动位置提供了一种准确和具有成本效益的方法：精度在 50 到 100 米内
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/12/000378c2f7f2a.png" alt="1670850064607.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/6P4XCE/000378c2f7f2a.png" alt="1670850064607.png" style="zoom: 50%;" />
 
 位置测量单元（LMU）用于为测量提供准确的时间来源 - 同步来自BS的信号传输时间
 

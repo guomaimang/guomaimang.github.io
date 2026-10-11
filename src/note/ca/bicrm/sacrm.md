@@ -34,7 +34,7 @@ Analytical CRM is the process through which organizations **transform customer r
 
 ### Traditional CRM vs. Social CRM
 
-![CleanShot 2023-12-08 at 17.00.07@2x.png](https://pic.hanjiaming.com.cn/2023/12/08/518f4132c053e.png)
+![CleanShot 2023-12-08 at 17.00.07@2x.png](https://netdesk.orcsvc.com/f/Qm6Fj/518f4132c053e.png)
 
 ## Driving Force for Social CRM
 
@@ -59,7 +59,7 @@ What do consumers value?
 
 战略转变: 社交媒体策略 与 社交 CRM 策略不同。
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/08/c6654d53a2ea9.png" alt="1702027099830.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/5x5sV/c6654d53a2ea9.png" alt="1702027099830.png" style="zoom: 50%;" />
 
 ::: tip Comparasion
 
@@ -232,7 +232,7 @@ What do consumers value?
 
 这提高了数据的准确性和完整性，同时确保您的数据库更易于导航。
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/08/d0f2dbb98952f.png" alt="1702048722961.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/xrbu3/d0f2dbb98952f.png" alt="1702048722961.png" style="zoom:33%;" />
 
 ### Define the Information Requirements
 
@@ -242,7 +242,7 @@ What do consumers value?
 
 企业要问的根本问题是：我们的数据库中需要哪些信息，以便我们能够智能地制定和实施我们的CRM策略？
 
-![1702048974936.png](https://pic.hanjiaming.com.cn/2023/12/08/54f6a72abebb0.png)
+![1702048974936.png](https://netdesk.orcsvc.com/f/bX1IM/54f6a72abebb0.png)
 
 #### Modularized CRM Applications
 

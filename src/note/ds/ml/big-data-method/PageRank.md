@@ -82,7 +82,7 @@ $$
 r_{j}=\sum_{i \rightarrow j} \frac{r_{i}}{\mathrm{~d}_{\mathrm{i}}}
 $$
 
-<img src="https://pic.hanjiaming.com.cn/2023/04/19/6e0adaf796a62.png" alt="1681884024938.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/AykTy/6e0adaf796a62.png" alt="1681884024938.png" style="zoom: 50%;" />
 
 就上述图片示例而言，**3 equations, 3 unknowns, no constants**
 
@@ -105,7 +105,7 @@ PageRank 的矩阵形式是基于线性代数的一种表示方法，它将 Page
   - 这就表示，H(i, j) 的值是 `列标` 指向 `行标` 的值
 - 如果网页 j 不链接到网页 i，H(i, j) = 0
 
-![1681885244414.png](https://pic.hanjiaming.com.cn/2023/04/19/902a48319a815.png)
+![1681885244414.png](https://netdesk.orcsvc.com/f/vqaHq/902a48319a815.png)
 
 ## Problems
 
@@ -126,14 +126,14 @@ Common values for b are in the range 0.8 to 0.9
 
 “投票”将在几个时间步内传送出蜘蛛陷阱
 
-<img src="https://pic.hanjiaming.com.cn/2023/04/19/e6de312ab3016.png" alt="1681894604455.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/RPJT8/e6de312ab3016.png" alt="1681894604455.png" style="zoom:33%;" />
 
 ### Spider Traps
 
 - 瞬移：遵循随机传送链接，概率为1.0，远离死胡同。
 - 相应地调整矩阵
 
-![1681894733521.png](https://pic.hanjiaming.com.cn/2023/04/19/576c6506c0d50.png)
+![1681894733521.png](https://netdesk.orcsvc.com/f/VXXc2/576c6506c0d50.png)
 
 ::: tip 为什么传送可以解决问题
 
@@ -143,11 +143,11 @@ Common values for b are in the range 0.8 to 0.9
 
 :::
 
-![1681895764048.png](https://pic.hanjiaming.com.cn/2023/04/19/28ff5bce6013e.png)
+![1681895764048.png](https://netdesk.orcsvc.com/f/KbZFL/28ff5bce6013e.png)
 
 **What is **b? In practice b *=0.8 ~ 0.9* (make *5* steps on avg., jump)
 
-![1681895842484.png](https://pic.hanjiaming.com.cn/2023/04/19/2debdb5bcda29.png)
+![1681895842484.png](https://netdesk.orcsvc.com/f/0wEt5/2debdb5bcda29.png)
 
 
 

@@ -30,7 +30,7 @@ Feature Engineering is the process of **selecting** and **extracting** <u>useful
 
 例如，下面的案例中
 
-![1701980739846.png](https://pic.hanjiaming.com.cn/2023/12/08/14842900bc44a.png)
+![1701980739846.png](https://netdesk.orcsvc.com/f/XG9UX/14842900bc44a.png)
 
 - 冗余特征「**redundant feature**」示例（左：特征 y 提供了与 x 相同的信息）
 - 和无关特征「**irrelevant feature**」示例（右：特征 y 无法区分 x 所定义的聚类）
@@ -96,7 +96,7 @@ Labeled encoding, one-hot encoding, frequency encoding, etc.
 - Python scikit-learn：LabelEncoder
 - Ok for tree-based methods「适用于基于树的方法」
 
-![1702150502080.png](https://pic.hanjiaming.com.cn/2023/12/10/ad3896fff08ff.png)
+![1702150502080.png](https://netdesk.orcsvc.com/f/2rYCv/ad3896fff08ff.png)
 
 ### Feature Encoding Methods
 
@@ -105,11 +105,11 @@ Labeled encoding, one-hot encoding, frequency encoding, etc.
 - 将类别转换为单独的二进制（0 或 1）特征 
 - Python scikit-learn：DictVectorizer, OneHotEncoder
 
-![1702150748912.png](https://pic.hanjiaming.com.cn/2023/12/10/2591d37b89cc0.png)
+![1702150748912.png](https://netdesk.orcsvc.com/f/WanC9/2591d37b89cc0.png)
 
 #### Frequency encoding
 
-![1702150803552.png](https://pic.hanjiaming.com.cn/2023/12/10/318cf05d60e01.png)
+![1702150803552.png](https://netdesk.orcsvc.com/f/KnjCL/318cf05d60e01.png)
 
 ## Missing Data Imputation
 
@@ -135,7 +135,7 @@ Labeled encoding, one-hot encoding, frequency encoding, etc.
 
 ### Guessing the missing data
 
-![1702151265551.png](https://pic.hanjiaming.com.cn/2023/12/10/045c235562a77.png)
+![1702151265551.png](https://netdesk.orcsvc.com/f/LjYI2/045c235562a77.png)
 
 通过对缺失数据的数据集进行关联分析，我们可以得到
 
@@ -167,4 +167,4 @@ Most commonly used transformation: Normalization
 
 min-max normalization 可以是 `X' = (X - Xmin) / (Xmax - Xmin)`
 
-![1702151948675.png](https://pic.hanjiaming.com.cn/2023/12/10/157b54f08239d.png)
+![1702151948675.png](https://netdesk.orcsvc.com/f/1dQCK/157b54f08239d.png)

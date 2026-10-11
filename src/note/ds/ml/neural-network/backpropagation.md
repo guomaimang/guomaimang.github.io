@@ -18,7 +18,7 @@ headerDepth: 2
 
 考虑该神经网络 *N*，假设激活函数为 g
 
-<img src="https://pic.hanjiaming.com.cn/2023/03/07/1cb7744f7e770.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/kbGUb/1cb7744f7e770.png" style="zoom: 50%;" />
 
 则有
 
@@ -57,7 +57,7 @@ J(\Theta)=\frac{1}{2 m} \sum_{i=1}^{m} \sum_{k=1}^{S_{L}}\left(h_{\Theta}\left(x
 $$
 此外，交叉熵误差函数在分类问题中应用广泛
 
-<img src="https://pic.hanjiaming.com.cn/2023/03/07/8654e221b5f84.png" alt="e97b9f8cb7cfa.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Yqpf2/8654e221b5f84.png" alt="e97b9f8cb7cfa.png" style="zoom:33%;" />
 
 :::
 
@@ -96,7 +96,7 @@ $$
 
  神经网络 *N* 中， $l$ = 2
 
-<img src="https://pic.hanjiaming.com.cn/2023/03/07/87c7992972e9b.png" alt="f1055c1ebfe26.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/LXrh2/87c7992972e9b.png" alt="f1055c1ebfe26.png" style="zoom: 50%;" />
 
 对 $\theta_{11}^{(2)}$ 求偏导数，可知
 $$
@@ -116,7 +116,7 @@ $$
 
 ### Delta $L$ - 1
 
-<img src="https://pic.hanjiaming.com.cn/2023/03/07/c897facd7683a.png" alt="1678164307072.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/pXZFn/c897facd7683a.png" alt="1678164307072.png" style="zoom: 40%;" />
 
 对 $\theta_{22}^{(1)}$ 求偏导数，可知
 $$
@@ -135,7 +135,7 @@ $$
 \end{array}
 $$
 
-<img src="https://pic.hanjiaming.com.cn/2023/03/07/6fc7c6d98dbed.png" alt="1678164991583.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/MM2F8/6fc7c6d98dbed.png" alt="1678164991583.png" style="zoom:33%;" />
 
 $\frac{\partial J(\Theta)}{\partial \Theta_{22}^{(1)}}=\left(\left(a_{1}^{(3)}-y_{1}\right) \Theta_{12}^{(2)}+\left(a_{2}^{(3)}-y_{2}\right) \Theta_{22}^{(2)}\right) x_{2} 
 =\left(\delta_{1}^{(3)} \Theta_{12}^{(2)}+\delta_{2}^{(3)} \Theta_{22}^{(2)}\right) x_{2}$，该结果可记作 $\delta_{2}^{(2)} x_{2}$
@@ -144,7 +144,7 @@ $\frac{\partial J(\Theta)}{\partial \Theta_{22}^{(1)}}=\left(\left(a_{1}^{(3)}-y
 
 对于 L 层 和 L- 1 层
 
-<img src="https://pic.hanjiaming.com.cn/2023/03/07/335e9f513d40c.png" alt="1678172762369.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/KQQuL/335e9f513d40c.png" alt="1678172762369.png" style="zoom: 25%;" />
 
 ::: details Delta L - n: 动态规划思想
 
@@ -152,7 +152,7 @@ Directly Applying Gradient Descent is Expensive!
 
 因此，不妨先把算出来的 $\delta$ 值存起来，以便前面的神经元直接使用。
 
-<img src="https://pic.hanjiaming.com.cn/2023/03/07/088ce413b37a2.png" alt="1678172394234.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/XjZcX/088ce413b37a2.png" alt="1678172394234.png" style="zoom: 50%;" />
 
 :::
 
@@ -160,15 +160,15 @@ Directly Applying Gradient Descent is Expensive!
 
 整个过程应当是，先正向传播，再反向传播。因此初始时应随机指定每个神经元权重的值。反向传播如扩散一般。
 
-![1678180461969.png](https://pic.hanjiaming.com.cn/2023/03/07/53ec98a48a7f4.png)
+![1678180461969.png](https://netdesk.orcsvc.com/f/QXYFj/53ec98a48a7f4.png)
 
 ## Back Propagation Algorithm
 
-![1678180619317.png](https://pic.hanjiaming.com.cn/2023/03/07/37a1e4e532ada.png)
+![1678180619317.png](https://netdesk.orcsvc.com/f/55miV/37a1e4e532ada.png)
 
 ## Gradient Descent Algorithm
 
-![1678180996838.png](https://pic.hanjiaming.com.cn/2023/03/07/bd1c08f08e949.png)
+![1678180996838.png](https://netdesk.orcsvc.com/f/1jXcK/bd1c08f08e949.png)
 
 ::: warning 再次提醒
 

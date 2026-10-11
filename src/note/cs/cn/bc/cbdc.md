@@ -82,7 +82,7 @@ Non-fixed a priori / ad hoc setting「非固定的先验/临时设置」:
 - 需要广播渠道和持续的在线通信
 - 例如，Ripple和Stellar
 
-![1732092732619.png](https://pic.hanjiaming.com.cn/2024/11/20/51a32110cdd6a.png)
+![1732092732619.png](https://netdesk.orcsvc.com/f/gPP4CX/51a32110cdd6a.png)
 
 ::: details 如何理解？
 
@@ -107,7 +107,7 @@ Technical Highlight of RSCoin
 - 在RS币中，权威机构负责执行这一共识机制，以确保账本数据的准确性和完整性。
 - 激励机制用于促进权威机构的诚实行为。
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/20/bb0a4ae04d281.png" alt="1732093052948.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/922Jfm/bb0a4ae04d281.png" alt="1732093052948.png" style="zoom:50%;" />
 
 ## Central Bank Digital Currency
 
@@ -200,11 +200,11 @@ Flexibility Needed by Distribution Models
 - Hybrid Model
 - CBDC-Backed E-Money
 
-![1732095917796.png](https://pic.hanjiaming.com.cn/2024/11/20/44b6d80ff9839.png)
+![1732095917796.png](https://netdesk.orcsvc.com/f/o88xhg/44b6d80ff9839.png)
 
 ### Direct Model
 
-![1732096530500.png](https://pic.hanjiaming.com.cn/2024/11/20/04ceae0aa31df.png)
+![1732096530500.png](https://netdesk.orcsvc.com/f/611GIE/04ceae0aa31df.png)
 
 - 在直接模式下，中央银行是唯一的CBDC账户的发行者和管理者。
 - 直接与消费者和企业互动

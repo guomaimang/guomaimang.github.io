@@ -22,7 +22,7 @@ How to achieve that?
 
 ## Authentication Bases
 
-![1677041811161.png](https://pic.hanjiaming.com.cn/2023/02/22/a4f8d5e39e344.png)
+![1677041811161.png](https://netdesk.orcsvc.com/f/2Zluv/a4f8d5e39e344.png)
 
 ## Evaluation Auth System
 
@@ -45,7 +45,7 @@ False Positive & False Negative
 
 确定不同的生物识别特征和一个保存的参考特征的相似性的系统
 
-![1677043212027.png](https://pic.hanjiaming.com.cn/2023/02/22/d90e08ace87d3.png)
+![1677043212027.png](https://netdesk.orcsvc.com/f/LA4C2/d90e08ace87d3.png)
 
 生物识别特征的测量以及特征本身都会受到统计波动的影响。因此，每个生物特征识别系统都有一个内置的接受阈值。
 
@@ -99,7 +99,7 @@ False Positive & False Negative
 
 预期时间（或相关随机变量的预期值）= 0.5 * N/R
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/22/d5919721a7285.png" alt="1677044207872.png" style="zoom:40%;" />
+<img src="https://netdesk.orcsvc.com/f/4Q9f2/d5919721a7285.png" alt="1677044207872.png" style="zoom:40%;" />
 
 :::
 
@@ -123,7 +123,7 @@ For example,
 
 所以，我们需要一个大熵的密码
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/22/4830bb92af4fa.png" alt="1677044837133.png" style="zoom:40%;" />
+<img src="https://netdesk.orcsvc.com/f/yj1UZ/4830bb92af4fa.png" alt="1677044837133.png" style="zoom:40%;" />
 
 ### Protective Mechanisms
 
@@ -133,7 +133,7 @@ For example,
   - 发出警报并追踪入侵者
 - Process the password slowly, say, 5 seconds: 这对合法用户来说没有什么区别，但它可以减缓任何攻击企图。
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/22/160b0be1f0c2c.png" alt="1677045288873.png" style="zoom:40%;" />
+<img src="https://netdesk.orcsvc.com/f/JYAu8/160b0be1f0c2c.png" alt="1677045288873.png" style="zoom:40%;" />
 
 ::: info Online vs. Offline
 
@@ -213,7 +213,7 @@ In UNIX, a salted password is used for hashing
   - 每个可打印的字符6比特
   - 最后4位是附加的零
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/22/7652cc883fb54.png" alt="1677047250226.png" style="zoom:40%;" />
+<img src="https://netdesk.orcsvc.com/f/Va9T2/7652cc883fb54.png" alt="1677047250226.png" style="zoom:40%;" />
 
 为了提高安全性，使用了一种盐
 

@@ -14,7 +14,7 @@ headerDepth: 1
 - 避免含糊不清或自相矛盾的情况
 - 节省用户的时间和精力
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/29/32f00225c411d.png" alt="1667027556068.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ERDAsd/32f00225c411d.png" alt="1667027556068.png" style="zoom:33%;" />
 
 ## Talking to Machines
 
@@ -73,7 +73,7 @@ end program addNumbers
 - **Ahead of time compilation**：将整个程序一次性翻译成机器代码
 - 许多现代编程语言融合了两种方法（例如，Java）
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/29/32bbf6cdb0337.png" alt="1667029410881.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/JwDgf8/32bbf6cdb0337.png" alt="1667029410881.png" style="zoom:33%;" />
 
 解释（及时编译）和（提前）编译的优点和缺点？
 
@@ -81,7 +81,7 @@ end program addNumbers
 - Compiling time
 - Execution efficiency「执行效率」
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/29/c0adb112a63c7.png" alt="1667029804139.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/ql8dIJ/c0adb112a63c7.png" alt="1667029804139.png" style="zoom: 50%;" />
 
 ## Compiler Architecture
 
@@ -96,13 +96,13 @@ end program addNumbers
   - Code Optimizer
   - Code Generator
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/29/596af819bcabd.png" alt="1667030086412.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/m3r6u9/596af819bcabd.png" alt="1667030086412.png" style="zoom:33%;" />
 
 ## 编码语言 - 缺点
 
 编码语言曾经是计算机的唯一界面。今天，编程语言会成为一个好的用户界面吗？
 
-![1667030611526.png](https://pic.hanjiaming.com.cn/2022/10/29/600d987cf59d7.png)
+![1667030611526.png](https://netdesk.orcsvc.com/f/R40eU8/600d987cf59d7.png)
 
 ## Dialogue Design
 
@@ -111,7 +111,7 @@ end program addNumbers
 - System presents an output observed by the user who performs a task「系统呈现出一个由执行任务的用户观察到的输出」
 - User articulates an input that makes the system perform「用户阐述一个输入，使系统执行。」
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/29/a6b391bf86325.png" alt="1667030749143.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/jPA0Cb/a6b391bf86325.png" alt="1667030749143.png" style="zoom:33%;" />
 
 ### What
 
@@ -143,7 +143,7 @@ end program addNumbers
 
 ### Prototyping
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/29/fbb847571b37f.png" alt="1667031538000.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/gkgLUX/fbb847571b37f.png" alt="1667031538000.png" style="zoom:50%;" />
 
 ### How
 
@@ -173,7 +173,7 @@ State Transition Networks (STNs) 「状态转换网络（STNs）」
 - Circles: States
 - Arcs: Actions/Events
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/29/21e1d0a8e8d8f.png" alt="1667035836286.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/YGeps2/21e1d0a8e8d8f.png" alt="1667035836286.png" style="zoom:50%;" />
 
 ### Hierarchical STNs
 
@@ -187,19 +187,19 @@ Hierarchical STNs
 - Arcs: Actions/Events
 - Rectangles: sub-STN
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/29/ac4a275a0089e.png" alt="1667036161482.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/5XD1IV/ac4a275a0089e.png" alt="1667036161482.png" style="zoom:50%;" />
 
 ### STN - Concurrent Dialogues
 
 - Several things happen simultaneously「有几件事同时发生」
 - 示例：用于文本格式的简单对话框
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/29/50db190b8b583.png" alt="1667036499052.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/nw5EIj/50db190b8b583.png" alt="1667036499052.png" style="zoom: 33%;" />
 
 - Put STNs together
 - 谨防组合爆炸「Beware of combinatorial explosion」
 
-![1667036597447.png](https://pic.hanjiaming.com.cn/2022/10/29/7f83ccf460a13.png)
+![1667036597447.png](https://netdesk.orcsvc.com/f/PvObUe/7f83ccf460a13.png)
 
 ### STN - Design of Escapes
 
@@ -210,22 +210,22 @@ Hierarchical STNs
   - 使用分层菜单：每个子菜单的“正常”退出加上
   - 分离逃生弧在子菜单中“无处不在”
 
-![1667036956469.png](https://pic.hanjiaming.com.cn/2022/10/29/ea6697ac77b7f.png)
+![1667036956469.png](https://netdesk.orcsvc.com/f/QapQuj/ea6697ac77b7f.png)
 
 ### STN - Design of Help Menus
 
 - 各地的菜单结构几乎相同。
 - 回到对话中的同一点可以在 STN 上指定，但非常混乱。Usually best added at a ‘meta’ level.
 
-![1667125192017.png](https://pic.hanjiaming.com.cn/2022/10/30/3f36afcb87442.png)
+![1667125192017.png](https://netdesk.orcsvc.com/f/oraDUg/3f36afcb87442.png)
 
 ## State Diagram (UML)
 
-![1670669628809.png](https://pic.hanjiaming.com.cn/2022/12/10/a3a13515aea15.png)
+![1670669628809.png](https://netdesk.orcsvc.com/f/x2kbH3/a3a13515aea15.png)
 
 ## Flow charts
 
-![1670669668673.png](https://pic.hanjiaming.com.cn/2022/12/10/ba779fa7a387b.png)
+![1670669668673.png](https://netdesk.orcsvc.com/f/ZlweI2/ba779fa7a387b.png)
 
 ## Nature Language Processing
 
@@ -234,7 +234,7 @@ Hierarchical STNs
 - 人类作为信息处理机器
 - 现在的计算机通过多种感官渠道与我们交流
 
-![1670669817390.png](https://pic.hanjiaming.com.cn/2022/12/10/fc8d622bd3494.png)
+![1670669817390.png](https://netdesk.orcsvc.com/f/DAjVhe/fc8d622bd3494.png)
 
 ### Implications
 

@@ -43,7 +43,7 @@ plt.plot(mean_income_by_age, 'o', alpha=0.5)
 plt.show()
 ```
 
-![1654761163311.png](https://pic.hanjiaming.com.cn/2022/06/09/f206390254be9.png)
+![1654761163311.png](https://netdesk.orcsvc.com/f/jPQDFb/f206390254be9.png)
 
 接着，我们也预测 学龄为14岁 和 学龄为16岁的各年龄段的人的收入
 
@@ -59,7 +59,7 @@ pred16 = results.predict(df)
 plt.plot(df['age'], pred16, label='Bachelor'
 ```
 
-![1654761269126.png](https://pic.hanjiaming.com.cn/2022/06/09/ecfb91d17aa86.png)
+![1654761269126.png](https://netdesk.orcsvc.com/f/6LanuE/ecfb91d17aa86.png)
 
 ## 使用回归进行原始数据预测
 
@@ -101,7 +101,7 @@ plt.legend()
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/09/7d1f82b7efbef.png" alt="1654762732062.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/nwQjTj/7d1f82b7efbef.png" alt="1654762732062.png" style="zoom:50%;" />
 
 总的来说，还可以。
 

@@ -33,7 +33,7 @@ Android操作系统的架构分为五层：
 
 每一层都有特定的功能和作用。例如，应用层包含了用户直接使用的应用程序，而应用框架层提供了开发这些应用程序所需的API。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/21/abc5f24e86043.png" alt="1666285552943.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/X518UX/abc5f24e86043.png" alt="1666285552943.png" style="zoom:50%;" />
 
 ## Application Components
 
@@ -80,7 +80,7 @@ The most frequently used are res, java, AndroidManifaest.xml and the build.gradl
 
 **AndroidManifest.xml**: 在安卓系统启动一个应用组件之前，系统必须通过读取应用的清单文件知道该组件的存在。你的应用必须在这个文件中声明它的所有组件，这个文件必须在应用项目目录的根部。更多信息请参考AndroidManifest.xml。
 
-![1666330294841.png](https://pic.hanjiaming.com.cn/2022/10/21/f33364177a1a0.png)
+![1666330294841.png](https://netdesk.orcsvc.com/f/l3QQUe/f33364177a1a0.png)
 
 - 这里的`<application>`...`<application>`标签包含了与应用程序相关的组件。属性`android:icon`将指向`res/drawable-hdpi`下可用的应用程序图标。该应用程序使用位于drawable文件夹中的名为`ic_launcher.png`的图片。
 - `<activity>`标签用于指定一个活动，`android:name`属性指定活动子类的完全合格的类名，`android:label`属性指定一个字符串，作为活动的标签。你可以使用`<activity>`标签指定多个活动。
@@ -110,4 +110,4 @@ UI 的 **XML** 布局已经被添加到 "res\layout\main.xml "中。虽然你可
 
   注意到文本属性被设置为 "Hello World！"。注意到，如果它被设置为"@string/hello_world"，它是一个引用变量，用来引用包含我们想要显示的文本的资源。因此，@string/hello_world指的是strings.xml文件中定义的hello字符串，它可以是 "Hello World！"。
 
-![1666331484856.png](https://pic.hanjiaming.com.cn/2022/10/21/a98b8b64a1a09.png)
+![1666331484856.png](https://netdesk.orcsvc.com/f/ERgvId/a98b8b64a1a09.png)

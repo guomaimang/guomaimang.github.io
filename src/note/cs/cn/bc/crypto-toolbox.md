@@ -158,7 +158,7 @@ Hash as message digest
 
 Hiding property/One-wayness of Hash function ensures:  Given H(x), it is infeasible to find x.
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/29/fbe2eca15222a.png" alt="1730182867145.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/rrJHg/fbe2eca15222a.png" alt="1730182867145.png" style="zoom: 33%;" />
 
 Hiding property「隐藏属性」
 
@@ -229,7 +229,7 @@ Security properties
 
 :::
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/29/bc72dd2b62e4d.png" alt="1730185902188.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/JbYS8/bc72dd2b62e4d.png" alt="1730185902188.png" style="zoom:33%;" />
 
 ### Hashcash, PoW before Bitcoin
 
@@ -241,7 +241,7 @@ Security properties
 
 ### SHA-256 (via Merkle-Damgå rd)
 
-![1730187705805.png](https://pic.hanjiaming.com.cn/2024/10/29/13b862172c41c.png)
+![1730187705805.png](https://netdesk.orcsvc.com/f/GV3cA/13b862172c41c.png)
 
 - 输入数据被分成多个512位的块，每个块被依次处理。图中显示了三个数据块（block 1, block 2, block n），但实际应用中数据块的数量可以更多。
 - 为了确保输入数据的长度是512位的整数倍，SHA-256使用填充技术。填充方法是将一个“1”位和若干个“0”位添加到数据末尾，最后添加数据长度的64位表示。
@@ -262,17 +262,17 @@ Security properties
   - 如果我们有一个哈希指针，我们可以请求获取该信息，并验证其是否未被修改
   - 通过比较存储的数据的当前哈希值和哈希指针中存储的哈希值，我们可以确认数据的完整性。
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/29/ff0a7c848dc92.png" alt="1730188504760.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/wd2I5/ff0a7c848dc92.png" alt="1730188504760.png" style="zoom:33%;" />
 
 Linked list w/ hash pointers = “block chain”
 
 prev: H( )  是 每个块包含一个指向前一个块的哈希值的指针。这个哈希值是通过对前一个块的数据进行哈希计算得到的。
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/29/dcd532176f0af.png" alt="1730188733972.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/RK2C8/dcd532176f0af.png" alt="1730188733972.png" style="zoom:33%;" />
 
 ### Merkle tree
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/29/d89f54d701962.png" alt="1730189153419.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/9Kvsm/d89f54d701962.png" alt="1730189153419.png" style="zoom:33%;" />
 
 Merkle树是一种带有哈希指针的二叉树
 
@@ -320,7 +320,7 @@ Membership proof in a Merkle tree: 在Merkle树中进行成员证明时，只需
 
 ### Comparison
 
-![1730190402602.png](https://pic.hanjiaming.com.cn/2024/10/29/89129306b20f3.png)
+![1730190402602.png](https://netdesk.orcsvc.com/f/3Pwu5/89129306b20f3.png)
 
 ### Reclaiming space
 
@@ -338,7 +338,7 @@ Membership proof in a Merkle tree: 在Merkle树中进行成员证明时，只需
 
 ### A representation of Bitcoin Blockchain 
 
-![1730191881833.png](https://pic.hanjiaming.com.cn/2024/10/29/3c18f9f4b35ef.png)
+![1730191881833.png](https://netdesk.orcsvc.com/f/qdjhJ/3c18f9f4b35ef.png)
 
 假设你是一名开发者，需要验证某个比特币交易是否被包含在区块链中。
 
@@ -356,7 +356,7 @@ Membership proof in a Merkle tree: 在Merkle树中进行成员证明时，只需
 
 ### Workflow of Digital Signature
 
-![1730192358213.png](https://pic.hanjiaming.com.cn/2024/10/29/ffc04484e072a.png)
+![1730192358213.png](https://netdesk.orcsvc.com/f/X2VCX/ffc04484e072a.png)
 
 ### One-time security vs. Multi-time security
 
@@ -414,7 +414,7 @@ Why: avoid “single point of failure” in terms of security
 
 ### Secret sharing depicted
 
-![1730196126316.png](https://pic.hanjiaming.com.cn/2024/10/29/5158781382c6b.png)
+![1730196126316.png](https://netdesk.orcsvc.com/f/odPSg/5158781382c6b.png)
 
 这张图显示了秘密分享的基本概念。
 
@@ -584,7 +584,7 @@ $$
 
 ### Hardware Wallet 
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/29/3fc9e738f17b6.png" alt="1730202245395.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/gqYSX/3fc9e738f17b6.png" alt="1730202245395.png" style="zoom:33%;" />
 
 ### On Ledger
 

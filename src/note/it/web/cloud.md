@@ -21,7 +21,7 @@ headerDepth: 1
 
 ### Cloud Benefits: on-demand + sharing
 
-![1743993199196.png](https://pic.hanjiaming.com.cn/2025/04/07/6c4042d1f8df3.png)
+![1743993199196.png](https://netdesk.orcsvc.com/f/GM3tA/6c4042d1f8df3.png)
 
 ### Cloud Types - Cloud Service Models
 
@@ -29,7 +29,7 @@ headerDepth: 1
 - Platform-as-a-Service (PaaS)
 - Software-as-a-Service (SaaS)
 
-<img src="https://pic.hanjiaming.com.cn/2025/04/07/8fad2e2273c36.png" alt="1743993407904.png" style="zoom: 75%;" />
+<img src="https://netdesk.orcsvc.com/f/Q2Rcj/8fad2e2273c36.png" alt="1743993407904.png" style="zoom: 75%;" />
 
 What service model the following offer (SaaS, PaaS, IaaS)?
 
@@ -57,7 +57,7 @@ What other X-as-a-Service have you heard of?
   - A farm of cheaper instances well-networked (high throughput)
   - Application distributable in individual instances
 
-<img src="https://pic.hanjiaming.com.cn/2025/04/07/8d5ea5fba3300.png" alt="1743994131062.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/5WasV/8d5ea5fba3300.png" alt="1743994131062.png" style="zoom: 67%;" />
 
 ## Design Considerations
 

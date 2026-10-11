@@ -16,7 +16,7 @@ headerDepth: 1
 - 通信始终由客户端发起
 - 客户端在需要时从服务器“拉取”数据或服务（例如，当用户启动应用程序或按下按钮时）
 
-![1732953843243.png](https://pic.hanjiaming.com.cn/2024/11/30/e8441296b4064.png)
+![1732953843243.png](https://netdesk.orcsvc.com/f/YrZbc2/e8441296b4064.png)
 
 ### Limitations of HTTP
 
@@ -87,7 +87,7 @@ Socket.io 是事件驱动的
 
 Socket.io：服务器端程序流程图
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/30/2b4a0c3fea9a5.png" alt="1732956723721.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/OrkbSQ/2b4a0c3fea9a5.png" alt="1732956723721.png" style="zoom:33%;" />
 
 ## Events
 

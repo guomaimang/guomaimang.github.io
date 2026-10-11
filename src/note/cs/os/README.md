@@ -31,7 +31,7 @@ OS goals:
 - 让计算机系统使用起来更方便。
 - 以有效的方式使用计算机硬件。
 
-<img src="https://pic.hanjiaming.com.cn/2022/03/23/d6f4e9843f595.png" alt="1648017932355.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/vvqATq/d6f4e9843f595.png" alt="1648017932355.png" style="zoom: 50%;" />
 
 At the hardware level, one or more CPUs and devicecontrollers are connected through **common bus** to access shared memory.
 
@@ -52,7 +52,7 @@ An operating system is
 - Everything a vendor ships when you buy an OS.
 - The one program that is running at all times on computer.
 
-![1648018238653.png](https://pic.hanjiaming.com.cn/2022/03/23/26bd49cea35eb.png)
+![1648018238653.png](https://netdesk.orcsvc.com/f/DaeoUe/26bd49cea35eb.png)
 
 - OS must manage the use of resources by users. 
 - Processor or CPU, memory, file, device are all resources. 
@@ -76,7 +76,7 @@ An operating system is
     - Graphical user interface (GUI)
 - Network manager
 
-![1648018842812.png](https://pic.hanjiaming.com.cn/2022/03/23/78149f75e07e5.png)
+![1648018842812.png](https://netdesk.orcsvc.com/f/yQaVTZ/78149f75e07e5.png)
 
 ## Protection and Security
 

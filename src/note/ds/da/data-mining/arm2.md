@@ -35,7 +35,7 @@ Sequence consists of <u>a list of itemset</u> in temporal order 「按时间顺�
 
 <u>Customer Sequence</u>: 客户的所有交易是一个按交易时间递增排序的序列。
 
-![1696586332319.png](https://pic.hanjiaming.com.cn/2023/10/06/aaba98420b4b6.png)
+![1696586332319.png](https://netdesk.orcsvc.com/f/vv4hq/aaba98420b4b6.png)
 
 表格表示了如下的客户购买序列：
 
@@ -67,7 +67,7 @@ Sequence consists of <u>a list of itemset</u> in temporal order 「按时间顺�
 
 ### Transformation Phase
 
-![1696588813114.png](https://pic.hanjiaming.com.cn/2023/10/06/9870c56e9e836.png)
+![1696588813114.png](https://netdesk.orcsvc.com/f/1LEHK/9870c56e9e836.png)
 
 ::: warning
 
@@ -106,15 +106,15 @@ Sequence consists of <u>a list of itemset</u> in temporal order 「按时间顺�
 
 AprioriAll 算法的目标是找到频繁序列，即在数据中经常出现的顺序模式。
 
-![1696597354900.png](https://pic.hanjiaming.com.cn/2023/10/06/81ca6a92a9d87.png)
+![1696597354900.png](https://netdesk.orcsvc.com/f/LQJi2/81ca6a92a9d87.png)
 
 AprioriAll算法的基本原理是：任何非频繁的子序列都不会是频繁的序列。因此，该算法从长度为1的序列开始，逐渐增加序列的长度，只考虑那些子序列已经被证明是频繁的序列。
 
-![1696595525632.png](https://pic.hanjiaming.com.cn/2023/10/06/e2f0acda82557.png)
+![1696595525632.png](https://netdesk.orcsvc.com/f/42Ot2/e2f0acda82557.png)
 
 ### Generate Candidate Sequences
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/06/3170487357d37.png" alt="1696597758905.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/ZP4s2/3170487357d37.png" alt="1696597758905.png" style="zoom: 33%;" />
 
 Example
 

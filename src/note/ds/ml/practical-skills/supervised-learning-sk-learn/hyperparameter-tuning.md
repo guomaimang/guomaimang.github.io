@@ -24,7 +24,7 @@ Choosing the correct hyperparameters：
 2. 我们仍然可以拆分数据并对训练集进行交叉验证
 3. 我们保留用于最终评估的测试集
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/22/34c9fe26ce823.png" alt="1658500465631.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/nw9ASj/34c9fe26ce823.png" alt="1658500465631.png" style="zoom:50%;" />
 
 ## GridSearchCV in sk
 

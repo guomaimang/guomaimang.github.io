@@ -76,7 +76,7 @@ article: false
 
 例如，与其解释神经网络如何使用前向和反向传播，我们可以说它像孩子一样学习，通过获得关于什么是对或错、什么有效和什么无效的反馈。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/23/d362e61a93da5.png" alt="CleanShot 2022-12-23 at 21.49.34@2x.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/9yQLHm/d362e61a93da5.png" alt="CleanShot 2022-12-23 at 21.49.34@2x.png" style="zoom: 33%;" />
 
 ## Technical jargon
 

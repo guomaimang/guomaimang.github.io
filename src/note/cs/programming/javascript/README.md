@@ -39,7 +39,7 @@ author: javascriptInfo, Hirsun
 >
 > 上面这些术语很容易记住，因为它们经常出现在开发者的文章中。我们也会用到这些术语。例如，如果“V8 支持某个功能”，那么我们可以认为这个功能大概能在 Chrome、Opera 和 Edge 中正常运行。
 
-![1651226987157.png](https://pic.hanjiaming.com.cn/2022/04/29/a69ded57720e5.png)
+![1651226987157.png](https://netdesk.orcsvc.com/f/Mk5GF8/a69ded57720e5.png)
 
 ## 引擎是如何工作的？
 

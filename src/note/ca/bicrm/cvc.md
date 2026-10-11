@@ -23,7 +23,7 @@ Value is the customer's perception of the balance between
 
 」
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/07/f87652389069d.png" alt="1701892385365.png" style="zoom:100%;" />
+<img src="https://netdesk.orcsvc.com/f/avRCq/f87652389069d.png" alt="1701892385365.png" style="zoom:100%;" />
 
 消费者价值用于描述消费者对某些主观评估的产品或服务属性的强烈相对偏好。这些价值观包括效率、卓越、地位、尊重、玩耍、美学、道德和灵性。
 
@@ -90,7 +90,7 @@ lifetime cost -> EVC (Economic Value to Customer)
 
 总拥有成本是资产的购买价格加上其生命周期的运营成本之和。一个简单的例子是拥有一辆汽车的成本。您可以购买汽车，但仍然需要支付牌照费和保险费，并且必须定期进行保养。
 
-![1701937368221.png](https://pic.hanjiaming.com.cn/2023/12/07/02336e24ab4db.png)
+![1701937368221.png](https://netdesk.orcsvc.com/f/d3eUX/02336e24ab4db.png)
 
 TCO 分析表明，购买的汽车越便宜，实际上拥有和运营的汽车就越昂贵
 
@@ -130,7 +130,7 @@ EVC 基于这样的洞察：只有
 
 Example:
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/07/5d231b8f3b451.png" alt="1701938783232.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/REJT8/5d231b8f3b451.png" alt="1701938783232.png" style="zoom:33%;" />
 
 ::: info EVC vs. LTV
 
@@ -201,13 +201,13 @@ Issues in using LTV
 
 **Sources of Customer Value** -> 通过营销组合体现价值
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/07/7d104c9eef556.png" alt="1701940690065.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/GEwcA/7d104c9eef556.png" alt="1701940690065.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/08/399e59af0a5bf.png" alt="1701970948863.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/dxATX/399e59af0a5bf.png" alt="1701970948863.png" style="zoom:33%;" />
 
-![1701971886840.png](https://pic.hanjiaming.com.cn/2023/12/08/6de5052bad574.png)
+![1701971886840.png](https://netdesk.orcsvc.com/f/9QYhm/6de5052bad574.png)
 
-![1701971923224.png](https://pic.hanjiaming.com.cn/2023/12/08/6cff0f1109322.png)
+![1701971923224.png](https://netdesk.orcsvc.com/f/rDmHg/6cff0f1109322.png)
 
 ::: info Example
 
@@ -264,7 +264,7 @@ customize the value proposition「价值主张」 in order to attract and retain
 
 ### 7Ps vs. 7Cs
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/08/3ffb60ba95358.png" alt="1701971997575.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/k5aIb/3ffb60ba95358.png" alt="1701971997575.png" style="zoom:50%;" />
 
 ### Customization vs. Personalization
 

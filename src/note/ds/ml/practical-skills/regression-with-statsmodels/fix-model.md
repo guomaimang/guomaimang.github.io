@@ -12,7 +12,7 @@ Leverage「杠杆率」：**杠杆率衡量的是解释变量对每个观察点�
 
 **高杠杆点是 解释变量 离其他点最远的点。**如下图红点所示
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/25/9493c57a4df51.png" alt="1656153202216.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ZP8dh2/9493c57a4df51.png" alt="1656153202216.png" style="zoom:50%;" />
 
 ## Influence
 
@@ -40,5 +40,5 @@ taiwan_real_estate["cooks_dist"] = summary_info["cooks_d"]
 print(taiwan_real_estate.sort_values(by = "cooks_dist", ascending = False).head())
 ```
 
-![1656155715892.png](https://pic.hanjiaming.com.cn/2022/06/25/5c8669a192b8c.png)
+![1656155715892.png](https://netdesk.orcsvc.com/f/6LbVcE/5c8669a192b8c.png)
 

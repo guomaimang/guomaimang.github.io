@@ -77,7 +77,7 @@ plt.boxplot(results, labels=models.keys())
 plt.show()
 ```
 
-![1658643014294.png](https://pic.hanjiaming.com.cn/2022/07/24/988e69a0ea921.png)
+![1658643014294.png](https://netdesk.orcsvc.com/f/do4AuX/988e69a0ea921.png)
 
 ### Test set performance
 
@@ -88,7 +88,7 @@ plt.show()
    print("{} Test Set Accuracy: {}".format(name, test_score))
  ```
 
-![1658643269431.png](https://pic.hanjiaming.com.cn/2022/07/24/2752b70a4d8e6.png)
+![1658643269431.png](https://netdesk.orcsvc.com/f/Qax6Cj/2752b70a4d8e6.png)
 
 ### Pipeline for predicting song popularity
 

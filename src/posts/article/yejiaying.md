@@ -16,9 +16,9 @@ star:
 
 <!-- more -->
 
-![6bba4d386511466fab6f9345cb26e08d.png](https://pic.hanjiaming.com.cn/2021/04/04/dfa92ce884995.png)
+![6bba4d386511466fab6f9345cb26e08d.png](https://netdesk.orcsvc.com/f/5XomhV/dfa92ce884995.png)
 
-<audio src="https:///pic.hanjiaming.com.cn/2021/04/17/446ceb8621e0e.mp3" controls autoplay loop></audio>
+<audio src="https://netdesk.orcsvc.com/f/ZlWET2/446ceb8621e0e.mp3" controls autoplay loop></audio>
 
 两年前，因为一笔巨额捐款，叶嘉莹先生头一回走进了公众视野。
 
@@ -30,7 +30,7 @@ star:
 
 “我本来要跟你讲学问，看样子你对于学问没有兴趣。”
 
-![0d39b7327fa34134a43de423b1de704e.jpg](https://pic.hanjiaming.com.cn/2021/04/04/d8438c2769311.jpg)
+![0d39b7327fa34134a43de423b1de704e.jpg](https://netdesk.orcsvc.com/f/dovnSX/d8438c2769311.jpg)
 
 常有人言，当今谈诗词，世上再无第二人能与叶嘉莹先生相比。
 
@@ -50,7 +50,7 @@ star:
 
 1924年，民国十三年。盛夏的北京，后海荷花开得正浓，叶嘉莹出生在北京一个富贵人家。
 
-![f20a0e3518f248bab7596f575648b058.jpg](https://pic.hanjiaming.com.cn/2021/04/04/0ea024913beed.jpg)
+![f20a0e3518f248bab7596f575648b058.jpg](https://netdesk.orcsvc.com/f/Kw3QCL/0ea024913beed.jpg)
 
 叶家是叶赫那拉氏的后裔，和慈禧太后同姓，与著名词人纳兰性德同宗。
 
@@ -68,7 +68,7 @@ star:
 
 **而且她记忆力超常，纳兰性德的《饮水词》，几乎过目成诵。**
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/4fc3daf1702ec.png)
+![image.png](https://netdesk.orcsvc.com/f/WrGlH9/4fc3daf1702ec.png)
 
 整个中学时代，叶嘉莹都是学霸，年年拿第一。
 
@@ -76,7 +76,7 @@ star:
 
 提到感情经历，她大笑，“我从没有交过男朋友，除了我这人很死板不说，别人给我写信，我也不回复，因为我不感兴趣。”
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/5e699c346301a.png)
+![image.png](https://netdesk.orcsvc.com/f/ZPadI2/5e699c346301a.png)
 
 表兄曾代表全班被冷落的男生，送给叶嘉莹一句评语，“黜陟不知，理乱不闻，自赏孤芳，我行我素”。
 
@@ -132,7 +132,7 @@ star:
 
 但听说赵钟荪为了自己茶饭不思，甚至丢了差事，太过善良的叶嘉莹同情心泛滥，答应了对方的求婚。这便是悲剧的开始。
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/3c1a445273c30.png)
+![image.png](https://netdesk.orcsvc.com/f/1L8XHK/3c1a445273c30.png)
 
 24岁，叶嘉莹离开家乡北平，随赵钟荪去上海结婚。
 
@@ -156,7 +156,7 @@ star:
 
 为了活下去，叶嘉莹开始在台北二女中教国文，靠微薄的薪水支撑全家人生活。
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/3c1a445273c30.png)
+![image.png](https://netdesk.orcsvc.com/f/1L8XHK/3c1a445273c30.png)
 
 她把所有感情投入在她熟悉的诗词中，唯有如此，她才能忘却婚姻的悲惨与现实的痛苦。
 
@@ -170,13 +170,13 @@ star:
 
 她被台湾大学破例聘请为国文教授，又因台大的交换计划，得以去哈佛大学授课，并最终拿到了加拿大不列颠哥伦比亚大学终身教授的聘书。
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/fad6baeedcd89.png)
+![image.png](https://netdesk.orcsvc.com/f/k8eGUb/fad6baeedcd89.png)
 
 为了使生活早日安定下来，叶嘉莹带着一家老小离开台湾，定居温哥华。
 
 此时距离她来台，已经过去了20年。她也从一个单纯的少女，变成了一个坚强隐忍的妇人。
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/5a77bbd034aa2.png)
+![image.png](https://netdesk.orcsvc.com/f/wvAdf5/5a77bbd034aa2.png)
 
 就在叶嘉莹以为苦日子终于要结束了的时候，灾祸再次降临。
 
@@ -218,7 +218,7 @@ star:
 
 诗人席慕蓉形容，叶老师在讲台上像个发光体，是《九歌》中的湘水上的女神。
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/a0a156205f33b.png)
+![image.png](https://netdesk.orcsvc.com/f/m3DJu9/a0a156205f33b.png)
 
 “她那时还很害羞，不敢直视学生的眼睛。即使声音很美，也不敢吟诗。”几十年后，这批学生已头发花白，成了作家，学者，大学教授。
 
@@ -230,7 +230,7 @@ star:
 
 这些聘书帮助叶嘉莹从困窘中脱身，拥有安宁美好的生活，可她无论身处何地，内心都在思念家乡。
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/abf2aefab1dba.png)
+![image.png](https://netdesk.orcsvc.com/f/A6xaSy/abf2aefab1dba.png)
 
 她说，“每次在海外讲到杜甫那句‘每依北斗望京华’，我的泪水就止不住，不知道哪一年才能回我的老家。”
 
@@ -246,7 +246,7 @@ star:
 
 1979年，她收到了教育部批准她回国教书的信，她先去了北大，不久后又应李霁野先生之邀，去了南开。
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/cf4182d912227.png)
+![image.png](https://netdesk.orcsvc.com/f/rK10Fg/cf4182d912227.png)
 
 不出所料，叶嘉莹在南开受到了热烈的欢迎。
 
@@ -278,11 +278,11 @@ star:
 
 她还加大了在全国各地讲学的频率，常有主办方体贴地为她准备椅子，但她坚持站立讲课，“这是我对于诗词的一种尊重。”
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/8f13c47801e7c.png)
+![image.png](https://netdesk.orcsvc.com/f/nwDqIj/8f13c47801e7c.png)
 
 2018-2019年，叶嘉莹分两次，共捐款3568万元给南开大学。这是她的毕生积蓄。
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/cb5ef6808fd73.png)
+![image.png](https://netdesk.orcsvc.com/f/AMAaSy/cb5ef6808fd73.png)
 
 引发大量关注后，她却不愿多说，甚至有丝愠怒，“捐了就捐了，我本来没想要公开，是校友会自己说出去的。”
 
@@ -296,7 +296,7 @@ star:
 
 她吃得简单，纪录片《传薪者》中曾经展示过她的一顿中饭：芹菜、蚕豆、彩椒、一碗米饭。
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/8d4a52f018e6a.png)
+![image.png](https://netdesk.orcsvc.com/f/YGVPf2/8d4a52f018e6a.png)
 
 有学生来她家上课，看到她烧了一锅开水，扔一把青菜往里头一煮，蒸两个馒头，就是一顿饭。
 
@@ -314,7 +314,7 @@ star:
 
 我希望最后我能够完成，把我们民族美好的文化传承下去。”
 
-![image.png](https://pic.hanjiaming.com.cn/2021/04/04/b7d14ae59457b.png)
+![image.png](https://netdesk.orcsvc.com/f/gkr0HX/b7d14ae59457b.png)
 
 多年前，叶嘉莹在考古杂志上看过一则报道：两颗从汉朝坟墓中挖出来的莲子，在精心培育之下，奇迹般地长出了叶子，开出了花。
 

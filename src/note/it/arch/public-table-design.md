@@ -19,7 +19,7 @@ category:
 
 ### 单一大库管理
 
-<img src="https://pic.hanjiaming.com.cn/2025/01/09/15bed7da8bd9c.png" alt="Google Chrome 2025-01-09 23.51.08.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/86H5/15bed7da8bd9c.png" alt="Google Chrome 2025-01-09 23.51.08.png" style="zoom:50%;" />
 
 **统一管理**：在宜信项目初期，所有数据表都集中在一个大数据库中，无论哪个团队负责的数据表，都放置在统一的后端数据库中。
 
@@ -57,7 +57,7 @@ category:
 
 ## 优化与解耦
 
-<img src="https://pic.hanjiaming.com.cn/2025/01/10/0e002493d6649.png" alt="1736438481176.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/5aTV/0e002493d6649.png" alt="1736438481176.png" style="zoom:50%;" />
 
 ### 数据层面解耦
 - **独立服务器资源**：每个团队拥有独立的服务器资源，用户表的高延迟不会影响其他数据库。
@@ -80,7 +80,7 @@ category:
 
 ### 架构设计的解决方案
 
-<img src="https://pic.hanjiaming.com.cn/2025/01/10/f4bf91287e7f5.png" alt="1736438736720.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/rJug/f4bf91287e7f5.png" alt="1736438736720.png" style="zoom:50%;" />
 
 - **微服务注册中心**：设计类似微服务的注册中心，对每个启动的服务实例进行登记。
 - **服务实例管理**：注册中心管理所有服务实例的IP地址和相关信息，统一管理服务实例。
@@ -94,7 +94,7 @@ category:
 
 ### 代码示例
 
-<img src="https://pic.hanjiaming.com.cn/2025/01/10/63abde5a3ab39.png" alt="1736438688712.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/alFq/63abde5a3ab39.png" alt="1736438688712.png" style="zoom: 33%;" />
 
 - **注解配置**：在方法上增加自定义注解，指明服务名称和URI，自动实现远程通信。
 - **数据交互**：程序员无需关心底层的传输细节，只需专注于业务开发。

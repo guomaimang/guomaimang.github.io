@@ -11,7 +11,7 @@ headerDepth: 1
 
 ## Text
 
-![1670662525220.png](https://pic.hanjiaming.com.cn/2022/12/10/2d9ae3fe22001.png)
+![1670662525220.png](https://netdesk.orcsvc.com/f/9yjYHm/2d9ae3fe22001.png)
 
 Reading text = visual pattern recognition
 
@@ -35,14 +35,14 @@ Decoding and interpretation in design
 - Semantic priming「启动」
 - The use of context 「上下文的使用」
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/9d532bf863441.png" alt="1670663106189.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/3LdMi5/9d532bf863441.png" alt="1670663106189.png" style="zoom: 33%;" />
 
 - 作为用户（新手），您知道的越少，您就越依赖上下文。
 - 如果未提供上下文，则词典含义将变为活动状态。就像计算机一样，用户变得容易犯错——含糊不清。**语义启动是解决方案。「Semantic priming is the solution.」**
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/e26b26aef6651.png" alt="1670663183141.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/nWMVcj/e26b26aef6651.png" alt="1670663183141.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/10/818ea0cd5972a.png" alt="1670663302340.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/bor1FM/818ea0cd5972a.png" alt="1670663302340.png" style="zoom: 50%;" />
 
 - Ambiguity: One word pointing at more meanings
 - Synonyms: More words, pointing at one meaning

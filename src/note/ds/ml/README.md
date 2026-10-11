@@ -26,7 +26,7 @@ order: 0
 - Deep Learning
   - Neural Network Model
 
-![1675217276121.png](https://pic.hanjiaming.com.cn/2023/02/01/08aa3bc7a2b46.png)
+![1675217276121.png](https://netdesk.orcsvc.com/f/mnYF9/08aa3bc7a2b46.png)
 
 ## Unsupervised learning
 
@@ -34,18 +34,18 @@ order: 0
 
 例子：将客户分为不同的类别（聚类）。
 
-![1655201455429.png](https://pic.hanjiaming.com.cn/2022/06/14/86deba1f8d1c3.png)
+![1655201455429.png](https://netdesk.orcsvc.com/f/doEZcX/86deba1f8d1c3.png)
 
 ## Supervised learning
 
 - 预测值是已知的
 - 目的：根据特征，预测未见过的数据的目标值
 
-![1655201518097.png](https://pic.hanjiaming.com.cn/2022/06/14/d3edb7dc9d57d.png)
+![1655201518097.png](https://netdesk.orcsvc.com/f/a2M3Fq/d3edb7dc9d57d.png)
 
 ### Types of supervised learning
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/14/dcf6be010d80e.png" alt="1655201561347.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/k8ELsb/dcf6be010d80e.png" alt="1655201561347.png" style="zoom:50%;" />
 
 - Classification: predicts **categorical** class labels
   - 根据训练集和分类属性中的值（类别标签）对数据进行分类（构建一个模型），并将其用于对新数据的分类。

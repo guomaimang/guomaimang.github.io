@@ -20,7 +20,7 @@ category:
 
 以京东金融为例，京东金融有大量的应用系统，比如审计系统和前端应用。它们需要与后台的数据仓库进行交互，通常选择 RESTful 或 RPC 的方式进行调用。这里以 RESTful 为例进行讲解。
 
-![1735284799165.png](https://pic.hanjiaming.com.cn/2024/12/27/59692e801db98.png)
+![1735284799165.png](https://netdesk.orcsvc.com/f/5m1cV/59692e801db98.png)
 
 系统之间通过网络传输，网络可能会出现断网的情况。为了保证系统的高可靠性，前端应用系统可能会增加如 **Spring Retryable** 这样的组件，通过不断重试发送相同调用消息的方式来提高系统的可靠性。
 
@@ -28,11 +28,11 @@ category:
 
 ## 案例分析
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/eb76e599882ae.png" alt="1735284874073.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/YWps2/eb76e599882ae.png" alt="1735284874073.png" style="zoom:25%;" />
 
 假设有一个RESTful接口用于将编号为1的员工的工资上调500元。很多新手程序员会这样写代码：
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/decea10f61c6a.png" alt="1735285080877.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/gaLfX/decea10f61c6a.png" alt="1735285080877.png" style="zoom:25%;" />
 
 1. 从数据库中通过 `select by ID` 得到当前员工的基本工资信息。
 2. 用 `EMP.setSalary` 在原有工资基础上加上参数中的500。
@@ -63,13 +63,13 @@ category:
 
 ### 处理过程
 
-![1735286170879.png](https://pic.hanjiaming.com.cn/2024/12/27/e8a2ced781a38.png)
+![1735286170879.png](https://netdesk.orcsvc.com/f/kxQIb/e8a2ced781a38.png)
 
 1. **请求编号生成**：前端应用系统在每次发送 RESTful 或 RPC 调用时，在请求头或RPC头部附加一个唯一的 `request ID`。
 2. **网关检查**：请求到达网关，网关通过 Nginx 和 Lua 脚本检查 Redis 中的幂等表。如果 `request ID` 不存在，保存到幂等表中，状态设置为 `proc`（处理中）。
 3. **请求处理**：业务逻辑处理完成后，更新Redis中的 `request ID` 状态为 `OK`（处理成功）。
 
-![1735286457321.png](https://pic.hanjiaming.com.cn/2024/12/27/738be0cf6f61f.png)
+![1735286457321.png](https://netdesk.orcsvc.com/f/6jytE/738be0cf6f61f.png)
 
 **重复请求处理**：如果相同的 `request ID` 再次发送，网关直接返回错误编码 201，前端应用接收到 201 编码后排除本次请求。
 
@@ -100,7 +100,7 @@ Redis中的幂等表数据设置存活时间（如5分钟），作用有两个�
 1. **注解定义**：在控制器方法上增加自定义注解。
 2. **AOP拦截**：AOP在方法执行后，通过后置通知更新Redis中的 `request ID` 状态。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/a069245f14f7e.png" alt="1735287438788.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/dG4iX/a069245f14f7e.png" alt="1735287438788.png" style="zoom:25%;" />
 
 ## 优缺点分析
 

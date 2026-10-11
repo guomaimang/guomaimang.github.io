@@ -122,7 +122,7 @@ c3
 
 Python 也有类似的功能
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/26/180110370b64d.png" alt="CleanShot 2021-04-26 at 23.07.22@2x.png" title="CleanShot 2021-04-26 at 23.07.22@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/VpaXt2/180110370b64d.png" alt="CleanShot 2021-04-26 at 23.07.22@2x.png" title="CleanShot 2021-04-26 at 23.07.22@2x.png" />
 
 引用
 

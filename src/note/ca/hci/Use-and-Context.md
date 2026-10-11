@@ -11,7 +11,7 @@ headerDepth: 1
 
 ## History of HCI
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/06/f9149976671b7.png" alt="CleanShot 2022-12-06 at 19.33.48@2x.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/eDMRHq/f9149976671b7.png" alt="CleanShot 2022-12-06 at 19.33.48@2x.png" style="zoom: 50%;" />
 
 ```
 What is the role of the user?

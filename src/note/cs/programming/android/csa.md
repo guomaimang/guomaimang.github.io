@@ -15,7 +15,7 @@ headerDepth: 1
 
 简化沟通模型：
 
-![Typora 2024-12-08 19.35.02.png](https://pic.hanjiaming.com.cn/2024/12/08/7437afb7f0f8a.png)
+![Typora 2024-12-08 19.35.02.png](https://netdesk.orcsvc.com/f/m4mt9/7437afb7f0f8a.png)
 
 Protocols: rules that govern how data is transmitted in this system
 
@@ -25,7 +25,7 @@ Protocols: rules that govern how data is transmitted in this system
 
 当两台计算机需要通过网络进行通信时，我们需要知道如何将它们连接起来
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/08/c9c4f2bef39e4.png" alt="预览 2024-12-08 21.31.15.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/YjQu2/c9c4f2bef39e4.png" alt="预览 2024-12-08 21.31.15.png" style="zoom:33%;" />
 
 ### Circuit Switching
 
@@ -63,9 +63,9 @@ The ISO OSI (Open System Interconnection) 7-Layer Model
 - 它将网络的不同功能组织成 7 个不同的层
 - 它指定了不同层级和不同端点之间通信的接口。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/08/8604944efed2a.png" alt="1733667119910.png" style="zoom: 55%;" />
+<img src="https://netdesk.orcsvc.com/f/jEbtb/8604944efed2a.png" alt="1733667119910.png" style="zoom: 55%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/08/e5d94dcb936c6.png" alt="1733667188933.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/PZQhe/e5d94dcb936c6.png" alt="1733667188933.png" style="zoom:50%;" />
 
 ## Client/Server Paradigm
 
@@ -146,11 +146,11 @@ TCP delivers data as **segments**
 - TCP为每个报文段添加一个报头（用于控制目的），并将该报文段传递给底层IP层进行传输
 - 这些报文段被封装在IP数据报中并进行传输（整个操作对进程来说是透明的）
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/09/f4d12d44c81b6.png" alt="1733678312442.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/M1yF8/f4d12d44c81b6.png" alt="1733678312442.png" style="zoom:50%;" />
 
 ## Socket Programming
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/09/fac76786b1a7f.png" alt="1733678536265.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/kXdUb/fac76786b1a7f.png" alt="1733678536265.png" style="zoom:50%;" />
 
 ### Ports
 
@@ -170,7 +170,7 @@ TCP delivers data as **segments**
 - 许多网络应用程序遵循客户端-服务器模型
 - 在这样的模型中，服务器持续运行以等待来自客户端的请求。
 
-![1733678866511.png](https://pic.hanjiaming.com.cn/2024/12/09/e1eb1028f0cc5.png)
+![1733678866511.png](https://netdesk.orcsvc.com/f/XP8tX/e1eb1028f0cc5.png)
 
 ### 我们如何编写服务器程序？
 
@@ -203,7 +203,7 @@ You can choose from TCP or UDP when developing your networking application
 
 ### 我们如何编写客户端程序呢？
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/09/1a92ac00e4a35.png" alt="1733679223871.png" style="zoom:45%;" />
+<img src="https://netdesk.orcsvc.com/f/xv0u3/1a92ac00e4a35.png" alt="1733679223871.png" style="zoom:45%;" />
 
 使用UDP
 
@@ -266,7 +266,7 @@ Thread.sleep(1000L);   // delay the current thread
 
 Before
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/09/cd8f73ea74976.png" alt="1733680728992.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Dlkse/cd8f73ea74976.png" alt="1733680728992.png" style="zoom:50%;" />
 
 ### Basics of Coroutine
 

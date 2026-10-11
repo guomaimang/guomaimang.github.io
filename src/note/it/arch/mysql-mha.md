@@ -22,7 +22,7 @@ MHA（Master High Availability）是由一位日本程序员开发的 MySQL 高�
 
 下图展示了一个完整的 MHA 架构方案：
 
- ![1734966534182.png](https://pic.hanjiaming.com.cn/2024/12/23/a754bd51ba1f7.png)
+ ![1734966534182.png](https://netdesk.orcsvc.com/f/pYJ2hn/a754bd51ba1f7.png)
 
 架构讲解
 
@@ -55,7 +55,7 @@ MHA 在原有的主从架构上增加了以下角色和组件：
 
 ## MHA 故障检测与转移过程
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/86c9226382ca5.png" alt="1734966708827.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/DLLfe/86c9226382ca5.png" alt="1734966708827.png" style="zoom:33%;" />
 
 ### 故障检测
 
@@ -65,7 +65,7 @@ MHA 在原有的主从架构上增加了以下角色和组件：
 
 ### 故障转移过程
 
-![1734966877087.png](https://pic.hanjiaming.com.cn/2024/12/23/3f6dbbb6a084a.png)
+![1734966877087.png](https://netdesk.orcsvc.com/f/xRZZi3/3f6dbbb6a084a.png)
 
 1. **保存现场**：断开虚拟 IP 和主服务器的连接，停止主从同步。
 2. **抽取 binlog**：从 Binlog Server 抽取最新的 binlog。

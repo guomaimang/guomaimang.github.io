@@ -126,7 +126,7 @@ assert ride_sharing['user_type_cat'].dtype == 'category'
 
 ### .duplicated() method
 
-![1651931370308.png](https://pic.hanjiaming.com.cn/2022/05/07/67cbdc8c783e9.png)
+![1651931370308.png](https://netdesk.orcsvc.com/f/G6a5HA/67cbdc8c783e9.png)
 
 ```python
 # Get duplicates across all columns
@@ -161,13 +161,13 @@ duplicates = height_weight.duplicated(subset = column_names, keep = False)
 height_weight[duplicates]
 ```
 
-![CleanShot 2022-03-07 at 17.45.41@2x.png](https://pic.hanjiaming.com.cn/2022/03/07/26e915bc40641.png)
+![CleanShot 2022-03-07 at 17.45.41@2x.png](https://netdesk.orcsvc.com/f/95L8cm/26e915bc40641.png)
 
 注意 duplicates 没有引号，因为 duplicates 被手动定义为 height_weight 的一部分。
 
 ### Drop duplicates
 
-![1651931255232.png](https://pic.hanjiaming.com.cn/2022/05/07/ea53f7ee84fc6.png)
+![1651931255232.png](https://netdesk.orcsvc.com/f/l3ROhe/ea53f7ee84fc6.png)
 
 #### with .drop_duplicates()
 
@@ -202,7 +202,7 @@ print('Satisfaction: ', airlines['satisfaction'].unique(), "\n")
 
 ### difference
 
-![1651942670505.png](https://pic.hanjiaming.com.cn/2022/05/08/0d571317cce3a.png)
+![1651942670505.png](https://netdesk.orcsvc.com/f/95vqCm/0d571317cce3a.png)
 
 ```python
 # Find the cleanliness category in airlines not in categories
@@ -224,7 +224,7 @@ print(airlines[~cat_clean_rows])
 
 What type of errors could we have?
 
-![1652017854942.png](https://pic.hanjiaming.com.cn/2022/05/08/e78f95efea9fa.png)
+![1652017854942.png](https://netdesk.orcsvc.com/f/doeqUX/e78f95efea9fa.png)
 
 ### value_counts()
 
@@ -282,7 +282,7 @@ labels=group_names)
 demographics[['income_group', 'household_income']]
 ```
 
-![CleanShot 2022-05-08 at 22.07.23@2x.png](https://pic.hanjiaming.com.cn/2022/05/08/db4ec677baa57.png)
+![CleanShot 2022-05-08 at 22.07.23@2x.png](https://netdesk.orcsvc.com/f/QabnSj/db4ec677baa57.png)
 
 ```
   income_group    Income
@@ -340,7 +340,7 @@ user_signups[user_signups['subscription_date'] > dt.date.today()]
 
 ### Datetime formatting
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/08/460e94c5759f7.png" alt="1652022834526.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/AMnjuy/460e94c5759f7.png" alt="1652022834526.png" style="zoom:33%;" />
 
 `pandas.to_datetime()`
 
@@ -373,7 +373,7 @@ The use of multiple fields in a dataset to sanity check data integrity
 
 ### .sum()
 
-![1652106049679.png](https://pic.hanjiaming.com.cn/2022/05/09/61b0fa295fc51.png)
+![1652106049679.png](https://netdesk.orcsvc.com/f/k8ngUb/61b0fa295fc51.png)
 
 ```python
 sum_classes = flights[['economy_class', 'business_class', 'first_class']].sum(axis = 1)
@@ -387,21 +387,21 @@ inconsistent_pass = flights[~passenger_equ]
 
 数据完整性
 
-![1652106959574.png](https://pic.hanjiaming.com.cn/2022/05/09/13ff6944b6a53.png)
+![1652106959574.png](https://netdesk.orcsvc.com/f/rKEeCg/13ff6944b6a53.png)
 
 确实的数据会以`NaN`显示。
 
-![1652108977086.png](https://pic.hanjiaming.com.cn/2022/05/09/22319a9ef2a9e.png)
+![1652108977086.png](https://netdesk.orcsvc.com/f/a2yaiq/22319a9ef2a9e.png)
 
 ### .isna()
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/09/35646100144b3.png" alt="1652107112307.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/8J1du5/35646100144b3.png" alt="1652107112307.png" style="zoom:50%;" />
 
 ### .isna().sum()
 
 统计`NaN`的个数。
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/09/00a0a5de5f035.png" alt="1652107166764.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/5XLjTV/00a0a5de5f035.png" alt="1652107166764.png" style="zoom: 50%;" />
 
 ### 缺失可视化
 
@@ -410,7 +410,7 @@ msno.matrix(sorted_airquality)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/09/d4ce3501e8f2f.png" alt="1652108906307.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/R45ks8/d4ce3501e8f2f.png" alt="1652108906307.png" style="zoom:50%;" />
 
 ### Dropping missing values
 
@@ -440,11 +440,11 @@ np.mean()
 
 从一个字符串过渡到另一个字符串所需的最少步骤
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/01/bbc39d12182c0.png" alt="1654061206503.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/Vpd3i2/bbc39d12182c0.png" alt="1654061206503.png" style="zoom: 25%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/01/171d2aaffb167.png" alt="1654061231341.png" style="zoom: 20%;" />
+<img src="https://netdesk.orcsvc.com/f/y3lKTZ/171d2aaffb167.png" alt="1654061231341.png" style="zoom: 20%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/01/9c39e502961d3.png" alt="1654061324780.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ZPdVI2/9c39e502961d3.png" alt="1654061324780.png" style="zoom:50%;" />
 
 Possible packages: nltk , fuzzywuzzy , textdistance ..
 
@@ -491,7 +491,7 @@ process.extract(string, choices, limit = 2)
 
 与字符串匹配的折叠类别
 
-![1654062168479.png](https://pic.hanjiaming.com.cn/2022/06/01/d47043e78ff20.png)
+![1654062168479.png](https://netdesk.orcsvc.com/f/wvgnI5/d47043e78ff20.png)
 
 ```python
 # For each correct category
@@ -519,15 +519,15 @@ for state in categories['state']:
 
 之前的append追加数据时，无法处理相似数据的重复问题。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/02/1d501eb5acb4d.png" alt="1654099850745.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/jPgOcb/1d501eb5acb4d.png" alt="1654099850745.png" style="zoom: 25%;" />
 
 如何防止相似的数据被追加？可以按照这样一个流程
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/02/8b7ec66cd93b3.png" alt="1654099905428.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/gkK3HX/8b7ec66cd93b3.png" alt="1654099905428.png" style="zoom: 67%;" />
 
 The recordlinkage package
 
-![1654099946342.png](https://pic.hanjiaming.com.cn/2022/06/02/06398a9737902.png)
+![1654099946342.png](https://netdesk.orcsvc.com/f/nwg5cj/06398a9737902.png)
 
 ```python
 # Import recordlinkage
@@ -574,7 +574,7 @@ print(potential_matches)
 
 下面结果中，1表示符合，0表示不符合
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/02/65e2e49b350e0.png" alt="1654100364764.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Pvb1se/65e2e49b350e0.png" alt="1654100364764.png" style="zoom:50%;" />
 
 下一步 筛选出来我认为是相似的数据条目
 
@@ -584,7 +584,7 @@ potential_matches[potential_matches.sum(axis = 1) => 3]
 print(matches)
 ```
 
-![1654100570259.png](https://pic.hanjiaming.com.cn/2022/06/02/04062ba687964.png)
+![1654100570259.png](https://netdesk.orcsvc.com/f/YGd9u2/04062ba687964.png)
 
 ```
 >>> matches.index
@@ -640,10 +640,10 @@ combined = ri.stop_date.str.cat(ri.stop_time, sep = " ")
 
 ## 总结
 
-![1654100907302.png](https://pic.hanjiaming.com.cn/2022/06/02/f4d38165d6a3e.png)
+![1654100907302.png](https://netdesk.orcsvc.com/f/G6YRiA/f4d38165d6a3e.png)
 
-![1654100920430.png](https://pic.hanjiaming.com.cn/2022/06/02/89e0e02c8c6e3.png)
+![1654100920430.png](https://netdesk.orcsvc.com/f/6LrAiE/89e0e02c8c6e3.png)
 
-![1654100932168.png](https://pic.hanjiaming.com.cn/2022/06/02/ebfc4a380172d.png)
+![1654100932168.png](https://netdesk.orcsvc.com/f/QaR0ij/ebfc4a380172d.png)
 
-![1654100945474.png](https://pic.hanjiaming.com.cn/2022/06/02/07c69bee8b096.png)
+![1654100945474.png](https://netdesk.orcsvc.com/f/m3RLt9/07c69bee8b096.png)

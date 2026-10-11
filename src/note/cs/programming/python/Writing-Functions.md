@@ -59,15 +59,15 @@ print('{}\n{}\n{}'.format(border, docstring, border))
 
 ### inspect.getdoc()获取
 
-![1654597449727.png](https://pic.hanjiaming.com.cn/2022/06/07/72b5deeced1af.png)
+![1654597449727.png](https://netdesk.orcsvc.com/f/vvdRfq/72b5deeced1af.png)
 
 ## Pass by assignment
 
 和Java 的 Pass by reference相似。只不过需要注意不能更改的变量有什么。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/06/f72a61c904c48.png" alt="1654449339910.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/42jmt2/f72a61c904c48.png" alt="1654449339910.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/06/3cc15a60b6738.png" alt="1654449307135.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Oa6xuQ/3cc15a60b6738.png" alt="1654449307135.png" style="zoom:50%;" />
 
 ## context managers
 
@@ -110,13 +110,13 @@ Two ways:
 
 此处关注基于函数的
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/07/20e36aac6384a.png" alt="1654597949891.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/y3dxUZ/20e36aac6384a.png" alt="1654597949891.png" style="zoom:50%;" />
 
-![1654597982200.png](https://pic.hanjiaming.com.cn/2022/06/07/2e1bb25508a08.png)
+![1654597982200.png](https://netdesk.orcsvc.com/f/G64nFA/2e1bb25508a08.png)
 
 应当添加try-catch 保证最终一定关闭资源
 
-![1654598055599.png](https://pic.hanjiaming.com.cn/2022/06/07/58aa3eb406e5d.png)
+![1654598055599.png](https://netdesk.orcsvc.com/f/R4vrf8/58aa3eb406e5d.png)
 
 ## Functions as objects
 
@@ -124,11 +124,11 @@ Python 思想：一切都是 object
 
 ### 调用和赋值
 
-![1654598199471.png](https://pic.hanjiaming.com.cn/2022/06/07/5e70dacee4630.png)
+![1654598199471.png](https://netdesk.orcsvc.com/f/PvyDhe/5e70dacee4630.png)
 
 ### Functions as variables
 
-![1654598284189.png](https://pic.hanjiaming.com.cn/2022/06/07/c1caa1974839f.png)
+![1654598284189.png](https://netdesk.orcsvc.com/f/or3pIg/c1caa1974839f.png)
 
 ### 子函数
 
@@ -145,7 +145,7 @@ def foo():
 
 同样的，子函数对象也可以作返回值
 
-![1654598434996.png](https://pic.hanjiaming.com.cn/2022/06/07/ebad1de143398.png)
+![1654598434996.png](https://netdesk.orcsvc.com/f/ER63fd/ebad1de143398.png)
 
 ## Scope
 
@@ -159,7 +159,7 @@ def foo():
 
 ### Python 变量作用域
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/07/7b933bfd02b22.png" alt="1654601701804.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/VpwDt2/7b933bfd02b22.png" alt="1654601701804.png" style="zoom:50%;" />
 
 ### 全局变量在函数内可读不可写
 
@@ -187,7 +187,7 @@ global 关键字在函数内修饰变量，有两个作用
 1. 在函数内声明一个新的全局变量，并且使该变量在函数内可读可写
 2. 若修饰的变量已经在全局定义，则使该变量在函数内可读可写
 
-![1654599590138.png](https://pic.hanjiaming.com.cn/2022/06/07/f35c574ced3d3.png)
+![1654599590138.png](https://netdesk.orcsvc.com/f/x8q6i3/f35c574ced3d3.png)
 
 ### nonlocal 关键字
 
@@ -197,7 +197,7 @@ nonlocal 关键字作用类似于global，是
 
 在函数内声明一个新的变量，并且使该变量在其**子函数**内可读可写
 
-![1654600903405.png](https://pic.hanjiaming.com.cn/2022/06/07/a3966ba9dd673.png)
+![1654600903405.png](https://netdesk.orcsvc.com/f/3pWyi5/a3966ba9dd673.png)
 
 ## Closures
 
@@ -207,7 +207,7 @@ nonlocal 关键字作用类似于global，是
 
 答案就是 传递时，会将函数需要的 父函数变量 复制一份，放到 返回的子函数的`__closure__`里面。
 
-![1654601087293.png](https://pic.hanjiaming.com.cn/2022/06/07/d1773f3d8a182.png)
+![1654601087293.png](https://netdesk.orcsvc.com/f/8JvPc5/d1773f3d8a182.png)
 
 这里有一点需要注意的是每一次将返回一个新的子函数object，而不是共享一个子函数object
 
@@ -215,17 +215,17 @@ nonlocal 关键字作用类似于global，是
 
 删除变量不影响：
 
-![1654601507059.png](https://pic.hanjiaming.com.cn/2022/06/07/2a79f7173b985.png)
+![1654601507059.png](https://netdesk.orcsvc.com/f/1LngcK/2a79f7173b985.png)
 
 修改变量不影响：
 
-![1654601522306.png](https://pic.hanjiaming.com.cn/2022/06/07/c808c5bd76b79.png)
+![1654601522306.png](https://netdesk.orcsvc.com/f/AMmGIy/c808c5bd76b79.png)
 
 ## Decorators
 
 首先明确一点，Java注解（Annotation） 和 Python的装饰器（Decorators）不是一个东西。Java也有Decorators。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/07/f3f3120ad5d84.png" alt="1654603831428.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/AM8aCy/f3f3120ad5d84.png" alt="1654603831428.png" style="zoom: 33%;" />
 
 Decorators 的功能总的来说就是劫持函数并修改其功能，实质是用一个新的函数把旧的函数进行一些修改后**包装**起来。
 
@@ -250,7 +250,7 @@ multiply(1, 5)
 
 修饰器本身就是一个函数，以目标函数为参数，修改目标函数，之后把修改好的目标函数传传递给原引用。
 
-![1654604502166.png](https://pic.hanjiaming.com.cn/2022/06/07/c70f9749dfafd.png)
+![1654604502166.png](https://netdesk.orcsvc.com/f/doOVhX/c70f9749dfafd.png)
 
 在创建修饰器的时候，需要注意的是应把修饰器函数的
 
@@ -322,13 +322,13 @@ foo() was called 2 times.
 - `__defaults__` ：函数的默认参数
 - `__doc__` ：函数的注释
 
-![1654608052881.png](https://pic.hanjiaming.com.cn/2022/06/07/1e00256b85656.png)
+![1654608052881.png](https://netdesk.orcsvc.com/f/YGY4T2/1e00256b85656.png)
 
 给子函数wrapper添加修饰器即可解决这个问题。这样新函数的所有metadata将会赋值包装前函数的元数据。
 
 此外，加上这个修饰器后支持访问包装前的函数。使用 `__wrapped__`
 
-![1654608201850.png](https://pic.hanjiaming.com.cn/2022/06/07/cae2d8e214dc0.png)
+![1654608201850.png](https://netdesk.orcsvc.com/f/a24eiq/cae2d8e214dc0.png)
 
 ## Decorators Application 
 
@@ -354,7 +354,7 @@ def timer(func):
 	return wrapper
 ```
 
-![1654607418130.png](https://pic.hanjiaming.com.cn/2022/06/07/bdb0c358b34e9.png)
+![1654607418130.png](https://netdesk.orcsvc.com/f/jPyJFb/bdb0c358b34e9.png)
 
 ### @memoize
 
@@ -377,19 +377,19 @@ def memoize(func):
 	return wrapper
 ```
 
-![1654607615207.png](https://pic.hanjiaming.com.cn/2022/06/07/c9b703e54740a.png)
+![1654607615207.png](https://netdesk.orcsvc.com/f/rKJpFg/c9b703e54740a.png)
 
 ## Decorators with args
 
 ### run_n_times()
 
-![1654626616735.png](https://pic.hanjiaming.com.cn/2022/06/08/bc6450289ecae.png)
+![1654626616735.png](https://netdesk.orcsvc.com/f/vvQLsq/bc6450289ecae.png)
 
 ### 实现
 
 不妨当做对旧的函数进行两次包装...
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/84fd361d7039f.png" alt="1654627117384.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/JwywT8/84fd361d7039f.png" alt="1654627117384.png" style="zoom:50%;" />
 
 ### @timeout()
 
@@ -414,7 +414,7 @@ def timeout(n_seconds):
   return decorator
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/08/66b92d4ea5d60.png" alt="1654627288479.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/vvbRhq/66b92d4ea5d60.png" alt="1654627288479.png" style="zoom: 50%;" />
 
 ### @tag(\*tags)
 

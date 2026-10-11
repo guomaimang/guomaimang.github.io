@@ -57,7 +57,7 @@ Three Necessary Conditions
 - **Binocular disparity**「双眼差异」: 这是投射到眼睛背面（然后投射到视觉皮层）的图像的差异，因为两眼在水平方向上被眼间距离分开。
 - 人类有大约120度的双眼视觉
 
-![1670666263337.png](https://pic.hanjiaming.com.cn/2022/12/10/85c949104fa3e.png)
+![1670666263337.png](https://netdesk.orcsvc.com/f/RGXVu8/85c949104fa3e.png)
 
 - 传统二维显示器无法呈现双眼视差
 - 适应性「**Accommodation**」 - 这是改变眼球晶状体焦距所需的肌肉张力，以便在一个特定的深度聚焦。

@@ -22,7 +22,7 @@ CAP 是三个英文单词的缩写：
 - **A**: Availability（可用性）
 - **P**: Partition Tolerance（分区容错性）
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/fab3d3516c5db.png" alt="1734942581420.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/yDZjsZ/fab3d3516c5db.png" alt="1734942581420.png" style="zoom:33%;" />
 
 ### 一致性 (Consistency)
 一致性指的是在更新操作后，所有节点在同一时间的数据完全一致。也就是说，无论何时访问数据，数据都是完整且一致的。
@@ -63,7 +63,7 @@ CAP 定理中的三个特性不可能同时完全满足，系统设计时需要�
 
 假设我们开发一个电商系统，将其拆分为订单系统、库存系统、结算系统等子系统。每个子系统都有自己的数据库。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/63560e1b50b9e.png" alt="1734942638549.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/lpq3fe/63560e1b50b9e.png" alt="1734942638549.png" style="zoom: 33%;" />
 
 - 用户在电商平台上下单时，需要同时减少库存。
 - 在分布式系统中，这两个操作通过网络通信完成，可能会出现只操作一半的情况（如订单创建成功但库存未减少）。

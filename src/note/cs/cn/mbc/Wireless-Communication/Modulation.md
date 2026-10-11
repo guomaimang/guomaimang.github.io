@@ -17,7 +17,7 @@ headerDepth: 1
 
 解调「Demodulation」：调制的反向过程，从收到的信号中提取数据信息。
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/17006d9019e54.png" alt="1666085668642.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/wvWAI5/17006d9019e54.png" alt="1666085668642.png" style="zoom:33%;" />
 
 ::: note 为什么不直接发送基带信号？
 
@@ -25,7 +25,7 @@ headerDepth: 1
 - 通过将基带信号转移到高频段，提供频分复用功能
 - 避免由于无线介质特性导致的信号失真
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/f0fc7f4a1a3f2.png" alt="1666085738443.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/R4pJs8/f0fc7f4a1a3f2.png" alt="1666085738443.png" style="zoom: 25%;" />
 
 :::
 
@@ -33,7 +33,7 @@ headerDepth: 1
 
 载波信号s(t )=A sin(2πft + φ)用于表示传输数据的方式不同
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/191e928bc81a1.png" alt="1666087254935.png" style="zoom:25%;" /><img src="https://pic.hanjiaming.com.cn/2022/10/18/1c258606e5af6.png" alt="1666087279105.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/Vp2kc2/191e928bc81a1.png" alt="1666087254935.png" style="zoom:25%;" /><img src="https://netdesk.orcsvc.com/f/Jwdlu8/1c258606e5af6.png" alt="1666087279105.png" style="zoom:25%;" />
 
 ## 数字调制
 
@@ -42,7 +42,7 @@ Digital modulation: 数字数据被转换成模拟信号（基带）
 - 也被称为移位键法
 - 无线介质只允许模拟信号传输
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/f30dff2205388.png" alt="1666087442742.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/8JZvC5/f30dff2205388.png" alt="1666087442742.png" style="zoom: 25%;" />
 
 Differences in spectral efficiency, power efficiency, robustness, etc.
 

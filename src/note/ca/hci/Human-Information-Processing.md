@@ -9,7 +9,7 @@ headerDepth: 1
 
 # Human Info Processing
 
-![1670404202771.png](https://pic.hanjiaming.com.cn/2022/12/07/650a23780ef6c.png)
+![1670404202771.png](https://netdesk.orcsvc.com/f/m3Gws9/650a23780ef6c.png)
 
 - The Human Information Processor「人类信息处理器」
 - Input: perception「感知」
@@ -19,7 +19,7 @@ headerDepth: 1
 
 ## 人类信息处理器
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/07/decab9b676ad0.png" alt="1670405609182.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/qlrysJ/decab9b676ad0.png" alt="1670405609182.png" style="zoom: 33%;" />
 
 ## 大脑的结构和内部运作
 
@@ -68,11 +68,11 @@ Well-defined problem「定义明确的问题」: full specification of the provi
 
 ### Difference reduction
 
-![1670433400967.png](https://pic.hanjiaming.com.cn/2022/12/08/74411c151382c.png)
+![1670433400967.png](https://netdesk.orcsvc.com/f/OmQ6sQ/74411c151382c.png)
 
 ### Means-end analysis
 
-![1670433424886.png](https://pic.hanjiaming.com.cn/2022/12/08/0fa6268188976.png)
+![1670433424886.png](https://netdesk.orcsvc.com/f/jPovHb/0fa6268188976.png)
 
 ## Forward and backward reasoning
 
@@ -82,15 +82,15 @@ Fetch robotics: Difference reduction or Means-end analysis?
 
 ### Forward reasoning
 
-![1670433919606.png](https://pic.hanjiaming.com.cn/2022/12/08/7780891982bd7.png)
+![1670433919606.png](https://netdesk.orcsvc.com/f/0vLaT5/7780891982bd7.png)
 
 ### Backward reasoning
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/08/bde97abf5dd49.png" alt="1670434147517.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/en2AHq/bde97abf5dd49.png" alt="1670434147517.png" style="zoom:33%;" />
 
-![1670434198748.png](https://pic.hanjiaming.com.cn/2022/12/08/d88a0ccafddd6.png)
+![1670434198748.png](https://netdesk.orcsvc.com/f/gxpxFX/d88a0ccafddd6.png)
 
-![1670434272422.png](https://pic.hanjiaming.com.cn/2022/12/08/5d9ce9eb56722.png)
+![1670434272422.png](https://netdesk.orcsvc.com/f/gkjJIX/5d9ce9eb56722.png)
 
 ## Analogy&Creative Problem Solve
 
@@ -104,30 +104,30 @@ relations between other features and categories
 特征和类别之间的关系类似于
 其他特征和类别之间的关系」
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/08/f4bd71f1eaedb.png" alt="1670435257647.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/jvLrHb/f4bd71f1eaedb.png" alt="1670435257647.png" style="zoom:50%;" />
 
 ### Case-based reasoning
 
 - 类比推理「**Analogical reasoning**」是半途智能和创造性的问题解决：它有推理和联想的一面
 - 基于案例的推理 「**Case-based reasoning**」 is a type of analogical reasoning
 
-![1670435467366.png](https://pic.hanjiaming.com.cn/2022/12/08/6a2e03560beb9.png)
+![1670435467366.png](https://netdesk.orcsvc.com/f/p8Rwun/6a2e03560beb9.png)
 
 ### Random trial-and-error
 
 随机试错「**Random trial-and-error**」是一种低层次的问题解决策略，但常见于非专业用户。
 
-![1670436299805.png](https://pic.hanjiaming.com.cn/2022/12/08/5ddde62c10412.png)
+![1670436299805.png](https://netdesk.orcsvc.com/f/95J8Fm/5ddde62c10412.png)
 
 违反了智能问题解决「intelligent problem-solving」中对系统分析「systematic analysis」和计划行动的要求。在创造性的问题解决「creative problem-solving」中，偶然「serendipitous」的发现可能会发生
 
 ### Creative Problem Solving
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/08/9baa461440916.png" alt="1670436518651.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/LwJYs2/9baa461440916.png" alt="1670436518651.png" style="zoom:50%;" />
 
 创造性解决问题：两个世界的融合（例如，生物学（蠕虫）和工程学（救援机器人））
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/08/f74fb7716ac60.png" alt="CleanShot 2022-12-08 at 03.42.32@2x.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/6PXZFE/f74fb7716ac60.png" alt="CleanShot 2022-12-08 at 03.42.32@2x.png" style="zoom:50%;" />
 
 - 创造性地解决问题：给可用于解决问题的（标准）手段赋予不同的功能
 - 创造性地解决问题：两个世界的融合（界面设计和针线活）。
@@ -150,7 +150,7 @@ relations between other features and categories
 
 为什么错误只是僵化系统中的错误，而不是创造性中的错误？
 
-![1670443028947.png](https://pic.hanjiaming.com.cn/2022/12/08/e721d369f5860.png)
+![1670443028947.png](https://netdesk.orcsvc.com/f/oJersg/e721d369f5860.png)
 
 ## Problem Representation
 
@@ -175,7 +175,7 @@ relations between other features and categories
 - 结构化决策通常与定义明确的问题和更精确的问题状态有关
 - 非结构化的决策通常与定义不清的问题和比较模糊的问题状态有关
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/08/52f3cb1adf85d.png" alt="1670444224155.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/orQOUg/52f3cb1adf85d.png" alt="1670444224155.png" style="zoom:50%;" />
 
 ## Response
 
@@ -197,7 +197,7 @@ relations between other features and categories
 
 - 反应时间取决于刺激类型
 
-  <img src="https://pic.hanjiaming.com.cn/2022/12/08/ca122971fb825.png" alt="1670444516925.png" style="zoom:50%;" />
+  <img src="https://netdesk.orcsvc.com/f/nWaASj/ca122971fb825.png" alt="1670444516925.png" style="zoom:50%;" />
 
 ### Output: accuracy of response
 
@@ -220,9 +220,9 @@ Fitts’ Law: speed vs accuracy
 
 一个界面小部件越宽，离指针越近，越容易击中它
 
-![1670444809078.png](https://pic.hanjiaming.com.cn/2022/12/08/9d3caf8f6e21d.png)
+![1670444809078.png](https://netdesk.orcsvc.com/f/v5aYFq/9d3caf8f6e21d.png)
 
-![1670444990784.png](https://pic.hanjiaming.com.cn/2022/12/08/cd6f37ba5035d.png)
+![1670444990784.png](https://netdesk.orcsvc.com/f/mqa4U9/cd6f37ba5035d.png)
 
 Index of Difficulty: 移动到目标需要更多的时间，当
 
@@ -245,7 +245,7 @@ Putting everything together:
 - b = slope (secs/bit)
 - Tpos = time taken (seconds)
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/08/65947d8c17776.png" alt="1670445296922.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/KXAjuL/65947d8c17776.png" alt="1670445296922.png" style="zoom:50%;" />
 
 ::: tip 3-click Rule
 
@@ -269,7 +269,7 @@ What is the 3-click rule? In a nutshell, it says that if users can't find what t
 
 ## Exam Sample Item
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/08/eba947470d8a7.png" alt="1670445756879.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Paodhe/eba947470d8a7.png" alt="1670445756879.png" style="zoom:50%;" />
 
 
 

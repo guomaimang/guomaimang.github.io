@@ -9,7 +9,7 @@ headerDepth: 1
 
 ## Challenge-Response
 
-![1679549924425.png](https://pic.hanjiaming.com.cn/2023/03/23/20cb60ea922cf.png)
+![1679549924425.png](https://netdesk.orcsvc.com/f/53mtV/20cb60ea922cf.png)
 
 产生的原因：中间人也许会复制一份通信的内容，比如密码 Hash 值，以便自己在伪装成 Client 在以后使用。
 
@@ -41,9 +41,9 @@ headerDepth: 1
 
 Lamport's Hash，也被称为 S/Key，是一种一次性密码（One-Time Password, OTP）身份验证方案。
 
-![1679550490903.png](https://pic.hanjiaming.com.cn/2023/03/23/80479f157d0b4.png)
+![1679550490903.png](https://netdesk.orcsvc.com/f/gX0iX/80479f157d0b4.png)
 
-![1679550523618.png](https://pic.hanjiaming.com.cn/2023/03/23/01c339effc2f7.png)
+![1679550523618.png](https://netdesk.orcsvc.com/f/oX5fg/01c339effc2f7.png)
 
 潜在问题:
 
@@ -64,7 +64,7 @@ Lamport's Hash，也被称为 S/Key，是一种一次性密码（One-Time Passwo
 
 ### Encryption-with-Password
 
-![1679555301259.png](https://pic.hanjiaming.com.cn/2023/03/23/5476b08619b0c.png)
+![1679555301259.png](https://netdesk.orcsvc.com/f/rX0Fg/5476b08619b0c.png)
 
 这是一个基于 Encryption-with-Password（对称加密）的简单身份验证过程的演示。在这个例子中，Alice 和 Bob 都共享一个低强度的密码，他们使用这个密码生成一个共享密钥 W，其中 f(pwd) 表示从密码中派生密钥的函数。接下来，他们通过以下步骤进行身份验证：
 
@@ -76,7 +76,7 @@ Lamport's Hash，也被称为 S/Key，是一种一次性密码（One-Time Passwo
 
 ### Encryption-with-Password + PKC
 
-![1679555444475.png](https://pic.hanjiaming.com.cn/2023/03/23/404088f520329.png)
+![1679555444475.png](https://netdesk.orcsvc.com/f/6wVHE/404088f520329.png)
 
 这是一个基于 Encryption-with-Password（对称加密）和公钥加密（PKC，Public Key Cryptography）的混合身份验证过程的演示。在这个例子中，Alice 和 Bob 都共享一个低强度的密码，他们使用这个密码生成一个共享密钥 W，其中 f(pwd) 表示从密码中派生密钥的函数。接下来，他们通过以下步骤进行身份验证：
 
@@ -90,7 +90,7 @@ Lamport's Hash，也被称为 S/Key，是一种一次性密码（One-Time Passwo
 
 ### An Improved Version
 
-![1679555566788.png](https://pic.hanjiaming.com.cn/2023/03/23/89574ea045318.png)
+![1679555566788.png](https://netdesk.orcsvc.com/f/GALcA/89574ea045318.png)
 
 这是一个改进版本的基于 Encryption-with-Password（对称加密）和公钥加密（PKC，Public Key Cryptography）的混合身份验证过程的演示。在这个例子中，Alice 和 Bob 都共享一个低强度的密码，他们使用这个密码生成一个共享密钥 W，其中 f(pwd) 表示从密码中派生密钥的函数。接下来，他们通过以下步骤进行身份验证：
 
@@ -104,7 +104,7 @@ Lamport's Hash，也被称为 S/Key，是一种一次性密码（One-Time Passwo
 
 ### Encrypted Key Exchange (EKE)
 
-![1679555644155.png](https://pic.hanjiaming.com.cn/2023/03/23/d05aa89d662de.png)
+![1679555644155.png](https://netdesk.orcsvc.com/f/QjYtj/d05aa89d662de.png)
 
 这是一个基于 Encrypted Key Exchange（EKE）的身份验证和密钥交换过程的演示。EKE 是一种安全协议，它结合了密码加密和公钥加密技术，以实现安全的身份验证和密钥交换。在这个例子中，Alice 和 Bob 都共享一个弱密码，他们使用这个密码生成一个共享密钥 W。接下来，他们通过以下步骤进行身份验证和密钥交换：
 
@@ -159,7 +159,7 @@ Google Identity uses OAuth protocol：授权框架使第三方应用程序能够
 - 结果是一个 authorization code，应用程序可以用它来交换 **access token**
 - The application uses the **access token** to access a Google API
 
-<img src="https://pic.hanjiaming.com.cn/2023/03/23/7e1f74d7b2dd1.png" alt="1679557724166.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/AJafy/7e1f74d7b2dd1.png" alt="1679557724166.png" style="zoom:50%;" />
 
 ## Digital Certificate
 
@@ -207,7 +207,7 @@ X.509证书中的主要字段是：
 - 证书的序列号（由发证CA分配）；
 - 该证书上的CA的签名（以及使用的签名算法）
 
-![1682580435196.png](https://pic.hanjiaming.com.cn/2023/04/27/26f41c3470149.png)
+![1682580435196.png](https://netdesk.orcsvc.com/f/1XAtK/26f41c3470149.png)
 
 ### Certificate Revocation
 

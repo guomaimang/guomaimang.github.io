@@ -17,7 +17,7 @@ author: Hirsun，Belter
 - Underfitting: 模型不能很好地拟合数据
 - Overfitting：模型与有限的数据集拟合得过于紧密，失去了概括能力
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/21/6ecf300730d97.png" alt="1676961186897.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/5vlfV/6ecf300730d97.png" alt="1676961186897.png" style="zoom:50%;" />
 
 ::: info Overfitting
 
@@ -37,7 +37,7 @@ author: Hirsun，Belter
 
 :::
 
-![1676962188199.png](https://pic.hanjiaming.com.cn/2023/02/21/8b6f8da6a8451.png)
+![1676962188199.png](https://netdesk.orcsvc.com/f/MpDt8/8b6f8da6a8451.png)
 
 ## 正则化
 
@@ -54,7 +54,7 @@ author: Hirsun，Belter
 
 该方程的的代价函数为均方误差函数（MSE），为 $J(\theta)=\frac{1}{m} \sum_{i=1}^{m}\left(\theta_{0}+\theta_{1} x^{(i)}-y^{(i)}\right)^{2}$ ，其中m 表示样本量。为了保持简单，只取一个样本点 (1,1) 代入上面的代价函数方程中，可得 $J(\theta)=\left(\theta_{0}+\theta_{1}-1\right)^{2}$。图像如下图所示：
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/08/5eb170f407fdc.png" alt="1657273691773.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/gkmxIX/5eb170f407fdc.png" alt="1657273691773.png" style="zoom:33%;" />
 
 θ<sub>0</sub> 是 红轴，θ<sub>1</sub> 是绿轴。
 
@@ -76,7 +76,7 @@ J(\theta)=\left(\theta_{0}+\theta_{1}-1\right)^{2}J(\theta)=\frac{1}{m} \sum_{i=
 $$
 上式中λ是正则化项的参数，为了简化取λ=1。由于正则化项中始终不包含截距项θ0，此时的L1范数相当于参数θ<sub>1</sub>的绝对值。带入1个样本点(1,1) 后，即 $J(\theta)=\left(\theta_{0}+\theta_{1}-1\right)^{2}+\left|\theta_{1}\right|$ ,可以得到下面的图像：
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/08/da10f34adfddc.png" alt="1657274343617.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/G6meuA/da10f34adfddc.png" alt="1657274343617.png" style="zoom: 33%;" />
 
 此时的图像，就像是一个圆锥体被捏扁了之后，立在坐标原点上。观察添加正则化项前后的图像，我们会发现：
 
@@ -143,7 +143,7 @@ $$
 \operatorname{sign}\left(\theta_{n}\right)
 \end{array}\right)
 $$
-<img src="https://pic.hanjiaming.com.cn/2022/07/21/a86ea436ce83d.png" alt="1658407025960.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/YGbgF2/a86ea436ce83d.png" alt="1658407025960.png" style="zoom: 50%;" />
 
 ::: info 范数
 
@@ -197,7 +197,7 @@ $$
 
 下面通过一张图像来比较一下 岭回归 和 Lasso 回归：
 
-![1658407286409.png](https://pic.hanjiaming.com.cn/2022/07/21/98db696ba61aa.png)
+![1658407286409.png](https://netdesk.orcsvc.com/f/Jwqph8/98db696ba61aa.png)
 
 上图中，左上方表示l1（图中菱形图案）和代价函数（图中深色椭圆环）；左下方表示l2（椭圆形线圈）和代价函数（图中深色椭圆环）。同一条线上（或同一个环上），表示对应的函数值相同；图案中心分别表示l1,l2 以及代价函数的最小值位置。
 

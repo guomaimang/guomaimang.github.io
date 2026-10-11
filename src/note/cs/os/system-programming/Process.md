@@ -29,11 +29,11 @@ headerDepth: 2
 
 现代操作系统提出了 "线程 "的概念。线程是拥有共享资源的进程，通常由同一个祖先进程创建。由于资源分配更加节俭，线程也被称为 "轻量级进程"。
 
-![1666634811226.png](https://pic.hanjiaming.com.cn/2022/10/25/a634fcc2f3486.png)
+![1666634811226.png](https://netdesk.orcsvc.com/f/k8yQIb/a634fcc2f3486.png)
 
 哪些资源可以共享，哪些不可以共享？
 
-![1666635218367.png](https://pic.hanjiaming.com.cn/2022/10/25/0e2d894d9ebda.png)
+![1666635218367.png](https://netdesk.orcsvc.com/f/a2kkFq/0e2d894d9ebda.png)
 
 可共享
 

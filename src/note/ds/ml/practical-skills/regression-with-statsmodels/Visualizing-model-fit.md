@@ -20,7 +20,7 @@ order: 5
 
 综上，若非要一句话小结，那就是要留意：**正确残差图不仅要体现出随机性(random)，还要体现不可预测性(unpredictable)即可。**
 
-![1656134753829.png](https://pic.hanjiaming.com.cn/2022/06/25/61ecc98f94c8c.png)
+![1656134753829.png](https://netdesk.orcsvc.com/f/vvgETq/61ecc98f94c8c.png)
 
 残差图是指以残差为纵坐标，以任何其他指定的量为横坐标的散点图。(上图仅是残差的示意图，非残差图，残差图可见下文)。
 
@@ -40,7 +40,7 @@ Stochastic 这个词很牛逼，其不仅蕴含着**随机性(random)**，还有
 
 我们可以用残差图来估计观察或预测到的误差error(残差residuals)与随机误差(stochastic error)是否一致。如果残差符合其均值为零的正态分布的假设，那么趋势线应该紧跟图上的y等于零线。
 
-![CleanShot 2022-06-25 at 13.40.11@2x.png](https://pic.hanjiaming.com.cn/2022/06/25/3130df4a58f56.png)
+![CleanShot 2022-06-25 at 13.40.11@2x.png](https://netdesk.orcsvc.com/f/Pv8WIe/3130df4a58f56.png)
 
 我们在鳊鱼和鲈鱼的数据集上运行模型。通过观察带有线性趋势线的散点图，似乎鳊鱼模型是一个很好的拟合，但鲈鱼模型不是，因为观察到的质量增加速度超过了与长度的线性关系。
 
@@ -56,11 +56,11 @@ plt.show()
 
 ## QQ plot
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/25/d33161a321546.png" alt="1656140963696.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/JGZpc8/d33161a321546.png" alt="1656140963696.png" style="zoom:33%;" />
 
 如果这些点沿着直线追踪，它们就是正态分布。如果不是，它们就不是。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/25/f5a55f9c3b7e6.png" alt="1656140640417.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/qlPZSJ/f5a55f9c3b7e6.png" alt="1656140640417.png" style="zoom:33%;" />
 
 ```python
 # Import qqplot
@@ -77,7 +77,7 @@ plt.show()
 
 解释和残差图的解释相似
 
-![1656141102193.png](https://pic.hanjiaming.com.cn/2022/06/25/c727724b5d3ae.png)
+![1656141102193.png](https://netdesk.orcsvc.com/f/Jw8ys8/c727724b5d3ae.png)
 
 ```python
 # Preprocessing steps

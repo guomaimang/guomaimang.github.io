@@ -24,11 +24,11 @@ plt.xlabel("Body Mass Index")
 plt.show()
 ```
 
-![1655354075672.png](https://pic.hanjiaming.com.cn/2022/06/16/5de63d821660e.png)
+![1655354075672.png](https://netdesk.orcsvc.com/f/3pR3t5/5de63d821660e.png)
 
 ::: details 一元一次回归机制
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/16/eeb1c932035bb.png" alt="1655365836468.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/m3Z9C9/eeb1c932035bb.png" alt="1655365836468.png" style="zoom: 33%;" />
 
 How do we choose a and b?
 
@@ -39,15 +39,15 @@ Error function = loss function = cost function
 
 对于一元一次回归方程参数的求解，我们可以使用 普通最小二乘法 来计算 cost
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/16/f66fc16011f8d.png" alt="1655365986521.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/qlJETJ/f66fc16011f8d.png" alt="1655365986521.png" style="zoom: 67%;" />
 
 Ordinary Least Squares (OLS): minimize RSS， 「普通最小二乘法（OLS）：最小化RSS」
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/16/9e1b3e03325ad.png" alt="1655366497544.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/JwWAC8/9e1b3e03325ad.png" alt="1655366497544.png" style="zoom:33%;" />
 
 回归直线应满足的条件是：全部观测值与对应的回归估计值的误差平方和最小，即：
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/16/ec0009b13b450.png" alt="1655367227609.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/PvegTe/ec0009b13b450.png" alt="1655367227609.png" style="zoom: 50%;" />
 
 其实就是一个用积分求最小值的过程。
 
@@ -59,7 +59,7 @@ Ref. https://zhuanlan.zhihu.com/p/36910496
 
 Linear regression in higher dimensions
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/16/0447ee730b6a2.png" alt="1655367891087.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/vvjLhq/0447ee730b6a2.png" alt="1655367891087.png" style="zoom:50%;" />
 
 如何定义 cost function 以及求解 cost function的最小值，将在后续章节解释。
 
@@ -83,7 +83,7 @@ y_pred = reg_all.predict(X_test)
 
 可以通过拆分数据成为不同块然后组合。最终的结果是这 k 次验证的均值。
 
-![1657125373744.png](https://pic.hanjiaming.com.cn/2022/07/07/94d4a7fba4c8f.png)
+![1657125373744.png](https://netdesk.orcsvc.com/f/nwbAhj/94d4a7fba4c8f.png)
 
 交叉验证和模型性能：More folds = More computationally expensive
 
@@ -211,5 +211,5 @@ plt.xticks(rotation=45)
 plt.show()
 ```
 
-![1658473369993.png](https://pic.hanjiaming.com.cn/2022/07/22/669cede63bdc5.png)
+![1658473369993.png](https://netdesk.orcsvc.com/f/PvAdSe/669cede63bdc5.png)
 

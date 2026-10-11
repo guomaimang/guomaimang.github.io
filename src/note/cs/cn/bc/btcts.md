@@ -61,11 +61,11 @@ Private key should be random, long, and kept secret -> difficulty for brute-forc
 4. **生成地址**：从密钥树的不同节点生成多个比特币地址。
 5. **备份种子**：将生成的24个助记词妥善保管。
 
-![1728549593237.png](https://pic.hanjiaming.com.cn/2024/10/10/fa6df23c5c15c.png)
+![1728549593237.png](https://netdesk.orcsvc.com/f/DrrIe/fa6df23c5c15c.png)
 
 ## Bitcoin Block
 
-![1728549975724.png](https://pic.hanjiaming.com.cn/2024/10/10/c1015a53cf521.png)
+![1728549975724.png](https://netdesk.orcsvc.com/f/lgkIe/c1015a53cf521.png)
 
 上面展示了比特币区块链中每个区块的结构。每个区块包括两个主要部分：
 
@@ -79,13 +79,13 @@ Private key should be random, long, and kept secret -> difficulty for brute-forc
 
 矿工通过调整Nonce、区块数据的哈希值（默克尔树根）和时间戳来找到一个满足PoW条件的哈希值。
 
-![1728550145193.png](https://pic.hanjiaming.com.cn/2024/10/10/0eb72ec7043a4.png)
+![1728550145193.png](https://netdesk.orcsvc.com/f/XdyCX/0eb72ec7043a4.png)
 
-![1728550183075.png](https://pic.hanjiaming.com.cn/2024/10/10/ca0db05919b92.png)
+![1728550183075.png](https://netdesk.orcsvc.com/f/Md9c8/ca0db05919b92.png)
 
 Transactions need to be included in a Block
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/10/1e2f252d84b1c.png" alt="1728552404947.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/WdpH9/1e2f252d84b1c.png" alt="1728552404947.png" style="zoom: 67%;" />
 
 这张图展示了区块链中未花费交易输出（UTXO）和已花费交易输出（STXO）的概念，以及它们在不同交易过程中的变化。
 
@@ -206,7 +206,7 @@ OP_DUP OP_HASH160 e00fd363fcc573d2b6d35155b9b9f4784d2119e4 OP_EQUALVERIFY OP_CHE
 
 :::
 
-![1728569602312.png](https://pic.hanjiaming.com.cn/2024/10/10/222e88ff31210.png)
+![1728569602312.png](https://netdesk.orcsvc.com/f/0mkC5/222e88ff31210.png)
 
 ## Bitcoin Script
 

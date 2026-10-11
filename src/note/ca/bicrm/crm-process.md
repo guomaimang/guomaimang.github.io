@@ -15,7 +15,7 @@ CRM process involves the **activities and strategies** that companies use to man
 
 「CRM 流程涉及公司用来管理与当前和潜在客户的互动的活动和策略...成功收集有关客户的信息可以让您更好地了解他们。反过来，您可以根据他们的需求改进您的产品和服务。」
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/14/e95bc3e7f57e5.png" alt="1697279168120.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/W0ku9/e95bc3e7f57e5.png" alt="1697279168120.png" style="zoom: 50%;" />
 
 
 
@@ -23,7 +23,7 @@ CRM process involves the **activities and strategies** that companies use to man
 
 CRM is **a continuous process of optimising interactions** with the customer and s**eeking new opportunities to increase sales**.
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/14/d079b1a28a05c.png" alt="1697279564759.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/OrEsQ/d079b1a28a05c.png" alt="1697279564759.png" style="zoom:50%;" />
 
 This CRM cycle consists of 4 stages
 
@@ -34,7 +34,7 @@ This CRM cycle consists of 4 stages
 
 ::: info CRM Workflow
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/14/0698fea4fe46a.png" alt="1697279678606.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/0p1h5/0698fea4fe46a.png" alt="1697279678606.png" style="zoom:33%;" />
 
 :::
 
@@ -155,7 +155,7 @@ What is difference between a platform and a framework?
 
 ## Types of CRM
 
-![CleanShot 2023-10-15 at 01.38.32@2x.png](https://pic.hanjiaming.com.cn/2023/10/15/c66cb15f043f2.png)
+![CleanShot 2023-10-15 at 01.38.32@2x.png](https://netdesk.orcsvc.com/f/PvwTe/c66cb15f043f2.png)
 
 ### Strategic CRM
 
@@ -241,7 +241,7 @@ Conclusion: BI in CRM => Data-driven CRM
 
 ## Data-driven CRM
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/15/f32bb5de16866.png" alt="1697371206015.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/AMjTy/f32bb5de16866.png" alt="1697371206015.png" style="zoom: 50%;" />
 
 CRM related data:
 
@@ -382,15 +382,15 @@ CUSTOMER LIFETIME VALUE = (Average Purchase Value - Average Purchase Frequency) 
 
 **估算 CLV 的一个简单方法是假设贡献率、保留率和贴现率为恒定且长期的值**
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/15/92c86554ece3b.png" alt="1697379223308.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/95qCm/92c86554ece3b.png" alt="1697379223308.png" style="zoom:33%;" />
 
 ::: 
 
 ### Calculation of LVT
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/15/0a87a1595046b.png" alt="1697379554441.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/doqHX/0a87a1595046b.png" alt="1697379554441.png" style="zoom: 67%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/15/75b996119c1c3.png" alt="1697379580350.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Qansj/75b996119c1c3.png" alt="1697379580350.png" style="zoom:50%;" />
 
 计算 LTV 需要什么?
 
@@ -417,7 +417,7 @@ CUSTOMER LIFETIME VALUE = (Average Purchase Value - Average Purchase Frequency) 
 
 ## Satisfaction-Profit Chain
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/15/dba8bc67d9fa1.png" alt="1697381001450.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/m3eS9/dba8bc67d9fa1.png" alt="1697381001450.png" style="zoom:33%;" />
 
 1. Customer satisfaction
    - Understand customer requirements
@@ -447,7 +447,7 @@ Two dimensions of customer loyalty：
   - Preference
   - Intention to buy
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/15/1bd1b955de32f.png" alt="1697381794790.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/orWfg/1bd1b955de32f.png" alt="1697381794790.png" style="zoom: 67%;" />
 
 ::: info RFM measures Behavioural Loyalty
 

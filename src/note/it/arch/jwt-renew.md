@@ -32,7 +32,7 @@ category:
 - 超过有效期后，后端校验JWT时会抛出403异常。
 - 客户端接收到异常后，会将用户踢回登录页。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/25fd595fbd44b.png" alt="1735305754022.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/GZ8cA/25fd595fbd44b.png" alt="1735305754022.png" style="zoom:50%;" />
 
 ### 不设置过期时间的风险
 
@@ -52,7 +52,7 @@ category:
 
 ### 解决方案：利用后台的Redis
 
-![1735306265887.png](https://pic.hanjiaming.com.cn/2024/12/27/a214fec9af7f3.png)
+![1735306265887.png](https://netdesk.orcsvc.com/f/mO6c9/a214fec9af7f3.png)
 
 1. **用户登录**：
    - 认证中心颁发JWT，并向Redis中写入一个键值对。

@@ -23,7 +23,7 @@ category:
 
 一个经典的算法用于关联规则挖掘是Apriori算法。这个算法利用了一个项集的子集也是频繁的这个属性来减少需要检查的项集数量，从而提高了效率。
 
-![1695111047540.png](https://pic.hanjiaming.com.cn/2023/09/19/0a0ebe7929f46.png)
+![1695111047540.png](https://netdesk.orcsvc.com/f/GjRtA/0a0ebe7929f46.png)
 
 ## Frequent Pattern Analysis
 
@@ -65,12 +65,12 @@ Support and Confidence are rule measures.
 
 目的是以最小的置信度和支持度找到 X => **Z** 的所有规则
 
-<img src="https://pic.hanjiaming.com.cn/2023/09/19/dea347fa1068d.png" alt="1695112554569.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/QD0Cj/dea347fa1068d.png" alt="1695112554569.png" style="zoom: 33%;" />
 
 - support， s，交易同时包含 X 和 Z 的概率
 - confidence，c，具有 X 的交易也包含 Z 的**条件概率**
 
-![1695112789652.png](https://pic.hanjiaming.com.cn/2023/09/19/3fcc78d3d95bd.png)
+![1695112789652.png](https://netdesk.orcsvc.com/f/gr3iX/3fcc78d3d95bd.png)
 
 ### Support
 
@@ -112,7 +112,7 @@ Support and Confidence are rule measures.
 
 ::: details 一般计算方法
 
-![1696263857247.png](https://pic.hanjiaming.com.cn/2023/10/03/4e00e926e9dcb.png)
+![1696263857247.png](https://netdesk.orcsvc.com/f/3LxH5/4e00e926e9dcb.png)
 
 在第一个表格中，列出了事务ID和购买的物品。其中有4个事务，每个事务有一组购买的物品。在第二个表格中，列出了频繁物品集及其支持度。
 
@@ -227,7 +227,7 @@ Two key steps in AR mining:
 
 另外一个案例是
 
-![1696266693833.png](https://pic.hanjiaming.com.cn/2023/10/03/4b63631527439.png)
+![1696266693833.png](https://netdesk.orcsvc.com/f/enEFq/4b63631527439.png)
 
 ### Generate Candidates
 
@@ -275,7 +275,7 @@ Ck中的项集可能是频繁的，也可能是非频繁的，因为在这个阶
 
 另外一个例子
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/03/b5d2fb53235f7.png" alt="1696312722372.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/Zl4h2/b5d2fb53235f7.png" alt="1696312722372.png" style="zoom: 33%;" />
 
 ### Rule Generation
 
@@ -348,7 +348,7 @@ The bottleneck of Apriori: **candidate generation**
   - 出乎意料（令用户惊讶）；和/或
   - 可操作（用户可以用它做一些事情）
 
-![1696469300872.png](https://pic.hanjiaming.com.cn/2023/10/05/be6ac339d6963.png)
+![1696469300872.png](https://netdesk.orcsvc.com/f/2EEfv/be6ac339d6963.png)
 
 ::: tip
 
@@ -356,7 +356,7 @@ The bottleneck of Apriori: **candidate generation**
 
 :::
 
-![1696469553280.png](https://pic.hanjiaming.com.cn/2023/10/05/190711cea85cc.png)
+![1696469553280.png](https://netdesk.orcsvc.com/f/LamS2/190711cea85cc.png)
 
 根据这些度量，我们可能会认为规则 **X -> Z** 比 **X -> Y** 更强，因为它有更高的支持度和置信度。然而，这可能忽略了一些潜在的关系。
 
@@ -370,7 +370,7 @@ The bottleneck of Apriori: **candidate generation**
 
 Other Interestingness Measures -> Interes
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/06/226389ce3a374.png" alt="CleanShot 2023-10-06 at 16.51.47@2x.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/Oa1HQ/226389ce3a374.png" alt="CleanShot 2023-10-06 at 16.51.47@2x.png" style="zoom:25%;" />
 
 - 同时考虑 P(A) 和 P(B)
 - 如果 A 和 B 是独立事件，P(A^B)=P(B)\*P(A)
@@ -378,7 +378,7 @@ Other Interestingness Measures -> Interes
 -  a kind of correlation analysisc → correlation 「相关性」不是 association
 - 也称为 A->B 的关联规则的 lift(ratio) （将 B 的可能性提升一个返回值的因子）
 
-![1696582753165.png](https://pic.hanjiaming.com.cn/2023/10/06/23e105fe38a89.png)
+![1696582753165.png](https://netdesk.orcsvc.com/f/Wr9H9/23e105fe38a89.png)
 
 
 

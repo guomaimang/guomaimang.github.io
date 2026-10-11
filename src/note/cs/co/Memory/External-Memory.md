@@ -10,7 +10,7 @@ index: 3
 
 The most important external memory device on almost all computer systems「几乎所有计算机系统上最重要的外部存储设备」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/4e3368955f781.png" alt="CleanShot 2021-04-19 at 11.57.37@2x.png" title="CleanShot 2021-04-19 at 11.57.37@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/DaKkTe/4e3368955f781.png" alt="CleanShot 2021-04-19 at 11.57.37@2x.png" title="CleanShot 2021-04-19 at 11.57.37@2x.png" />
 
 ### Working mechanism
 
@@ -19,7 +19,7 @@ The most important external memory device on almost all computer systems「几�
 (1) Head moves to the “right position” 「（1）头部移至“正确位置”」 
 (2) Platter spins「（2）盘旋转」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/01ad230a8bac3.png" alt="image.png" title="image.png" width ="300px" />
+<img src="https://netdesk.orcsvc.com/f/QaM9Hj/01ad230a8bac3.png" alt="image.png" title="image.png" width ="300px" />
 
 #### How are the Bits stored on Platter?
 
@@ -37,7 +37,7 @@ Platter「盘」
 
 - Head is covered with magnetic fields and electronic wires「头部被磁场和电线覆盖」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/ab7be11c4b6a3.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/y389UZ/ab7be11c4b6a3.png" alt="image.png" title="image.png" />
 
 Read and write essentially have the same mechanism: the direction of the current in the Head corresponds to the orientation of the magnetized spot「读写本质上具有相同的机制：磁头中电流的方向与磁化点的方向相对应」
 
@@ -55,7 +55,7 @@ Tracks and Sectors on Platter「盘上的轨道和扇区」
 - Sector = a number of magnetized spots ( a block of data)「扇区=磁化点数（数据块）」
 - The size of a sector may vary「一个扇区的规模可能会有所不同」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/7869321a7b2c0.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Oa1KSQ/7869321a7b2c0.png" alt="image.png" title="image.png" />
 
 ##### One issue with this Organization
 
@@ -65,7 +65,7 @@ There could be different date rates for different tracks
 - Inner and Outer tracks have different speed relatively to the head「内磁道和外磁道相对于磁头的速度不同」
   - this result in different data rates when reading/writing bits stored in inner and outer tracks「读取/写入存储在内磁道和外磁道中的位时，这导致不同的数据速率」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/6c49ef45a57a7.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/bVDxhM/6c49ef45a57a7.png" alt="image.png" title="image.png" />
 
 ###### Arrangement 1: Constant Angular Velocity (CAV)
 
@@ -75,7 +75,7 @@ There could be different date rates for different tracks
 - Platter is divided into a number of pie-shaped sectors「扇区」 – advantage: blocks of data can be addressed by tracks and sectors「盘片分为多个扇形扇区–优势：数据块可以通过磁道和扇区进行寻址」
 - Disadvantage: amount of data can be stored on long outer tracks is only the same as what can be stored on short inner tracks (waste of space)「缺点：可以在长的外部磁道上存储的数据量与可以在短的内部磁道上存储的数据量相同（浪费空间）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/9fe9487796b45.png" alt="image.png" title="image.png" width = "300px" />
+<img src="https://netdesk.orcsvc.com/f/LQ18i2/9fe9487796b45.png" alt="image.png" title="image.png" width = "300px" />
 
 ###### Arrangement 2: Multiple Zone Recording
 
@@ -86,7 +86,7 @@ Platter are organized into zones
 - The densities of the sectors are the same – increased capacity「部门的密度相同–增加容量」
 - Various data transfer rate (for some disk designs, the rotation speed may change to achieve constant transfer rate)「各种数据传输速率（对于某些磁盘设计，转速可能会有所变化，以实现恒定的传输速率）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/3131225d3da22.png" alt="image.png" title="image.png" width = "240px" />
+<img src="https://netdesk.orcsvc.com/f/R4aJs8/3131225d3da22.png" alt="image.png" title="image.png" width = "240px" />
 
 ### Components of Disk Drive
 
@@ -100,7 +100,7 @@ question: how to locate「定位到」 the desired「所需」 sectors within a 
 
 #### How to Locate Sector Positions within Track
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/106a006305d32.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/doAeIX/106a006305d32.png" alt="image.png" title="image.png" />
 
 Use extra control data as Marks「使用额外的控制数据作为标记」
 
@@ -117,7 +117,7 @@ field「字段」
 - Head number: because there are multiple platters and heads「头数：因为有多个盘和头」
 - CRC: error correction code「CRC：纠错码」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/8c925cdac0cb9.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/p4l1Hn/8c925cdac0cb9.png" alt="image.png" title="image.png" />
 
 ### The Timing of Disk I/O Transfer
 
@@ -142,7 +142,7 @@ It consists of two parts: seek time and rotational delay「它由两部分组成
 
 Common example: average seek time ~ 10 ms; average rotational delay ~ 1.5 ms「常见示例：平均寻道时间～10毫秒；平均旋转延迟～1.5毫秒」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/9f86073471711.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/25Kohv/9f86073471711.png" alt="image.png" title="image.png" />
 
 **Data transfer**
 
@@ -153,13 +153,13 @@ Typical rotation speed: 3600 – 20,000 rpm (revolutions per min)「典型转速
 
 ### Summary
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/1c5a4658ef677.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/EROvsd/1c5a4658ef677.png" alt="image.png" title="image.png" />
 
 ## Redundant Array of Independent Disks 
 
 Redundant Array of Independent Disks (RAID)「独立磁盘冗余阵列（RAID）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/c24969bc7bffc.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/1LxKHK/c24969bc7bffc.png" alt="image.png" title="image.png" />
 
 ### Overview
 
@@ -184,7 +184,7 @@ RAID wants to address two main issues of single disk「RAID希望解决单个磁
 
 Data are segmented into strips and distributed:「数据被分割成条带并分发：」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/0ac9de319e6af.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Mkbyu8/0ac9de319e6af.png" alt="image.png" title="image.png" />
 
 - Data are stripped across all disks「数据跨所有磁盘剥离」：Round Robin stripping「循环剥离」
 - Increased speed「提高速度」
@@ -192,13 +192,13 @@ Data are segmented into strips and distributed:「数据被分割成条带并分
   - Disks seek in parallel「磁盘并行查找」
     Failure of one disk may cause the loss of multiple files「一个磁盘发生故障可能会导致多个文件丢失」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/11b168754f6a5.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/rKO6sg/11b168754f6a5.png" alt="image.png" title="image.png" />
 
 ### Raid 1 Duplicated data (mirrored data)
 
 重复数据（镜像数据）
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/75aef1e5eb8f0.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/l3nQhe/75aef1e5eb8f0.png" alt="image.png" title="image.png" />
 
 Now, a logical disk contains two same components「现在，逻辑磁盘包含两个相同的组件」
 
@@ -217,7 +217,7 @@ RAID 2 and RAID 3 differ in error correction code used「RAID 2和RAID 3使用�
 
 Example: (7-4) Hamming Code, the bits in the same position on each data disks are encoded, the resulting parity bits are then stored in the same position on the parity disks「示例：（7-4）汉明码，对每个数据磁盘上相同位置的位进行编码，然后将所得的奇偶校验位存储在奇偶校验磁盘上的相同位置」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/fbea71618ff6c.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Vpvkt2/fbea71618ff6c.png" alt="image.png" title="image.png" />
 
 Data bits and parity bits are read/write simultaneously「同时读取/写入数据位和奇偶校验位」
 
@@ -233,7 +233,7 @@ Expensive, not commonly used「昂贵，不常用」
 
 Add a single parity bit for the data bits (b0 – b3) in the same position (bit-interleaved parity)「在同一位置为数据位（b0 – b3）添加一个奇偶校验位（比特交织奇偶校验）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/f274b622d6288.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/wveAS5/f274b622d6288.png" alt="image.png" title="image.png" />
 
 Only one redundant disk, no matter how large the array「只有一个冗余磁盘，无论阵列有多大」
 
@@ -247,7 +247,7 @@ Compared to RAID 3「与RAID 3相比」
 - Strips have much larger size (block-level), good for high I/O read request rate (since one request can handled by one disk)「条带的大小要大得多（块级），有利于高I/O读取请求率（因为一个磁盘可以处理一个请求）」
 - Also compute a single bit parity for corresponding data bits (the distribution of parity bits are different in RAID 4, 5, 6「还计算相应数据位的单位奇偶校验（奇偶校验位在RAID 4、5、6中的分布不同）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/feb59393e7c87.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/yDEVfZ/feb59393e7c87.png" alt="image.png" title="image.png" />
 
 Bottleneck for data update (there is a write penalty): suppose we want to update one file in block 0, we need to read multiple blocks to also update the parity information)「数据更新瓶颈（有写惩罚）：假设我们要更新块0中的一个文件，我们需要读取多个块来更新奇偶校验信息）」
 
@@ -258,7 +258,7 @@ Almost the same as RAID 4「几乎与RAID 4相同」
 - Difference: round robin allocation for parity strips, so that parity information is striped across all disks「区别：奇偶校验条带的轮询分配，从而使奇偶校验信息在所有磁盘上分条」
 - Can avoid the bottleneck at parity disk in RAID 4「可以避免RAID 4中奇偶校验磁盘的瓶颈」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/5de45613fc708.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/KwoZtL/5de45613fc708.png" alt="image.png" title="image.png" />
 
 ## SSD Basics
 
@@ -282,17 +282,17 @@ read/write though the control gate「通过控制门读/写」
 
 Overall, this cell can store one bit「总的来说，这个单元可以存储一个位」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/b0e77f321a368.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/vv83sq/b0e77f321a368.png" alt="image.png" title="image.png" />
 
 ### From Cells to Pages to Blocks 
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/c67fa0c7689d6.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/eDW8Cq/c67fa0c7689d6.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/245686c4d53ac.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/X5n8SX/245686c4d53ac.png" alt="image.png" title="image.png" />
 
 ### SSD Architecture 
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/e8e31ac581bcc.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/LmkYT2/e8e31ac581bcc.png" alt="image.png" title="image.png" />
 
 ### Read and Write Operation
 
@@ -306,7 +306,7 @@ Data are erased in blocks (using high voltage, time consuming)「数据分块擦
 
 As a result, if we want to over-write some pages, we need to erase a block first, write pages「因此，如果我们想重写一些页面，我们需要先删除一个块，然后再写页面」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/7fd236ffa2ac8.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/ZPkPU2/7fd236ffa2ac8.png" alt="image.png" title="image.png" />
 
 Garbage collection「垃圾收集」:
 
@@ -314,9 +314,9 @@ Garbage collection「垃圾收集」:
 - Erase block X (garbage A, B, C,D are collected – more empty pages)「擦除块X（收集了垃圾A，B，C，D –更多的空白页）」
 - This is done in the background, and is controlled by the Controller component in SSD「这是在后台完成的，并由SSD中的Controller组件控制」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/84b6bdcf56db0.png" alt="image.png" title="image.png" width = "300px "/>
+<img src="https://netdesk.orcsvc.com/f/WrE6c9/84b6bdcf56db0.png" alt="image.png" title="image.png" width = "300px "/>
 
 ### Comparison
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/607f93e951dfb.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/x8g0C3/607f93e951dfb.png" alt="image.png" title="image.png" />
 

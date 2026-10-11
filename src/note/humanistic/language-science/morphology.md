@@ -18,7 +18,7 @@ headerDepth: 2
 - 词语是语言结构中最基本的单位，也是孩子在语言习得的过程之中，唯一要背诵及学习的单位。
 - 我们的语言能力必然存 有一些更抽象的词汇结构规律来帮助我们做好平 时的沟通。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/03/1713e00448fe2.png" alt="1656848802451.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/WrZlC9/1713e00448fe2.png" alt="1656848802451.png" style="zoom:33%;" />
 
 ## 词素
 
@@ -27,7 +27,7 @@ headerDepth: 2
 
 ::: note 案例
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/03/70c41fa446642.png" alt="1656784151271.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/1LkXCK/70c41fa446642.png" alt="1656784151271.png" style="zoom: 25%;" />
 
 汉语的单纯词或词素有可能是单音节、双音节、 多音节：
 
@@ -140,7 +140,7 @@ headerDepth: 2
 
 ## 词素构成词
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/03/55e29af2de11f.png" alt="1656849041802.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/25kXfv/55e29af2de11f.png" alt="1656849041802.png" style="zoom: 33%;" />
 
 ## 构词的方法
 
@@ -276,17 +276,17 @@ e.g. “有水井” 可以是： `[有水]井` 或 `[有]水井`
 - 词素和词素之间的结合不很密切
 - 很容易看出词素与词素之间的间隔(boundary)
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/03/ec8cec1155d15.png" alt="1656848541969.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/ZPVdS2/ec8cec1155d15.png" alt="1656848541969.png" style="zoom:25%;" />
 
 ### 融合性语言
 
 各种词素融合，很难把每个词素做详尽画分
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/03/e800be435272a.png" alt="1656848616792.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/VpewH2/e800be435272a.png" alt="1656848616792.png" style="zoom: 33%;" />
 
 ### 多式综合语
 
 - 每个词语由很多词素组成
 - 一个词语所表达的意思，有时候相当于其他语言的一个 句子
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/03/219c6a9835c38.png" alt="1656848660450.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/LQKrS2/219c6a9835c38.png" alt="1656848660450.png" style="zoom:50%;" />

@@ -109,7 +109,7 @@ UNIX和Linux中的约定：在提示下执行 指定名称的文件。
 
 在使用`ls`命令时，你可以使用通配符来匹配当前或选定目录中的文件。
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/01/e39b72f2917bc.png" alt="1651335455307.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/vvE4Iq/e39b72f2917bc.png" alt="1651335455307.png" style="zoom:50%;" />
 
 ## Connecting commands
 
@@ -132,9 +132,9 @@ UNIX和Linux的一个非常强大和独特的功能是链接命令的能力。
 
 特殊命令 `file`将让你知道一个文件（或一连串文件）的类型和其他信息。
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/01/6ccfda824e353.png" alt="1651335610918.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Wr59c9/6ccfda824e353.png" alt="1651335610918.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/01/c5371e1585645.png" alt="1651335654492.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/y3ErsZ/c5371e1585645.png" alt="1651335654492.png" style="zoom:50%;" />
 
 ### grep
 
@@ -150,7 +150,7 @@ UNIX和Linux的一个非常强大和独特的功能是链接命令的能力。
 比如
 
 - `grep malloc *.c` : Find C programs containing malloc and its usage
-  <img src="https://pic.hanjiaming.com.cn/2022/05/01/89593012c8f92.png" alt="1651336775562.png" style="zoom: 50%;" />
+  <img src="https://netdesk.orcsvc.com/f/1LOEcK/89593012c8f92.png" alt="1651336775562.png" style="zoom: 50%;" />
 
 - `grep -i polyu *.txt` : Find text files and lines containing PolyU **(ignore upper/lower case)**. 
 
@@ -158,4 +158,4 @@ UNIX和Linux的一个非常强大和独特的功能是链接命令的能力。
 
 - `grep –h ’poly[^u]’ *.txt`: Look for `poly”` except for “polyu” without filename
 
-  <img src="https://pic.hanjiaming.com.cn/2022/05/01/0b41b60a775cb.png" alt="1651337086308.png" style="zoom:50%;" />
+  <img src="https://netdesk.orcsvc.com/f/25prsv/0b41b60a775cb.png" alt="1651337086308.png" style="zoom:50%;" />

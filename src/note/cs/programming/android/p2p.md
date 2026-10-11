@@ -18,7 +18,7 @@ headerDepth: 1
   - 直接与附近的设备共享文件
   - 在没有Wi-Fi接入点（AP）的情况下玩多人游戏
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/12/f823605be3961.png" alt="1733993914686.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/MXG3u8/f823605be3961.png" alt="1733993914686.png" style="zoom:50%;" />
 
 Methods for P2P wireless communication
 
@@ -32,7 +32,7 @@ Methods for P2P wireless communication
 - A family of products using the **IEEE 802.11** standards
 - Usually used to set up a “wireless local area network” (**WLAN**)
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/12/f8f5386408060.png" alt="1733993986872.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/E1EAhd/f8f5386408060.png" alt="1733993986872.png" style="zoom:50%;" />
 
 Wi-Fi Peer-to-Peer/Wi-Fi Direct
 
@@ -48,7 +48,7 @@ Wi-Fi Peer-to-Peer/Wi-Fi Direct
 - 适用于构建个人区域网络（PAN）
 - 范围从0.5米到100米，通常小于10米
 
-![1733994587891.png](https://pic.hanjiaming.com.cn/2024/12/12/72d86d3c1e892.png)
+![1733994587891.png](https://netdesk.orcsvc.com/f/XrDPuX/72d86d3c1e892.png)
 
 ## Near-Field Communication (NFC)
 

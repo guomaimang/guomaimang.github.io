@@ -28,7 +28,7 @@ date: 2021-05-01
 
 ### Example
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/03/7a6f62a5c7933.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/l3X3se/7a6f62a5c7933.png" alt="image.png" title="image.png" />
 
 - 有两种case：base case 和 general case
   - general case 一般的情况
@@ -41,9 +41,9 @@ date: 2021-05-01
 
 一下图解为双向递归；
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/03/8414929e19b03.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/jPb0ub/8414929e19b03.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/03/cb87524eada53.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/OajOiQ/cb87524eada53.png" alt="image.png" title="image.png" />
 
 ## 如何写出一个递归函数
 
@@ -104,7 +104,7 @@ date: 2021-05-01
 
 下面的插图（来源力扣）给出了一个 5 行的帕斯卡三角，根据上面的定义，我们生成一个具有确定行数的帕斯卡三角形。
 
-<img src="https://pic.hanjiaming.com.cn/2021/05/03/43de18459e176.gif" alt="791faf0c40cfff8190b7fddd60e68e812044a51b28cddead4b8a74c3c411a848-PascalTriangleAnimated2.gif" title="791faf0c40cfff8190b7fddd60e68e812044a51b28cddead4b8a74c3c411a848-PascalTriangleAnimated2.gif" />
+<img src="https://netdesk.orcsvc.com/f/KwQXSL/43de18459e176.gif" alt="791faf0c40cfff8190b7fddd60e68e812044a51b28cddead4b8a74c3c411a848-PascalTriangleAnimated2.gif" title="791faf0c40cfff8190b7fddd60e68e812044a51b28cddead4b8a74c3c411a848-PascalTriangleAnimated2.gif" />
 
 首先，我们定义一个函数 f(i, j)，它将会返回帕斯卡三角形第 i 行、第 jj列的数字。可以看到，每行的最左边和最右边的数字是基本情况，它总是等于 1。
 

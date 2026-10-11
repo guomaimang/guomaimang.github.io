@@ -88,7 +88,7 @@ category:
 
 简单来说就是，用于保证可靠性和流量控制维护的某些状态信息，这些信息的组合，包括Socket、序列号和窗口大小称为连接。
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/09/1e82b9ffc84f4.png" alt="1731164210185.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/dMoMUX/1e82b9ffc84f4.png" alt="1731164210185.png" style="zoom:50%;" />
 
 所以我们可以知道，建立一个TCP连接是需要客户端与服务端达成上述三个信息的共识。
 
@@ -98,7 +98,7 @@ category:
 
 如何唯一确定一个 TCP 连接呢？
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/09/7ad14dc622c9c.png" alt="1731164551189.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Q2akcj/7ad14dc622c9c.png" alt="1731164551189.png" style="zoom:33%;" />
 
 TCP 四元组可以唯一的确定一个连接，四元组包括如下：
 
@@ -107,7 +107,7 @@ TCP 四元组可以唯一的确定一个连接，四元组包括如下：
 - 目的地址
 - 目的端口
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/09/3365539a67fd2.png" alt="1731162708160.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/gPy4iX/3365539a67fd2.png" alt="1731162708160.png" style="zoom:50%;" />
 
 ### 三次握手
 
@@ -143,7 +143,7 @@ TCP 四元组可以唯一的确定一个连接，四元组包括如下：
 
 双方都可以主动断开连接，断开连接后主机中的「资源」将被释放，四次挥手的过程如下图：
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/09/b518ee572dcc6.png" alt="1731164680738.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/92AJsm/b518ee572dcc6.png" alt="1731164680738.png" style="zoom: 33%;" />
 
 你可以看到，每个方向都需要一个FN和一个ACK，因此通常被称为四次挥手。这里一点需要注意是：主动关闭连接的，才有TIME_WAIT状态。
 
@@ -152,7 +152,7 @@ TCP 四元组可以唯一的确定一个连接，四元组包括如下：
 
 在一些情况下， TCP 四次挥手是可以变成 TCP 三次挥手的。
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/09/b7a6a7ad864af.png" alt="1731165179288.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/GMRpiA/b7a6a7ad864af.png" alt="1731165179288.png" style="zoom:33%;" />
 
 而且在用 wireshark 工具抓包的时候，我们也会常看到 TCP 挥手过程是三次。
 
@@ -241,7 +241,7 @@ HTTP 流式返回（Streaming），支持客户端发送一个请求，然后服
 
 #### 工作原理
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/09/147408e758f9a.png" alt="1731158919823.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/o8YxSg/147408e758f9a.png" alt="1731158919823.png" style="zoom:33%;" />
 
 1. **客户端发送请求**：客户端向服务器发送一个初始的 HTTP 请求，这个请求可以是一个普通的 GET 请求。
 2. **服务器保持连接**：服务器接收到请求后，不会立即关闭连接，而是保持这个连接打开。
@@ -275,7 +275,7 @@ HTTP/2 中, 多个 Stream 复用一条 TCP 连接，可以达到并发的效果�
 
 它旨在解决IPv4地址短缺的问题，并允许 ISP 在其网络中共享一组公共 IPv4地址，以为其订阅者提供 Internet 访问。
 
-![1731166064052.png](https://pic.hanjiaming.com.cn/2024/11/09/9b00398916627.png)
+![1731166064052.png](https://netdesk.orcsvc.com/f/A0Qlhy/9b00398916627.png)
 
 CGNAT 的 主要作用是将多个内部IP地址映射到较少数量的公共 IP 地址上，从而允许多个用户共享同一组IP地址访问互联网。其目的是延缓IPv4地址枯竭的影响，并为ISP提供在IPv4和IPv6之间过渡的机会，同时提供Internet连接给大量的订阅者。
 
@@ -326,7 +326,7 @@ CGNAT 会保留特殊端口，如 80, 443, 3389 等，不将其用于映射。
 
 TCP 连接的两端，**同一时间里**，**双方**都可以**主动**向对方发送数据。这就是所谓的**全双工**。
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/10/13e84200f2425.png" alt="1731175582652.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/kGOZTb/13e84200f2425.png" alt="1731175582652.png" style="zoom: 40%;" />
 
 WebSocket 是一种通过 TCP 连接在两台计算机之间提供全双工通信通道的协议。
 
@@ -358,7 +358,7 @@ Web Socket 是 HTML5 标准的一部分
 
 上面提到在完成协议升级之后，两端就会用webscoket的数据格式进行通信。数据包在WebSocket中被叫做帧：
 
-![1731175865453.png](https://pic.hanjiaming.com.cn/2024/11/10/4e65371d128ca.png)
+![1731175865453.png](https://netdesk.orcsvc.com/f/Q2wktj/4e65371d128ca.png)
 
 payload字段：存放的是我们真正想要传输的数据的长度，单位是字节。
 

@@ -12,7 +12,7 @@ category:
 
 ## 什么是异构数据
 
-![1734957498605.png](https://pic.hanjiaming.com.cn/2024/12/23/14cca414a328f.png)
+![1734957498605.png](https://netdesk.orcsvc.com/f/OrMOhQ/14cca414a328f.png)
 
 - **定义**：异构数据指的是结构不同的数据。
 - **例子**：在实际工作中，数据主要存储在 MySQL 中，但 MySQL 在进行全文检索时性能不佳，这时通常会使用 Elasticsearch 或 Solr 这样的全文检索引擎。
@@ -50,7 +50,7 @@ category:
 
 **Canal 的工作原理**：
 
-![1734957920776.png](https://pic.hanjiaming.com.cn/2024/12/23/d347a6da17f18.png)
+![1734957920776.png](https://netdesk.orcsvc.com/f/EyACd/d347a6da17f18.png)
 
 - MySQL 主从同步通过 binlog（Binary Log）实现。
 - binlog 记录 SQL 语句，MySQL 从库通过 relay log 重放这些 SQL 语句实现数据同步。
@@ -66,7 +66,7 @@ category:
   - 团队 A 负责将数据变化转换为消息并发送到 MQ。
   - 团队 B 和其他团队订阅 MQ 消息队列，根据消息类型和内容进行相应的数据处理。
 
-![1734966151612.png](https://pic.hanjiaming.com.cn/2024/12/23/43f238e023eae.png)
+![1734966151612.png](https://netdesk.orcsvc.com/f/61JyHE/43f238e023eae.png)
 
 ### 完整的异构数据迁移过程
 1. **数据变化监听**：团队 A 在 MySQL 上配置 Canal 监听商品库的数据变化。

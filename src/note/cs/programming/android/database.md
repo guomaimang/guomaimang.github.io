@@ -10,7 +10,7 @@ headerDepth: 1
 
 Three-Tier Architecture
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/10/f61c69903bac4.png" alt="1733775819120.png" style="zoom:40%;" />
+<img src="https://netdesk.orcsvc.com/f/21oSv/f61c69903bac4.png" alt="1733775819120.png" style="zoom:40%;" />
 
 ## DBMS
 
@@ -107,7 +107,7 @@ NoSQL数据库系统的常见特性
 - 数据检索非常快
 - 为了快速检索已知键的值，但不适合搜索
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/10/44ffa8b1fe705.png" alt="1733833744489.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/3gLh5/44ffa8b1fe705.png" alt="1733833744489.png" style="zoom:33%;" />
 
 #### Graph Databases
 
@@ -129,7 +129,7 @@ Hierarchical storage structure
 - Collections
 - Documents
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/10/73143b0468d3b.png" alt="1733834485657.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/yX9hZ/73143b0468d3b.png" alt="1733834485657.png" style="zoom: 40%;" />
 
 ### Features of NoSQL
 

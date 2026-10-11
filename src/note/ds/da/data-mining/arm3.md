@@ -25,7 +25,7 @@ headerDepth: 2
   - 2%® milk → bread
 - 引入了两种方法，即多层次关联规则和广义关联规则（GAR）。
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/07/6f640fff6d141.png" alt="1696682884327.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/l84se/6f640fff6d141.png" alt="1696682884327.png" style="zoom:33%;" />
 
 ## Redundancy Problem
 
@@ -44,11 +44,11 @@ headerDepth: 2
 
 An example:
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/07/82e60c24418d4.png" alt="1696686817205.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/1bEtK/82e60c24418d4.png" alt="1696686817205.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/07/74d0fb0e64b68.png" alt="1696686834226.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/p89cn/74d0fb0e64b68.png" alt="1696686834226.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/07/0cead074dd698.png" alt="1696686937192.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/0v8T5/0cead074dd698.png" alt="1696686937192.png" style="zoom: 50%;" />
 
 ## Uniform VS Reduced
 
@@ -71,9 +71,9 @@ How to set minimum support? Uniform Support vs. Reduced Support
 
 例如，考虑同一个超市的购物篮数据。对于单一商品，我们可能会设置一个很低的支持度，如2%。但对于两个商品的组合，我们可能会设置为5%，而对于三个商品的组合，我们可能会设置为8%。
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/08/86bb21b9046c2.png" alt="1696696690685.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/Daate/86bb21b9046c2.png" alt="1696696690685.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/08/e62f8b16068c7.png" alt="1696696757725.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/MkGU8/e62f8b16068c7.png" alt="1696696757725.png" style="zoom:33%;" />
 
 ::: info 另一个案例
 

@@ -20,13 +20,13 @@ Fractional binary numbers 分数二进制数
 
 **对于二进制浮点数，有**
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210205044012378.png)
+![img](https://netdesk.orcsvc.com/f/LQa4T2/20210205044012378.png)
 
 ### 转换公式
 
 十进制数 =
 
-<img src= "https://pic.hanjiaming.com.cn/2021/02/20210205044036196.png" width="100px">
+<img src= "https://netdesk.orcsvc.com/f/y3y1tZ/20210205044036196.png" width="100px">
 
 ### 举例
 
@@ -74,7 +74,7 @@ Fractional binary numbers 分数二进制数
 
 上一节我们已经说过，小数由二进制转换成10进制可以这样
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210125170026209.png)
+![img](https://netdesk.orcsvc.com/f/rwL0hg/20210125170026209.png)
 
 那么，现在我们遇到了问题，在计算机里，这个小数点放到哪里？
 
@@ -93,14 +93,14 @@ Fractional binary numbers 分数二进制数
 
 代表相同数字的方式有多种，如下图
 
-<img src="https://pic.hanjiaming.com.cn/2021/01/20210125170700316.png" width = "150px" />
+<img src="https://netdesk.orcsvc.com/f/4EnQT2/20210125170700316.png" width = "150px" />
 
 但是，对于浮点表示，有 两个惯例：
 （1）小数点位于左侧的最右边-大多数位（小数点的左侧只有一位）
 （2）左边-有效位数的最高位数不为零（对于基数2，始终为1）-归一化
 结果，标准化的非零数始终具有以下形式：
 
-<img src="https://pic.hanjiaming.com.cn/2021/01/20210125170842540.png" width = "150px" />
+<img src="https://netdesk.orcsvc.com/f/A6gasy/20210125170842540.png" width = "150px" />
 
 结果，我们不需要将“ 1”存储在有效位中，只需存储bbbbbbbbbb，毕竟只要是一个这样小数通过这样的方法表示，首位都是1.
 
@@ -112,7 +112,7 @@ Fractional binary numbers 分数二进制数
 - 第2-9：Biased exponent （偏指数），长度为8，记录偏指数
 - 第10-32位：Significand，（长度为23），记录bbbbbbbbbb…
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210125171141987.png)
+![img](https://netdesk.orcsvc.com/f/XWEZFX/20210125171141987.png)
 
 - Biased exponent 中存的是 偏差指数。
 - 偏差指数(exp) = E的实际值 + 固定偏差(2^(k-1)-1)
@@ -124,7 +124,7 @@ Fractional binary numbers 分数二进制数
 
 举例：
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210125171844903.png)
+![img](https://netdesk.orcsvc.com/f/EGdOtd/20210125171844903.png)
 
 举例：
 
@@ -147,7 +147,7 @@ Fractional binary numbers 分数二进制数
 - 单精度长32位
 - 双精度长64位
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210129043408464.png)
+![img](https://netdesk.orcsvc.com/f/2E9rsv/20210129043408464.png)
 
 ### 内存查看
 
@@ -210,11 +210,11 @@ When: exp = 111…1
 
 对于
 
-<img src="https://pic.hanjiaming.com.cn/2021/01/20210125172622678.png" width = "150px" />
+<img src="https://netdesk.orcsvc.com/f/yywlUZ/20210125172622678.png" width = "150px" />
 
 
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210125172647281.png)
+![img](https://netdesk.orcsvc.com/f/rR2Rug/20210125172647281.png)
 
 由上图可知
 
@@ -222,7 +222,7 @@ When: exp = 111…1
 
 其实，你可以这样理解，计算机的小数存储就像一把特殊的有精度的刻度尺。
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210125173129946.png)它们是直线上的离散点
+![img](https://netdesk.orcsvc.com/f/pGWKSn/20210125173129946.png)它们是直线上的离散点
 
 - 它们不是均匀分布的：接近0时是密集的
 

@@ -67,9 +67,9 @@ The main objectives
 
 交接决策算法是基于 当前 和 邻近cell 的 接收信号强度（RSS）或 接收信号功率P。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/07/23cb90ce7cf38.png" alt="1670412905402.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/vvwpUq/23cb90ce7cf38.png" alt="1670412905402.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/07/36771be26400e.png" alt="1670414730098.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/3pGGC5/36771be26400e.png" alt="1670414730098.png" style="zoom: 33%;" />
 
 ### 切换过程的类型：硬切换和软切换
 
@@ -88,7 +88,7 @@ The main objectives
 
 ### Intra-cell vs Inter-cell vs Inter-MSC
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/07/46913141b518d.png" alt="1670415516557.png" style="zoom:25%;" /><img src="https://pic.hanjiaming.com.cn/2022/12/07/47a2e7b4bb9dc.png" alt="1670415535253.png" style="zoom: 25%;" /><img src="https://pic.hanjiaming.com.cn/2022/12/07/26e2f1a3e57d4.png" alt="1670415584698.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/JwvnH8/46913141b518d.png" alt="1670415516557.png" style="zoom:25%;" /><img src="https://netdesk.orcsvc.com/f/Vpqni2/47a2e7b4bb9dc.png" alt="1670415535253.png" style="zoom: 25%;" /><img src="https://netdesk.orcsvc.com/f/259eIv/26e2f1a3e57d4.png" alt="1670415584698.png" style="zoom: 25%;" />
 
 - Intra-cell handoff
   - MS在cell内移动，但跨越扇区边界，或者MS在原流量信道中遇到无法忍受的信号强度下降
@@ -141,7 +141,7 @@ Location area (LA)
 - 每个分区由一定数量的相邻单元组成，称为LA
 - LA对位置的不确定性提出了一个上限「upper bound」
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/07/356af9cd26ab0.png" alt="1670419763956.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/y3Y2cZ/356af9cd26ab0.png" alt="1670419763956.png" style="zoom: 33%;" />
 
 - Basic idea
   - MS 向系统报告其当前的 LA 信息 - 位置更新：周期性地或当 MS 移动穿过 LA 边界时
@@ -192,7 +192,7 @@ Location area (LA)
 - U5：HLR向旧的VLR发送注册取消信息
 - U6：旧VLR删除MS的记录并确认取消
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/07/39e0c0feba019.png" alt="1670424940027.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/wvVMs5/39e0c0feba019.png" alt="1670424940027.png" style="zoom:33%;" />
 
 ### Call Delivery Process<Badge text="算法设计" type="info" />
 
@@ -226,7 +226,7 @@ Location area (LA)
 
 ### Location Management Cost <Badge text="计算题" type="info" />
 
-![1670700587503.png](https://pic.hanjiaming.com.cn/2022/12/11/f74644a8e3fa0.png)
+![1670700587503.png](https://netdesk.orcsvc.com/f/v5kYSq/f74644a8e3fa0.png)
 
 ### Location Management Issues
 
@@ -264,14 +264,14 @@ Big size vs. small size
 
 #### 动态位置更新方案
 
-![1670701114680.png](https://pic.hanjiaming.com.cn/2022/12/11/4a580c9f15925.png)
+![1670701114680.png](https://netdesk.orcsvc.com/f/l8ygUe/4a580c9f15925.png)
 
 - 基于时间：MS 以固定时间间隔（使用时间阈值）定期执行位置更新
 - 基于距离：MS定位更新是通过移动到离前一个位置足够远的位置来触发的（使用距离阈值）
 - 基于运动：MS的定位更新是通过跨越一定数量的不同小区边界来触发的（使用移动阈值）。
   - 在某些情况下是有用的，例如，用户在LA边界之间来回移动
 
-![1670701137297.png](https://pic.hanjiaming.com.cn/2022/12/11/e30e1a12fae61.png)
+![1670701137297.png](https://netdesk.orcsvc.com/f/jvMbub/e30e1a12fae61.png)
 
 ### Location Database Organization
 
@@ -313,7 +313,7 @@ Big size vs. small size
     - 当指针链的长度达到K时，不允许额外的转发，并将位置变化报告给HLR
     - 这种方法可以减少更新HLR的成本，但可能会导致更长的搜索延迟。
   - Local anchoring
-    <img src="https://pic.hanjiaming.com.cn/2022/12/11/faa22c72f88d0.png" alt="1670737211733.png" style="zoom:50%;" />
+    <img src="https://netdesk.orcsvc.com/f/wGk0S5/faa22c72f88d0.png" alt="1670737211733.png" style="zoom:50%;" />
     - 靠近 MS 的 VLR 被选为本地锚点
     - **当 MS 移动到一个新的LA时，MS将对本地锚进行位置更新，而不是MS的HLR**
     - 在对 MS 的呼叫请求到达之前，MS 的本地锚点不会更改
@@ -372,7 +372,7 @@ IP stands for Internet protocol
     - 解封传递给MH的信息
 - Correspondent host (CH)「通讯员」：一个CH，不管是固定的还是移动的，都可以向MH发送数据包。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/11/6e91917d8f507.png" alt="1670739049365.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/yQk9cZ/6e91917d8f507.png" alt="1670739049365.png" style="zoom:50%;" />
 
 ## Location Management
 
@@ -414,7 +414,7 @@ MH 使用注册程序将其 COA 通知 HA。
 - FA 更新其访客列表，将 MH 的 Home address 映射到其 MAC 地址和 FA 地址
 - FA通知MH，注册已被接受
 
-![1670741892624.png](https://pic.hanjiaming.com.cn/2022/12/11/d6462f4071217.png)
+![1670741892624.png](https://netdesk.orcsvc.com/f/1bdQCK/d6462f4071217.png)
 
 ### Data Delivery
 
@@ -427,7 +427,7 @@ MH 使用注册程序将其 COA 通知 HA。
   - HA将数据包转发到拥有COA的国外网络。
 - FA 识别 COA，解包（简称解封装）并使用其原始 home address 发送给 MH
 
-![1670742730420.png](https://pic.hanjiaming.com.cn/2022/12/11/e629873420267.png)
+![1670742730420.png](https://netdesk.orcsvc.com/f/Lwj8s2/e629873420267.png)
 
 ### Routing Inefficiency
 

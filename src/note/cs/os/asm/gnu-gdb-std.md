@@ -13,7 +13,7 @@ GNU是一个[自由软件](http://www.gnu.org/philosophy/free-sw.html)操作系�
 
 我们建议安装[这些GNU版本](http://www.gnu.org/distros/free-distros.html)（更确切地说是，GNU/Linux发行版），它们完全是自由软件。[更多关于 GNU](http://www.gnu.org/#More-GNU)。
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/05/34cec6fc501ac.jpg" alt="trisquel9-mate.jpg" title="trisquel9-mate.jpg" />
+<img src="https://netdesk.orcsvc.com/f/8JXqC5/34cec6fc501ac.jpg" alt="trisquel9-mate.jpg" title="trisquel9-mate.jpg" />
 
 ### GNU 和 Linux 的关系
 
@@ -175,7 +175,7 @@ GDB是调试工具，GCC是编译器。
 
 使用 `ls-al` 查看当前文件夹下的情况
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/05/f2d0a56dd78b8.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/MkQ2F8/f2d0a56dd78b8.png" alt="image.png" title="image.png" />
 
 可以发现 带有 -g 参数的 生成的可执行程序大小 大于 不带 -g 参数的。
 
@@ -187,25 +187,25 @@ GDB是调试工具，GCC是编译器。
 
 3. 进入后 使用 `list`  显示 源代码
 
-   <img src="https://pic.hanjiaming.com.cn/2021/04/05/fa7faacd9415d.png" alt="image.png" title="image.png" />
+   <img src="https://netdesk.orcsvc.com/f/DaYyIe/fa7faacd9415d.png" alt="image.png" title="image.png" />
 
 4. 使用 `contral + L`清屏进入新页面
 
 5. 使用 disassemble functionName  或 disas functionName 查看指定函数对应的汇编代码；
 
-   <img src="https://pic.hanjiaming.com.cn/2021/04/05/49a44f64bc2cf.png" alt="image.png" title="image.png" />
+   <img src="https://netdesk.orcsvc.com/f/X5ZZiX/49a44f64bc2cf.png" alt="image.png" title="image.png" />
 
 6. 使用 disas /m functionName 查看一一对应版本
 
-   <img src="https://pic.hanjiaming.com.cn/2021/04/05/2c9b7638f8f33.png" alt="image.png" title="image.png" />
+   <img src="https://netdesk.orcsvc.com/f/a2dAiq/2c9b7638f8f33.png" alt="image.png" title="image.png" />
 
 7. 使用 dis /r functionName
 
-   <img src="https://pic.hanjiaming.com.cn/2021/04/05/6bedf838f3cc7.png" alt="image.png" title="image.png" />
+   <img src="https://netdesk.orcsvc.com/f/ERaQId/6bedf838f3cc7.png" alt="image.png" title="image.png" />
    
 8. 使用 layout split
 
-   <img src="https://pic.hanjiaming.com.cn/2021/04/05/42b8dbed6798a.png" alt="image.png" title="image.png" />
+   <img src="https://netdesk.orcsvc.com/f/arWAiq/42b8dbed6798a.png" alt="image.png" title="image.png" />
 
    使用 focus asm 和 focus src 来切换聚焦
 
@@ -213,21 +213,21 @@ GDB是调试工具，GCC是编译器。
 
 1. 使用 start 开始 debug
 
-   <img src="https://pic.hanjiaming.com.cn/2021/04/05/d8e5dc1db54ee.png" alt="image.png" title="image.png" />
+   <img src="https://netdesk.orcsvc.com/f/R4Q4s8/d8e5dc1db54ee.png" alt="image.png" title="image.png" />
 
 2. 使用 next 查看下一段
 
-   <img src="https://pic.hanjiaming.com.cn/2021/04/06/606c365e68609.png" alt="image.png" title="image.png" />
+   <img src="https://netdesk.orcsvc.com/f/Vpkwi2/606c365e68609.png" alt="image.png" title="image.png" />
 
 3. 使用  disas main 可查看停在了哪里
 
-   <img src="https://pic.hanjiaming.com.cn/2021/04/06/7bae01a31eec5.png" alt="image.png" title="image.png" />
+   <img src="https://netdesk.orcsvc.com/f/pYEwtn/7bae01a31eec5.png" alt="image.png" title="image.png" />
 
 4. nexti
-	<img src="https://pic.hanjiaming.com.cn/2021/04/06/74cea3fca9bc6.png" alt="image.png" title="image.png" />
+	<img src="https://netdesk.orcsvc.com/f/eDkAuq/74cea3fca9bc6.png" alt="image.png" title="image.png" />
 	
 5. 使用 info register 或 info reg查看当前寄存器中的值
-	<img src="https://pic.hanjiaming.com.cn/2021/04/06/c274117cb4819.png" alt="image.png" title="image.png" />
+	<img src="https://netdesk.orcsvc.com/f/ql0qTJ/c274117cb4819.png" alt="image.png" title="image.png" />
 	
 6. 使用 info all-register 可查看 CPU所有寄存器的当前值
 
@@ -239,9 +239,9 @@ GDB是调试工具，GCC是编译器。
 
 10. 使用print variableName 查看相应变量的当前的值
 
-  <img src="https://pic.hanjiaming.com.cn/2021/04/06/c274117cb4819.png" alt="image.png" title="image.png" />
+  <img src="https://netdesk.orcsvc.com/f/ql0qTJ/c274117cb4819.png" alt="image.png" title="image.png" />
 
-11. <img src="https://pic.hanjiaming.com.cn/2021/04/06/22573de80ecfc.png" alt="image.png" title="image.png" />
+11. <img src="https://netdesk.orcsvc.com/f/vvnESq/22573de80ecfc.png" alt="image.png" title="image.png" />
 
 
 ## 引用材料

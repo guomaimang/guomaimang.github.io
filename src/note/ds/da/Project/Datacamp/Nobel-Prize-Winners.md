@@ -142,7 +142,7 @@ from matplotlib.ticker import PercentFormatter
 ax.yaxis.set_major_formatter(PercentFormatter(1.0))
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/01/6e6729a881dc3.png" alt="1654022379348.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/vv9KSq/6e6729a881dc3.png" alt="1654022379348.png" style="zoom: 50%;" />
 
 ## 5. What is the gender of a typical Nobel Prize winner?
 
@@ -161,7 +161,7 @@ ax = sns.lineplot(x='decade', y='female_winner', hue='category', data=prop_femal
 ax.yaxis.set_major_formatter(PercentFormatter(1.0))
 ```
 
-![1654022598611.png](https://pic.hanjiaming.com.cn/2022/06/01/c7ab7f0bf43e0.png)
+![1654022598611.png](https://netdesk.orcsvc.com/f/3pr4C5/c7ab7f0bf43e0.png)
 
 ## 6. The first woman to win the Nobel Prize
 
@@ -238,7 +238,7 @@ sns.lmplot(y = "year", x = "age", data = nobel, lowess=True,
             line_kws={'color' : 'black'})
 ```
 
-![1654022729230.png](https://pic.hanjiaming.com.cn/2022/06/01/3e4261192d9ae.png)
+![1654022729230.png](https://netdesk.orcsvc.com/f/1LPRiK/3e4261192d9ae.png)
 
 
 
@@ -258,7 +258,7 @@ In [89]:
 sns.lmplot(y = "age", x = "year", row='category', aspect=2, line_kws={'color' : 'black'}, data = nobel)
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/01/1810c6e1c7ca5.png" alt="1654022749180.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/25j0Iv/1810c6e1c7ca5.png" alt="1654022749180.png" style="zoom:33%;" />
 
 ## 10. Oldest and youngest winners
 

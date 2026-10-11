@@ -19,9 +19,9 @@ headerDepth: 2
 - File subsystem 和 与他相关的 char/block device driver tables
 - 字符/块设备驱动表
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/23/093fde83a513b.png" alt="1666500503092.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/eDO8iq/093fde83a513b.png" alt="1666500503092.png" style="zoom: 33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/23/d82b776b999f4.png" alt="1666500601783.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/3pMQH5/d82b776b999f4.png" alt="1666500601783.png" style="zoom:50%;" />
 
 ::: tip 将设备驱动与操作系统分离的优势
 
@@ -43,7 +43,7 @@ Device driver designers
 - Major Number: 设备驱动程序在 char/block **设备驱动程序表中的索引**（id）。
 - Minor Number: **一个数字用于设备驱动内部**，例如，一个驱动可能控制许多设备，那么Minor Number可以用来区分它们。
 
-![1666500793162.png](https://pic.hanjiaming.com.cn/2022/10/23/d3abe28f1a123.png)
+![1666500793162.png](https://netdesk.orcsvc.com/f/1LMjcK/d3abe28f1a123.png)
 
 ## Devices and Files
 
@@ -57,7 +57,7 @@ mknod <file_name> <c or b> <major_number> <minor_number>
 
 Basically, there are two types of device files: **character device file** and **block device file**.
 
-![1666501353551.png](https://pic.hanjiaming.com.cn/2022/10/23/8dc379ca35864.png)
+![1666501353551.png](https://netdesk.orcsvc.com/f/Jwelf8/8dc379ca35864.png)
 
 ### Major Design Issues
 
@@ -82,7 +82,7 @@ Basically, there are two types of device files: **character device file** and **
 
 通过一个固定大小的缓冲区集合与操作系统进行通信。
 
-![1666501605620.png](https://pic.hanjiaming.com.cn/2022/10/23/3204f2a72cf70.png)
+![1666501605620.png](https://netdesk.orcsvc.com/f/ZPGPf2/3204f2a72cf70.png)
 
 操作系统管理着一个缓冲区缓存；通过访问缓存中的缓冲区来满足用户对数据的请求。
 
@@ -100,7 +100,7 @@ Basically, there are two types of device files: **character device file** and **
 
 字符设备驱动程序的通信结构：
 
-![1666502640504.png](https://pic.hanjiaming.com.cn/2022/10/23/65b14388a1e9f.png)
+![1666502640504.png](https://netdesk.orcsvc.com/f/25Mxfv/65b14388a1e9f.png)
 
 ::: info 块/字符驱动程序之间的主要区别
 

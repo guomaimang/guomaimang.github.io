@@ -17,15 +17,15 @@ Received Pronunciation「RP」是一种英式英语口音 (British English accen
 
 ## RP辅音
 
-![1655991140735.png](https://pic.hanjiaming.com.cn/2022/06/23/666d0795ff859.png)
+![1655991140735.png](https://netdesk.orcsvc.com/f/1LJXcK/666d0795ff859.png)
 
-![1656751746334.png](https://pic.hanjiaming.com.cn/2022/07/02/c4da0bdeaf819.png)
+![1656751746334.png](https://netdesk.orcsvc.com/f/Jwxpu8/c4da0bdeaf819.png)
 
 注意：当我们用国际音标(IPA) 来标示英语语音时，我们会以r 代替ɹ
 
 ::: detail 示例
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/23/c9c8aa7762984.png" alt="1655991216226.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/X5x9hX/c9c8aa7762984.png" alt="1655991216226.png" style="zoom: 33%;" />
 
 :::
 
@@ -49,11 +49,11 @@ How to describe an English consonant？
 
 ### 单元音
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/02/349a324dc378a.png" alt="1656751979598.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/KwlQHL/349a324dc378a.png" alt="1656751979598.png" style="zoom:50%;" />
 
 ### 双元音
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/23/a9049475aa262.png" alt="1655992943543.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/eDyXtq/a9049475aa262.png" alt="1655992943543.png" style="zoom: 67%;" />
 
 ## RP发音注意的地方
 
@@ -88,7 +88,7 @@ Would you like it?
 
 连续出现几个辅音时，当中的 t 或 d 经常被省 掉
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/03/0f00471d0515c.png" alt="1656780908701.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/0WkGU5/0f00471d0515c.png" alt="1656780908701.png" style="zoom:33%;" />
 
 ### linking r & Intrusive r
 
@@ -116,7 +116,7 @@ e.g., Cycling is what I’m fond of.
 
 ### 声调
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/03/9007fd2fafffb.png" alt="1656781230078.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/eD9Xuq/9007fd2fafffb.png" alt="1656781230078.png" style="zoom:50%;" />
 
 ### 粤拼
 

@@ -20,7 +20,7 @@ DBSCAN -> Density Based Spatial Clustering of Applications with Noise 「基于�
 - **集群被定义为密度连接点的最大集合**：在这里，“集群”是指一群彼此靠得很近的点。所谓“密度连接”，就是指一个点的周围有足够多的其他点，使得它们可以被视为一个单一的组或集群。
 - **在有噪声的空间数据库中发现任意形状的集群**：这表明这种方法能够在包含许多随机分布（即“噪声”）的数据中找到集群，而且这些集群可以是任何形状的，不仅仅是圆形或椭圆形。
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/aaeee8e861b41.png" alt="1700472279847.png" style="zoom:40%;" />
+<img src="https://netdesk.orcsvc.com/f/r6Rtg/aaeee8e861b41.png" alt="1700472279847.png" style="zoom:40%;" />
 
 ## Density Based Clustering
 
@@ -55,7 +55,7 @@ N_{\varepsilon}(p):=\{q \text { in data set } D \mid \operatorname{dist}(p, q) \
 $$
 “高密度”- 对象的 ε-Neighborhood 至少包含 MinPts 个对象。
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/dd96569702632.png" alt="1700474737732.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/P5KSe/dd96569702632.png" alt="1700474737732.png" style="zoom:33%;" />
 
 ::: danger MinPts
 
@@ -71,11 +71,11 @@ $$
 - border point 在 Eps 范围内的最小点数少于 MinPts，但位于核心点附近。
 - noise point/outlier 是指任何既不是核心点也不是边界点的点。
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/2a90538234e18.png" alt="1700476026016.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/QKkuj/2a90538234e18.png" alt="1700476026016.png" style="zoom:33%;" />
 
 在下面的 Example, M、P、O 和 R 是core point（在 Q、M、P、S、O、R 中），因为它们每个都位于包含至少 3 个点的 ε-Neighborhood 中
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/ef962f148f070.png" alt="1700476237789.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/W5bs9/ef962f148f070.png" alt="1700476237789.png" style="zoom:33%;" />
 
 ## Density Reachability
 
@@ -86,7 +86,7 @@ $$
 
 则object *q* is **directly density-reachable** <u>from object *p*</u>
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/00f90966717fb.png" alt="1700477634996.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/gw4uX/00f90966717fb.png" alt="1700477634996.png" style="zoom:33%;" />
 
 ::: warning 特别注意
 
@@ -106,7 +106,7 @@ $$
 
 p <- p2 <- p1 <- q   形成一条链
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/bc67053406bb7.png" alt="1700477977891.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/9vJfm/bc67053406bb7.png" alt="1700477977891.png" style="zoom:33%;" />
 
 *p* is (indirectly) density-reachable from *q*
 
@@ -116,7 +116,7 @@ p <- p2 <- p1 <- q   形成一条链
 - Density-Connected: 如果一对点 p 和 q 从点 o 密度可达，则它们是密度连通的。
   - 密度连通性是对称的
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/3151544779b60.png" alt="1700478156708.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/J54s8/3151544779b60.png" alt="1700478156708.png" style="zoom:33%;" />
 
 ## Formal Description of Cluster
 
@@ -131,7 +131,7 @@ p <- p2 <- p1 <- q   形成一条链
 
 :::
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/41dfcab57f1a1.png" alt="1700479099668.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/EeOud/41dfcab57f1a1.png" alt="1700479099668.png" style="zoom: 33%;" />
 
 ## DBSCAN: The Algorithm
 
@@ -165,14 +165,14 @@ p <- p2 <- p1 <- q   形成一条链
 
 **重复这个过程，直到所有点都被访问**。
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/8e89b2124bcd6.png" alt="1700484681806.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/dPMIX/8e89b2124bcd6.png" alt="1700484681806.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/d13c0c63d43ce.png" alt="1700484746906.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/4Wdu2/d13c0c63d43ce.png" alt="1700484746906.png" style="zoom:33%;" />
 
 - **Resistant to Noise**
 - **Can handle clusters of different shapes and sizes**
 
-<img src="https://pic.hanjiaming.com.cn/2023/11/20/36731f681ef2b.png" alt="1700484833495.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/vEdtq/36731f681ef2b.png" alt="1700484833495.png" style="zoom:33%;" />
 
 - 对参数敏感！
 - 无法处理不同的密度！
@@ -185,7 +185,7 @@ p <- p2 <- p1 <- q   形成一条链
 - 想法：为了找出合适的参数，我们可以考虑数据集中最不密集的那些集群。我们希望即使是这些不那么明显的集群，也能够被算法识别出来。
 - 一种找出`ε`的方法是观察数据点到其第k近邻的距离。这个距离可以帮助我们估计出`ε`的大小。
 
-![1700485392845.png](https://pic.hanjiaming.com.cn/2023/11/20/bd7bd9b5a674a.png)
+![1700485392845.png](https://netdesk.orcsvc.com/f/O5buQ/bd7bd9b5a674a.png)
 
 - **k-distance函数**：这是一个函数，它告诉我们每个点和它的第k个最近邻居的距离是多少。
 - **k-distance图**：这是一个图表，它按照距离从大到小排列了所有点的k-distance值。
@@ -196,7 +196,7 @@ p <- p2 <- p1 <- q   形成一条链
 2. **选择边界对象o**：在`MinPts`-距离图上，用户选择一个所谓的“边界对象”。这个对象代表了边界点和核心点之间的临界点。
 3. **设定ε**：一旦选择了边界对象o，`ε`就被设定
 
-![1700485875539.png](https://pic.hanjiaming.com.cn/2023/11/20/457e8411a7acd.png)
+![1700485875539.png](https://netdesk.orcsvc.com/f/xD5t3/457e8411a7acd.png)
 
 假设你正在分析一个三维空间中的星系数据（因此d=3）。根据上述公式，你将`MinPts`设为`2 * (3 - 1) = 4`。这意味着一个星系需要至少有4个邻近星系才能被认为是一个集群的核心部分。
 

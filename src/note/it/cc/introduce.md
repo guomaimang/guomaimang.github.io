@@ -11,7 +11,7 @@ category:
 
 # Introduce to Cloud
 
-![1715244252488.png](https://pic.hanjiaming.com.cn/2024/05/09/c6c0a4f5563c5.png)
+![1715244252488.png](https://netdesk.orcsvc.com/f/a3eFq/c6c0a4f5563c5.png)
 
 A computing paradigm where **data** and **services** reside in <u>massively scalable data centers</u> and can be ubiquitously accessed from any connected devices <u>over the Internet</u>.
 
@@ -27,7 +27,7 @@ More Practical 的说法：
 - 云计算 是 "指<u>利用大规模数据中心</u>通过**互联网**提供的软件、存储或处理服务"。
 - Cloud computing, the notion of "outsourcing hardware and software to Internet service providers「将硬件和软件外包给互联网服务提供商」",.......**(Key:"Don't do it yourself !"**
 
-<img src="https://pic.hanjiaming.com.cn/2024/02/16/5a7cd4b117d2f.png" alt="1708068869283.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/j8rib/5a7cd4b117d2f.png" alt="1708068869283.png" style="zoom:33%;" />
 
 ::: tip Major Cloud Platforms Players
 
@@ -38,11 +38,11 @@ More Practical 的说法：
 
 :::
 
-<img src="https://pic.hanjiaming.com.cn/2024/02/16/e72be387aef4c.png" alt="1708070271454.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/2nYuv/e72be387aef4c.png" alt="1708070271454.png" style="zoom: 33%;" />
 
 **Everything imaginable as a service**
 
-![1708070330194.png](https://pic.hanjiaming.com.cn/2024/02/16/c7611d76390c3.png)
+![1708070330194.png](https://netdesk.orcsvc.com/f/AaWcy/c7611d76390c3.png)
 
 ::: tip Top cloud computing trends for 2023
 
@@ -58,9 +58,9 @@ More Practical 的说法：
 
 ### 传统数据中心的企业资源规划
 
-<img src="https://pic.hanjiaming.com.cn/2024/02/16/b33181ce01eb1.png" alt="1708071331296.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/WJnF9/b33181ce01eb1.png" alt="1708071331296.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2024/02/16/7d68525fc9f24.png" alt="1708071385479.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/EMPUd/7d68525fc9f24.png" alt="1708071385479.png" style="zoom:33%;" />
 
 
 
@@ -99,7 +99,7 @@ usage-based pricing:
 
 ### Cloud Software Stacks
 
-![1708072668030.png](https://pic.hanjiaming.com.cn/2024/02/16/6db97a961560e.png)
+![1708072668030.png](https://netdesk.orcsvc.com/f/bG1SM/6db97a961560e.png)
 
 ### How to build a cloud
 
@@ -120,7 +120,7 @@ usage-based pricing:
     - New **archival** storage, e.g., glass
   - Distributed with compute or NAS systems -> Remote storage access for many use cases
 
-![CleanShot 2024-02-16 at 16.54.12@2x.jpg](https://pic.hanjiaming.com.cn/2024/02/16/5cd3e7b19a9be.jpg)
+![CleanShot 2024-02-16 at 16.54.12@2x.jpg](https://netdesk.orcsvc.com/f/lMghe/5cd3e7b19a9be.jpg)
 
 - Hardware: Networking
   - The basic
@@ -192,7 +192,7 @@ Latency
 - users install their required guest operating system, middleware, runtime, data, and applications on top of the virtual machine.
 - 配置从云提供商处获得的基础设施需要很高的技术技能。
 
-<img src="https://pic.hanjiaming.com.cn/2024/02/16/cc5ee3484f52f.png" alt="1708085540796.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/GlecA/cc5ee3484f52f.png" alt="1708085540796.png" style="zoom: 50%;" />
 
 ### Platform as a Service (PaaS)
 
@@ -203,7 +203,7 @@ Latency
 - additional services
 - K8S, MapReduce
 
-<img src="https://pic.hanjiaming.com.cn/2024/02/16/4350ab7f11271.png" alt="1708085689077.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/4PJH2/4350ab7f11271.png" alt="1708085689077.png" style="zoom: 50%;" />
 
 ### Software as a Service (SaaS)
 
@@ -212,17 +212,17 @@ Latency
 - eg., Salesforce’s CRM
 - Email, GitHub
 
-<img src="https://pic.hanjiaming.com.cn/2024/02/16/a5a1dcadc0c34.png" alt="1708085870905.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/5j5hV/a5a1dcadc0c34.png" alt="1708085870905.png" style="zoom:50%;" />
 
 ::: note Difference between IaaS, PaaS, and SaaS
 
-![1708086040853.png](https://pic.hanjiaming.com.cn/2024/02/16/939aa69d0fd0c.png)
+![1708086040853.png](https://netdesk.orcsvc.com/f/8oxI5/939aa69d0fd0c.png)
 
 :::
 
 ::: note Relationship between IaaS, PaaS, and SaaS
 
-![1708086493832.png](https://pic.hanjiaming.com.cn/2024/02/16/c24fa7598d2fa.png)
+![1708086493832.png](https://netdesk.orcsvc.com/f/mL4F9/c24fa7598d2fa.png)
 
 :::
 
@@ -270,7 +270,7 @@ Also called *cloud service deployment models*
 - 企业的资源集中到一个中央单位。
 - 无论是在组织内部还是在第三方供应商设施内。
 
-<img src="https://pic.hanjiaming.com.cn/2024/02/26/e4d48d0c4c87c.png" alt="1708950205996.png" title="1708950205996.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/yxVUZ/e4d48d0c4c87c.png" alt="1708950205996.png" title="1708950205996.png" style="zoom: 50%;" />
 
 关键技术：
 
@@ -304,7 +304,7 @@ Also called *cloud service deployment models*
 
 Netflix、Hulu、Uber 和 Airbnb 在新剧首播或出行高峰期都非常依赖混合云。
 
-![1709205296625.png](https://pic.hanjiaming.com.cn/2024/02/29/b7dd9566b213e.png)
+![1709205296625.png](https://netdesk.orcsvc.com/f/Zgeh2/b7dd9566b213e.png)
 
 #### Advantages of Hybrid Cloud
 
@@ -351,7 +351,7 @@ Netflix、Hulu、Uber 和 Airbnb 在新剧首播或出行高峰期都非常依�
 - 如果没有合作就不适合。
 - 所有社区成员共享固定数量的数据存储空间和带宽。
 
-<img src="https://pic.hanjiaming.com.cn/2024/02/26/d99a56bfb7dd1.png" alt="1708950175886.png" title="1708950175886.png" />
+<img src="https://netdesk.orcsvc.com/f/3mMi5/d99a56bfb7dd1.png" alt="1708950175886.png" title="1708950175886.png" />
 
 
 

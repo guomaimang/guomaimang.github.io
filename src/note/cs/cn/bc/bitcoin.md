@@ -59,7 +59,7 @@ UTXO是比特币交易模型的核心概念之一，它代表了用户在区块�
 
 Transactions use digital signatures (in turns use hash function)
 
-![1728137207492.png](https://pic.hanjiaming.com.cn/2024/10/05/afd059a9c04a1.png)
+![1728137207492.png](https://netdesk.orcsvc.com/f/KjLtL/afd059a9c04a1.png)
 
 - 一笔交易 (tx) 可以发送给多于 1 方
 - or one always needs to send all bitcoins of an address to a single recipient
@@ -274,7 +274,7 @@ Main Problem with Digital Money -> Double spending…
 
 How Bitcoin Prevents Double-Spending?
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/05/6c9491d78cc79.png" alt="1728137801937.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/4XLu2/6c9491d78cc79.png" alt="1728137801937.png" style="zoom: 50%;" />
 
 用户模拟一个包含交易列表的公共只写（准确地说，只追加）公告板「bulletin-board」
 
@@ -283,17 +283,17 @@ How Bitcoin Prevents Double-Spending?
 - User P1 transfers some coins at #16fab13fc6890 to user P2
 - User P1 transfers remaining coins at #16fab13fc6890 to user P3
 
-![1728138966457.png](https://pic.hanjiaming.com.cn/2024/10/05/26e8dd9ec4e08.png)
+![1728138966457.png](https://netdesk.orcsvc.com/f/3rGu5/26e8dd9ec4e08.png)
 
 Transaction Table: the Bitcoin Blockchain
 
-![1728139157456.png](https://pic.hanjiaming.com.cn/2024/10/05/4efd81489e783.png)
+![1728139157456.png](https://netdesk.orcsvc.com/f/lLkSe/4efd81489e783.png)
 
 ## Maintain Bitcoin Blockchain
 
 Bulletin-Board “Emulation”
 
-![1728139265308.png](https://pic.hanjiaming.com.cn/2024/10/05/8a148e2b5e14d.png)
+![1728139265308.png](https://netdesk.orcsvc.com/f/54xhV/8a148e2b5e14d.png)
 
 - **Main difficulty:** Some parties can cheat.
 - Classical result: emulation is possible if the “majority is honest.”
@@ -315,13 +315,13 @@ Bulletin-Board “Emulation”
 
 **Every transaction is broadcasted to all users**: 在区块链网络中，每笔交易都会广播给所有节点。这意味着所有节点都能看到并验证交易，从而确保交易的透明性和可靠性。
 
-![CleanShot 2024-10-05 at 22.52.03@2x.png](https://pic.hanjiaming.com.cn/2024/10/05/df589a445bf0a.png)
+![CleanShot 2024-10-05 at 22.52.03@2x.png](https://netdesk.orcsvc.com/f/xnnC3/df589a445bf0a.png)
 
 Works well if all users are honest but this is not the case in practice because “sybil” can appear “for free” in a permissionless network.
 
 在每个人都可以自由参与的系统中，多数意味着什么？
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/05/6d61c93380038.png" alt="1728140188569.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/qeyIJ/6d61c93380038.png" alt="1728140188569.png" style="zoom:33%;" />
 
 ## Majority of Comp. Power
 
@@ -355,27 +355,27 @@ How to Check Majority of Comp. Power?
 
 矿工是负责验证和记录交易的网络节点。他们通过解决复杂的数学问题来创建新的区块，并因此获得比特币奖励。
 
-![1728141142011.png](https://pic.hanjiaming.com.cn/2024/10/05/dd1f0f47e21a9.png)
+![1728141142011.png](https://netdesk.orcsvc.com/f/ePktq/dd1f0f47e21a9.png)
 
 在比特币网络中，每10分钟会创建一个新的区块，每个区块的大小通常小于1MB。这个时间间隔是通过调整挖矿难度来保持的。
 
 创世区块「genesis block」是比特币区块链中的第一个区块，由中本聪于2009年1月3日创建。它是整个比特币网络的起点。
 
-![1728141394598.png](https://pic.hanjiaming.com.cn/2024/10/05/5db4628c79f69.png)
+![1728141394598.png](https://netdesk.orcsvc.com/f/3AGF5/5db4628c79f69.png)
 
-![1728141417484.png](https://pic.hanjiaming.com.cn/2024/10/05/c348932c87929.png)
+![1728141417484.png](https://netdesk.orcsvc.com/f/VRnc2/c348932c87929.png)
 
 The good case: copies are consistent
 
-![1728141448321.png](https://pic.hanjiaming.com.cn/2024/10/05/d487575de0123.png)
+![1728141448321.png](https://netdesk.orcsvc.com/f/vJpsq/d487575de0123.png)
 
-![1728141485074.png](https://pic.hanjiaming.com.cn/2024/10/05/0468c6eee350c.png)
+![1728141485074.png](https://netdesk.orcsvc.com/f/aRvCq/0468c6eee350c.png)
 
-![1728141530048.png](https://pic.hanjiaming.com.cn/2024/10/05/9c451229db18a.png)
+![1728141530048.png](https://netdesk.orcsvc.com/f/yl2SZ/9c451229db18a.png)
 
-![1728141550551.png](https://pic.hanjiaming.com.cn/2024/10/05/8a64f449dbd5a.png)
+![1728141550551.png](https://netdesk.orcsvc.com/f/YRLH2/8a64f449dbd5a.png)
 
-![1728141577922.png](https://pic.hanjiaming.com.cn/2024/10/05/31dcfcc1678ad.png)
+![1728141577922.png](https://netdesk.orcsvc.com/f/8O4S5/31dcfcc1678ad.png)
 
 ## How to Post to Blockchain
 
@@ -388,7 +388,7 @@ Important:
 - They never add an invalid transaction (e.g., double-spending transaction)
 - a chain with an invalid transaction is itself not valid, so no rational miner「理性矿工」 would do it.
 
-![1728142324261.png](https://pic.hanjiaming.com.cn/2024/10/05/5967378a5c54b.png)
+![1728142324261.png](https://netdesk.orcsvc.com/f/kWjsb/5967378a5c54b.png)
 
 ::: note Main Principles
 
@@ -398,9 +398,9 @@ the system incentivizes「激励」them to do it
 - Once a miner finds an extension (s) he broadcasts it to everybody.
 - The users will always accept "the longest chain" as the valid one.
 
-![1728142484981.png](https://pic.hanjiaming.com.cn/2024/10/05/76565171a8d6b.png)
+![1728142484981.png](https://netdesk.orcsvc.com/f/o1OCg/76565171a8d6b.png)
 
-![1728142510639.png](https://pic.hanjiaming.com.cn/2024/10/05/1e6c5d528cd93.png)
+![1728142510639.png](https://netdesk.orcsvc.com/f/e4RHq/1e6c5d528cd93.png)
 
 :::
 
@@ -435,14 +435,14 @@ the system incentivizes「激励」them to do it
 
 The “**longest**” chain counts 「有效」. How long? A few slides later…
 
-![1728142777919.png](https://pic.hanjiaming.com.cn/2024/10/05/fca3d3afbea06.png)
+![1728142777919.png](https://netdesk.orcsvc.com/f/Jkni8/fca3d3afbea06.png)
 
 在较短的链条上工作有意义吗？**No!**
 
 - 因为其他人都在努力延长最长的链条。
 - 回想一下：我们假设大多数人都遵循协议。
 
-![1728143298193.png](https://pic.hanjiaming.com.cn/2024/10/05/e65ce75a7c0ff.png)
+![1728143298193.png](https://netdesk.orcsvc.com/f/vdASq/e65ce75a7c0ff.png)
 
 Consequences
 
@@ -466,7 +466,7 @@ what if your transaction ends up in a “dead branch”? to be sure that it does
 
 :::
 
-![1728145440365.png](https://pic.hanjiaming.com.cn/2024/10/06/2f29ee2c6d7d3.png)
+![1728145440365.png](https://netdesk.orcsvc.com/f/20EFv/2f29ee2c6d7d3.png)
 
 To reverse transactions, an adversary has to create a “fork in the past.”
 
@@ -485,7 +485,7 @@ To reverse transactions, an adversary has to create a “fork in the past.”
 
 ## Problems with Bitcoin’s PoW
 
-![1728145837886.png](https://pic.hanjiaming.com.cn/2024/10/06/a9ff727ad7084.png)
+![1728145837886.png](https://netdesk.orcsvc.com/f/PyMFe/a9ff727ad7084.png)
 
 Drawbacks of Hardware Mining
 
@@ -533,9 +533,9 @@ Virtual Mining idea
 
 
 
-![1728146015581.png](https://pic.hanjiaming.com.cn/2024/10/06/d3b8f99f4eaf1.png)
+![1728146015581.png](https://netdesk.orcsvc.com/f/3Wwf5/d3b8f99f4eaf1.png)
 
-![1728146066560.png](https://pic.hanjiaming.com.cn/2024/10/06/6d4e46901b3a4.png)
+![1728146066560.png](https://netdesk.orcsvc.com/f/JOYf8/6d4e46901b3a4.png)
 
 :::  details 共识机制 Proof of X
 

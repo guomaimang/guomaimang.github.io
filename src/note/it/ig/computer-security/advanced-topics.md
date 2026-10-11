@@ -12,7 +12,7 @@ headerDepth: 1
 - 互联网是一个由计算机网络组成的世界性网络
 - 网络是互联网最受欢迎的服务之一，提供对数十亿网页和动态内容的访问。-> 实现众多的数据处理和商业交易活动
 
-![1682386781596.png](https://pic.hanjiaming.com.cn/2023/04/25/e44acb3413908.png)
+![1682386781596.png](https://netdesk.orcsvc.com/f/Gg8FA/e44acb3413908.png)
 
 - Hypertext transfer protocol (HTTP)
 - An application layer protocol (Layer 7 in OSI model)
@@ -21,9 +21,9 @@ headerDepth: 1
 
 ## HTTP Request Message
 
-![1682387073088.png](https://pic.hanjiaming.com.cn/2023/04/25/92888f5169e71.png)
+![1682387073088.png](https://netdesk.orcsvc.com/f/mP6H9/92888f5169e71.png)
 
-![1682387086481.png](https://pic.hanjiaming.com.cn/2023/04/25/0aea9a37d563b.png)
+![1682387086481.png](https://netdesk.orcsvc.com/f/d14iX/0aea9a37d563b.png)
 
 ## Top Website Vulnerabilities
 
@@ -80,7 +80,7 @@ URL 通常是 GET request，为什么会在浏览器中被执行？
 
 ### Persistent XSS
 
-![1682404623456.png](https://pic.hanjiaming.com.cn/2023/04/25/6c7692364e274.png)
+![1682404623456.png](https://netdesk.orcsvc.com/f/aLkiq/6c7692364e274.png)
 
 - 有效载荷被保存在一个二级存储（数据库）中
 - 持久性攻击造成的损害可能比非持久性攻击更严重。
@@ -119,7 +119,7 @@ URL 通常是 GET request，为什么会在浏览器中被执行？
 
 传输层安全（TLS）握手协议负责建立安全会话所需的认证和密钥交换。
 
-<img src="https://pic.hanjiaming.com.cn/2023/04/25/bafce7eb70a9e.png" alt="1682389735116.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/90bsm/bafce7eb70a9e.png" alt="1682389735116.png" style="zoom:33%;" />
 
 - SSL（安全套接字层）是由网景公司在1994年提出的。
 - 后来，互联网工程任务组（IETF）成立了一个工作组，对安全套接字层（SSL）进行标准化。
@@ -149,7 +149,7 @@ URL 通常是 GET request，为什么会在浏览器中被执行？
 8. 服务器收到 "Change cipher spec "并将其记录层安全状态切换为使用会话密钥的对称加密。服务器向客户端发送 "服务器完成 "消息
 9. 客户端和服务器现在可以通过他们建立的安全通道交换应用数据。从客户端到服务器以及从服务器到客户端发送的所有信息都使用会话密钥进行加密。
 
-![1682390824115.png](https://pic.hanjiaming.com.cn/2023/04/25/dce6d228c4179.png)
+![1682390824115.png](https://netdesk.orcsvc.com/f/gZLuX/dce6d228c4179.png)
 
 ::: details TLS 能不能防止重放攻击?
 
@@ -215,7 +215,7 @@ ECDH用于生成安全的共享密钥，而AES用于加密和解密实际的通�
 
 验证时，
 
-<img src="https://pic.hanjiaming.com.cn/2023/04/28/25f4c168299f1.png" alt="1682649577458.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/Vl8c2/25f4c168299f1.png" alt="1682649577458.png" style="zoom: 40%;" />
 
 为什么环签名能够隐藏身份？
 
@@ -263,7 +263,7 @@ ECDH用于生成安全的共享密钥，而AES用于加密和解密实际的通�
 
 概括地说
 
-![1682651350476.png](https://pic.hanjiaming.com.cn/2023/04/28/182b72982e752.png)
+![1682651350476.png](https://netdesk.orcsvc.com/f/woOf5/182b72982e752.png)
 
 为什么这个协议有效？
 

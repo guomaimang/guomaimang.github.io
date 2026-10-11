@@ -14,7 +14,7 @@ headerDepth: 1
 - 发射天线--发射器使用发射天线，以**无线电或微波信号**的形式向周围环境输送辐射。
 - 接收天线--将来自环境的信号转换为交流电，并将其传递给接收器
 
-![1666082707500.png](https://pic.hanjiaming.com.cn/2022/10/18/a40876f6d7f85.png)
+![1666082707500.png](https://netdesk.orcsvc.com/f/or5kUg/a40876f6d7f85.png)
 
 ### Isotropic radiator
 
@@ -32,7 +32,7 @@ headerDepth: 1
 
 自由空间传播模型：在真空中，接收器的接收功率与1/d<sup>2</sup>成正比（d=发送者和接收器之间的距离）。
 
-![1666083284909.png](https://pic.hanjiaming.com.cn/2022/10/18/73034cff40d9c.png)
+![1666083284909.png](https://netdesk.orcsvc.com/f/6LvXtE/73034cff40d9c.png)
 
 ## Signal Propagation Ranges
 
@@ -46,7 +46,7 @@ Interference range
 - 沟通是不可能的
 - 信号干扰了其他的传输
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/ab9d929a875f1.png" alt="1666083368887.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/AMjZty/ab9d929a875f1.png" alt="1666083368887.png" style="zoom:33%;" />
 
 ## 信号传播：复杂性
 
@@ -57,7 +57,7 @@ Interference range
 - 在小障碍物上的散射
 - 障碍物边缘的衍射
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/e8d36794f9b0c.png" alt="1666084219333.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/k8AdIb/e8d36794f9b0c.png" alt="1666084219333.png" style="zoom:33%;" />
 
 ## Multipath Propagation
 
@@ -77,11 +77,11 @@ Interference range
 
 接收功率的快速波动（fast fading / short term fading）
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/c7a28cd5ff8b3.png" alt="1666084768568.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/QaO9Ij/c7a28cd5ff8b3.png" alt="1666084768568.png" style="zoom:33%;" />
 
 周围的障碍物：平均接收功率的缓慢变化 (slow fading / long term fading)
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/18/28d2f4ada0f10.png" alt="1666084915287.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/jPGbFb/28d2f4ada0f10.png" alt="1666084915287.png" style="zoom:33%;" />
 
 
 

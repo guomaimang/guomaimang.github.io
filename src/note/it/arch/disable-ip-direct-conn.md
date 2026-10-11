@@ -14,13 +14,13 @@ category:
 
 探讨京东开发为何要禁用IP直连，并介绍两种解决方案来应对IP直连所带来的问题。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/1388107d7e21f.png" alt="1734952490322.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/qqRduJ/1388107d7e21f.png" alt="1734952490322.png" style="zoom:25%;" />
 
 ## 问题提出
 
 IP直连的问题
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/a4a34dd900fe8.png" alt="1734952446255.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/38yQC5/a4a34dd900fe8.png" alt="1734952446255.png" style="zoom:25%;" />
 
 - 在开发环境中，常见的做法是直接使用IP地址和端口号来连接数据库或其他服务。
 - 例如，连接MySQL数据库时，可能会写成 `192.168.31.205:3306/database_name`。
@@ -28,7 +28,7 @@ IP直连的问题
 
 ## 强耦合问题
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/67874c9036e78.png" alt="1734952516165.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/gP3LHX/67874c9036e78.png" alt="1734952516165.png" style="zoom:33%;" />
 
 强耦合的定义: 强耦合是指两个模块之间的依赖关系非常紧密，一旦其中一个模块发生变化，另一个模块也必须随之调整。
 

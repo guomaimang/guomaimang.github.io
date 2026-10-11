@@ -51,7 +51,7 @@ headerDepth: 2
 吴方言 						以苏州话为代表
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/13/a4d991cfcd981.png" alt="1657705996997.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/wvp0T5/a4d991cfcd981.png" alt="1657705996997.png" style="zoom:50%;" />
 
 ## 粵方言
 

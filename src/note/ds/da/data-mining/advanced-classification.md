@@ -20,7 +20,7 @@ Bayes classifier, Association-based classifier, k-nearest neighbor (kNN), Neural
 
 ### Bayesian Theorem
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/adc8c891d90dd.png" alt="1702621698763.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/3QLc5/adc8c891d90dd.png" alt="1702621698763.png" style="zoom:33%;" />
 
 实际困难：需要对许多概率有初步了解，计算成本很高
 
@@ -28,33 +28,33 @@ Bayes classifier, Association-based classifier, k-nearest neighbor (kNN), Neural
 
 分类问题可以使用后验概率来形式化：
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/08a045eb66aea.png" alt="1702621859018.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/yr9SZ/08a045eb66aea.png" alt="1702621859018.png" style="zoom:33%;" />
 
 思路：为样本 X 分配类别标签 C，使 P(C|X) 最大
 
 ### Estimating a-posteriori probabilities
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/693a5324c36ee.png" alt="1702649534950.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/ew8Tq/693a5324c36ee.png" alt="1702649534950.png" style="zoom: 33%;" />
 
 ### Naïve Bayes Classifier
 
 一个简化的假设：属性是条件独立的：
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/3fd181fa97cde.png" alt="1702649605113.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/oMkug/3fd181fa97cde.png" alt="1702649605113.png" style="zoom:25%;" />
 
 只计算类别分布，大大降低了计算成本。
 
 ### Naïve Bayesian Classification
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/c9fde32cb9cfe.png" alt="1702649679777.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/vrYIq/c9fde32cb9cfe.png" alt="1702649679777.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/5d3ba137cd6cf.png" alt="1702649648141.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/JApf8/5d3ba137cd6cf.png" alt="1702649648141.png" style="zoom: 33%;" />
 
 ## Association-Based Classification
 
 基于关联的分类的几种方法
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/3a0935267ff2c.png" alt="1702652389170.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/LVYs2/3a0935267ff2c.png" alt="1702652389170.png" style="zoom:33%;" />
 
 - ARCS: Quantitative association mining and clustering of association rules
 - CAEP（Classification by aggregating emerging patterns）
@@ -72,11 +72,11 @@ Bayes classifier, Association-based classifier, k-nearest neighbor (kNN), Neural
 
 ## Instance-Based Classifiers
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/8597dd4df9a2d.png" alt="1702652939984.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/YOQs2/8597dd4df9a2d.png" alt="1702652939984.png" style="zoom: 33%;" />
 
 ## kNN Classification
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/b0569a4b030f5.png" alt="1702653076688.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/3XMt5/b0569a4b030f5.png" alt="1702653076688.png" style="zoom:33%;" />
 
 ## NN Classification
 
@@ -93,17 +93,17 @@ Bayes classifier, Association-based classifier, k-nearest neighbor (kNN), Neural
 - 难以理解学习的函数（权重）
 - 不易纳入领域知识
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/5d92ecab7b762.png" alt="1702653180053.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/PEQUe/5d92ecab7b762.png" alt="1702653180053.png" style="zoom:33%;" />
 
 ## Classification Measures
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/82e5a8d59fcf9.png" alt="1702622028286.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/e5ASq/82e5a8d59fcf9.png" alt="1702622028286.png" style="zoom: 33%;" />
 
 Classification Accuracy -》Estimating Error Rates
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/8ef15602f2fc7.png" alt="1702653391992.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/VmjH2/8ef15602f2fc7.png" alt="1702653391992.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/15/2c712ed516e3f.png" alt="1702653514300.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ZpPf2/2c712ed516e3f.png" alt="1702653514300.png" style="zoom:33%;" />
 
 ## Ensemble Methods
 

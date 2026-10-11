@@ -58,7 +58,7 @@ Properties of Secure Environments
 
 ### Directly Controls
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/10/852561a3b6ca9.png" alt="1728571136318.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/Er5fd/852561a3b6ca9.png" alt="1728571136318.png" style="zoom: 33%;" />
 
 ### Digital Assets
 
@@ -328,7 +328,7 @@ Alice可以使用比特币脚本语言来创建一个支付条件，即只有Bob
 
 ## Account-based Model
 
-![1728876836366.png](https://pic.hanjiaming.com.cn/2024/10/14/5e419a84c68e9.png)
+![1728876836366.png](https://netdesk.orcsvc.com/f/ArxTy/5e419a84c68e9.png)
 
 ## Two Types of “Accounts”
 
@@ -371,15 +371,15 @@ The code can:
 
 在这个代码片段中，`domains`是一个存储结构，它存储了域名的所有者（`owner`）和IP地址（`ip`）。这个结构被智能合约管理，所有数据都存储在区块链上。
 
-![1728887154206.png](https://pic.hanjiaming.com.cn/2024/10/14/eaae919bc4c12.png)
+![1728887154206.png](https://netdesk.orcsvc.com/f/rgksg/eaae919bc4c12.png)
 
 :::
 
 ## Ethereum Languages
 
-![1728887367525.png](https://pic.hanjiaming.com.cn/2024/10/14/1b1457e0cee66.png)
+![1728887367525.png](https://netdesk.orcsvc.com/f/Qdjtj/1b1457e0cee66.png)
 
-![1728887529028.png](https://pic.hanjiaming.com.cn/2024/10/14/b94bea3f7c6b7.png)
+![1728887529028.png](https://netdesk.orcsvc.com/f/GrquA/b94bea3f7c6b7.png)
 
 ## Transactions in ETH
 
@@ -507,7 +507,7 @@ How to Interact a Contract?
 - 还可以映射到更复杂的对象，如智能合约
 - 地址作为键，对象作为值。
 
-![1728975895748.png](https://pic.hanjiaming.com.cn/2024/10/15/4dec023b44590.png)
+![1728975895748.png](https://netdesk.orcsvc.com/f/o3PTg/4dec023b44590.png)
 
 ## Account Object
 
@@ -529,7 +529,7 @@ How to Interact a Contract?
 
 区块挖矿是区块链网络中验证交易并将其添加到区块链的过程。
 
-![nrwMZX4bLWJbxzxrnGrSN.png](https://pic.hanjiaming.com.cn/2024/10/15/3db4981067498.png)
+![nrwMZX4bLWJbxzxrnGrSN.png](https://netdesk.orcsvc.com/f/1kgTK/3db4981067498.png)
 
 通过这张图，我们可以理解区块链中的区块挖矿过程，包括交易的收集、验证、状态更新、工作量证明以及区块的广播。
 
@@ -562,7 +562,7 @@ Receipt Root: 收据根是所有“收据”的树的根。每个收据代表一
 
 这意味着全节点不仅要验证和记录所有的交易，还要维护整个区块链的完整数据。
 
-![1729009921852.png](https://pic.hanjiaming.com.cn/2024/10/16/c680fafa14a5a.png)
+![1729009921852.png](https://netdesk.orcsvc.com/f/52afV/c680fafa14a5a.png)
 
 - 图中显示了多个节点（P1, P2, P3, P4, P5, P6），每个节点都有一个绿色的区块图标，表示它们正在处理新的区块。
 - 图中箭头表示节点之间的通信和数据传递。
@@ -603,7 +603,7 @@ Solution: “Gas”
 - Charge fee per computational step 「按计算步骤收取费用」
 - 占用存储空间的操作的特殊费用
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/16/028ee98985c32.png" alt="CleanShot 2024-10-16 at 00.55.05@2x.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/a4lFq/028ee98985c32.png" alt="CleanShot 2024-10-16 at 00.55.05@2x.png" style="zoom:33%;" />
 
 Sender has to pay for the gas
 

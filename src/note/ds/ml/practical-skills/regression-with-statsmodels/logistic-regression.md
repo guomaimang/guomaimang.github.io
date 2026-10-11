@@ -48,7 +48,7 @@ sns.regplot(x= "time_since_first_purchase", y = "has_churned", data = churn, log
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/25/f62bf5e1707cb.png" alt="1656157395710.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/m3JJc9/f62bf5e1707cb.png" alt="1656157395710.png" style="zoom:33%;" />
 
 ## 预测和评估
 
@@ -94,7 +94,7 @@ sns.scatterplot(x="time_since_first_purchase",
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/25/d217592c81713.png" alt="1656160167765.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/YG8PF2/d217592c81713.png" alt="1656160167765.png" style="zoom: 50%;" />
 
 ### 案例2
 
@@ -111,7 +111,7 @@ plt.ylabel('Probability of favoring gun law')
 plt.legend()
 ```
 
-![1654782014929.png](https://pic.hanjiaming.com.cn/2022/06/09/b144be33d2274.png)
+![1654782014929.png](https://netdesk.orcsvc.com/f/PvwgUe/b144be33d2274.png)
 
 到目前为止，我们只应用逻辑回归得到了概率，并没有预测是0，还是1。
 
@@ -140,7 +140,7 @@ sns.scatterplot(x = "time_since_first_purchase", y = "most_likely_outcome" ,data
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/25/c1066da4191f4.png" alt="1656160473689.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/RGoVt8/c1066da4191f4.png" alt="1656160473689.png" style="zoom:50%;" />
 
 ### Odds ratios
 
@@ -167,7 +167,7 @@ plt.axhline(y=1, linestyle="dotted")
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/25/05b6b08192b30.png" alt="1656160952865.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/wGw0H5/05b6b08192b30.png" alt="1656160952865.png" style="zoom:50%;" />
 
 ### Visualizing log odds ratio
 
@@ -178,13 +178,13 @@ plt.yscale("log")
 plt.show()
 ```
 
-![1656341062454.png](https://pic.hanjiaming.com.cn/2022/06/27/19ea5a235bb57.png)
+![1656341062454.png](https://netdesk.orcsvc.com/f/jP3qub/19ea5a235bb57.png)
 
 ### Summary
 
-![1656341382622.png](https://pic.hanjiaming.com.cn/2022/06/27/dffb30c8e3678.png)
+![1656341382622.png](https://netdesk.orcsvc.com/f/orn5Ug/dffb30c8e3678.png)
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/27/69b893ec6deb8.png" alt="1656341397223.png"  />
+<img src="https://netdesk.orcsvc.com/f/nwYqhj/69b893ec6deb8.png" alt="1656341397223.png"  />
 
 ## Quantifying fit
 
@@ -192,7 +192,7 @@ plt.show()
 
 混淆矩阵（有时称为混淆表）是具有分类响应（例如逻辑回归）的模型的所有性能指标的基础。它包含每个实际响应的计数 - 预测响应对。在这种情况下，如果有两种可能的响应（流失或不流失），则有四种总体结果。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/28/cce07763e8380.png" alt="4345ede3f2f9e.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/5Ve5sV/cce07763e8380.png" alt="4345ede3f2f9e.png" style="zoom:33%;" />
 
 表格记录了 预测是否正确 和 预测的阴阳 。
 
@@ -249,7 +249,7 @@ plt.show()
      [ 76. 124.]]
 ```
 
-![73bc6a67c14a3.png](https://pic.hanjiaming.com.cn/2022/06/28/d213fde0d9c70.png)
+![73bc6a67c14a3.png](https://netdesk.orcsvc.com/f/Y45gH2/d213fde0d9c70.png)
 
 很多性能指标都可以从混淆矩阵中计算出来。对于逻辑回归来说，其中三个特别重要：准确性、敏感性和特异性。
 
@@ -257,7 +257,7 @@ plt.show()
 
 准确率是正确预测的比例。这是正确预测的比例。也就是说，真正的阴性数加上真正的阳性数，除以总的观察数。准确率越高越好。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/28/ea66caebb785d.png" alt="1656346266775.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/arpWCq/ea66caebb785d.png" alt="1656346266775.png" style="zoom:50%;" />
 
 ```python
 TN = conf_matrix[0,0]
@@ -303,7 +303,7 @@ print("specificity: ", specificity)
     specificity:  0.56
 ```
 
-![1656348529376.png](https://pic.hanjiaming.com.cn/2022/06/28/0a5da598f3c1d.png)
+![1656348529376.png](https://netdesk.orcsvc.com/f/G68LtA/0a5da598f3c1d.png)
 
 ### Recall and Precision
 

@@ -85,10 +85,10 @@ There are two types of vertices V:
 
 Banker’s Algorithm is an algorithm for multiple instances of resource types.
 
-![1651327864401.png](https://pic.hanjiaming.com.cn/2022/04/30/814df4211d97f.png)
+![1651327864401.png](https://netdesk.orcsvc.com/f/Oa51CQ/814df4211d97f.png)
 
-![1651327864401.png](https://pic.hanjiaming.com.cn/2022/04/30/814df4211d97f.png)
+![1651327864401.png](https://netdesk.orcsvc.com/f/Oa51CQ/814df4211d97f.png)
 
-![CleanShot 2022-04-30 at 22.11.32@2x.png](https://pic.hanjiaming.com.cn/2022/04/30/8bdf625f119f4.png)
+![CleanShot 2022-04-30 at 22.11.32@2x.png](https://netdesk.orcsvc.com/f/p4E9Cn/8bdf625f119f4.png)
 
-![1651327932793.png](https://pic.hanjiaming.com.cn/2022/04/30/441d19cdbda78.png)
+![1651327932793.png](https://netdesk.orcsvc.com/f/Kw5WCL/441d19cdbda78.png)

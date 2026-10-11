@@ -12,7 +12,7 @@ date: 2021-05-01
 
 ### ALU的输入和输出示意
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210125065301738.png)
+![img](https://netdesk.orcsvc.com/f/vWYdFq/20210125065301738.png)
 
 - 控制单元（Control Unit）：给出操作说明
 - 左侧的寄存器（Registers）：用于保存输入数据的缓冲区
@@ -21,7 +21,7 @@ date: 2021-05-01
 
 ### 简单的加法器示意
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210125065504883.png)
+![img](https://netdesk.orcsvc.com/f/wRnOI5/20210125065504883.png)
 
 OF表示溢出，这里需要强调，这里的溢出不是错误，不会进入到中断周期。
 
@@ -45,7 +45,7 @@ OF表示溢出，这里需要强调，这里的溢出不是错误，不会进入
 
 下图以4bits为例
 
-<img src="https://pic.hanjiaming.com.cn/2021/01/20210129075454275.png" width = "400px">
+<img src="https://netdesk.orcsvc.com/f/jwO1Ub/20210129075454275.png" width = "400px">
 
 
 
@@ -58,7 +58,7 @@ OF表示溢出，这里需要强调，这里的溢出不是错误，不会进入
   - 每个可表示的整数都有唯一的 *位编码* (bit encoding)
 - 可以反转映射
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210204153152698.png)
+![img](https://netdesk.orcsvc.com/f/Kwy6UL/20210204153152698.png)
 
 ### 计算机软件使用二进制编码表示数字
 
@@ -165,9 +165,9 @@ A + B = 1101 + 0010 = 1111 = -1（10）
 0011 1100 – 0010 1101 = 0011 1100 +（-0010 1101）
 = 0011 1100 + 1101 0011
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210204154106327.png)
+![img](https://netdesk.orcsvc.com/f/LQmDs2/20210204154106327.png)
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210204154204311.png)
+![img](https://netdesk.orcsvc.com/f/nWOqIj/20210204154204311.png)
 
 无论是加法还是乘法，无论有无符号，如果需要保持精准的结果，可以通过使用“任意精度”算法包。
 
@@ -189,15 +189,15 @@ A + B = 1101 + 0010 = 1111 = -1（10）
 
 则转换为十进制的数字计算公式为（其中w为位数，B2T(X) 为十进制计算结果）
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210204150630324.png)
+![img](https://netdesk.orcsvc.com/f/l3pOce/20210204150630324.png)
 
 ### 二进制乘法
 
 #### 使用纸和笔计算无符号二进制数乘法
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210204154835687.png)
+![img](https://netdesk.orcsvc.com/f/3p5yH5/20210204154835687.png)
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210125091119761.png)
+![img](https://netdesk.orcsvc.com/f/VDx8i2/20210125091119761.png)
 
 被乘数：1011
 乘数：1101
@@ -218,7 +218,7 @@ A + B = 1101 + 0010 = 1111 = -1（10）
 
 **方法二**
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210204155820470.png)
+![img](https://netdesk.orcsvc.com/f/JGYyS8/20210204155820470.png)
 
 **我们只讨论方法一**
 
@@ -229,13 +229,13 @@ A + B = 1101 + 0010 = 1111 = -1（10）
 - A：存储累计结果（最初设置为0）
 - C：可存一位，另外存储溢出位
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210125091743730.png)
+![img](https://netdesk.orcsvc.com/f/E2XQSd/20210125091743730.png)
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210125091828251.png)
+![img](https://netdesk.orcsvc.com/f/RGM4t8/20210125091828251.png)
 
 我们假设 1011 *1101 在 8位 举例中，则则会有以下过程。
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210125091911181.png)
+![img](https://netdesk.orcsvc.com/f/M2Y2c8/20210125091911181.png)
 
 注：右面的操作后得到左面的结果
 
@@ -297,7 +297,7 @@ A + B = 1101 + 0010 = 1111 = -1（10）
 
 **32位编译器中**
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210129074107710.png)
+![img](https://netdesk.orcsvc.com/f/mwWeI9/20210129074107710.png)
 
 **64位**编译器中
 
@@ -310,7 +310,7 @@ unsigned long long：0~18446744073709551615(0~2^64-1)
 
 ### 数值在内存中的大小
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210129082910576.png)
+![img](https://netdesk.orcsvc.com/f/kOpgib/20210129082910576.png)
 
 **32位**编译器中
 
@@ -410,11 +410,11 @@ unsigned long long：0~18446744073709551615(0~2^64-1)
 
 以下图4bit为例
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210129080800266.png)
+![img](https://netdesk.orcsvc.com/f/oY2WFg/20210129080800266.png)
 
 **图示说明**
 
-![img](https://pic.hanjiaming.com.cn/2021/01/20210129081928955.png)
+![img](https://netdesk.orcsvc.com/f/dDRqUX/20210129081928955.png)
 
 ### 无符号数的特点
 
@@ -422,13 +422,13 @@ unsigned long long：0~18446744073709551615(0~2^64-1)
 - 对于值0，有1种表示形式。
 - 一共有 2 ^n个表示形式,一共可以表示2^n个数字。
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210204153725750.png)
+![img](https://netdesk.orcsvc.com/f/1L0guK/20210204153725750.png)
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210204153709364.png)
+![img](https://netdesk.orcsvc.com/f/bVjvSM/20210204153709364.png)
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210204154623719.png)
+![img](https://netdesk.orcsvc.com/f/p80Ztn/20210204154623719.png)
 
-![img](https://pic.hanjiaming.com.cn/2021/02/20210204161954532.png)
+![img](https://netdesk.orcsvc.com/f/PaQWFe/20210204161954532.png)
 
 B2T是智能的：允许计算机对B2U和B2T使用相同的操作，B2T域中的值仍然正确（如果没有溢出）
 
@@ -456,7 +456,7 @@ CPU只计算出二进制编码，算数溢出的判断和是否中断程序的�
 
 在C++语言中，如果忽略溢出，二进制转换成十进制后有以下情况
 
-<img src="https://pic.hanjiaming.com.cn/2021/01/20210129082723785.png " width="500px">
+<img src="https://netdesk.orcsvc.com/f/rRveug/20210129082723785.png " width="500px">
 
 **避免C++语言中二进制补码算数溢出是程序员的责任（在C++中不认为无符号数字会发生溢出，这是人为规定的。）**
 

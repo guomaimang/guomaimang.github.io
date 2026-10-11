@@ -18,4 +18,4 @@ headerDepth: 1
 
 ## Exam Sample Item
 
-![1670664844663.png](https://pic.hanjiaming.com.cn/2022/12/10/426f7bc049dcf.png)
+![1670664844663.png](https://netdesk.orcsvc.com/f/kq2aUb/426f7bc049dcf.png)

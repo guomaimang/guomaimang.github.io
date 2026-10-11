@@ -12,13 +12,13 @@ category:
 
 在阿里巴巴开发规约中，明确禁止MySQL进行三表的Join关联。这一规定作为强制规范，要求每一个程序员必须遵守。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/c38f40fbb5ccf.png" alt="1735290872091.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/9Gbcm/c38f40fbb5ccf.png" alt="1735290872091.png" style="zoom:33%;" />
 
 本文将结合自身理解，详细说明这一规定的原因及其解决方案。
 
 ## 禁用多表关联的原因分析
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/959e1584de7a6.png" alt="1735290971781.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Mo3h8/959e1584de7a6.png" alt="1735290971781.png" style="zoom:33%;" />
 
 ### 产品的强制要求
 
@@ -37,7 +37,7 @@ category:
   - 小表驱动大表是 NLJ 的核心实现，但在选择小表时需要大量的CPU 运算和动态分布分析。
   - 多表嵌套查询时，MySQL 的性能较差，因此不推荐使用三表以上的关联。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/af3a7c598c86a.png" alt="1735291092378.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/n0ETj/af3a7c598c86a.png" alt="1735291092378.png" style="zoom:33%;" />
 
 ### 2.3 数据迁移和改造的困难
 
@@ -48,7 +48,7 @@ category:
   - 当订单明细表变得超大时，需要进行水平分表。
   - 水平分表后，单条 SQL 语句无法处理所有分片的数据，必须对所有分片遍历，增加了复杂性。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/1d50fcabecfd2.png" alt="1735291402290.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/ajkCq/1d50fcabecfd2.png" alt="1735291402290.png" style="zoom:25%;" />
 
 ## 多表关联的解决方案
 
@@ -56,7 +56,7 @@ category:
 
 **分散查询**：
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/6300f1045c169.png" alt="1735291505356.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/rwD6ug/6300f1045c169.png" alt="1735291505356.png" style="zoom:25%;" />
 
 - 将三表查询拆分为多个单表查询。
 - 例如，先查询A表的ID，再用这些ID查询B表，最后用B表的ID查询C表。
@@ -69,7 +69,7 @@ category:
 
 ### 反范式表 / 冗余表
 
-![1735291601770.png](https://pic.hanjiaming.com.cn/2024/12/27/0ee3322acb499.png)
+![1735291601770.png](https://netdesk.orcsvc.com/f/oLDSg/0ee3322acb499.png)
 
 - **概念**：
   - 将原始数据存储按正常方式进行，但在数据变更时，触发代码将数据写入反范式表。
@@ -87,7 +87,7 @@ category:
 
 ### 数据仓库及数据集市
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/27/2572b7ebd2328.png" alt="1735291819359.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Q5QHj/2572b7ebd2328.png" alt="1735291819359.png" style="zoom:33%;" />
 
 - **概念**：
   - 数据仓库和数据集市通过ETL（数据导出、加工和导入）过程，对数据进行加工。
@@ -101,7 +101,7 @@ category:
   - 通过倒排表（倒排索引）解决分片查询问题。
   - 例如，通过订单ID对订单明细表分片，实现高效查询。
 
-![1735291986258.png](https://pic.hanjiaming.com.cn/2024/12/27/fd84579eef2ae.png)
+![1735291986258.png](https://netdesk.orcsvc.com/f/8gQC5/fd84579eef2ae.png)
 
 ## 结论
 

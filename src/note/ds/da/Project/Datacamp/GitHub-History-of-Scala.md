@@ -99,7 +99,7 @@ Out[168]:
 <matplotlib.axes._subplots.AxesSubplot at 0x7f6ef76da0f0>
 ```
 
-![1653977457529.png](https://pic.hanjiaming.com.cn/2022/05/31/a95a00fdb5825.png)
+![1653977457529.png](https://netdesk.orcsvc.com/f/R4rMS8/a95a00fdb5825.png)
 
 ## Is there camaraderie in the project?
 
@@ -286,7 +286,7 @@ Out[178]:
 <matplotlib.axes._subplots.AxesSubplot at 0x7f6ef4ef59b0>
 ```
 
-![1653977492020.png](https://pic.hanjiaming.com.cn/2022/05/31/676edbda5763a.png)
+![1653977492020.png](https://netdesk.orcsvc.com/f/G6rRcA/676edbda5763a.png)
 
 ## Visualizing the contributions of each developer
 
@@ -318,6 +318,6 @@ Out[180]:
 <matplotlib.axes._subplots.AxesSubplot at 0x7f6ef79aacc0>
 ```
 
-![1653977513489.png](https://pic.hanjiaming.com.cn/2022/05/31/6092ef4efecb1.png)
+![1653977513489.png](https://netdesk.orcsvc.com/f/6LnAuE/6092ef4efecb1.png)
 
 Ref. The Guidance and data source are from Datacamp.

@@ -17,7 +17,7 @@ Work flow: from real-world problems to digital circuits「工作流程：从实�
 
 ## Simplification
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/00f16665b8f84.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/X556FX/00f16665b8f84.png" alt="image.png" title="image.png" />
 
 Given a Boolean expression, we may have two qustions
 
@@ -46,30 +46,30 @@ A representation of boolean function「实质：一种布尔函数的表示方�
 - each square represent a combination of input values「每个正方形代表输入值的组合」
 - for n variables, there are 2^n￼ squares「对于n个变量，有个2^n个正方形」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/efaeaf9b96d46.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/VpAwc2/efaeaf9b96d46.png" alt="image.png" title="image.png" />
 
 - each square can also represent a product term
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/ce3abfa9e2ea9.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/y3Q5iZ/ce3abfa9e2ea9.png" alt="image.png" title="image.png" />
 
 #### Example
 
 把 K-Map转换成 SOP式子
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/d09ee68d4536e.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/LQwrf2/d09ee68d4536e.png" alt="image.png" title="image.png" />
 
 #### Use for Simplification
 
 Given any boolean function, how to do simplification use Karnaugh map?
 Transform the boolean function to canonical form: each term must contain each variable「将布尔函数转换为规范形式：每个term必须包含每个变量」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/274e79c0adf55.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/KwXaCL/274e79c0adf55.png" alt="image.png" title="image.png" />
 
 ##### Operation
 
 Group “1-squares” to blocks
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/7170bd7fe6d98.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/1Lb1iK/7170bd7fe6d98.png" alt="image.png" title="image.png" />
 
 **Grouping Squares into Blocks 「将方块分组」**
 
@@ -86,11 +86,11 @@ Group “1-squares” to blocks
 
 Note: “00, 01, 11, 10” are arranged in this order such that adjacent squares differ in one variable
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/e0f6ffe72cb75.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/eDnXiq/e0f6ffe72cb75.png" alt="image.png" title="image.png" />
 
 Example
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/eaaf55ca2ba65.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/wvGdU5/eaaf55ca2ba65.png" alt="image.png" title="image.png" />
 
 以上都算相邻的
 
@@ -100,11 +100,11 @@ We wan to minimize the number of blocks「我们要最小化块数」
 
 We can reuse the 1-square to increase the size of the block「我们可以重用1平方来增加块的大小」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/e4d1af9c1699b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/3pLAH5/e4d1af9c1699b.png" alt="image.png" title="image.png" />
 
 Example 1
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/582c8291931de.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/0WvWs5/582c8291931de.png" alt="image.png" title="image.png" />
 
 Which one is better?
 
@@ -112,24 +112,24 @@ Choose blocks with larger size even there are more overlaps — the first one ca
 
 Example 2
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/46ba0ad173be9.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/OamruQ/46ba0ad173be9.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/3ebe93f31d16c.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/4229c2/3ebe93f31d16c.png" alt="image.png" title="image.png" />
 
 ##### Derive Term from Block
 
 - Each block represents a term
 - cancel the variable which has inconsistent values in the block 「取消块中值不一致的变量」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/5ab6dfe8856a1.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/LQw4C2/5ab6dfe8856a1.png" alt="image.png" title="image.png" />
 
 ##### Example
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/72ba18e7e4139.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/3pL3c5/72ba18e7e4139.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/d994af1a1fb61.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/vv5Efq/d994af1a1fb61.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/b0a3f2d691366.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/25WXTv/b0a3f2d691366.png" alt="image.png" title="image.png" />
 
 ##### Summary
 
@@ -155,14 +155,14 @@ Motivation: for some problems, we do not need to define a complete truth table
 
 for don’t care conditions, we mark the corresponding「相应的」 squares in K-map as “d”
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/a62516c47d5d6.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/JwGAf8/a62516c47d5d6.png" alt="image.png" title="image.png" />
 
 #### d-square in K-map
 
 you can specify「指定」the value of “d” (1 or blank) in the K-map
 Purpose: reduce the number of blocks & increase the size of blocks
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/914e95253c0f5.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/VpA9C2/914e95253c0f5.png" alt="image.png" title="image.png" />
 
 ## Sequential Circuits
 
@@ -207,9 +207,9 @@ S-R Latch (S-R Flip-Flop) 「S-R锁存器」
 - Use the output Q as the state of the Latch
 - it has two stable states: Q = 1 and Q = 0
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/46a5593f4dc88.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/l33lHe/46a5593f4dc88.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/c5376ec0b1d38.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/WrDlH9/c5376ec0b1d38.png" alt="image.png" title="image.png" />
 
 We can see that S-R Latch can be used as a storage element to store 1 bit (1-bit memory)「我们可以看到S-R锁存器可以用作存储1位（1位内存）的存储元素」
 
@@ -217,21 +217,21 @@ Note the feedback path in the circuit「Note the feedback path in the circuit」
 
 注：连线的地方电压相同，即表示信号相同。如下图
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/df3c99ef7bbc1.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/ZPldf2/df3c99ef7bbc1.png" alt="image.png" title="image.png" />
 
 ##### Change Input
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/3f1160950f9c3.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/p48GCn/3f1160950f9c3.png" alt="image.png" title="image.png" />
 
 ##### Characteristic Table
 
 Use characteristic table to describe a sequential circuit：describe the relations between next state (output) and input & current state「使用特性表来描述时序电路：描述下一个状态（输出）与输入和当前状态之间的关系」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/6c73c80248826.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/ZPl3S2/6c73c80248826.png" alt="image.png" title="image.png" />
 
 注：00不变，S 改 1 下一个Q为1，R 改 1下一个Q为0；S和R只有一个可以变成一，另一个必须为0；
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/6ff37fadfde5b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/eDnWtq/6ff37fadfde5b.png" alt="image.png" title="image.png" />
 
 S改1，Q有两个△t；R改1，Q有一个△t；
 
@@ -247,13 +247,13 @@ The change of inputs causes the change of states「输入的变化导致状态�
 - solution: use a clock signal such that the changes of inputs occur only when a clock pulse「时钟脉冲」 occurs「解决方案：使用时钟信号，以使输入的更改仅在出现时钟脉冲时才发生」
   - all changes are synchronized to this clock (time is digitalized「数字化」)「所有更改都同步到此时钟（时间已数字化）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/229e871cb2fec.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/bVVJSM/229e871cb2fec.png" alt="image.png" title="image.png" />
 
 How to use clock for synchronization?「如何使用时钟进行同步？」
 
 use AND gate: consider Y = X AND Clock, when Clock = 0, Y=0; when Clock = 1, Y = X
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/35bbd05034c1b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/x88JH3/35bbd05034c1b.png" alt="image.png" title="image.png" />
 
 #### Clocked S-R Flip-Flop
 
@@ -263,7 +263,7 @@ use AND gate: consider Y = X AND Clock, when Clock = 0, Y=0; when Clock = 1, Y =
 - use clock to control when to write —when the flip-flop is “triggered「触发」”「使用时钟来控制何时写入，即“触发”触发器时」
 - we use Timing Diagram「时序图」 to illustrate 「说明」the changing of input/output with respect to the clock signal「我们使用时序图来说明输入/输出相对于时钟信号的变化」「高中生物的有性生殖使用过」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/5c360c8cff032.png" alt="image.png" title="image.png" width = "200px"/>
+<img src="https://netdesk.orcsvc.com/f/y3Q1tZ/5c360c8cff032.png" alt="image.png" title="image.png" width = "200px"/>
 
 注：我们的目的就是让R和S输入的时间保持一致。
 
@@ -273,7 +273,7 @@ Edge-triggered Flip-Flops 「边缘触发的触发器」
 
 the output changes at the “edge” of the clock signal (when the clock signal changes)「输出在时钟信号的“边缘”改变（当时钟信号改变时）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/f8c1f2831440b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/JwGyS8/f8c1f2831440b.png" alt="image.png" title="image.png" />
 
 flip-flops could be positive-edge-trigged or negative edge trigged「触发器可以是正边沿触发或负边沿触发」
 
@@ -283,9 +283,9 @@ flip-flops could be positive-edge-trigged or negative edge trigged「触发器�
 
 use the bubble for indication「用气泡指示」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/02da801eebe7a.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Mkkwf8/02da801eebe7a.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/5adbada2dc219.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/m3l4t9/5adbada2dc219.png" alt="image.png" title="image.png" />
 
 #### Other Common Flip-Flops
 
@@ -294,20 +294,20 @@ use the bubble for indication「用气泡指示」
 - one problem with S-R flip-flop is that R = S = 1 should be avoid
 - D flop-flop uses a single input source: it is a S-R flip-flop with ￼S = -R
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/5752c5d3f3b1c.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/25Wlsv/5752c5d3f3b1c.png" alt="image.png" title="image.png" />
 
 - the output is always equal to the most recent input value D「the output is always equal to the most recent input value D」
 - storage for one bit of data
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/490ea72a39fcc.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/WrDDc9/490ea72a39fcc.png" alt="image.png" title="image.png" />
 
 ##### J-K Flip-Flop
 
 all combinations of two input values are valid (including 1 1)「两个输入值的所有组合均有效（包括1 1）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/faed0bb251af9.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/m3qJS9/faed0bb251af9.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/30/d65a2ed19d8d5.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/1LbXFK/d65a2ed19d8d5.png" alt="image.png" title="image.png" />
 
 ### Registers
 
@@ -320,11 +320,11 @@ all combinations of two input values are valid (including 1 1)「两个输入值
 
 注意：source of data (can use MUX to connect to multiple sources)「根据资料：可以使用MUX连接到多个源」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/31/ba11cde6dca4a.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/orJ5fg/ba11cde6dca4a.png" alt="image.png" title="image.png" />
 
 #### Example: 5-bit Shift Registers
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/31/7cdd601ebcc30.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/nwWqfj/7cdd601ebcc30.png" alt="image.png" title="image.png" />
 
 with each clock pulse, data are shifted to the right on position, and the rightmost bit is transferred out「每个时钟脉冲都会将数据移到右边的正确位置，最右边的位会被移出」
 
@@ -345,17 +345,17 @@ Ripple Counter「纹波计数器」
 An asynchronous counter is also referred to as a ripple counter「波纹计数器」
 the change that occurs to increment the counter starts at one end and “ripples” through to the other end「递增计数器所发生的变化始于一端，“波纹”直至另一端」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/31/7b224d57f61b7.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/YG4PC2/7b224d57f61b7.png" alt="image.png" title="image.png" />
 
 note: the states (outputs) of the flip-flops does not change at the same time; instead, the change ripples through to the other end「注意：触发器的状态（输出）不会同时改变。相反，变化会波及到另一端」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/31/bdaad33ba47d3.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/6LPVFE/bdaad33ba47d3.png" alt="image.png" title="image.png" />
 
 all the inputs to the JK flip-flops are 1 「JK触发器的所有输入均为1」
 the clock controls the toggling of output: if there is a clock pulse, the output is toggled「时钟控制输出的切换：如果有时钟脉冲，则切换输出」
 the JK flip-flops are sequentially connected: the output of the previous flip-flop serves as the clock (control signal) of the next flip-flop「JK触发器顺序连接：前一个触发器的输出用作下一个触发器的时钟（控制信号）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/31/b2ca0cf84ed94.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/jPvqHb/b2ca0cf84ed94.png" alt="image.png" title="image.png" />
 
 #### Synchronous Counter
 
@@ -372,9 +372,9 @@ the JK flip-flops are sequentially connected: the output of the previous flip-fl
 
 注：我们的目标是让states按照000 -> 001 -> 010 -> 011 -> 100 -> 101 -> 110 ->111 -> 000改变。（尽管前面可以用加法器进行加法）
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/31/de298fe87628c.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/95yDcm/de298fe87628c.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/31/85ee98afbc1d3.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/PvaWhe/85ee98afbc1d3.png" alt="image.png" title="image.png" />
 
 注：我们现在得到了C的表，只需按照相同的步骤得到A与B的即可，最后拼到一起。
 
@@ -384,13 +384,13 @@ Now, we can use the same way in the designing of combinatorial circuits:
 - treat each J, K as a function of A, B,C「将每个J，K视为A，B，C的函数」
 - then construct a Karnaugh map for each J, K「然后为每个J，K构造一个卡诺图」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/31/f6225eada68e7.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/gkx0FX/f6225eada68e7.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/31/c9b1f171b107b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/ql3ZfJ/c9b1f171b107b.png" alt="image.png" title="image.png" />
 
 Exercise after class: draw the timing diagram for this sequential circuit (how A, B, C would change with Clock?)「课后练习：画出该时序电路的时序图（A，B，C随时钟如何变化？）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/31/fea3c77366af1.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/rKw0ug/fea3c77366af1.png" alt="image.png" title="image.png" />
 
 
 

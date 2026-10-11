@@ -30,7 +30,7 @@ Fitts 定律指出，一个人将指针（例如，鼠标光标）移动到目�
 
 :::
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/30/66dc171779167.png" alt="1669818920876.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/y3YlsZ/66dc171779167.png" alt="1669818920876.png" style="zoom:50%;" />
 
 形成性（在系统开发期间，通常基于原型）
 
@@ -102,7 +102,7 @@ Fitts 定律指出，一个人将指针（例如，鼠标光标）移动到目�
 
 构建与测量，我们能直接测量/观察到它吗？
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/30/d61c1e0684155.png" alt="1669823784491.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ZlXef2/d61c1e0684155.png" alt="1669823784491.png" style="zoom:50%;" />
 
 在人机交互研究中，可以很容易地对变量进行量化的例子
 

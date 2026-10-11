@@ -21,7 +21,7 @@ Code reuse due to single language across both client and server side -> (Non-)De
 - JIT Compilation (ref in L3): Compiled to binary, and runs like executable ("binds" to libraries in C++)
 - Thread pool to handle parallel (non-blocking) I/O tasks ( , )
 
-![预览 2025-04-06 21.59.03.png](https://pic.hanjiaming.com.cn/2025/04/06/d1d607f42917f.png)
+![预览 2025-04-06 21.59.03.png](https://netdesk.orcsvc.com/f/JRYT8/d1d607f42917f.png)
 
 HTTP is a first class citizen in node () : Built-in HTTP library, doing away with Apache/IIS/Nginx
 

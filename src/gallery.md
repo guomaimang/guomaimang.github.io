@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: Hirsun's Album
-heroImage: https://pic.hanjiaming.com.cn/2022/07/29/dfd64ce8fee39.png
+heroImage: https://netdesk.orcsvc.com/f/5Xn5TV/dfd64ce8fee39.png
 heroText: Hirsun's Album
 tagline:  Albums of mine and my friends.
 actions:

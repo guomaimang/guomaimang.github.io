@@ -91,7 +91,7 @@ A 创建一笔交易，该交易包含以下信息：
 
 Ref. https://www.blockchain.com/explorer/transactions/btc/0627052b6f28912f2703066a912ea577f2ce4da4caa5a5fbd8a57286c345c2f2
 
-![XKCk9_oHOYK5V7DeLfTax.png](https://pic.hanjiaming.com.cn/2024/10/10/00890c7ae1d26.png)
+![XKCk9_oHOYK5V7DeLfTax.png](https://netdesk.orcsvc.com/f/2jeiv/00890c7ae1d26.png)
 
 ## 矿工的经济动机
 

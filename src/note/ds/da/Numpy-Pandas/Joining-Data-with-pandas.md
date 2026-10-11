@@ -16,30 +16,30 @@ order: 4
 - Tables = DataFrames
 - Merging = Joining
 
-![CleanShot 2022-05-07 at 22.58.04@2x.png](https://pic.hanjiaming.com.cn/2022/05/07/d5f7c4aa03ce9.png)
+![CleanShot 2022-05-07 at 22.58.04@2x.png](https://netdesk.orcsvc.com/f/gkwmIX/d5f7c4aa03ce9.png)
 
 ## Inner join
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/443f1ec136655.png" alt="1643835100715.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/qlk8SJ/443f1ec136655.png" alt="1643835100715.png" style="zoom: 25%;" />
 
 指定检查列，将数据（或pair）相同的行进行连接并保留。
 
-![1643834981023.png](https://pic.hanjiaming.com.cn/2022/02/03/812d4308c5135.png)
+![1643834981023.png](https://netdesk.orcsvc.com/f/k85ZSb/812d4308c5135.png)
 
 ```python
 wards_census = wards.merge(census, on=['ward'])
 print(wards_census.head(4))
 ```
 
-![1643835047555.png](https://pic.hanjiaming.com.cn/2022/02/03/69b14c0e2ed60.png)
+![1643835047555.png](https://netdesk.orcsvc.com/f/PvnKhe/69b14c0e2ed60.png)
 
 ## Suffixes
 
-![1643835285745.png](https://pic.hanjiaming.com.cn/2022/02/03/840fac9cdcc80.png)
+![1643835285745.png](https://netdesk.orcsvc.com/f/ERoOUd/840fac9cdcc80.png)
 
 用于给相同的列名称加上自定义后缀以区分。
 
-![1643835216850.png](https://pic.hanjiaming.com.cn/2022/02/03/aacae5f5bb6c0.png)
+![1643835216850.png](https://netdesk.orcsvc.com/f/KwVEHL/aacae5f5bb6c0.png)
 
 ## Left Join
 
@@ -49,27 +49,27 @@ print(wards_census.head(4))
 wards_census = wards.merge(census,how = "left", on=['ward'])
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/1333c517c6827.png" alt="1643836148052.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/1LdAiK/1333c517c6827.png" alt="1643836148052.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/21ad295fc8b2d.png" alt="1643836056187.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Vp98F2/21ad295fc8b2d.png" alt="1643836056187.png" style="zoom:50%;" />
 
 right join 则反之
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/e0f3a698c0247.png" alt="CleanShot 2022-02-03 at 05.09.26@2x.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Vpm8H2/e0f3a698c0247.png" alt="CleanShot 2022-02-03 at 05.09.26@2x.png" style="zoom:50%;" />
 
 ### Merging a table to itself
 
 Merging a table to itself with left join
 
-![1643836656871.png](https://pic.hanjiaming.com.cn/2022/02/03/446fffe656d0c.png)
+![1643836656871.png](https://netdesk.orcsvc.com/f/3pdRu5/446fffe656d0c.png)
 
 ## Outer join
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/fdc2972e2480f.png" alt="1643836228510.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/1LGMHK/fdc2972e2480f.png" alt="1643836228510.png" style="zoom:50%;" />
 
 将左右进行连接，并保留没有被连接的行。
 
-![1643836325823.png](https://pic.hanjiaming.com.cn/2022/02/03/f1bf80262bc7a.png)
+![1643836325823.png](https://netdesk.orcsvc.com/f/JwA4h8/f1bf80262bc7a.png)
 
 ## 自定义检查列
 
@@ -81,7 +81,7 @@ original_sequels = sequels.merge(sequels, left_on='sequel', right_on='id', suffi
 
 ### 对比
 
-![1643838808744.png](https://pic.hanjiaming.com.cn/2022/02/03/5c5964f95ec59.png)
+![1643838808744.png](https://netdesk.orcsvc.com/f/AM5lCy/5c5964f95ec59.png)
 
 注意 默认的连接方法是outer join
 
@@ -89,7 +89,7 @@ original_sequels = sequels.merge(sequels, left_on='sequel', right_on='id', suffi
 pd.merge_ordered(appl, mcd, on='date', suffixes=('_aapl','_mcd'), fill_method='ffill') # 指定空数据是用前一个值
 ```
 
-![1643838945816.png](https://pic.hanjiaming.com.cn/2022/02/03/c0f11351a6077.png)
+![1643838945816.png](https://netdesk.orcsvc.com/f/0WGwf5/c0f11351a6077.png)
 
 ## merge_asof()
 
@@ -104,13 +104,13 @@ pd.merge_asof(visa, ibm, on=['date_time'],suffixes=('_visa','_ibm'),direction='f
 # 匹配右边中不大于左边且最接近左边
 ```
 
-![1643839163865.png](https://pic.hanjiaming.com.cn/2022/02/03/cd870c6068163.png)
+![1643839163865.png](https://netdesk.orcsvc.com/f/y3rlFZ/cd870c6068163.png)
 
 ## 变体应用
 
 ### semi-join
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/16a6c08f7cbee.png" alt="1643837527273.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/DaPrte/16a6c08f7cbee.png" alt="1643837527273.png" style="zoom:50%;" />
 
 ```python
 genres_tracks = genres.merge(top_tracks, on='gid')
@@ -120,7 +120,7 @@ print(top_genres.head())
 
 ### anti-join
 
-![1643837583407.png](https://pic.hanjiaming.com.cn/2022/02/03/3b788bbdaa1c9.png)
+![1643837583407.png](https://netdesk.orcsvc.com/f/jPL2cb/3b788bbdaa1c9.png)
 
 ```python
 genres_tracks = genres.merge(top_tracks, on='gid', how='left', indicator=True)
@@ -133,19 +133,19 @@ print(non_top_genres.head())
 
 **垂直拼接**
 
-![1643837717984.png](https://pic.hanjiaming.com.cn/2022/02/03/3a50db8e6e9f1.png)
+![1643837717984.png](https://netdesk.orcsvc.com/f/ZPwoI2/3a50db8e6e9f1.png)
 
 ```python
 pd.concat([inv_jan, inv_feb, inv_mar], ignore_index=True)
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/1aeace29d36cf.png" alt="1643837798141.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/LQjkc2/1aeace29d36cf.png" alt="1643837798141.png" style="zoom:33%;" />
 
 ```python
 pd.concat([inv_jan, inv_feb, inv_mar],ignore_index=False,keys=['jan','feb','mar'])
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/02/03/d556e8076db72.png" alt="1643837892698.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/25Gwtv/d556e8076db72.png" alt="1643837892698.png" style="zoom:33%;" />
 
 ### sort
 
@@ -173,7 +173,7 @@ inv_jan.append([inv_feb, inv_mar],ignore_index=True,sort=True)
 
 ### 为什么要有条件
 
-![1643838478347.png](https://pic.hanjiaming.com.cn/2022/02/03/f4aaf381ef6e3.png)
+![1643838478347.png](https://netdesk.orcsvc.com/f/y3r2uZ/f4aaf381ef6e3.png)
 
 Why: 
 

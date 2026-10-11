@@ -21,7 +21,7 @@ index: 3
 
 具体的实现如下图所示。
 
-<img src="https://pic.hanjiaming.com.cn/2022/04/18/bf0f73f47bc3a.png" alt="1650261914706.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/wvoEh5/bf0f73f47bc3a.png" alt="1650261914706.png" style="zoom:50%;" />
 
 ## MIME
 

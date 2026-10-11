@@ -53,7 +53,7 @@ headerDepth: 1
 - Unnecessary network traffic generated
 - Extra workload on the server
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/09/29adb2c711866.png" alt="1731146674274.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/qqY8TJ/29adb2c711866.png" alt="1731146674274.png" style="zoom:33%;" />
 
 ::: info Examples
 
@@ -88,7 +88,7 @@ Streaming（HTTP 流式返回）支持客户端发送一个请求，然后服务
 - Data is sent from the server a **chunked block**
 - 事件会逐步发送到浏览器（例如，使用 `<script>` 标签执行JavaScript命令）
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/09/147408e758f9a.png" alt="1731158919823.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/o8YxSg/147408e758f9a.png" alt="1731158919823.png" style="zoom:33%;" />
 
 这种方法可以实现几乎实时的通信，但在处理 Comet 场景下的长时间打开的连接时可能会遇到一些挑战，例如连接超时和内存管理问题。
 
@@ -99,7 +99,7 @@ Streaming（HTTP 流式返回）支持客户端发送一个请求，然后服务
 - 客户端在收到响应后，立即向服务器发出另一个请求
 - （通常使用Ajax实现）
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/10/0d2aec06f6c29.png" alt="1731172410517.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/A00lfy/0d2aec06f6c29.png" alt="1731172410517.png" style="zoom:50%;" />
 
 这相当于服务器与每个客户终端打开至少一个 TCP 连接。
 
@@ -131,7 +131,7 @@ BOSH协议允许双向通信，并且利用HTTP长轮询技术，可以确保客
 
 ### XMPP
 
-![1731176303711.png](https://pic.hanjiaming.com.cn/2024/11/10/3bda209437769.png)
+![1731176303711.png](https://netdesk.orcsvc.com/f/GMMpCA/3bda209437769.png)
 
 - XMPP是“可扩展消息与状态协议” 「Extensible Messaging and Presence Protocol」的缩写
   - 这意味着XMPP是一种协议，允许用户发送和接收消息，并查看其他用户的在线状态。
@@ -157,7 +157,7 @@ BOSH协议允许双向通信，并且利用HTTP长轮询技术，可以确保客
 - 在移动设备和推送服务器之间建立了一个持久的TCP连接。
 - 应用程序请求推送服务器在必要时向客户端推送消息。
 
-![1731176511014.png](https://pic.hanjiaming.com.cn/2024/11/10/7447b8ee5ce61.png)
+![1731176511014.png](https://netdesk.orcsvc.com/f/83qXT5/7447b8ee5ce61.png)
 
 Google 和 Apple 提供的推送通知服务是向应用程序推送消息的标准化方式
 
@@ -175,7 +175,7 @@ Firebase（ https://firebase.google.com/ ）是一个平台和一系列支持构
 
 ### FCM Architectural Overview
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/10/92ef573145d30.png" alt="1731218508157.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/a8bruq/92ef573145d30.png" alt="1731218508157.png" style="zoom: 33%;" />
 
 ### Notification vs. Data Messages
 
@@ -187,7 +187,7 @@ With FCM, you can send two types of messages to clients:
 - 数据消息，由客户端应用程序处理。
   - （后台或前台的应用程序）客户端应用程序在回调函数中接收数据有效负载。
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/10/0d9d2e2a75c40.png" alt="1731218871818.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/r8RRtg/0d9d2e2a75c40.png" alt="1731218871818.png" style="zoom:50%;" />
 
 
 

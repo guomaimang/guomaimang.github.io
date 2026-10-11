@@ -26,7 +26,7 @@ This project collects data about Youtube Trending Video over the past two years,
 - [x] Online deployment simulation available 🌌
 - [x] Wide range of applications 🌎
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/31/2172e0183af97.png" alt="CleanShot 2022-05-31 at 00.36.19@2x.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/JwJdF8/2172e0183af97.png" alt="CleanShot 2022-05-31 at 00.36.19@2x.png" style="zoom: 25%;" />
 
 ## Portal
 

@@ -55,7 +55,7 @@ Started from a probabilistic 「概率性的」algorithm “KeyGen” that gener
 - 要签名，请使用私有（签名）密钥 sk
 - 要进行验证，请使用公共（验证）密钥 pk
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/05/7a3c61b2686ad.png" alt="1728129988494.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/ZRms2/7a3c61b2686ad.png" alt="1728129988494.png" style="zoom:50%;" />
 
 ## E-Cash Issuance
 

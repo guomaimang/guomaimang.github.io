@@ -14,7 +14,7 @@ order: 3
 sns.catplot(x="day", y="total_bill",data=tips,kind="bar")
 ```
 
-![1654241988121.png](https://pic.hanjiaming.com.cn/2022/06/03/aa4f6fef8865a.png)
+![1654241988121.png](https://netdesk.orcsvc.com/f/6PYZiE/aa4f6fef8865a.png)
 
 - Lines(也叫误差线) show 95% confidence intervals for the mean
 - Shows uncertainty about our estimate
@@ -26,7 +26,7 @@ sns.catplot(x="day", y="total_bill",data=tips,kind="bar")
 
 例如，我要统计中国18岁及以上年龄男性的身高均值。我们不可能去搜集全中国所有符合条件的人的身高，但是这个总体的平均值肯定存在。为了得到这个总体的信息，我们通过抽样的方法得到样本信息，然后来估计总体信息。
 
-![1654242341677.png](https://pic.hanjiaming.com.cn/2022/06/03/0eb56b3c81f19.png)
+![1654242341677.png](https://netdesk.orcsvc.com/f/5X4vfV/0eb56b3c81f19.png)
 
 图中每一个横短线代表一个样本的置信区间，除了一个红色的那条线，其他黑色的线都包含了总体平均值。如果我们抽了100个样本，得到100个这样的区间，其中有95个区间包含了总体样本平均值，那我们就可以说这个包含所有样本区间的某个大区间内的置信水平为95%。
 
@@ -46,7 +46,7 @@ sns.catplot(x="day", y="total_bill",data=tips,kind="bar")
 - 此时样本分布趋近于正态分布，因此它符合中心极限定理。
 - 下面以计算全国成年男性的平均身高为例，假设抽取样本100人，平均值167.1cm，标准差0.2cm。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/88b390d29d4c4.png" alt="1654242474870.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/vvJKfq/88b390d29d4c4.png" alt="1654242474870.png" style="zoom:50%;" />
 
 ### 第3步：确定置信水平
 
@@ -67,7 +67,7 @@ sns.catplot(x="day", y="total_bill",data=tips,kind="bar")
 
 即概率P(Z<Za)=2.5%。
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/03/bea39e90bbd87.png" alt="1654242689719.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/v5XEUq/bea39e90bbd87.png" alt="1654242689719.png" style="zoom: 67%;" />
 
 ## Ref
 

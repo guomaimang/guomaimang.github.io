@@ -56,7 +56,7 @@ Language 是一个**集合**，因此所有集合操作都可以应用于 Langua
 
 Particularly union「交集」, concatenation「并集」, Kleene closure, and positive closure「即不含 𝜀」.
 
-![1667927831142.png](https://pic.hanjiaming.com.cn/2022/11/09/529618f0c47f4.png)
+![1667927831142.png](https://netdesk.orcsvc.com/f/VpjXi2/529618f0c47f4.png)
 
 ::: tip
 
@@ -70,11 +70,11 @@ Kleene closure ≻ concatenation ≻ union
 
 Examples for operations on languages, Given 𝐿 = \{a,b\} and 𝑀 = \{a,bb\}
 
-![241b4e311a783.png](https://pic.hanjiaming.com.cn/2022/11/09/66c9ef3e15daf.png)
+![241b4e311a783.png](https://netdesk.orcsvc.com/f/DAgVse/66c9ef3e15daf.png)
 
 Another example for operations on languages,
 
-<img src="https://pic.hanjiaming.com.cn/2022/11/09/ba5f8a1a995f7.png" alt="1667929110706.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/1LqAFK/ba5f8a1a995f7.png" alt="1667929110706.png" style="zoom:33%;" />
 
 ## 正则表达式
 
@@ -125,7 +125,7 @@ NUM → DIGITS OPTIONAL_FRAC OPTIONAL_EXP
 2. Zero or one instance: $r ? \stackrel{\text { def }}{=} r \mid \varepsilon$
 3. Character classes: $[a-z] \stackrel{\text { def }}{=} a|b| c|\ldots| z,[0-9] \stackrel{\text { def }}{=} 0|1| \ldots \mid 9$
 
-![1667963826783.png](https://pic.hanjiaming.com.cn/2022/11/09/e780659e5ce27.png)
+![1667963826783.png](https://netdesk.orcsvc.com/f/ZPgoU2/e780659e5ce27.png)
 
 
 

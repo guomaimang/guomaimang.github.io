@@ -8,9 +8,9 @@ index: 1
 
 ## Computer components revisited
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/b306fada01c11.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/PvDdIe/b306fada01c11.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/70b7fd8eb1e55.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/OaW6HQ/70b7fd8eb1e55.png" alt="image.png" title="image.png" />
 
 ## Computer Memory 
 
@@ -59,7 +59,7 @@ Memory can be categorized「分类」 from many aspects「方面」
 
 example: tape「磁带」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/3d59e9efb4597.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/M2M2u8/3d59e9efb4597.png" alt="image.png" title="image.png" />
 
 ##### Direct Access/Random Access
 - each location in the memory has a unique address「内存中的每个位置都有一个唯一的地址」
@@ -67,7 +67,7 @@ example: tape「磁带」
 - random access often refers to main memory or cache「随机访问通常是指主内存或缓存」
 - the time to access a given location is typically independent of the sequence of prior accesses and is often constant「访问给定位置的时间通常与先前访问的顺序无关，并且通常是恒定的」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/a0bd5e5c66dbb.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/wv50h5/a0bd5e5c66dbb.png" alt="image.png" title="image.png" />
 
 #### Access Time (latency)
 
@@ -109,9 +109,9 @@ Physical features -- Erasable vs. Non-erasable
 - erasable: can be deleted or rewritten with new data, e.g., registers, hard drive
 - non-earsable: cannot be delelted/rewritten, e.g., ROM (Read Only Memory), CD
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/e2098839ffa27.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/LQOYF2/e2098839ffa27.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/04b38cc8be69f.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/QaG6Tj/04b38cc8be69f.png" alt="image.png" title="image.png" />
 
 ## Memory Hierarchy
 
@@ -129,7 +129,7 @@ example: Program Counter register
 
 Access latency「存取延迟」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/4b4054871af47.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/42ZJt2/4b4054871af47.png" alt="image.png" title="image.png" />
 
 - Time used by CPU to execute one instruction
   - 1 cycle for most instructions (1GHz CPU, 1 cycle = 10-9s)
@@ -140,7 +140,7 @@ Access latency「存取延迟」
 
 The gap「间隙」 between CPU, main memory and disks
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/68881ede4ffdd.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/p8XZun/68881ede4ffdd.png" alt="image.png" title="image.png" />
 
 Solve the problem: a fast CPU is wasted by waiting for slow memory?
 
@@ -167,7 +167,7 @@ During some specific time period, processor wants to access a portion of main me
 
 Over time, processor accesses different clusters「随着时间的流逝，处理器访问不同的集群」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/1ad834c46e638.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/rKWmIg/1ad834c46e638.png" alt="image.png" title="image.png" />
 
 #### Concept
 
@@ -181,21 +181,21 @@ THINK: WHY LOCALITY EXISTS?
 
 Hit Ratio: the fraction of accesses involving only Level-1
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/7c3301409c48a.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/q3WZiJ/7c3301409c48a.png" alt="image.png" title="image.png" />
 
 Conclusion-- increase the hit ratio
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/3044bb32a2838.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/wGXdh5/3044bb32a2838.png" alt="image.png" title="image.png" />
 
 #### Examples of locality
 
 To compute the sum of all elements in an 2-D array
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/be300de3c3488.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/y31VTZ/be300de3c3488.png" alt="image.png" title="image.png" />
 
 同时我们发现数组是按x-y-z的维度存储的。所以，当我们使用下面的算法时
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/cb956aaadce82.png" alt="image.png" title="image.png" width = "240px"/>
+<img src="https://netdesk.orcsvc.com/f/1LrQuK/cb956aaadce82.png" alt="image.png" title="image.png" width = "240px"/>
 
 就是 BAD LOCALITY
 
@@ -225,19 +225,19 @@ They are essentially the same, as instructions are special data stored in memory
 
 ### Cache Memory
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/5cecb7a84188e.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/KXQQuL/5cecb7a84188e.png" alt="image.png" title="image.png" />
 
 这里冰箱就相当于 Cache Memory
 
 Caching idea：Adding a small but fast memory inside the CPU
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/0f77d2ce106a8.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/3L6AH5/0f77d2ce106a8.png" alt="image.png" title="image.png" />
 
 cache是一行一行的。我们认为 cache 每行长度 = 内存每个block大小。
 
 #### Concept
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/e9c84f5447c5a.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/vv1YTq/e9c84f5447c5a.png" alt="image.png" title="image.png" />
 
 Cache is fast but has relatively small capacity.「缓存速度快，但容量相对较小。」
 
@@ -264,9 +264,9 @@ The unit of data loading is “one block”：One block contains two data variab
   - Cache hit: 1 cycle「缓存命中：1个周期」
   - 「缓存未命中：200个周期」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/a3d302d2fa796.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/or9rfg/a3d302d2fa796.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/3292afeed1f5b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/MkpES8/3292afeed1f5b.png" alt="image.png" title="image.png" />
 
 Performance with cache：Access time = 1 * 15 + 5 * 200 = 1015 cycles
 Performance without cache：Access time = 200 * 20 = 4000 cycles
@@ -275,19 +275,19 @@ Performance without cache：Access time = 200 * 20 = 4000 cycles
 
 Multiple-Level Cache Organization 图示
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/7f000345e3c0a.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/oJp5fg/7f000345e3c0a.png" alt="image.png" title="image.png" />
 
 #### Application
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/27/c5fa8774ea8cc.png" alt="CleanShot 2021-04-27 at 12.31.42@2x.png" title="CleanShot 2021-04-27 at 12.31.42@2x.png" width="300px"/>
+<img src="https://netdesk.orcsvc.com/f/ERXASd/c5fa8774ea8cc.png" alt="CleanShot 2021-04-27 at 12.31.42@2x.png" title="CleanShot 2021-04-27 at 12.31.42@2x.png" width="300px"/>
 
 ### Structure of a Cache/Main-Memory System
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/305fa65e5042d.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/ERbPId/305fa65e5042d.png" alt="image.png" title="image.png" />
 
 The Cache consists of m **lines,** where each line has a length of K words (the size of one block in memory)「cache 由m行组成，其中每行的长度为K个字（内存中一个块的大小）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/7ff4348d3fede.png" alt="image.png" title="image.png" width = "350px" />
+<img src="https://netdesk.orcsvc.com/f/0WEaU5/7ff4348d3fede.png" alt="image.png" title="image.png" width = "350px" />
 
 **m lines** in Cache vs. **M blocks** in Memory **(m <<M)**
 
@@ -297,11 +297,11 @@ One cache line cannot be permanently allocated to one memory block -- use the ta
 
 Illustration of Cache Read Operation 如下
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/b886280cea662.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/WrAnc9/b886280cea662.png" alt="image.png" title="image.png" />
 
 Typical Cache Organization 如下图
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/fbde1110fca38.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/ZPAes2/fbde1110fca38.png" alt="image.png" title="image.png" />
 
 Mapping Function——Basic Elements of Cache Design
 
@@ -309,7 +309,7 @@ Mapping Function——Basic Elements of Cache Design
 
 The essential problem we want to address: map M memory blocks to m cache lines (m << M)——mapping function「我们要解决的基本问题：将M个内存块映射到m个缓存行（m << M）-映射功能」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/5836c70fcf801.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/DayVte/5836c70fcf801.png" alt="image.png" title="image.png" />
 
 A mapping function defines where the needed blocks in memory are loaded to Cache (M blocks, m positions)「映射功能定义将内存中所需的块加载到高速缓存的位置（M个块，m个位置）」
 
@@ -330,7 +330,7 @@ How can we know who is currently sitting in seat i (i 0 to 9)?「我们如何知
 
 a student can use the first 7 digits as a tag -- the tag is unique for that particular student「一个学生可以使用前7位数字作为标签-该标签对于该特定学生是唯一的」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/7d57e6b79307c.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/6PQViE/7d57e6b79307c.png" alt="image.png" title="image.png" />
 
 SID = memory address (tag in cache is a portion of memory address)「SID =内存地址（缓存中的标签是内存地址的一部分）」
 
@@ -339,7 +339,7 @@ SID = memory address (tag in cache is a portion of memory address)「SID =内存
 - Use main memory address to implement direct mapping「使用 main memory address 实现直接映射」
 - bear in mind that Cache line = Memory Block (they contain the same number of words)「请记住，缓存行=内存块（它们包含相同数量的字）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/08/e95e52739c8a3.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/AMpWfy/e95e52739c8a3.png" alt="image.png" title="image.png" />
 
 注意：这并不违背地址编号的相关知识。原因是s+w并不会占满所有的比特位。
 
@@ -347,7 +347,7 @@ SID = memory address (tag in cache is a portion of memory address)「SID =内存
 
 How would the cache interpret「解释」 main memory address?
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/08/a3495e9188da5.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/G6KetA/a3495e9188da5.png" alt="image.png" title="image.png" />
 
 Example：s = 4 bits, r = 2 bits
 
@@ -381,7 +381,7 @@ How does CPU access a word?
    - if (s-r)  match, the line stores the desired block; use w bits to identify the desired word
    - if  (s-r) no match, access the memory, copy the block to the line
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/08/3b73fd74b3948.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/6LxZCE/3b73fd74b3948.png" alt="image.png" title="image.png" />
 
 ###### Example
 
@@ -424,13 +424,13 @@ Settings:
 - address is 24 bits = 22 bits (s) + 2 bits (w)
 - Tag: 22 bits
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/08/36cf701400133.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/qlnqSJ/36cf701400133.png" alt="image.png" title="image.png" />
 
 ###### Implementation
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/08/33bb201d268c5.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/956Yhm/33bb201d268c5.png" alt="image.png" title="image.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/08/15af32c54ea74.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/JwlpH8/15af32c54ea74.png" alt="image.png" title="image.png" />
 
 A block can be mapped to any line in cache! What if the cache is full?
 
@@ -505,7 +505,7 @@ Design considerations of caches
   - Replacement policy: if cache is full, new data going in, evict which data?「替换策略：如果缓存已满，则有新数据进入，逐出哪些数据？」
     - Intuition「直觉」: keep the data being used in the near future in cache「直觉：将数据在不久的将来保存在缓存中」But, how do we know which data will be used in the near future?「但是，我们如何知道不久的将来将使用哪些数据？」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/64de54be53967.png" alt="image.png" title="image.png" width ="240px" />
+<img src="https://netdesk.orcsvc.com/f/DA6yte/64de54be53967.png" alt="image.png" title="image.png" width ="240px" />
 
 - To efficiently find a data item in the cache
   - Find 1 data in 1000 candidates? Takes too long!
@@ -516,7 +516,7 @@ Design considerations of caches
 
 对硬件设计的影响–存储层次结构
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/28b3ee018d930.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/kqbGtb/28b3ee018d930.png" alt="image.png" title="image.png" />
 
 - Conceptually「从概念上讲」, level K can be viewed as a cache of level K+1, storing a subset of K'data in level K+1
 - If caching policies are smartly designed, most of the time, cache accesses will be hit
@@ -524,7 +524,7 @@ Design considerations of caches
   如果对缓存策略进行了精心设计，那么在大多数情况下，缓存访问将受到影响
   就像我们有一个内存系统可以以最高级别的速度工作，但拥有最低级别的存储空间并且价格却相当低」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/07/00e40e65b1134.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/bVp1hM/00e40e65b1134.png" alt="image.png" title="image.png" />
 
 ## Replacement Policy
 

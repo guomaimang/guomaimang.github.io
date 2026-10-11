@@ -49,7 +49,7 @@ headerDepth: 2
 - 集成和系统测试
 - 操作和维护
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/b6286c6e6fd05.png" alt="1670990671778.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/rwM6fg/b6286c6e6fd05.png" alt="1670990671778.png" style="zoom: 50%;" />
 
 瀑布模型的主要缺点是很难在流程进行后适应变化。原则上，在进入下一阶段之前，必须完成一个阶段的工作。
 
@@ -69,7 +69,7 @@ headerDepth: 2
 - 这种方法可以是计划驱动的，也可以是敏捷的，或者更通常的是这些方法的混合。
 - 您不必将每个增量交付给系统客户。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/0d10da9f39648.png" alt="1671004591587.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/A6vZsy/0d10da9f39648.png" alt="1671004591587.png" style="zoom:50%;" />
 
 - Benefits
   - 适应不断变化的客户要求的成本降低了。
@@ -94,7 +94,7 @@ headerDepth: 2
 
 #### Reuse-Oriented
 
-![1671005373353.png](https://pic.hanjiaming.com.cn/2022/12/14/735c8a8dd6074.png)
+![1671005373353.png](https://netdesk.orcsvc.com/f/oJMkTg/735c8a8dd6074.png)
 
 #### Advantages and disadvantages
 
@@ -121,7 +121,7 @@ headerDepth: 2
 - Requirements specification: 详细定义需求
 - Requirements validation: 检查要求的有效性
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/8742ed13d4ca2.png" alt="1671005810209.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/JGAlS8/8742ed13d4ca2.png" alt="1671005810209.png" style="zoom:50%;" />
 
 ## Software Development
 
@@ -137,7 +137,7 @@ headerDepth: 2
 - 接口设计，您可以在其中定义系统组件之间的接口。
 - 组件选择和设计，在这里你要搜索可重用的组件，如果没有合适的组件，就设计新的软件组件。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/67fcdea5e91ce.png" alt="1671006151145.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/5VErsV/67fcdea5e91ce.png" alt="1671006151145.png" style="zoom:50%;" />
 
 ## System Implementation
 
@@ -156,7 +156,7 @@ Verification and validation (V&V)is intended to show that a system conforms to i
 - 系统测试：对系统进行整体测试。涌现特性的测试尤为重要。
 - 客户测试：使用客户数据进行测试，以检查系统是否满足客户的需求。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/5e3a856af24c0.png" alt="1671006673993.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/1bGKcK/5e3a856af24c0.png" alt="1671006673993.png" style="zoom:33%;" />
 
 ## Software Evolution
 
@@ -166,7 +166,7 @@ Verification and validation (V&V)is intended to show that a system conforms to i
 - 虽然开发和演化（维护）之间一直存在着分界线，但随着越来越少的系统是全新的，这种区分也越来越不重要。
 - 把软件工程看作是一个进化的过程更为现实，在这个过程中，软件会根据不断变化的需求和客户的需要而不断地改变。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/64d4e123cb872.png" alt="1671013262634.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/kqMdTb/64d4e123cb872.png" alt="1671013262634.png" style="zoom: 33%;" />
 
 ## Coping with Change
 
@@ -218,7 +218,7 @@ Benefits
 - Improved maintainability.
 - Reduced development effort.
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/acf6a8c483eef.png" alt="1671015097649.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/nWRVSj/acf6a8c483eef.png" alt="1671015097649.png" style="zoom: 33%;" />
 
 - 可能基于快速原型设计语言或工具
 - 可能涉及遗漏的功能
@@ -233,7 +233,7 @@ Benefits
 - 用户需求被优先考虑，最高优先级的需求被包含在早期的增量中。
 - 一旦开始开发一个增量，需求就被冻结了，尽管以后的增量的需求可以继续发展。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/14/1b6e837ff9af7.png" alt="1671015636405.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/PaEQCe/1b6e837ff9af7.png" alt="1671015636405.png" style="zoom:50%;" />
 
 #### Advantages
 

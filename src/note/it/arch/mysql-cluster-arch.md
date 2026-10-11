@@ -26,7 +26,7 @@ category:
 
 ## 读写分离模式
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/dace8ca4f9124.png" alt="1734517169939.png" style="zoom:40%;" />
+<img src="https://netdesk.orcsvc.com/f/vP3Uq/dace8ca4f9124.png" alt="1734517169939.png" style="zoom:40%;" />
 
 **架构**:
 
@@ -46,7 +46,7 @@ category:
 
 ## 分库分表模式 (Sharding)
 
- <img src="https://pic.hanjiaming.com.cn/2024/12/18/d528985e8616c.png" alt="1734517260389.png" style="zoom:33%;" />
+ <img src="https://netdesk.orcsvc.com/f/1eKcK/d528985e8616c.png" alt="1734517260389.png" style="zoom:33%;" />
 
 **架构**:
 
@@ -67,18 +67,18 @@ category:
 
 **范围法**: 按数据范围划分，适合范围检索，但可能导致数据不均匀。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/efc94489552d2.png" alt="1734517421813.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ye9hZ/efc94489552d2.png" alt="1734517421813.png" style="zoom:33%;" />
 
 **哈希法**: 数据均匀分布，适合大型互联网应用，但扩展困难。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/18/194ca738efc78.png" alt="1734517405448.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/3VLc5/194ca738efc78.png" alt="1734517405448.png" style="zoom:33%;" />
 
 ## 综合应用  -> 组合方案:
 
 - **读写分离 + 分片**: 结合两者优点，适用于大规模互联网应用。
 - **高可用性**: 配合 MHA、MDR 等方案，确保系统稳定可靠。
 
-![Typora 2024-12-18 18.22.41.png](https://pic.hanjiaming.com.cn/2024/12/18/13a8879647b78.png)
+![Typora 2024-12-18 18.22.41.png](https://netdesk.orcsvc.com/f/Z2Ph2/13a8879647b78.png)
 
 ## 总结
 

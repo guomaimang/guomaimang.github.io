@@ -36,7 +36,7 @@ category:
 
 ### 并发性问题
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/e8071edb86ae1.png" alt="1734955472935.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/WYkXS9/e8071edb86ae1.png" alt="1734955472935.png" style="zoom:33%;" />
 
 - **行级锁**：外键约束会启用行级锁，主表在写入时会进入阻塞状态。 
 - **共享锁与写锁**：在并发环境下，每次由订单明细表向订单表检查关系时，会在订单表开启共享锁（读锁）。
@@ -44,14 +44,14 @@ category:
 
 ### 级联删除的问题
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/d42802afd8846.png" alt="1734955615211.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/wamlT5/d42802afd8846.png" alt="1734955615211.png" style="zoom:33%;" />
 
 - **多层级联删除**：多层级联删除会让数据变得不可控。例如，删除订单类型表中的一条数据，会级联删除订单表和订单明细表中的相关数据，导致数据流向不可控，无法追溯。
 - **触发器问题**：**触发器在实际开发中也是严格禁用的**，因为它们会在某个字段上绑定触发条件，导致数据操作不可控。
 
 ### 数据库层面的耦合
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/6ac5870564d52.png" alt="1734955811231.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/0plEU5/6ac5870564d52.png" alt="1734955811231.png" style="zoom:33%;" />
 
 **数据迁移维护困难**：数据库层面的数据关系产生耦合，迁移和维护困难。例如，将订单明细表从MySQL迁移到HBase，数据类型和存储位置改变，原有的主外键约束失效，需要在程序中增加校验代码，增加了复杂性。
 

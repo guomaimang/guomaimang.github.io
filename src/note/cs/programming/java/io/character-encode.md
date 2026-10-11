@@ -37,11 +37,11 @@ ASCII 字典 一共规定了128个字符的对应关系，比如
 
 下表中是ASCII字典的局部，从左到右转换就是解码 （decode），从右到左就是编码 （encode）。**ASCII编码和解码需要依照字典。**
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/29/49e5cd82f97da.png" alt="1653816614826.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/JwJkH8/49e5cd82f97da.png" alt="1653816614826.png" style="zoom: 25%;" />
 
 下面是 ASCII 字典
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/29/a7d82a7687547.png" alt="1653825976923.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/y3gKCZ/a7d82a7687547.png" alt="1653825976923.png" style="zoom:50%;" />
 
 
 
@@ -65,7 +65,7 @@ ASCII 字典 一共规定了128个字符的对应关系，比如
 
 可以想象，如果有一种字典，将世界上所有的符号都纳入其中。每一个符号都给予一个独一无二的编码，那么乱码问题就会消失。**这就是 Unicode，就像它的名字都表示的，这是一种所有符号的编码，或者说是 一本字典**。
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/29/80105ef7a54ba.png" alt="1653819749266.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Wr2Rc9/80105ef7a54ba.png" alt="1653819749266.png" style="zoom:50%;" />
 
 Unicode 字典有两个版本
 
@@ -127,7 +127,7 @@ UTF-8 规律很简单，只有二条：
 1. 对于 单字节 的 符号，字节的第一位设为`0`，后面7位为这个符号的 Unicode 码。因此对于英语字母，UTF-8 编码和 ASCII 码是相同的。
 2. 对于`n`字节的符号（`n > 1`），第一个字节的前`n`位都设为`1`，第`n + 1`位设为`0`，后面字节的前两位一律设为`10`。剩下的没有提及的二进制位，全部为这个符号的 Unicode 码。
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/29/2ece24c004571.png" alt="1653818540574.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/wv6Es5/2ece24c004571.png" alt="1653818540574.png" style="zoom:33%;" />
 
 比如『汉』这个字的Unicode编码是0x6C49。0x6C49在0x0800-0xFFFF之间，使用3字节模板：1110xxxx 10xxxxxx 10xxxxxx。将0x6C49写成二进制是：0110 1100 0100 1001， 用这个比特流依次代替模板中的x，得到：11100110 10110001 10001001。
 
@@ -138,7 +138,7 @@ UTF-16 和 UTF-32 都是直接把 Unicode 字典中 字符对应的二进制序�
 - UTF-16（一个字符用两个字节或四个字节表示）。
 - UTF-32（一个字符用四个字节表示），不过在互联网上基本不用。
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/29/3b42801b57256.png" alt="1653820146049.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/VpLLi2/3b42801b57256.png" alt="1653820146049.png" style="zoom:33%;" />
 
 比如一个人想写一篇文章，包括英语和日语。依据 Unicode字典，
 
@@ -167,7 +167,7 @@ UTF-16 利用保留下来的 0xD800-0xDFFF 区段的码位来对“辅助平面�
 
 来看下面这个字，
 
-![1653832058658.png](https://pic.hanjiaming.com.cn/2022/05/29/12b6e083b6571.png)
+![1653832058658.png](https://netdesk.orcsvc.com/f/eDXECq/12b6e083b6571.png)
 
 上面这个汉字的Unicode码位值为2AEAB，
 
@@ -246,7 +246,7 @@ public static void main(String[] args) {
 
 **看文件存储的真实实例**
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/29/9fc6da92224d3.png" alt="1653819423481.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/LQnPi2/9fc6da92224d3.png" alt="1653819423481.png" style="zoom: 33%;" />
 
 打开 Windows "记事本" 程序`notepad.exe`，新建一个文本文件，内容就是一个`严`字。用下面的编码方式保存
 
@@ -275,7 +275,7 @@ public static void main(String[] args) {
 
 Windows平台，有一个最简单的转化方法，就是使用内置的记事本小程序`notepad.exe`。打开文件后，点击`文件`菜单中的`另存为`命令，会跳出一个对话框，在最底部有一个`编码`的下拉条。
 
-<img src="https://pic.hanjiaming.com.cn/2022/05/29/9fc6da92224d3.png" alt="1653819423481.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/LQnPi2/9fc6da92224d3.png" alt="1653819423481.png" style="zoom: 33%;" />
 
 ## 对比
 

@@ -107,7 +107,7 @@ author: Belter, Hirsun
 
 > 设随机试验的样本空间是S。若对S中的每个样本点e，都有唯一的实数值X(e)与之对应，则称X(e)为随机变量，简记为X。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/09/5db1f556f3862.png" alt="1657353556659.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/ERYPhd/5db1f556f3862.png" alt="1657353556659.png" style="zoom: 33%;" />
 
 a.随机变量与事件的关系；b.随机变量的本质是函数（一种映射关系）
 
@@ -126,7 +126,7 @@ a.随机变量与事件的关系；b.随机变量的本质是函数（一种映�
 
 通过引入随机变量，我们简化了随机试验结果（事件）的表示，从而可以更加方便的对随机试验进行研究。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/09/53fbc0df59202.png" alt="1657353700498.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/X509uX/53fbc0df59202.png" alt="1657353700498.png" style="zoom: 50%;" />
 
 图：从事件到随机变量
 

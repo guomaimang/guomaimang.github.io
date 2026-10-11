@@ -13,7 +13,7 @@ Digital Logic 数字逻辑
 
 计算机中的操作基于数字/二进制数据的处理。
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/23/4bf230b6788be.png" alt="CleanShot 2021-02-23 at 21.39.49@2x.png" title="CleanShot 2021-02-23 at 21.39.49@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/MkvwS8/4bf230b6788be.png" alt="CleanShot 2021-02-23 at 21.39.49@2x.png" title="CleanShot 2021-02-23 at 21.39.49@2x.png" />
 
 数字逻辑：分析计算机系统中的离散(discrete)/二进制数据
 
@@ -25,17 +25,17 @@ Digital Logic 数字逻辑
 
 现实问题：考虑一个0到9层的电梯，如果您按一个按钮（0-9），则要显示数字，How to implement(实现) this real-world functionality(功能)?
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/23/157ce2a2563dd.png" alt="CleanShot 2021-02-23 at 21.46.58@2x.png" title="CleanShot 2021-02-23 at 21.46.58@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/8JqYt5/157ce2a2563dd.png" alt="CleanShot 2021-02-23 at 21.46.58@2x.png" title="CleanShot 2021-02-23 at 21.46.58@2x.png" />
 
 使用组合逻辑实现
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/23/0661de87886d6.png" alt="CleanShot 2021-02-23 at 21.48.05@2x.png" title="CleanShot 2021-02-23 at 21.48.05@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/yQj5tZ/0661de87886d6.png" alt="CleanShot 2021-02-23 at 21.48.05@2x.png" title="CleanShot 2021-02-23 at 21.48.05@2x.png" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/23/3fd69df908fcf.png" alt="CleanShot 2021-02-23 at 21.49.09@2x.png" title="CleanShot 2021-02-23 at 21.49.09@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/DaERce/3fd69df908fcf.png" alt="CleanShot 2021-02-23 at 21.49.09@2x.png" title="CleanShot 2021-02-23 at 21.49.09@2x.png" />
 
 ### The Overview
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/23/1979434c89151.png" alt="CleanShot 2021-02-23 at 21.53.53@2x.png" title="CleanShot 2021-02-23 at 21.53.53@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/G6R4iA/1979434c89151.png" alt="CleanShot 2021-02-23 at 21.53.53@2x.png" title="CleanShot 2021-02-23 at 21.53.53@2x.png" />
 
 ## Boolean Algebra
 
@@ -60,11 +60,11 @@ A variable may take on the value 1 (True) or 0 (False)
 
 #### Basic logical operations
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/24/d6bd9d1bec107.png" alt="CleanShot 2021-02-24 at 11.12.40@2x.png" title="CleanShot 2021-02-24 at 11.12.40@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/5XJkhV/d6bd9d1bec107.png" alt="CleanShot 2021-02-24 at 11.12.40@2x.png" title="CleanShot 2021-02-24 at 11.12.40@2x.png" />
 
 **Hirsun的批注：乘号（and）表示且，加号（or）表示或。非且（XAND），非或（NOR）。思想上NOR表示先或再全否**
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/24/666f2bb529cd4.png" alt="CleanShot 2021-02-24 at 11.16.10@2x.png" title="CleanShot 2021-02-24 at 11.16.10@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/doDZFX/666f2bb529cd4.png" alt="CleanShot 2021-02-24 at 11.16.10@2x.png" title="CleanShot 2021-02-24 at 11.16.10@2x.png" />
 
 ### Switching Functions
 
@@ -80,7 +80,7 @@ example Z = f (A,B); there are four different combinations of input values (0,0)
 
 A truth table defines the mapping from the combination of input values to output
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/24/1c30f24588e96.png" alt="CleanShot 2021-02-24 at 11.40.37@2x.png" title="CleanShot 2021-02-24 at 11.40.37@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/42w9t2/1c30f24588e96.png" alt="CleanShot 2021-02-24 at 11.40.37@2x.png" title="CleanShot 2021-02-24 at 11.40.37@2x.png" />
 
 Consider switching functions defined over N variables, how many possible switching functions could we have?
 
@@ -88,7 +88,7 @@ That is, how many different truth tables can we construct?
 
 Hint: first check how many rows in the truth table (= number of combinations of input values)
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/24/365b213c51b28.png" alt="CleanShot 2021-02-24 at 11.45.04@2x.png" title="CleanShot 2021-02-24 at 11.45.04@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/R4Wph8/365b213c51b28.png" alt="CleanShot 2021-02-24 at 11.45.04@2x.png" title="CleanShot 2021-02-24 at 11.45.04@2x.png" />
 
 ### Properties
 
@@ -107,7 +107,7 @@ note the difference from ordinary algebra: some are very similar; others are qui
 
 The under table provides the basic postulates. Each theorem is described by two parts that are duals of each other.
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/24/a54cc685e5378.png" alt="CleanShot 2021-02-24 at 12.14.18@2x.png" title="CleanShot 2021-02-24 at 12.14.18@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/rKRjsg/a54cc685e5378.png" alt="CleanShot 2021-02-24 at 12.14.18@2x.png" title="CleanShot 2021-02-24 at 12.14.18@2x.png" />
 
 - Commutative law（交换律） implies that the order of the input does not matter (image two wires to a gate)
 - Distributive law: similar to algebra, multiplication (AND) has the distributive property over adding (OR); different to algebra, OR has the distributive property over AND — A +BC = (A+B)(A+C)
@@ -130,11 +130,11 @@ Example, in the previous table, AB = BA and A+B = B+A
 
 Note the duality in the first and second column (for NOT, there’s no dual operation, thus no duality)
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/24/372d079aec41e.png" alt="CleanShot 2021-02-24 at 12.31.57@2x.png" title="CleanShot 2021-02-24 at 12.31.57@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/AMQ4sy/372d079aec41e.png" alt="CleanShot 2021-02-24 at 12.31.57@2x.png" title="CleanShot 2021-02-24 at 12.31.57@2x.png" />
 
 **De Morgan's Theorem 「德摩根定理」 is important!!!**
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/21/22138a3005dc0.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/1LL1CK/22138a3005dc0.png" alt="image.png" title="image.png" />
 
 - in the first equation, no AND operation (change AND to OR)
 - in the second equation, no OR operation (change OR to AND)
@@ -142,7 +142,7 @@ Note the duality in the first and second column (for NOT, there’s no dual oper
 - completeness of functionality — a set of operations (gates) that can be
 - used to implement all logical expressions
 
-<img src="https://pic.hanjiaming.com.cn/2021/02/24/e728f67b9a4de.png" alt="CleanShot 2021-02-24 at 12.54.23@2x.png" title="CleanShot 2021-02-24 at 12.54.23@2x.png" />
+<img src="https://netdesk.orcsvc.com/f/ERGDsd/e728f67b9a4de.png" alt="CleanShot 2021-02-24 at 12.54.23@2x.png" title="CleanShot 2021-02-24 at 12.54.23@2x.png" />
 
 #### learning meaning
 
@@ -166,9 +166,9 @@ no B in the expression — simplified, less input
 
 ####  Consensus Theorem 「共识定理」
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/21/7c9217d1d4bd5.png" width = "240px" />
+<img src="https://netdesk.orcsvc.com/f/3pp3H5/7c9217d1d4bd5.png" width = "240px" />
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/21/bc66bf14bfc54.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/JwwAS8/bc66bf14bfc54.png" alt="image.png" title="image.png" />
 
 simplified, less operations「简化，减少操作」
 
@@ -182,15 +182,15 @@ Functionally Complete Sets of Gates
 - NAND
 - NOR
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/21/84da7c228f98c.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Vpp9c2/84da7c228f98c.png" alt="image.png" title="image.png" />
 
 #### Prove (AND, NOT) is a Complete Set of Gates
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/21/e6a62f8438aad.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/nwwjfj/e6a62f8438aad.png" alt="image.png" title="image.png" />
 
 #### Prove (NAND) is a Complete Set of Gates
 
-<img src="https://pic.hanjiaming.com.cn/2021/03/21/249c5630ab857.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/eDDWCq/249c5630ab857.png" alt="image.png" title="image.png" />
 
 #### Use NAND to express A OR B
 

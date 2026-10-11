@@ -23,7 +23,7 @@ headerDepth: 1
 
 Majority of wireless communications use radio/microwave, some use Infrared. 「大多数无线通信使用无线电/微波，有些使用红外线。」
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/14/dbba19c419bf5.png" alt="1665759402967.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/Mk0yF8/dbba19c419bf5.png" alt="1665759402967.png" style="zoom: 25%;" />
 
 - 无线电：30 MHz to 1 GHz
   - 适用于全方位应用
@@ -35,11 +35,11 @@ Majority of wireless communications use radio/microwave, some use Infrared. 「�
   - 适用于狭窄区域内的本地点对点/多点应用
   - 远程控制，光学网络
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/16/c380a88024d16.png" alt="1665909414856.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/l3KQce/c380a88024d16.png" alt="1665909414856.png" style="zoom:50%;" />
 
 ## 简化的无线通信系统
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/16/b95be39451b3d.png" alt="1665910003693.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/QanQtj/b95be39451b3d.png" alt="1665910003693.png" style="zoom: 50%;" />
 
 - Transmitter
 - Signal is propagated
@@ -64,19 +64,19 @@ Majority of wireless communications use radio/microwave, some use Infrared. 「�
 - 模拟信号：一些传输介质，如大气，只能传播模拟信号
 - 数字信号：抗噪声干扰，衰减更多（危害数据的完整性，需要中继器将信号转发到更远的地方）
 
-![1665910732356.png](https://pic.hanjiaming.com.cn/2022/10/16/15ec34a255e61.png)
+![1665910732356.png](https://netdesk.orcsvc.com/f/R41JI8/15ec34a255e61.png)
 
 ## Signals
 
 信号可以被看作是时间或频率的函数，一个信号在时域和频域看起来非常不同。
 
-![1665910917564.png](https://pic.hanjiaming.com.cn/2022/10/16/c1e25e4537027.png)
+![1665910917564.png](https://netdesk.orcsvc.com/f/DaQkce/c1e25e4537027.png)
 
 ### Time Domain Signals
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/16/1718fc46f7e9e.png" alt="1665910972215.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/8JYvc5/1718fc46f7e9e.png" alt="1665910972215.png" style="zoom: 33%;" />
 
-![1665910996132.png](https://pic.hanjiaming.com.cn/2022/10/16/d2fcb8d0e9af7.png)
+![1665910996132.png](https://netdesk.orcsvc.com/f/x830F3/d2fcb8d0e9af7.png)
 
 ### Frequency Domain Signals
 
@@ -84,7 +84,7 @@ Majority of wireless communications use radio/microwave, some use Infrared. 「�
 
 参考高中物理：波的叠加
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/16/e588e343893f2.png" alt="1665911234054.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/bVgxTM/e588e343893f2.png" alt="1665911234054.png" style="zoom: 25%;" />
 
 ## Bandwidth of Signals
 
@@ -95,7 +95,7 @@ Majority of wireless communications use radio/microwave, some use Infrared. 「�
 - 例如，一般信号的带宽是有限的
 - **例如，数字方波信号具有无限的带宽**
 
-<img src="https://pic.hanjiaming.com.cn/2022/10/16/d51c0afd804bd.png" alt="CleanShot 2022-10-16 at 17.23.48@2x.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/4233t2/d51c0afd804bd.png" alt="CleanShot 2022-10-16 at 17.23.48@2x.png" style="zoom: 50%;" />
 
 ## Channel Capacity
 

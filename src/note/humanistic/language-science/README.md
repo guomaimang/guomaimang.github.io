@@ -40,7 +40,7 @@ category:
 
 ref. 徐通锵(2001：13，14)《基础语言学教程》。北京：北京大学出版社 0
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/1c2a5a42d8bf5.png" alt="1655538743522.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/bVKJsM/1c2a5a42d8bf5.png" alt="1655538743522.png" style="zoom: 33%;" />
 
 **说话 与 言语** 是语言最外在的表现形式
 
@@ -48,7 +48,7 @@ ref. 徐通锵(2001：13，14)《基础语言学教程》。北京：北京大�
 
 **语言的基本要素：语言、词汇和语法**
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/83b907c80c748.png" alt="1655539152655.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/LQY4F2/83b907c80c748.png" alt="1655539152655.png" style="zoom:50%;" />
 
 ## 沟通系统
 
@@ -61,13 +61,13 @@ ref. 徐通锵(2001：13，14)《基础语言学教程》。北京：北京大�
 
 符号的分类：按照 形式 和 意义 的 相似度 
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/7aec8177b8eb1.png" alt="1655539439599.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/eD3Wiq/7aec8177b8eb1.png" alt="1655539439599.png" style="zoom: 25%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/96f2eb9d508a2.png" alt="1655561553396.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/1Lm1tK/96f2eb9d508a2.png" alt="1655561553396.png" style="zoom:25%;" />
 
 ### 形式与功能
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/5c8c47f8a35c8.png" alt="1655539594643.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/KwJafL/5c8c47f8a35c8.png" alt="1655539594643.png" style="zoom:25%;" />
 
 ## 人类语言的特征
 
@@ -85,9 +85,9 @@ Hockett（1960）列举列举了**人类**语言普遍特征（人类语言的�
 
 语言符号的形式与意义之间，没有自然的关系，没有逻辑关系
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/49620e4d53d7a.png" alt="1655539885263.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/42R9c2/49620e4d53d7a.png" alt="1655539885263.png" style="zoom:33%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/9ea37c0d04411.png" alt="1655561675190.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/ZPO3T2/9ea37c0d04411.png" alt="1655561675190.png" style="zoom: 33%;" />
 
 ::: tip 动物沟通具有任意性吗
 
@@ -109,7 +109,7 @@ Hockett（1960）列举列举了**人类**语言普遍特征（人类语言的�
 - 低层: 不具有含义，小量-》语音
 - 高层: 带意义，大量-》词语
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/18/f2c7ac3b7413f.png" alt="1655540427526.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/y301HZ/f2c7ac3b7413f.png" alt="1655540427526.png" style="zoom: 25%;" />
 
 动物的讯息系统中，每个讯号都是固定的， 不能再细分
 

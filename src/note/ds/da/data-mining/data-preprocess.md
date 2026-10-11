@@ -100,15 +100,15 @@ Other data problems which requires data cleaning
 
 #### Binning Methods for Data Smoothing
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/13/e33e126301195.png" alt="1702407417961.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/YEgf2/e33e126301195.png" alt="1702407417961.png" style="zoom: 33%;" />
 
 #### Smoothing by Cluster Analysis
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/13/3f1988563cb31.png" alt="1702407463425.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/nvAUj/3f1988563cb31.png" alt="1702407463425.png" style="zoom: 50%;" />
 
 #### Smoothing by Regression
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/13/b4ddc34b58920.png" alt="1702407514519.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/m14f9/b4ddc34b58920.png" alt="1702407514519.png" style="zoom:33%;" />
 
 ## Data Integration
 
@@ -152,7 +152,7 @@ Data reduction strategies
 - 选择最小的特征集，使给定这些特征值的不同类别的概率分布尽可能接近给定所有特征值的原始分布
 - 减少模式中的模式数量，更容易理解
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/d477cbfcc48e1.png" alt="1702496493439.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/GneHA/d477cbfcc48e1.png" alt="1702496493439.png" style="zoom:50%;" />
 
 方法2：特征提取/转换 - 将现有特征组合（映射）为较少数量的新/替代特征
 
@@ -170,13 +170,13 @@ Data reduction strategies
 
 #### Subset Selection
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/aee6f8b61106d.png" alt="1702497345079.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/WQnS9/aee6f8b61106d.png" alt="1702497345079.png" style="zoom: 33%;" />
 
 #### Linear dimensionality reduction
 
 将 n 维数据线性投影到 k 维空间
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/64cd2359fbf88.png" alt="1702497526463.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Qr6uj/64cd2359fbf88.png" alt="1702497526463.png" style="zoom:33%;" />
 
 用于投影的最佳 k 维子空间取决于任务
 
@@ -190,7 +190,7 @@ Data reduction strategies
 
 #### Decision Tree Induction for DR
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/6a01b35db9807.png" alt="1702497729212.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/31MC5/6a01b35db9807.png" alt="1702497729212.png" style="zoom:33%;" />
 
 ### Numerosity Reduction
 
@@ -213,7 +213,7 @@ Non-parametric methods
 - 可通过动态编程在一维范围内进行优化构建
 - 与量化问题有关。
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/ae0e610acb4b5.png" alt="1702498020869.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/k2asb/ae0e610acb4b5.png" alt="1702498020869.png" style="zoom:33%;" />
 
 #### Data Reduction By Clustering
 
@@ -234,7 +234,7 @@ Non-parametric methods
   - 每个类别（或相关亚群）在整个数据库中的大致百分比
   - 与偏斜数据结合使用
 
-<img src="https://pic.hanjiaming.com.cn/2023/12/14/225a2ddfdda45.png" alt="1702498190922.png" style="zoom:25%;" />
+<img src="https://netdesk.orcsvc.com/f/DjVfe/225a2ddfdda45.png" alt="1702498190922.png" style="zoom:25%;" />
 
 ## Discretization
 

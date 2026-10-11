@@ -12,7 +12,7 @@ category:
 
 # 前后端分离架构
 
-![1734956381158.png](https://pic.hanjiaming.com.cn/2024/12/23/a295a0a20c17d.png)
+![1734956381158.png](https://netdesk.orcsvc.com/f/YrLpc2/a295a0a20c17d.png)
 
 学习前后端分离架构的演化及其解决的问题，是理解现代互联网公司技术架构的关键。
 
@@ -45,7 +45,7 @@ category:
 
 ### 执行流程
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/23/2c870077e2935.png" alt="1734956598971.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/92Zbsm/2c870077e2935.png" alt="1734956598971.png" style="zoom:50%;" />
 
 1. 后端工程师构建 REST Controller，返回 JSON 或 XML 数据。
 2. 前端开发 HTML 页面，通过 Ajax 请求获取后端数据。
@@ -67,7 +67,7 @@ category:
 
 完全分离架构进一步增强了前后端的分离，前端通过 Node.js 实现动态页面渲染，并引入应用网关进行请求路由。
 
-![1734956769251.png](https://pic.hanjiaming.com.cn/2024/12/23/436b1dfe2c02e.png)
+![1734956769251.png](https://netdesk.orcsvc.com/f/jKr0tb/436b1dfe2c02e.png)
 
 ### 执行流程
 1. **后端**：继续使用 REST Controller 提供数据。

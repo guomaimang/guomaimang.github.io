@@ -31,7 +31,7 @@ headerDepth: 1
 - 用语义（意义）信息标记文本，如专有名词、性别、数字、原因、结果等。
 - 使用启发式结合统计和概率
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/11/4658a7b1d8201.png" alt="1670689209798.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/enKACq/4658a7b1d8201.png" alt="1670689209798.png" style="zoom:33%;" />
 
 ### Syntactic Analysis (Parsing)
 
@@ -43,7 +43,7 @@ headerDepth: 1
 - 句子的结构的方法。
 - 解析器是一个确定句子结构的程序。
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/11/4ac04be4aa10e.png" alt="1670689417027.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/2WrYtv/4ac04be4aa10e.png" alt="1670689417027.png" style="zoom:33%;" />
 
 ### Part-of-speech tagging
 
@@ -52,7 +52,7 @@ headerDepth: 1
 
 一个词可以有多个标签！通常情况下，这是用概率来完成的。
 
-![1670689634551.png](https://pic.hanjiaming.com.cn/2022/12/11/dc53d7ae745fc.png)
+![1670689634551.png](https://netdesk.orcsvc.com/f/yQkVCZ/dc53d7ae745fc.png)
 
 ### Tokenization
 
@@ -93,7 +93,7 @@ headerDepth: 1
 
 如何实现计算机与人类的对话？将其分解成若干部分
 
-<img src="https://pic.hanjiaming.com.cn/2022/12/11/7d433f1c84ca7.png" alt="1670771635152.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/KXnjtL/7d433f1c84ca7.png" alt="1670771635152.png" style="zoom: 33%;" />
 
 ### Awareness of situated contexts
 

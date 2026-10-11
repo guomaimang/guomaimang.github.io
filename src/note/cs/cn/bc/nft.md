@@ -159,7 +159,7 @@ ERC20代币可以部署在公共区块链上。
 - Bob调用`TokenB`合约的`approve`函数，授权`TokenSwap`合约一定数量的`TokenB`。
 - Alice或Bob调用`TokenSwap`合约的`swap`函数，执行代币交换。
 
-![1732123308527.png](https://pic.hanjiaming.com.cn/2024/11/21/ce72a0c4d48d0.png)
+![1732123308527.png](https://netdesk.orcsvc.com/f/RyWZU8/ce72a0c4d48d0.png)
 
 :::
 

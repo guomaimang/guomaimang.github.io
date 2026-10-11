@@ -14,7 +14,7 @@ headerDepth: 0
 
 
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/30/0d754202c1fa8.png" alt="Diffie-Hellman_Key_Exchange.svg.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/lRMhe/0d754202c1fa8.png" alt="Diffie-Hellman_Key_Exchange.svg.png" style="zoom:33%;" />
 
 ::: tip
 
@@ -61,7 +61,7 @@ DL 假设（假设离散对数问题是困难的）是安全性的必要条件�
 
 假设我们有一个大素数 p=23，生成元 g=5，和 g^x mod  p= 4。我们需要计算 x。
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/30/57c6b5909b0ea.png" alt="1730281455861.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/E3xUd/57c6b5909b0ea.png" alt="1730281455861.png" style="zoom: 33%;" />
 
 :::
 
@@ -230,7 +230,7 @@ ECDSA是一种基于椭圆曲线的数字签名算法，用于验证消息的真
 
 ## Comparison of Signature Lengths
 
-<img src="https://pic.hanjiaming.com.cn/2024/11/23/3e081e3a367fb.png" alt="1732305178158.png" style="zoom:40%;" />
+<img src="https://netdesk.orcsvc.com/f/83JXC5/3e081e3a367fb.png" alt="1732305178158.png" style="zoom:40%;" />
 
 ## Threshold Signing
 

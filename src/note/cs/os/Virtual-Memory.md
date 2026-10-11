@@ -19,23 +19,23 @@ Virtual memory, a technique that allows to fit the 1GB program into the 1MB phys
 
 ### Program Image
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/27372e7e8f0d5.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/l3Jgue/27372e7e8f0d5.png" alt="image.png" title="image.png" />
 
 The program image is **too large** to be fit into the main memory
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/465d5e22644aa.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/421Jc2/465d5e22644aa.png" alt="image.png" title="image.png" />
 
 ## Process
 
 ### Executing a program
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/0ecdca1996e51.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Mk6Ef8/0ecdca1996e51.png" alt="image.png" title="image.png" />
 
 ### Memory access in program execution
 
 During execution, the CPU frequently goes to main memory to fetch data (instructions, data)「在执行期间，CPU经常进入主存储器以获取数据（指令，数据）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/98085294a7f6f.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/ZP6ef2/98085294a7f6f.png" alt="image.png" title="image.png" />
 
 ## Paging
 
@@ -45,16 +45,16 @@ During execution, the CPU frequently goes to main memory to fetch data (instruct
 
 Each time, load a page into a frame of the main memory
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/756daafbe10c7.gif" alt="CleanShot 2021-04-12 at 23.24.12.gif" title="CleanShot 2021-04-12 at 23.24.12.gif" />
+<img src="https://netdesk.orcsvc.com/f/25qYFv/756daafbe10c7.gif" alt="CleanShot 2021-04-12 at 23.24.12.gif" title="CleanShot 2021-04-12 at 23.24.12.gif" />
 
 Page 2 will use the physical address that has been used by Page 0
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/a368ddf43940b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Jw0pU8/a368ddf43940b.png" alt="image.png" title="image.png" />
 
 Issue 1: needs to remember which page is put into which frame
 Page table: a mapping from virtual pages to frames
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/d77b0fd8a7746.png" alt="image.png" title="image.png"  width = "300px"/>
+<img src="https://netdesk.orcsvc.com/f/wv2Ah5/d77b0fd8a7746.png" alt="image.png" title="image.png"  width = "300px"/>
 
 Issue 2: if the memory is full, and a new page will be loaded, which old page to replace?
 
@@ -76,7 +76,7 @@ Issue 2: if the memory is full, and a new page will be loaded, which old page to
 
 If I want to use a data item in my executable file, which has been loaded to main memory, how do I know the physical address of the data item?「如果要在可执行文件中使用已加载到主存储器中的数据项，我如何知道该数据项的物理地址？」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/c83c163dcb70b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/WrX6H9/c83c163dcb70b.png" alt="image.png" title="image.png" />
 
 To access “G” in physical main memory
 
@@ -88,7 +88,7 @@ To access “G” in physical main memory
   - 0x0100 + 0x10 = 0x0110
 - Go to main memory with address 0x0110, you will get data item G
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/264a7ec07952c.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/x8ObC3/264a7ec07952c.png" alt="image.png" title="image.png" />
 
 ### General steps
 
@@ -117,17 +117,17 @@ If we want to access “b” which is in page 2. When we check the page table, d
 
 剩下的 24-10 = 14位 来存储Page number
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/27/79c3c0aa421cd.png" alt="image.png" title="image.png"  width = "500px"/>
+<img src="https://netdesk.orcsvc.com/f/rKL2ug/79c3c0aa421cd.png" alt="image.png" title="image.png"  width = "500px"/>
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/27/ea9d310438c02.png" alt="image.png" title="image.png" width= "500px" />
+<img src="https://netdesk.orcsvc.com/f/x85Zi3/ea9d310438c02.png" alt="image.png" title="image.png" width= "500px" />
 
 在Page Table里，我们只需记录 Virtual Page Number 。在每个Page里，每个条目的前14位相同。
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/27/4778824fe581e.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/gkGLfX/4778824fe581e.png" alt="image.png" title="image.png" />
 
 offset 用于表示偏差
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/27/801e87826c490.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/QaXQSj/801e87826c490.png" alt="image.png" title="image.png" />
 
 ### Memory Management Unit
 
@@ -136,7 +136,7 @@ Address translation is done by a special hardware in CPU called Memory Managemen
 - Address translation is too complex and slow
 - We need a fast worker to do the job
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/39cb0eaf72110.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/p4nwin/39cb0eaf72110.png" alt="image.png" title="image.png" />
 
 ### Translation lookaside buffer
 
@@ -144,7 +144,7 @@ Accessing page table in main memory is slow
 
 Translation lookaside buffer (TLB): a cache for page table in the CPU chip
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/c79e4bff4996e.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/wvK0S5/c79e4bff4996e.png" alt="image.png" title="image.png" />
 
 ## Other question
 
@@ -166,14 +166,14 @@ Memory allocation for multiple processes「多个进程的内存分配」
 - Each virtual page can be mapped to any physical page「每个虚拟页面都可以映射到任何物理页面」
 - A virtual page can be stored in different physical pages at different times「虚拟页面可以在不同时间存储在不同的物理页面中」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/2186dff0b0798.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/doxMhX/2186dff0b0798.png" alt="image.png" title="image.png" />
 
 ### Memory protection
 
 - Extend page table entries with permission bits
 - MMU will check these bits on each access
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/12/83eb5ce4447a4.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/WrXnc9/83eb5ce4447a4.png" alt="image.png" title="image.png" />
 
 ## 引用
 

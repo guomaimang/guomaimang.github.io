@@ -8,28 +8,28 @@ headerDepth: 2
 
 # Networking
 
-![1715244408072.png](https://pic.hanjiaming.com.cn/2024/05/09/97efe5ed22dd6.png)
+![1715244408072.png](https://netdesk.orcsvc.com/f/Zx2T2/97efe5ed22dd6.png)
 
 ## Basic Knowledge
 
 ### OSI 7 Layers
 
-![1712422474583.png](https://pic.hanjiaming.com.cn/2024/04/07/cd0cf0ff479fe.png)
+![1712422474583.png](https://netdesk.orcsvc.com/f/enj8tq/cd0cf0ff479fe.png)
 
 ### Linux Networking
 
-![1712422757768.png](https://pic.hanjiaming.com.cn/2024/04/07/aff2131733b8b.png)
+![1712422757768.png](https://netdesk.orcsvc.com/f/waaOT5/aff2131733b8b.png)
 
 A protocol defines the 
 
 - format of packets 「数据包格式」
 - and the rules for communicating them across the network「以及在网络上传输这些信息的规则。」.
 
-![1712423060553.png](https://pic.hanjiaming.com.cn/2024/04/07/5066042e34b69.png)
+![1712423060553.png](https://netdesk.orcsvc.com/f/eeephq/5066042e34b69.png)
 
 ### TCP/IP Packet Layout
 
-<img src="https://pic.hanjiaming.com.cn/2024/04/07/6fa9238e7ba8a.png" alt="1712423502914.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/n881Uj/6fa9238e7ba8a.png" alt="1712423502914.png" style="zoom: 50%;" />
 
 ::: tip TCP&UDP
 
@@ -61,11 +61,11 @@ A protocol defines the
 
 #### At TCP Layer
 
-<img src="https://pic.hanjiaming.com.cn/2024/04/07/9941bef73050a.png" alt="1712423718657.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/ZrroT2/9941bef73050a.png" alt="1712423718657.png" style="zoom:33%;" />
 
 #### At IP Layer
 
-<img src="https://pic.hanjiaming.com.cn/2024/04/07/bb76ef48a38f3.png" alt="1712423790674.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/Yrrbc2/bb76ef48a38f3.png" alt="1712423790674.png" style="zoom: 33%;" />
 
 IP添加20字节报头，发送到网络（IP允许处理的最大数据报是64KB。）
 
@@ -77,7 +77,7 @@ IP添加20字节报头，发送到网络（IP允许处理的最大数据报是64
 
 ### TCP header Port Number
 
-![1712431473090.png](https://pic.hanjiaming.com.cn/2024/04/07/db206c1c91394.png)
+![1712431473090.png](https://netdesk.orcsvc.com/f/JRR4s8/db206c1c91394.png)
 
 ::: tip 在OSI七层模型中，哪一层的协议包含IP地址？
 
@@ -87,30 +87,30 @@ IP添加20字节报头，发送到网络（IP允许处理的最大数据报是64
 
 ### TCP: Reliable Byte Stream Delivery
 
-![1712431824196.png](https://pic.hanjiaming.com.cn/2024/04/07/5b0047c6c200d.png)
+![1712431824196.png](https://netdesk.orcsvc.com/f/m00bc9/5b0047c6c200d.png)
 
 ### Network Driver Layer
 
-<img src="https://pic.hanjiaming.com.cn/2024/04/07/97b2e59119d47.png" alt="1712465355981.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/VQQ8t2/97b2e59119d47.png" alt="1712465355981.png" style="zoom:50%;" />
 
 #### Data Fragmentation by Network Driver
 
 - Within the payload of the Ethernet frame is the IP datagram.
 - The **IP datagram** contains a source IP address and destination IP address.
 
-![1714058377948.png](https://pic.hanjiaming.com.cn/2024/04/25/52761c4cddce8.png)
+![1714058377948.png](https://netdesk.orcsvc.com/f/388RC5/52761c4cddce8.png)
 
 #### Ethernet Frame/Packet
 
-![1714059408395.png](https://pic.hanjiaming.com.cn/2024/04/25/549a4933eac6d.png)
+![1714059408395.png](https://netdesk.orcsvc.com/f/yDDlhZ/549a4933eac6d.png)
 
-![1714059506649.png](https://pic.hanjiaming.com.cn/2024/04/25/0b59475e8674b.png)
+![1714059506649.png](https://netdesk.orcsvc.com/f/100AiK/0b59475e8674b.png)
 
 #### Ethernet MAC Address
 
 Each network card is uniquely identified by a 48 bit (6 bytes) address called **Ethernet address**, also known as **Media Access Control (MAC)** address.
 
-![1714061597077.png](https://pic.hanjiaming.com.cn/2024/04/26/c271392c60aee.png)
+![1714061597077.png](https://netdesk.orcsvc.com/f/qqq8uJ/c271392c60aee.png)
 
 #### Connecting Devices
 
@@ -142,7 +142,7 @@ Each network card is uniquely identified by a 48 bit (6 bytes) address called **
 
 When device A sends out a frame to another device,its MAC address is updated in the switch's lookup table.
 
-![1714064982910.png](https://pic.hanjiaming.com.cn/2024/04/26/f1f3ee4f54804.png)
+![1714064982910.png](https://netdesk.orcsvc.com/f/PkkKSe/f1f3ee4f54804.png)
 
 ### Layer 3 Switch/Router
 
@@ -151,7 +151,7 @@ When device A sends out a frame to another device,its MAC address is updated in 
 
 A "Layer 3" switch is simply a switch that has the added ability to do Layer 3 routing.
 
-![1714065162564.png](https://pic.hanjiaming.com.cn/2024/04/26/cb03b1e137956.png)
+![1714065162564.png](https://netdesk.orcsvc.com/f/jKK2tb/cb03b1e137956.png)
 
 
 

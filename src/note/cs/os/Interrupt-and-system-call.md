@@ -26,7 +26,7 @@ When I/O is completed, OS needs to put aside its current work and looks at I/O d
 - The event that I/O is completed causes an interrupt. 
 - The suspension (interruption) of current work to handle the event is called **interrupt processing**.
 
-![1648020296753.png](https://pic.hanjiaming.com.cn/2022/03/23/163eca8be1fea.png)
+![1648020296753.png](https://netdesk.orcsvc.com/f/8J46H5/163eca8be1fea.png)
 
 Two methods for I/O processing
 
@@ -34,7 +34,7 @@ Two methods for I/O processing
 
 - Asynchronous
 
-![1648020415900.png](https://pic.hanjiaming.com.cn/2022/03/23/74e174119ed0d.png)
+![1648020415900.png](https://netdesk.orcsvc.com/f/v5XYIq/74e174119ed0d.png)
 
 ### Synchronous I/O
 
@@ -51,7 +51,7 @@ Two methods for I/O processing
 
 Device-Status Table
 
-![1648020607361.png](https://pic.hanjiaming.com.cn/2022/03/23/98223b3d0b7c9.png)
+![1648020607361.png](https://netdesk.orcsvc.com/f/0v5GT5/98223b3d0b7c9.png)
 
 ## Interrupt
 
@@ -84,7 +84,7 @@ Depending on the cause of interrupts, we could classify them into 3 categories:
 
 中断意味着紧急情况。在一个（不可屏蔽的）中断发生后，CPU将搁置它正在执行的程序，保存程序计数器和寄存器的值（在堆栈上）。它以中断号为索引，查找中断表，寻找执行的程序。这个程序被称为中断处理程序，或中断服务程序（ISR）。这个程序被称为中断处理程序或中断服务例程（ISR），它在响应中断时被执行，以服务于中断。
 
-<img src="https://pic.hanjiaming.com.cn/2022/03/23/7be66f333771d.png" alt="1648021371841.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/3L3Mt5/7be66f333771d.png" alt="1648021371841.png" style="zoom: 33%;" />
 
 ### Interrupt Handling
 
@@ -92,7 +92,7 @@ Depending on the cause of interrupts, we could classify them into 3 categories:
   - 如果进入的新中断Y的优先级较低，它将等待直到第一个中断X完成。
   - 如果新中断Y的优先级较高，它将从当前的中断处理程序X中夺取CPU。
 
-![1648021486939.png](https://pic.hanjiaming.com.cn/2022/03/23/324b6d8b89668.png)
+![1648021486939.png](https://netdesk.orcsvc.com/f/ERZxhd/324b6d8b89668.png)
 
 ### Operating System Operation
 
@@ -135,7 +135,7 @@ In Unix, a special timer interrupt handler, called the clock routine, plays a ce
 
 如果一个用户进程在用户模式下执行，它如何做需要执行特权指令的I/O呢？通过系统调用实现。系统调用是操作系统的一个入口端口。系统调用实际上是一个trap，它从用户模式变为内核模式，执行特权I/O指令，从系统调用返回，并恢复到用户模式，继续执行。
 
-<img src="https://pic.hanjiaming.com.cn/2022/03/23/f13e030a66fac.png" alt="1648022850591.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/wv82h5/f13e030a66fac.png" alt="1648022850591.png" style="zoom: 67%;" />
 
 ## System Calls
 
@@ -151,14 +151,14 @@ The nature of a system call is similar to a procedure call (a very special proce
 
 Example system call sequence to copy the contents of a file to another file. 
 
-![1648023094304.png](https://pic.hanjiaming.com.cn/2022/03/23/8411788d3db2b.png)
+![1648023094304.png](https://netdesk.orcsvc.com/f/LQgmh2/8411788d3db2b.png)
 
 Inside the OS, a number would beassociated with each system call.
 
 - System-call interface maintains a table indexed according to these numbers.
 - Such a table looks like a table ofinterrupt handlers.
 
-<img src="https://pic.hanjiaming.com.cn/2022/03/23/7764a95e9e6c5.png" alt="1648023259068.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/WD9nc9/7764a95e9e6c5.png" alt="1648023259068.png" style="zoom:50%;" />
 
 When the user process executesthe system call, the system call interface generates a software trap. 
 
@@ -168,17 +168,17 @@ Status of the system call is returned to the caller,together with any return val
 
 The caller needs to know nothing about how thesystem call is implemented. 
 
-<img src="https://pic.hanjiaming.com.cn/2022/03/23/52d3671d62dd2.png" alt="1648023302480.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/p4KOtn/52d3671d62dd2.png" alt="1648023302480.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/03/23/6e259014def21.png" alt="1648023316192.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/LwXYC2/6e259014def21.png" alt="1648023316192.png" style="zoom:50%;" />
 
 ## Operating System Structure
 
-![1648023316192.png](https://pic.hanjiaming.com.cn/2022/03/23/6e259014def21.png)
+![1648023316192.png](https://netdesk.orcsvc.com/f/LwXYC2/6e259014def21.png)
 
-![1648023613322.png](https://pic.hanjiaming.com.cn/2022/03/23/c9e4a3e226be8.png)
+![1648023613322.png](https://netdesk.orcsvc.com/f/eDvkuq/c9e4a3e226be8.png)
 
-![1648023634110.png](https://pic.hanjiaming.com.cn/2022/03/23/2fbd62c408a93.png)
+![1648023634110.png](https://netdesk.orcsvc.com/f/KwqeUL/2fbd62c408a93.png)
 
-![1648023660743.png](https://pic.hanjiaming.com.cn/2022/03/23/7f1b36dfc8361.png)
+![1648023660743.png](https://netdesk.orcsvc.com/f/OmjQsQ/7f1b36dfc8361.png)
 

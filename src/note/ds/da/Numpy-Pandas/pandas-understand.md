@@ -12,7 +12,7 @@ article: false
 - Pandas 主要是 DataFrame & Series
 - Numpy 主要是 ndarray
 
-![1654254861923.png](https://pic.hanjiaming.com.cn/2022/06/03/3beb0e1a75b0e.png)
+![1654254861923.png](https://netdesk.orcsvc.com/f/x8nXC3/3beb0e1a75b0e.png)
 
 当然DataFrame可能有多维数据
 
@@ -96,11 +96,11 @@ Series.str字符串方法列表参考文档: https://pandas.pydata.org/pandas-do
 
 **按哪个axis，就是这个axis要动起来(类似被for遍历)，其它的axis保持不变化**
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/5e5ec7be91dcc.png" alt="1654275406038.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/jPdJib/5e5ec7be91dcc.png" alt="1654275406038.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/a9e6e78971bbf.png" alt="1654275425505.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/OaPrcQ/a9e6e78971bbf.png" alt="1654275425505.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/55abf17f9f5a1.png" alt="1654275484829.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Pv4Dse/55abf17f9f5a1.png" alt="1654275484829.png" style="zoom:50%;" />
 
 ## index 作用
 
@@ -134,9 +134,9 @@ Series.str字符串方法列表参考文档: https://pandas.pydata.org/pandas-do
 - groupby等操作的结果，如果是多KEY，结果是分层索引，需要会使用        
 - 一般不需要自己创建分层索引(MultiIndex有构造函数但一般不用)        
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/c51fe9467bd71.png" alt="1654276612403.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/domVsX/c51fe9467bd71.png" alt="1654276612403.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/49b3e0f4f0770.png" alt="1654276637634.png" style="zoom:45%;" />
+<img src="https://netdesk.orcsvc.com/f/JwbwI8/49b3e0f4f0770.png" alt="1654276637634.png" style="zoom:45%;" />
 
 ```
 >>> ser.index
@@ -161,7 +161,7 @@ MultiIndex([('BABA', '2019-10-01'),
 ser.unstack()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/04/30cf912f3ca02.png" alt="1654276720929.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/x8d6C3/30cf912f3ca02.png" alt="1654276720929.png" style="zoom:50%;" />
 
 ```python
 # 多层索引，可以用元组的形式筛选

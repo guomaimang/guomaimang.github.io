@@ -40,7 +40,7 @@ headerDepth: 1
 
 ### EVM Structure
 
-![1728612780496.png](https://pic.hanjiaming.com.cn/2024/10/11/a5227d9a9f815.png)
+![1728612780496.png](https://netdesk.orcsvc.com/f/blPhM/a5227d9a9f815.png)
 
 #### 世界状态（World State）
 
@@ -503,7 +503,7 @@ Function modifiers amend the semantics of functions in a declarative way.「函�
   - 重入攻击是指攻击者在函数执行过程中反复调用同一函数，导致意外的结果。
 - e.g., `onlySeller` in the sample, 在示例中使用了onlySeller修饰符，确保只有卖家可以调用某些函数。
 
-<img src="https://pic.hanjiaming.com.cn/2024/10/11/ff883bd103e77.png" alt="1728638183460.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/8v6F5/ff883bd103e77.png" alt="1728638183460.png" style="zoom: 50%;" />
 
 ### Function types
 
@@ -543,7 +543,7 @@ Function modifiers amend the semantics of functions in a declarative way.「函�
 - 纯函数不修改状态变量，也不读取状态变量。
 - 视图函数可以读取状态变量，但不能修改它们。
 
-![1728653182481.png](https://pic.hanjiaming.com.cn/2024/10/11/59183e171461f.png)
+![1728653182481.png](https://netdesk.orcsvc.com/f/xqji3/59183e171461f.png)
 
 #### payable
 
@@ -849,7 +849,7 @@ Internal function calls
 - **它们在 EVM 内部被翻译成简单的跳转（jumps）：** 内部函数调用是指在同一个智能合约内部调用其他函数。这些调用在 EVM 中被翻译成简单的跳转操作，不涉及外部合约的调用。
 - **只有同一个合约的函数可以被内部调用：** 内部函数调用只能在同一个合约内进行，不能调用其他合约的函数。这样可以减少调用的复杂性和 Gas 消耗。
 
-![1732201921382.png](https://pic.hanjiaming.com.cn/2024/11/21/e9d2ef55dc6e0.png)
+![1732201921382.png](https://netdesk.orcsvc.com/f/MXv6i8/e9d2ef55dc6e0.png)
 
 External function calls
 
@@ -857,7 +857,7 @@ External function calls
 - **函数通过消息调用（message call）而不是跳转来调用：** 外部函数调用通过消息调用的方式进行，而不是简单的跳转。这涉及到更复杂的操作和更高的 Gas 消耗。
 - **调用时可以指定发送的 Wei 数量和 Gas 限制：** 在外部函数调用时，可以使用 .value() 和 .gas() 方法指定发送的 Wei 数量和 Gas 限制。这对于控制调用的成本和资源消耗非常重要。
 
-![1732201933898.png](https://pic.hanjiaming.com.cn/2024/11/21/fa61a4d6f5be8.png)
+![1732201933898.png](https://netdesk.orcsvc.com/f/E1GOtd/fa61a4d6f5be8.png)
 
 ## Error Handling
 

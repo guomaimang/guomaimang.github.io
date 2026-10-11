@@ -25,7 +25,7 @@ headerDepth: 1
 - 密钥被用来生成一个伪随机比特或字节流，然后用比特XOR操作将其与明文相结合。（每次加密和解密都是基于一次密钥流产生的密钥流与明文进行异或运算得到密文）
 - 由此产生的密码文本通过通信渠道发送，并可通过使用相同的密钥和程序进行解密。
 
-![1677032305519.png](https://pic.hanjiaming.com.cn/2023/02/22/0c49a1d31f95e.png)
+![1677032305519.png](https://netdesk.orcsvc.com/f/wXQs5/0c49a1d31f95e.png)
 
 流密码经常被用于需要快速加密和解密数据的应用中，如网络电话（VoIP）和即时通讯（IM）应用。
 
@@ -42,7 +42,7 @@ ChaCha20是一种非常安全和高效的密码学安全算法，因此可以被
 
 The input is packaged as a 512-bit block
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/24/d8217d2315325.png" alt="1677220979437.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/WAoS9/d8217d2315325.png" alt="1677220979437.png" style="zoom: 50%;" />
 
 - Use a 256-bit key
   - A word is length is 32
@@ -91,7 +91,7 @@ Block Ciphers 是另一种类型的加密算法
 - 信息被分解成固定大小的块
 - It is encrypted, one block at a time
 
-![1677221782109.png](https://pic.hanjiaming.com.cn/2023/02/24/223f8ba550a72.png)
+![1677221782109.png](https://netdesk.orcsvc.com/f/OWxtQ/223f8ba550a72.png)
 
 - 对固定大小的数据块进行操作，通常长度为 64 或 128 比特。
 - 与流密码一样，区块密码在加密和解密时都使用对称密钥。
@@ -106,7 +106,7 @@ Block Ciphers 是另一种类型的加密算法
 
 在实践中，加密算法被设计为确保所有后续区块产生的密码文本与之前的加密文本不一致。
 
-![1677222259115.png](https://pic.hanjiaming.com.cn/2023/02/24/4666a26dd4012.png)
+![1677222259115.png](https://netdesk.orcsvc.com/f/y1xcZ/4666a26dd4012.png)
 
 ### Block Cipher Principles
 
@@ -136,7 +136,7 @@ Feistel 密码结构是一种块密码设计方法。它将明文块分成两个
 
 它实现了香农的 substitution-permutation network 概念。
 
-<img src="https://pic.hanjiaming.com.cn/2023/02/24/3ab1483cc9f1c.png" alt="1677226269790.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/1rgCK/3ab1483cc9f1c.png" alt="1677226269790.png" style="zoom: 50%;" />
 
 ::: details 加密和解密过程
 
@@ -228,7 +228,7 @@ c. L0 ⊕ 10010010 = 11110111 (R0)
 
 比如一个 32 位的数据
 
-![1677489926771.png](https://pic.hanjiaming.com.cn/2023/02/27/898606d34688f.png)
+![1677489926771.png](https://netdesk.orcsvc.com/f/gbKFX/898606d34688f.png)
 
 - 选择其中的16位让它们扩散为2位，形成一个48位的数据
   - 这样改变输入数据的一位，就有一半的概率导致输出数据两位的变化
@@ -236,25 +236,25 @@ c. L0 ⊕ 10010010 = 11110111 (R0)
 - 接下来再使用香农给出的第二个方法：混淆
 - 将扩散并和密钥异或后的48位数据分成6位一组
 - 使用一张这样的表格
-  <img src="https://pic.hanjiaming.com.cn/2023/03/04/64f56b4c1d5be.png" alt="1677901247654.png" style="zoom:33%;" />
+  <img src="https://netdesk.orcsvc.com/f/8GqC5/64f56b4c1d5be.png" alt="1677901247654.png" style="zoom:33%;" />
   - 取第一位和最后一位组成一个两位二进制数指定表格的行号
   - 中间的四位二进制数指定表格的列号
   - 如此便从这个表格中取出了对应的数字，再将这个数字转化位为4位2进制数
   
 
-![1677901398418.png](https://pic.hanjiaming.com.cn/2023/03/04/1215d0e541872.png)
+![1677901398418.png](https://netdesk.orcsvc.com/f/12XFK/1215d0e541872.png)
 
 - 之后的每一组，都换用不同的表格，用同样的方法取出表格中的一个数字
 - 8组6位数经过8个不同的变换表格得到了8组4位数
 - 再将结果合并成一个32位的数
 
-![1677490021013.png](https://pic.hanjiaming.com.cn/2023/02/27/62a933467bc2c.png)
+![1677490021013.png](https://netdesk.orcsvc.com/f/82YH5/62a933467bc2c.png)
 
 以上就是 DES 算法的核心部分。其中这用于转换的表格，称为 s 盒。
 
 混淆以后的 32 位数据还进行了一次**随机置换**的操作，再次打乱了结果。
 
-![1677901844910.png](https://pic.hanjiaming.com.cn/2023/03/04/7e8a64157dd3f.png)
+![1677901844910.png](https://netdesk.orcsvc.com/f/yb5hZ/7e8a64157dd3f.png)
 
 总结下来就是，先将明文分组扩散，再和秘钥异或，然后进行一次混淆（依赖 s 盒）。这几个操作结合起来，就是 DES 中的轮函数。
 
@@ -266,13 +266,13 @@ c. L0 ⊕ 10010010 = 11110111 (R0)
 - 钥匙的每个8位字节中的1个奇偶校验位可用于钥匙生成、分发和存储中的错误检测。
   - K = (k1 ... k7 k8 ... k15 k16 k17 ... k24 ... k32 ... k40 ... k48 ... k56 ... k64)
 
-![1677400988030.png](https://pic.hanjiaming.com.cn/2023/02/26/19b3290a88071.png)
+![1677400988030.png](https://netdesk.orcsvc.com/f/eoWhq/19b3290a88071.png)
 
 ### DES Encryption
 
 DES 规定数据一共经过 16 轮这样的轮函数，依次将上一轮的输出作为下一轮的输入。
 
-![1677902028414.png](https://pic.hanjiaming.com.cn/2023/03/04/866591b909e1d.png)
+![1677902028414.png](https://netdesk.orcsvc.com/f/pRZun/866591b909e1d.png)
 
 数据经历轮函数中的一次扩散后，改变一位输入会有一半的机会政变两位输出，缓解了密文中暴露统计特征的问题。
 
@@ -294,7 +294,7 @@ DES 规定数据一共经过 16 轮这样的轮函数，依次将上一轮的输
 
 按照这16个左移位数的指示,  完成这样的左移操作，就得到了16个28位。
 
-![1677903087984.png](https://pic.hanjiaming.com.cn/2023/03/04/e5ac666a7769d.png)
+![1677903087984.png](https://netdesk.orcsvc.com/f/wQdH5/e5ac666a7769d.png)
 
 再把这16对数各自合并，就得到了 16个 56位的数据。从56位中选出48个。
 
@@ -309,15 +309,15 @@ DES 算法中的明文分组长度其实是64位而不是32位，在加密开始
 - 再把右半部分直接拿过来作为下一轮得左半部分
 - ...
 
-<img src="https://pic.hanjiaming.com.cn/2023/03/04/81fb26412c8f9.png" alt="1677903489235.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/XXZiX/81fb26412c8f9.png" alt="1677903489235.png" style="zoom:50%;" />
 
 最后再把左右交换一下位置，就得到了一个64位的输出。
 
-<img src="https://pic.hanjiaming.com.cn/2023/03/04/97af3cec35253.png" alt="1677903601650.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/4vQu2/97af3cec35253.png" alt="1677903601650.png" style="zoom:50%;" />
 
 DES 算法 在明文分组输入后 和 密文分组输出前，**都** 附加了一个随机置换的操作进一步扰乱数据。
 
-<img src="https://pic.hanjiaming.com.cn/2023/03/04/7e4194e5fa44e.png" alt="1677903722818.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/kaGcb/7e4194e5fa44e.png" alt="1677903722818.png" style="zoom:50%;" />
 
 如此我们最终便得到一个64位的密文分组。
 
@@ -331,7 +331,7 @@ DES 算法 在明文分组输入后 和 密文分组输出前，**都** 附加�
 
 原因在于，没有理解 S-box 的工作原理：好问题，是的，似乎数据会丢失。从技术上讲，有些东西显然必须消失，因为6不会进入4。但考虑到DES的整体架构。
 
-![1677900078230.png](https://pic.hanjiaming.com.cn/2023/03/04/65c88fc1d6f72.png)
+![1677900078230.png](https://netdesk.orcsvc.com/f/OQQcQ/65c88fc1d6f72.png)
 
 追踪一个单独的数据块的左右两半的流动。你会看到两个完整的32位字在Feistel网络中畅通无阻地流动。在那里没有信息丢失，只是被XOR了一下，保持了宽度。因此，64位进入块中，64位出现。
 
@@ -377,25 +377,25 @@ Example:
 
 The basic mode of operation -> 信息的每个区块都是单独加密的
 
-![1677508846062.png](https://pic.hanjiaming.com.cn/2023/02/27/9ac6a94c34db9.png)
+![1677508846062.png](https://netdesk.orcsvc.com/f/aX3Cq/9ac6a94c34db9.png)
 
 ECB 模式会泄露有关明文的信息，因为相同的明文块会产生相同的密文块。密文不应该泄露任何关于用于创建它的明文的信息，所以ECB 模式是不安全的，不应该被使。参考统计学概率。
 
 ### Cipher Block Chaining (CBC) Mode
 
-![CleanShot 2023-02-27 at 22.48.10@2x.png](https://pic.hanjiaming.com.cn/2023/02/27/f3ae3fb1005fe.png)
+![CleanShot 2023-02-27 at 22.48.10@2x.png](https://netdesk.orcsvc.com/f/mV9F9/f3ae3fb1005fe.png)
 
 ### Cipher Feedback (CFB) Mode
 
-![1677509633048.png](https://pic.hanjiaming.com.cn/2023/02/27/1502536d01d50.png)
+![1677509633048.png](https://netdesk.orcsvc.com/f/rmjCg/1502536d01d50.png)
 
 ### OFB Mode Encryption
 
-![1677899350573.png](https://pic.hanjiaming.com.cn/2023/03/04/f984cf7d1cf35.png)
+![1677899350573.png](https://netdesk.orcsvc.com/f/KAQiL/f984cf7d1cf35.png)
 
 ### Counter (CTR) Mode
 
-![CleanShot 2023-02-27 at 23.12.04@2x.png](https://pic.hanjiaming.com.cn/2023/02/27/b6bdb64e53070.png)
+![CleanShot 2023-02-27 at 23.12.04@2x.png](https://netdesk.orcsvc.com/f/J2AU8/b6bdb64e53070.png)
 
 ## Ref
 

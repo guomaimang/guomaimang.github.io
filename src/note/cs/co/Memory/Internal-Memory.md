@@ -36,7 +36,7 @@ There are different types of internal memory, but they share some common feature
 
 ### Type
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/eb2dbb3e5c0e6.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/G60wuA/eb2dbb3e5c0e6.png" alt="image.png" title="image.png" />
 
 **Random access memory (RAM): it is a mis-use of term. All the above memory use random aceess method; however, we usually use RAM to refer to main memory「随机存取存储器（RAM）：这是术语的错误使用。以上所有记忆均采用随机aceess方法；但是，我们通常使用RAM来引用主内存」**
 
@@ -58,15 +58,15 @@ Three "terminals" for one cell:「一个单元的三个“终端”：」
 - Control: to write or to read
 - Data: the bit
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/7d36987c08ce8.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/Jw2lI8/7d36987c08ce8.png" alt="image.png" title="image.png" />
 
 ### Implementation Technologies
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/b5d9b3851a851.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/jPRbFb/b5d9b3851a851.png" alt="image.png" title="image.png" />
 
 Capacitors「电容器」 and Transistors「晶体管」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/30768ee0530c6.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/25qosv/30768ee0530c6.png" alt="image.png" title="image.png" />
 
 ### Dynamic RAM Cells
 
@@ -76,7 +76,7 @@ Data is stored as the charge of capacitors「数据存储为电容器的电荷�
 - low level of charge -- 0
 - dynamic: DRAM requires periodic charge refreshing to maintain data storage (capacitors have the tendency to leak charge)「动态：DRAM需要定期刷新电荷以维持数据存储（电容器有泄漏电荷的趋势）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/7932f84c0ff55.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/VpJki2/7932f84c0ff55.png" alt="image.png" title="image.png" />
 
 - Write: hight (low) voltage is applied to Bit line to charge the capacitor for 1 (0)「写：向位线施加高（低）电压以对电容器充电1（0）」
 - Read: charge stored in the capacitor is fed out onto the Bit line, a sense amplifier can compare the capacitor voltage to a reference value 「读取：电容器中存储的电荷被馈送到位线上，读出放大器可以将电容器电压与参考值进行比较」
@@ -88,7 +88,7 @@ Static RAM Cells「静态RAM单元」
 - binary bit is stored using flip-flop logic gates configurations -- essentially, transistors (as switches) and voltage「使用触发器逻辑门配置存储二进制位-本质上是晶体管（作为开关）和电压」
 - static: the cell will hold the data as long as power is supplied to it (no need to refresh)「静态：只要供电，单元将保存数据（无需刷新）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/4bce0d9a1021b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/vvL3Tq/4bce0d9a1021b.png" alt="image.png" title="image.png" />
 
 - Four transistors (T1, T2, T3, T4) are cross connected in an arrangement that produces stable states -- represent 1/0「四个晶体管（T1，T2，T3，T4）交叉连接，产生稳定状态-表示1/0」
 - Address line uses T5 and T6 to select this cell「地址行使用T5和T6选择该单元格」
@@ -128,7 +128,7 @@ Programmable ROM (PROM)「可编程ROM（PROM）」
 - customers can use special equipment to electrically write once
 - idea: each bit is locked by a fuse; initially all 1's in the chip, if burn the fuse, change 1 to 0 (write once)
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/5c19bc3e8eeaf.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/eDo8cq/5c19bc3e8eeaf.png" alt="image.png" title="image.png" />
 
 ### Read-Mostly Memory
 
@@ -163,7 +163,7 @@ Erasable Programmable ROM (EPROM)「可擦可编程ROM（EPROM）」
 
 ### Summary of ROM
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/622e2c21f6c0e.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/nwVVUj/622e2c21f6c0e.png" alt="image.png" title="image.png" />
 
 ## Chip Logic
 
@@ -174,7 +174,7 @@ Semiconductor memory comes in package chips「半导体存储器包含在封装�
 
 **how to organize and wire the cells in chips to satisfy the needs for addressing「如何组织和连接芯片中的单元以满足寻址需求」**
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/36d7de8acdc3b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/ZPJPS2/36d7de8acdc3b.png" alt="image.png" title="image.png" />
 
 **Key issue: how to group cells into a logical piece of data「关键问题：如何将单元格分组为逻辑数据」**
 
@@ -193,7 +193,7 @@ Semiconductor memory comes in package chips「半导体存储器包含在封装�
 - 6 input address lines, 64 output select lines -- each is connected to the select terminal of the cell「6条输入地址线，64条输出选择线-每条连接到单元的选择端子」
 - in the chip package, 6 address pins, 1 data pins「在芯片封装中，有6个地址引脚，1个数据引脚」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/72e7437a17b73.png" alt="image.png" title="image.png" width ="400px"/>
+<img src="https://netdesk.orcsvc.com/f/3p1Rt5/72e7437a17b73.png" alt="image.png" title="image.png" width ="400px"/>
 
 - we also need to consider the memory access cyles「我们还需要考虑内存访问周期」
 - in each cycle, we provide an address to access 1 bit「在每个周期中，我们提供一个地址来访问1位」
@@ -221,7 +221,7 @@ It is implemented using four 4Mbit memory components
 
 Each 4 Mbit component is a 2048 x 2048 square of cells (2^22 bits)「每个4 Mbit分量是一个2048 x 2048平方的单元格（2 ^ 22位）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/ad8d12c9dd1b5.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/YGaQf2/ad8d12c9dd1b5.png" alt="image.png" title="image.png" />
 
 **Use address to locate (select) the cell「使用地址查找（选择）单元格」**
 
@@ -236,7 +236,7 @@ Each 4 Mbit component is a 2048 x 2048 square of cells (2^22 bits)「每个4 Mbi
 - use another two pins to indicate: RAS (row address select) and CAS (column address select)「使用另外两个引脚指示：RAS（行地址选择）和CAS（列地址选择）」
 - then, use can use a 11-to-2048 decoder to select the corrsponding row and column --> locate a cell in one square「然后，可以使用11到2048解码器选择相应的行和列->在一个正方形中定位一个单元」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/b44508f7dab50.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/PvmQIe/b44508f7dab50.png" alt="image.png" title="image.png" />
 
 ### Read/Write operation
 
@@ -282,17 +282,17 @@ Coding theory itself is a fruitful field of study「编码理论本身是一个�
 
 general idea: use redundancy to encode the conditions for which correct data should satisfy -- redundancy is a function of original data: K = f(M)「总体思路：使用冗余编码正确数据应满足的条件-冗余是原始数据的函数：K = f（M）」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/4b16ed0e4944b.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/WY5nu9/4b16ed0e4944b.png" alt="image.png" title="image.png" />
 
 ### Framework of Error Correction
 
 Framework of Error Correction「纠错框架」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/db242feee716a.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/qlKaSJ/db242feee716a.png" alt="image.png" title="image.png" />
 
 Example: Hash Functions for Error Detection
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/14/68194656bae86.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/m3Vms9/68194656bae86.png" alt="image.png" title="image.png" />
 
 ### Encode for check
 
@@ -388,7 +388,7 @@ Hamming Code「海明码」、parity bits「奇偶校验位」
 - data bits: d1, d2, d3, d4「数据位：d1，d2，d3，d4」
 - parity bits: p1, p2, p3, where each parity bit "cover" 3 data bits「奇偶校验位：p1，p2，p3，其中每个奇偶校验位“覆盖” 3个数据位」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/942122c3d2e35.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/0W4Jt5/942122c3d2e35.png" alt="image.png" title="image.png" />
 
 - p1: cover d1, d2, d4, that is, number of 1's in p1||d1||d2||d4 should be even
 - p2: cover d1, d3, d4
@@ -396,13 +396,13 @@ Hamming Code「海明码」、parity bits「奇偶校验位」
 
 ##### Example
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/221a369946373.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/a2XRFq/221a369946373.png" alt="image.png" title="image.png" />
 
 ##### More
 
 Not Required
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/6767bc2be229d.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/25ywFv/6767bc2be229d.png" alt="image.png" title="image.png" />
 
 ##### The code words
 
@@ -411,7 +411,7 @@ Not Required
 - Hamming distance: the number of different bits「汉明距离：不同位数」
 - this examples why Hamming code can correct 1 error「这个例子为什么汉明码可以纠正1个错误」
 
-<img src="https://pic.hanjiaming.com.cn/2021/04/19/da2f8990b0a05.png" alt="image.png" title="image.png" />
+<img src="https://netdesk.orcsvc.com/f/3pELi5/da2f8990b0a05.png" alt="image.png" title="image.png" />
 
 批注：不明白在说什么......
 

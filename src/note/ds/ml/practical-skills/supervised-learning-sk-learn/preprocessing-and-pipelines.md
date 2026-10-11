@@ -34,7 +34,7 @@ With real-world data:
   - 0: Observation was NOT that category
   - 1: Observation was that category
 
-![1658570255656.png](https://pic.hanjiaming.com.cn/2022/07/23/4733433ec9106.png)
+![1658570255656.png](https://netdesk.orcsvc.com/f/orvrUg/4733433ec9106.png)
 
 ::: tip
 
@@ -58,9 +58,9 @@ With real-world data:
 print(music.info())
 ```
 
-![1658570467619.png](https://pic.hanjiaming.com.cn/2022/07/23/c419dc7f1ef2e.png)
+![1658570467619.png](https://netdesk.orcsvc.com/f/AMdWsy/c419dc7f1ef2e.png)
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/23/b5cc6af6e4d5a.png" alt="1658570510815.png" style="zoom: 5%;" />
+<img src="https://netdesk.orcsvc.com/f/G6xeHA/b5cc6af6e4d5a.png" alt="1658570510815.png" style="zoom: 5%;" />
 
 #### Encoding dummy variables
 
@@ -72,7 +72,7 @@ music_dummies = pd.get_dummies(music_df["genre"], drop_first=True)
 print(music_dummies.head())
 ```
 
-![1658570637504.png](https://pic.hanjiaming.com.cn/2022/07/23/5e557b54c9aec.png)
+![1658570637504.png](https://netdesk.orcsvc.com/f/6LmZFE/5e557b54c9aec.png)
 
 ```python
 music_dummies = pd.concat([music_df, music_dummies], axis=1)
@@ -86,7 +86,7 @@ music_dummies = pd.get_dummies(music_df, drop_first=True)
 print(music_dummies.columns)
 ```
 
-![1658570917210.png](https://pic.hanjiaming.com.cn/2022/07/23/844a1a26df0b4.png)
+![1658570917210.png](https://netdesk.orcsvc.com/f/gkOxUX/844a1a26df0b4.png)
 
 #### Linear regression
 
@@ -122,7 +122,7 @@ We need to deal with missing data
 
 一个常见的方法是移除占所有数据5%以下的缺失观测值。为了做到这一点，我们使用pandas的dot-dropna方法，将一个缺失值小于5%的列的列表传递给subset参数。如果在我们的子集列中存在缺失值，那么整行都会被删除。重新检查DataFrame，我们看到更少的缺失值。
 
-<img src="https://pic.hanjiaming.com.cn/2022/07/23/b13466ea5d6ed.png" alt="1658586056292.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/95qYcm/b13466ea5d6ed.png" alt="1658586056292.png" style="zoom:33%;" />
 
 ### Imputing values
 
@@ -194,7 +194,7 @@ pipeline.score(X_test, y_test)
 print(music_df[["duration_ms", "loudness", "speechiness"]].describe())
 ```
 
-![1658594827627.png](https://pic.hanjiaming.com.cn/2022/07/24/ce194c6e5d762.png)
+![1658594827627.png](https://netdesk.orcsvc.com/f/eDOKCq/ce194c6e5d762.png)
 
 ### How to scale our data
 

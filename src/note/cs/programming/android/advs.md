@@ -67,18 +67,18 @@ Android 提供简单的 API，通过结合来自不同来源的输入来返回�
 
 如果您的应用需要使用位置服务，则需要请求用户的许可
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/11/5946e2a4676e7.png" alt="1733851912365.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/bjjjhM/5946e2a4676e7.png" alt="1733851912365.png" style="zoom:33%;" />
 
 ### Google Play Services Location APIs
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/11/53c4294096ab3.png" alt="1733851957170.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/KyyXCL/53c4294096ab3.png" alt="1733851957170.png" style="zoom:33%;" />
 
 ### Set Up a Location Request
 
 - 如果您的应用需要请求位置更新，设备需要启用相应的系统组件（例如GPS或Wi-Fi扫描）。
 - 您的应用程序不是直接启用服务，而是指定要请求的参数。
 
-<img src="https://pic.hanjiaming.com.cn/2024/12/11/306969b2ad924.png" alt="1733852016967.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/lpp3Ie/306969b2ad924.png" alt="1733852016967.png" style="zoom:33%;" />
 
 ## Using Google Maps
 

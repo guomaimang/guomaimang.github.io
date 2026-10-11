@@ -12,7 +12,7 @@ order: 2
 
 NumPy是Python中科学计算的核心库。诸如pandas、SciPy和Matplotlib等Python基础库都建立在NumPy的API之上。机器学习库也是如此，如TensorFlow和scikit-learn，它们使用NumPy数组作为输入。任何在Python中使用数字的人都会接触到NumPy数组.
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/14/e3af983ebb335.png" alt="1655207474267.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/8JaYF5/e3af983ebb335.png" alt="1655207474267.png" style="zoom:50%;" />
 
 Numpy (Numerical Python的缩写)：
 
@@ -89,7 +89,7 @@ array([3, 2, 5, 8, 4, 9, 7, 6, 1])
 numpy.ndarray
 ```
 
-![1655208610322.png](https://pic.hanjiaming.com.cn/2022/06/14/949323fa20df8.png)
+![1655208610322.png](https://netdesk.orcsvc.com/f/5XakSV/949323fa20df8.png)
 
 ### Creating 2D arrays from lists
 
@@ -200,9 +200,9 @@ print(type(a))
 - 二维数组叫 矩阵
 - 三维数组叫 张量
 
-![1655230321345.png](https://pic.hanjiaming.com.cn/2022/06/15/acadf2ff035bd.png)
+![1655230321345.png](https://netdesk.orcsvc.com/f/KwLaSL/acadf2ff035bd.png)
 
-![1655308549835.png](https://pic.hanjiaming.com.cn/2022/06/15/df097e5fbbdd6.png)
+![1655308549835.png](https://netdesk.orcsvc.com/f/p4VGin/df097e5fbbdd6.png)
 
 ### .shape 获取形状
 
@@ -229,7 +229,7 @@ array([1, 2, 5, 7, 6, 6])
 
 ### .reshape() 重设形状
 
-![1655830276336.png](https://pic.hanjiaming.com.cn/2022/06/22/58eb422c595ab.png)
+![1655830276336.png](https://netdesk.orcsvc.com/f/Oa8QcQ/58eb422c595ab.png)
 
 ```python
 array = np.array([[1, 2], [5, 7], [6, 6]])
@@ -321,7 +321,7 @@ sudoku_game[:, 3]
 
 ### Slicing 1D arrays
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/15/136c3b993973f.png" alt="1655307380820.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/ERpDfd/136c3b993973f.png" alt="1655307380820.png" style="zoom: 67%;" />
 
 ```python
 array = np.array([2, 4, 6, 8, 10])
@@ -334,7 +334,7 @@ array([6, 8])
 
 ### Slicing 2D arrays
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/15/d9a2037c23e04.png" alt="1655307299479.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/0WRWT5/d9a2037c23e04.png" alt="1655307299479.png" style="zoom: 40%;" />
 
 ```python
 sudoku_game[3:6, 3:6]
@@ -349,7 +349,7 @@ array([[0, 0, 2],[0, 0, 7],[0, 8, 3]])
 - 截取第2列 `[:,2]`
 - 截取第2行  `[2,]` 或者 `[2,:]`
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/15/31c4a1f938ae6.png" alt="1655307430443.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/DaORIe/31c4a1f938ae6.png" alt="1655307430443.png" style="zoom: 40%;" />
 
 ```python
 # 设置步长
@@ -362,11 +362,11 @@ array([[0, 2],[0, 3]])
 
 ## Axis
 
-![1655307503116.png](https://pic.hanjiaming.com.cn/2022/06/15/97565e82b8abe.png)
+![1655307503116.png](https://netdesk.orcsvc.com/f/bVQJsM/97565e82b8abe.png)
 
 ## Sort
 
-![1655307732370.png](https://pic.hanjiaming.com.cn/2022/06/15/d2fbb1f51d1a8.png)
+![1655307732370.png](https://netdesk.orcsvc.com/f/OavrsQ/d2fbb1f51d1a8.png)
 
 ## Boolean calculate
 
@@ -463,7 +463,7 @@ print(trunk_stump_diameters)
 
 ### Concatenating
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/22/f18c9d3a2c2e9.png" alt="1655833719669.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Kw8QFL/f18c9d3a2c2e9.png" alt="1655833719669.png" style="zoom:50%;" />
 
 ```python
 classroom_ids_and_sizes = np.array([[1, 22], [2, 21], [3, 27], [4, 26]])
@@ -490,11 +490,11 @@ np.concatenate((classroom_ids_and_sizes, grade_levels_and_teachers), axis=0)
 array([['1', '22', '1', 'James'], ['2', '21', '1', 'George'], ['3', '27', '3', 'Amy'], ['4', '26', '3', 'Meehir']])
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/22/2b033ec454c7d.png" alt="1655833871407.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/42mQt2/2b033ec454c7d.png" alt="1655833871407.png" style="zoom:50%;" />
 
 ### Deleting with np.delete()
 
-![1655833927779.png](https://pic.hanjiaming.com.cn/2022/06/22/4d3a4540aa8e4.png)
+![1655833927779.png](https://netdesk.orcsvc.com/f/l3Vbie/4d3a4540aa8e4.png)
 
 delete 必须指定 axis，否则将会造成结果一维化。
 
@@ -569,7 +569,7 @@ plt.show()
      [ 59673 315105 135026]]
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/28/f1e00181589c7.png" alt="1656354114253.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/x29bi3/f1e00181589c7.png" alt="1656354114253.png" style="zoom:33%;" />
 
 ## Calculate
 
@@ -619,11 +619,11 @@ array([ True, False, True])
 
 ### Broadcastable
 
-![1656434903814.png](https://pic.hanjiaming.com.cn/2022/06/29/08f43dc71e62c.png)
+![1656434903814.png](https://netdesk.orcsvc.com/f/2WyYUv/08f43dc71e62c.png)
 
-![1656434933377.png](https://pic.hanjiaming.com.cn/2022/06/29/b4fe4a8a036a4.png)
+![1656434933377.png](https://netdesk.orcsvc.com/f/R424I8/b4fe4a8a036a4.png)
 
-![CleanShot 2022-06-29 at 00.34.34@2x.png](https://pic.hanjiaming.com.cn/2022/06/29/4e785fb66be56.png)
+![CleanShot 2022-06-29 at 00.34.34@2x.png](https://netdesk.orcsvc.com/f/ERkQsd/4e785fb66be56.png)
 
 一维数组尽管是一维，处理时应看做时1行而不是1列。
 
@@ -719,7 +719,7 @@ Save arrays in many formats:
 
 ### Loading .npy files
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/33100e9490f47.png" alt="1656438801552.png" style="zoom: 33%;" />
+<img src="https://netdesk.orcsvc.com/f/9yVYIm/33100e9490f47.png" alt="1656438801552.png" style="zoom: 33%;" />
 
 ```python
 with open("logo.npy", "rb") as f:
@@ -738,9 +738,9 @@ with open("logo.npy", "rb") as f:
   - [255,255,255] 表示纯白
   - [0,0,0] 表示纯无/纯黑/纯透明
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/c53451e8226b8.png" alt="1656438826776.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/Dakyse/c53451e8226b8.png" alt="1656438826776.png" style="zoom:50%;" />
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/985f3779eee11.png" alt="1656438889305.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/rKj0hg/985f3779eee11.png" alt="1656438889305.png" style="zoom:33%;" />
 
 ```python
 red_array[1], green_array[1], blue_array[1]
@@ -762,7 +762,7 @@ plt.imshow(dark_logo_array)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/38ee94a255fe9.png" alt="1656439001104.png" style="zoom: 67%;" />
+<img src="https://netdesk.orcsvc.com/f/gx1xuX/38ee94a255fe9.png" alt="1656439001104.png" style="zoom: 67%;" />
 
 #### 案例2
 
@@ -776,7 +776,7 @@ plt.imshow(darker_rgb_int_array)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/e6578a3d3b68d.png" alt="1656440802833.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/x8wOu3/e6578a3d3b68d.png" alt="1656440802833.png" style="zoom:33%;" />
 
 ### Saving arrays as .npy files
 
@@ -798,7 +798,7 @@ plt.imshow(flipped_logo)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/c53451e8226b8.png" alt="1656447576765.png" style="zoom:50%;" /><img src="https://pic.hanjiaming.com.cn/2022/06/29/663c69c3ed63c.png" alt="1656447584981.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/Dakyse/c53451e8226b8.png" alt="1656447576765.png" style="zoom:50%;" /><img src="https://netdesk.orcsvc.com/f/5XPmsV/663c69c3ed63c.png" alt="1656447584981.png" style="zoom: 50%;" />
 
 ```python
 flipped_rows_logo = np.flip(logo_rgb_array, axis=0)
@@ -806,7 +806,7 @@ plt.imshow(flipped_rows_logo)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/3a7812604646a.png" alt="1656447720395.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/1b2QcK/3a7812604646a.png" alt="1656447720395.png" style="zoom:50%;" />
 
 ```python
 flipped_colors_logo = np.flip(logo_rgb_array, axis=2)
@@ -814,7 +814,7 @@ plt.imshow(flipped_colors_logo)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/81ae496ec931e.png" alt="1656448006755.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/X53ZIX/81ae496ec931e.png" alt="1656448006755.png" style="zoom:50%;" />
 
 ```python
 flipped_except_colors_logo = np.flip(logo_rgb_array, axis=(0, 1))
@@ -822,11 +822,11 @@ plt.imshow(flipped_except_colors_logo)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/165b8377c6a78.png" alt="1656448043029.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/l8agIe/165b8377c6a78.png" alt="1656448043029.png" style="zoom:50%;" />
 
 ### Transposing an array
 
-![1656448151676.png](https://pic.hanjiaming.com.cn/2022/06/29/27c28e9271316.png)
+![1656448151676.png](https://netdesk.orcsvc.com/f/XWX9TX/27c28e9271316.png)
 
 ```python
 transposed_logo = np.transpose(logo_rgb_array, axes=(1, 0, 2))
@@ -834,11 +834,11 @@ plt.imshow(transposed_logo)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/bc7af2cca7e24.png" alt="1656448184853.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/MkO2f8/bc7af2cca7e24.png" alt="1656448184853.png" style="zoom:50%;" />
 
 ## help()
 
-![1656439060398.png](https://pic.hanjiaming.com.cn/2022/06/29/64e703d7d1528.png)
+![1656439060398.png](https://netdesk.orcsvc.com/f/Oa0QfQ/64e703d7d1528.png)
 
 ```python
 # Display the documentation for .astype()
@@ -882,7 +882,7 @@ array([[255, 255, 255], [255, 0, 0], [ 0, 0, 0]])
 
 ### Stacking arrays
 
-![1656448948070.png](https://pic.hanjiaming.com.cn/2022/06/29/4690b51faf9ff.png)
+![1656448948070.png](https://netdesk.orcsvc.com/f/GvJeCA/4690b51faf9ff.png)
 
 ```python
 red_array = np.zeros((1001, 1001)).astype(np.int32)
@@ -894,7 +894,7 @@ plt.imshow(stacked_rgb)
 plt.show()
 ```
 
-![1656449200999.png](https://pic.hanjiaming.com.cn/2022/06/29/dc619fc2a2186.png)
+![1656449200999.png](https://netdesk.orcsvc.com/f/8JkqF5/dc619fc2a2186.png)
 
 ::: details 查看另一个案例
 
@@ -948,8 +948,8 @@ plt.imshow(emphasized_blue_monet)
 plt.show()
 ```
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/d9273b755fa44.png" alt="1656451550115.png" style="zoom: 50%;" />
+<img src="https://netdesk.orcsvc.com/f/k8KGSb/d9273b755fa44.png" alt="1656451550115.png" style="zoom: 50%;" />
 
 :::
 
-<img src="https://pic.hanjiaming.com.cn/2022/06/29/9a0d67ca3340b.png" alt="1656451664803.png" style="zoom:50%;" />
+<img src="https://netdesk.orcsvc.com/f/a2qAiq/9a0d67ca3340b.png" alt="1656451664803.png" style="zoom:50%;" />

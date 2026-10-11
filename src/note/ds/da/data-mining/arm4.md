@@ -61,7 +61,7 @@ headerDepth: 1
 
 Another Example: age(X, “34-35”) ∧ income(X, “30-50K”) -> buys(X, “high resolution TV”)
 
-<img src="https://pic.hanjiaming.com.cn/2023/10/08/6f352d8d3e009.png" alt="1696700260395.png" style="zoom: 40%;" />
+<img src="https://netdesk.orcsvc.com/f/l34Ie/6f352d8d3e009.png" alt="1696700260395.png" style="zoom: 40%;" />
 
 ## Spatial Association Analysis
 

@@ -8,13 +8,13 @@ headerDepth: 0
 
 # Kubernetes Operation
 
-![1715244355633.png](https://pic.hanjiaming.com.cn/2024/05/09/945434d8ccc1e.png)
+![1715244355633.png](https://netdesk.orcsvc.com/f/axecq/945434d8ccc1e.png)
 
 ## Use YAML to Define a K8S Pod
 
-![1714987460485.png](https://pic.hanjiaming.com.cn/2024/05/06/1d4cb8478462f.png)
+![1714987460485.png](https://netdesk.orcsvc.com/f/wPQf5/1d4cb8478462f.png)
 
-![1714987493247.png](https://pic.hanjiaming.com.cn/2024/05/06/aaeca641c540b.png)
+![1714987493247.png](https://netdesk.orcsvc.com/f/1W1TK/aaeca641c540b.png)
 
 - apiVersion: Which version of the Kubernetes API you're using to create this object.
 - Kind: What kind of object you want to create,e.g.,Pod, Deployment,Service,ResourceQuota,etc.
@@ -23,7 +23,7 @@ headerDepth: 0
 
 ## Creating the first Pod
 
-![1714988174595.png](https://pic.hanjiaming.com.cn/2024/05/06/cf7efd9ec39cb.png)
+![1714988174595.png](https://netdesk.orcsvc.com/f/bmJTM/cf7efd9ec39cb.png)
 
 ::: warning 必须禁用交换功能，Kubelet 才能正常工作
 
@@ -32,7 +32,7 @@ headerDepth: 0
 - 工作负载需求应与主机内存相匹配，以提高可预测性和一致性。
 - 杀死单个容器以释放内存，而不是让多个容器在一台机器上以不可预知的（可能是缓慢的）速度运行。
 
-<img src="https://pic.hanjiaming.com.cn/2024/05/06/1b332a43e9c2f.png" alt="1714988294456.png" style="zoom:33%;" />
+<img src="https://netdesk.orcsvc.com/f/Aj4Ty/1b332a43e9c2f.png" alt="1714988294456.png" style="zoom:33%;" />
 
 :::
 
@@ -50,7 +50,7 @@ Limit:
 - **在 Kubernetes 中，限制适用于容器，而不是 Pod**
 - Overcommit：所有限制的总和 大于 节点容量，这很常见
 
-![1714988705305.png](https://pic.hanjiaming.com.cn/2024/05/06/0721172eaa86d.png)
+![1714988705305.png](https://netdesk.orcsvc.com/f/Rppf8/0721172eaa86d.png)
 
 ::: tip 区分
 
@@ -74,26 +74,26 @@ Requests 是保证容器至少可以得到的资源，而 Limits 是容器可以
 
 命名空间「Namespaces」适用于多个用户分布在多个团队或项目中的环境。
 
-![1714988779187.png](https://pic.hanjiaming.com.cn/2024/05/06/48d8fd30988fa.png)
+![1714988779187.png](https://netdesk.orcsvc.com/f/o0ghg/48d8fd30988fa.png)
 
 命名空间配额限制一个命名空间中所有 pod 可消耗的群集资源数量。
 
 使用：当多个用户或团队共享一个具有固定节点数的集群时，每个团队使用的资源不应超过其合理份额。
 
-![1714988833655.png](https://pic.hanjiaming.com.cn/2024/05/06/600f7e4d65949.png)
+![1714988833655.png](https://netdesk.orcsvc.com/f/8ZYH5/600f7e4d65949.png)
 
 ### Set Namespace Quota
 
-![1714988865188.png](https://pic.hanjiaming.com.cn/2024/05/06/07b493fb137da.png)
+![1714988865188.png](https://netdesk.orcsvc.com/f/nrjSj/07b493fb137da.png)
 
 ### View Namespace Quota
 
-![1715021131713.png](https://pic.hanjiaming.com.cn/2024/05/07/e1bd937455b40.png)
+![1715021131713.png](https://netdesk.orcsvc.com/f/PYWTe/e1bd937455b40.png)
 
 - limit aggregate resource consumption per namespace
 - 您可以限制在给定命名空间中请求/消耗的资源
 
-![1715021852242.png](https://pic.hanjiaming.com.cn/2024/05/07/d109e86ae0fdb.png)
+![1715021852242.png](https://netdesk.orcsvc.com/f/amAcq/d109e86ae0fdb.png)
 
 ## Assigning Pods to Nodes
 
@@ -110,14 +110,14 @@ Requests 是保证容器至少可以得到的资源，而 Limits 是容器可以
 
 :::
 
-<img src="https://pic.hanjiaming.com.cn/2024/05/07/1d62e48b38bda.png" alt="1715066760995.png" style="zoom: 25%;" />
+<img src="https://netdesk.orcsvc.com/f/8Dqt5/1d62e48b38bda.png" alt="1715066760995.png" style="zoom: 25%;" />
 
 ### by nodeSelector
 
 - nodeSelector 是节点选择约束的最简单推荐形式
 - Note:the node must have each of the indicated keyvalue pairs as labels
 
-![1715067036286.png](https://pic.hanjiaming.com.cn/2024/05/07/14e673ac9bc38.png)
+![1715067036286.png](https://netdesk.orcsvc.com/f/GyLfA/14e673ac9bc38.png)
 
 
 
